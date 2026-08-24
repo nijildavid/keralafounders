@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Add your company — Kerala Founders</title><meta name="description" content="Keralite founders and companies building across the European Union.">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<body><header class="topbar"><div class="wrap nav">
+<a class="brand" href="index.html"><span class="brand-mark">K</span>Kerala Founders</a>
+<nav class="navlinks"><a href="founders.html">Directory</a><a href="countries.html">Explore places</a><a href="about.html">About</a></nav>
+<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
+</div></header><main>
+<section class="wrap form-layout"><div class="form-intro"><div class="eyebrow">Add to the map</div><h1>Put your company on the map.</h1><p class="muted" style="font-size:16px">Share a few details about the company you are building in Europe. It takes about two minutes, and you can choose what people see.</p><div class="privacy-card"><strong>Privacy, by default</strong><p style="color:#c9d7d4;font-size:13px;line-height:1.6">Your email stays hidden unless you explicitly choose to show it. Submissions are reviewed before they appear in the public directory.</p></div></div>
+<form id="companyForm" class="form-card"><div id="formMessage"></div>
+<div class="form-section"><h2>→ The company</h2><div class="form-grid"><div><label class="label">Company name *</label><input class="field" name="company" required placeholder="e.g. Ribbon"></div><div><label class="label">Website</label><input class="field" name="website" placeholder="ribbon.eu"></div><div><label class="label">Industry *</label><select class="select" name="industry" required><option value="">Select</option></select></div><div><label class="label">Company size</label><select class="select" name="size"><option value="">Select</option></select></div><div><label class="label">Founded year</label><input class="field" name="founded" type="number" min="1800" max="2026" placeholder="2022"></div>
+<div style="grid-column:1/-1"><label class="label">Company description *</label><textarea class="textarea" name="description" rows="5" required placeholder="What does your company make or change?"></textarea></div><div class="form-section location-section">
+  <h2>The location</h2>
+  <p class="location-intro">Where is the company based in Europe?</p>
+  <div class="form-grid">
+    <div><label class="label">Country *</label><select id="country" class="select" name="country" required><option value="">Select</option></select></div>
+    <div><label class="label">City *</label><select id="city" class="select" name="city" required><option value="">Select country first</option></select></div>
+    <div style="grid-column:1/-1" class="address-field"><label class="label">Company location / address *</label><input class="field" name="location" required placeholder="e.g. Berlin, Germany"></div>
+  </div>
+</div>
+</div></div>
+<div class="form-section"><h2>→ The founders</h2><div id="founders"><div class="founder-extra" style="background:transparent;padding:0"><div><label class="label">Founder name *</label><input class="field" name="founderName[]" required placeholder="Your full name"></div><div><label class="label">LinkedIn profile</label><input class="field" name="founderLinkedin[]" placeholder="linkedin.com/in/you"></div><div><label class="label">Email address *</label><input class="field" type="email" name="founderEmail[]" required placeholder="you@company.com"></div><div>
+  <label class="label">Email visibility</label>
+  <label class="email-switch">
+    <input type="checkbox" name="founderShow[]" value="yes">
+    <span class="email-switch-track"><span class="email-switch-thumb"></span></span>
+    <span class="email-switch-text">Show email publicly</span>
+  </label>
+  <div class="email-switch-note">Keep this off to keep the email hidden.</div>
+</div></div></div><button type="button" id="addFounder" class="pill light" style="margin-top:14px">+ Add another founder</button></div>
+<div class="form-section"><h2>→ Branches</h2><label class="checkrow"><input id="hasBranches" type="checkbox"> Does the company have branches in other EU countries?</label><div id="branchWrap" class="chips" style="margin-top:15px;display:none"></div></div>
+<div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Submit for review →</button></div></form></section>
+<script>
+const form=document.getElementById('companyForm'),country=document.getElementById('country'),city=document.getElementById('city'),industry=form.elements.industry,size=form.elements.size;
+function fillSelect(el,arr){el.innerHTML='<option value="">Select</option>'+arr.map(x=>`<option>${KFUI.esc(x)}</option>`).join('')}
+fillSelect(industry,KF.industries);fillSelect(size,KF.sizes);fillSelect(country,Object.keys(KF.countries));
+country.onchange=()=>fillSelect(city,KF.countries[country.value]||[]);
+document.getElementById('addFounder').onclick=()=>{const n=document.createElement('div');n.className='founder-extra additional-founder';n.innerHTML=`<button type="button" class="remove-founder" aria-label="Remove founder" title="Remove founder">×</button><div><label class="label">Founder name</label><input class="field" name="founderName[]" placeholder="Full name"></div><div><label class="label">LinkedIn profile</label><input class="field" name="founderLinkedin[]" placeholder="linkedin.com/in/you"></div><div><label class="label">Email address</label><input class="field" type="email" name="founderEmail[]" placeholder="email@company.com"></div><div>
+  <label class="label">Email visibility</label>
+  <label class="email-switch">
+    <input type="checkbox" name="founderShow[]" value="yes">
+    <span class="email-switch-track"><span class="email-switch-thumb"></span></span>
+    <span class="email-switch-text">Show email publicly</span>
+  </label>
+  <div class="email-switch-note">Keep this off to keep the email hidden.</div>
+</div>`;n.querySelector('.remove-founder').onclick=()=>n.remove();document.getElementById('founders').appendChild(n)};
+const branchWrap=document.getElementById('branchWrap');branchWrap.innerHTML=Object.keys(KF.countries).map(x=>`<label class="checkrow"><input type="checkbox" value="${KFUI.esc(x)}"> ${KFUI.esc(x)}</label>`).join('');document.getElementById('hasBranches').onchange=e=>branchWrap.style.display=e.target.checked?'flex':'none';
+form.onsubmit=async e=>{e.preventDefault();const fd=new FormData(form),names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...fd.getAll('founderShow[]')];const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value);const item={company:fd.get('company'),website:fd.get('website'),industry:fd.get('industry'),size:fd.get('size'),founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})),branches};const msg=document.getElementById('formMessage');const submitBtn=form.querySelector('button[type="submit"]');submitBtn.disabled=true;try{const res=await fetch('api/submit-company.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(item)});const data=await res.json();if(!res.ok)throw new Error(data.error||'Submission failed');msg.innerHTML='<div class="notice">Thanks! Your company was submitted for review.</div>';form.reset();city.innerHTML='<option value="">Select country first</option>';branchWrap.style.display='none';}catch(err){msg.innerHTML=`<div class="notice">${KFUI.esc(err.message)}</div>`;}finally{submitBtn.disabled=false;}};
+</script></main><footer>
+  <div class="footer-cta">
+    <div class="eyebrow">Your place on the map</div>
+    <h2>Building something<br>from Europe?</h2>
+    <p>Make it easier for fellow Keralites to find you.</p>
+    <a class="pill" href="add-company.html">Add your company <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="index.html"><span class="footer-brand-mark">K</span>Kerala Founders</a>
+      <div class="footer-tagline">From Kerala, across Europe.</div>
+      <nav class="footer-links">
+        <a href="founders.html">Directory</a>
+        <a href="countries.html">Explore places</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer-copy">© 2026 Kerala Founders</div>
+    </div>
+  </div>
+</footer></body></html>

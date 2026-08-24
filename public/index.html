@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kerala Founders — From Kerala, across Europe</title><meta name="description" content="Keralite founders and companies building across the European Union.">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<body><header class="topbar"><div class="wrap nav">
+<a class="brand" href="index.html"><span class="brand-mark">K</span>Kerala Founders</a>
+<nav class="navlinks"><a href="founders.html">Directory</a><a href="countries.html">Explore places</a><a href="about.html">About</a></nav>
+<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
+</div></header><main>
+<section class="hero gridbg"><div class="wrap hero-inner"><div>
+<h1>Keralites building<br><span>across the EU.</span></h1>
+<p class="hero-copy">Discover founders and companies from Kerala building across the European Union — from technology and AI to food, manufacturing, healthcare and beyond.</p>
+<div class="hero-actions"><a class="pill" href="founders.html">Explore the directory →</a><a class="pill light" href="add-company.html">Add your company</a></div>
+</div><div class="orbit"><div class="ring r3"></div><div class="ring r1"></div><div class="ring r2"></div><div class="dot d1"></div><div class="dot coral d2"></div><div class="dot coral d3"></div><div class="dot d4"></div><div class="orbit-card"><small>One network</small><strong>Different cities.<br>Shared roots.</strong></div></div></div></section>
+<section class="stats"><div class="wrap stats-grid"><div class="stat"><strong id="statCompanies">0</strong><span>Companies</span></div><div class="stat"><strong id="statFounders">0</strong><span>Founders</span></div><div class="stat"><strong id="statCountries">0</strong><span>Countries</span></div><div class="stat"><strong id="statCities">0</strong><span>Cities</span></div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Recently added</div><h2>What Keralites are building.</h2><p class="muted section-intro">Companies and founders building across the European Union.</p></div><a class="arrow" href="founders.html">See the full directory →</a></div><div id="homeCards" class="cards"></div></div></section>
+
+
+<script>document.addEventListener('DOMContentLoaded',()=>{const d=KF.all();document.getElementById('homeCards').innerHTML=d.slice(0,3).map(KFUI.companyCard).join('')})</script>
+
+<section class="homepage-companies" id="homepage-companies">
+  <div class="wrap">
+    <div class="eyebrow">COMPANIES ACROSS EUROPE</div>
+    <h2>What Keralites are building.</h2>
+    <p>Companies and founders building across the European Union.</p>
+    <div id="homepage-company-list"></div>
+  </div>
+</section>
+</main><footer>
+  <div class="footer-cta">
+    <div class="eyebrow">Your place on the map</div>
+    <h2>Building something<br>from Europe?</h2>
+    <p>Make it easier for fellow Keralites to find you.</p>
+    <a class="pill" href="add-company.html">Add your company <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="index.html"><span class="footer-brand-mark">K</span>Kerala Founders</a>
+      <div class="footer-tagline">From Kerala, across Europe.</div>
+      <nav class="footer-links">
+        <a href="founders.html">Directory</a>
+        <a href="countries.html">Explore places</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer-copy">© 2026 Kerala Founders</div>
+    </div>
+  </div>
+</footer></body></html>

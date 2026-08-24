@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Founders — Kerala Founders</title><meta name="description" content="Keralite founders and companies building across the European Union.">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<body><header class="topbar"><div class="wrap nav">
+<a class="brand" href="index.html"><span class="brand-mark">K</span>Kerala Founders</a>
+<nav class="navlinks"><a href="founders.html">Directory</a><a href="countries.html">Explore places</a><a href="about.html">About</a></nav>
+<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
+</div></header><main>
+<section class="page-head"><div class="wrap"><div class="eyebrow">The directory</div><h1>Founders.</h1><p class="muted section-intro">Explore companies founded or co-founded by people from Kerala across the EU.</p>
+<div class="toolbar"><input id="q" class="field search" placeholder="Search founders or companies...">
+<select id="country" class="select"><option value="">All countries</option></select><select id="industry" class="select"><option value="">All industries</option></select><select id="size" class="select"><option value="">Company size</option></select></div>
+<div class="toolbar-actions"><button id="clear" class="pill light">× Clear filters</button></div>
+<div class="directory-tools"><span id="resultCount" class="muted" style="font-size:13px"></span><div class="toggle"><button id="cardView" class="active">Cards</button><button id="listView">List</button></div></div>
+</div></section><section><div class="wrap"><div id="directory" class="cards"></div><div class="directory-bottom-space"></div></div></section>
+
+<script>
+(function(){
+  const companies = KF.companies || [];
+  const els = {
+    q: document.getElementById('q'),
+    country: document.getElementById('country'),
+    industry: document.getElementById('industry'),
+    size: document.getElementById('size'),
+    sort: document.getElementById('sort'),
+    directory: document.getElementById('directory'),
+    clear: document.getElementById('clear'),
+    cards: document.getElementById('cardView'),
+    list: document.getElementById('listView')
+  };
+
+  function opts(el, values, first){
+    if(!el) return;
+    const label = first || el.dataset.first || '';
+    el.innerHTML = label ? `<option value="">${label}</option>` : '';
+    values.forEach(v => {
+      const o=document.createElement('option');
+      o.value=v; o.textContent=v; el.appendChild(o);
+    });
+  }
+
+  opts(els.country, Object.keys(KF.countries), 'All countries');
+  opts(els.industry, KF.industries, 'All industries');
+  opts(els.size, KF.sizes, 'Company size');
+
+
+  function esc(s){
+    return String(s ?? '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  }
+
+  function render(){
+    const q=(els.q.value||'').toLowerCase().trim();
+    const country=els.country.value;
+    const industry=els.industry.value;
+    const size=els.size.value;
+
+    let rows=companies.filter(c =>
+      (!q || [c.name,...(c.founders||[]),c.industry,c.city,c.country].join(' ').toLowerCase().includes(q)) &&
+      (!country || c.country===country) &&
+      (!industry || c.industry===industry) &&
+      (!size || c.size===size)
+    );
+
+    if(els.sort && els.sort.value==='name') rows.sort((a,b)=>a.name.localeCompare(b.name));
+    else rows.sort((a,b)=>a.name.localeCompare(b.name));
+
+    els.directory.innerHTML = rows.length ? rows.map(c => `
+      <a class="company-card company-link" href="company.html?id=${encodeURIComponent(c.id)}" data-id="${esc(c.id)}">
+        <div class="logo">${esc(c.name.split(/\s+/).map(x=>x[0]).slice(0,2).join(''))}</div>
+        <div class="company-main">
+          <h3>${esc(c.name)}</h3>
+          <div class="meta">${esc((c.founders||[]).join(', '))}</div>
+        </div>
+        <div class="chips">
+          <span class="chip">${esc(c.country)}</span>
+          
+          <span class="chip">${esc(c.industry)}</span>
+        </div>
+      </a>
+    `).join('') : `<div class="empty-state">No companies match your filters.</div>`;
+
+    els.directory.classList.toggle('list-view', els.list.classList.contains('active'));
+  }
+
+  function setView(view){
+    els.cards.classList.toggle('active', view==='cards');
+    els.list.classList.toggle('active', view==='list');
+    els.directory.classList.toggle('list-view', view==='list');
+    render();
+  }
+
+  els.country.addEventListener('change', ()=>{ els.city.value=''; updateCities(); render(); });
+  [els.q,els.city,els.industry,els.size,els.sort].forEach(el=>{if(el){el.addEventListener('input',render);el.addEventListener('change',render);}});
+  els.clear.addEventListener('click', ()=>{
+    els.q.value=''; els.country.value=''; els.city.value=''; els.industry.value=''; els.size.value='';
+    updateCities(); render();
+  });
+  els.cards.addEventListener('click',()=>setView('cards'));
+  els.list.addEventListener('click',()=>setView('list'));
+
+  setView('cards');
+})();
+</script>
+</main><footer>
+  <div class="footer-cta">
+    <div class="eyebrow">Your place on the map</div>
+    <h2>Building something<br>from Europe?</h2>
+    <p>Make it easier for fellow Keralites to find you.</p>
+    <a class="pill" href="add-company.html">Add your company <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap footer-inner">
+      <a class="footer-brand" href="index.html"><span class="footer-brand-mark">K</span>Kerala Founders</a>
+      <div class="footer-tagline">From Kerala, across Europe.</div>
+      <nav class="footer-links">
+        <a href="founders.html">Directory</a>
+        <a href="countries.html">Explore places</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer-copy">© 2026 Kerala Founders</div>
+    </div>
+  </div>
+</footer></body></html>
