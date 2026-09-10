@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin.php
+Disallow: /admin-edit.php
+Disallow: /admin-login.php
+Disallow: /admin-logout.php
+Disallow: /api/
+
+Sitemap: https://keralafounders.eu/sitemap.xml
