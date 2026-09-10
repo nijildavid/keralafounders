@@ -26,9 +26,15 @@
     }[m]));
   }
 
+  function verifiedChip(v){
+    return v
+      ? '<span class="chip" style="color:#166534;border-color:#166534">Verified</span>'
+      : '<span class="chip" style="color:#9a3412;border-color:#9a3412" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
+  }
+
   function companyCard(c){
     return `
-      <a class="company-card company-link" href="company.html?id=${encodeURIComponent(c.id)}">
+      <a class="company-card company-link" href="company.php?id=${encodeURIComponent(c.id)}">
         <div class="logo">${esc(initials(c.name))}</div>
         <div class="company-main">
           <h3>${esc(c.name)}</h3>
@@ -37,6 +43,7 @@
         <div class="chips">
           <span class="chip">${esc(c.country)}</span>
           <span class="chip">${esc(c.industry)}</span>
+          ${verifiedChip(c.verified)}
         </div>
       </a>`;
   }
@@ -45,6 +52,7 @@
     esc,
     initials,
     companyCard,
+    verifiedChip,
     stats(){
       const d=all();
       return {
@@ -65,19 +73,3 @@
     document.querySelectorAll('[data-company-count]').forEach(x=>x.textContent=s.companies);
   });
 })();
-
-document.addEventListener("DOMContentLoaded", function(){
-  const target = document.getElementById("homepage-company-list");
-  if(!target || !window.KF || !window.KF.companies) return;
-
-  target.innerHTML = window.KF.companies.map(c => `
-    <a class="company-card company-link" href="company.html?id=${c.id}">
-      <div class="logo">${c.name.split(/\s+/).map(x=>x[0]).slice(0,2).join("")}</div>
-      <div>
-        <h3>${c.name}</h3>
-        <p>${(c.founders||[]).join(", ")}</p>
-        <span>${c.country} · ${c.city} · ${c.industry}</span>
-      </div>
-    </a>
-  `).join("");
-});

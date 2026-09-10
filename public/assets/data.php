@@ -6,7 +6,7 @@ require __DIR__ . '/../../config/reference.php';
 $db = get_db();
 
 $companies = [];
-foreach ($db->query("SELECT * FROM companies WHERE status = 'approved' ORDER BY created_at DESC") as $row) {
+foreach ($db->query("SELECT * FROM companies WHERE status = 'approved' ORDER BY created_at DESC, id DESC") as $row) {
     $founders = $db->prepare('SELECT name FROM founders WHERE company_id = ? ORDER BY id');
     $founders->execute([$row['id']]);
 
@@ -20,6 +20,7 @@ foreach ($db->query("SELECT * FROM companies WHERE status = 'approved' ORDER BY 
         'size' => $row['size'],
         'description' => $row['description'],
         'website' => $row['website'],
+        'verified' => (bool)$row['verified'],
     ];
 }
 
