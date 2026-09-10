@@ -11,7 +11,16 @@ CREATE TABLE IF NOT EXISTS companies (
   location VARCHAR(255) NOT NULL,
   description TEXT NOT NULL,
   status ENUM('pending','approved') NOT NULL DEFAULT 'pending',
-  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+  verified TINYINT(1) NOT NULL DEFAULT 0,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  contact_email VARCHAR(255) NULL,
+  email_type VARCHAR(60) NULL,
+  email_source VARCHAR(120) NULL,
+  email_confidence VARCHAR(20) NULL,
+  email_source_url VARCHAR(500) NULL,
+  outreach_status ENUM('not_contacted','sent','responded') NOT NULL DEFAULT 'not_contacted',
+  outreach_sent_at TIMESTAMP NULL,
+  outreach_responded_at TIMESTAMP NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS founders (
@@ -28,6 +37,18 @@ CREATE TABLE IF NOT EXISTS branches (
   id INT AUTO_INCREMENT PRIMARY KEY,
   company_id INT NOT NULL,
   country VARCHAR(80) NOT NULL,
+  FOREIGN KEY (company_id) REFERENCES companies(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS claim_requests (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  company_id INT NOT NULL,
+  claimant_name VARCHAR(160) NOT NULL,
+  claimant_email VARCHAR(255) NOT NULL,
+  message TEXT NOT NULL,
+  proposed_changes TEXT NULL,
+  status ENUM('pending','resolved','dismissed') NOT NULL DEFAULT 'pending',
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (company_id) REFERENCES companies(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
