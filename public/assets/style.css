@@ -42,8 +42,8 @@ button{cursor:pointer}
 .nav-mobile-divider{display:none}
 .pill.nav-mobile-cta{display:none}
 
-.topbar.is-compact .nav-card{padding:6px 10px;background:transparent;max-width:none;align-items:center;gap:8px}
-.topbar.is-compact .nav-card img{width:0;margin:0;opacity:0}
+.topbar.is-compact .nav-card{padding:6px 10px;background:transparent;max-width:none;flex-direction:row;align-items:center;gap:8px}
+.topbar.is-compact .nav-card img{width:0;height:0;margin:0;opacity:0}
 .topbar.is-compact .nav-card-desc,.topbar.is-compact .nav-card-meta{display:none}
 .topbar.is-compact .nav-card strong{font-size:14px;font-weight:600;color:#57534e}
 .topbar.is-compact .nav-card:hover strong{color:var(--ink)}
@@ -52,8 +52,8 @@ button{cursor:pointer}
    don't fit in one row regardless of scroll position — fall back to the
    same simple/compact nav treatment unconditionally, not just on scroll. */
 @media(max-width:1150px){
-  .nav-card{padding:6px 10px;background:transparent;max-width:none;align-items:center;gap:8px}
-  .nav-card img{width:0;margin:0;opacity:0}
+  .nav-card{padding:6px 10px;background:transparent;max-width:none;flex-direction:row;align-items:center;gap:8px}
+  .nav-card img{width:0;height:0;margin:0;opacity:0}
   .nav-card-desc,.nav-card-meta{display:none}
   .nav-card strong{font-size:14px;font-weight:600;color:#57534e}
   .nav-card:hover strong{color:var(--ink)}
