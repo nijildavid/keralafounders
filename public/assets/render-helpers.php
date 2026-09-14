@@ -24,7 +24,7 @@ function initials(string $name): string
 function verified_chip_html(bool $v): string
 {
     return $v
-        ? '<span class="chip" style="color:#166534;border-color:#166534">Verified</span>'
+        ? '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)">Verified</span>'
         : '<span class="chip" style="color:#9a3412;border-color:#9a3412" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
 }
 
