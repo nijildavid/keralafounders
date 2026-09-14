@@ -17,6 +17,8 @@ foreach ($db->query("SELECT * FROM companies WHERE status = 'approved' ORDER BY 
         'country' => $row['country'],
         'city' => $row['city'],
         'industry' => $row['industry'],
+        'business_type' => $row['business_type'],
+        'industry_detail' => $row['industry_detail'],
         'size' => $row['size'],
         'description' => $row['description'],
         'website' => $row['website'],
@@ -27,6 +29,7 @@ foreach ($db->query("SELECT * FROM companies WHERE status = 'approved' ORDER BY 
 echo 'window.KF = ' . json_encode([
     'countries' => $KF_COUNTRIES,
     'industries' => $KF_INDUSTRIES,
+    'businessTypes' => $KF_BUSINESS_TYPES,
     'sizes' => $KF_SIZES,
     'companies' => $companies,
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . ';';

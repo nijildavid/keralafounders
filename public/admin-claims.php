@@ -13,7 +13,7 @@ if (!in_array($statusFilter, ['all', 'pending', 'resolved', 'dismissed'], true))
 $q = trim((string)($_GET['q'] ?? ''));
 
 $sql = "SELECT cr.*, c.name AS company_name, c.slug AS company_slug,
-        c.website AS cur_website, c.industry AS cur_industry, c.size AS cur_size,
+        c.website AS cur_website, c.industry AS cur_industry, c.business_type AS cur_business_type, c.industry_detail AS cur_industry_detail, c.size AS cur_size,
         c.founded_year AS cur_founded_year, c.country AS cur_country, c.city AS cur_city,
         c.location AS cur_location, c.description AS cur_description
         FROM claim_requests cr
@@ -63,6 +63,8 @@ function claim_diff_rows(array $cl): array
         'company' => 'Company name',
         'website' => 'Website',
         'industry' => 'Industry',
+        'businessType' => 'Business type',
+        'industryDetail' => 'Specific type',
         'size' => 'Company size',
         'founded' => 'Founded year',
         'country' => 'Country',
@@ -74,6 +76,8 @@ function claim_diff_rows(array $cl): array
         'company' => $cl['company_name'],
         'website' => $cl['cur_website'],
         'industry' => $cl['cur_industry'],
+        'businessType' => $cl['cur_business_type'],
+        'industryDetail' => $cl['cur_industry_detail'],
         'size' => $cl['cur_size'],
         'founded' => $cl['cur_founded_year'],
         'country' => $cl['cur_country'],
@@ -127,13 +131,10 @@ $activeAdminPage = 'claims';
 ?>
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Claims — Admin — Kerala Founders</title>
-<link rel="stylesheet" href="assets/style.css"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.png" alt="Kerala Founders">Kerala Founders</a>
-<nav class="navlinks"><a href="founders.php">Directory</a><a href="countries.php">Explore places</a><a href="about.html">About</a></nav>
-<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
-</div></header><main id="main">
+<title>Claims — Admin — Kerala Founders</title><meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<?php include __DIR__ . '/partials/header.php'; ?>
+<main id="main">
 <section class="page-head"><div class="wrap"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><div class="eyebrow">Admin</div><h1>Listing claims.</h1></div><a class="arrow" href="admin-logout.php">Log out</a></div><p class="muted">Claim and correction requests submitted via "Claim this listing" on company pages.</p>
 <?php include __DIR__ . '/admin-nav.php'; ?>
 <form method="get" action="admin-claims.php" style="margin-top:20px;max-width:360px">
@@ -213,17 +214,4 @@ $activeAdminPage = 'claims';
   </div>
 <?php endforeach; endif; ?>
 </div>
-</div></section></main><footer>
-  <div class="footer-bottom">
-    <div class="wrap footer-inner">
-      <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.png" alt="">Kerala Founders</a>
-      <div class="footer-tagline">From Kerala, across Europe.</div>
-      <nav class="footer-links">
-        <a href="founders.php">Directory</a>
-        <a href="countries.php">Explore places</a>
-        <a href="about.html">About</a>
-      </nav>
-      <div class="footer-copy">© 2026 Kerala Founders</div>
-    </div>
-  </div>
-</footer></body></html>
+</div></section></main><?php include __DIR__ . '/partials/footer-minimal.php'; ?></body></html>

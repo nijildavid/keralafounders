@@ -4,6 +4,8 @@ CREATE TABLE IF NOT EXISTS companies (
   name VARCHAR(160) NOT NULL,
   website VARCHAR(255) NULL,
   industry VARCHAR(80) NOT NULL,
+  business_type VARCHAR(60) NOT NULL DEFAULT '',
+  industry_detail VARCHAR(160) NULL,
   size VARCHAR(20) NULL,
   founded_year SMALLINT NULL,
   country VARCHAR(80) NOT NULL,
@@ -52,10 +54,10 @@ CREATE TABLE IF NOT EXISTS claim_requests (
   FOREIGN KEY (company_id) REFERENCES companies(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-INSERT INTO companies (slug, name, website, industry, size, country, city, location, description, status) VALUES
-('monsoon-media', 'Monsoon Media', 'monsoon.example', 'Media / Creative', '1–10', 'Austria', 'Vienna', 'Vienna, Austria', 'A creative media company building from Vienna.', 'approved'),
-('cardamom-commerce', 'Cardamom Commerce', 'cardamom.example', 'Retail / Consumer', '11–50', 'Belgium', 'Brussels', 'Brussels, Belgium', 'Consumer products inspired by Kerala and made for Europe.', 'approved'),
-('kerala-ventures', 'Kerala Ventures Studio', 'keralaventures.example', 'Professional Services', '1–10', 'Spain', 'Barcelona', 'Barcelona, Spain', 'Helping founders build and grow across Europe.', 'approved');
+INSERT INTO companies (slug, name, website, industry, business_type, size, country, city, location, description, status) VALUES
+('monsoon-media', 'Monsoon Media', 'monsoon.example', 'Professional Services', 'SME / Local Business', '1–10', 'Austria', 'Vienna', 'Vienna, Austria', 'A creative media company building from Vienna.', 'approved'),
+('cardamom-commerce', 'Cardamom Commerce', 'cardamom.example', 'Retail & E-commerce', 'SME / Local Business', '11–50', 'Belgium', 'Brussels', 'Brussels, Belgium', 'Consumer products inspired by Kerala and made for Europe.', 'approved'),
+('kerala-ventures', 'Kerala Ventures Studio', 'keralaventures.example', 'Professional Services', 'Consultancy', '1–10', 'Spain', 'Barcelona', 'Barcelona, Spain', 'Helping founders build and grow across Europe.', 'approved');
 
 INSERT INTO founders (company_id, name, show_email) VALUES
 ((SELECT id FROM companies WHERE slug='monsoon-media'), 'Rahul Mathew', 0),

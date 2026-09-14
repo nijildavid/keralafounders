@@ -1,0 +1,24 @@
+# cPanel Git Version Control deployment script.
+#
+# BEFORE FIRST USE: confirm these two paths match your actual cPanel account —
+# check cPanel's "Home Directory" (shown on the main dashboard) for your real
+# username in place of "nijiwdhp", and confirm your domain's actual document
+# root folder name in place of "keralafounders.eu" (File Manager will show it).
+# These were inferred from earlier deploy notes, not independently confirmed.
+#
+# What this does on every "Deploy HEAD Commit" in cPanel's Git Version Control UI:
+#   - copies public/* into the live document root
+#   - copies config/reference.php (the only non-secret config file) into the
+#     private config/ folder that sits outside the document root
+#   - deliberately leaves config/db.php and config/auth.php alone — those hold
+#     real credentials, are never committed to this repo, and must already
+#     exist on the server from your original manual setup.
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nijiwdhp/keralafounders.eu/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R public/. $DEPLOYPATH
+    - export CONFIGPATH=/home/nijiwdhp/config/
+    - /bin/mkdir -p $CONFIGPATH
+    - /bin/cp config/reference.php $CONFIGPATH

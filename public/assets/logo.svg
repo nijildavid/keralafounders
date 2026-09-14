@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+<g fill="#1a4d3a">
+  <!-- palm fronds, fanning from the trunk top -->
+  <path d="M96 108 Q40 118 8 165 Q45 138 96 112 Z"/>
+  <path d="M96 108 Q45 90 22 55 Q60 78 96 106 Z"/>
+  <path d="M96 108 Q68 68 58 15 Q88 60 98 105 Z"/>
+  <path d="M96 108 Q98 55 88 8 Q118 48 100 106 Z"/>
+  <path d="M96 108 Q125 65 150 40 Q128 82 98 110 Z"/>
+  <path d="M96 108 Q140 88 183 105 Q145 105 98 112 Z"/>
+  <path d="M96 110 Q145 112 193 155 Q148 128 98 114 Z"/>
+
+  <!-- trunk, tapering into the K's left stem with a serif foot -->
+  <path d="M88 108 C82 130 80 150 84 170 L82 224 L118 224 L114 170 C117 150 112 130 104 108 Z"/>
+
+  <!-- K upper arm (thin, serif flick at the tip) -->
+  <path d="M110 160 L114 172 L198 96 L210 96 L214 88 L182 88 L186 96 L196 96 Z"/>
+
+  <!-- K lower arm (bold swash) -->
+  <path d="M108 168 C120 172 140 182 156 198 C172 214 188 222 212 224 C186 226 164 218 146 202 C130 188 116 176 104 178 Z"/>
+</g>
+</svg>

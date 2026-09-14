@@ -63,12 +63,9 @@ if ($company) {
 <meta property="og:type" content="<?= $company ? 'website' : 'website' ?>"><meta property="og:site_name" content="<?= h($siteName) ?>"><meta property="og:title" content="<?= $pageTitle ?>"><meta property="og:description" content="<?= $metaDescription ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>">
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="<?= $pageTitle ?>"><meta name="twitter:description" content="<?= $metaDescription ?>">
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
-<link rel="stylesheet" href="assets/style.css"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.png" alt="Kerala Founders">Kerala Founders</a>
-<nav class="navlinks"><a href="founders.php">Directory</a><a href="countries.php">Explore places</a><a href="about.html">About</a></nav>
-<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
-</div></header>
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<?php include __DIR__ . '/partials/header.php'; ?>
+
 <main id="main">
 <section class="profile">
   <div class="wrap">
@@ -94,6 +91,7 @@ if ($company) {
         <?php if ($company['country']): ?><span class="chip"><?= h($company['country']) ?></span><?php endif; ?>
         <?php if ($company['city']): ?><span class="chip"><?= h($company['city']) ?></span><?php endif; ?>
         <?php if ($company['industry']): ?><span class="chip"><?= h($company['industry']) ?></span><?php endif; ?>
+        <?php if (!empty($company['business_type'])): ?><span class="chip"><?= h($company['business_type']) ?></span><?php endif; ?>
         <?php if ($company['size']): ?><span class="chip"><?= h($company['size']) ?></span><?php endif; ?>
       </div>
       <?php if ($branches): ?>
@@ -110,8 +108,15 @@ if ($company) {
         <div class="company-detail-side">
           <?php if ($company['industry']): ?>
           <div class="side-section">
-            <div class="eyebrow">Category</div>
+            <div class="eyebrow">Industry</div>
             <p><?= h($company['industry']) ?></p>
+            <?php if (!empty($company['industry_detail'])): ?><p class="muted" style="font-size:13px;margin-top:2px"><?= h($company['industry_detail']) ?></p><?php endif; ?>
+          </div>
+          <?php endif; ?>
+          <?php if (!empty($company['business_type'])): ?>
+          <div class="side-section">
+            <div class="eyebrow">Business type</div>
+            <p><?= h($company['business_type']) ?></p>
           </div>
           <?php endif; ?>
           <?php if ($company['country']): ?>
@@ -171,23 +176,4 @@ if ($company) {
     <?php endif; ?>
   </div>
 </section>
-</main><footer>
-  <div class="footer-cta">
-    <div class="eyebrow">Your place on the map</div>
-    <h2>Building something<br>from Europe?</h2>
-    <p>Make it easier for fellow Keralites to find you.</p>
-    <a class="pill" href="add-company.html">Add your company <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="footer-bottom">
-    <div class="wrap footer-inner">
-      <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.png" alt="">Kerala Founders</a>
-      <div class="footer-tagline">From Kerala, across Europe.</div>
-      <nav class="footer-links">
-        <a href="founders.php">Directory</a>
-        <a href="countries.php">Explore places</a>
-        <a href="about.html">About</a>
-      </nav>
-      <div class="footer-copy">© 2026 Kerala Founders</div>
-    </div>
-  </div>
-</footer></body></html>
+</main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>

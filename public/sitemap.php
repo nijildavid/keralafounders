@@ -30,12 +30,14 @@ function url(string $loc, ?string $lastmod = null, string $changefreq = 'weekly'
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 echo "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
 
-echo url("{$baseUrl}/index.php", null, 'daily');
+echo url("{$baseUrl}/", null, 'daily');
 echo url("{$baseUrl}/founders.php", null, 'daily');
+echo url("{$baseUrl}/stories.php", null, 'weekly');
+echo url("{$baseUrl}/guidance.php", null, 'weekly');
 echo url("{$baseUrl}/countries.php", null, 'weekly');
-echo url("{$baseUrl}/about.html", null, 'monthly');
-echo url("{$baseUrl}/add-company.html", null, 'monthly');
-echo url("{$baseUrl}/privacy.html", null, 'yearly');
+echo url("{$baseUrl}/about.php", null, 'monthly');
+echo url("{$baseUrl}/add-company.php", null, 'monthly');
+echo url("{$baseUrl}/privacy.php", null, 'yearly');
 
 foreach (array_keys($countries) as $country) {
     echo url("{$baseUrl}/countries.php?country=" . rawurlencode($country));

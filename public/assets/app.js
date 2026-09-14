@@ -43,6 +43,7 @@
         <div class="chips">
           <span class="chip">${esc(c.country)}</span>
           <span class="chip">${esc(c.industry)}</span>
+          ${c.business_type ? `<span class="chip">${esc(c.business_type)}</span>` : ''}
           ${verifiedChip(c.verified)}
         </div>
       </a>`;
@@ -71,5 +72,8 @@
       if(el) el.textContent=s[key];
     });
     document.querySelectorAll('[data-company-count]').forEach(x=>x.textContent=s.companies);
+    document.querySelectorAll('[data-directory-meta]').forEach(x=>{
+      x.textContent=`${s.companies} companies`;
+    });
   });
 })();

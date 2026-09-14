@@ -1,9 +1,10 @@
 <?php
 
-// Change this by generating a new hash:
+// Copy this file to auth.php (on the server, outside the web root) and set
+// your own password hash. auth.php itself is gitignored — never commit a
+// real password hash. Generate one with:
 //   php -r "echo password_hash('your-new-password', PASSWORD_DEFAULT), PHP_EOL;"
-// and pasting the result below. Never commit a real password in plaintext.
-define('ADMIN_PASSWORD_HASH', 'REPLACE-WITH-YOUR-OWN-BCRYPT-HASH-see-comment-above');
+define('ADMIN_PASSWORD_HASH', 'paste-your-generated-hash-here');
 
 define('LOGIN_ATTEMPTS_FILE', __DIR__ . '/login-attempts.json');
 define('LOGIN_MAX_ATTEMPTS', 5);

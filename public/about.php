@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><head><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});</script><script src="https://cdn.cookiehub.eu/c2/a2366e42.js"></script><script type="text/javascript">document.addEventListener("DOMContentLoaded",function(event){var cpm={};if(window.cookiehub){window.cookiehub.load(cpm);}});</script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ9D0P01RH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-EJ9D0P01RH");</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Kerala Founders</title><meta name="description" content="Learn how Kerala Founders connects Keralite-founded businesses and founders building across Europe.">
+<link rel="canonical" href="https://keralafounders.eu/about.php">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="About — Kerala Founders"><meta property="og:description" content="Learn how Kerala Founders connects Keralite-founded businesses and founders building across Europe."><meta property="og:url" content="https://keralafounders.eu/about.php">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="About — Kerala Founders"><meta name="twitter:description" content="Learn how Kerala Founders connects Keralite-founded businesses and founders building across Europe.">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<?php include __DIR__ . '/partials/header.php'; ?>
+<main id="main">
+<section class="section"><div class="wrap" style="max-width:850px">
+<div class="eyebrow">About</div>
+<h1 style="font-family:Georgia,serif;font-size:58px;line-height:1.05;margin:12px 0 25px">Mapping Kerala's business ecosystem across Europe.</h1>
+<div class="muted" style="font-size:18px;line-height:1.9">
+<p><strong style="color:var(--ink)">Kerala Founders</strong> is an independent directory documenting Kerala-connected businesses, founders and professionals across Europe.</p>
+<p>The Kerala business ecosystem extends far beyond startups. It includes technology companies, restaurants, healthcare practices, construction businesses, logistics, retail, professional services and many other businesses built by people with roots in Kerala.</p>
+<p>The goal is simple: <strong style="color:var(--ink)">make this ecosystem easier to discover, connect and understand.</strong></p>
+</div>
+
+<div class="panel" style="margin-top:35px">
+<h2>Research &amp; verification</h2>
+<p class="muted">Businesses are researched across company websites, professional networks, business directories, community platforms, social media and local sources. Information is cross-checked wherever possible, with records classified as:</p>
+<ul style="margin:18px 0;padding-left:20px;color:#57534e;line-height:1.9">
+<li><strong style="color:var(--ink)">Verified</strong> — supported by credible evidence</li>
+<li><strong style="color:var(--ink)">Partially verified</strong> — some information remains unconfirmed</li>
+<li><strong style="color:var(--ink)">Unverified</strong> — a Kerala connection has not yet been sufficiently established</li>
+</ul>
+<p class="muted" style="margin:0">A business may qualify through its founders, owners, Kerala/Malayali identity or meaningful connection to the Kerala community.</p>
+</div>
+
+<div style="margin-top:35px">
+<h2 style="font-size:26px;margin:0 0 14px">An evolving map</h2>
+<div class="muted" style="font-size:18px;line-height:1.9">
+<p>Kerala Founders is an ongoing effort to document the people and businesses shaping the Kerala-connected ecosystem across Europe.</p>
+<p><strong style="color:var(--ink)">Different countries. Different cities. Shared roots.</strong></p>
+</div>
+</div>
+
+<div class="panel" style="margin-top:35px">
+<h2>Know a business that should be included, or a record that needs correcting?</h2>
+<p class="muted" style="margin:0"><a class="arrow" href="mailto:hello@keralafounders.eu">Get in touch →</a></p>
+</div>
+
+</div></section></main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>

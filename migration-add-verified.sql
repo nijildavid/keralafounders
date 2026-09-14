@@ -1,0 +1,1 @@
+ALTER TABLE companies ADD COLUMN verified TINYINT(1) NOT NULL DEFAULT 0 AFTER status;

@@ -25,6 +25,8 @@ $status = (string)($input['status'] ?? 'pending');
 $verified = ((int)($input['verified'] ?? 0)) === 1 ? 1 : 0;
 $name = trim((string)($input['company'] ?? ''));
 $industry = trim((string)($input['industry'] ?? ''));
+$businessType = trim((string)($input['businessType'] ?? ''));
+$industryDetail = trim((string)($input['industryDetail'] ?? ''));
 $country = trim((string)($input['country'] ?? ''));
 $city = trim((string)($input['city'] ?? ''));
 $location = trim((string)($input['location'] ?? ''));
@@ -40,7 +42,7 @@ if ($id <= 0) {
 if (!in_array($status, ['pending', 'approved'], true)) {
     $status = 'pending';
 }
-if ($name === '' || $industry === '' || $country === '' || $city === '' || $location === '' || $description === '' || !$founders) {
+if ($name === '' || $industry === '' || $businessType === '' || $country === '' || $city === '' || $location === '' || $description === '' || !$founders) {
     http_response_code(422);
     echo json_encode(['error' => 'Please fill in all required fields.']);
     exit;
@@ -59,12 +61,14 @@ if (!$check->fetch()) {
 $db->beginTransaction();
 
 $stmt = $db->prepare(
-    'UPDATE companies SET name = ?, website = ?, industry = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, status = ?, verified = ? WHERE id = ?'
+    'UPDATE companies SET name = ?, website = ?, industry = ?, business_type = ?, industry_detail = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, status = ?, verified = ? WHERE id = ?'
 );
 $stmt->execute([
     $name,
     trim((string)($input['website'] ?? '')) ?: null,
     $industry,
+    $businessType,
+    $industryDetail ?: null,
     trim((string)($input['size'] ?? '')) ?: null,
     !empty($input['founded']) ? (int)$input['founded'] : null,
     $country,

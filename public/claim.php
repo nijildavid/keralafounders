@@ -29,12 +29,9 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
 <html lang="en"><head><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});</script><script src="https://cdn.cookiehub.eu/c2/a2366e42.js"></script><script type="text/javascript">document.addEventListener("DOMContentLoaded",function(event){var cpm={};if(window.cookiehub){window.cookiehub.load(cpm);}});</script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ9D0P01RH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-EJ9D0P01RH");</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title><?= $pageTitle ?></title><meta name="description" content="Claim or suggest a correction to a Kerala Founders listing.">
 <meta name="robots" content="noindex">
-<link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.png" alt="Kerala Founders">Kerala Founders</a>
-<nav class="navlinks"><a href="founders.php">Directory</a><a href="countries.php">Explore places</a><a href="about.html">About</a></nav>
-<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
-</div></header><main id="main">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<?php include __DIR__ . '/partials/header.php'; ?>
+<main id="main">
 <?php if (!$company): ?>
 <section class="page-head"><div class="wrap">
 <div class="eyebrow">Claim a listing</div>
@@ -61,6 +58,8 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
   <div><label class="label" for="claim-company">Company name *</label><input class="field" id="claim-company" name="company" required value="<?= h($company['name']) ?>"></div>
   <div><label class="label" for="claim-website">Website</label><input class="field" id="claim-website" name="website" value="<?= h((string)($company['website'] ?? '')) ?>" placeholder="ribbon.eu"></div>
   <div><label class="label" for="claim-industry">Industry *</label><select class="select" id="claim-industry" name="industry" required><option value="">Select</option></select></div>
+  <div><label class="label" for="claim-business-type">Business type *</label><select class="select" id="claim-business-type" name="businessType" required><option value="">Select</option></select></div>
+  <div><label class="label" for="claim-industry-detail">Specific type (optional)</label><input class="field" id="claim-industry-detail" name="industryDetail" value="<?= h((string)($company['industry_detail'] ?? '')) ?>" placeholder="e.g. Ayurveda retail, Import/export"></div>
   <div><label class="label" for="claim-size">Company size</label><select class="select" id="claim-size" name="size"><option value="">Select</option></select></div>
   <div><label class="label" for="claim-founded">Founded year</label><input class="field" id="claim-founded" name="founded" type="number" min="1800" max="2026" value="<?= h((string)($company['founded_year'] ?? '')) ?>" placeholder="2022"></div>
   <div style="grid-column:1/-1"><label class="label" for="claim-description">Company description *</label><textarea class="textarea" id="claim-description" name="description" rows="5" required><?= h($company['description']) ?></textarea></div>
@@ -83,15 +82,17 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
 <div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Submit claim →</button></div></form>
 </section>
 <script>
-const form=document.getElementById('claimForm'),country=document.getElementById('claim-country'),city=document.getElementById('claim-city'),industry=form.elements.industry,size=form.elements.size;
+const form=document.getElementById('claimForm'),country=document.getElementById('claim-country'),city=document.getElementById('claim-city'),industry=form.elements.industry,businessType=form.elements.businessType,size=form.elements.size;
 function fillSelect(el,arr){el.innerHTML='<option value="">Select</option>'+arr.map(x=>`<option>${KFUI.esc(x)}</option>`).join('')}
-fillSelect(industry,KF.industries);fillSelect(size,KF.sizes);fillSelect(country,Object.keys(KF.countries));
+fillSelect(industry,KF.industries);fillSelect(businessType,KF.businessTypes);fillSelect(size,KF.sizes);fillSelect(country,Object.keys(KF.countries));
 
 const currentIndustry=<?= json_encode((string)$company['industry']) ?>;
+const currentBusinessType=<?= json_encode((string)($company['business_type'] ?? '')) ?>;
 const currentSize=<?= json_encode((string)($company['size'] ?? '')) ?>;
 const currentCountry=<?= json_encode((string)$company['country']) ?>;
 const currentCity=<?= json_encode((string)$company['city']) ?>;
 industry.value=currentIndustry;
+businessType.value=currentBusinessType;
 size.value=currentSize;
 country.value=currentCountry;
 fillSelect(city,KF.countries[currentCountry]||[]);
@@ -155,6 +156,8 @@ form.onsubmit=async e=>{
       company:fd.get('company'),
       website:fd.get('website'),
       industry:fd.get('industry'),
+      businessType:fd.get('businessType'),
+      industryDetail:fd.get('industryDetail'),
       size:fd.get('size'),
       founded:Number(fd.get('founded'))||null,
       country:fd.get('country'),
@@ -181,23 +184,4 @@ form.onsubmit=async e=>{
 };
 </script>
 <?php endif; ?>
-</main><footer>
-  <div class="footer-cta">
-    <div class="eyebrow">Your place on the map</div>
-    <h2>Building something<br>from Europe?</h2>
-    <p>Make it easier for fellow Keralites to find you.</p>
-    <a class="pill" href="add-company.html">Add your company <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="footer-bottom">
-    <div class="wrap footer-inner">
-      <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.png" alt="">Kerala Founders</a>
-      <div class="footer-tagline">From Kerala, across Europe.</div>
-      <nav class="footer-links">
-        <a href="founders.php">Directory</a>
-        <a href="countries.php">Explore places</a>
-        <a href="about.html">About</a>
-      </nav>
-      <div class="footer-copy">© 2026 Kerala Founders</div>
-    </div>
-  </div>
-</footer></body></html>
+</main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>

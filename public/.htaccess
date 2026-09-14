@@ -1,0 +1,39 @@
+# Block PHP's own error log (and any rotated copies) from being fetched directly —
+# it can contain internal file paths and stack traces.
+<IfModule mod_authz_core.c>
+    <FilesMatch "^error_log">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+    <FilesMatch "^error_log">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+</IfModule>
+
+# Don't let visitors browse raw directory listings (e.g. /assets/, /api/).
+Options -Indexes
+
+# Baseline security headers.
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+RewriteEngine On
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# Canonicalize the homepage to / — index.php still serves it (DirectoryIndex),
+# this only fires when the URL itself literally says /index.php.
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Old static pages moved to server-rendered PHP equivalents (query strings pass through automatically).
+RewriteRule ^index\.html$ index.php [R=301,L]
+RewriteRule ^founders\.html$ founders.php [R=301,L]
+RewriteRule ^countries\.html$ countries.php [R=301,L]
+RewriteRule ^company\.html$ company.php [R=301,L]
+RewriteRule ^about\.html$ about.php [R=301,L]
+RewriteRule ^add-company\.html$ add-company.php [R=301,L]
+RewriteRule ^privacy\.html$ privacy.php [R=301,L]

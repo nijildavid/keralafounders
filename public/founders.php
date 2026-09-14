@@ -95,15 +95,12 @@ $jsonLd = $pageRows ? [
 <meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Founders — Kerala Founders"><meta property="og:description" content="Keralite founders and companies building across the European Union."><meta property="og:url" content="<?= h($canonicalUrl) ?>">
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Founders — Kerala Founders"><meta name="twitter:description" content="Keralite founders and companies building across the European Union.">
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
-<link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.png" alt="Kerala Founders">Kerala Founders</a>
-<nav class="navlinks"><a href="founders.php">Directory</a><a href="countries.php">Explore places</a><a href="about.html">About</a></nav>
-<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
-</div></header><main id="main">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<?php include __DIR__ . '/partials/header.php'; ?>
+<main id="main">
 <section class="page-head"><div class="wrap"><div class="eyebrow">The directory</div><h1>Founders.</h1><p class="muted section-intro">Explore companies founded or co-founded by people from Kerala across the EU.</p>
 <div class="toolbar"><input id="q" class="field search" placeholder="Search founders or companies...">
-<select id="country" class="select"><option value="">All countries</option></select><select id="city" class="select"><option value="">All cities</option></select><select id="industry" class="select"><option value="">All industries</option></select><select id="size" class="select"><option value="">Company size</option></select><button id="clear" class="pill light">× Clear filters</button></div>
+<select id="country" class="select"><option value="">All countries</option></select><select id="city" class="select"><option value="">All cities</option></select><select id="industry" class="select"><option value="">All industries</option></select><select id="businessType" class="select"><option value="">All business types</option></select><select id="size" class="select"><option value="">Company size</option></select><button id="clear" class="pill light">× Clear filters</button></div>
 <div class="directory-tools"><span id="resultCount" class="muted" style="font-size:13px"><?= h($resultCountText) ?></span><div class="toggle"><button id="cardView" class="active" aria-label="Card view" title="Card view"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><button id="listView" aria-label="List view" title="List view"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button></div></div>
 </div></section><section><div class="wrap"><div id="directory" class="cards"><?php foreach ($pageRows as $c) { echo company_card_html($c); } ?></div><div id="pagination"><?= ssr_pagination_html($page, $totalPages) ?></div><div class="directory-bottom-space"></div></div></section>
 
@@ -116,6 +113,7 @@ $jsonLd = $pageRows ? [
     country: document.getElementById('country'),
     city: document.getElementById('city'),
     industry: document.getElementById('industry'),
+    businessType: document.getElementById('businessType'),
     size: document.getElementById('size'),
     sort: document.getElementById('sort'),
     directory: document.getElementById('directory'),
@@ -144,7 +142,14 @@ $jsonLd = $pageRows ? [
 
   opts(els.country, Object.keys(KF.countries), 'All countries');
   opts(els.industry, KF.industries, 'All industries');
+  opts(els.businessType, KF.businessTypes, 'All business types');
   opts(els.size, KF.sizes, 'Company size');
+
+  // Pre-select Industry from a ?industry= link (e.g. the homepage category cards).
+  const initialIndustry = new URLSearchParams(location.search).get('industry');
+  if(initialIndustry && KF.industries.includes(initialIndustry)){
+    els.industry.value = initialIndustry;
+  }
 
   function updateCities(){
     opts(els.city, KF.countries[els.country.value] || [], 'All cities');
@@ -156,13 +161,15 @@ $jsonLd = $pageRows ? [
     const country=els.country.value;
     const city=els.city.value;
     const industry=els.industry.value;
+    const businessType=els.businessType.value;
     const size=els.size.value;
 
     let rows=companies.filter(c =>
-      (!q || [c.name,...(c.founders||[]),c.industry,c.city,c.country].join(' ').toLowerCase().includes(q)) &&
+      (!q || [c.name,...(c.founders||[]),c.industry,c.industry_detail,c.city,c.country].join(' ').toLowerCase().includes(q)) &&
       (!country || c.country===country) &&
       (!city || c.city===city) &&
       (!industry || c.industry===industry) &&
+      (!businessType || c.business_type===businessType) &&
       (!size || c.size===size)
     );
 
@@ -266,9 +273,9 @@ $jsonLd = $pageRows ? [
   }
 
   els.country.addEventListener('change', ()=>{ els.city.value=''; updateCities(); onFilterChange(); });
-  [els.q,els.city,els.industry,els.size,els.sort].forEach(el=>{if(el){el.addEventListener('input',onFilterChange);el.addEventListener('change',onFilterChange);}});
+  [els.q,els.city,els.industry,els.businessType,els.size,els.sort].forEach(el=>{if(el){el.addEventListener('input',onFilterChange);el.addEventListener('change',onFilterChange);}});
   els.clear.addEventListener('click', ()=>{
-    els.q.value=''; els.country.value=''; els.city.value=''; els.industry.value=''; els.size.value='';
+    els.q.value=''; els.country.value=''; els.city.value=''; els.industry.value=''; els.businessType.value=''; els.size.value='';
     updateCities(); onFilterChange();
   });
   els.cards.addEventListener('click',()=>setView('cards'));
@@ -280,23 +287,4 @@ $jsonLd = $pageRows ? [
   setView('cards');
 })();
 </script>
-</main><footer>
-  <div class="footer-cta">
-    <div class="eyebrow">Your place on the map</div>
-    <h2>Building something<br>from Europe?</h2>
-    <p>Make it easier for fellow Keralites to find you.</p>
-    <a class="pill" href="add-company.html">Add your company <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="footer-bottom">
-    <div class="wrap footer-inner">
-      <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.png" alt="">Kerala Founders</a>
-      <div class="footer-tagline">From Kerala, across Europe.</div>
-      <nav class="footer-links">
-        <a href="founders.php">Directory</a>
-        <a href="countries.php">Explore places</a>
-        <a href="about.html">About</a>
-      </nav>
-      <div class="footer-copy">© 2026 Kerala Founders</div>
-    </div>
-  </div>
-</footer></body></html>
+</main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>

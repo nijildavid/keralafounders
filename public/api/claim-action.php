@@ -28,11 +28,13 @@ if ($id > 0 && $action === 'resolve') {
         $db->beginTransaction();
 
         $db->prepare(
-            'UPDATE companies SET name = ?, website = ?, industry = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, verified = 1 WHERE id = ?'
+            'UPDATE companies SET name = ?, website = ?, industry = ?, business_type = ?, industry_detail = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, verified = 1 WHERE id = ?'
         )->execute([
             trim((string)($proposed['company'] ?? '')),
             trim((string)($proposed['website'] ?? '')) ?: null,
             trim((string)($proposed['industry'] ?? '')),
+            trim((string)($proposed['businessType'] ?? '')),
+            trim((string)($proposed['industryDetail'] ?? '')) ?: null,
             trim((string)($proposed['size'] ?? '')) ?: null,
             !empty($proposed['founded']) ? (int)$proposed['founded'] : null,
             trim((string)($proposed['country'] ?? '')),

@@ -49,12 +49,9 @@ if ($selected !== '' && $companies) {
 <meta property="og:type" content="website"><meta property="og:site_name" content="<?= h($siteName) ?>"><meta property="og:title" content="<?= $pageTitle ?>"><meta property="og:description" content="<?= $metaDescription ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>">
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="<?= $pageTitle ?>"><meta name="twitter:description" content="<?= $metaDescription ?>">
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
-<link rel="stylesheet" href="assets/style.css"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.png" alt="Kerala Founders">Kerala Founders</a>
-<nav class="navlinks"><a href="founders.php">Directory</a><a href="countries.php">Explore places</a><a href="about.html">About</a></nav>
-<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
-</div></header><main id="main">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<?php include __DIR__ . '/partials/header.php'; ?>
+<main id="main">
 <section class="page-head"><div class="wrap">
 <div class="eyebrow">Explore by geography</div>
 <?php if ($selected !== ''): ?>
@@ -75,23 +72,4 @@ if ($selected !== '' && $companies) {
 <?php endforeach; ?>
 </div>
 <?php endif; ?>
-</div></section></main><footer>
-  <div class="footer-cta">
-    <div class="eyebrow">Your place on the map</div>
-    <h2>Building something<br>from Europe?</h2>
-    <p>Make it easier for fellow Keralites to find you.</p>
-    <a class="pill" href="add-company.html">Add your company <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="footer-bottom">
-    <div class="wrap footer-inner">
-      <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.png" alt="">Kerala Founders</a>
-      <div class="footer-tagline">From Kerala, across Europe.</div>
-      <nav class="footer-links">
-        <a href="founders.php">Directory</a>
-        <a href="countries.php">Explore places</a>
-        <a href="about.html">About</a>
-      </nav>
-      <div class="footer-copy">© 2026 Kerala Founders</div>
-    </div>
-  </div>
-</footer></body></html>
+</div></section></main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>

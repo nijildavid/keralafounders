@@ -21,13 +21,10 @@ $activeAdminPage = 'dashboard';
 ?>
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Admin — Kerala Founders</title>
-<link rel="stylesheet" href="assets/style.css"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.png" alt="Kerala Founders">Kerala Founders</a>
-<nav class="navlinks"><a href="founders.php">Directory</a><a href="countries.php">Explore places</a><a href="about.html">About</a></nav>
-<div class="navright"><a class="pill" href="add-company.html">Add your company</a></div>
-</div></header><main id="main">
+<title>Admin — Kerala Founders</title><meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<?php include __DIR__ . '/partials/header.php'; ?>
+<main id="main">
 <section class="page-head"><div class="wrap">
 <div style="display:flex;justify-content:space-between;align-items:baseline"><div><div class="eyebrow">Admin</div><h1>Dashboard.</h1></div><a class="arrow" href="admin-logout.php">Log out</a></div>
 <p class="muted">Overview of submissions, claims and the outreach/verification pipeline.</p>
@@ -54,17 +51,4 @@ $activeAdminPage = 'dashboard';
     <p class="muted" style="margin-top:6px">Correction and verification requests from business owners.</p>
   </a>
 </div>
-</div></section></main><footer>
-  <div class="footer-bottom">
-    <div class="wrap footer-inner">
-      <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.png" alt="">Kerala Founders</a>
-      <div class="footer-tagline">From Kerala, across Europe.</div>
-      <nav class="footer-links">
-        <a href="founders.php">Directory</a>
-        <a href="countries.php">Explore places</a>
-        <a href="about.html">About</a>
-      </nav>
-      <div class="footer-copy">© 2026 Kerala Founders</div>
-    </div>
-  </div>
-</footer></body></html>
+</div></section></main><?php include __DIR__ . '/partials/footer-minimal.php'; ?></body></html>

@@ -30,10 +30,10 @@ function h(?string $s): string
 ?>
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Edit <?= h($company['name']) ?> — Admin — Kerala Founders</title>
+<title>Edit <?= h($company['name']) ?> — Admin — Kerala Founders</title><meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
-<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.png" alt="Kerala Founders">Kerala Founders</a>
+<a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.svg" alt="Kerala Founders">Kerala Founders</a>
 <div class="navright"><a class="arrow" href="admin.php">← Back to admin</a></div>
 </div></header><main id="main">
 <section class="wrap form-layout"><div class="form-intro"><div class="eyebrow">Admin</div><h1>Edit company.</h1></div>
@@ -52,6 +52,8 @@ function h(?string $s): string
   <div><label class="label" for="edit-company">Company name *</label><input class="field" id="edit-company" name="company" required value="<?= h($company['name']) ?>"></div>
   <div><label class="label" for="edit-website">Website</label><input class="field" id="edit-website" name="website" value="<?= h($company['website']) ?>"></div>
   <div><label class="label" for="edit-industry">Industry *</label><select class="select" id="edit-industry" name="industry" required></select></div>
+  <div><label class="label" for="edit-business-type">Business type *</label><select class="select" id="edit-business-type" name="businessType" required></select></div>
+  <div><label class="label" for="edit-industry-detail">Specific type (optional)</label><input class="field" id="edit-industry-detail" name="industryDetail" value="<?= h((string)($company['industry_detail'] ?? '')) ?>" placeholder="e.g. Ayurveda retail, Import/export"></div>
   <div><label class="label" for="edit-size">Company size</label><select class="select" id="edit-size" name="size"></select></div>
   <div><label class="label" for="edit-founded">Founded year</label><input class="field" id="edit-founded" name="founded" type="number" min="1800" max="2026" value="<?= h((string)$company['founded_year']) ?>"></div>
   <div style="grid-column:1/-1"><label class="label" for="edit-description">Company description *</label><textarea class="textarea" id="edit-description" name="description" rows="5" required><?= h($company['description']) ?></textarea></div>
@@ -68,13 +70,14 @@ function h(?string $s): string
 <div class="form-section"><h2>→ Branches</h2><div id="branchWrap" class="chips" style="margin-top:15px"></div></div>
 <div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Save changes →</button></div></form></section>
 <script>
-const existingCompany = <?= json_encode(['country' => $company['country'], 'city' => $company['city'], 'industry' => $company['industry'], 'size' => $company['size']]) ?>;
+const existingCompany = <?= json_encode(['country' => $company['country'], 'city' => $company['city'], 'industry' => $company['industry'], 'businessType' => $company['business_type'], 'size' => $company['size']]) ?>;
 const existingFounders = <?= json_encode($founders) ?>;
 const existingBranches = <?= json_encode(array_values($branches)) ?>;
 
-const form=document.getElementById('editForm'),country=document.getElementById('country'),city=document.getElementById('city'),industry=form.elements.industry,size=form.elements.size;
+const form=document.getElementById('editForm'),country=document.getElementById('country'),city=document.getElementById('city'),industry=form.elements.industry,businessType=form.elements.businessType,size=form.elements.size;
 function fillSelect(el,arr,selected){el.innerHTML='<option value="">Select</option>'+arr.map(x=>`<option ${x===selected?'selected':''}>${KFUI.esc(x)}</option>`).join('')}
 fillSelect(industry,KF.industries,existingCompany.industry);
+fillSelect(businessType,KF.businessTypes,existingCompany.businessType);
 fillSelect(size,KF.sizes,existingCompany.size);
 fillSelect(country,Object.keys(KF.countries),existingCompany.country);
 fillSelect(city,KF.countries[existingCompany.country]||[],existingCompany.city);
@@ -113,7 +116,7 @@ form.onsubmit=async e=>{
     csrfToken: <?= json_encode($csrfToken) ?>,
     status: fd.get('status'),
     verified: fd.get('verified') === '1',
-    company:fd.get('company'),website:fd.get('website'),industry:fd.get('industry'),size:fd.get('size'),
+    company:fd.get('company'),website:fd.get('website'),industry:fd.get('industry'),businessType:fd.get('businessType'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),
     founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),
     founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})).filter(f=>f.name.trim()!==''),
     branches

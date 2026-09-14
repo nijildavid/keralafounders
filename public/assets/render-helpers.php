@@ -45,6 +45,7 @@ function company_card_html(array $c): string
         . '<div class="logo">' . h(initials($c['name'])) . '</div>'
         . '<div class="company-main"><h3>' . h($c['name']) . '</h3><div class="meta">' . $founders . '</div></div>'
         . '<div class="chips"><span class="chip">' . h($c['country']) . '</span><span class="chip">' . h($c['industry']) . '</span>'
+        . (!empty($c['business_type']) ? '<span class="chip">' . h($c['business_type']) . '</span>' : '')
         . verified_chip_html((bool)$c['verified']) . '</div>'
         . '</a>';
 }
@@ -91,6 +92,8 @@ function companies_with_founders(PDO $db, array $rows): array
             'country' => $row['country'],
             'city' => $row['city'],
             'industry' => $row['industry'],
+            'business_type' => $row['business_type'],
+            'industry_detail' => $row['industry_detail'],
             'size' => $row['size'],
             'verified' => (bool)$row['verified'],
         ];

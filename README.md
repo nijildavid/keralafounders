@@ -1,13 +1,27 @@
 # Kerala Founders
 
-PHP + MySQL directory of Kerala-connected founders and businesses across the EU. Live at https://keralafounders.eu/
+PHP + MySQL directory of Kerala-origin founders and companies building across
+the EU. Live at https://keralafounders.eu/
 
 ## Structure
 
-- `public/` — the website. Upload the *contents* of this folder into the `keralafounders.eu` document root on the server (not the `public/` folder itself).
-- `config/` — `db.php` and `auth.php` hold real credentials and are gitignored (never commit them). Copy `db.example.php` → `db.php` and `auth.example.php` → `auth.php`, fill in real values, and upload `config/` as a **sibling folder outside** the web-facing document root — never inside it, since it holds the DB password and admin password hash.
-- `schema.sql` — run once (via phpMyAdmin or `mysql` CLI) to create the database tables.
-- `import/` — one-off SQL migrations (each additive, safe to re-run against a fresh DB) documenting how the directory's data was built up batch by batch, plus two small local-only CLI tools (`check-duplicates.php`, `generate-contact-update.php`) — never deployed to the server.
+- `public/` — the website (this is the document root — everything a browser
+  can reach lives here).
+- `public/partials/` — shared header/footer, included by every page via PHP
+  `include`. Change the nav or footer once here instead of editing every page.
+- `config/` — `db.php` and `auth.php` hold real credentials and are
+  gitignored. Copy `db.example.php` → `db.php` and `auth.example.php` →
+  `auth.php`, fill in real values, and keep `config/` as a sibling folder
+  *outside* the web-facing document root (never inside `public_html` or the
+  domain's docroot) — `public/*.php` reaches it via
+  `require __DIR__ . '/../config/db.php'`.
+- `schema.sql` — the full current schema (companies/founders/branches +
+  taxonomy columns). Run once via phpMyAdmin or the `mysql` CLI on a fresh
+  database.
+- `import/` and the top-level `migration-*.sql` files — historical one-off
+  migrations, kept as a changelog. Not meant to be re-run blindly against a
+  database already provisioned from `schema.sql`.
+- `TAXONOMY.md` — the industry/business-type classification reference.
 
 ## Local development
 
@@ -15,27 +29,31 @@ PHP + MySQL directory of Kerala-connected founders and businesses across the EU.
 php -S 127.0.0.1:8000 -t public
 ```
 
-Requires a local MySQL/MariaDB instance, with `config/db.php` and `config/auth.php` set up as above (`config/` sits next to `public/`, not inside it — matches production).
+Requires a local MySQL/MariaDB instance and `config/db.php` pointed at it. See
+also the XAMPP local-preview package delivered separately, which sets this up
+end-to-end with a data export.
+
+## Deploying to production
+
+This repo is meant to be connected via cPanel's **Git Version Control**
+feature (Namecheap/most cPanel hosts have it under the "Files" section):
+
+1. In cPanel, go to Git Version Control → Create, and paste this repo's
+   clone URL. Set the repository path to something *outside* your document
+   root, e.g. `repositories/keralafounders` (not `public_html` directly).
+2. After the initial clone, click "Manage" on the repository, then
+   **"Deploy HEAD Commit"**. This runs `.cpanel.yml`, which copies
+   `public/*` into the live document root and `config/reference.php` into
+   the private config folder — see `.cpanel.yml` for exactly what it does
+   and which paths to double-check for your account.
+3. For every future change: commit and push to this repo, then click
+   "Deploy HEAD Commit" again in cPanel. No manual file uploads.
+
+`config/db.php` and `config/auth.php` are never touched by deployment — they
+stay as whatever's already on the server from the original manual setup.
 
 ## Admin
 
-- `/admin.php` — all submissions (approve, edit, delete, mark verified/emailed)
-- `/admin-dashboard.php` — overview stats, landing page after login
-- `/admin-claims.php` — listing claim/correction requests from business owners, with one-click apply
-- Password-protected (`config/auth.php`), not linked from public navigation
-- Includes CSRF protection on all state-changing actions and IP-based login rate limiting (5 attempts / 5 min lockout)
-
-## Public flow
-
-- `add-company.html` — self-service company submission (goes to "pending" for review)
-- `claim.php?id=<slug>` — existing listings can be claimed/corrected by their owner; submissions show as a field-by-field diff in the admin claims queue
-- Deploying to production is currently manual (no SSH access on the host) — upload changed files individually via cPanel File Manager. Zip-then-extract uploads have previously mangled hyphenated filenames on this host, so prefer individual file uploads for anything under `public/`.
-
-## Security notes
-
-- `config/` must never be reachable via a URL — verify it sits outside the domain's document root
-- PHP's `error_log` is blocked from direct HTTP access via `.htaccess` — if you ever see it appear in a `Require all denied` warning in your host's logs, that's expected and correct
-- The admin password hash lives only in `config/auth.php`; regenerate it with:
-  ```
-  php -r "echo password_hash('your-new-password', PASSWORD_DEFAULT), PHP_EOL;"
-  ```
+`/admin.php` — password-protected (see `config/auth.php`), not linked from
+public navigation. Lists pending company submissions with approve/delete
+actions, plus `/admin-claims.php` for correction/claim requests.

@@ -13,6 +13,8 @@ if (!is_array($input)) {
 
 $name = trim((string)($input['company'] ?? ''));
 $industry = trim((string)($input['industry'] ?? ''));
+$businessType = trim((string)($input['businessType'] ?? ''));
+$industryDetail = trim((string)($input['industryDetail'] ?? ''));
 $country = trim((string)($input['country'] ?? ''));
 $city = trim((string)($input['city'] ?? ''));
 $location = trim((string)($input['location'] ?? ''));
@@ -20,7 +22,7 @@ $description = trim((string)($input['description'] ?? ''));
 $founders = is_array($input['founders'] ?? null) ? $input['founders'] : [];
 $founders = array_values(array_filter($founders, fn($f) => trim((string)($f['name'] ?? '')) !== ''));
 
-if ($name === '' || $industry === '' || $country === '' || $city === '' || $location === '' || $description === '' || !$founders) {
+if ($name === '' || $industry === '' || $businessType === '' || $country === '' || $city === '' || $location === '' || $description === '' || !$founders) {
     http_response_code(422);
     echo json_encode(['error' => 'Please fill in all required fields.']);
     exit;
@@ -43,14 +45,16 @@ for ($suffix = 2; ; $suffix++) {
 $db->beginTransaction();
 
 $stmt = $db->prepare(
-    'INSERT INTO companies (slug, name, website, industry, size, founded_year, country, city, location, description, status)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "pending")'
+    'INSERT INTO companies (slug, name, website, industry, business_type, industry_detail, size, founded_year, country, city, location, description, status)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "pending")'
 );
 $stmt->execute([
     $slug,
     $name,
     trim((string)($input['website'] ?? '')) ?: null,
     $industry,
+    $businessType,
+    $industryDetail ?: null,
     trim((string)($input['size'] ?? '')) ?: null,
     !empty($input['founded']) ? (int)$input['founded'] : null,
     $country,

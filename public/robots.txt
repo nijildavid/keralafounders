@@ -1,5 +1,7 @@
 User-agent: *
 Disallow: /admin.php
+Disallow: /admin-dashboard.php
+Disallow: /admin-claims.php
 Disallow: /admin-edit.php
 Disallow: /admin-login.php
 Disallow: /admin-logout.php
