@@ -16,10 +16,18 @@
 #   - deliberately leaves config/db.php and config/auth.php alone — those hold
 #     real credentials, are never committed to this repo, and must already
 #     exist on the server from your original manual setup.
+#
+# assets/logo.svg is intentionally excluded from the copy: the committed
+# version in git is stale, and the correct logo is maintained by hand
+# directly on the server via cPanel File Manager. See CLAUDE.md. Every
+# deploy backs up whatever logo file is currently live and restores it
+# after the copy, so this file is never overwritten no matter what's in git.
 ---
 deployment:
   tasks:
     - /bin/mkdir -p /home/nijiwdhp/keralafounders.eu/
+    - /bin/cp /home/nijiwdhp/keralafounders.eu/assets/logo.svg /home/nijiwdhp/logo.svg.deploy-backup 2>/dev/null; /bin/true
     - /bin/cp -R public/. /home/nijiwdhp/keralafounders.eu/
+    - /bin/cp /home/nijiwdhp/logo.svg.deploy-backup /home/nijiwdhp/keralafounders.eu/assets/logo.svg 2>/dev/null; /bin/true
     - /bin/mkdir -p /home/nijiwdhp/config/
     - /bin/cp config/reference.php /home/nijiwdhp/config/

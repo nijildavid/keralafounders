@@ -34,10 +34,20 @@ jobs:
             set -euo pipefail
             user="$1"
             repo_root="$2"
+            docroot="/home/${user}/keralafounders.eu"
             cd "$repo_root"
             git pull origin main
-            /bin/mkdir -p "/home/${user}/keralafounders.eu/"
-            /bin/cp -R public/. "/home/${user}/keralafounders.eu/"
+            /bin/mkdir -p "$docroot"
+            # assets/logo.svg is maintained by hand directly on the server (see
+            # CLAUDE.md) — the committed copy in git is stale. Preserve whatever
+            # logo is currently live across every deploy, no matter what's in git.
+            logo_backup="$(mktemp)"
+            /bin/cp "$docroot/assets/logo.svg" "$logo_backup" 2>/dev/null || true
+            /bin/cp -R public/. "$docroot/"
+            if [ -s "$logo_backup" ]; then
+              /bin/cp "$logo_backup" "$docroot/assets/logo.svg"
+            fi
+            rm -f "$logo_backup"
             /bin/mkdir -p "/home/${user}/config/"
             /bin/cp config/reference.php "/home/${user}/config/"
           REMOTE_SCRIPT
