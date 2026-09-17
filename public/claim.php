@@ -79,6 +79,11 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
 
 <div style="margin-top:15px"><label class="label" for="claim-message">Anything else you'd like to add?</label><textarea class="textarea" id="claim-message" name="message" rows="3" placeholder="Optional — anything not covered above"></textarea></div>
 
+<div class="form-section" style="margin-top:15px;padding-top:15px">
+<label class="checkrow"><input type="checkbox" name="authorised" required> I confirm that I am authorised to represent this business or organisation. *</label>
+<label class="checkrow" style="margin-top:10px"><input type="checkbox" name="agree" required> I confirm the information submitted is accurate to the best of my knowledge and that I have read and accept the <a href="terms.php" target="_blank" rel="noopener">Terms</a> and <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</label>
+</div>
+
 <div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Submit claim →</button></div></form>
 </section>
 <script>

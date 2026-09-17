@@ -30,6 +30,7 @@
   <div class="email-switch-note">Keep this off to keep the email hidden.</div>
 </div></div></div><button type="button" id="addFounder" class="pill light" style="margin-top:14px">+ Add another founder</button></div>
 <div class="form-section"><h2>→ Branches</h2><label class="checkrow"><input id="hasBranches" type="checkbox"> Does the company have branches in other EU countries?</label><div id="branchWrap" class="chips" style="margin-top:15px;display:none"></div></div>
+<div class="form-section"><label class="checkrow"><input type="checkbox" name="agree" required> I confirm the information submitted is accurate to the best of my knowledge and that I have read and accept the <a href="terms.php" target="_blank" rel="noopener">Terms</a> and <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</label></div>
 <div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Submit for review →</button></div></form></section>
 <script>
 const form=document.getElementById('companyForm'),country=document.getElementById('country'),city=document.getElementById('city'),industry=form.elements.industry,businessType=form.elements.businessType,size=form.elements.size;
