@@ -8,41 +8,36 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+      CPANEL_USERNAME: ${{ secrets.CPANEL_USERNAME }}
+      CPANEL_REPO_ROOT: ${{ secrets.CPANEL_REPO_ROOT }}
+      CPANEL_SSH_PORT: 21098
     steps:
-      - name: Pull latest commit into the cPanel Git repo
-        env:
-          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
-          CPANEL_USERNAME: ${{ secrets.CPANEL_USERNAME }}
-          CPANEL_API_TOKEN: ${{ secrets.CPANEL_API_TOKEN }}
-          CPANEL_REPO_ROOT: ${{ secrets.CPANEL_REPO_ROOT }}
+      # cPanel's UAPI Git module (Git::update / Git::deploy) isn't installed on
+      # this host (confirmed: "Can't locate Cpanel/API/Git.pm"), so this
+      # replicates .cpanel.yml's deployment tasks directly over SSH instead of
+      # relying on the "Update from Remote" / "Deploy HEAD Commit" API calls.
+      - name: Add cPanel host key
         run: |
-          response=$(curl -sS -w '\n%{http_code}' \
-            "https://${CPANEL_HOST}:2083/execute/Git/update" \
-            -H "Authorization: cpanel ${CPANEL_USERNAME}:${CPANEL_API_TOKEN}" \
-            --data-urlencode "repository_root=${CPANEL_REPO_ROOT}")
-          http_code=$(tail -n1 <<<"$response")
-          body=$(sed '$d' <<<"$response")
-          echo "$body"
-          if [ "$http_code" != "200" ] || [ "$(jq -r '.status' <<<"$body")" != "1" ]; then
-            echo "::error::cPanel Git/update failed (HTTP $http_code)"
-            exit 1
-          fi
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "$CPANEL_SSH_PORT" -H "$CPANEL_HOST" >> ~/.ssh/known_hosts
 
-      - name: Deploy HEAD commit (runs .cpanel.yml)
+      - name: Pull latest commit and deploy over SSH
         env:
-          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
-          CPANEL_USERNAME: ${{ secrets.CPANEL_USERNAME }}
-          CPANEL_API_TOKEN: ${{ secrets.CPANEL_API_TOKEN }}
-          CPANEL_REPO_ROOT: ${{ secrets.CPANEL_REPO_ROOT }}
+          CPANEL_SSH_KEY: ${{ secrets.CPANEL_SSH_KEY }}
         run: |
-          response=$(curl -sS -w '\n%{http_code}' \
-            "https://${CPANEL_HOST}:2083/execute/Git/deploy" \
-            -H "Authorization: cpanel ${CPANEL_USERNAME}:${CPANEL_API_TOKEN}" \
-            --data-urlencode "repository_root=${CPANEL_REPO_ROOT}")
-          http_code=$(tail -n1 <<<"$response")
-          body=$(sed '$d' <<<"$response")
-          echo "$body"
-          if [ "$http_code" != "200" ] || [ "$(jq -r '.status' <<<"$body")" != "1" ]; then
-            echo "::error::cPanel Git/deploy failed (HTTP $http_code)"
-            exit 1
-          fi
+          install -m 600 /dev/null ~/.ssh/deploy_key
+          printf '%s\n' "$CPANEL_SSH_KEY" > ~/.ssh/deploy_key
+          ssh -p "$CPANEL_SSH_PORT" -i ~/.ssh/deploy_key -o BatchMode=yes \
+            "${CPANEL_USERNAME}@${CPANEL_HOST}" bash -s -- "$CPANEL_USERNAME" "$CPANEL_REPO_ROOT" <<'REMOTE_SCRIPT'
+            set -euo pipefail
+            user="$1"
+            repo_root="$2"
+            cd "$repo_root"
+            git pull origin main
+            /bin/mkdir -p "/home/${user}/keralafounders.eu/"
+            /bin/cp -R public/. "/home/${user}/keralafounders.eu/"
+            /bin/mkdir -p "/home/${user}/config/"
+            /bin/cp config/reference.php "/home/${user}/config/"
+          REMOTE_SCRIPT
