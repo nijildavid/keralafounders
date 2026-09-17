@@ -90,6 +90,32 @@ $reports = [
         ";
         return $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
     },
+
+    // Companies with no contact_email and no founder email at all — the
+    // enrichment worklist. Rows with a website already on file sort first,
+    // since those just need someone to check the site's contact/Impressum
+    // page; the rest need discovery (LinkedIn, business registry, directory,
+    // community source) before an email can even be looked for.
+    'missing_email' => function (PDO $db): array {
+        $sql = "
+            SELECT
+                c.name AS company_name,
+                c.slug AS slug,
+                c.website AS website,
+                c.city AS city,
+                c.country AS country,
+                c.industry AS industry,
+                c.status AS status
+            FROM companies c
+            WHERE (c.contact_email IS NULL OR TRIM(c.contact_email) = '')
+              AND NOT EXISTS (
+                  SELECT 1 FROM founders f
+                  WHERE f.company_id = c.id AND f.email IS NOT NULL AND TRIM(f.email) <> ''
+              )
+            ORDER BY (c.website IS NULL OR TRIM(c.website) = ''), c.name
+        ";
+        return $db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+    },
 ];
 
 $reportName = (string)($_GET['report'] ?? '');
