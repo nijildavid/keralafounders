@@ -1,0 +1,48 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull latest commit into the cPanel Git repo
+        env:
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+          CPANEL_USERNAME: ${{ secrets.CPANEL_USERNAME }}
+          CPANEL_API_TOKEN: ${{ secrets.CPANEL_API_TOKEN }}
+          CPANEL_REPO_ROOT: ${{ secrets.CPANEL_REPO_ROOT }}
+        run: |
+          response=$(curl -sS -w '\n%{http_code}' \
+            "https://${CPANEL_HOST}:2083/execute/Git/update" \
+            -H "Authorization: cpanel ${CPANEL_USERNAME}:${CPANEL_API_TOKEN}" \
+            --data-urlencode "repository_root=${CPANEL_REPO_ROOT}")
+          http_code=$(tail -n1 <<<"$response")
+          body=$(sed '$d' <<<"$response")
+          echo "$body"
+          if [ "$http_code" != "200" ] || [ "$(jq -r '.status' <<<"$body")" != "1" ]; then
+            echo "::error::cPanel Git/update failed (HTTP $http_code)"
+            exit 1
+          fi
+
+      - name: Deploy HEAD commit (runs .cpanel.yml)
+        env:
+          CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+          CPANEL_USERNAME: ${{ secrets.CPANEL_USERNAME }}
+          CPANEL_API_TOKEN: ${{ secrets.CPANEL_API_TOKEN }}
+          CPANEL_REPO_ROOT: ${{ secrets.CPANEL_REPO_ROOT }}
+        run: |
+          response=$(curl -sS -w '\n%{http_code}' \
+            "https://${CPANEL_HOST}:2083/execute/Git/deploy" \
+            -H "Authorization: cpanel ${CPANEL_USERNAME}:${CPANEL_API_TOKEN}" \
+            --data-urlencode "repository_root=${CPANEL_REPO_ROOT}")
+          http_code=$(tail -n1 <<<"$response")
+          body=$(sed '$d' <<<"$response")
+          echo "$body"
+          if [ "$http_code" != "200" ] || [ "$(jq -r '.status' <<<"$body")" != "1" ]; then
+            echo "::error::cPanel Git/deploy failed (HTTP $http_code)"
+            exit 1
+          fi
