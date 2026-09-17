@@ -2,6 +2,7 @@
 # names on the server (outside the web root) and fill in real values there.
 config/db.php
 config/auth.php
+config/report-auth.php
 
 # Runtime state written by the app itself, not source.
 config/login-attempts.json
