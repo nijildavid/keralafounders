@@ -12,5 +12,11 @@
       </nav>
       <div class="footer-copy">© 2026 Kerala Founders</div>
     </div>
+    <div class="wrap footer-legal">
+      <a href="privacy.php">Privacy</a>
+      <a href="terms.php">Terms</a>
+      <a href="listing-policy.php">Listing Policy</a>
+      <a href="mailto:hello@keralafounders.eu">Request a correction/removal</a>
+    </div>
   </div>
 </footer>
