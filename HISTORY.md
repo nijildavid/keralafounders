@@ -89,6 +89,33 @@ auto-provisions MariaDB, loads `schema.sql`, generates local-only
 `config/db.php`/`config/auth.php`, and starts the PHP dev server on every
 new session. Validated end to end, merged to `main`.
 
+## 2026-09-18 – 2026-09-19 — Real Privacy/Terms/Listing pages, reporting API, deploy overhaul
+
+(Work from other Claude sessions on this repo, merged in after the fact —
+see the reminder in `OPEN_ITEMS.md` about `main` moving between sessions.)
+
+Added real Privacy Policy, Terms, and Listing Policy pages (previously
+placeholders). Added a read-only reporting API (`public/api/report.php`,
+its own `config/report-auth.php`) with a `missing_email` report, plus an
+email-enrichment migration from a separate research pass. Added a proper
+favicon/social-share image set built from the real logo, and fixed
+duplicate `<title>`s on directory pages.
+
+Deploy pipeline overhaul: discovered cPanel's own "Deploy HEAD Commit"
+button doesn't actually work on this host (`Can't locate
+Cpanel/API/Git.pm` — the Git UAPI module isn't installed), so a GitHub
+Actions workflow (`.github/workflows/deploy-cpanel.yml`) was added to
+auto-deploy over SSH on every push to `main`, replacing the manual
+cPanel-click step. The logo problem got a real infrastructure-level fix
+at the same time: every deploy (both `.cpanel.yml` and the Actions
+workflow) now backs up whatever `logo.svg` is currently live on the
+server, copies `public/*` over, then restores that backup — so the real
+logo survives every deploy no matter what's committed to git. A repo
+`CLAUDE.md` documenting this, plus a standing instruction to explain
+decisions in plain, non-engineer terms, was added directly by the owner
+working with another session — merged with this session's own
+`CLAUDE.md`/`HISTORY.md`/`OPEN_ITEMS.md` effort on 2026-09-19.
+
 ## Open threads
 
 See `OPEN_ITEMS.md`.

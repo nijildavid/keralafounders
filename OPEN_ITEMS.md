@@ -7,11 +7,12 @@ new ones come up, don't let it go stale.
 ## Needs a live-site check
 
 - **Compact-nav alignment fix** — confirmed committed on `main`
-  (`c241773`). Live-deployment status (cPanel "Update from Remote" →
-  "Deploy HEAD Commit" run, hard-refresh check) hasn't been independently
-  verified from a sandbox — network egress to `keralafounders.eu` is
-  blocked from Claude Code on the web. Spot-check on the live site when
-  convenient.
+  (`c241773`), and since GitHub Actions now auto-deploys on every push to
+  `main` (added later, see `HISTORY.md`), it's very likely already live —
+  any Actions run after it landed would have deployed it along with
+  everything else. Still not independently confirmed on the live site —
+  network egress to `keralafounders.eu` is blocked from Claude Code on the
+  web. Spot-check when convenient, but this is low-risk now.
 
 ## Resolved (kept here briefly so it isn't re-litigated)
 
@@ -41,7 +42,14 @@ new ones come up, don't let it go stale.
 ## Reminders
 
 - Personal project, not work for any employer.
-- No SSH/CLI on the production host — cPanel File Manager + cPanel Git
-  Version Control's web UI only.
+- No SSH/CLI on the production host from *your* side — cPanel File Manager
+  is still the only hands-on access. Deploys themselves now go through
+  GitHub Actions over SSH automatically on push to `main` — see
+  `CLAUDE.md`'s Deployment pipeline section, this changed from the earlier
+  manual cPanel-click flow.
 - Follow `CLAUDE.md`'s delivery convention: only the file(s) that changed,
-  never touch `logo.svg` unless asked.
+  never touch `logo.svg` unless asked (now also enforced at the deploy
+  level via backup/restore, but keep following it anyway).
+- Other Claude sessions work on this same repo — `main` can move between
+  sessions. Always `git fetch origin main` and diff before assuming your
+  branch is still ahead/current.
