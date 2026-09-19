@@ -78,7 +78,7 @@ button{cursor:pointer}
 .hero-stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:40px}
 .hero-stat strong{display:block;font-size:29px}
 .hero-stat span{display:block;margin-top:4px;font-size:12px;color:var(--muted)}
-.hero-visual{position:absolute;top:0;right:0;bottom:28px;width:46%;background:url('keralafounders_bg.png') center right/cover no-repeat}
+.hero-visual{position:absolute;top:0;right:0;bottom:28px;width:46%;background:url('keralafounders_bg.webp') center right/cover no-repeat}
 .orbit{height:390px;position:relative}
 .orbit .ring{position:absolute;border:1px solid #d6d3d1;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
 .ring.r1{width:210px;height:210px}.ring.r2{width:300px;height:300px}.ring.r3{width:370px;height:370px}
