@@ -7,6 +7,26 @@ function h(?string $s): string
     return htmlspecialchars($s ?? '', ENT_QUOTES);
 }
 
+/**
+ * $trail is an ordered list of ['name' => ..., 'url' => absolute URL], from
+ * Home down to the current page. Renders a schema.org BreadcrumbList so
+ * Google can show the breadcrumb path (Home > Countries > Germany, etc.)
+ * under a search result instead of just the page title.
+ */
+function breadcrumb_json_ld(array $trail): array
+{
+    return [
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => array_map(fn($item, $i) => [
+            '@type' => 'ListItem',
+            'position' => $i + 1,
+            'name' => $item['name'],
+            'item' => $item['url'],
+        ], $trail, array_keys($trail)),
+    ];
+}
+
 function truncate_meta(string $s, int $len = 160): string
 {
     $s = trim($s);

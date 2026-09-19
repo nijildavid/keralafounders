@@ -36,8 +36,6 @@ echo "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
 
 echo url("{$baseUrl}/", null, 'daily');
 echo url("{$baseUrl}/founders.php", null, 'daily');
-echo url("{$baseUrl}/stories.php", null, 'weekly');
-echo url("{$baseUrl}/guidance.php", null, 'weekly');
 echo url("{$baseUrl}/countries.php", null, 'weekly');
 echo url("{$baseUrl}/industries.php", null, 'weekly');
 echo url("{$baseUrl}/about.php", null, 'monthly');

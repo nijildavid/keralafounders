@@ -41,6 +41,15 @@ if ($selected !== '' && $companies) {
         ], $companies, array_keys($companies)),
     ];
 }
+
+$breadcrumbTrail = [
+    ['name' => 'Home', 'url' => 'https://keralafounders.eu/'],
+    ['name' => 'Industries', 'url' => 'https://keralafounders.eu/industries.php'],
+];
+if ($selected !== '') {
+    $breadcrumbTrail[] = ['name' => $selected, 'url' => $canonicalUrl];
+}
+$breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
@@ -49,6 +58,7 @@ if ($selected !== '' && $companies) {
 <meta property="og:type" content="website"><meta property="og:site_name" content="<?= h($siteName) ?>"><meta property="og:title" content="<?= $pageTitle ?>"><meta property="og:description" content="<?= $metaDescription ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?= $pageTitle ?>"><meta name="twitter:description" content="<?= $metaDescription ?>"><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
+<script type="application/ld+json"><?= json_encode($breadcrumbJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
