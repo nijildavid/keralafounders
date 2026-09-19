@@ -16,6 +16,20 @@ new ones come up, don't let it go stale.
 
 ## Resolved (kept here briefly so it isn't re-litigated)
 
+- **Footer redesign (SEO-friendly multi-column layout)** — implemented,
+  `keralafounders#12` (draft, not yet merged/deployed). New Explore /
+  Countries / For Businesses / Contact columns; Countries list is now live
+  per-country counts + flags (queried directly, not zero-filled, since
+  `companies.country` isn't constrained to the static country list); added
+  real `business-types.php` and `cities.php` pages to back the new Explore
+  links (Cities deliberately doesn't zero-fill — would've been ~140 mostly
+  empty cards); `sitemap.php` extended accordingly. Scope was narrowed from
+  the original plan doc during review: dropped a people-centric "Founders"
+  page and an "Organisations" page (business type currently has 0
+  companies) rather than ship dead/empty pages; Disclaimer in the bottom
+  bar links to the existing Listing Policy accuracy/removal section
+  (new `#accuracy` anchor) instead of a new page. `footer-minimal.php`
+  (admin-only) untouched.
 - **"Homepage polish round"** (bigger logo, remove mint hero fallback,
   remove "About" from top nav, hero-visual bottom-spacing fix, nav-card
   restructure, pill `white-space:nowrap`, nav-card description
