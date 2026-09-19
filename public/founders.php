@@ -149,7 +149,7 @@ $jsonLd = $pageRows ? [
   opts(els.businessType, KF.businessTypes, 'All business types');
   opts(els.size, KF.sizes, 'Company size');
 
-  // Pre-select Industry from a ?industry= link (e.g. the homepage category cards).
+  // Pre-select Industry from a ?industry= link (older bookmarks/shares still using this page).
   const initialIndustry = new URLSearchParams(location.search).get('industry');
   if(initialIndustry && KF.industries.includes(initialIndustry)){
     els.industry.value = initialIndustry;

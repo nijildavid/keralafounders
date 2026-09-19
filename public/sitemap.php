@@ -7,13 +7,17 @@ $baseUrl = 'https://keralafounders.eu';
 $db = get_db();
 
 $companies = $db->query(
-    "SELECT slug, country, created_at FROM companies WHERE status = 'approved' ORDER BY id"
+    "SELECT slug, country, industry, created_at FROM companies WHERE status = 'approved' ORDER BY id"
 )->fetchAll();
 
 $countries = [];
+$industries = [];
 foreach ($companies as $c) {
     if ($c['country'] !== '') {
         $countries[$c['country']] = true;
+    }
+    if ($c['industry'] !== '') {
+        $industries[$c['industry']] = true;
     }
 }
 
@@ -35,12 +39,17 @@ echo url("{$baseUrl}/founders.php", null, 'daily');
 echo url("{$baseUrl}/stories.php", null, 'weekly');
 echo url("{$baseUrl}/guidance.php", null, 'weekly');
 echo url("{$baseUrl}/countries.php", null, 'weekly');
+echo url("{$baseUrl}/industries.php", null, 'weekly');
 echo url("{$baseUrl}/about.php", null, 'monthly');
 echo url("{$baseUrl}/add-company.php", null, 'monthly');
 echo url("{$baseUrl}/privacy.php", null, 'yearly');
 
 foreach (array_keys($countries) as $country) {
     echo url("{$baseUrl}/countries.php?country=" . rawurlencode($country));
+}
+
+foreach (array_keys($industries) as $industry) {
+    echo url("{$baseUrl}/industries.php?industry=" . rawurlencode($industry));
 }
 
 foreach ($companies as $c) {

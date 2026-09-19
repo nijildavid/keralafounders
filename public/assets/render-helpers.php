@@ -65,6 +65,13 @@ function fetch_approved_companies(PDO $db, ?string $country = null): array
     return companies_with_founders($db, $stmt->fetchAll());
 }
 
+function fetch_approved_companies_by_industry(PDO $db, string $industry): array
+{
+    $stmt = $db->prepare("SELECT * FROM companies WHERE status = 'approved' AND industry = ? ORDER BY name");
+    $stmt->execute([$industry]);
+    return companies_with_founders($db, $stmt->fetchAll());
+}
+
 /**
  * Most-recently-added approved companies, matching data.php's default order.
  * Batch imports share one created_at per batch, so id DESC breaks ties deterministically
