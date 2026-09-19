@@ -14,6 +14,7 @@
         <span class="footer-link-disabled" aria-disabled="true">Stories</span>
         <span class="footer-link-disabled" aria-disabled="true">Guidance</span>
         <a href="countries.php">Explore places</a>
+        <a href="industries.php">Explore industries</a>
         <a href="about.php">About</a>
       </nav>
       <div class="footer-copy">© 2026 Kerala Founders</div>

@@ -91,6 +91,11 @@ $jsonLd = $pageRows ? [
         'name' => $c['name'],
     ], $pageRows, array_keys($pageRows)),
 ] : null;
+
+$breadcrumbJsonLd = breadcrumb_json_ld([
+    ['name' => 'Home', 'url' => 'https://keralafounders.eu/'],
+    ['name' => 'Founders', 'url' => 'https://keralafounders.eu/founders.php'],
+]);
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
@@ -99,6 +104,7 @@ $jsonLd = $pageRows ? [
 <meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="<?= h($pageTitle) ?>"><meta property="og:description" content="<?= h($metaDescription) ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?= h($pageTitle) ?>"><meta name="twitter:description" content="<?= h($metaDescription) ?>"><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
+<script type="application/ld+json"><?= json_encode($breadcrumbJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
@@ -149,7 +155,7 @@ $jsonLd = $pageRows ? [
   opts(els.businessType, KF.businessTypes, 'All business types');
   opts(els.size, KF.sizes, 'Company size');
 
-  // Pre-select Industry from a ?industry= link (e.g. the homepage category cards).
+  // Pre-select Industry from a ?industry= link (older bookmarks/shares still using this page).
   const initialIndustry = new URLSearchParams(location.search).get('industry');
   if(initialIndustry && KF.industries.includes(initialIndustry)){
     els.industry.value = initialIndustry;

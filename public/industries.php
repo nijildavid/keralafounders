@@ -4,27 +4,27 @@ require __DIR__ . '/../config/reference.php';
 require __DIR__ . '/assets/render-helpers.php';
 $db = get_db();
 
-$selected = isset($_GET['country']) ? (string)$_GET['country'] : '';
+$selected = isset($_GET['industry']) ? (string)$_GET['industry'] : '';
 
 $siteName = 'Kerala Founders';
 if ($selected !== '') {
-    $pageTitle = h('Keralite founders in ' . $selected) . ' — ' . $siteName;
-    $metaDescription = h('Discover Keralite-founded companies building in ' . $selected . '.');
-    $canonicalUrl = 'https://keralafounders.eu/countries.php?country=' . rawurlencode($selected);
+    $pageTitle = h($selected . ' founders') . ' — ' . $siteName;
+    $metaDescription = h('Discover Keralite-founded ' . $selected . ' companies building across the European Union.');
+    $canonicalUrl = 'https://keralafounders.eu/industries.php?industry=' . rawurlencode($selected);
 } else {
-    $pageTitle = 'Explore places — ' . $siteName;
-    $metaDescription = 'Explore the Kerala founder network country by country across the European Union.';
-    $canonicalUrl = 'https://keralafounders.eu/countries.php';
+    $pageTitle = 'Explore by industry — ' . $siteName;
+    $metaDescription = 'Explore the Kerala founder network industry by industry across the European Union.';
+    $canonicalUrl = 'https://keralafounders.eu/industries.php';
 }
 
-$companies = $selected !== '' ? fetch_approved_companies($db, $selected) : [];
+$companies = $selected !== '' ? fetch_approved_companies_by_industry($db, $selected) : [];
 
-$countryCounts = [];
+$industryCounts = [];
 if ($selected === '') {
-    $counts = $db->query("SELECT country, COUNT(*) AS n FROM companies WHERE status = 'approved' GROUP BY country")
+    $counts = $db->query("SELECT industry, COUNT(*) AS n FROM companies WHERE status = 'approved' GROUP BY industry")
         ->fetchAll(PDO::FETCH_KEY_PAIR);
-    foreach (array_keys($KF_COUNTRIES) as $country) {
-        $countryCounts[$country] = (int)($counts[$country] ?? 0);
+    foreach ($KF_INDUSTRIES as $industry) {
+        $industryCounts[$industry] = (int)($counts[$industry] ?? 0);
     }
 }
 
@@ -44,7 +44,7 @@ if ($selected !== '' && $companies) {
 
 $breadcrumbTrail = [
     ['name' => 'Home', 'url' => 'https://keralafounders.eu/'],
-    ['name' => 'Countries', 'url' => 'https://keralafounders.eu/countries.php'],
+    ['name' => 'Industries', 'url' => 'https://keralafounders.eu/industries.php'],
 ];
 if ($selected !== '') {
     $breadcrumbTrail[] = ['name' => $selected, 'url' => $canonicalUrl];
@@ -63,22 +63,22 @@ $breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
 <section class="page-head"><div class="wrap">
-<div class="eyebrow">Explore by geography</div>
+<div class="eyebrow">Explore by industry</div>
 <?php if ($selected !== ''): ?>
-<h1>Keralite founders in <?= h($selected) ?></h1>
-<p class="muted section-intro">Discover Keralite-founded companies building in <?= h($selected) ?>.</p>
-<a class="arrow" href="countries.php">← All countries</a>
+<h1><?= h($selected) ?> founders</h1>
+<p class="muted section-intro">Discover Keralite-founded <?= h($selected) ?> companies building across the European Union.</p>
+<a class="arrow" href="industries.php">← All industries</a>
 <div class="cards" style="margin-top:20px">
 <?php if ($companies): foreach ($companies as $c): echo company_card_html($c); endforeach; else: ?>
-  <div class="panel" style="grid-column:1/-1;text-align:center">No companies published in this location yet.</div>
+  <div class="panel" style="grid-column:1/-1;text-align:center">No companies published in this industry yet.</div>
 <?php endif; ?>
 </div>
 <?php else: ?>
-<h1>Keralite founders across the EU.</h1>
-<p class="muted section-intro">Explore the Kerala founder network country by country across the European Union.</p>
+<h1>Keralite founders by industry.</h1>
+<p class="muted section-intro">Explore the Kerala founder network industry by industry across the European Union.</p>
 <div class="country-grid">
-<?php foreach ($countryCounts as $country => $n): ?>
-  <a class="country-card" href="countries.php?country=<?= rawurlencode($country) ?>"><strong><?= h($country) ?></strong><small><?= $n ?> compan<?= $n === 1 ? 'y' : 'ies' ?> →</small></a>
+<?php foreach ($industryCounts as $industry => $n): ?>
+  <a class="country-card" href="industries.php?industry=<?= rawurlencode($industry) ?>"><strong><?= h($industry) ?></strong><small><?= $n ?> compan<?= $n === 1 ? 'y' : 'ies' ?> →</small></a>
 <?php endforeach; ?>
 </div>
 <?php endif; ?>

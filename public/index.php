@@ -45,10 +45,10 @@ $jsonLd = [
 <div class="hero-stats"><div class="hero-stat"><strong id="statCompanies">0</strong><span>Companies</span></div><div class="hero-stat"><strong id="statFounders">0</strong><span>Founders</span></div><div class="hero-stat"><strong id="statCountries">0</strong><span>Countries</span></div><div class="hero-stat"><strong id="statCities">0</strong><span>Cities</span></div></div>
 </div></div></section>
 <section class="section" style="padding-bottom:0"><div class="wrap">
-<div class="section-head"><div class="eyebrow">Explore by category</div><a class="arrow" href="founders.php">View all categories →</a></div>
+<div class="section-head"><div class="eyebrow">Explore by category</div><a class="arrow" href="industries.php">View all categories →</a></div>
 <div class="category-grid">
 <?php foreach ($categoryIcons as $industry => $icon): $n = (int)($industryCounts[$industry] ?? 0); ?>
-<a class="category-card" href="founders.php?industry=<?= rawurlencode($industry) ?>">
+<a class="category-card" href="industries.php?industry=<?= rawurlencode($industry) ?>">
   <img src="assets/icons/<?= h($icon) ?>.svg" alt="">
   <strong><?= h($industry) ?></strong>
   <span>(<?= $n ?>)</span>

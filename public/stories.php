@@ -2,6 +2,7 @@
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
 <title>Stories — Kerala Founders</title><meta name="description" content="Real people, real journeys — stories from the Kerala-connected community building across Europe.">
 <link rel="canonical" href="https://keralafounders.eu/stories.php">
+<meta name="robots" content="noindex">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Stories — Kerala Founders"><meta property="og:description" content="Real people, real journeys — stories from the Kerala-connected community building across Europe."><meta property="og:url" content="https://keralafounders.eu/stories.php"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Stories — Kerala Founders"><meta name="twitter:description" content="Real people, real journeys — stories from the Kerala-connected community building across Europe."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
