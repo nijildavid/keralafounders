@@ -92,6 +92,35 @@ function fetch_approved_companies_by_industry(PDO $db, string $industry): array
     return companies_with_founders($db, $stmt->fetchAll());
 }
 
+function fetch_approved_companies_by_business_type(PDO $db, string $businessType): array
+{
+    $stmt = $db->prepare("SELECT * FROM companies WHERE status = 'approved' AND business_type = ? ORDER BY name");
+    $stmt->execute([$businessType]);
+    return companies_with_founders($db, $stmt->fetchAll());
+}
+
+function fetch_approved_companies_by_city(PDO $db, string $city): array
+{
+    $stmt = $db->prepare("SELECT * FROM companies WHERE status = 'approved' AND city = ? ORDER BY name");
+    $stmt->execute([$city]);
+    return companies_with_founders($db, $stmt->fetchAll());
+}
+
+/**
+ * Real country => company-count pairs (no zero-fill against $KF_COUNTRIES —
+ * companies.country is free text and can include countries not in that
+ * whitelist), sorted by count descending, for the footer's country list.
+ */
+function fetch_top_countries(PDO $db, int $limit): array
+{
+    $stmt = $db->prepare(
+        "SELECT country, COUNT(*) AS n FROM companies WHERE status = 'approved' GROUP BY country ORDER BY n DESC LIMIT ?"
+    );
+    $stmt->bindValue(1, $limit, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+}
+
 /**
  * Most-recently-added approved companies, matching data.php's default order.
  * Batch imports share one created_at per batch, so id DESC breaks ties deterministically

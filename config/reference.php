@@ -60,3 +60,41 @@ $KF_BUSINESS_TYPES = [
 ];
 
 $KF_SIZES = ['1–10', '11–50', '51–200', '201–500', '500+'];
+
+// Emoji flags for the footer's country list. Keyed by the exact country name
+// as stored in companies.country (a free-text column, not constrained to
+// $KF_COUNTRIES) — includes a few real countries seen in data that aren't in
+// the $KF_COUNTRIES whitelist above. Lookups should fall back gracefully
+// (e.g. `$KF_COUNTRY_FLAGS[$country] ?? ''`) for anything not listed here.
+$KF_COUNTRY_FLAGS = [
+    'Austria' => '🇦🇹',
+    'Belgium' => '🇧🇪',
+    'Bulgaria' => '🇧🇬',
+    'Croatia' => '🇭🇷',
+    'Cyprus' => '🇨🇾',
+    'Czechia' => '🇨🇿',
+    'Denmark' => '🇩🇰',
+    'Estonia' => '🇪🇪',
+    'Finland' => '🇫🇮',
+    'France' => '🇫🇷',
+    'Germany' => '🇩🇪',
+    'Greece' => '🇬🇷',
+    'Hungary' => '🇭🇺',
+    'Ireland' => '🇮🇪',
+    'Italy' => '🇮🇹',
+    'Latvia' => '🇱🇻',
+    'Lithuania' => '🇱🇹',
+    'Luxembourg' => '🇱🇺',
+    'Malta' => '🇲🇹',
+    'Netherlands' => '🇳🇱',
+    'Poland' => '🇵🇱',
+    'Portugal' => '🇵🇹',
+    'Romania' => '🇷🇴',
+    'Slovakia' => '🇸🇰',
+    'Slovenia' => '🇸🇮',
+    'Spain' => '🇪🇸',
+    'Sweden' => '🇸🇪',
+    'United Kingdom' => '🇬🇧',
+    'Switzerland' => '🇨🇭',
+    'Norway' => '🇳🇴',
+];
