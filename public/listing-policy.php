@@ -50,7 +50,7 @@
 <p class="muted" style="margin:0">Verification does not mean that Kerala Founders endorses or recommends a business.</p>
 </div>
 
-<div class="panel" style="margin-top:20px">
+<div class="panel" style="margin-top:20px" id="accuracy">
 <h2>Accuracy &amp; removal requests</h2>
 <p class="muted" style="margin:0 0 10px">Every effort is made to keep listings useful and accurate, but information can change. If you see something incorrect, please contact us with the correction.</p>
 <p class="muted" style="margin:0 0 10px">If you do not want a business, organisation or professional listing to appear on Kerala Founders, you can request removal. Please provide enough information for the listing to be identified and, where appropriate, explain your relationship to it.</p>
