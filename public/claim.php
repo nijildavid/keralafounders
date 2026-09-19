@@ -26,7 +26,7 @@ $siteName = 'Kerala Founders';
 $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : 'Company not found — ' . $siteName;
 ?>
 <!doctype html>
-<html lang="en"><head><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});</script><script src="https://cdn.cookiehub.eu/c2/a2366e42.js"></script><script type="text/javascript">document.addEventListener("DOMContentLoaded",function(event){var cpm={};if(window.cookiehub){window.cookiehub.load(cpm);}});</script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ9D0P01RH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-EJ9D0P01RH");</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
 <title><?= $pageTitle ?></title><meta name="description" content="Claim or suggest a correction to a Kerala Founders listing.">
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
@@ -78,6 +78,11 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
 <div class="form-section"><h2>→ Branches</h2><p class="muted" style="font-size:14px;margin-bottom:10px">Check any other EU countries this company operates in.</p><div id="branchWrap" class="chips"></div></div>
 
 <div style="margin-top:15px"><label class="label" for="claim-message">Anything else you'd like to add?</label><textarea class="textarea" id="claim-message" name="message" rows="3" placeholder="Optional — anything not covered above"></textarea></div>
+
+<div class="form-section" style="margin-top:15px;padding-top:15px">
+<label class="checkrow"><input type="checkbox" name="authorised" required> I confirm that I am authorised to represent this business or organisation. *</label>
+<label class="checkrow" style="margin-top:10px"><input type="checkbox" name="agree" required> I confirm the information submitted is accurate to the best of my knowledge and that I have read and accept the <a href="terms.php" target="_blank" rel="noopener">Terms</a> and <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</label>
+</div>
 
 <div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Submit claim →</button></div></form>
 </section>

@@ -6,6 +6,38 @@ https://keralafounders.eu/. This file is auto-loaded at the start of every
 Claude Code session on this repo, so keep it accurate and lean — deeper
 history goes in `HISTORY.md`, pending work in `OPEN_ITEMS.md`.
 
+## public/assets/logo.svg is off-limits
+
+The `logo.svg` committed in this repo is a stale placeholder and does **not**
+match the real logo. The correct logo is maintained by hand, directly on the
+production server, via cPanel File Manager — it is not managed through git.
+
+**Do not:**
+- Edit, replace, or "fix" `public/assets/logo.svg` in this repo.
+- Remove the logo backup/restore steps in `.cpanel.yml` or
+  `.github/workflows/deploy-cpanel.yml`. Every deploy backs up whatever logo
+  file is currently live on the server, copies `public/*` over, then restores
+  that backup — so the live logo survives every deploy untouched, regardless
+  of what's committed to git.
+- "Sync" the repo's `logo.svg` to match production, or vice versa, without
+  being explicitly asked.
+
+If a real logo change is ever wanted, it must be a deliberate, explicit
+request from the user — and even then, confirm whether they want it done via
+a manual server-side replacement (consistent with how the current logo is
+maintained) or by updating the repo and removing the backup/restore exemption.
+
+## Explain decisions in plain, non-engineer terms
+
+The user is a product manager and ex-designer, not a software engineer.
+Whenever a response reaches a point where the user has to decide something
+(which approach to take, whether to keep or revert something, which option
+to pick), automatically include a short "Pros / Cons" in plain language —
+no jargon, no assuming familiarity with engineering tradeoffs. Explain what
+each option means for the product, the user, or the business, not just the
+technical mechanics. Keep it brief (a few bullets per side), and always end
+with a plain-language recommendation, not just a neutral list.
+
 ## Tech stack & hard constraints
 
 - **PHP 7.4-compatible syntax required** in everything under `public/` —
@@ -23,22 +55,24 @@ history goes in `HISTORY.md`, pending work in `OPEN_ITEMS.md`.
 
 ```
 public/                  # document root
-  partials/              header.php, footer-full.php, footer-minimal.php
-  assets/                 style.css, app.js, render-helpers.php, logo.svg (⚠️ see Conventions)
+  partials/              header.php, footer-full.php, footer-minimal.php, head-common.php
+  assets/                 style.css, app.js, render-helpers.php, logo.svg (⚠️ off-limits, see above)
   admin*.php              password-protected admin area, not linked from public nav
   index.php, founders.php, countries.php, company.php, claim.php,
-  about.php, add-company.php, privacy.php, stories.php, guidance.php
+  about.php, add-company.php, privacy.php, terms.php, listing-policy.php,
+  stories.php, guidance.php
   api/                    submit-company.php, submit-claim.php, admin-update.php,
-                          admin-action.php, claim-action.php, admin-outreach.php
+                          admin-action.php, claim-action.php, admin-outreach.php, report.php
 config/                  # OUTSIDE the document root
-  db.php, auth.php        real secrets — gitignored, never committed, must already
-                          exist on the server; deploy never touches these
-  db.example.php, auth.example.php, reference.php   committed, no secrets
+  db.php, auth.php, report-auth.php   real secrets — gitignored, never committed, must
+                          already exist on the server; deploy never touches these
+  db.example.php, auth.example.php, report-auth.example.php, reference.php   committed, no secrets
 import/                 # historical one-off CSV imports + migration SQL (changelog, not for re-running)
 schema.sql               full current schema + seed data
 migration-*.sql          historical top-level migrations
 TAXONOMY.md              industry/business-type classification reference (frozen v1.1)
-.cpanel.yml               deployment script (see below)
+.cpanel.yml                        legacy cPanel deploy script (see below)
+.github/workflows/deploy-cpanel.yml  current deploy pipeline (see below)
 ```
 
 ## Local dev
@@ -56,16 +90,20 @@ MySQL/MariaDB and a real `config/db.php` (copy `config/db.example.php`).
 
 ## Deployment pipeline
 
-cPanel's **Git Version Control**, pointed at this GitHub repo, cloned to
-`/home/nijiwdhp/repositories/keralafounders`. No SSH/CLI access to the
-server — everything goes through cPanel's web UI.
+**Current mechanism**: a GitHub Actions workflow
+(`.github/workflows/deploy-cpanel.yml`) auto-deploys on every push to
+`main` — it SSHes into the cPanel host and runs the same steps `.cpanel.yml`
+describes (`git pull`, copy `public/*` into the live docroot, copy
+`config/reference.php` into the private config folder, back up/restore
+`logo.svg` around the copy). No manual cPanel click needed for a normal
+deploy.
 
-1. Locally: commit + push to GitHub.
-2. cPanel → Git Version Control → repo → Manage → **"Update from Remote"**
-   (required, easy to forget — skipping it deploys stale code).
-3. **"Deploy HEAD Commit"** → runs `.cpanel.yml`: copies `public/*` into the
-   live docroot and `config/reference.php` into the private config folder;
-   never touches `config/db.php` / `config/auth.php`.
+`.cpanel.yml` (cPanel's own **Git Version Control** → "Deploy HEAD Commit"
+feature) still exists and describes the same steps, but cPanel's Git UAPI
+module isn't installed on this host (`Can't locate Cpanel/API/Git.pm`), so
+that button doesn't actually work — the GitHub Actions workflow was built
+specifically to replace it. Don't assume "Deploy HEAD Commit" in the cPanel
+UI does anything; the real trigger is a push to `main`.
 
 **Gotchas**:
 1. *(fixed)* Each `.cpanel.yml` task line runs in its own shell — don't rely
@@ -76,15 +114,16 @@ server — everything goes through cPanel's web UI.
 3. Apache's `DirectoryIndex` serves `index.html` before `index.php` for a
    bare `/` request. A stale `index.html` in the docroot silently shadows
    `index.php` no matter how many times you redeploy.
-4. The repo is deliberately kept **public** — a private repo broke cPanel's
-   anonymous HTTPS clone, and SSH deploy keys failed twice before. If
-   visibility ever changes, expect to redo the deploy auth.
+4. `logo.svg` is deliberately excluded from ever being overwritten by a
+   deploy — see "public/assets/logo.svg is off-limits" above.
 
 ## Conventions (follow these)
 
 1. **Deliver only the file(s) that changed**, never a full-repo zip/delivery
    — a full-repo delivery once overwrote the owner's manually-managed real
-   `logo.svg` with a placeholder. Standing instruction from the owner.
+   `logo.svg` with a placeholder (now also guarded against at the deploy
+   level, see above, but keep following this convention anyway). Standing
+   instruction from the owner.
 2. **Never touch `public/assets/logo.svg`** unless explicitly asked to
    change the logo itself.
 3. `render-helpers.php` (PHP) and `app.js`'s equivalent functions (JS) must
@@ -106,12 +145,16 @@ server — everything goes through cPanel's web UI.
   diff with one-click apply-and-verify).
 - Admin dashboard: submissions + claims, search/filter, outreach-status
   filter.
-- Contact/outreach enrichment tracking with a "mark as emailed" admin UI.
+- Contact/outreach enrichment tracking with a "mark as emailed" admin UI,
+  plus a read-only reporting API (`public/api/report.php`, its own
+  `config/report-auth.php`) for outreach/missing-email reports.
 - Security: CSRF tokens on all admin state-changing actions, IP-based login
   rate limiting, baseline security headers, hardened session cookies.
 - GDPR-style consent banner + Google Consent Mode (default-denied), Google
   Analytics.
 - Mobile-responsive nav with a hamburger menu.
+- Favicon/social-share image set (using the real logo) and real Privacy
+  Policy, Terms, and Listing Policy pages.
 
 ## See also
 

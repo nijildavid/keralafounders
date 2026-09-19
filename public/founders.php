@@ -76,6 +76,10 @@ $resultCountText = $total === 0
         : $total . ' ' . ($total === 1 ? 'company' : 'companies'));
 
 $canonicalUrl = 'https://keralafounders.eu/' . ssr_page_href($page);
+$pageTitle = $page > 1 ? "Founders — Page $page — Kerala Founders" : 'Founders — Kerala Founders';
+$metaDescription = $page > 1
+    ? "Browse page $page of the Kerala Founders directory — Kerala-origin founders and companies building across the European Union."
+    : 'Browse the full directory of Kerala-origin founders and companies building across the European Union.';
 
 $jsonLd = $pageRows ? [
     '@context' => 'https://schema.org',
@@ -89,11 +93,11 @@ $jsonLd = $pageRows ? [
 ] : null;
 ?>
 <!doctype html>
-<html lang="en"><head><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});</script><script src="https://cdn.cookiehub.eu/c2/a2366e42.js"></script><script type="text/javascript">document.addEventListener("DOMContentLoaded",function(event){var cpm={};if(window.cookiehub){window.cookiehub.load(cpm);}});</script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ9D0P01RH"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-EJ9D0P01RH");</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Founders — Kerala Founders</title><meta name="description" content="Keralite founders and companies building across the European Union.">
+<html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
+<title><?= h($pageTitle) ?></title><meta name="description" content="<?= h($metaDescription) ?>">
 <link rel="canonical" id="canonicalLink" href="<?= h($canonicalUrl) ?>">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Founders — Kerala Founders"><meta property="og:description" content="Keralite founders and companies building across the European Union."><meta property="og:url" content="<?= h($canonicalUrl) ?>">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Founders — Kerala Founders"><meta name="twitter:description" content="Keralite founders and companies building across the European Union.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="<?= h($pageTitle) ?>"><meta property="og:description" content="<?= h($metaDescription) ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?= h($pageTitle) ?>"><meta name="twitter:description" content="<?= h($metaDescription) ?>"><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
