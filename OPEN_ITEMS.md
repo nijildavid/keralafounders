@@ -53,6 +53,30 @@ new ones come up, don't let it go stale.
   server. Not shadowing anything live, just untidy. Leave alone unless
   asked for a cleanup pass.
 
+## Database migration checklist (for the next schema change)
+
+`schema.sql` is a snapshot, not a migration tool — schema changes get applied
+by hand against the live DB (cPanel/phpMyAdmin) or via a one-off
+`migration-*.sql` file (see `CLAUDE.md`'s repo layout). Before doing that
+again:
+
+- Never hand-edit `schema.sql` to "match" a change already made live —
+  update it as documentation afterward, and only if it would still load
+  cleanly against a fresh database (its seed `INSERT`s aren't idempotent).
+- Adding a column to a table that already has rows: make it nullable or give
+  it a default. A `NOT NULL` column with no default can fail — or lock the
+  table — against existing data.
+- Keep structural changes (`ALTER TABLE`) and data fixes (bulk `UPDATE`) as
+  separate steps, not one script — so a bad backfill doesn't also undo the
+  schema change.
+- Once a `migration-*.sql` file has actually been run against production,
+  treat it as a historical record, not something to edit — write a new one
+  instead.
+- Sanity-check a migration against something closer to the real data size
+  where practical, not just the dev dataset — a query that's instant on 120
+  companies can behave differently at scale (a smaller concern at this
+  project's current size, but worth remembering as it grows).
+
 ## Reminders
 
 - Personal project, not work for any employer.
