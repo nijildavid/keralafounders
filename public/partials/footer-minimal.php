@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/../../config/reference.php'; ?>
 <footer>
   <div class="footer-bottom">
     <div class="wrap footer-inner">
@@ -6,7 +7,7 @@
       <nav class="footer-links">
         <a href="founders.php">Directory</a>
         <span class="footer-link-disabled" aria-disabled="true">Stories</span>
-        <span class="footer-link-disabled" aria-disabled="true">Guidance</span>
+        <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?><a href="guidance.php">Guidance</a><?php else: ?><span class="footer-link-disabled" aria-disabled="true">Guidance</span><?php endif; ?>
         <a href="countries.php">Explore places</a>
         <a href="about.php">About</a>
       </nav>

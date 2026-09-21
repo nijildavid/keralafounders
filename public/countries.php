@@ -2,6 +2,7 @@
 require __DIR__ . '/../config/db.php';
 require __DIR__ . '/../config/reference.php';
 require __DIR__ . '/assets/render-helpers.php';
+require __DIR__ . '/assets/guidance-helpers.php';
 $db = get_db();
 
 $selected = isset($_GET['country']) ? (string)$_GET['country'] : '';
@@ -18,6 +19,16 @@ if ($selected !== '') {
 }
 
 $companies = $selected !== '' ? fetch_approved_companies($db, $selected) : [];
+
+$guidanceGuideSlug = null;
+if ($selected !== '' && !empty($KF_GUIDANCE_NAV_LIVE)) {
+    foreach (guidance_load_countries() as $gc) {
+        if ($gc['status'] === 'live' && $gc['directory_country_name'] === $selected) {
+            $guidanceGuideSlug = $gc['slug'];
+            break;
+        }
+    }
+}
 
 $countryCounts = [];
 if ($selected === '') {
@@ -68,6 +79,9 @@ $breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 <h1>Keralite founders in <?= h($selected) ?></h1>
 <p class="muted section-intro">Discover Keralite-founded companies building in <?= h($selected) ?>.</p>
 <a class="arrow" href="countries.php">← All countries</a>
+<?php if ($guidanceGuideSlug): ?>
+<p class="muted" style="margin-top:12px"><a class="arrow" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($selected) ?> →</a></p>
+<?php endif; ?>
 <div class="cards" style="margin-top:20px">
 <?php if ($companies): foreach ($companies as $c): echo company_card_html($c); endforeach; else: ?>
   <div class="panel" style="grid-column:1/-1;text-align:center">No companies published in this location yet.</div>

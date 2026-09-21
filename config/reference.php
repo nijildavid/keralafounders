@@ -98,3 +98,14 @@ $KF_COUNTRY_FLAGS = [
     'Switzerland' => '🇨🇭',
     'Norway' => '🇳🇴',
 ];
+
+// Guidance section go-live switch. Keep false until the built pages have
+// been reviewed and approved — flipping it to true is what makes the
+// header/footer "Guidance" links live and stops them showing "Coming soon".
+$KF_GUIDANCE_NAV_LIVE = false;
+
+// Guidance feedback auto-flagging thresholds (doc section 6.4) — kept here,
+// not hardcoded in admin-guidance-feedback.php, so they're easy to tune.
+$GUIDANCE_FLAG_STREAK = 3;      // N consecutive thumbs-down votes flags a target
+$GUIDANCE_FLAG_RATIO = 0.40;    // down-vote ratio above this flags a target...
+$GUIDANCE_FLAG_MIN_VOTES = 10;  // ...but only once it has at least this many votes

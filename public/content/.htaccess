@@ -1,0 +1,11 @@
+# Guidance content files (guide text, sources, FAQ) are read server-side by
+# PHP only. Block direct requests so nobody can download the raw JSON —
+# this matters especially while held sections (e.g. the unreviewed visa
+# content) sit in these files with hold:true, unrendered but still present.
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>

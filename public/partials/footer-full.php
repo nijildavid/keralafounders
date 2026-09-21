@@ -26,6 +26,11 @@ $footerTopCountries = fetch_top_countries($db, 10);
           <li><a href="cities.php">Cities</a></li>
           <li><a href="industries.php">Industries</a></li>
           <li><span class="footer-link-disabled" aria-disabled="true">Featured Stories</span></li>
+          <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?>
+          <li><a href="guidance.php">Guidance</a></li>
+          <?php else: ?>
+          <li><span class="footer-link-disabled" aria-disabled="true">Guidance</span></li>
+          <?php endif; ?>
           <li><a href="about.php">About</a></li>
         </ul>
       </div>
@@ -60,6 +65,7 @@ $footerTopCountries = fetch_top_countries($db, 10);
         <a href="privacy.php">Privacy Policy</a>
         <a href="terms.php">Terms of Use</a>
         <a href="listing-policy.php#accuracy">Disclaimer</a>
+        <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?><a href="guidance-method.php">How we check our information</a><?php endif; ?>
         <a href="mailto:hello@keralafounders.eu">Contact Us</a>
       </nav>
       <div class="footer-spotify">

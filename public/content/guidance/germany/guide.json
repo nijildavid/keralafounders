@@ -1,0 +1,216 @@
+{
+  "slug": "germany",
+  "title": "How to start a company in Germany",
+  "summary": "Germany gives a founder three main routes: register a trade (Gewerbe) as a sole proprietor, work as a freelancer (Freiberufler) if the profession qualifies, or form a limited-liability company (UG or GmbH) through a notary.",
+  "last_checked": "2026-09-21",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-21",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Germany gives a founder three main routes: register a trade (Gewerbe) as a sole proprietor, work as a freelancer (Freiberufler) if the profession qualifies, or form a limited-liability company (UG or GmbH) through a notary. Sole proprietor and freelancer are inexpensive and quick to set up, usually days to a few weeks. A UG or GmbH needs a notary, a commercial-register entry, double-entry bookkeeping and a business bank account, and usually takes several weeks. For founders from outside the EU, the residence permit is often the slowest and most decisive step, not the company itself.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Freiberufler (freelancer)", "none", "personal, unlimited", "no", "about 1 to 2 weeks", "simple income-expense statement (EÜR)", "secondary [S16]"],
+          ["Einzelunternehmen (sole proprietor, Gewerbe)", "none", "personal, unlimited", "no", "about 1 to 2 weeks", "EÜR normally", "secondary [S16]"],
+          ["UG (haftungsbeschränkt)", "from EUR 1, cash only", "limited to the company", "yes", "about 2 to 4 weeks after notarisation", "double-entry", "secondary [S16, S18]"],
+          ["GmbH", "EUR 25,000 (EUR 12,500 to be paid in at formation)", "limited to the company", "yes", "about 2 to 6 weeks", "double-entry", "secondary [S17, S19]"]
+        ]
+      },
+      "official_information": [
+        { "text": "UG name must include \"UG (haftungsbeschränkt)\". 25% of annual after-tax profit must go into a reserve until it reaches EUR 25,000, after which it can become a GmbH. Contribution must be cash. In practice, banks are stricter with a EUR 1 UG, so starting capital is often EUR 500 to 1,000.", "source_ids": ["S18"], "confidence": "secondary" },
+        { "text": "The standard-template route (Musterprotokoll) is for up to 3 shareholders and 1 manager. Reported total cost about EUR 315 to 460 (notary about EUR 150 to 250 net, register about EUR 150, trade registration about EUR 15 to 60). Custom articles: notary about EUR 400 to 800.", "source_ids": ["S18"], "confidence": "secondary" },
+        { "text": "GmbH formation cost reported at EUR 800 to 2,500 excluding the share capital (notary EUR 600 to 2,000, register about EUR 150, trade licence EUR 20 to 60). One person can be sole shareholder and managing director.", "source_ids": ["S17"], "confidence": "secondary" },
+        { "text": "A GmbH tends to become tax-attractive from roughly EUR 80,000 to 100,000 of profit that stays in the company; below that, a sole proprietorship or UG is usually cheaper to run.", "source_ids": ["S17"], "confidence": "secondary" },
+        { "text": "Corporate income tax is 15% plus solidarity surcharge, plus trade tax, giving about 30% on retained profit.", "source_ids": ["S17"], "confidence": "secondary" },
+        { "text": "Exact statutory wording of capital rules (GmbHG §5, §5a) — not yet checked manually against the statute text.", "source_ids": [], "confidence": "hold" },
+        { "text": "Official notary and court fee schedule (GNotKG) — the ranges above are advisor estimates, not the official schedule.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "For most first-time founders, start with the simplest route (sole proprietor or freelancer) and move to UG or GmbH when you need to hire, raise money or limit personal risk.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether your activity is freelance or trade (section: Freelancer or trade?).", "source_ids": [] },
+        { "text": "Decide whether personal liability is acceptable for now.", "source_ids": [] },
+        { "text": "If you choose UG or GmbH, book the bank account and the notary early (section: Step by step, UG or GmbH).", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "freelance-vs-trade",
+      "title": "Freelancer or trade?",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Freiberufler work in \"catalogue professions\" (doctors, lawyers, tax advisors, engineers, architects, translators, journalists) or professions comparable to them. They get a tax number directly from the tax office, pay no trade tax and do not join the IHK.", "source_ids": ["S8"], "confidence": "official" },
+        { "text": "Everything else is a trade (Gewerbe): registered with the trade office, subject to trade tax, and IHK membership.", "source_ids": ["S8"], "confidence": "official" },
+        { "text": "The tax office decides under §18 EStG. The first classification is not final; it can be changed in a later tax audit, with back-payment of trade tax.", "source_ids": ["S8"], "confidence": "official" },
+        { "text": "Freelancers and liberal professions do not register a trade.", "source_ids": ["S1"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Keep a reserve for possible trade-tax back-payment if you start as a freelancer in a borderline profession. A directory, media or platform business is normally a trade.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Ask the tax office or an advisor how your activity will be classified before you register; keep the answer in writing.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, sole proprietor or freelancer (Berlin edition)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "note": "Fees and steps below are for Berlin. The structure is set up so other cities can be added as their own edition later.",
+      "official_information": [
+        { "text": "1. Address registration (Anmeldung) at the citizens' office within 2 weeks of moving in.", "source_ids": ["S16"], "confidence": "secondary" },
+        { "text": "2. Residence permit if you are from outside the EU, in place before you start self-employment (see the residence-permit section).", "source_ids": ["S2"], "confidence": "official" },
+        { "text": "3. Trade registration (Gewerbeanmeldung), Berlin: fee EUR 26 to 31, plus EUR 15 for online processing; online via BundID or in person at the district public-order office (Ordnungsamt). Documents: photo ID or passport, and residence permit for non-EU nationals.", "source_ids": ["S1"], "confidence": "official" },
+        { "text": "4. Tax registration: complete the tax questionnaire (Fragebogen zur steuerlichen Erfassung) in ELSTER.", "source_ids": ["S15"], "confidence": "official" },
+        { "text": "The tax number normally arrives within about 2 to 4 weeks.", "source_ids": ["S16"], "confidence": "secondary" },
+        { "text": "5. Separate business bank account (strongly advised).", "source_ids": [], "confidence": "editorial" },
+        { "text": "6. Health insurance and social security (see the IHK, health insurance and funding section).", "source_ids": [], "confidence": "editorial" },
+        { "text": "7. Bookkeeping from day one; a simple income-expense statement (EÜR) for small sole proprietors.", "source_ids": ["S16"], "confidence": "secondary" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Register your address (Anmeldung) within 2 weeks of moving in.", "source_ids": ["S16"] },
+        { "text": "Confirm your residence permit is in place before starting self-employment (non-EU founders only).", "source_ids": ["S2"] },
+        { "text": "Register your trade (Gewerbeanmeldung) — EUR 26 to 31, plus EUR 15 for online processing.", "source_ids": ["S1"] },
+        { "text": "Complete the tax questionnaire in ELSTER.", "source_ids": ["S15"] },
+        { "text": "Open a separate business bank account.", "source_ids": [] },
+        { "text": "Set up health insurance and social security.", "source_ids": [] },
+        { "text": "Start simple bookkeeping (EÜR) from day one.", "source_ids": ["S16"] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, UG or GmbH",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Choose a name and check availability (register database or IHK, free).", "source_ids": ["S18"], "confidence": "secondary" },
+        { "text": "2. Decide articles: standard template (Musterprotokoll) or custom.", "source_ids": ["S18"], "confidence": "secondary" },
+        { "text": "3. Open a bank account for the capital. This is often the bottleneck; use \"UG (haftungsbeschränkt) i.G.\" and \"Stammeinlage\" in the payment reference.", "source_ids": ["S18"], "confidence": "secondary" },
+        { "text": "4. Notary appointment. Notarisation is mandatory; documents must be in German. A non-German speaker typically needs a sworn interpreter (reported about EUR 300 to 700).", "source_ids": ["S20"], "confidence": "secondary" },
+        { "text": "5. Online option: since 1 Aug 2022 a GmbH or UG can be formed by video conference through the Bundesnotarkammer system, including from abroad, with electronic ID verification and a qualified electronic signature. Cash contributions only. Later changes to the articles still need an in-person notary.", "source_ids": ["S7"], "confidence": "official" },
+        { "text": "6. The notary files with the commercial register (Handelsregister). Entry typically takes about 1 to 4 weeks.", "source_ids": ["S16"], "confidence": "secondary" },
+        { "text": "7. Transparency register: not automatic. Register within 2 weeks after the commercial-register entry. Free to register; annual fee EUR 20.80 (as of May 2026); fines from EUR 100 to 500 for negligent failure. Sole proprietors and GbRs are exempt.", "source_ids": ["S13"], "confidence": "official" },
+        { "text": "8. Trade registration, then tax registration in ELSTER, then payroll and social-security registration if you hire.", "source_ids": [], "confidence": "editorial" },
+        { "text": "9. Ongoing: double-entry bookkeeping, annual accounts filed to the Federal Gazette (Bundesanzeiger), trade tax, e-invoicing.", "source_ids": ["S17"], "confidence": "secondary" },
+        { "text": "Non-resident note: founders and managing directors do not have to live in Germany to form a GmbH, but the company needs a German registered address, and the bank account is the most common blocker (identity checks under anti-money-laundering rules; fintech banks are reported to be easier; budget 3 to 6 weeks). A non-EU person who actively runs the company from Germany still needs a residence permit.", "source_ids": ["S20"], "confidence": "secondary" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Name checked.", "source_ids": [] },
+        { "text": "Articles chosen (standard template or custom).", "source_ids": [] },
+        { "text": "Interpreter booked, if needed.", "source_ids": [] },
+        { "text": "Bank account applied for.", "source_ids": [] },
+        { "text": "Notary booked.", "source_ids": [] },
+        { "text": "Transparency register reminder set for 2 weeks after the commercial-register entry.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Small-business VAT scheme (Kleinunternehmerregelung, §19 UStG), valid from 1 Jan 2025: prior-year revenue up to EUR 25,000 and current-year revenue up to EUR 100,000. Exceeding EUR 100,000 ends the exemption immediately in that year (the transaction that crosses the limit is already taxed).", "source_ids": ["S5"], "confidence": "official" },
+        { "text": "Trade tax (Gewerbesteuer) applies to trades, not freelancers. Sole proprietors and partnerships have an allowance of EUR 24,500. Formula: (trade profit minus 24,500) x 3.5% x municipal multiplier. Municipal multipliers range from 200% to 900%.", "source_ids": ["S10"], "confidence": "official" },
+        { "text": "Berlin's trade-tax multiplier — reported as 410% by secondary sources, not yet confirmed on a Berlin government page.", "source_ids": [], "confidence": "hold" },
+        { "text": "Sole-proprietor profit is taxed as personal income; it is added to any employment income.", "source_ids": ["S16"], "confidence": "secondary" },
+        { "text": "E-invoicing (E-Rechnung): since 1 Jan 2025 every business must be able to receive e-invoices in B2B transactions. Issuing is mandatory from 2027 for businesses above EUR 800,000 prior-year B2B turnover, and from 2028 for everyone. Exempt: invoices under EUR 250 and small businesses using the small-business VAT scheme.", "source_ids": ["S9"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Most side or first-year businesses will be under the small-business VAT limit. The choice to use it should be made with a tax advisor.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Choose small-business VAT or normal VAT with an advisor.", "source_ids": [] },
+        { "text": "Set up simple bookkeeping.", "source_ids": [] },
+        { "text": "Plan for e-invoicing by 2027/2028 if you invoice other businesses.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "IHK membership, health insurance, funding",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Registering a trade makes you an IHK member automatically. Freelancers, farms and some professions (lawyers, doctors, accountants) are exempt.", "source_ids": ["S11"], "confidence": "official" },
+        { "text": "New founders (natural persons, not in the commercial register, no business income in the previous five years) get a 2-year full exemption from IHK contributions. Years 3 and 4 have reduced contributions. Companies (GmbH, UG) do not get this exemption.", "source_ids": ["S11"], "confidence": "official" },
+        { "text": "Conflict: the income limit that keeps you exempt after year two. IHK Berlin states EUR 25,000 profit; Gründerplattform states EUR 5,200 for the base contribution. Neither figure is rendered until IHK Berlin confirms which applies when.", "source_ids": [], "confidence": "hold" },
+        { "text": "Health insurance for the self-employed, 2026: you may choose voluntary statutory or private cover. Statutory: 14.6% base plus an average surcharge of about 2.5%, plus long-term-care insurance of 3.6% or 4.2%. Minimum monthly assessment base EUR 1,248.33; ceiling EUR 5,812.50. Family members with low income can be covered at no extra premium.", "source_ids": ["S12"], "confidence": "official" },
+        { "text": "Berlin funding: the Investitionsbank Berlin (IBB) offers founder loans, micro-loans, non-repayable grants for consulting and IT development, subsidised coaching and equity for technology and creative start-ups. Amounts and conditions are not stated on the page — check each programme.", "source_ids": ["S14"], "confidence": "official" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm your IHK exemption status when you register.", "source_ids": [] },
+        { "text": "Choose health insurance before applying for a permit (it is a permit requirement for non-EU applicants).", "source_ids": [] },
+        { "text": "Look at IBB programmes before spending on consultants.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "S2",
+      "internal_notes": "Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the build doc's publishing gates).",
+      "open_questions_for_reviewer": [
+        "Can an employed Blue Card holder run a side business, and what must they notify or apply for? (Very relevant to Malayali IT professionals; not found in any official source.)",
+        "Is the settlement-permit-after-3-years path correctly described?",
+        "Is the Chancenkarte restriction correct and current?",
+        "Are the disclaimer and the \"explain the rules, no advice\" framing adequate?"
+      ],
+      "official_information": [
+        { "text": "EU nationals need no special permit. Third-country nationals need a residence permit under §21 of the Residence Act (AufenthG) before starting self-employment. Nationals of some countries (Australia, Canada, Japan, New Zealand, UK, USA) may enter without a visa but still need the permit.", "source_ids": ["S6"], "confidence": "official" },
+        { "text": "For entrepreneurs, three conditions apply: an economic interest or regional need exists; positive effects on the economy are expected; financing is secured by own capital or a credit commitment. The office may consult the Berlin economics administration, IHK Berlin and Berlin Partner. The permit is valid for 1 to 3 years. Berlin applications are online only, with special procedures in effect since 4 Feb 2026. If your existing residence title already contains \"Selbständige Tätigkeit gestattet\" (self-employment permitted), you do not need a separate application.", "source_ids": ["S2"], "confidence": "official" },
+        { "text": "IHK Berlin gives a non-binding assessment. It expects a detailed business plan: financing plan, three-year revenue forecast, liquidity plan, market and competitor analysis with evidence of real customer demand. For directors of capital companies, IHK Berlin names a minimum annual net income of EUR 41,000 and at least 50% ownership.", "source_ids": ["S3"], "confidence": "official" },
+        { "text": "Applicants over 45 must show adequate old-age provision.", "source_ids": ["S6"], "confidence": "official" },
+        { "text": "Freiberufler route (§21 Abs. 5) has no formal economic-interest test but requires a qualifying profession and evidence of regular client income. Berlin appointment waits of 3 to 9 months reported. Health insurance reported at EUR 200 to 900 per month.", "source_ids": ["S21"], "confidence": "secondary" },
+        { "text": "The permit can lead to a settlement permit after 3 years.", "source_ids": ["S22"], "confidence": "secondary" },
+        { "text": "The Opportunity Card (Chancenkarte) is for job seeking with limited part-time work and does not permit self-employment.", "source_ids": ["S21"], "confidence": "secondary" },
+        { "text": "Financing amounts reported by advisors vary widely (about EUR 10,000 to 15,000 for freelancers, EUR 50,000 or more for company founders). Only the IHK figure above is official.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}

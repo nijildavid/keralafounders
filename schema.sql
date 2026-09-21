@@ -54,6 +54,18 @@ CREATE TABLE IF NOT EXISTS claim_requests (
   FOREIGN KEY (company_id) REFERENCES companies(id) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE IF NOT EXISTS guidance_feedback (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  target_type ENUM('guide','section','faq') NOT NULL,
+  target_id VARCHAR(120) NOT NULL,
+  vote ENUM('up','down') NOT NULL,
+  comment TEXT NULL,
+  ip_hash CHAR(64) NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  INDEX idx_target (target_type, target_id),
+  INDEX idx_ip_hash_created (ip_hash, created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 INSERT INTO companies (slug, name, website, industry, business_type, size, country, city, location, description, status) VALUES
 ('monsoon-media', 'Monsoon Media', 'monsoon.example', 'Professional Services', 'SME / Local Business', '1–10', 'Austria', 'Vienna', 'Vienna, Austria', 'A creative media company building from Vienna.', 'approved'),
 ('cardamom-commerce', 'Cardamom Commerce', 'cardamom.example', 'Retail & E-commerce', 'SME / Local Business', '11–50', 'Belgium', 'Brussels', 'Brussels, Belgium', 'Consumer products inspired by Kerala and made for Europe.', 'approved'),

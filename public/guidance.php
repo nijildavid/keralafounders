@@ -1,11 +1,26 @@
+<?php
+require __DIR__ . '/../config/reference.php';
+require __DIR__ . '/assets/render-helpers.php';
+require __DIR__ . '/assets/guidance-helpers.php';
+
+$countries = guidance_load_countries();
+$faq = guidance_load_faq();
+
+$faqPreview = array_values(array_filter($faq, fn($e) => empty($e['hold'])));
+usort($faqPreview, fn($a, $b) => strcmp($b['last_checked'], $a['last_checked']));
+$faqPreview = array_slice($faqPreview, 0, 5);
+
+$robotsMeta = empty($KF_GUIDANCE_NAV_LIVE) ? '<meta name="robots" content="noindex">' : '';
+?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>Guidance — Kerala Founders</title><meta name="description" content="Practical, verified knowledge for building, working and navigating business life in Europe.">
+<title>Guidance — Kerala Founders</title><meta name="description" content="Practical, verified knowledge for building, working and navigating business life in Europe — sourced, dated and re-checked every 6 months.">
 <link rel="canonical" href="https://keralafounders.eu/guidance.php">
-<meta name="robots" content="noindex">
+<?= $robotsMeta ?>
 <meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Guidance — Kerala Founders"><meta property="og:description" content="Practical, verified knowledge for building, working and navigating business life in Europe."><meta property="og:url" content="https://keralafounders.eu/guidance.php"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Guidance — Kerala Founders"><meta name="twitter:description" content="Practical, verified knowledge for building, working and navigating business life in Europe."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
-<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Guidance","item":"https://keralafounders.eu/guidance.php"}]}</script>
+<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script><script src="assets/guidance.js" defer></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
 
@@ -13,46 +28,37 @@
 <div class="coming-soon-icon"><img src="assets/icons/guidance-book.svg" alt=""></div>
 <div class="eyebrow">Guidance</div>
 <h1 style="font-family:Georgia,serif;font-size:52px;line-height:1.08;margin:12px 0 20px">Learn how to navigate it.</h1>
-<p class="muted" style="font-size:19px;line-height:1.8;max-width:640px">Practical knowledge for building, working and navigating business life in Europe.</p>
-<p class="muted" style="font-size:17px;line-height:1.85;max-width:640px;margin-top:18px">Clear answers to the questions founders and professionals actually face — backed by official sources, expert knowledge and real experiences from the community.</p>
+<p class="muted" style="font-size:19px;line-height:1.8;max-width:640px">Practical knowledge for building, working and navigating business life in Europe — compiled from official sources, chambers of commerce and government portals, and re-checked every 6 months.</p>
 </div></section>
 
-<section class="section" style="padding-top:40px"><div class="wrap" style="max-width:780px">
-<div class="coming-soon-panel">
-  <div class="eyebrow">Coming soon</div>
-  <h2 style="font-size:26px;margin:10px 0 12px">Useful answers are being built.</h2>
-  <p class="muted" style="font-size:16px;line-height:1.8;margin:0">We're collecting practical knowledge from founders, accountants, lawyers, consultants and other experts — and verifying it against reliable sources.</p>
+<section class="section" style="padding-top:40px"><div class="wrap" style="max-width:900px">
+
+<div class="eyebrow" style="margin-bottom:14px">Country guides</div>
+<div class="country-grid">
+<?php foreach ($countries as $country): ?>
+  <?= guidance_country_card_html($country, $KF_COUNTRY_FLAGS) ?>
+<?php endforeach; ?>
 </div>
 
-<div class="eyebrow" style="margin-bottom:14px">Example future topics</div>
-<div class="guidance-topics">
-  <div class="guidance-topic">
-    <div class="eyebrow">Preview</div>
-    <h3>Starting a business in Germany</h3>
-    <p>What registrations, costs and steps should you expect?</p>
-  </div>
-  <div class="guidance-topic">
-    <div class="eyebrow">Preview</div>
-    <h3>Understanding business costs</h3>
-    <p>What does it actually cost to get started?</p>
-  </div>
-  <div class="guidance-topic">
-    <div class="eyebrow">Preview</div>
-    <h3>Finding professional help</h3>
-    <p>Who can help with accounting, tax, legal and other essentials?</p>
-  </div>
+<?php if ($faqPreview): ?>
+<div class="panel" style="margin-top:40px">
+<h2>Recent questions</h2>
+<ul style="margin:14px 0;padding-left:20px;color:#57534e;line-height:2">
+<?php foreach ($faqPreview as $entry): ?>
+  <?= guidance_faq_preview_item_html($entry) ?>
+<?php endforeach; ?>
+</ul>
+<a class="arrow" href="guidance-faq.php">See all questions →</a>
+</div>
+<?php endif; ?>
+
+<p class="notice guidance-disclaimer" style="margin-top:30px">General information from the sources shown, not advice. Re-checked every 6 months. Check the source and consult a professional before you act. <a href="guidance-method.php">How we check our information →</a></p>
+
+<div class="panel" style="margin-top:20px">
+<h2>Have a question, or a country we should cover next?</h2>
+<p class="muted" style="margin:0"><a class="arrow" href="mailto:hello@keralafounders.eu">Get in touch →</a></p>
 </div>
 
-<div class="eyebrow" style="margin-bottom:14px">How Guidance gets verified</div>
-<div class="verification-chain">
-  <div>Official requirement</div><span>↓</span>
-  <div>Expert interpretation</div><span>↓</span>
-  <div>Founder experiences</div><span>↓</span>
-  <div>Community validation</div><span>↓</span>
-  <div style="background:var(--mint);border-color:#cfe4d9">Kerala Founders Guidance</div>
-</div>
-
-<blockquote class="editorial-quote">"Official rules only tell you what's required — Guidance is where you learn what it's actually like."</blockquote>
 </div></section>
 
 </main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>
