@@ -1,0 +1,224 @@
+{
+  "slug": "belgium",
+  "title": "How to start a company in Belgium",
+  "summary": "Belgium gives a founder two main routes: register as a self-employed sole trader (indépendant/zelfstandige) in your own name, or set up a limited company, almost always an SRL/BV (société à responsabilité limitée / besloten vennootschap). Both routes go through a private but government-accredited enterprise counter (guichet d'entreprises/ondernemingsloket) that registers you with the national Crossroads Bank for Enterprises (BCE/KBO). Belgium is a federal country with three regions — Flanders, Wallonia and Brussels-Capital — and some rules, especially funding programmes and the professional card for non-EU founders, are set regionally rather than nationally.",
+  "last_checked": "2026-09-25",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-25",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Belgium gives a founder two main routes: register as a self-employed sole trader (indépendant/zelfstandige) in your own name, or set up a limited company, almost always an SRL/BV. Sole trader registration is cheap and fast, usually days, but carries unlimited personal liability. An SRL/BV needs a notary and a mandatory financial plan but has had no legal minimum capital since the 2019 company-law reform, and usually takes a few days to a few weeks. Belgium's business registration itself runs through private, government-accredited 'enterprise counters' rather than a single government office — a structural difference from countries with one central trade office. This guide uses the Brussels-Capital Region as its default edition, the way a similar guide for Germany would use Berlin: Flanders and Wallonia run their own versions of some formalities (funding programmes, professional-access rules, and the professional card for non-EU founders in particular), so founders based outside Brussels should double-check the regional variant. For founders from outside the EU, the professional card is often the slowest and most decisive step, not the company itself.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Indépendant / zelfstandige (sole trader, own name)", "none", "personal, unlimited", "no", "same day to about 1 week (registration via an accredited enterprise counter)", "simplified accounting normally sufficient", "official [BE3, BE15]"],
+          ["SRL / BV (private limited company)", "no legal minimum, but must be \"sufficient\" per a mandatory 2-year financial plan", "limited to the contribution, except founders can be held personally liable if the company is undercapitalised and fails within its first years", "yes", "a few days to a few weeks (online formation, one notary appointment)", "double-entry", "chamber [BE4, BE7]"],
+          ["SA / NV (public limited company)", "EUR 61,500", "limited to the contribution", "yes", "similar to SRL, more governance/paperwork; used for larger ventures or big capital raises", "double-entry", "chamber [BE6]"]
+        ]
+      },
+      "official_information": [
+        { "text": "No formal minimum capital is required for an SRL, but founders must ensure the company has \"sufficient patrimony for the activity\" it intends to pursue; contributions can be in cash, in kind, expertise or labour.", "source_ids": ["BE4"], "confidence": "secondary" },
+        { "text": "A financial plan is obligatory when forming an SRL: a provisional plan of needs and resources for the company's first two financial years, presented to the notary on the day of incorporation. If the apport is later shown to have been insufficient at the outset, founders can be held personally liable as founders.", "source_ids": ["BE4", "BE5"], "confidence": "secondary" },
+        { "text": "The deed of incorporation for an SRL or SA must be notarised (authentic form); this is mandatory, not optional.", "source_ids": ["BE4", "BE6"], "confidence": "secondary" },
+        { "text": "SRL dividend/profit distributions require passing two tests: the distribution must not compromise the company's solvency, and it must not jeopardise the company's ability to pay its debts over the following 12 months. Breaching this makes administrators and shareholders personally liable to repay the distribution.", "source_ids": ["BE4"], "confidence": "secondary" },
+        { "text": "An SA (société anonyme/naamloze vennootschap) requires a minimum legal capital of EUR 61,500, notarised incorporation, and is intended for larger companies or those raising significant capital; shareholder liability is limited to their contribution.", "source_ids": ["BE6"], "confidence": "secondary" },
+        { "text": "A standard, simplified online SRL incorporation was reported at a fixed cost of about EUR 217 (fixed fees) plus EUR 298 (administrative costs, excluding VAT), separate from registration duties and taxes; this figure comes from the notaries' own site but is presented there as a typical/standard cost, not a fixed statutory tariff.", "source_ids": ["BE4"], "confidence": "secondary" },
+        { "text": "Exact statutory wording of the capital-adequacy and founder-liability provisions in the Code des sociétés et des associations (CSA/WVV): not yet checked manually against the statute text itself, only against the notaries' federation's plain-language explanation of it.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "For most first-time founders, starting as a sole trader (indépendant) and moving to an SRL once you need to hire, raise outside money, or limit personal risk is the lower-friction path — the same logic that applies in most EU countries. Because the SRL's \"no minimum capital\" is really \"no legal minimum, but a financial plan you're personally on the hook for,\" it is worth having an accountant sanity-check the financial plan rather than treating the EUR 0 headline literally.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether personal, unlimited liability is acceptable for now (section: Choosing a legal form).", "source_ids": [] },
+        { "text": "Check whether your planned activity is a regulated profession requiring proof of competence (section: Principal activity, side activity, or a regulated profession?).", "source_ids": [] },
+        { "text": "If you choose SRL, start the financial plan and book the notary early (section: Step by step, SRL/BV).", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "status-and-regulated-professions",
+      "title": "Principal activity, side activity, or a regulated profession?",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "You are self-employed \"as a side activity\" (indépendant à titre complémentaire) if you keep a salaried job (or replacement income from a former salaried/civil-service job) alongside self-employment. Below EUR 1,922.16 of net annual self-employed income no social contributions are due; between EUR 1,922.16 and EUR 17,374.08 reduced contributions apply; at or above EUR 17,374.08 the standard principal-activity rates apply (2026 reference figures).", "source_ids": ["BE11"], "confidence": "official" },
+        { "text": "Side-activity founders who pay no or reduced contributions keep their social rights (health cover, pension building, etc.) through their primary salaried job; only those paying full contributions build additional self-employed-equivalent rights. Ending the primary salaried activity (moving to self-employed as your main status) must be notified to your social insurance fund within 15 days.", "source_ids": ["BE11"], "confidence": "official" },
+        { "text": "In the Brussels-Capital Region, proof of \"basic management knowledge\" is no longer required to register as self-employed, as of 15 January 2024. From 1 April 2024, proof of professional competence was also dropped for five specific trades (wholesale meat dealers, dry cleaners, pedicurists, massage therapists, dental technicians). Regulated sectors — food, construction, vehicle trades, and personal-care services among them — still require proof of competence (diploma, work experience, or a central-jury exam), and every business must still register with the BCE/KBO.", "source_ids": ["BE14"], "confidence": "official" },
+        { "text": "Flanders removed its own basic-management-knowledge requirement in 2018; Wallonia followed later. This guide has not independently re-verified Flanders' and Wallonia's current wording this session — only Brussels' page was read directly.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "If you're keeping your job while testing an idea, the side-activity (complémentaire) status is usually the lower-risk way to start in Belgium — you keep your employer's social cover and the contribution bar is low until the business is earning meaningfully. Switch to principal status once self-employment is your main source of income and rights.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Check whether your activity is in a still-regulated sector (food, construction, vehicles, personal care) using the DIPLO competence database mentioned by Brussels' formalities page.", "source_ids": ["BE15"] },
+        { "text": "Decide whether you're starting as a principal or a side (complémentaire) activity, and tell your social insurance fund accordingly.", "source_ids": ["BE11"] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, self-employed sole trader (Brussels edition)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "note": "Steps and the BCE/KBO fee below are for the Brussels-Capital Region via an accredited enterprise counter. The structure is set up so Flanders and Wallonia editions can be added later.",
+      "official_information": [
+        { "text": "1. Check whether your activity needs proof of professional competence (regulated sectors only, see the status section above).", "source_ids": ["BE14"], "confidence": "official" },
+        { "text": "2. Non-EU founders: obtain a professional card before starting self-employment (see the residence-permit section — held back from publication pending legal review).", "source_ids": ["BE2"], "confidence": "hold" },
+        { "text": "3. Register with an accredited enterprise counter (guichet d'entreprises agréé) to get your business number in the Crossroads Bank for Enterprises (BCE/KBO). Registration fee: EUR 111.50 per establishment unit, for registering an enterprise, an additional establishment unit, or a modification/cancellation.", "source_ids": ["BE3"], "confidence": "official" },
+        { "text": "4. VAT identification with SPF Finances/FOD Financiën is obligatory for anyone practising an economic activity, unless you qualify for and choose the small-business VAT exemption (see the taxes section).", "source_ids": ["BE15"], "confidence": "official" },
+        { "text": "5. Affiliate with a social insurance fund (caisse d'assurances sociales/sociaal verzekeringsfonds) — mandatory, and must happen before you start the activity.", "source_ids": ["BE9"], "confidence": "official" },
+        { "text": "6. Affiliate with a health-insurance mutual fund (mutualité/mutualiteit) at the same time as the social insurance fund.", "source_ids": ["BE8", "BE15"], "confidence": "official" },
+        { "text": "7. Open a business bank account, separate from your personal account.", "source_ids": ["BE15"], "confidence": "official" },
+        { "text": "8. Sector-specific permits if applicable (food business, construction, street vending, etc.).", "source_ids": ["BE15"], "confidence": "official" },
+        { "text": "9. Bookkeeping from day one; most sole traders can use simplified accounting.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm any professional-competence requirement for your sector.", "source_ids": ["BE14"] },
+        { "text": "Non-EU founders: confirm your professional card is in place before starting (see residence-permit section).", "source_ids": ["BE2"] },
+        { "text": "Register with an accredited enterprise counter for your BCE/KBO number: EUR 111.50 per establishment unit.", "source_ids": ["BE3"] },
+        { "text": "Get VAT-identified with SPF Finances, or confirm you qualify for the small-business exemption.", "source_ids": ["BE15"] },
+        { "text": "Affiliate with a social insurance fund before day one.", "source_ids": ["BE9"] },
+        { "text": "Affiliate with a health-insurance mutual fund.", "source_ids": ["BE8"] },
+        { "text": "Open a separate business bank account.", "source_ids": ["BE15"] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, SRL/BV",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Check professional-access requirements the same way as for a sole trader.", "source_ids": ["BE14"], "confidence": "official" },
+        { "text": "2. Draft the mandatory financial plan (needs and resources for the first two financial years) — required even though there is no legal minimum capital; get an accountant's or notary's help.", "source_ids": ["BE4", "BE5"], "confidence": "secondary" },
+        { "text": "3. For cash contributions: deposit the funds in a blocked account and obtain a bank certificate confirming the money is held in the company's name and blocked until incorporation.", "source_ids": ["BE5"], "confidence": "secondary" },
+        { "text": "4. For contributions in kind: an independent auditor must value the assets and produce a report before incorporation.", "source_ids": ["BE5"], "confidence": "secondary" },
+        { "text": "5. Notary appointment: the deed of incorporation and statutes must be notarised (authentic form is mandatory for SRL/SA).", "source_ids": ["BE4", "BE5"], "confidence": "secondary" },
+        { "text": "6. The notary files the deed with the commercial court's registry and requests your BCE/KBO enterprise number and VAT number; the deed is then published in the Belgian Official Gazette (Moniteur belge/Belgisch Staatsblad). With electronic filing, formation can be completed \"in just a few days.\"", "source_ids": ["BE5"], "confidence": "secondary" },
+        { "text": "7. Register the company's beneficial owners (UBO register) within 30 days of incorporation; reconfirm the information annually even if nothing has changed. Non-compliance can lead to administrative fines and, in serious cases, removal from the BCE/KBO. Self-employed individuals without a separate legal structure are excluded from this obligation.", "source_ids": ["BE24"], "confidence": "secondary" },
+        { "text": "8. Register with RSZ/ONSS as an employer if and when you hire staff.", "source_ids": ["BE12"], "confidence": "official" },
+        { "text": "9. Ongoing: double-entry bookkeeping; mind the two-part solvency/liquidity test before any dividend distribution (see legal-forms section) — administrators and shareholders can be held personally liable for an unlawful distribution.", "source_ids": ["BE4"], "confidence": "secondary" },
+        { "text": "Official statutory fee schedules for notary/registry costs (as opposed to the notaries' own reported \"typical\" cost figures) have not been independently checked against a government tariff table this session.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Professional-access check done.", "source_ids": [] },
+        { "text": "Financial plan drafted with an accountant.", "source_ids": [] },
+        { "text": "Bank certificate obtained for any cash contribution.", "source_ids": [] },
+        { "text": "Auditor's report obtained for any in-kind contribution.", "source_ids": [] },
+        { "text": "Notary appointment booked.", "source_ids": [] },
+        { "text": "UBO register reminder set for 30 days after incorporation, and again every year.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Small-business VAT exemption (franchise de la taxe/vrijstellingsregeling): businesses established in Belgium with annual turnover up to EUR 25,000 (excluding VAT) can opt for the exemption. Belgium's own tax-authority pages (finances.belgium.be / finance.belgium.be) could not be directly fetched this session — every attempt returned a bot-protection CAPTCHA page — so this figure is confirmed via two independent secondary professional sources rather than SPF Finances' own page. Flag for the reviewer to spot-check directly on finances.belgium.be.", "source_ids": ["BE21", "BE22"], "confidence": "secondary" },
+        { "text": "If turnover exceeds EUR 25,000 by no more than 10% (i.e. up to about EUR 27,500) in a calendar year, the exemption is retained until the end of that year; if the overage is more than 10%, the exemption ends immediately from the point the limit is exceeded.", "source_ids": ["BE22"], "confidence": "secondary" },
+        { "text": "Since 1 January 2025, a business established in Belgium can also apply the small-business exemption on sales into other EU member states under the EU-wide SME scheme, subject to a double threshold: an EU-wide annual turnover cap of EUR 100,000, and each individual member state's own national threshold (capped at EUR 85,000). Prior notification to the Belgian VAT authorities is required to use this cross-border option.", "source_ids": ["BE20", "BE22"], "confidence": "official" },
+        { "text": "Very recent and not yet reflected on any government page this session read directly: a news report (dated 23 September 2026, two days before this guide was researched) states the Belgian Parliament approved raising the national threshold from EUR 25,000 to EUR 30,000 in a vote on 17 September 2026, phased in EUR 1,000 annual increments between 2027 and 2031. Treat as provisional until confirmed on an official SPF Finances page.", "source_ids": ["BE23"], "confidence": "secondary" },
+        { "text": "Mandatory structured B2B e-invoicing via the Peppol network (Peppol BIS format, or a bilaterally agreed EN 16931-compliant format) applies from 1 January 2026 to VAT-registered businesses of any size, sector or legal form, including sole traders and one-person companies. Even businesses that only invoice private customers must be capable of receiving structured e-invoices from 2026. Exceptions: bankrupt taxpayers, businesses carrying out only VAT-exempt (article 44) operations, non-resident VAT taxpayers without a Belgian establishment, and flat-rate-scheme taxpayers (this last exception ends 1 January 2028). A three-month tolerance period covers Q1 2026 for businesses not yet technically able to send/receive structured invoices. B2G e-invoicing has already been mandatory since 1 March 2024 for public contracts published after that date (with an exception for contracts under EUR 3,000 excl. VAT).", "source_ids": ["BE13"], "confidence": "official" },
+        { "text": "Corporate income tax: standard rate 25%; a reduced 20% rate applies to the first EUR 100,000 of profit for companies meeting \"small company\" conditions under the Code des sociétés et des associations (not exceeding, on average, 50 employees, EUR 9,000,000 annual turnover excl. VAT, or EUR 4,500,000 total balance-sheet assets), plus SME-status and ownership conditions, and a requirement that at least one company manager receive a gross annual salary of at least EUR 45,000 (with an exception for the company's first four financial years).", "source_ids": ["BE25"], "confidence": "official" },
+        { "text": "Personal income tax (impôt des personnes physiques/personenbelasting) applies to sole traders' net professional income (turnover minus social contributions and deductible expenses) and to a company director's remuneration. For 2026 income (2027 assessment year), the progressive brackets are: 25% up to EUR 16,720; 40% from EUR 16,720 to EUR 29,510; 45% from EUR 29,510 to EUR 51,070; 50% above EUR 51,070. A basic tax-free allowance of EUR 11,180 applies (higher with dependent children), and municipalities add their own surcharge on top, typically around 7% of the tax due, varying by municipality.", "source_ids": ["BE26"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Most side or first-year businesses will be under the EUR 25,000 small-business VAT threshold. Whether to use the exemption anyway (it also means you can't deduct input VAT) is a decision to make with an accountant, and worth revisiting once the reported EUR 30,000 phase-in is confirmed officially.", "source_ids": [], "confidence": "editorial" },
+        { "text": "If you invoice other Belgian businesses, get Peppol-capable invoicing software in place well before January 2026 — the three-month tolerance only covers Q1 2026, and even VAT-exempt sole traders need to be able to receive structured invoices from suppliers.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Check whether you qualify for, and want to use, the small-business VAT exemption with an advisor.", "source_ids": [] },
+        { "text": "Get Peppol/structured e-invoicing capability in place before 1 January 2026.", "source_ids": [] },
+        { "text": "If forming an SRL, ask your accountant whether the reduced 20% corporate rate applies to you.", "source_ids": [] },
+        { "text": "Set up simple bookkeeping from day one.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social insurance fund, health insurance, and funding",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Affiliation with a social insurance fund (caisse d'assurances sociales/sociaal verzekeringsfonds) is mandatory for every self-employed person and must happen before the activity starts. Failing to affiliate can trigger an administrative fine of EUR 500 to EUR 2,000; after a formal reminder you have 30 days to affiliate, and if you still haven't, you are automatically enrolled in INASTI's National Auxiliary Fund.", "source_ids": ["BE9"], "confidence": "official" },
+        { "text": "Health-insurance (mutualité/mutualiteit) affiliation is mandatory at the same time as social insurance fund affiliation.", "source_ids": ["BE8"], "confidence": "official" },
+        { "text": "Social contribution rates (2026 figures): 20.5% of net taxable professional income up to EUR 75,024.54, and 14.16% on the portion between EUR 75,024.54 and EUR 110,562.42. A principal-activity self-employed person is always liable for a minimum contribution, calculated on a minimum reference income of EUR 17,374.08; a reduced minimum applies to first-time starters, though the exact reduced figure was not stated on the INASTI page read this session.", "source_ids": ["BE10"], "confidence": "official" },
+        { "text": "Contributions are provisional in the early years and later regularised once the tax authorities communicate your actual professional income to your fund: you either pay a supplement or get money back. One social insurance fund (Xerius, a private but government-accredited fund, not INASTI itself) states starters get a reduced quarterly rate (reported at EUR 473.85/quarter for 2026) for the first four quarters, plus a one-off EUR 123.50 discount on the first contribution, and that regularisation typically arrives about 2 to 3 years after the tax year in question. These specific figures come from a fund's own client-facing page, not from INASTI directly, so treat them as indicative rather than the definitive official schedule.", "source_ids": ["BE27"], "confidence": "secondary" },
+        { "text": "Brussels: a declining monthly premium of EUR 4,000 total over 6 months (EUR 1,250 / 1,000 / 750 / 500 / 250 / 250) is available to unemployed jobseekers registered with Actiris who become self-employed in their principal activity in the Brussels-Capital Region, subject to not having used this or a similar scheme in the previous 2 years.", "source_ids": ["BE17"], "confidence": "official" },
+        { "text": "Brussels also runs a business-launch grant for individuals resident in the Brussels-Capital Region (postal codes 1000-1210) who don't yet have a BCE/KBO number and plan to create an SME with an economic purpose there; it partially covers certain launch expenses, though exact amounts were not stated on the page read this session.", "source_ids": ["BE18"], "confidence": "official" },
+        { "text": "hub.brussels (the Brussels regional economic-development agency) runs a general grants-finder tool covering federal, regional and sector-specific measures (e.g. Finexpo, a federal body supporting export of Belgian capital goods); use the tool for your specific situation rather than relying on any one measure listed here.", "source_ids": ["BE16"], "confidence": "official" },
+        { "text": "Flanders' equivalent funding body (VLAIO) and Wallonia's (SOWALFIN) were not independently checked this session: VLAIO's own site returned a bot-protection block on every attempt, and Wallonia's funding programmes specifically (as opposed to its professional-card rules) were not researched. Flag this as a gap for the Flanders/Wallonia editions of this guide.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "Belgium has no single mandatory chamber-of-commerce-style membership like Germany's IHK — registering with the BCE/KBO through an enterprise counter is the closest equivalent step, and it's a one-off fee rather than an ongoing membership. Budget for the social-contribution regularisation 2-3 years out; funds recommend agreeing an adapted contribution estimate up front rather than being surprised by a large catch-up bill.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Affiliate with a social insurance fund before day one.", "source_ids": ["BE9"] },
+        { "text": "Affiliate with a health-insurance mutual fund.", "source_ids": ["BE8"] },
+        { "text": "Ask your chosen fund for an adapted contribution estimate rather than accepting only the legal minimum, to reduce the size of the later regularisation.", "source_ids": [] },
+        { "text": "Check hub.brussels' grants tool (or Actiris' premium if coming from unemployment) before spending on consultants.", "source_ids": ["BE16"] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence and work permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence and work-permit rules for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "BE2",
+      "internal_notes": "Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the build doc's publishing gates). Regional professional-card fees/validity are corroborated across Brussels (BE2) and Wallonia (BE19) sources, read directly this session. Flanders was not separately checked. The federal Immigration Office's own page (dofi.ibz.be, SPF Intérieur) was blocked by bot-protection on every attempt this session, so the federal legal basis and the professional card's relationship to the 'single permit' (permis unique) route used for salaried work rest on WebSearch summaries only, not a directly-fetched official federal page — flag this explicitly to whoever reviews.",
+      "open_questions_for_reviewer": [
+        "Federal legal basis (which law/royal decree governs the professional card) not confirmed from a directly-fetched federal source this session — dofi.ibz.be was blocked by bot protection on every attempt.",
+        "Flanders-specific professional card fee/validity not independently checked this session (only Brussels and Wallonia sources were read directly).",
+        "How the professional card interacts with a settlement/long-term residence permit, or with switching from an employee's single permit to self-employment, was not found in any official source this session.",
+        "Whether an EU Blue Card holder or single-permit holder could add self-employed side activity was not researched for Belgium (Germany's equivalent guide flags the same open question for reference)."
+      ],
+      "official_information": [
+        { "text": "Any foreign national exercising a self-employed professional activity in Belgium, whether as an individual, or within an association or company, must hold a professional card (carte professionnelle/beroepskaart), even if the activity is unpaid. EU/EEA nationals and Swiss nationals are exempt, as are Ukrainian nationals under temporary protection, holders of unlimited residence permits, certain family members of EEA citizens, recognised refugees, and foreign nationals on business trips of up to 90 days per year.", "source_ids": ["BE2"], "confidence": "hold" },
+        { "text": "Professional cards are granted by the region (Brussels, Flanders or Wallonia) where the applicant will be established.", "source_ids": ["BE2"], "confidence": "hold" },
+        { "text": "Brussels-Capital Region: eligibility requires the right to reside in Belgium, compliance with the activity's regulatory obligations, and demonstrated economic interest to Brussels (the project must offer goods/services not already abundant locally, and contribute to things like job creation, innovation, or cultural promotion). Applicants abroad apply through a Belgian diplomatic or consular post; applicants already resident apply through an approved business counter. Required documents include the application form, a criminal-record extract, ID copy, two ID photos, and a business plan of up to 20 pages. Processing time for a complete application: about 3 months. Fees: EUR 140 at initial submission, EUR 90 when the business counter issues the card. Validity: up to 5 years; a first card is typically issued on a 2-year probationary basis, and continued validity depends on maintained residence rights.", "source_ids": ["BE2"], "confidence": "hold" },
+        { "text": "Wallonia: broadly similar process (own name, company representative, or managing partner all need one, unless EU/EEA/Swiss). Fee: EUR 140 at submission. Validity: up to 5 years, with a 2-year probationary period for a first card; renewal requires demonstrating continued regulatory, tax and social-security compliance. A refusal bars reapplication for 2 years unless new facts arise; appeals must be filed within 30 days, by registered mail, to the Minister for Employment.", "source_ids": ["BE19"], "confidence": "hold" },
+        { "text": "The professional card is understood (from secondary/search sources only, not a directly-fetched federal page this session) to be the self-employment-specific route, distinct from the 'single permit' (permis unique/gecombineerde vergunning) introduced in January 2019 for salaried work lasting more than 90 days. This distinction has not been confirmed against an official federal source this session.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
