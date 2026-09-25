@@ -1,0 +1,128 @@
+{
+  "slug": "belgium",
+  "title": "How to start a company in Belgium",
+  "summary": "Belgium gives a founder two main routes: register as a sole proprietor (eenmanszaak/entreprise individuelle) directly with the Kruispuntbank van Ondernemingen (KBO/BCE) via an accredited business counter, or form a private limited company (BV/SRL) through a notary. Since a 2019 reform, a BV/SRL has no fixed minimum capital requirement, but founders must show 'sufficient' start-up capital in a financial plan. Registration is split between federal bodies (KBO/BCE, VAT) and regional ones (professional-competency rules, support for foreign entrepreneurs), and every self-employed founder must join a social insurance fund and pay quarterly contributions.",
+  "last_checked": "2026-09-25",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-25",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Belgium gives a founder two main starting routes: register as a sole proprietor (eenmanszaak/entreprise individuelle) directly with the Kruispuntbank van Ondernemingen (KBO/BCE, the central business register) via an accredited business counter (ondernemingsloket/guichet d'entreprises), or form a private limited company (BV/SRL) through a notary. Since a 2019 company-law reform, a BV/SRL has no fixed minimum capital requirement — founders instead prepare a financial plan showing the company has sufficient resources to operate for at least two years — while the public limited company (NV/SA) still requires EUR 61,500 in capital. Belgium's business registration is split between federal and regional bodies: the KBO/BCE central register and VAT registration with the tax authorities are federal (FOD Economie/SPF Économie and FOD Financiën/SPF Finances), while professional-competency requirements for certain occupations, and support for foreign entrepreneurs, are handled regionally (Flanders, the Brussels-Capital Region, Wallonia). Every self-employed founder, whether sole proprietor or company director, must also join a social insurance fund and pay quarterly contributions, with a reduced rate available to first-time founders in their first year.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form: sole proprietorship, BV/SRL, or NV/SA",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Status"],
+        "rows": [
+          ["Sole proprietorship (eenmanszaak/entreprise individuelle)", "none", "personal, unlimited — business and private assets are not legally separated, though the primary residence can be protected from seizure with a notarial deed", "no", "a few days — registration is fully digitised", "official [S43]"],
+          ["BV/SRL (private limited company)", "no fixed minimum since the 2019 company-law reform — founders must instead show 'sufficient' start-up capital in a financial plan demonstrating the company can operate for at least 2 years", "limited to the company", "yes", "no official fixed timeline; the signed deed must be filed with the commercial court within 30 days, and beneficial owners (UBO) registered within 30 days of incorporation", "official [S40, S41]"],
+          ["NV/SA (public limited company)", "EUR 61,500", "limited to the company", "yes", "same filing deadlines as BV/SRL", "official [S40]"]
+        ]
+      },
+      "official_information": [
+        { "text": "Business.belgium.be, the government's official start-a-business portal, lists six company forms for incorporation. The private limited company (SRL/BV), cooperative company (SC) and general/limited partnerships (SNC/SComm) require only 'sufficient start-up capital' with no fixed minimum figure, while the public limited company (SA/NV) requires EUR 61,500 in minimum capital.", "source_ids": ["S40"], "confidence": "official" },
+        { "text": "For an SRL/BV you are legally required to prepare a financial plan signed by the founders. It must demonstrate that your company has sufficient resources to launch operations and remain in business for at least two years.", "source_ids": ["S41"], "confidence": "official" },
+        { "text": "A notary is required for limited-liability structures (SRL/BV, SA/NV, SC); for unlimited-liability partnerships (SNC, SComm) the parties themselves or a third party can draft the founding documents. Notary costs are described only as varying 'by complexity' — no fixed or regulated notary fee schedule for company incorporation was found on the official portal (unlike, for example, Spain's regulated notary tariff for SL incorporation).", "source_ids": ["S40", "S41"], "confidence": "official" },
+        { "text": "The deed of incorporation must be filed with the relevant business court within 30 days of signing, and a company's beneficial owners (UBO) must be registered within 30 days of incorporation.", "source_ids": ["S40", "S41"], "confidence": "official" },
+        { "text": "A sole proprietorship (eenmanszaak/entreprise individuelle) can be created without a notary and without any minimum capital requirement. Registration is digitised, so the business can be up and running in a few days. Because there is no legal separation between business and private assets, the entrepreneur is personally and fully liable for the business's debts with all their assets — though the primary residence can be protected from seizure with a notarial deed.", "source_ids": ["S43"], "confidence": "official" },
+        { "text": "General requirements to be self-employed in Belgium: be at least 18 years old (or emancipated), and enjoy civil rights and legal competence (no disqualifying criminal penalties, incapacity declarations, or professional bans). Certain occupations also require proof of professional skills, particularly in the Walloon Region and the Brussels-Capital Region.", "source_ids": ["S44"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "For a first-time founder testing an idea, a sole proprietorship is the cheapest and fastest way to start in Belgium, but the unlimited personal liability is a real risk once you take on contracts, suppliers, or debt. A BV/SRL is worth the notary step and the financial-plan exercise once you want to cap your personal risk, bring in a co-founder, or reinvest profit in the company rather than draw it all as personal income — just budget time and money for the notary, since Belgium (unlike Spain) has no fixed, regulated notary tariff for company incorporation, so get a quote up front.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether personal, unlimited liability (sole proprietorship) is acceptable for now, or whether you need the limited liability of a BV/SRL.", "source_ids": [] },
+        { "text": "If forming a BV/SRL, prepare a financial plan (signed by the founders) showing sufficient capital to operate for at least 2 years — the notary will need this before executing the deed.", "source_ids": ["S41"] },
+        { "text": "Book a notary for a BV/SRL, NV/SA or SC and ask for a cost estimate up front, since notary fees are not set by a fixed regulated tariff.", "source_ids": ["S40", "S41"] },
+        { "text": "File the signed deed of incorporation with the commercial court within 30 days of signing, and register beneficial owners (UBO) within 30 days of incorporation.", "source_ids": ["S40", "S41"] }
+      ]
+    },
+    {
+      "id": "registration-steps",
+      "title": "Registering your business: KBO/BCE, VAT, and the business counter",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Every enterprise — sole proprietor or company — must register in the Kruispuntbank van Ondernemingen / Banque-Carrefour des Entreprises (KBO/BCE), the central federal business register, via an accredited business counter (ondernemingsloket/guichet d'entreprises). These formalities are free if you handle the underlying administrative steps yourself, but there is a fee for going through a business counter or social security service — in practice this is how nearly all founders complete the step.", "source_ids": ["S40"], "confidence": "official" },
+        { "text": "The KBO/BCE registration fee via an accredited business counter is EUR 111.50 per establishment unit (2026 figure). The same EUR 111.50 fee applies to later modifications such as registering an additional establishment unit, changing address, or deregistering.", "source_ids": ["S43", "S46"], "confidence": "official" },
+        { "text": "When registering, you select NACE-BEL codes (the standardised Belgian industry classification, 5 or 7 digits plus a description) that describe your business activities — up to five codes per establishment unit as primary activities, with no limit on secondary-activity codes. Getting these right matters: mismatched codes can affect eligibility for bonuses or subsidies and create confusion for customers, suppliers and government agencies about what the business actually does.", "source_ids": ["S45"], "confidence": "official" },
+        { "text": "A sole proprietor is not automatically subject to VAT — registration is required only if you supply goods or services covered by the Belgian VAT Code. Activating a VAT number through a business counter costs EUR 60 to EUR 80, depending on the counter (2026 figure).", "source_ids": ["S43"], "confidence": "official" },
+        { "text": "Every self-employed person — whether in a main or secondary occupation, a company manager or director, an active partner, or a self-employed student — must join a social insurance fund (caisse d'assurances sociales/sociaal verzekeringsfonds) before starting their activity. A company must separately join a fund, distinct from its founders' personal membership, within three months of the company's creation.", "source_ids": ["S42"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "The accredited business counter is the practical one-stop shop for most of these steps — KBO/BCE registration, VAT activation, and NACE code selection can typically be handled in the same visit or online session. Unlike Spain's CIRCE/PAE system, though, the official Belgian portal doesn't advertise a single guaranteed turnaround time for the whole bundle, so ask your chosen counter for a realistic timeline for your specific case.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Choose your NACE-BEL code(s) before registering.", "source_ids": ["S45"] },
+        { "text": "Register with the KBO/BCE via an accredited business counter (EUR 111.50 per establishment unit, 2026 figure).", "source_ids": ["S43", "S46"] },
+        { "text": "Activate a VAT number if your activity is taxable (EUR 60-80 via a business counter, 2026 figure).", "source_ids": ["S43"] },
+        { "text": "Join a social insurance fund before starting your activity (a company must join separately, within 3 months of incorporation).", "source_ids": ["S42"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "VAT, e-invoicing, and the small-business exemption",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "From 1 January 2026, all Belgian VAT-registered businesses — Belgian entities, Belgian permanent establishments of foreign entities, members of Belgian VAT groups, and taxable entities with certain special VAT schemes — must be able to issue and receive structured electronic invoices for domestic B2B transactions, in the EN 16931 European standard via the Peppol BIS Billing 3.0 format. Traditional formats such as PDF are no longer sufficient for in-scope transactions. Exclusions apply to foreign entities solely VAT-registered in Belgium, entities carrying out certain VAT-exempt activities, bankrupt entities, and those under a special flat-rate scheme.", "source_ids": ["S49"], "confidence": "official" },
+        { "text": "An EU-wide small-business VAT exemption scheme applies in Belgium: small enterprises below a national annual turnover threshold can opt out of charging VAT, with exclusions for construction work, cash-register-obliged catering/restaurant activities, and non-occasional trading of waste or used materials. Belgium applies a transitional period if the threshold is exceeded during the calendar year. The European Commission's own SME-VAT-rules portal does not state Belgium's exact euro threshold and instead points to a separate EU database (TEDB), which could not be read as a data source in this session (it is a JavaScript application, not a fetchable page).", "source_ids": ["S50"], "confidence": "official" },
+        { "text": "Independent VAT-advisory sources consistently report Belgium's current small-business VAT exemption threshold as EUR 25,000 annual turnover (unindexed, under BTW-Wetboek/Code TVA articles 56bis-56undecies), and report that the Belgian federal parliament (Kamer/Chambre) voted on 17 September 2026 on a bill (Kamer doc. 1593/001 of 15 June 2026) to raise this threshold by EUR 1,000 per year from 1 January 2027, reaching EUR 30,000 by 2031. Direct attempts to confirm the current figure or the bill's final enacted status on an FOD Financiën (SPF Finances), VLAIO, or Kamer/Chambre page were blocked by bot-protection or access restrictions on those specific pages in this session — this figure is reported here via a VAT-specialist advisory source, not a directly-read official page, so confirm the live figure with FOD Financiën/SPF Finances or an accountant before relying on VAT-exempt status.", "source_ids": ["S51"], "confidence": "secondary" }
+      ],
+      "expert_interpretation": [
+        { "text": "Because the small-business VAT exemption threshold could not be directly confirmed on an official government page this session, and is in the middle of a legislated multi-year increase, don't assume you're under the limit without checking the current figure directly with FOD Financiën/SPF Finances or an accountant. Separately, note that the e-invoicing mandate applies to all VAT-registered businesses regardless of size — there is no small-business carve-out from the e-invoicing requirement itself.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "If you will invoice other Belgian businesses, confirm you can issue and receive Peppol BIS/EN 16931 structured e-invoices — mandatory from 1 January 2026 for all VAT-registered businesses.", "source_ids": ["S49"] },
+        { "text": "Don't assume you qualify for the small-business VAT exemption without confirming the current threshold directly with FOD Financiën/SPF Finances — it was reported as EUR 25,000 by advisory sources as of this check and is under a legislated multi-year increase toward EUR 30,000 by 2031.", "source_ids": ["S51"] }
+      ]
+    },
+    {
+      "id": "social-security",
+      "title": "Social insurance fund contributions for the self-employed",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "RSVZ/INASTI's 2026 contribution table (self-employed in a main occupation) sets contributions at 20.50% on the portion of net professional income up to EUR 75,024.54, and 14.16% on the portion between EUR 75,024.54 and EUR 110,562.42.", "source_ids": ["S47"], "confidence": "official" },
+        { "text": "For 2026, the minimum quarterly contribution for a self-employed person in a main occupation is EUR 890.42 (calculated on a minimum deemed income of EUR 17,374.08/year), and the maximum quarterly contribution is EUR 5,103.05 (deemed income capped at EUR 110,562.42). A newly self-employed person pays this same EUR 890.42 provisional quarterly contribution from the start of activity, unless the primostarter reduction below applies.", "source_ids": ["S47"], "confidence": "official" },
+        { "text": "First-time self-employed founders ('primostarters') get a reduced minimum quarterly contribution of EUR 459.82 (calculated on a lower deemed income of EUR 8,972.07/year), plus a one-off EUR 118.52 discount on the very first quarterly contribution (2026 figures).", "source_ids": ["S47"], "confidence": "official" },
+        { "text": "For 2026, a self-employed person in a secondary occupation (bijberoep) pays no social contributions if net income is below EUR 1,922.16/year; above that threshold, the same 20.50%/14.16% rate bands apply, with a EUR 98.51 minimum quarterly contribution.", "source_ids": ["S47"], "confidence": "official" },
+        { "text": "Companies must also pay an annual company contribution (vennootschapsbijdrage) in addition to the individual contributions of any self-employed directors. RSVZ's 2026 contribution note states that the 2026 company-contribution amounts had not yet been announced as of this document ('De bedragen van de jaarlijkse vennootschapsbijdrage voor 2026 zullen later worden meegedeeld').", "source_ids": ["S47"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Budget for social insurance fund contributions from day one — the quarterly minimum is due regardless of how much you actually earn in your first months, though the primostarter reduction roughly halves it for new founders. Because these figures are reset every year, re-check the live RSVZ contribution table before you register rather than relying on last year's numbers, and if you're forming a company, ask your fund directly for the 2026 company contribution once RSVZ publishes it.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Join a social insurance fund before starting your activity.", "source_ids": ["S42"] },
+        { "text": "Ask your fund whether you qualify for the primostarter reduced minimum contribution (EUR 459.82/quarter, 2026 figure) instead of the standard EUR 890.42/quarter.", "source_ids": ["S47"] },
+        { "text": "If forming a company, confirm the 2026 vennootschapsbijdrage (company contribution) amount directly with your fund once RSVZ publishes it.", "source_ids": ["S47"] }
+      ]
+    }
+  ]
+}
