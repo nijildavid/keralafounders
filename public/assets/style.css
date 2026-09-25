@@ -771,7 +771,7 @@ footer{
 .guidance-country-card small{color:var(--muted);font-size:12px}
 .guidance-country-card-disabled{cursor:default;opacity:.85}
 .guidance-date-stamp{font-size:13px;margin:6px 0 18px}
-.guidance-disclaimer{max-width:none}
+.guidance-disclaimer{max-width:none;line-height:1.75}
 .guidance-toc{border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:24px 0;background:#fff}
 .guidance-toc summary{font-weight:700;cursor:pointer;font-size:14px}
 .guidance-toc ul{margin:12px 0 0;padding-left:20px;line-height:2}
