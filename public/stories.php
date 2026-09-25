@@ -1,10 +1,12 @@
+<?php
+$pageTitle = 'Stories — Kerala Founders';
+$metaDescription = 'Real people, real journeys — stories from the Kerala-connected community building across Europe.';
+$canonicalUrl = 'https://keralafounders.eu/stories.php';
+?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>Stories — Kerala Founders</title><meta name="description" content="Real people, real journeys — stories from the Kerala-connected community building across Europe.">
-<link rel="canonical" href="https://keralafounders.eu/stories.php">
 <meta name="robots" content="noindex">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Stories — Kerala Founders"><meta property="og:description" content="Real people, real journeys — stories from the Kerala-connected community building across Europe."><meta property="og:url" content="https://keralafounders.eu/stories.php"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Stories — Kerala Founders"><meta name="twitter:description" content="Real people, real journeys — stories from the Kerala-connected community building across Europe."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
@@ -24,6 +26,49 @@
   <p class="muted" style="font-size:16px;line-height:1.8;margin:0">The first conversations are already happening. Soon you'll be able to listen to the podcast, read the full conversations and discover the people behind the businesses.</p>
 </div>
 
+<div class="coming-soon-panel" style="margin-top:24px">
+  <div class="eyebrow">Get notified</div>
+  <h2 style="font-size:22px;margin:10px 0 12px">Be the first to know when stories go live.</h2>
+  <form id="storySignupForm" style="display:flex;gap:10px;flex-wrap:wrap;align-items:start;margin-top:14px">
+    <input class="field" style="flex:1;min-width:220px" id="storyEmail" name="email" type="email" required placeholder="you@company.com" aria-label="Email address">
+    <input type="text" name="website" class="guidance-feedback-website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="pill" type="submit">Notify me →</button>
+  </form>
+  <div id="storySignupMessage" aria-live="polite" style="margin-top:12px"></div>
+</div>
+
 </div></section>
+
+<script>
+(function(){
+  const form = document.getElementById('storySignupForm');
+  const msg = document.getElementById('storySignupMessage');
+  function showBanner(text, isError){
+    msg.innerHTML = `<div class="${isError?'error':'notice'}" style="margin:0">${text}</div>`;
+  }
+  form.onsubmit = async e => {
+    e.preventDefault();
+    const fd = new FormData(form);
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    const originalBtnHTML = submitBtn.innerHTML;
+    submitBtn.setAttribute('aria-busy','true');
+    submitBtn.innerHTML = '<span class="btn-spinner" aria-hidden="true"></span>Submitting…';
+    try{
+      const res = await fetch('api/submit-story-signup.php', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({email: fd.get('email'), website: fd.get('website')})});
+      const data = await res.json();
+      if(!res.ok) throw new Error(data.error || 'Something went wrong.');
+      showBanner('Thanks! We\'ll let you know when stories go live.', false);
+      form.reset();
+    }catch(err){
+      showBanner(KFUI.esc(err.message), true);
+    }finally{
+      submitBtn.disabled = false;
+      submitBtn.removeAttribute('aria-busy');
+      submitBtn.innerHTML = originalBtnHTML;
+    }
+  };
+})();
+</script>
 
 </main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>

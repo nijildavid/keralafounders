@@ -66,6 +66,15 @@ CREATE TABLE IF NOT EXISTS guidance_feedback (
   INDEX idx_ip_hash_created (ip_hash, created_at)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE IF NOT EXISTS story_signups (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  ip_hash CHAR(64) NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY uniq_email (email),
+  INDEX idx_ip_hash_created (ip_hash, created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 INSERT INTO companies (slug, name, website, industry, business_type, size, country, city, location, description, status) VALUES
 ('monsoon-media', 'Monsoon Media', 'monsoon.example', 'Professional Services', 'SME / Local Business', '1–10', 'Austria', 'Vienna', 'Vienna, Austria', 'A creative media company building from Vienna.', 'approved'),
 ('cardamom-commerce', 'Cardamom Commerce', 'cardamom.example', 'Retail & E-commerce', 'SME / Local Business', '11–50', 'Belgium', 'Brussels', 'Brussels, Belgium', 'Consumer products inspired by Kerala and made for Europe.', 'approved'),

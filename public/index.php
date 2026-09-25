@@ -27,13 +27,13 @@ $jsonLd = [
     'url' => 'https://keralafounders.eu/',
     'description' => 'Keralite founders and companies building across the European Union.',
 ];
+$pageTitle = 'Kerala Founders — From Kerala, across Europe';
+$metaDescription = 'Keralite founders and companies building across the European Union.';
+$canonicalUrl = 'https://keralafounders.eu/';
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>Kerala Founders — From Kerala, across Europe</title><meta name="description" content="Keralite founders and companies building across the European Union.">
-<link rel="canonical" href="https://keralafounders.eu/">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Kerala Founders — From Kerala, across Europe"><meta property="og:description" content="Keralite founders and companies building across the European Union."><meta property="og:url" content="https://keralafounders.eu/"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Kerala Founders — From Kerala, across Europe"><meta name="twitter:description" content="Keralite founders and companies building across the European Union."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>

@@ -23,59 +23,13 @@ if ($page > $totalPages) {
 $start = ($page - 1) * PAGE_SIZE;
 $pageRows = array_slice($companies, $start, PAGE_SIZE);
 
-function ssr_page_href(int $p): string
-{
-    return $p <= 1 ? 'founders.php' : 'founders.php?page=' . $p;
-}
-
-function ssr_page_numbers(int $current, int $total): array
-{
-    if ($total <= 7) {
-        return range(1, $total);
-    }
-    $out = [1];
-    if ($current > 3) {
-        $out[] = '...';
-    }
-    for ($i = max(2, $current - 1); $i <= min($total - 1, $current + 1); $i++) {
-        $out[] = $i;
-    }
-    if ($current < $total - 2) {
-        $out[] = '...';
-    }
-    $out[] = $total;
-    return $out;
-}
-
-function ssr_pagination_html(int $page, int $totalPages): string
-{
-    if ($totalPages <= 1) {
-        return '';
-    }
-    $html = '<nav class="pagination" aria-label="Directory pages">';
-    $prevDisabled = $page <= 1;
-    $html .= '<a href="' . h(ssr_page_href($page - 1)) . '" class="page-btn prev' . ($prevDisabled ? ' disabled' : '') . '"' . ($prevDisabled ? ' aria-disabled="true" tabindex="-1"' : '') . '>&larr; Prev</a>';
-    foreach (ssr_page_numbers($page, $totalPages) as $n) {
-        if ($n === '...') {
-            $html .= '<span class="page-ellipsis">&hellip;</span>';
-        } else {
-            $active = $n === $page;
-            $html .= '<a href="' . h(ssr_page_href($n)) . '" class="page-btn' . ($active ? ' active' : '') . '"' . ($active ? ' aria-current="page"' : '') . '>' . $n . '</a>';
-        }
-    }
-    $nextDisabled = $page >= $totalPages;
-    $html .= '<a href="' . h(ssr_page_href($page + 1)) . '" class="page-btn next' . ($nextDisabled ? ' disabled' : '') . '"' . ($nextDisabled ? ' aria-disabled="true" tabindex="-1"' : '') . '>Next &rarr;</a>';
-    $html .= '</nav>';
-    return $html;
-}
-
 $resultCountText = $total === 0
     ? '0 companies'
     : ($total > PAGE_SIZE
         ? 'Showing ' . ($start + 1) . '–' . min($start + PAGE_SIZE, $total) . ' of ' . $total . ' companies'
         : $total . ' ' . ($total === 1 ? 'company' : 'companies'));
 
-$canonicalUrl = 'https://keralafounders.eu/' . ssr_page_href($page);
+$canonicalUrl = 'https://keralafounders.eu/' . ssr_page_href('founders.php', [], $page);
 $pageTitle = $page > 1 ? "Founders — Page $page — Kerala Founders" : 'Founders — Kerala Founders';
 $metaDescription = $page > 1
     ? "Browse page $page of the Kerala Founders directory — Kerala-origin founders and companies building across the European Union."
@@ -96,13 +50,11 @@ $breadcrumbJsonLd = breadcrumb_json_ld([
     ['name' => 'Home', 'url' => 'https://keralafounders.eu/'],
     ['name' => 'Founders', 'url' => 'https://keralafounders.eu/founders.php'],
 ]);
+$canonicalId = 'canonicalLink';
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title><?= h($pageTitle) ?></title><meta name="description" content="<?= h($metaDescription) ?>">
-<link rel="canonical" id="canonicalLink" href="<?= h($canonicalUrl) ?>">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="<?= h($pageTitle) ?>"><meta property="og:description" content="<?= h($metaDescription) ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?= h($pageTitle) ?>"><meta name="twitter:description" content="<?= h($metaDescription) ?>"><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
 <script type="application/ld+json"><?= json_encode($breadcrumbJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
@@ -112,7 +64,7 @@ $breadcrumbJsonLd = breadcrumb_json_ld([
 <div class="toolbar"><input id="q" class="field search" placeholder="Search founders or companies...">
 <select id="country" class="select"><option value="">All countries</option></select><select id="city" class="select"><option value="">All cities</option></select><select id="industry" class="select"><option value="">All industries</option></select><select id="businessType" class="select"><option value="">All business types</option></select><select id="size" class="select"><option value="">Company size</option></select><button id="clear" class="pill light">× Clear filters</button></div>
 <div class="directory-tools"><span id="resultCount" class="muted" style="font-size:13px"><?= h($resultCountText) ?></span><div class="toggle"><button id="cardView" class="active" aria-label="Card view" title="Card view"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></button><button id="listView" aria-label="List view" title="List view"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></button></div></div>
-</div></section><section><div class="wrap"><div id="directory" class="cards"><?php foreach ($pageRows as $c) { echo company_card_html($c); } ?></div><div id="pagination"><?= ssr_pagination_html($page, $totalPages) ?></div><div class="directory-bottom-space"></div></div></section>
+</div></section><section><div class="wrap"><div id="directory" class="cards"><?php foreach ($pageRows as $c) { echo company_card_html($c); } ?></div><div id="pagination"><?= ssr_pagination_html('founders.php', [], $page, $totalPages) ?></div><div class="directory-bottom-space"></div></div></section>
 
 <script>
 (function(){
@@ -125,7 +77,6 @@ $breadcrumbJsonLd = breadcrumb_json_ld([
     industry: document.getElementById('industry'),
     businessType: document.getElementById('businessType'),
     size: document.getElementById('size'),
-    sort: document.getElementById('sort'),
     directory: document.getElementById('directory'),
     pagination: document.getElementById('pagination'),
     resultCount: document.getElementById('resultCount'),
@@ -155,16 +106,37 @@ $breadcrumbJsonLd = breadcrumb_json_ld([
   opts(els.businessType, KF.businessTypes, 'All business types');
   opts(els.size, KF.sizes, 'Company size');
 
-  // Pre-select Industry from a ?industry= link (older bookmarks/shares still using this page).
-  const initialIndustry = new URLSearchParams(location.search).get('industry');
-  if(initialIndustry && KF.industries.includes(initialIndustry)){
-    els.industry.value = initialIndustry;
-  }
-
   function updateCities(){
     opts(els.city, KF.countries[els.country.value] || [], 'All cities');
   }
+
+  // Restore filters from the URL so shared/bookmarked filtered links work on load.
+  const params = new URLSearchParams(location.search);
+  const initialCountry = params.get('country');
+  if(initialCountry && Object.keys(KF.countries).includes(initialCountry)){
+    els.country.value = initialCountry;
+  }
   updateCities();
+  const initialCity = params.get('city');
+  if(initialCity && Array.from(els.city.options).some(o=>o.value===initialCity)){
+    els.city.value = initialCity;
+  }
+  const initialIndustry = params.get('industry');
+  if(initialIndustry && KF.industries.includes(initialIndustry)){
+    els.industry.value = initialIndustry;
+  }
+  const initialBusinessType = params.get('businessType');
+  if(initialBusinessType && KF.businessTypes.includes(initialBusinessType)){
+    els.businessType.value = initialBusinessType;
+  }
+  const initialSize = params.get('size');
+  if(initialSize && KF.sizes.includes(initialSize)){
+    els.size.value = initialSize;
+  }
+  const initialQ = params.get('q');
+  if(initialQ){
+    els.q.value = initialQ;
+  }
 
   function filteredRows(){
     const q=(els.q.value||'').toLowerCase().trim();
@@ -248,7 +220,7 @@ $breadcrumbJsonLd = breadcrumb_json_ld([
     const start = (page-1)*PAGE_SIZE;
     const pageRows = rows.slice(start, start+PAGE_SIZE);
 
-    els.directory.innerHTML = pageRows.length ? pageRows.map(KFUI.companyCard).join('') : `<div class="empty-state">No companies match your filters.</div>`;
+    els.directory.innerHTML = pageRows.length ? pageRows.map(KFUI.companyCard).join('') : `<div class="panel" style="grid-column:1/-1;text-align:center">No companies match your filters.</div>`;
     els.directory.classList.toggle('list-view', els.list.classList.contains('active'));
 
     if(els.resultCount){
@@ -282,8 +254,15 @@ $breadcrumbJsonLd = breadcrumb_json_ld([
     renderAll();
   }
 
+  function debounce(fn, wait){
+    let t;
+    return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
+  }
+  const debouncedFilterChange = debounce(onFilterChange, 250);
+
   els.country.addEventListener('change', ()=>{ els.city.value=''; updateCities(); onFilterChange(); });
-  [els.q,els.city,els.industry,els.businessType,els.size,els.sort].forEach(el=>{if(el){el.addEventListener('input',onFilterChange);el.addEventListener('change',onFilterChange);}});
+  if(els.q){ els.q.addEventListener('input', debouncedFilterChange); els.q.addEventListener('change', debouncedFilterChange); }
+  [els.city,els.industry,els.businessType,els.size].forEach(el=>{if(el){el.addEventListener('input',onFilterChange);el.addEventListener('change',onFilterChange);}});
   els.clear.addEventListener('click', ()=>{
     els.q.value=''; els.country.value=''; els.city.value=''; els.industry.value=''; els.businessType.value=''; els.size.value='';
     updateCities(); onFilterChange();

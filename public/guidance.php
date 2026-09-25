@@ -11,14 +11,14 @@ usort($faqPreview, fn($a, $b) => strcmp($b['last_checked'], $a['last_checked']))
 $faqPreview = array_slice($faqPreview, 0, 5);
 
 $robotsMeta = empty($KF_GUIDANCE_NAV_LIVE) ? '<meta name="robots" content="noindex">' : '';
+$pageTitle = 'Guidance — Kerala Founders';
+$metaDescription = 'Practical, verified knowledge for building, working and navigating business life in Europe — sourced, dated and re-checked every 6 months.';
+$canonicalUrl = 'https://keralafounders.eu/guidance.php';
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>Guidance — Kerala Founders</title><meta name="description" content="Practical, verified knowledge for building, working and navigating business life in Europe — sourced, dated and re-checked every 6 months.">
-<link rel="canonical" href="https://keralafounders.eu/guidance.php">
 <?= $robotsMeta ?>
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Guidance — Kerala Founders"><meta property="og:description" content="Practical, verified knowledge for building, working and navigating business life in Europe."><meta property="og:url" content="https://keralafounders.eu/guidance.php"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Guidance — Kerala Founders"><meta name="twitter:description" content="Practical, verified knowledge for building, working and navigating business life in Europe."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Guidance","item":"https://keralafounders.eu/guidance.php"}]}</script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script><script src="assets/guidance.js" defer></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>

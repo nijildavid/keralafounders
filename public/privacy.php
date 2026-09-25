@@ -1,9 +1,11 @@
+<?php
+$pageTitle = 'Privacy — Kerala Founders';
+$metaDescription = "Kerala Founders' privacy policy — how we collect, use, and protect your information.";
+$canonicalUrl = 'https://keralafounders.eu/privacy.php';
+?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>Privacy — Kerala Founders</title><meta name="description" content="Kerala Founders' privacy policy — how we collect, use, and protect your information.">
-<link rel="canonical" href="https://keralafounders.eu/privacy.php">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="Privacy — Kerala Founders"><meta property="og:description" content="Kerala Founders' privacy policy — how we collect, use, and protect your information."><meta property="og:url" content="https://keralafounders.eu/privacy.php"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Privacy — Kerala Founders"><meta name="twitter:description" content="Kerala Founders' privacy policy — how we collect, use, and protect your information."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Privacy","item":"https://keralafounders.eu/privacy.php"}]}</script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>

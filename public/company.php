@@ -24,8 +24,8 @@ if ($company) {
 
 $siteName = 'Kerala Founders';
 if ($company) {
-    $pageTitle = h($company['name']) . ' — ' . $siteName;
-    $metaDescription = h(truncate_meta($company['description']));
+    $pageTitle = $company['name'] . ' — ' . $siteName;
+    $metaDescription = truncate_meta($company['description']);
     $canonicalUrl = 'https://keralafounders.eu/company.php?id=' . rawurlencode($slug);
 } else {
     $pageTitle = 'Company not found — ' . $siteName;
@@ -64,10 +64,7 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title><?= $pageTitle ?></title><meta name="description" content="<?= $metaDescription ?>">
-<link rel="canonical" href="<?= h($canonicalUrl) ?>">
-<meta property="og:type" content="website"><meta property="og:site_name" content="<?= h($siteName) ?>"><meta property="og:title" content="<?= $pageTitle ?>"><meta property="og:description" content="<?= $metaDescription ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?= $pageTitle ?>"><meta name="twitter:description" content="<?= $metaDescription ?>"><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <?php if ($jsonLd): ?><script type="application/ld+json"><?= json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
 <?php if ($breadcrumbJsonLd): ?><script type="application/ld+json"><?= json_encode($breadcrumbJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>

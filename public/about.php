@@ -1,9 +1,11 @@
+<?php
+$pageTitle = 'About — Kerala Founders';
+$metaDescription = 'Learn how Kerala Founders connects Keralite-founded businesses and founders building across Europe.';
+$canonicalUrl = 'https://keralafounders.eu/about.php';
+?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>About — Kerala Founders</title><meta name="description" content="Learn how Kerala Founders connects Keralite-founded businesses and founders building across Europe.">
-<link rel="canonical" href="https://keralafounders.eu/about.php">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="About — Kerala Founders"><meta property="og:description" content="Learn how Kerala Founders connects Keralite-founded businesses and founders building across Europe."><meta property="og:url" content="https://keralafounders.eu/about.php"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="About — Kerala Founders"><meta name="twitter:description" content="Learn how Kerala Founders connects Keralite-founded businesses and founders building across Europe."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"About","item":"https://keralafounders.eu/about.php"}]}</script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>

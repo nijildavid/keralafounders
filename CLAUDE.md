@@ -134,6 +134,9 @@ UI does anything; the real trigger is a push to `main`.
 5. `admin-login.php` and `admin-edit.php` intentionally use a different,
    minimal admin-only header and no footer — exclude these from any
    header/footer/nav redesign work.
+6. Spacing/border-radius tokens and the canonical breakpoint set live in
+   `STYLE-GUIDE.md` — new or touched CSS should use them; don't mass-migrate
+   existing hardcoded values.
 
 ## Current feature surface
 
@@ -162,3 +165,4 @@ UI does anything; the real trigger is a push to `main`.
 - `HISTORY.md` — chronological build log.
 - `TAXONOMY.md` — industry/business-type classification reference; don't
   edit ad hoc, it's governed at named checkpoints.
+- `STYLE-GUIDE.md` — CSS spacing/radius tokens and breakpoint conventions.

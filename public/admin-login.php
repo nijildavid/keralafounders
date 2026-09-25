@@ -31,9 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <div class="eyebrow">Admin</div>
 <h1>Sign in.</h1>
 <form method="post" class="form-card" style="margin-top:20px">
-  <?php if ($error): ?><div class="notice" role="alert" style="margin-bottom:16px"><?= htmlspecialchars($error, ENT_QUOTES) ?></div><?php endif; ?>
+  <?php if ($error): ?><div class="error" role="alert" style="margin-bottom:16px"><?= htmlspecialchars($error, ENT_QUOTES) ?></div><?php endif; ?>
   <label class="label" for="admin-password">Password</label>
   <input class="field" id="admin-password" type="password" name="password" required autofocus>
-  <button class="pill coral" type="submit" style="margin-top:16px">Sign in →</button>
+  <button class="pill" type="submit" style="margin-top:16px">Sign in →</button>
 </form>
 </div></section></main></body></html>

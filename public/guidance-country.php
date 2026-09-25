@@ -83,11 +83,8 @@ if ($country !== null) {
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title><?= h($pageTitle) ?></title><meta name="description" content="<?= h($metaDescription) ?>">
-<link rel="canonical" href="<?= h($canonicalUrl) ?>">
 <?= $robotsMeta ?>
-<meta property="og:type" content="article"><meta property="og:site_name" content="<?= h($siteName) ?>"><meta property="og:title" content="<?= h($pageTitle) ?>"><meta property="og:description" content="<?= h($metaDescription) ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?= h($pageTitle) ?>"><meta name="twitter:description" content="<?= h($metaDescription) ?>"><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php $ogType = 'article'; include __DIR__ . '/partials/meta-tags.php'; ?>
 <?php if ($articleJsonLd): ?><script type="application/ld+json"><?= json_encode($articleJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
 <script type="application/ld+json"><?= json_encode($breadcrumbJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script><script src="assets/guidance.js" defer></script></head>
