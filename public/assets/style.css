@@ -73,7 +73,7 @@ button{cursor:pointer}
 .hero-inner>div{position:relative;z-index:1;max-width:min(620px,48%)}
 .tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #d6d3d1;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:600;margin-bottom:25px;background:#fff}
 .tag:before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%}
-.hero h1{font-size:72px;line-height:1.03;letter-spacing:-.055em;margin:0;max-width:700px;font-weight:700}
+.hero h1{font-family:Georgia,serif;font-size:72px;line-height:1.03;letter-spacing:-.055em;margin:0;max-width:700px;font-weight:700}
 .hero h1 span{color:var(--primary)}
 .hero-copy{font-size:18px;line-height:1.75;color:#57534e;max-width:650px;margin:26px 0 32px}
 .hero-actions{display:flex;gap:10px;flex-wrap:wrap}
