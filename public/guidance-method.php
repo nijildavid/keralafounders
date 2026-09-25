@@ -1,10 +1,12 @@
+<?php
+$pageTitle = 'How we check our information — Kerala Founders';
+$metaDescription = 'How Kerala Founders Guidance chooses sources, marks confidence levels, and re-checks its information every 6 months.';
+$canonicalUrl = 'https://keralafounders.eu/guidance-method.php';
+?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>How we check our information — Kerala Founders</title><meta name="description" content="How Kerala Founders Guidance chooses sources, marks confidence levels, and re-checks its information every 6 months.">
-<link rel="canonical" href="https://keralafounders.eu/guidance-method.php">
 <meta name="robots" content="noindex">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="How we check our information — Kerala Founders"><meta property="og:description" content="How Kerala Founders Guidance chooses sources, marks confidence levels, and re-checks its information every 6 months."><meta property="og:url" content="https://keralafounders.eu/guidance-method.php"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="How we check our information — Kerala Founders"><meta name="twitter:description" content="How Kerala Founders Guidance chooses sources, marks confidence levels, and re-checks its information every 6 months."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Guidance","item":"https://keralafounders.eu/guidance.php"},{"@type":"ListItem","position":3,"name":"How we check our information","item":"https://keralafounders.eu/guidance-method.php"}]}</script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script><script src="assets/guidance.js" defer></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>

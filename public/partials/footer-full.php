@@ -15,7 +15,7 @@ $footerTopCountries = fetch_top_countries($db, 10);
   <div class="footer-main">
     <div class="wrap footer-grid">
       <div class="footer-col footer-brand-col">
-        <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.svg" alt="">Kerala Founders</a>
+        <a class="footer-brand" href="index.php"><img class="footer-brand-mark" src="assets/logo.svg" alt="Kerala Founders">Kerala Founders</a>
         <p class="footer-tagline">Connecting Kerala's global ecosystem of businesses, founders and communities.</p>
       </div>
       <div class="footer-col">
@@ -68,10 +68,6 @@ $footerTopCountries = fetch_top_countries($db, 10);
         <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?><a href="guidance-method.php">How we check our information</a><?php endif; ?>
         <a href="mailto:hello@keralafounders.eu">Contact Us</a>
       </nav>
-      <div class="footer-spotify">
-        <strong>Listen on Spotify</strong>
-        <small>COMING SOON</small>
-      </div>
     </div>
   </div>
 </footer>

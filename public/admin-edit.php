@@ -68,7 +68,7 @@ function h(?string $s): string
 </div></div>
 <div class="form-section"><h2>→ The founders</h2><div id="founders"></div><button type="button" id="addFounder" class="pill light" style="margin-top:14px">+ Add another founder</button></div>
 <div class="form-section"><h2>→ Branches</h2><div id="branchWrap" class="chips" style="margin-top:15px"></div></div>
-<div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Save changes →</button></div></form></section>
+<div class="form-submit"><span class="hint">* Required fields</span><button class="pill" type="submit">Save changes →</button></div></form></section>
 <script>
 const existingCompany = <?= json_encode(['country' => $company['country'], 'city' => $company['city'], 'industry' => $company['industry'], 'businessType' => $company['business_type'], 'size' => $company['size']]) ?>;
 const existingFounders = <?= json_encode($founders) ?>;

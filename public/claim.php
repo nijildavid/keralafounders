@@ -47,28 +47,28 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
 <h1><?= h($company['name']) ?></h1>
 <p class="muted" style="font-size:16px">Are you a founder or team member here? Confirm the details below, correct anything that's wrong, and add what's missing — we'll review before it goes live.</p>
 </div>
-<form id="claimForm" class="form-card"><div id="formMessage" aria-live="polite"></div>
+<form id="claimForm" class="form-card" novalidate><div id="formMessage" aria-live="polite"></div>
 
 <div class="form-section"><h2>→ Your details</h2><div class="form-grid">
-  <div><label class="label" for="claim-name">Your name *</label><input class="field" id="claim-name" name="name" required placeholder="Your full name"></div>
-  <div><label class="label" for="claim-email">Your email *</label><input class="field" id="claim-email" type="email" name="email" required placeholder="you@company.com"></div>
+  <div><label class="label" for="claim-name">Your name *</label><input class="field" id="claim-name" name="name" required placeholder="Your full name"><span class="field-error" data-error-for="claim-name" hidden></span></div>
+  <div><label class="label" for="claim-email">Your email *</label><input class="field" id="claim-email" type="email" name="email" required placeholder="you@company.com"><span class="field-error" data-error-for="claim-email" hidden></span></div>
 </div></div>
 
 <div class="form-section"><h2>→ The company</h2><div class="form-grid">
-  <div><label class="label" for="claim-company">Company name *</label><input class="field" id="claim-company" name="company" required value="<?= h($company['name']) ?>"></div>
+  <div><label class="label" for="claim-company">Company name *</label><input class="field" id="claim-company" name="company" required value="<?= h($company['name']) ?>"><span class="field-error" data-error-for="claim-company" hidden></span></div>
   <div><label class="label" for="claim-website">Website</label><input class="field" id="claim-website" name="website" value="<?= h((string)($company['website'] ?? '')) ?>" placeholder="ribbon.eu"></div>
-  <div><label class="label" for="claim-industry">Industry *</label><select class="select" id="claim-industry" name="industry" required><option value="">Select</option></select></div>
-  <div><label class="label" for="claim-business-type">Business type *</label><select class="select" id="claim-business-type" name="businessType" required><option value="">Select</option></select></div>
+  <div><label class="label" for="claim-industry">Industry *</label><select class="select" id="claim-industry" name="industry" required><option value="">Select</option></select><span class="field-error" data-error-for="claim-industry" hidden></span></div>
+  <div><label class="label" for="claim-business-type">Business type *</label><select class="select" id="claim-business-type" name="businessType" required><option value="">Select</option></select><span class="field-error" data-error-for="claim-business-type" hidden></span></div>
   <div><label class="label" for="claim-industry-detail">Specific type (optional)</label><input class="field" id="claim-industry-detail" name="industryDetail" value="<?= h((string)($company['industry_detail'] ?? '')) ?>" placeholder="e.g. Ayurveda retail, Import/export"></div>
   <div><label class="label" for="claim-size">Company size</label><select class="select" id="claim-size" name="size"><option value="">Select</option></select></div>
   <div><label class="label" for="claim-founded">Founded year</label><input class="field" id="claim-founded" name="founded" type="number" min="1800" max="2026" value="<?= h((string)($company['founded_year'] ?? '')) ?>" placeholder="2022"></div>
-  <div style="grid-column:1/-1"><label class="label" for="claim-description">Company description *</label><textarea class="textarea" id="claim-description" name="description" rows="5" required><?= h($company['description']) ?></textarea></div>
+  <div style="grid-column:1/-1"><label class="label" for="claim-description">Company description *</label><textarea class="textarea" id="claim-description" name="description" rows="5" required><?= h($company['description']) ?></textarea><span class="field-error" data-error-for="claim-description" hidden></span></div>
   <div class="form-section location-section">
     <h2>The location</h2>
     <div class="form-grid">
-      <div><label class="label" for="claim-country">Country *</label><select id="claim-country" class="select" name="country" required><option value="">Select</option></select></div>
-      <div><label class="label" for="claim-city">City *</label><select id="claim-city" class="select" name="city" required><option value="">Select country first</option></select></div>
-      <div style="grid-column:1/-1" class="address-field"><label class="label" for="claim-location">Company location / address *</label><input class="field" id="claim-location" name="location" required value="<?= h($company['location']) ?>"></div>
+      <div><label class="label" for="claim-country">Country *</label><select id="claim-country" class="select" name="country" required><option value="">Select</option></select><span class="field-error" data-error-for="claim-country" hidden></span></div>
+      <div><label class="label" for="claim-city">City *</label><select id="claim-city" class="select" name="city" required><option value="">Select country first</option></select><span class="field-error" data-error-for="claim-city" hidden></span></div>
+      <div style="grid-column:1/-1" class="address-field"><label class="label" for="claim-location">Company location / address *</label><input class="field" id="claim-location" name="location" required value="<?= h($company['location']) ?>"><span class="field-error" data-error-for="claim-location" hidden></span></div>
     </div>
   </div>
 </div></div>
@@ -80,11 +80,11 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
 <div style="margin-top:15px"><label class="label" for="claim-message">Anything else you'd like to add?</label><textarea class="textarea" id="claim-message" name="message" rows="3" placeholder="Optional — anything not covered above"></textarea></div>
 
 <div class="form-section" style="margin-top:15px;padding-top:15px">
-<label class="checkrow"><input type="checkbox" name="authorised" required> I confirm that I am authorised to represent this business or organisation. *</label>
-<label class="checkrow" style="margin-top:10px"><input type="checkbox" name="agree" required><span>I confirm the information submitted is accurate to the best of my knowledge and that I have read and accept the <a href="terms.php" target="_blank" rel="noopener">Terms</a> and <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</span></label>
+<label class="checkrow"><input id="claim-authorised" type="checkbox" name="authorised" required> I confirm that I am authorised to represent this business or organisation. *</label><span class="field-error" data-error-for="claim-authorised" hidden></span>
+<label class="checkrow" style="margin-top:10px"><input id="claim-agree" type="checkbox" name="agree" required><span>I confirm the information submitted is accurate to the best of my knowledge and that I have read and accept the <a href="terms.php" target="_blank" rel="noopener">Terms</a> and <a href="privacy.php" target="_blank" rel="noopener">Privacy Policy</a>. *</span></label><span class="field-error" data-error-for="claim-agree" hidden></span>
 </div>
 
-<div class="form-submit"><span class="hint">* Required fields</span><button class="pill coral" type="submit">Submit claim →</button></div></form>
+<div class="form-submit"><span class="hint">* Required fields</span><button class="pill" type="submit">Submit claim →</button></div></form>
 </section>
 <script>
 const form=document.getElementById('claimForm'),country=document.getElementById('claim-country'),city=document.getElementById('claim-city'),industry=form.elements.industry,businessType=form.elements.businessType,size=form.elements.size;
@@ -111,7 +111,9 @@ function founderBlockHtml(i,f,isFirst){
   const removeBtn=isFirst?'':'<button type="button" class="remove-founder" aria-label="Remove founder" title="Remove founder">×</button>';
   const cls=isFirst?'founder-extra':'founder-extra additional-founder';
   const style=isFirst?' style="background:transparent;padding:0"':'';
-  return `<div class="${cls}"${style}>${removeBtn}<div><label class="label" for="founderName-${i}">Founder name${reqMark}</label><input class="field" id="founderName-${i}" name="founderName[]" ${req} value="${KFUI.esc(f.name||'')}" placeholder="Full name"></div><div><label class="label" for="founderLinkedin-${i}">LinkedIn profile</label><input class="field" id="founderLinkedin-${i}" name="founderLinkedin[]" value="${KFUI.esc(f.linkedin||'')}" placeholder="linkedin.com/in/you"></div><div><label class="label" for="founderEmail-${i}">Email address${reqMark}</label><input class="field" id="founderEmail-${i}" type="email" name="founderEmail[]" ${req} value="${KFUI.esc(f.email||'')}" placeholder="email@company.com"></div><div>
+  const errSpan=isFirst?`<span class="field-error" data-error-for="founderName-${i}" hidden></span>`:'';
+  const errSpanEmail=isFirst?`<span class="field-error" data-error-for="founderEmail-${i}" hidden></span>`:'';
+  return `<div class="${cls}"${style}>${removeBtn}<div><label class="label" for="founderName-${i}">Founder name${reqMark}</label><input class="field" id="founderName-${i}" name="founderName[]" ${req} value="${KFUI.esc(f.name||'')}" placeholder="Full name">${errSpan}</div><div><label class="label" for="founderLinkedin-${i}">LinkedIn profile</label><input class="field" id="founderLinkedin-${i}" name="founderLinkedin[]" value="${KFUI.esc(f.linkedin||'')}" placeholder="linkedin.com/in/you"></div><div><label class="label" for="founderEmail-${i}">Email address${reqMark}</label><input class="field" id="founderEmail-${i}" type="email" name="founderEmail[]" ${req} value="${KFUI.esc(f.email||'')}" placeholder="email@company.com">${errSpanEmail}</div><div>
   <span class="label">Email visibility</span>
   <label class="email-switch">
     <input type="checkbox" name="founderShow[]" value="yes" ${f.show_email?'checked':''}>
@@ -147,8 +149,31 @@ function showBanner(text,isError){
   banner.querySelector('button').onclick=()=>banner.remove();
   bannerTimer=setTimeout(()=>{if(banner.isConnected)banner.remove();},10000);
 }
+function validateForm(form){
+  let firstInvalid=null;
+  form.querySelectorAll('[required]').forEach(field=>{
+    const errorEl=document.querySelector(`[data-error-for="${field.id}"]`);
+    let invalid=false, message='';
+    if(field.type==='checkbox'){
+      invalid=!field.checked;
+      message='Please confirm this to continue.';
+    } else {
+      invalid=field.value.trim()==='';
+      message='This field is required.';
+      if(!invalid && field.type==='email' && !field.checkValidity()){
+        invalid=true; message='Please enter a valid email address.';
+      }
+    }
+    field.classList.toggle('field-invalid', invalid);
+    if(errorEl){ errorEl.hidden=!invalid; errorEl.textContent=invalid?message:''; }
+    if(invalid && !firstInvalid) firstInvalid=field;
+  });
+  if(firstInvalid) firstInvalid.focus();
+  return !firstInvalid;
+}
 form.onsubmit=async e=>{
   e.preventDefault();
+  if(!validateForm(form))return;
   const fd=new FormData(form);
   const names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...fd.getAll('founderShow[]')];
   const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value);
@@ -175,6 +200,9 @@ form.onsubmit=async e=>{
   };
   const submitBtn=form.querySelector('button[type="submit"]');
   submitBtn.disabled=true;
+  const originalBtnHTML=submitBtn.innerHTML;
+  submitBtn.setAttribute('aria-busy','true');
+  submitBtn.innerHTML='<span class="btn-spinner" aria-hidden="true"></span>Submitting…';
   try{
     const res=await fetch('api/submit-claim.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(item)});
     const data=await res.json();
@@ -185,6 +213,8 @@ form.onsubmit=async e=>{
     showBanner(KFUI.esc(err.message),true);
   }finally{
     submitBtn.disabled=false;
+    submitBtn.removeAttribute('aria-busy');
+    submitBtn.innerHTML=originalBtnHTML;
   }
 };
 </script>

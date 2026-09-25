@@ -2,15 +2,8 @@
   const KF = window.KF || {};
   const base = Array.isArray(KF.companies) ? KF.companies : [];
 
-  function readSubmissions(){
-    try { return JSON.parse(localStorage.getItem('kf_submissions') || '[]'); }
-    catch(e) { return []; }
-  }
-
   function all(){
-    return base.concat(
-      readSubmissions().map((x,i)=>({...x,id:'local-'+i,local:true}))
-    );
+    return base;
   }
 
   KF.all = all;

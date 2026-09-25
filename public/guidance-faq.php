@@ -50,6 +50,8 @@ if ($visible) {
 $siteName = 'Kerala Founders';
 $robotsMeta = empty($KF_GUIDANCE_NAV_LIVE) ? '<meta name="robots" content="noindex">' : '';
 $canonicalUrl = 'https://keralafounders.eu/guidance-faq.php' . ($countryFilter !== '' ? '?country=' . rawurlencode($countryFilter) : '');
+$pageTitle = 'Frequently asked questions — Guidance — Kerala Founders';
+$metaDescription = 'Short, sourced answers to questions founders actually ask about starting and running a business in Europe.';
 
 function guidance_faq_filter_url(string $country, string $topic, string $q): string
 {
@@ -59,11 +61,8 @@ function guidance_faq_filter_url(string $country, string $topic, string $q): str
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<title>Frequently asked questions — Guidance — Kerala Founders</title><meta name="description" content="Short, sourced answers to questions founders actually ask about starting and running a business in Europe.">
-<link rel="canonical" href="<?= h($canonicalUrl) ?>">
 <?= $robotsMeta ?>
-<meta property="og:type" content="website"><meta property="og:site_name" content="<?= h($siteName) ?>"><meta property="og:title" content="Frequently asked questions — Guidance — Kerala Founders"><meta property="og:description" content="Short, sourced answers to questions founders actually ask about starting and running a business in Europe."><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="https://keralafounders.eu/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Frequently asked questions — Guidance — Kerala Founders"><meta name="twitter:description" content="Short, sourced answers to questions founders actually ask about starting and running a business in Europe."><meta name="twitter:image" content="https://keralafounders.eu/assets/og-image.png">
+<?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <?php if ($faqJsonLd): ?><script type="application/ld+json"><?= json_encode($faqJsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script><?php endif; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Guidance","item":"https://keralafounders.eu/guidance.php"},{"@type":"ListItem","position":3,"name":"FAQ","item":"https://keralafounders.eu/guidance-faq.php"}]}</script>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script><script src="assets/guidance.js" defer></script></head>

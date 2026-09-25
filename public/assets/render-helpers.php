@@ -135,6 +135,69 @@ function fetch_recent_approved_companies(PDO $db, int $limit): array
     return companies_with_founders($db, $stmt->fetchAll());
 }
 
+/**
+ * Builds a pagination link URL. $extraParams carries the page's own filter
+ * (e.g. ['country' => 'Germany']) so links preserve the selected category.
+ * The 'page' param is only added when $p > 1, matching the site's convention
+ * of a bare/param-less URL for page 1.
+ */
+function ssr_page_href(string $baseUrl, array $extraParams, int $p): string
+{
+    $params = $extraParams;
+    if ($p > 1) {
+        $params['page'] = $p;
+    }
+    if (!$params) {
+        return $baseUrl;
+    }
+    $pairs = [];
+    foreach ($params as $key => $value) {
+        $pairs[] = rawurlencode((string)$key) . '=' . rawurlencode((string)$value);
+    }
+    return $baseUrl . '?' . implode('&', $pairs);
+}
+
+function ssr_page_numbers(int $current, int $total): array
+{
+    if ($total <= 7) {
+        return range(1, $total);
+    }
+    $out = [1];
+    if ($current > 3) {
+        $out[] = '...';
+    }
+    for ($i = max(2, $current - 1); $i <= min($total - 1, $current + 1); $i++) {
+        $out[] = $i;
+    }
+    if ($current < $total - 2) {
+        $out[] = '...';
+    }
+    $out[] = $total;
+    return $out;
+}
+
+function ssr_pagination_html(string $baseUrl, array $extraParams, int $page, int $totalPages): string
+{
+    if ($totalPages <= 1) {
+        return '';
+    }
+    $html = '<nav class="pagination" aria-label="Directory pages">';
+    $prevDisabled = $page <= 1;
+    $html .= '<a href="' . h(ssr_page_href($baseUrl, $extraParams, $page - 1)) . '" class="page-btn prev' . ($prevDisabled ? ' disabled' : '') . '"' . ($prevDisabled ? ' aria-disabled="true" tabindex="-1"' : '') . '>&larr; Prev</a>';
+    foreach (ssr_page_numbers($page, $totalPages) as $n) {
+        if ($n === '...') {
+            $html .= '<span class="page-ellipsis">&hellip;</span>';
+        } else {
+            $active = $n === $page;
+            $html .= '<a href="' . h(ssr_page_href($baseUrl, $extraParams, $n)) . '" class="page-btn' . ($active ? ' active' : '') . '"' . ($active ? ' aria-current="page"' : '') . '>' . $n . '</a>';
+        }
+    }
+    $nextDisabled = $page >= $totalPages;
+    $html .= '<a href="' . h(ssr_page_href($baseUrl, $extraParams, $page + 1)) . '" class="page-btn next' . ($nextDisabled ? ' disabled' : '') . '"' . ($nextDisabled ? ' aria-disabled="true" tabindex="-1"' : '') . '>Next &rarr;</a>';
+    $html .= '</nav>';
+    return $html;
+}
+
 function companies_with_founders(PDO $db, array $rows): array
 {
     $companies = [];
