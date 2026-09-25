@@ -73,7 +73,20 @@ official EU Commission sources (left as an explicit sourced conflict,
 not resolved either way — see the `taxes` section and the
 `es-vat-small-business` FAQ entry); and the 2026 tarifa plana amount
 isn't confirmed by the one official page found, so it's hedged with
-attribution rather than stated as fact. Belgium is next, then Greece.
+attribution rather than stated as fact.
+
+**Belgium done** — `ready_for_review`, 12 new sources (11 official/
+government-portal, 1 secondary — the small-business VAT threshold,
+which FOD Financien/VLAIO blocked automated fetches on, so it's
+attributed rather than stated as fact). Corporate/personal income tax
+rates were skipped entirely for the same reason (finance.belgium.be
+blocked every fetch attempt) rather than guessed at. Notary fees for
+BV/SRL formation have no fixed tariff in Belgium — confirmed
+officially, a genuine structural difference from Spain, noted as such.
+Partial visa/professional-card research saved as scratch notes in
+`public/content/guidance/belgium/visa-research-notes.md` (not part of
+the live site) for a future pass. Validator passes clean. Greece is
+next and last of the pilot 3.
 
 ## Needs a live-site check
 
