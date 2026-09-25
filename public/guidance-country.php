@@ -43,7 +43,7 @@ if ($fullRender) {
     foreach ($guide['sections'] as $section) {
         if ($section['id'] === 'overview') {
             $text = $section['expert_interpretation'][0]['text'] ?? '';
-            $overviewHtml = '<p class="muted" style="font-size:18px;line-height:1.85">' . h($text) . '</p>';
+            $overviewHtml = '<p class="muted" style="font-size:18px;line-height:1.85;max-width:760px">' . h($text) . '</p>';
             continue;
         }
         [$html, $usedSourceIds] = guidance_section_html($section, $sourcesById, $usedSourceIds);
@@ -93,15 +93,18 @@ if ($country !== null) {
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script><script src="assets/guidance.js" defer></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
-<section class="page-head"><div class="wrap" style="max-width:820px">
+<section class="page-head">
 
 <?php if ($country === null): ?>
+<div class="wrap" style="max-width:820px">
   <div class="eyebrow">Guidance</div>
   <h1>Guide not found</h1>
   <p class="muted section-intro">We couldn't find that country guide.</p>
   <a class="arrow" href="guidance.php">← Back to Guidance</a>
+</div>
 
 <?php elseif (!$fullRender): ?>
+<div class="wrap" style="max-width:820px">
   <div class="eyebrow">Guidance</div>
   <h1>How to start a company in <?= h($country['name']) ?></h1>
   <div class="coming-soon-panel" style="margin-top:20px">
@@ -110,8 +113,10 @@ if ($country !== null) {
     <p class="muted" style="margin:0"><?php if (!empty($country['target_month'])): ?>Target: <?= h(guidance_format_month($country['target_month'])) ?>.<?php else: ?>No date yet — check back soon.<?php endif; ?></p>
   </div>
   <a class="arrow" href="guidance.php" style="margin-top:16px;display:inline-block">← Back to Guidance</a>
+</div>
 
 <?php else: ?>
+<div class="wrap">
   <div class="eyebrow">Guidance</div>
   <h1><?= h($guide['title']) ?></h1>
   <?= guidance_date_stamp_html($guide['last_checked'], $guide['next_check_due']) ?>
@@ -120,31 +125,37 @@ if ($country !== null) {
 
   <?= $overviewHtml ?>
 
-  <?= guidance_toc_html($guide['sections']) ?>
+  <div class="guidance-body">
+    <div class="guidance-main">
+      <?= $sectionsHtml ?>
 
-  <?= $sectionsHtml ?>
+      <?= guidance_sources_box_html($usedSourceIds, $sourcesById) ?>
 
-  <?= guidance_sources_box_html($usedSourceIds, $sourcesById) ?>
+      <?= guidance_feedback_widget_html('guide', $guide['slug']) ?>
 
-  <?= guidance_feedback_widget_html('guide', $guide['slug']) ?>
-
-  <div class="panel" style="margin-top:30px">
-  <h2>Related</h2>
-  <?php if ($relatedFaq): ?>
-  <div class="eyebrow" style="margin-bottom:8px">Questions about <?= h($country['name']) ?></div>
-  <ul style="margin:0 0 16px;padding-left:20px;color:#57534e;line-height:2">
-  <?php foreach ($relatedFaq as $entry): ?>
-    <?= guidance_faq_preview_item_html($entry) ?>
-  <?php endforeach; ?>
-  </ul>
-  <?php endif; ?>
-  <p class="muted" style="margin:0 0 8px"><a class="arrow" href="countries.php?country=<?= rawurlencode($country['directory_country_name']) ?>">Kerala founders in <?= h($country['name']) ?> →</a></p>
-  <?php if ($nextCountryTeaser): ?>
-  <p class="muted" style="margin:0">Coming next: <strong><?= h($nextCountryTeaser['name']) ?></strong><?php if (!empty($nextCountryTeaser['target_month'])): ?> (<?= h(guidance_format_month($nextCountryTeaser['target_month'])) ?>)<?php endif; ?></p>
-  <?php endif; ?>
+      <div class="panel" style="margin-top:30px">
+      <h2>Related</h2>
+      <?php if ($relatedFaq): ?>
+      <div class="eyebrow" style="margin-bottom:8px">Questions about <?= h($country['name']) ?></div>
+      <ul style="margin:0 0 16px;padding-left:20px;color:#57534e;line-height:2">
+      <?php foreach ($relatedFaq as $entry): ?>
+        <?= guidance_faq_preview_item_html($entry) ?>
+      <?php endforeach; ?>
+      </ul>
+      <?php endif; ?>
+      <p class="muted" style="margin:0 0 8px"><a class="arrow" href="countries.php?country=<?= rawurlencode($country['directory_country_name']) ?>">Kerala founders in <?= h($country['name']) ?> →</a></p>
+      <?php if ($nextCountryTeaser): ?>
+      <p class="muted" style="margin:0">Coming next: <strong><?= h($nextCountryTeaser['name']) ?></strong><?php if (!empty($nextCountryTeaser['target_month'])): ?> (<?= h(guidance_format_month($nextCountryTeaser['target_month'])) ?>)<?php endif; ?></p>
+      <?php endif; ?>
+      </div>
+    </div>
+    <aside class="guidance-side" aria-label="Contents">
+      <?= guidance_toc_html($guide['sections']) ?>
+    </aside>
   </div>
 
   <?= guidance_disclaimer_html('full', $guide['last_checked'], $guide['next_check_due']) ?>
+</div>
 <?php endif; ?>
 
-</div></section></main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>
+</section></main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>
