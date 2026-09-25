@@ -1,6 +1,8 @@
 <?php
 require __DIR__ . '/../config/db.php';
+require __DIR__ . '/../config/reference.php';
 require __DIR__ . '/assets/render-helpers.php';
+require __DIR__ . '/assets/guidance-helpers.php';
 $db = get_db();
 
 $slug = (string)($_GET['id'] ?? '');
@@ -53,6 +55,16 @@ if ($company) {
     }
     if ($founders) {
         $jsonLd['founder'] = array_map(fn($f) => ['@type' => 'Person', 'name' => $f['name']], $founders);
+    }
+}
+
+$guidanceGuideSlug = null;
+if ($company && !empty($KF_GUIDANCE_NAV_LIVE)) {
+    foreach (guidance_load_countries() as $gc) {
+        if ($gc['status'] === 'live' && $gc['directory_country_name'] === $company['country']) {
+            $guidanceGuideSlug = $gc['slug'];
+            break;
+        }
     }
 }
 
@@ -130,6 +142,9 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
           <div class="side-section">
             <div class="eyebrow">Country</div>
             <p><?= h($company['country']) ?></p>
+            <?php if ($guidanceGuideSlug): ?>
+            <p class="muted" style="font-size:13px;margin-top:4px"><a class="arrow" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($company['country']) ?> →</a></p>
+            <?php endif; ?>
           </div>
           <?php endif; ?>
           <?php if ($company['location']): ?>

@@ -4,6 +4,39 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
+## In progress — Guidance content expansion (pilot)
+
+Goal: grow search-indexable content for SEO/traffic by filling the mostly-
+empty Guidance section (`public/content/guidance/`, see `CLAUDE.md`). Only
+Germany is `live` today; 8 countries with real companies in the directory
+have zero Guidance presence (Belgium, Greece, Luxembourg, Denmark, Spain,
+France, Romania, Slovenia).
+
+Plan (full detail in the plan doc from the planning session, not committed
+to this repo — summarized here so it isn't lost):
+- **Pilot 3 countries first**: Spain, Belgium, Greece — Spain for traffic
+  upside, Belgium as a moderate case, Greece deliberately chosen as a
+  harder-to-source test case (per a `deep-thinker` sanity check) rather than
+  three easy wins.
+- **Publish bar**: a country goes `live` only once every section it
+  launches with is fully verified against a live official source (no
+  visible "under review" placeholders, unlike Germany's current guide,
+  which holds back its visa section). A topic that can't be verified within
+  ~2 weeks of dedicated research is simply left out of that country's
+  initial launch and added later, rather than shown half-verified or
+  blocking the whole page.
+- After the pilot: a `deep-thinker` review gate decides whether/how to
+  scale to the remaining 5 gap countries (Luxembourg, Denmark, France,
+  Romania, Slovenia), followed by a design pass
+  (`senior-product-designer`, e.g. hub page at scale, directory→guidance
+  internal linking) and a distribution plan (`social-media-manager`) per
+  country as it goes live.
+- All content research/writing goes through the `european-business-lawyer`
+  skill only, which never states a fact not read on a live official source
+  in-session — same rule Germany's guide was built under.
+
+Status: pilot research not yet started as of this entry.
+
 ## Needs a live-site check
 
 - **Compact-nav alignment fix** — confirmed committed on `main`

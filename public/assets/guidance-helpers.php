@@ -176,15 +176,16 @@ function guidance_part_html(string $partKey, array $claims, array $usedSourceIds
 
 function guidance_table_html(array $table): string
 {
+    $headers = $table['headers'] ?? [];
     $head = '';
-    foreach ($table['headers'] ?? [] as $col) {
+    foreach ($headers as $col) {
         $head .= '<th>' . h($col) . '</th>';
     }
     $body = '';
     foreach ($table['rows'] ?? [] as $row) {
         $body .= '<tr>';
-        foreach ($row as $cell) {
-            $body .= '<td>' . h($cell) . '</td>';
+        foreach ($row as $i => $cell) {
+            $body .= '<td data-label="' . h($headers[$i] ?? '') . '">' . h($cell) . '</td>';
         }
         $body .= '</tr>';
     }
