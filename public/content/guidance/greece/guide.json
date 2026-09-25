@@ -1,0 +1,210 @@
+{
+  "slug": "greece",
+  "title": "How to start a company in Greece",
+  "summary": "Greece gives a founder three main routes: register as a freelance professional or sole trader (ατομική επιχείρηση) through a single digital AADE/gov.gr flow, form a personal partnership (ΟΕ or ΕΕ) with a co-founder, or form a private company (ΙΚΕ) electronically for as little as EUR 1 of capital. For non-EU founders, the residence permit is the slowest and least standardised part of the process.",
+  "last_checked": "2026-09-25",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-25",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Greece gives most founders three practical routes. Individuals (freelance professionals or sole traders, ελεύθεροι επαγγελματίες / ατομικές επιχειρήσεις) register through a single digital flow run by the tax authority (AADE) and gov.gr, which can also feed registration into the commercial registry (GEMI), the local Chamber and social security (EFKA) in one pass. Two or more co-founders who don't yet need limited liability can form a personal partnership (ΟΕ or ΕΕ). Founders who want limited liability, including solo founders, can form an ΙΚΕ (Ιδιωτική Κεφαλαιουχική Εταιρεία) entirely online through the e-ΥΜΣ one-stop-shop, with reportedly no minimum capital requirement beyond a token EUR 1 and no notary needed unless real estate is contributed. Compared with countries that route company formation through a notary, Greece's electronic system for ΙΚΕ, ΟΕ and ΕΕ is unusually fast on paper. The catch, and the reason this guide leans cautious, is that Greece's official sites (aade.gr, gov.gr) were not reachable for direct, page-by-page verification during this research session, so several facts here rest on chamber pages, government-portal mirrors (EUGO, mitos.gov.gr) or well-corroborated accounting/advisory sources rather than a first-party AADE or gov.gr page read — this is flagged inline wherever it applies. For founders from outside the EU, the residence permit is, as in most EU countries, the slowest and most case-by-case step, and the entire residence-permit section of this guide is held back from full publication for that reason (see below).", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Ελεύθερος επαγγελματίας / ατομική επιχείρηση (freelance professional / sole trader)", "none", "personal, unlimited", "no", "digital flow reported at about 12 minutes to complete, certificate issued same-day", "simple books for small turnover", "official [GR1, GR3]"],
+          ["ΟΕ (Ομόρρυθμη Εταιρεία, general partnership)", "none (contributions of cash, goods or work)", "personal, unlimited, joint and several for all partners", "no, unless a partner contributes real estate", "electronic via e-ΥΜΣ", "double-entry", "official [GR2, GR13]"],
+          ["ΕΕ (Ετερόρρυθμη Εταιρεία, limited partnership)", "none", "general partner(s): unlimited; limited partner(s): capped at their contribution, unless their name is used in the company name", "no, unless a partner contributes real estate", "electronic via e-ΥΜΣ", "double-entry", "official [GR2, GR23]"],
+          ["ΙΚΕ (Ιδιωτική Κεφαλαιουχική Εταιρεία, private company)", "reported at EUR 1 minimum; cash, in-kind or 'guarantee' contributions", "limited to the company (guarantee contributions carry different treatment, not independently verified)", "no, unless a partner contributes real estate", "reported 1 to 3 business days via the standard-template route", "double-entry", "secondary [GR21, GR22]"]
+        ]
+      },
+      "official_information": [
+        { "text": "Company formation for ΑΕ, ΕΠΕ, ΙΚΕ, ΟΕ and ΕΕ can be completed entirely electronically through the e-ΥΜΣ one-stop-shop platform (eyms.businessportal.gr), without visiting any public service in person. The platform includes a company-name and distinctive-title availability check, a business-activity-code (ΚΑΔ) search, and a formation-cost calculator.", "source_ids": ["GR2"], "confidence": "official" },
+        { "text": "ΟΕ (general partnership): a company with legal personality pursuing a commercial purpose; all partners are jointly and severally liable without limit for the company's debts; no minimum capital is required, and contributions can be cash, goods or work as set out in the partnership agreement; the company gains legal personality on registration with GEMI; at least two partners (natural or legal persons) are required.", "source_ids": ["GR13"], "confidence": "official" },
+        { "text": "ΕΕ (limited partnership): requires at least one general partner (ομόρρυθμος), who is personally and unlimitedly liable, and at least one limited partner (ετερόρρυθμος), whose liability is capped at their contribution — unless their name is used in the company's name, in which case their liability also becomes unlimited. No mandatory capital; legal personality on GEMI registration; limited partners keep a right to monitor the company but cannot take part in management.", "source_ids": ["GR23"], "confidence": "official" },
+        { "text": "Reported ΙΚΕ minimum capital: EUR 1, and a single founder can form a one-member ('μονοπρόσωπη') ΙΚΕ. Capital can be contributed as cash, in kind, or as a 'guarantee contribution' (εγγυητική εισφορά), each carrying different treatment that this guide has not independently verified against the statute.", "source_ids": ["GR21", "GR22"], "confidence": "secondary" },
+        { "text": "Reported ΙΚΕ formation route: no notary is required for standard electronic formation via e-ΥΜΣ; a notarial deed becomes mandatory only if a founder contributes real estate to the company's capital. Reported formation time is about 1 to 3 business days using the standard-template route; reported government (GEMI + Chamber) fees are about EUR 90 to 160, rising to roughly EUR 150 to 700 if a lawyer or accountant is engaged.", "source_ids": ["GR21"], "confidence": "secondary" },
+        { "text": "GEMI annual registry-maintenance fee (a per-legal-form schedule reportedly set by a 2014 ministerial decision, KYA 79752/30.12.2014, and still quoted by chambers for 2026): sole proprietorship EUR 30, ΟΕ/ΕΕ EUR 80, ΙΚΕ EUR 100, ΕΠΕ EUR 150, ΑΕ EUR 320 — payable within the first quarter of the calendar year.", "source_ids": ["GR15"], "confidence": "official" },
+        { "text": "Reported standard corporate income tax rate for an ΙΚΕ in the 2026 tax year: 22% of taxable profit regardless of profit size, plus an optional 5% withholding tax if profits are distributed to members, and a statutory requirement to allocate 5% of after-tax profit to a legal reserve fund.", "source_ids": ["GR19"], "confidence": "secondary" },
+        { "text": "This guide did not manage to directly verify Greece's statutory text for ΙΚΕ capital and liability rules (Law 4072/2012) against an official government page this session — the figures above come from accounting-advisor pages that agree with each other, not from a first-party legal-text or AADE/gov.gr read.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "For a solo founder who wants to start quickly and cheaply, the freelance-professional/sole-trader route is normally the fastest way in — it is a single digital form, not a two-step process. Consider an ΙΚΕ once you want to cap personal liability, bring in a co-founder as a shareholder rather than a partner, or need the credibility of a registered company for clients or investors. Consider an ΟΕ or ΕΕ mainly if you and a co-founder want to formalise a partnership without yet taking on the bookkeeping and governance load of a capital company.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether your activity is a liberal/freelance profession or a commercial activity — this affects whether GEMI and Chamber registration are required (see the next section).", "source_ids": [] },
+        { "text": "Decide whether personal, unlimited liability is acceptable for now.", "source_ids": [] },
+        { "text": "If forming an ΙΚΕ, ΟΕ or ΕΕ, check name availability and estimate the formation fee on the e-ΥΜΣ portal before starting.", "source_ids": ["GR2"] }
+      ]
+    },
+    {
+      "id": "freelance-vs-commercial",
+      "title": "Freelance professional or commercial sole trader?",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Businesses with a commercial character must register with GEMI (the General Commercial Registry), through one of the Chambers, in addition to registering with AADE. Basic professional categories that are not registered with GEMI include medical professions, educational services and other 'scientific'/liberal (freelance) professions.", "source_ids": ["GR1"], "confidence": "official" },
+        { "text": "For a natural person using the digital gov.gr/AADE route, starting a sole proprietorship in one pass registers the commencement of business with the tax authority and, where the activity is commercial, with GEMI and the competent Chamber — the process is described as consolidating what used to be separate tax-office and commercial-register steps.", "source_ids": ["GR3"], "confidence": "official" },
+        { "text": "Chamber (ΕΕΑ/ACCI, Athens) registration for a sole proprietorship: a reported EUR 10 one-off registration fee plus the EUR 30/year GEMI-maintenance fee. Since 2015, chamber membership itself has been fee-for-service ('ανταποδοτική'), so further charges mainly apply when you request specific chamber services or certificates (name pre-registration, signature verification, etc., reported at roughly EUR 10 to 30 each).", "source_ids": ["GR16"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "If your work is a liberal/freelance profession (for example consulting, design, software, writing, or other 'scientific' services), you can typically go straight through the AADE tax-registration route without a separate GEMI/Chamber step. If you're selling goods or your activity reads as more clearly commercial, budget for the extra GEMI/Chamber registration and its running annual fee.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Look up your intended business activity code (ΚΑΔ) on the e-ΥΜΣ KAD search to get a sense of whether it is treated as commercial (GEMI required) or a liberal/freelance profession (usually exempt), and confirm with an accountant before registering.", "source_ids": ["GR2"] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step: freelance professional or sole trader",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "note": "Unlike some EU countries, this is a single nationwide digital process run by AADE/gov.gr, not a city-by-city procedure.",
+      "official_information": [
+        { "text": "1. Confirm your residence status. EU/EEA nationals need no special permit. Third-country nationals need a residence permit that already allows self-employment or independent economic activity before they start (see the residence-permit section, which this guide holds back pending fuller review).", "source_ids": ["GR7"], "confidence": "official" },
+        { "text": "2. Register the start of business activity as a natural person digitally, logging in with TAXISnet credentials. The applicant supplies business-location details (owned or rented premises), the business name, activity code(s) (ΚΑΔ), accounting-category and VAT status, and contact details; the system checks the proposed business name/title against GEMI for duplicates.", "source_ids": ["GR3"], "confidence": "official" },
+        { "text": "3. On submission, the flow triggers registration with AADE, with GEMI and the competent Chamber where the activity is commercial, and notifies e-EFKA; the applicant receives a digitally-signed certificate of commencement of operations with a QR code and, where applicable, a GEMI registration number and date.", "source_ids": ["GR3"], "confidence": "official" },
+        { "text": "4. The service is free of charge. The digital gov.gr flow itself is reported to take about 12 minutes to complete; a related declaration route (D211, filed through AADE's 'Τα Αιτήματά μου' application) is separately reported to be processed in about 30 minutes once submitted.", "source_ids": ["GR3", "GR1"], "confidence": "official" },
+        { "text": "5. Where GEMI/Chamber registration applies (commercial activity), budget the reported EUR 10 one-off registration fee plus the EUR 30/year GEMI-maintenance fee (Athens Chamber figures; other chambers may differ and were not individually checked this session).", "source_ids": ["GR16"], "confidence": "official" },
+        { "text": "6. Choose your EFKA insurance category and confirm your social-security registration. For a natural person this is triggered automatically as part of the digital start-up flow, but you still have to actively select a contribution category by the annual deadline (see the social-security section).", "source_ids": ["GR3", "GR5"], "confidence": "official" },
+        { "text": "This guide could not confirm, against an official AADE page this session, the exact turnover or activity thresholds that move a sole trader from simplified to double-entry bookkeeping. Treat any specific threshold you see elsewhere as unverified until confirmed with an accountant or an AADE page.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "Open a separate business bank account and set up simple bookkeeping from day one, even though neither is itself a filing step in the registration flow above.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm your residence permit allows self-employment (non-EU founders only).", "source_ids": ["GR7"] },
+        { "text": "Log in to the digital start-of-business flow with your TAXISnet credentials and file your registration.", "source_ids": ["GR3"] },
+        { "text": "Check whether your activity requires GEMI/Chamber registration; if so, budget the reported EUR 10 + EUR 30/year fee.", "source_ids": ["GR16"] },
+        { "text": "Select your EFKA insurance category by the annual deadline (31 January, for the following contribution year).", "source_ids": ["GR5"] },
+        { "text": "Open a separate business bank account.", "source_ids": [] },
+        { "text": "Set up simple bookkeeping from day one.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step: forming an ΙΚΕ",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Company formation for an ΙΚΕ (as well as ΑΕ, ΕΠΕ, ΟΕ and ΕΕ) is done entirely electronically via the e-ΥΜΣ one-stop-shop platform (eyms.businessportal.gr) by the founders themselves, without visiting a public office.", "source_ids": ["GR2"], "confidence": "official" },
+        { "text": "2. Check the proposed company name and distinctive title for availability at eyms.businessportal.gr/bnames/name, check your activity code (ΚΑΔ) at eyms.businessportal.gr/kad/public, and use the cost calculator at eyms.businessportal.gr/cost to estimate the registration fee for your company type before you start. The platform also offers a sandbox environment to practise the process.", "source_ids": ["GR2"], "confidence": "official" },
+        { "text": "3. Reported ΙΚΕ minimum capital is EUR 1 (a single-member ΙΚΕ is allowed); a notary is not required for the standard electronic route, but becomes mandatory if a founder contributes real estate to the company's capital. Reported formation time via the standard-template route is about 1 to 3 business days; reported government fees (GEMI + Chamber) are about EUR 90 to 160, rising to roughly EUR 150 to 700 if you use a lawyer or accountant.", "source_ids": ["GR21", "GR22"], "confidence": "secondary" },
+        { "text": "4. Register for the small-business VAT exemption instead of standard VAT registration if turnover will stay under the relevant threshold and it suits your business (see the taxes section) — this is a separate choice from the company-formation step itself.", "source_ids": ["GR10"], "confidence": "official" },
+        { "text": "5. GEMI annual registry-maintenance fee for an ΙΚΕ: EUR 100/year, payable within the first quarter of the calendar year (see the legal-forms table for other company types).", "source_ids": ["GR15"], "confidence": "official" },
+        { "text": "6. Ongoing: double-entry bookkeeping, a 22% flat corporate income tax rate (2026), an optional 5% withholding tax if profits are distributed, and a statutory 5% allocation of after-tax profit to a legal reserve. myDATA electronic-books reporting and B2B e-invoicing obligations apply on the schedule described in the taxes section.", "source_ids": ["GR19", "GR20"], "confidence": "secondary" },
+        { "text": "This guide could not directly confirm, on an official gov.gr/AADE/GEMI page this session, exactly which registrations (ΑΦΜ, Chamber, e-EFKA) are triggered automatically on completing e-ΥΜΣ formation versus which the founder must separately request. Treat the formation flow as broadly self-service but double-check the exact downstream registrations with an accountant.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Name and distinctive title checked on e-ΥΜΣ.", "source_ids": ["GR2"] },
+        { "text": "Activity code (ΚΑΔ) identified.", "source_ids": ["GR2"] },
+        { "text": "Formation cost estimated with the e-ΥΜΣ cost calculator.", "source_ids": ["GR2"] },
+        { "text": "Confirmed whether any founder is contributing real estate (triggers a notary requirement).", "source_ids": ["GR21"] },
+        { "text": "Capital contribution ready (cash, in-kind or guarantee, as agreed among founders).", "source_ids": [] },
+        { "text": "VAT regime decided (standard vs. small-business exemption) with an accountant.", "source_ids": ["GR10"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Small-business VAT exemption: businesses established in Greece whose annual turnover does not exceed EUR 10,000 in Greece (both the current and the previous tax year) — and, where relevant, EUR 100,000 across the whole EU — can opt into a special exemption regime. Businesses in the regime do not submit VAT returns, issue simplified invoices without VAT, must mark documents 'without VAT – exemption for small enterprises article 44' (or a near-identical wording, wording confirmed via a chamber source rather than the statute text directly), and cannot deduct VAT on their own purchases and expenses.", "source_ids": ["GR10"], "confidence": "official" },
+        { "text": "Standard VAT rates in Greece: a standard rate of 24%, a reduced rate of 13% (food, hotels, catering excluding alcohol, energy, passenger transport), and a super-reduced rate of 6% (pharmaceuticals, books, newspapers, theatre/cinema tickets). A separate, lower rate schedule (reported as 17%/9%/4%) reportedly applies on certain small islands from 1 January 2026; this island-specific detail was not independently verified against an official page this session.", "source_ids": ["GR18"], "confidence": "secondary" },
+        { "text": "myDATA is AADE's digital platform for real-time transmission of accounting data (invoice summaries, income/expense classifications, payroll records) and underpins mandatory B2B e-invoicing. Reported milestones: mandatory B2B e-invoicing from 2 March 2026 for businesses whose gross revenue exceeded EUR 1,000,000 in the 2023 tax year, extending to all remaining Greek companies from 1 October 2026, regardless of size.", "source_ids": ["GR20"], "confidence": "secondary" },
+        { "text": "ΙΚΕ corporate income tax: reported flat rate of 22% of taxable profit for the 2026 tax year, an optional 5% withholding tax on distributed profits, and a statutory requirement to set aside 5% of after-tax profit as a legal reserve.", "source_ids": ["GR19"], "confidence": "secondary" },
+        { "text": "This guide found conflicting secondary reports on whether self-employed/freelance individuals (sole traders) use the same progressive personal income-tax scale as employees for the 2026 tax year, or a materially different one, and could not resolve the conflict against an official AADE/gov.gr page (both domains were unreachable for direct verification this session). One secondary source's reported 2026 employee/pensioner brackets were: EUR 0–10,000 at 9%, EUR 10,001–20,000 at 20%, EUR 20,001–30,000 at 26%, EUR 30,001–40,000 at 34%, EUR 40,001–60,000 at 39%, and above EUR 60,000 at 44% — but the same source explicitly states self-employed professionals use a different scale, without giving the figures, so this guide is not confident enough in these numbers to present them as settled fact for a founder's own tax planning.", "source_ids": ["GR14"], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "Most first-year freelancers and sole traders will be under the small-business VAT turnover limit; the choice to opt in should still be made with an accountant, since it also removes your right to reclaim VAT on expenses. Get exact, current personal or corporate tax figures from an accountant before you file — this guide flags the income-tax bracket question above as unresolved for a reason.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide, with an accountant, whether the small-business VAT exemption suits your expected turnover.", "source_ids": ["GR10"] },
+        { "text": "Set up simple bookkeeping and check your myDATA / e-invoicing obligations against the 2026 deadlines.", "source_ids": ["GR20"] },
+        { "text": "Confirm your exact personal or corporate tax rate and any applicable credits with an accountant rather than relying on this guide's unresolved income-tax note.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "EFKA social security, chamber membership, funding",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "EFKA runs six standard monthly insurance-contribution categories for self-employed professionals and freelancers in 2026, covering both the pension and health branches, plus universal add-ons of EUR 10/month for unemployment (OAED) and EUR 2/month for eligible healthcare workers. The exact 2026 monthly amounts: Category 1 — EUR 185.09 pension + EUR 65.68 health = EUR 250.77 total; Category 2 — EUR 222.12 + EUR 78.81 = EUR 300.93; Category 3 — EUR 281.82 + EUR 78.81 = EUR 360.63; Category 4 — EUR 354.66 + EUR 78.81 = EUR 433.47; Category 5 — EUR 440.64 + EUR 78.81 = EUR 519.45; Category 6 — EUR 597.06 + EUR 78.81 = EUR 675.87 (each total before the EUR 10/EUR 2 add-ons). Selecting a category is mandatory; without an active choice, the previous year's category carries over automatically.", "source_ids": ["GR4"], "confidence": "official" },
+        { "text": "New insured persons can opt into a special reduced category for their first five years of insurance coverage: EUR 111.06 pension + EUR 39.40 health = EUR 150.46/month total (2026), before the EUR 10/EUR 2 add-ons — noticeably below even Category 1 of the standard schedule.", "source_ids": ["GR11"], "confidence": "official" },
+        { "text": "The annual deadline to select (or change) your EFKA insurance category for the coming year is 31 January; the online selection service opened on 10 December of the preceding year for the 2026 cycle.", "source_ids": ["GR5"], "confidence": "official" },
+        { "text": "GEMI/Chamber registration and annual fees (sole trader EUR 30/year, ΟΕ/ΕΕ EUR 80/year, ΙΚΕ EUR 100/year — see the legal-forms table) are described in the legal-forms and freelance-vs-commercial sections above; liberal/freelance professions are typically exempt from GEMI/Chamber registration altogether.", "source_ids": ["GR15", "GR1"], "confidence": "official" },
+        { "text": "Elevate Greece is the government's official national startup registry (registry.elevategreece.gov.gr). Registered startups get access to professional-guidance networks, investor and government-funding-programme connections, accelerator/incubator links, IP-protection support, training, and international-expansion guidance — but registration on the registry does not itself grant state funding; each funding call has its own separate eligibility rules and evaluation.", "source_ids": ["GR17"], "confidence": "official" },
+        { "text": "Beyond Elevate Greece, this guide found references to EU-funded (ΕΣΠΑ/NSRF) grant and low-interest-loan programmes for new and innovative businesses, and to a recovery-fund (Greece 2.0) private-investment loan facility, but did not verify current amounts, deadlines or eligibility for any specific 2026 funding call against an official page this session — check the current open calls directly before relying on any reported figure.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Choose (or confirm) your EFKA insurance category before 31 January each year.", "source_ids": ["GR5"] },
+        { "text": "Check whether the reduced new-insured-person EFKA category applies to you (first five years of coverage).", "source_ids": ["GR11"] },
+        { "text": "Register on Elevate Greece if you're a startup, and check current open ΕΣΠΑ/other funding calls separately with an advisor.", "source_ids": ["GR17"] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "GR7",
+      "internal_notes": "Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the build doc's publishing gates). Greece was flagged in advance as a harder-to-source pilot country, and this section is where that shows most: several key figures (initial capital requirement for the independent-economic-activity permit, exact digital-nomad income threshold, exact Golden Visa investment amount) could not be pinned to a single, current, directly-fetched official page this session, and aade.gr/gov.gr and mfa.gr were unreachable outright for direct verification (403s) throughout this session, which is unusual and worth re-testing on the next check.", "open_questions_for_reviewer": [
+        "What is the initial capital/eligibility requirement (as opposed to the 3-year renewal conditions, which this guide did find and cite) for the 'independent economic activity' residence permit under Law 4251/2014? A commonly-repeated but unsourced figure of EUR 60,000 turned up in searches; this guide could not confirm it on any official page and did not render it.",
+        "Golden Visa investment thresholds are directly contradictory between two official-looking sources found this session: migration.gov.gr's own English Golden Visa page still states a EUR 250,000 minimum, while the Housing Policy Portal (stegasi.gov.gr) states that Article 64 of Law 5100/2024 raised the threshold to EUR 800,000 in high-demand zones (Attica, Thessaloniki, Mykonos, Santorini, islands over 3,100 residents) and EUR 400,000 elsewhere. This guide does not know which page is stale and which is current, and a reviewer should resolve this before anything about Golden Visa amounts is published.",
+        "Is the Greece Digital Nomad Visa's reported EUR 3,500/month net income threshold, and its reported February 2026 consulate-only application change (Law 5275/2026), accurate? This guide could not reach mfa.gr or an equivalent official page directly this session (403) and is relying on secondary/aggregator sources only.",
+        "Does the independent-economic-activity permit route interact with, or compete against, the Digital Nomad Visa for a founder who wants to actually register and run a Greek company (as opposed to working remotely for a foreign employer/clients)? Not clarified in any source found this session.",
+        "Is the disclaimer and 'explain the rules, no advice' framing adequate given how much of this section rests on secondary sources and one direct source conflict?"
+      ],
+      "official_information": [
+        { "text": "EU/EEA nationals need no special permit to be self-employed in Greece. Third-country nationals need a residence permit that grants access to independent economic activity before starting self-employment. The Ministry of Migration and Asylum lists several relevant permit categories: investment-activity permits (Article 16A) for entrepreneurs establishing business operations, permits for high-level personnel supporting an approved investment, a strategic-investor category (Article 16B), a securities/bank-deposit investment category (Article 16C), and separate 'economically independent persons' categories (Article 20A, including a pension-income variant) for people with stable passive income who are not themselves running a business.", "source_ids": ["GR7"], "confidence": "hold" },
+        { "text": "A residence permit for 'independent economic activity' (Law 4251/2014, Article 138 paragraphs 3 and 7 govern renewal) is renewed for 3 years at a time, provided the activity continues and tax/insurance obligations — including a minimum insurance period per year — have been met. Renewal requires a valid passport copy, EFKA health-insurance documentation and proof of paid contributions, a tax clearance note or filed tax return, and a Chamber/tax-office activity certificate. Fees: a EUR 150 electronic processing fee (fee code 2107) plus EUR 16 for the physical residence-permit card.", "source_ids": ["GR12"], "confidence": "hold" },
+        { "text": "The Golden Visa (investment residence permit) grants a renewable residence permit in exchange for a qualifying investment, most commonly real estate, with no obligation to actually live in Greece. This guide found a direct conflict on the current minimum investment amount between two official-looking sources and does not state a figure as settled — see the open questions above.", "source_ids": ["GR6", "GR8"], "confidence": "hold" },
+        { "text": "Greece is reported to offer a Digital Nomad national visa/residence-permit route for third-country nationals who work remotely for employers or clients based outside Greece, including freelancers and self-employed people, provided the underlying business is not itself registered in Greece — meaning this route is generally not the right one for a founder who wants to register and run a Greek company, as opposed to working remotely while based in Greece. This guide could not confirm the exact current income threshold or process on a directly-fetched official page this session.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
