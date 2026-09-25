@@ -1,5 +1,6 @@
 <?php
 require __DIR__ . '/../config/db.php';
+require __DIR__ . '/assets/guidance-helpers.php';
 
 header('Content-Type: application/xml; charset=utf-8');
 
@@ -51,6 +52,15 @@ echo url("{$baseUrl}/cities.php", null, 'weekly');
 echo url("{$baseUrl}/about.php", null, 'monthly');
 echo url("{$baseUrl}/add-company.php", null, 'monthly');
 echo url("{$baseUrl}/privacy.php", null, 'yearly');
+echo url("{$baseUrl}/guidance.php", null, 'monthly');
+echo url("{$baseUrl}/guidance-faq.php", null, 'weekly');
+echo url("{$baseUrl}/guidance-method.php", null, 'yearly');
+
+foreach (guidance_load_countries() as $gc) {
+    if ($gc['status'] === 'live') {
+        echo url("{$baseUrl}/guidance-country.php?country=" . rawurlencode($gc['slug']), $gc['last_checked'], 'monthly');
+    }
+}
 
 foreach (array_keys($countries) as $country) {
     echo url("{$baseUrl}/countries.php?country=" . rawurlencode($country));
