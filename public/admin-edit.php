@@ -130,7 +130,7 @@ form.onsubmit=async e=>{
     if(!res.ok)throw new Error(data.error||'Update failed');
     window.location.href='admin.php';
   }catch(err){
-    msg.innerHTML=`<div class="notice">${KFUI.esc(err.message)}</div>`;
+    msg.innerHTML=`<div class="error">${KFUI.esc(err.message)}</div>`;
     submitBtn.disabled=false;
   }
 };
