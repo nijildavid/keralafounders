@@ -1,379 +1,657 @@
 [
-  {
-    "id": "de-vat-limit",
-    "country": "germany",
-    "topic": "tax",
-    "question": "What is the small-business VAT limit in 2026?",
-    "answer": "EUR 25,000 in the previous year and EUR 100,000 in the current year, valid since 1 Jan 2025.",
-    "source_ids": ["S5"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-freelance-tax",
-    "country": "germany",
-    "topic": "tax",
-    "question": "Do freelancers pay trade tax?",
-    "answer": "No. Freiberufler pay no trade tax and do not join the IHK, but the tax office can reclassify an activity as a trade later.",
-    "source_ids": ["S8"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-ihk-fee",
-    "country": "germany",
-    "topic": "fees",
-    "question": "Do I have to pay IHK fees in my first years?",
-    "answer": "Registering a trade makes you an IHK member. New sole proprietors normally get a full exemption for the first two years. Check your exact case with your IHK.",
-    "source_ids": ["S11"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-gewerbe-cost-berlin",
-    "country": "germany",
-    "topic": "fees",
-    "question": "How much does it cost to register a trade in Berlin?",
-    "answer": "EUR 26 to 31, plus EUR 15 for online processing.",
-    "source_ids": ["S1"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-trade-tax-allowance",
-    "country": "germany",
-    "topic": "tax",
-    "question": "When do I pay trade tax?",
-    "answer": "Sole proprietors and partnerships pay only on trade profit above EUR 24,500 per year. Companies get no allowance.",
-    "source_ids": ["S10"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-einvoice",
-    "country": "germany",
-    "topic": "tax",
-    "question": "Do I have to send e-invoices?",
-    "answer": "You must be able to receive them since 2025. Sending is required from 2027 for businesses above EUR 800,000 B2B turnover, and from 2028 for all, except small-business VAT users and invoices under EUR 250.",
-    "source_ids": ["S9"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-online-formation",
-    "country": "germany",
-    "topic": "company",
-    "question": "Can I form a GmbH from abroad?",
-    "answer": "Yes, GmbH and UG can be formed by video conference with a German notary, using electronic identification, for cash contributions. A German registered address is still needed.",
-    "source_ids": ["S7", "S20"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-transparency",
-    "country": "germany",
-    "topic": "company",
-    "question": "Do I have to register in the transparency register?",
-    "answer": "GmbH and UG must, within about 2 weeks of the commercial-register entry. Sole proprietors and GbRs are exempt.",
-    "source_ids": ["S13"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-health-insurance",
-    "country": "germany",
-    "topic": "social",
-    "question": "What does health insurance cost for the self-employed?",
-    "answer": "Statutory cover is income-based with a minimum monthly base of EUR 1,248.33 in 2026. Private cover is also possible.",
-    "source_ids": ["S12"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "de-ug-vs-gmbh",
-    "country": "germany",
-    "topic": "company",
-    "question": "Is a UG enough or do I need a GmbH?",
-    "answer": "A UG can start from EUR 1 but must build a reserve until EUR 25,000. Advisors report GmbH tends to pay off tax-wise from about EUR 80,000 to 100,000 of retained profit.",
-    "source_ids": ["S17", "S18"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render_with_attribution",
-    "hold": false
-  },
-  {
-    "id": "de-live-in-germany",
-    "country": "germany",
-    "topic": "visa",
-    "question": "Do I need to live in Germany to found a company?",
-    "answer": "Advisors report no, for a GmbH, but the company needs a German address and non-EU founders who run it from Germany need a residence permit.",
-    "source_ids": ["S20"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render_with_attribution",
-    "hold": false
-  },
-  {
-    "id": "de-chancenkarte",
-    "country": "germany",
-    "topic": "visa",
-    "question": "Can I start a business on an Opportunity Card?",
-    "answer": "Advisors report no; it is for job seeking with limited work.",
-    "source_ids": ["S21"],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "hold",
-    "hold": true
-  },
-  {
-    "id": "de-bluecard-side",
-    "country": "germany",
-    "topic": "visa",
-    "question": "Can I run a side business on a Blue Card?",
-    "answer": "Not answered in any official source found.",
-    "source_ids": [],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "hold",
-    "hold": true
-  },
-  {
-    "id": "de-visa-money",
-    "country": "germany",
-    "topic": "visa",
-    "question": "How much money do I need for the self-employment permit?",
-    "answer": "Depends on the case; sources disagree.",
-    "source_ids": [],
-    "last_checked": "2026-09-21",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "hold",
-    "hold": true
-  },
-  {
-    "id": "gr-vat-limit",
-    "country": "greece",
-    "topic": "tax",
-    "question": "What is the small-business VAT turnover limit in Greece?",
-    "answer": "EUR 10,000 of turnover within Greece (current and previous tax year); businesses in the regime don't file VAT returns or reclaim input VAT.",
-    "source_ids": ["GR10"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "gr-vat-rates",
-    "country": "greece",
-    "topic": "tax",
-    "question": "What are Greece's VAT rates?",
-    "answer": "Standard 24%, reduced 13% (food, hotels, catering, energy), super-reduced 6% (medicines, books, newspapers, theatre/cinema). Reported (not independently confirmed) lower rates apply on some small islands from 2026.",
-    "source_ids": ["GR18"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render_with_attribution",
-    "hold": false
-  },
-  {
-    "id": "gr-mydata-deadline",
-    "country": "greece",
-    "topic": "tax",
-    "question": "When does e-invoicing become mandatory in Greece?",
-    "answer": "Reported: 2 March 2026 for businesses with over EUR 1,000,000 in 2023 gross revenue, extending to all Greek companies from 1 October 2026.",
-    "source_ids": ["GR20"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render_with_attribution",
-    "hold": false
-  },
-  {
-    "id": "gr-ike-capital",
-    "country": "greece",
-    "topic": "company",
-    "question": "What is the minimum capital to form an IKE?",
-    "answer": "Reported at EUR 1, and a single founder can form a one-member IKE.",
-    "source_ids": ["GR21", "GR22"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render_with_attribution",
-    "hold": false
-  },
-  {
-    "id": "gr-ike-notary",
-    "country": "greece",
-    "topic": "company",
-    "question": "Do I need a notary to form an IKE?",
-    "answer": "Reported: no, for the standard electronic e-ΥΜΣ route — a notary is only needed if a founder contributes real estate to the company's capital.",
-    "source_ids": ["GR21"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render_with_attribution",
-    "hold": false
-  },
-  {
-    "id": "gr-ike-tax",
-    "country": "greece",
-    "topic": "tax",
-    "question": "What tax rate does an IKE pay?",
-    "answer": "Reported flat 22% corporate income tax for 2026, plus an optional 5% withholding tax if profits are distributed, and a mandatory 5% legal-reserve allocation.",
-    "source_ids": ["GR19"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render_with_attribution",
-    "hold": false
-  },
-  {
-    "id": "gr-partnership-liability",
-    "country": "greece",
-    "topic": "company",
-    "question": "How does liability differ between an OE and an EE partnership?",
-    "answer": "In an OE, all partners are personally and unlimitedly liable. In an EE, only the general partner(s) are unlimitedly liable; limited partner(s) are capped at their contribution, unless their name is used in the company name.",
-    "source_ids": ["GR13", "GR23"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "gr-gemi-required",
-    "country": "greece",
-    "topic": "fees",
-    "question": "Do freelancers have to register with GEMI?",
-    "answer": "Generally no. Liberal/freelance professions (e.g. medical, educational, other 'scientific' professions) are typically exempt; commercial sole traders and all company forms must register.",
-    "source_ids": ["GR1"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "gr-gemi-annual-fee",
-    "country": "greece",
-    "topic": "fees",
-    "question": "What's the annual GEMI registry fee?",
-    "answer": "Reported: EUR 30/year for a sole trader, EUR 80/year for an OE/EE, EUR 100/year for an IKE, EUR 150/year for an EPE, EUR 320/year for an AE.",
-    "source_ids": ["GR15"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "gr-efka-categories",
-    "country": "greece",
-    "topic": "social",
-    "question": "How much are EFKA contributions for the self-employed in 2026?",
-    "answer": "Six standard monthly categories from EUR 250.77 to EUR 675.87 (pension + health), plus EUR 10/month unemployment and EUR 2/month for eligible healthcare workers. You must actively pick a category by 31 January.",
-    "source_ids": ["GR4"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "gr-efka-new-professional",
-    "country": "greece",
-    "topic": "social",
-    "question": "Is there a discount on EFKA contributions for new freelancers?",
-    "answer": "Yes. A reduced category is available for your first 5 years of insurance coverage: EUR 150.46/month total in 2026, below even the lowest standard category.",
-    "source_ids": ["GR11"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "gr-elevate-greece",
-    "country": "greece",
-    "topic": "fees",
-    "question": "What is Elevate Greece and does registering get me funding?",
-    "answer": "It's the government's official national startup registry. Registering connects you to investor and funding-programme networks, but does not itself grant state funding — each funding call has its own separate eligibility and evaluation.",
-    "source_ids": ["GR17"],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "render",
-    "hold": false
-  },
-  {
-    "id": "gr-golden-visa-amount",
-    "country": "greece",
-    "topic": "visa",
-    "question": "How much do I need to invest for a Greece Golden Visa?",
-    "answer": "Held back: two official-looking sources disagree (EUR 250,000 vs. EUR 400,000/800,000 by zone), unresolved this session.",
-    "source_ids": [],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "hold",
-    "hold": true
-  },
-  {
-    "id": "gr-digital-nomad-income",
-    "country": "greece",
-    "topic": "visa",
-    "question": "What's the income requirement for Greece's Digital Nomad Visa?",
-    "answer": "Not confirmed on an official page this session; held back pending review.",
-    "source_ids": [],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "hold",
-    "hold": true
-  },
-  {
-    "id": "gr-independent-economic-capital",
-    "country": "greece",
-    "topic": "visa",
-    "question": "How much capital do I need for the independent-economic-activity residence permit?",
-    "answer": "Not confirmed on an official page this session (only renewal conditions were found, not initial eligibility); held back pending review.",
-    "source_ids": [],
-    "last_checked": "2026-09-25",
-    "origin": "research",
-    "origin_ref": null,
-    "status": "hold",
-    "hold": true
-  }
+    {
+        "id": "de-vat-limit",
+        "country": "germany",
+        "topic": "tax",
+        "question": "What is the small-business VAT limit in 2026?",
+        "answer": "EUR 25,000 in the previous year and EUR 100,000 in the current year, valid since 1 Jan 2025.",
+        "source_ids": [
+            "S5"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-freelance-tax",
+        "country": "germany",
+        "topic": "tax",
+        "question": "Do freelancers pay trade tax?",
+        "answer": "No. Freiberufler pay no trade tax and do not join the IHK, but the tax office can reclassify an activity as a trade later.",
+        "source_ids": [
+            "S8"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-ihk-fee",
+        "country": "germany",
+        "topic": "fees",
+        "question": "Do I have to pay IHK fees in my first years?",
+        "answer": "Registering a trade makes you an IHK member. New sole proprietors normally get a full exemption for the first two years. Check your exact case with your IHK.",
+        "source_ids": [
+            "S11"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-gewerbe-cost-berlin",
+        "country": "germany",
+        "topic": "fees",
+        "question": "How much does it cost to register a trade in Berlin?",
+        "answer": "EUR 26 to 31, plus EUR 15 for online processing.",
+        "source_ids": [
+            "S1"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-trade-tax-allowance",
+        "country": "germany",
+        "topic": "tax",
+        "question": "When do I pay trade tax?",
+        "answer": "Sole proprietors and partnerships pay only on trade profit above EUR 24,500 per year. Companies get no allowance.",
+        "source_ids": [
+            "S10"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-einvoice",
+        "country": "germany",
+        "topic": "tax",
+        "question": "Do I have to send e-invoices?",
+        "answer": "You must be able to receive them since 2025. Sending is required from 2027 for businesses above EUR 800,000 B2B turnover, and from 2028 for all, except small-business VAT users and invoices under EUR 250.",
+        "source_ids": [
+            "S9"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-online-formation",
+        "country": "germany",
+        "topic": "company",
+        "question": "Can I form a GmbH from abroad?",
+        "answer": "Yes, GmbH and UG can be formed by video conference with a German notary, using electronic identification, for cash contributions. A German registered address is still needed.",
+        "source_ids": [
+            "S7",
+            "S20"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-transparency",
+        "country": "germany",
+        "topic": "company",
+        "question": "Do I have to register in the transparency register?",
+        "answer": "GmbH and UG must, within about 2 weeks of the commercial-register entry. Sole proprietors and GbRs are exempt.",
+        "source_ids": [
+            "S13"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-health-insurance",
+        "country": "germany",
+        "topic": "social",
+        "question": "What does health insurance cost for the self-employed?",
+        "answer": "Statutory cover is income-based with a minimum monthly base of EUR 1,248.33 in 2026. Private cover is also possible.",
+        "source_ids": [
+            "S12"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "de-ug-vs-gmbh",
+        "country": "germany",
+        "topic": "company",
+        "question": "Is a UG enough or do I need a GmbH?",
+        "answer": "A UG can start from EUR 1 but must build a reserve until EUR 25,000. Advisors report GmbH tends to pay off tax-wise from about EUR 80,000 to 100,000 of retained profit.",
+        "source_ids": [
+            "S17",
+            "S18"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "de-live-in-germany",
+        "country": "germany",
+        "topic": "visa",
+        "question": "Do I need to live in Germany to found a company?",
+        "answer": "Advisors report no, for a GmbH, but the company needs a German address and non-EU founders who run it from Germany need a residence permit.",
+        "source_ids": [
+            "S20"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "de-chancenkarte",
+        "country": "germany",
+        "topic": "visa",
+        "question": "Can I start a business on an Opportunity Card?",
+        "answer": "Advisors report no; it is for job seeking with limited work.",
+        "source_ids": [
+            "S21"
+        ],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "de-bluecard-side",
+        "country": "germany",
+        "topic": "visa",
+        "question": "Can I run a side business on a Blue Card?",
+        "answer": "Not answered in any official source found.",
+        "source_ids": [],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "de-visa-money",
+        "country": "germany",
+        "topic": "visa",
+        "question": "How much money do I need for the self-employment permit?",
+        "answer": "Depends on the case; sources disagree.",
+        "source_ids": [],
+        "last_checked": "2026-09-21",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "gr-vat-limit",
+        "country": "greece",
+        "topic": "tax",
+        "question": "What is the small-business VAT turnover limit in Greece?",
+        "answer": "EUR 10,000 of turnover within Greece (current and previous tax year); businesses in the regime don't file VAT returns or reclaim input VAT.",
+        "source_ids": [
+            "GR10"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "gr-vat-rates",
+        "country": "greece",
+        "topic": "tax",
+        "question": "What are Greece's VAT rates?",
+        "answer": "Standard 24%, reduced 13% (food, hotels, catering, energy), super-reduced 6% (medicines, books, newspapers, theatre/cinema). Reported (not independently confirmed) lower rates apply on some small islands from 2026.",
+        "source_ids": [
+            "GR18"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "gr-mydata-deadline",
+        "country": "greece",
+        "topic": "tax",
+        "question": "When does e-invoicing become mandatory in Greece?",
+        "answer": "Reported: 2 March 2026 for businesses with over EUR 1,000,000 in 2023 gross revenue, extending to all Greek companies from 1 October 2026.",
+        "source_ids": [
+            "GR20"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "gr-ike-capital",
+        "country": "greece",
+        "topic": "company",
+        "question": "What is the minimum capital to form an IKE?",
+        "answer": "Reported at EUR 1, and a single founder can form a one-member IKE.",
+        "source_ids": [
+            "GR21",
+            "GR22"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "gr-ike-notary",
+        "country": "greece",
+        "topic": "company",
+        "question": "Do I need a notary to form an IKE?",
+        "answer": "Reported: no, for the standard electronic e-ΥΜΣ route — a notary is only needed if a founder contributes real estate to the company's capital.",
+        "source_ids": [
+            "GR21"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "gr-ike-tax",
+        "country": "greece",
+        "topic": "tax",
+        "question": "What tax rate does an IKE pay?",
+        "answer": "Reported flat 22% corporate income tax for 2026, plus an optional 5% withholding tax if profits are distributed, and a mandatory 5% legal-reserve allocation.",
+        "source_ids": [
+            "GR19"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "gr-partnership-liability",
+        "country": "greece",
+        "topic": "company",
+        "question": "How does liability differ between an OE and an EE partnership?",
+        "answer": "In an OE, all partners are personally and unlimitedly liable. In an EE, only the general partner(s) are unlimitedly liable; limited partner(s) are capped at their contribution, unless their name is used in the company name.",
+        "source_ids": [
+            "GR13",
+            "GR23"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "gr-gemi-required",
+        "country": "greece",
+        "topic": "fees",
+        "question": "Do freelancers have to register with GEMI?",
+        "answer": "Generally no. Liberal/freelance professions (e.g. medical, educational, other 'scientific' professions) are typically exempt; commercial sole traders and all company forms must register.",
+        "source_ids": [
+            "GR1"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "gr-gemi-annual-fee",
+        "country": "greece",
+        "topic": "fees",
+        "question": "What's the annual GEMI registry fee?",
+        "answer": "Reported: EUR 30/year for a sole trader, EUR 80/year for an OE/EE, EUR 100/year for an IKE, EUR 150/year for an EPE, EUR 320/year for an AE.",
+        "source_ids": [
+            "GR15"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "gr-efka-categories",
+        "country": "greece",
+        "topic": "social",
+        "question": "How much are EFKA contributions for the self-employed in 2026?",
+        "answer": "Six standard monthly categories from EUR 250.77 to EUR 675.87 (pension + health), plus EUR 10/month unemployment and EUR 2/month for eligible healthcare workers. You must actively pick a category by 31 January.",
+        "source_ids": [
+            "GR4"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "gr-efka-new-professional",
+        "country": "greece",
+        "topic": "social",
+        "question": "Is there a discount on EFKA contributions for new freelancers?",
+        "answer": "Yes. A reduced category is available for your first 5 years of insurance coverage: EUR 150.46/month total in 2026, below even the lowest standard category.",
+        "source_ids": [
+            "GR11"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "gr-elevate-greece",
+        "country": "greece",
+        "topic": "fees",
+        "question": "What is Elevate Greece and does registering get me funding?",
+        "answer": "It's the government's official national startup registry. Registering connects you to investor and funding-programme networks, but does not itself grant state funding — each funding call has its own separate eligibility and evaluation.",
+        "source_ids": [
+            "GR17"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "gr-golden-visa-amount",
+        "country": "greece",
+        "topic": "visa",
+        "question": "How much do I need to invest for a Greece Golden Visa?",
+        "answer": "Held back: two official-looking sources disagree (EUR 250,000 vs. EUR 400,000/800,000 by zone), unresolved this session.",
+        "source_ids": [],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "gr-digital-nomad-income",
+        "country": "greece",
+        "topic": "visa",
+        "question": "What's the income requirement for Greece's Digital Nomad Visa?",
+        "answer": "Not confirmed on an official page this session; held back pending review.",
+        "source_ids": [],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "gr-independent-economic-capital",
+        "country": "greece",
+        "topic": "visa",
+        "question": "How much capital do I need for the independent-economic-activity residence permit?",
+        "answer": "Not confirmed on an official page this session (only renewal conditions were found, not initial eligibility); held back pending review.",
+        "source_ids": [],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "es-autonomo-vs-sl",
+        "country": "spain",
+        "topic": "company",
+        "question": "What's the difference between registering as autónomo and forming an SL?",
+        "answer": "Autónomo is a self-employed sole trader with no minimum capital, no notary, and unlimited personal liability. An SL (or single-owner SLU) is a limited-liability company that needs a notarised deed and Registro Mercantil registration, but can now be formed with as little as EUR 1 of share capital.",
+        "source_ids": [
+            "ES9",
+            "ES20"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-sl-minimum-capital",
+        "country": "spain",
+        "topic": "company",
+        "question": "What's the minimum capital to form an SL in Spain?",
+        "answer": "EUR 1. If capital stays below EUR 3,000, the company must put at least 20% of yearly after-tax profit into a legal reserve until reserve plus capital reach EUR 3,000, and shareholders are jointly liable for the shortfall up to EUR 3,000 only if the company is wound up and its assets aren't enough to cover its debts.",
+        "source_ids": [
+            "ES9"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-sl-formation-time",
+        "country": "spain",
+        "topic": "company",
+        "question": "How fast can I form an SL in Spain?",
+        "answer": "Using standard bylaws through the CIRCE electronic system, the law is designed so name reservation, the notary appointment and Registro Mercantil registration can each complete within hours, for a total of about a day to a few days. Custom bylaws take longer.",
+        "source_ids": [
+            "ES10"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-modelo-036",
+        "country": "spain",
+        "topic": "tax",
+        "question": "How do I register as self-employed with the Spanish tax agency?",
+        "answer": "File the census declaration, Modelo 036, with the Agencia Tributaria. Since 3 February 2025 the simplified Modelo 037 no longer exists; Modelo 036 is now used for every registration, change or deregistration.",
+        "source_ids": [
+            "ES4",
+            "ES5"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-reta-alta",
+        "country": "spain",
+        "topic": "social",
+        "question": "How do I register for Social Security as an autónomo?",
+        "answer": "Register in RETA (the self-employed regime) through the Import@SS portal before starting your activity, up to 60 days in advance. You'll provide your activity code, start date and estimated income to set your contribution base.",
+        "source_ids": [
+            "ES8"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-tarifa-plana",
+        "country": "spain",
+        "topic": "social",
+        "question": "Is there a reduced Social Security rate for new autónomos?",
+        "answer": "Yes, the \"tarifa plana\". The law fixed it at EUR 80/month for 2023-2025; the amount for 2026 onward is set each year by that year's State Budget Law rather than the base law itself. Advisor reporting says EUR 80/month still applied through 2026 at the time of this check, for the first 12 months (extendable to 24 if income stays under minimum wage).",
+        "source_ids": [
+            "ES7",
+            "ES21"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "es-vat-threshold",
+        "country": "spain",
+        "topic": "tax",
+        "question": "Is there a small-business VAT exemption threshold in Spain?",
+        "answer": "No, not currently. The general VAT rate is 21% (reduced rates 10% and 4%) and applies from your first taxable transaction. The EU's small-business VAT exemption directive had a 1 January 2025 deadline for Spain to adopt it; as of this check Spain had not done so, and is reported to be facing EU infringement proceedings over the delay.",
+        "source_ids": [
+            "ES13",
+            "ES23"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "es-iae-exemption",
+        "country": "spain",
+        "topic": "tax",
+        "question": "Do I have to pay IAE (the municipal business-activity tax) when I start out?",
+        "answer": "Almost certainly not at first. Autónomos (natural persons) are always exempt from IAE. Companies are exempt if net turnover is under EUR 1,000,000, and everyone is exempt for their first two tax periods of activity regardless of turnover.",
+        "source_ids": [
+            "ES11"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-corporate-tax-rate",
+        "country": "spain",
+        "topic": "tax",
+        "question": "What corporate tax rate does a new SL pay?",
+        "answer": "The general Impuesto sobre Sociedades rate is 25%. Newly created companies carrying out an economic activity get a reduced 15% rate for their first profitable tax period and the one after it.",
+        "source_ids": [
+            "ES12"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-camara-comercio-fee",
+        "country": "spain",
+        "topic": "fees",
+        "question": "Do I have to pay Chamber of Commerce (Cámara de Comercio) fees?",
+        "answer": "No mandatory fee. Businesses are automatically enrolled in their territorial Chamber by law, but membership carries no compulsory economic contribution; Chambers run on voluntary contributions and paid services.",
+        "source_ids": [
+            "ES17"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-verifactu",
+        "country": "spain",
+        "topic": "tax",
+        "question": "What is VeriFactu and when do I need to comply?",
+        "answer": "VeriFactu is Spain's anti-fraud invoicing-software framework. Companies (Impuesto sobre Sociedades taxpayers) must have compliant systems by 1 January 2027; other taxpayers, including autónomos under IRPF, by 1 July 2027.",
+        "source_ids": [
+            "ES15"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-b2b-einvoicing",
+        "country": "spain",
+        "topic": "tax",
+        "question": "Is electronic invoicing mandatory for B2B transactions in Spain?",
+        "answer": "It's being phased in under the \"Crea y Crece\" law. Businesses with turnover over EUR 8 million in the prior year must comply within 12 months of the implementing order's entry into force in 2026; all other businesses and professionals get 24 months.",
+        "source_ids": [
+            "ES16"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "es-enisa-loan",
+        "country": "spain",
+        "topic": "funding",
+        "question": "Can I get a startup loan from ENISA?",
+        "answer": "ENISA, a state-owned enterprise, offers participative loans to SMEs and startups with a roughly two-month resolution target. Advisor reporting describes a current general line (successor to the former \"Jóvenes Emprendedores\" line) of roughly EUR 25,000 to 1,500,000, repayable over up to 7 years with up to 2 years' grace, and no collateral required — check enisa.es directly for the exact line and terms that apply now.",
+        "source_ids": [
+            "ES18",
+            "ES22"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "es-visa-entrepreneur",
+        "country": "spain",
+        "topic": "visa",
+        "question": "Can I get a Spanish residence permit as an entrepreneur under Ley 14/2013?",
+        "answer": "Not yet answered here — under legal review.",
+        "source_ids": [],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "es-visa-general-selfemployment",
+        "country": "spain",
+        "topic": "visa",
+        "question": "Can I get a Spanish residence permit as a self-employed founder doing an ordinary (non-innovative) business?",
+        "answer": "Not yet answered here — under legal review.",
+        "source_ids": [],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    }
 ]

@@ -1,47 +1,614 @@
 [
-  { "id": "S1", "title": "Register a trade", "publisher": "Service Berlin (Berlin.de)", "type": "official", "url": "https://service.berlin.de/dienstleistung/121921/en/", "language": "en", "accessed": "2026-09-21" },
-  { "id": "S2", "title": "Selbständige Tätigkeit (Unternehmer und Freiberufliche)", "publisher": "Landesamt für Einwanderung Berlin", "type": "official", "url": "https://www.berlin.de/einwanderung/aufenthalt/erwerbstaetigkeit/artikel.874042.php", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S3", "title": "§21 AufenthG: Antragstellung", "publisher": "IHK Berlin", "type": "chamber", "url": "https://www.ihk.de/berlin/service-und-beratung/existenzgruendung/-21-aufenthg-antragstellung-4335022", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S4", "title": "Existenzgründer (Beitragserhebung)", "publisher": "IHK Berlin", "type": "chamber", "url": "https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/besonderheiten-der-beitragserhebung/existenzgruender-2280552", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S5", "title": "Kleinunternehmerregelung, Umsatzgrenzen, §19 UStG", "publisher": "IHK Region Stuttgart", "type": "chamber", "url": "https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/steuerrecht/umsatzsteuer-national/kleinunternehmerregelung-in-der-umsatzsteuer-1843632", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S6", "title": "Self-employment by foreign nationals in Germany", "publisher": "IHK Region Stuttgart", "type": "chamber", "url": "https://www.ihk.de/stuttgart/english/services2/business-support/self-employment-by-foreigners-3977972", "language": "en", "accessed": "2026-09-21" },
-  { "id": "S7", "title": "Online-Gründung und Anmeldung einer GmbH oder UG", "publisher": "IHK Karlsruhe", "type": "chamber", "url": "https://www.ihk.de/karlsruhe/fachthemen/recht/gesellschaftsrecht-handelsrecht/gesellschaftsrecht/online-gruendung-gmbh-5592706", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S8", "title": "Freiberufler vs. Gewerbe", "publisher": "IHK Rhein-Neckar", "type": "chamber", "url": "https://www.ihk.de/rhein-neckar/gruendung/existenzgruendung/basisinformationen/freie-berufe-6706144", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S9", "title": "E-Rechnungspflicht ab 2025", "publisher": "IHK Frankfurt am Main", "type": "chamber", "url": "https://www.frankfurt-main.ihk.de/recht/uebersicht-alle-rechtsthemen/steuerrecht/umsatzsteuer-national/e-rechnungspflicht-ab-2025-6055774", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S10", "title": "Gewerbesteuer: wer muss sie zahlen", "publisher": "Gründerplattform (federal portal)", "type": "government_portal", "url": "https://gruenderplattform.de/unternehmen-gruenden/gewerbesteuer", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S11", "title": "IHK-Mitgliedschaft: Pflicht und Beiträge für Gründer*innen", "publisher": "Gründerplattform (federal portal)", "type": "government_portal", "url": "https://gruenderplattform.de/unternehmensfuehrung/ihk-mitgliedschaft", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S12", "title": "Sich als Gründer*in freiwillig gesetzlich krankenversichern?", "publisher": "Gründerplattform (federal portal)", "type": "government_portal", "url": "https://gruenderplattform.de/unternehmen-gruenden/freiwillige-krankenversicherung", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S13", "title": "Transparenzregister-Eintragung: So geht's", "publisher": "Gründerplattform (federal portal)", "type": "government_portal", "url": "https://gruenderplattform.de/unternehmen-gruenden/transparenzregister-eintragung", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S14", "title": "Existenzgründung Berlin: Fördermittel der IBB", "publisher": "Investitionsbank Berlin", "type": "official", "url": "https://www.ibb.de/de/foerderungen/existenzgruendung/existenzgruendung.html", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S15", "title": "Unternehmen gegründet oder selbständig gemacht?", "publisher": "ELSTER", "type": "official", "url": "https://www.elster.de/elsterweb/infoseite/unternehmensgruendung", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S16", "title": "How to Start a Business in Germany: The Complete 2026 Guide", "publisher": "betahaus Berlin", "type": "secondary", "url": "https://www.betahaus.com/magazine/how-to-start-a-business-in-germany-2026", "language": "en", "accessed": "2026-09-21" },
-  { "id": "S17", "title": "How to Start a UG or GmbH in Germany: The Complete Guide for 2026", "publisher": "norman.finance", "type": "secondary", "url": "https://norman.finance/blog/how-to-start-a-ug-or-gmbh-in-germany-the-complete-guide-for-2026", "language": "en", "accessed": "2026-09-21" },
-  { "id": "S18", "title": "UG gründen 2026", "publisher": "bsteuern.com", "type": "secondary", "url": "https://www.bsteuern.com/blog/ug-grunden", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S19", "title": "Starting a GmbH in Germany", "publisher": "lawyersgermany.com", "type": "secondary", "url": "https://lawyersgermany.com/starting-a-gmbh-in-germany/", "language": "en", "accessed": "2026-09-21" },
-  { "id": "S20", "title": "Unternehmen gründen in Deutschland als Ausländer", "publisher": "vektora.eu", "type": "secondary", "url": "https://vektora.eu/de/briefs/unternehmen-gruenden-in-deutschland-als-auslaender", "language": "de", "accessed": "2026-09-21" },
-  { "id": "S21", "title": "Germany's Freelance Visa for Non-EU Citizens: The 2026 Reality", "publisher": "remoteworkeurope.eu", "type": "secondary", "url": "https://remoteworkeurope.eu/insights/germany-freelance-visa-non-eu/", "language": "en", "accessed": "2026-09-21" },
-  { "id": "S22", "title": "Section 21 AufenthG: 8 key facts", "publisher": "migrando.de", "type": "secondary", "url": "https://migrando.de/en/blog/residence-permit/paragraph-21-aufenthg-all-about-your-residence-permit/", "language": "en", "accessed": "2026-09-21" },
-  { "id": "GR1", "title": "Έναρξη Επιχειρηματικής Δραστηριότητας Φυσικών και Νομικών Προσώπων και Νομικών Οντοτήτων", "publisher": "EUGO – Ενιαία Κέντρα Εξυπηρέτησης (Points of Single Contact)", "type": "government_portal", "url": "https://eugo.gov.gr/services/788475", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR2", "title": "Υπηρεσίες για Σύσταση Εταιρείας / Εγγραφή Υποκαταστήματος στο ΓΕΜΗ (e-ΥΜΣ)", "publisher": "Γενική Γραμματεία Εμπορίου, Υπουργείο Ανάπτυξης", "type": "official", "url": "https://gge.mindev.gov.gr/tomeas-emporiou/ypiresies-gia-systasi-etaireias-eggrafi-ypokatastimatos-sto-gemh/", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR3", "title": "Έναρξη ατομικής επιχείρησης", "publisher": "mitos.gov.gr – Εθνικό Μητρώο Διοικητικών Διαδικασιών", "type": "government_portal", "url": "https://mitos.gov.gr/index.php/%CE%94%CE%94:%CE%88%CE%BD%CE%B1%CF%81%CE%BE%CE%B7_%CE%B1%CF%84%CE%BF%CE%BC%CE%B9%CE%BA%CE%AE%CF%82_%CE%B5%CF%80%CE%B9%CF%87%CE%B5%CE%AF%CF%81%CE%B7%CF%83%CE%B7%CF%82", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR4", "title": "Ελεύθεροι Επαγγελματίες και Αυτοαπασχολούμενοι – ασφαλιστικές κατηγορίες 2026", "publisher": "e-ΕΦΚΑ", "type": "official", "url": "https://www.e-efka.gov.gr/el/asphalismenoi/me-misthotoi/neo-systhma-asfalistikon-eisforon/eleftheroi-epaggelmaties-aftoapasxoloumenoi", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR5", "title": "Επιλογή Ασφαλιστικής Κατηγορίας Κύριας Ασφάλισης, Επικουρικής Ασφάλισης και Εφάπαξ Παροχών από 1/1/2026", "publisher": "e-ΕΦΚΑ", "type": "official", "url": "https://www.e-efka.gov.gr/el/elektronikes-yperesies/epilogi-asfalistikis-katigorias", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR6", "title": "Αύξηση ορίου ελάχιστης επένδυσης σε ακίνητα για απόκτηση Golden Visa", "publisher": "Πύλη Στεγαστικής Πολιτικής (stegasi.gov.gr)", "type": "official", "url": "https://stegasi.gov.gr/programs/afxisi-oriou-elachistis-ependysis-se-akinita-gia-apoktisi-golden-visa/", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR7", "title": "Categories of Residence Permits for Third-Country Nationals & Required Documents", "publisher": "Ministry of Migration and Asylum (migration.gov.gr)", "type": "official", "url": "https://migration.gov.gr/en/migration-policy/metanasteusi-stin-ellada/katigories-adeion-diamonis-politon-triton-choron-dikaiologitika%E2%80%8B/", "language": "en", "accessed": "2026-09-25" },
-  { "id": "GR8", "title": "Golden Visa", "publisher": "Ministry of Migration and Asylum (migration.gov.gr)", "type": "official", "url": "https://migration.gov.gr/en/golden-visa/", "language": "en", "accessed": "2026-09-25" },
-  { "id": "GR9", "title": "Οδηγίες ηλεκτρονικής εγγραφής ατομικών επιχειρήσεων στο Ε.Ε.Α.", "publisher": "Επαγγελματικό Επιμελητήριο Αθηνών (ΕΕΑ)", "type": "chamber", "url": "https://www.eea.gr/ipiresies-eea/e-epimelitirio/odigies-ilektronikis-eggrafis-atomikon-epixeiriseon-sto-eea/", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR10", "title": "Ποιες μικρές επιχειρήσεις δικαιούνται απαλλαγή από το ΦΠΑ", "publisher": "Επιμελητήριο Καστοριάς", "type": "chamber", "url": "https://www.kastoriachamber.gr/2026/01/21/poies-mikres-epicheiriseis-dikaioyntai-apallagi-apo-to-fpa", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR11", "title": "Νέοι ελεύθεροι επαγγελματίες και αυτοαπασχολούμενοι – ειδική ασφαλιστική κατηγορία", "publisher": "e-ΕΦΚΑ", "type": "official", "url": "https://www.e-efka.gov.gr/el/asphalismenoi/me-misthotoi/neo-systhma-asfalistikon-eisforon/neoi-epaggelmaties", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR12", "title": "Independent Economic Activity – Article 138, paragraphs 3 and 7 (Law 4251/14) – Renewal", "publisher": "Decentralized Administration of Attica (apdattikis.gov.gr)", "type": "official", "url": "https://apdattikis.gov.gr/en/process/1-2-independent-economic-activity-article-138-paragraphs-3-and-7-law-4251-14-renewal/", "language": "en", "accessed": "2026-09-25" },
-  { "id": "GR13", "title": "Ομόρρυθμη Εταιρεία (ΟΕ) – Βασικά Χαρακτηριστικά", "publisher": "Γενική Γραμματεία Εμπορίου, Υπουργείο Ανάπτυξης", "type": "official", "url": "https://gge.mindev.gov.gr/tomeas-emporiou/vasika-xaraktiristika-etaireion/%CE%BF%CE%BC%CE%BF%CF%81%CF%81%CF%85%CE%B8%CE%BC%CE%B7-%CE%B5%CF%84%CE%B1%CE%B9%CF%81%CE%B5%CE%B9%CE%B1-%CE%BF%CE%B5-%CE%B2%CE%B1%CF%83%CE%B9%CE%BA%CE%B1-%CF%87%CE%B1%CF%81%CE%B1%CE%BA/", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR14", "title": "Φορολογικές Κλίμακες 2026: Πίνακας & Φόρος", "publisher": "katharosmisthos.gr", "type": "secondary", "url": "https://katharosmisthos.gr/blog/foro-klimakes-2026", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR15", "title": "Ετήσια Τέλη Τήρησης Μερίδας Γ.Ε.ΜΗ.", "publisher": "Επαγγελματικό Επιμελητήριο Πειραιώς (Β.Ε.Π.)", "type": "chamber", "url": "https://www.bep.gr/etisia-teli-tirisis-meridas-gemi.html", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR16", "title": "Ατομικές Επιχειρήσεις", "publisher": "Εμπορικό και Βιομηχανικό Επιμελητήριο Αθηνών (ΕΒΕΑ/ACCI)", "type": "chamber", "url": "https://acci.gr/%CE%B1%CF%84%CE%BF%CE%BC%CE%B9%CE%BA%CE%AD%CF%82-%CE%B5%CF%80%CE%B9%CF%87%CE%B5%CE%B9%CF%81%CE%AE%CF%83%CE%B5%CE%B9%CF%82/", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR17", "title": "Revised Benefits for Registered Startups", "publisher": "Elevate Greece – Εθνικό Μητρώο Νεοφυών Επιχειρήσεων", "type": "official", "url": "https://elevategreece.gov.gr/revised-benefits/", "language": "en", "accessed": "2026-09-25" },
-  { "id": "GR18", "title": "Συντελεστές ΦΠΑ στην Ελλάδα 2026: Πλήρης Οδηγός", "publisher": "myFPA.gr", "type": "secondary", "url": "https://myfpa.gr/syntelestes-fpa-ellada-2026.html", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR19", "title": "Φορολογία ΙΚΕ 2026 – Φορολογία διαχειριστή ΙΚΕ – Έξοδα ΙΚΕ", "publisher": "PKP Accounting", "type": "secondary", "url": "https://www.pkp.com.gr/forologia-ike/", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR20", "title": "myDATA: Πλήρης οδηγός για την ηλεκτρονική διαβίβαση στο 2026", "publisher": "lido.app", "type": "secondary", "url": "https://www.lido.app/gr/mydata", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR21", "title": "Σύσταση ΙΚΕ 2026 — οδηγός βήμα-βήμα", "publisher": "ikewebsites.gr", "type": "secondary", "url": "https://ikewebsites.gr/guides/systasi-ike-odigos", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR22", "title": "Οδηγός ίδρυσης ΙΚΕ: βήμα-βήμα για επιχειρηματίες", "publisher": "Χρήστος Καβαλλάρης – Λογιστής (kavallaris.gr)", "type": "secondary", "url": "https://kavallaris.gr/odigos-idrysis-ike/", "language": "el", "accessed": "2026-09-25" },
-  { "id": "GR23", "title": "Ετερόρρυθμη Εταιρεία (ΕΕ) – Βασικά Χαρακτηριστικά", "publisher": "Γενική Γραμματεία Εμπορίου, Υπουργείο Ανάπτυξης", "type": "official", "url": "https://gge.mindev.gov.gr/tomeas-emporiou/vasika-xaraktiristika-etaireion/%CE%B5%CF%84%CE%B5%CF%81%CE%BF%CF%81%CF%81%CF%85%CE%B8%CE%BC%CE%B7-%CE%B5%CF%84%CE%B1%CE%B9%CF%81%CE%B5%CE%B9%CE%B1-%CE%B5%CE%B5-%CE%B2%CE%B1%CF%83%CE%B9%CE%BA%CE%B1-%CF%87%CE%B1%CF%81/", "language": "el", "accessed": "2026-09-25" }
+    {
+        "id": "S1",
+        "title": "Register a trade",
+        "publisher": "Service Berlin (Berlin.de)",
+        "type": "official",
+        "url": "https://service.berlin.de/dienstleistung/121921/en/",
+        "language": "en",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S2",
+        "title": "Selbständige Tätigkeit (Unternehmer und Freiberufliche)",
+        "publisher": "Landesamt für Einwanderung Berlin",
+        "type": "official",
+        "url": "https://www.berlin.de/einwanderung/aufenthalt/erwerbstaetigkeit/artikel.874042.php",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S3",
+        "title": "§21 AufenthG: Antragstellung",
+        "publisher": "IHK Berlin",
+        "type": "chamber",
+        "url": "https://www.ihk.de/berlin/service-und-beratung/existenzgruendung/-21-aufenthg-antragstellung-4335022",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S4",
+        "title": "Existenzgründer (Beitragserhebung)",
+        "publisher": "IHK Berlin",
+        "type": "chamber",
+        "url": "https://www.ihk.de/berlin/ueber-uns/mitgliedschaft-und-beitrag/das-verfahren-der-beitragserhebung/besonderheiten-der-beitragserhebung/existenzgruender-2280552",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S5",
+        "title": "Kleinunternehmerregelung, Umsatzgrenzen, §19 UStG",
+        "publisher": "IHK Region Stuttgart",
+        "type": "chamber",
+        "url": "https://www.ihk.de/stuttgart/fuer-unternehmen/recht-und-steuern/steuerrecht/umsatzsteuer-national/kleinunternehmerregelung-in-der-umsatzsteuer-1843632",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S6",
+        "title": "Self-employment by foreign nationals in Germany",
+        "publisher": "IHK Region Stuttgart",
+        "type": "chamber",
+        "url": "https://www.ihk.de/stuttgart/english/services2/business-support/self-employment-by-foreigners-3977972",
+        "language": "en",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S7",
+        "title": "Online-Gründung und Anmeldung einer GmbH oder UG",
+        "publisher": "IHK Karlsruhe",
+        "type": "chamber",
+        "url": "https://www.ihk.de/karlsruhe/fachthemen/recht/gesellschaftsrecht-handelsrecht/gesellschaftsrecht/online-gruendung-gmbh-5592706",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S8",
+        "title": "Freiberufler vs. Gewerbe",
+        "publisher": "IHK Rhein-Neckar",
+        "type": "chamber",
+        "url": "https://www.ihk.de/rhein-neckar/gruendung/existenzgruendung/basisinformationen/freie-berufe-6706144",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S9",
+        "title": "E-Rechnungspflicht ab 2025",
+        "publisher": "IHK Frankfurt am Main",
+        "type": "chamber",
+        "url": "https://www.frankfurt-main.ihk.de/recht/uebersicht-alle-rechtsthemen/steuerrecht/umsatzsteuer-national/e-rechnungspflicht-ab-2025-6055774",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S10",
+        "title": "Gewerbesteuer: wer muss sie zahlen",
+        "publisher": "Gründerplattform (federal portal)",
+        "type": "government_portal",
+        "url": "https://gruenderplattform.de/unternehmen-gruenden/gewerbesteuer",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S11",
+        "title": "IHK-Mitgliedschaft: Pflicht und Beiträge für Gründer*innen",
+        "publisher": "Gründerplattform (federal portal)",
+        "type": "government_portal",
+        "url": "https://gruenderplattform.de/unternehmensfuehrung/ihk-mitgliedschaft",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S12",
+        "title": "Sich als Gründer*in freiwillig gesetzlich krankenversichern?",
+        "publisher": "Gründerplattform (federal portal)",
+        "type": "government_portal",
+        "url": "https://gruenderplattform.de/unternehmen-gruenden/freiwillige-krankenversicherung",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S13",
+        "title": "Transparenzregister-Eintragung: So geht's",
+        "publisher": "Gründerplattform (federal portal)",
+        "type": "government_portal",
+        "url": "https://gruenderplattform.de/unternehmen-gruenden/transparenzregister-eintragung",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S14",
+        "title": "Existenzgründung Berlin: Fördermittel der IBB",
+        "publisher": "Investitionsbank Berlin",
+        "type": "official",
+        "url": "https://www.ibb.de/de/foerderungen/existenzgruendung/existenzgruendung.html",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S15",
+        "title": "Unternehmen gegründet oder selbständig gemacht?",
+        "publisher": "ELSTER",
+        "type": "official",
+        "url": "https://www.elster.de/elsterweb/infoseite/unternehmensgruendung",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S16",
+        "title": "How to Start a Business in Germany: The Complete 2026 Guide",
+        "publisher": "betahaus Berlin",
+        "type": "secondary",
+        "url": "https://www.betahaus.com/magazine/how-to-start-a-business-in-germany-2026",
+        "language": "en",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S17",
+        "title": "How to Start a UG or GmbH in Germany: The Complete Guide for 2026",
+        "publisher": "norman.finance",
+        "type": "secondary",
+        "url": "https://norman.finance/blog/how-to-start-a-ug-or-gmbh-in-germany-the-complete-guide-for-2026",
+        "language": "en",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S18",
+        "title": "UG gründen 2026",
+        "publisher": "bsteuern.com",
+        "type": "secondary",
+        "url": "https://www.bsteuern.com/blog/ug-grunden",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S19",
+        "title": "Starting a GmbH in Germany",
+        "publisher": "lawyersgermany.com",
+        "type": "secondary",
+        "url": "https://lawyersgermany.com/starting-a-gmbh-in-germany/",
+        "language": "en",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S20",
+        "title": "Unternehmen gründen in Deutschland als Ausländer",
+        "publisher": "vektora.eu",
+        "type": "secondary",
+        "url": "https://vektora.eu/de/briefs/unternehmen-gruenden-in-deutschland-als-auslaender",
+        "language": "de",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S21",
+        "title": "Germany's Freelance Visa for Non-EU Citizens: The 2026 Reality",
+        "publisher": "remoteworkeurope.eu",
+        "type": "secondary",
+        "url": "https://remoteworkeurope.eu/insights/germany-freelance-visa-non-eu/",
+        "language": "en",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "S22",
+        "title": "Section 21 AufenthG: 8 key facts",
+        "publisher": "migrando.de",
+        "type": "secondary",
+        "url": "https://migrando.de/en/blog/residence-permit/paragraph-21-aufenthg-all-about-your-residence-permit/",
+        "language": "en",
+        "accessed": "2026-09-21"
+    },
+    {
+        "id": "GR1",
+        "title": "Έναρξη Επιχειρηματικής Δραστηριότητας Φυσικών και Νομικών Προσώπων και Νομικών Οντοτήτων",
+        "publisher": "EUGO – Ενιαία Κέντρα Εξυπηρέτησης (Points of Single Contact)",
+        "type": "government_portal",
+        "url": "https://eugo.gov.gr/services/788475",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR2",
+        "title": "Υπηρεσίες για Σύσταση Εταιρείας / Εγγραφή Υποκαταστήματος στο ΓΕΜΗ (e-ΥΜΣ)",
+        "publisher": "Γενική Γραμματεία Εμπορίου, Υπουργείο Ανάπτυξης",
+        "type": "official",
+        "url": "https://gge.mindev.gov.gr/tomeas-emporiou/ypiresies-gia-systasi-etaireias-eggrafi-ypokatastimatos-sto-gemh/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR3",
+        "title": "Έναρξη ατομικής επιχείρησης",
+        "publisher": "mitos.gov.gr – Εθνικό Μητρώο Διοικητικών Διαδικασιών",
+        "type": "government_portal",
+        "url": "https://mitos.gov.gr/index.php/%CE%94%CE%94:%CE%88%CE%BD%CE%B1%CF%81%CE%BE%CE%B7_%CE%B1%CF%84%CE%BF%CE%BC%CE%B9%CE%BA%CE%AE%CF%82_%CE%B5%CF%80%CE%B9%CF%87%CE%B5%CE%AF%CF%81%CE%B7%CF%83%CE%B7%CF%82",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR4",
+        "title": "Ελεύθεροι Επαγγελματίες και Αυτοαπασχολούμενοι – ασφαλιστικές κατηγορίες 2026",
+        "publisher": "e-ΕΦΚΑ",
+        "type": "official",
+        "url": "https://www.e-efka.gov.gr/el/asphalismenoi/me-misthotoi/neo-systhma-asfalistikon-eisforon/eleftheroi-epaggelmaties-aftoapasxoloumenoi",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR5",
+        "title": "Επιλογή Ασφαλιστικής Κατηγορίας Κύριας Ασφάλισης, Επικουρικής Ασφάλισης και Εφάπαξ Παροχών από 1/1/2026",
+        "publisher": "e-ΕΦΚΑ",
+        "type": "official",
+        "url": "https://www.e-efka.gov.gr/el/elektronikes-yperesies/epilogi-asfalistikis-katigorias",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR6",
+        "title": "Αύξηση ορίου ελάχιστης επένδυσης σε ακίνητα για απόκτηση Golden Visa",
+        "publisher": "Πύλη Στεγαστικής Πολιτικής (stegasi.gov.gr)",
+        "type": "official",
+        "url": "https://stegasi.gov.gr/programs/afxisi-oriou-elachistis-ependysis-se-akinita-gia-apoktisi-golden-visa/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR7",
+        "title": "Categories of Residence Permits for Third-Country Nationals & Required Documents",
+        "publisher": "Ministry of Migration and Asylum (migration.gov.gr)",
+        "type": "official",
+        "url": "https://migration.gov.gr/en/migration-policy/metanasteusi-stin-ellada/katigories-adeion-diamonis-politon-triton-choron-dikaiologitika%E2%80%8B/",
+        "language": "en",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR8",
+        "title": "Golden Visa",
+        "publisher": "Ministry of Migration and Asylum (migration.gov.gr)",
+        "type": "official",
+        "url": "https://migration.gov.gr/en/golden-visa/",
+        "language": "en",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR9",
+        "title": "Οδηγίες ηλεκτρονικής εγγραφής ατομικών επιχειρήσεων στο Ε.Ε.Α.",
+        "publisher": "Επαγγελματικό Επιμελητήριο Αθηνών (ΕΕΑ)",
+        "type": "chamber",
+        "url": "https://www.eea.gr/ipiresies-eea/e-epimelitirio/odigies-ilektronikis-eggrafis-atomikon-epixeiriseon-sto-eea/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR10",
+        "title": "Ποιες μικρές επιχειρήσεις δικαιούνται απαλλαγή από το ΦΠΑ",
+        "publisher": "Επιμελητήριο Καστοριάς",
+        "type": "chamber",
+        "url": "https://www.kastoriachamber.gr/2026/01/21/poies-mikres-epicheiriseis-dikaioyntai-apallagi-apo-to-fpa",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR11",
+        "title": "Νέοι ελεύθεροι επαγγελματίες και αυτοαπασχολούμενοι – ειδική ασφαλιστική κατηγορία",
+        "publisher": "e-ΕΦΚΑ",
+        "type": "official",
+        "url": "https://www.e-efka.gov.gr/el/asphalismenoi/me-misthotoi/neo-systhma-asfalistikon-eisforon/neoi-epaggelmaties",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR12",
+        "title": "Independent Economic Activity – Article 138, paragraphs 3 and 7 (Law 4251/14) – Renewal",
+        "publisher": "Decentralized Administration of Attica (apdattikis.gov.gr)",
+        "type": "official",
+        "url": "https://apdattikis.gov.gr/en/process/1-2-independent-economic-activity-article-138-paragraphs-3-and-7-law-4251-14-renewal/",
+        "language": "en",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR13",
+        "title": "Ομόρρυθμη Εταιρεία (ΟΕ) – Βασικά Χαρακτηριστικά",
+        "publisher": "Γενική Γραμματεία Εμπορίου, Υπουργείο Ανάπτυξης",
+        "type": "official",
+        "url": "https://gge.mindev.gov.gr/tomeas-emporiou/vasika-xaraktiristika-etaireion/%CE%BF%CE%BC%CE%BF%CF%81%CF%81%CF%85%CE%B8%CE%BC%CE%B7-%CE%B5%CF%84%CE%B1%CE%B9%CF%81%CE%B5%CE%B9%CE%B1-%CE%BF%CE%B5-%CE%B2%CE%B1%CF%83%CE%B9%CE%BA%CE%B1-%CF%87%CE%B1%CF%81%CE%B1%CE%BA/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR14",
+        "title": "Φορολογικές Κλίμακες 2026: Πίνακας & Φόρος",
+        "publisher": "katharosmisthos.gr",
+        "type": "secondary",
+        "url": "https://katharosmisthos.gr/blog/foro-klimakes-2026",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR15",
+        "title": "Ετήσια Τέλη Τήρησης Μερίδας Γ.Ε.ΜΗ.",
+        "publisher": "Επαγγελματικό Επιμελητήριο Πειραιώς (Β.Ε.Π.)",
+        "type": "chamber",
+        "url": "https://www.bep.gr/etisia-teli-tirisis-meridas-gemi.html",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR16",
+        "title": "Ατομικές Επιχειρήσεις",
+        "publisher": "Εμπορικό και Βιομηχανικό Επιμελητήριο Αθηνών (ΕΒΕΑ/ACCI)",
+        "type": "chamber",
+        "url": "https://acci.gr/%CE%B1%CF%84%CE%BF%CE%BC%CE%B9%CE%BA%CE%AD%CF%82-%CE%B5%CF%80%CE%B9%CF%87%CE%B5%CE%B9%CF%81%CE%AE%CF%83%CE%B5%CE%B9%CF%82/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR17",
+        "title": "Revised Benefits for Registered Startups",
+        "publisher": "Elevate Greece – Εθνικό Μητρώο Νεοφυών Επιχειρήσεων",
+        "type": "official",
+        "url": "https://elevategreece.gov.gr/revised-benefits/",
+        "language": "en",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR18",
+        "title": "Συντελεστές ΦΠΑ στην Ελλάδα 2026: Πλήρης Οδηγός",
+        "publisher": "myFPA.gr",
+        "type": "secondary",
+        "url": "https://myfpa.gr/syntelestes-fpa-ellada-2026.html",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR19",
+        "title": "Φορολογία ΙΚΕ 2026 – Φορολογία διαχειριστή ΙΚΕ – Έξοδα ΙΚΕ",
+        "publisher": "PKP Accounting",
+        "type": "secondary",
+        "url": "https://www.pkp.com.gr/forologia-ike/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR20",
+        "title": "myDATA: Πλήρης οδηγός για την ηλεκτρονική διαβίβαση στο 2026",
+        "publisher": "lido.app",
+        "type": "secondary",
+        "url": "https://www.lido.app/gr/mydata",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR21",
+        "title": "Σύσταση ΙΚΕ 2026 — οδηγός βήμα-βήμα",
+        "publisher": "ikewebsites.gr",
+        "type": "secondary",
+        "url": "https://ikewebsites.gr/guides/systasi-ike-odigos",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR22",
+        "title": "Οδηγός ίδρυσης ΙΚΕ: βήμα-βήμα για επιχειρηματίες",
+        "publisher": "Χρήστος Καβαλλάρης – Λογιστής (kavallaris.gr)",
+        "type": "secondary",
+        "url": "https://kavallaris.gr/odigos-idrysis-ike/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "GR23",
+        "title": "Ετερόρρυθμη Εταιρεία (ΕΕ) – Βασικά Χαρακτηριστικά",
+        "publisher": "Γενική Γραμματεία Εμπορίου, Υπουργείο Ανάπτυξης",
+        "type": "official",
+        "url": "https://gge.mindev.gov.gr/tomeas-emporiou/vasika-xaraktiristika-etaireion/%CE%B5%CF%84%CE%B5%CF%81%CE%BF%CF%81%CF%81%CF%85%CE%B8%CE%BC%CE%B7-%CE%B5%CF%84%CE%B1%CE%B9%CF%81%CE%B5%CE%B9%CE%B1-%CE%B5%CE%B5-%CE%B2%CE%B1%CF%83%CE%B9%CE%BA%CE%B1-%CF%87%CE%B1%CF%81/",
+        "language": "el",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES1",
+        "title": "PAE Electrónico — inicio",
+        "publisher": "Ministerio de Industria y Turismo (Red PAE / CIRCE)",
+        "type": "official",
+        "url": "https://paeelectronico.es/",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES2",
+        "title": "Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores y su internacionalización (texto consolidado, arts. 62, 69, 70)",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/eli/es/l/2013/09/27/14/con",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES3",
+        "title": "Ley 28/2022, de 21 de diciembre, de fomento del ecosistema de las empresas emergentes (preámbulo, reforma de la residencia de emprendedores)",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-21739",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES4",
+        "title": "Modelo 036. Censo de empresarios, profesionales y retenedores — Declaración censal de alta",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G322.shtml",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES5",
+        "title": "Orden Ministerial de modificación de declaraciones censales (supresión del modelo 037)",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2025/enero/9/orden-ministerial-modificacion-declaraciones-censales.html",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES6",
+        "title": "Orden PJC/297/2026, de 30 de marzo, de cotización a la Seguridad Social para 2026",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-7296",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES7",
+        "title": "Real Decreto-ley 13/2022, nuevo sistema de cotización para autónomos (art. 38 ter Ley 20/2007; disposición transitoria quinta)",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES8",
+        "title": "Alta en trabajo autónomo (Import@SS)",
+        "publisher": "Tesorería General de la Seguridad Social",
+        "type": "official",
+        "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas,+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Alta_trabajo_autonomo",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES9",
+        "title": "Texto refundido de la Ley de Sociedades de Capital (texto consolidado, art. 4 — capital social mínimo SL)",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES10",
+        "title": "Ley 18/2022, de 28 de septiembre, de creación y crecimiento de empresas (arts. 15 y 16 — constitución de SL por vía CIRCE)",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES11",
+        "title": "Manual práctico — Impuesto sobre Actividades Económicas (IAE): exenciones",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/2-impuesto-sobre-actividades-economicas.html",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES12",
+        "title": "Impuesto sobre Sociedades — tipo impositivo",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/impuesto-sobre-sociedades/que-base-imponible-se-determina-sociedades/tipo-impositivo.html",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES13",
+        "title": "Tipos impositivos de IVA",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/iva/calculo-iva-repercutido-clientes/tipos-impositivos-iva.html",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES14",
+        "title": "Manual práctico — IRPF empresarios y profesionales: pagos fraccionados (modelo 130)",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/3-impuesto-sobre-renta-personas-fisicas/3_7-pagos-fraccionados.html",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES15",
+        "title": "Nota informativa: ampliación del plazo de adaptación de los sistemas informáticos de facturación (VERI*FACTU)",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/nota-informativa-ampliacion-plazo-adaptacion-facturacion.html",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES16",
+        "title": "Facturación electrónica obligatoria (factura electrónica B2B, Ley Crea y Crece)",
+        "publisher": "Agencia Tributaria",
+        "type": "official",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/marzo/31/facturacion-electronica-obligatoria.html",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES17",
+        "title": "Ley 4/2014, de 1 de abril, Básica de las Cámaras Oficiales de Comercio, Industria, Servicios y Navegación (art. 7 — adscripción)",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-3520",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES18",
+        "title": "ENISA — página de inicio",
+        "publisher": "ENISA (Empresa Nacional de Innovación, S.A., entidad pública empresarial)",
+        "type": "official",
+        "url": "https://www.enisa.es",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES19",
+        "title": "Real Decreto 557/2011, Reglamento de la Ley de Extranjería (texto consolidado, arts. 104-108 — residencia y trabajo por cuenta propia)",
+        "publisher": "BOE",
+        "type": "official",
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-7703",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES20",
+        "title": "Qué es CIRCE y trámites que se pueden realizar con CIRCE",
+        "publisher": "Ministerio de Industria y Turismo (Red PAE / CIRCE)",
+        "type": "official",
+        "url": "https://paeelectronico.es/en-us/CreaEmpresaPorTiMismo/Pages/CIRCE.aspx",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES21",
+        "title": "Tarifa plana de 80 euros para autónomos en 2026",
+        "publisher": "Infoautónomos",
+        "type": "secondary",
+        "url": "https://www.infoautonomos.com/seguridad-social/tarifa-plana-autonomos/",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES22",
+        "title": "¿Qué es ENISA? Guía completa (2026)",
+        "publisher": "premoney.es",
+        "type": "secondary",
+        "url": "https://www.premoney.es/blog/enisa",
+        "language": "es",
+        "accessed": "2026-09-25"
+    },
+    {
+        "id": "ES23",
+        "title": "La directiva del IVA que España no aplicó: sanciones europeas y qué cambia para los asesores",
+        "publisher": "espacioasesoria.com",
+        "type": "secondary",
+        "url": "https://espacioasesoria.com/noticia/la-directiva-del-iva-que-espana-no-aplico-sanciones-europeas-y-que-cambia-para-los-asesores",
+        "language": "es",
+        "accessed": "2026-09-25"
+    }
 ]
