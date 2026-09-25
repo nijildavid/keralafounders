@@ -8,3 +8,7 @@ config/report-auth.php
 config/login-attempts.json
 
 .DS_Store
+
+# Claude Code agent worktrees — local scratch checkouts for background
+# subagents, not project content.
+.claude/worktrees/
