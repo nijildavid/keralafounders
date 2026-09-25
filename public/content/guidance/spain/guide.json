@@ -1,0 +1,196 @@
+{
+  "slug": "spain",
+  "title": "How to start a company in Spain",
+  "summary": "Spain gives a founder two main routes: register as autónomo (self-employed sole trader) for a simple, low-cost start with unlimited personal liability, or form a Sociedad Limitada (SL/SLU) for limited liability, which can now be set up with as little as EUR 1 of share capital and processed electronically through the CIRCE one-stop-shop system in as little as 24 hours.",
+  "last_checked": "2026-09-25",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-25",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Spain does not split freelancers and traders into separate legal statuses the way Germany does. Almost everyone who works for themselves — from a graphic designer to a shop owner — registers as an autónomo (self-employed sole trader): one tax status, one social-security regime (RETA), no notary, no minimum capital. If you want limited liability, want to bring in co-founders or investors, or want the company (not you personally) to hold contracts and assets, you form a Sociedad Limitada (SL) or its single-owner version, the SLU. Spain's CIRCE/PAE system can process either an autónomo registration or a standard-bylaws SL formation electronically in a matter of days, sometimes hours, which makes the paperwork itself less of a bottleneck than in many other EU countries. For founders from outside the EU, the residence permit is usually the slower and more decisive step, not the company formation itself.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Autónomo (empresario individual / trabajador por cuenta propia)", "none", "personal, unlimited", "no", "1 to 10 days via CIRCE/DUE, often same day", "simplified IRPF direct-estimation records", "official [ES20]"],
+          ["Sociedad Limitada (SL) / Sociedad Limitada Unipersonal (SLU)", "from EUR 1 (see note below)", "limited to company assets", "yes, always", "as little as 24 hours (standard bylaws via CIRCE) up to a few weeks (custom bylaws)", "double-entry (Plan General Contable)", "official [ES9, ES10]"]
+        ]
+      },
+      "official_information": [
+        { "text": "The minimum share capital of an SL is EUR 1 (\"El capital de la sociedad de responsabilidad limitada no podrá ser inferior a un euro\"). If capital is set below EUR 3,000, the company must allocate at least 20% of annual after-tax profit to the legal reserve until reserve plus capital reach EUR 3,000, and — only on liquidation, and only if company assets are insufficient — the shareholders are jointly and severally liable for the difference between EUR 3,000 and the subscribed capital.", "source_ids": ["ES9"], "confidence": "official" },
+        { "text": "An SL can be formed via public deed with a standardised, coded-field format and standard bylaws (estatutos-tipo) processed through the Documento Único Electrónico (DUE) and the CIRCE telematic system. Using this route: the Registro Mercantil Central issues the company-name availability certificate (up to 5 alternative names) within 6 working hours of the request; the notary appointment is scheduled in real time via the notarial electronic diary, for a date and time no later than 12 working hours after the telematic process starts; the notary can authorise the deed without requiring proof of paid-in capital if the founders state in the deed that they are jointly and severally liable for the accuracy of their contributions; and publication of the registration in the Boletín Oficial del Registro Mercantil is exempt from fees.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "Once CIRCE sends the electronic deed, the Registro Mercantil registers the company within 6 working hours (standard-bylaws route) and requests the definitive NIF from the tax authority. Founders can also choose custom bylaws instead of the standard template (Article 16 route): the same CIRCE/DUE channel is used, but the company is first entered provisionally (name, address, object, capital, governing body) within 6 working hours, then definitively within 5 days of the filing entry.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "An autónomo (empresario individual) is a natural person carrying out an economic or professional activity regularly, on their own account, for profit, with or without employees. No minimum members beyond the individual and no minimum capital contribution is required.", "source_ids": ["ES20"], "confidence": "official" },
+        { "text": "Exact official fee schedule for a non-express (custom-bylaws) SL formation — the commonly quoted notary and Registro Mercantil fee ranges for this route come from advisor sites, not from an official aranceles table checked directly this session.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "For most first-time founders doing an ordinary (non-innovative) business on their own, autónomo is the fastest and cheapest way to start legally and invoice clients. Move to an SL/SLU once you want to cap your personal risk, bring in a co-founder or investor, or a client specifically wants to contract with a company rather than an individual. Because the SL's EUR 1 minimum capital comes with a personal-liability catch (the EUR 3,000 solidarity rule above) and a 20%-of-profit reserve requirement until you reach EUR 3,000, most advisors still suggest funding the company with at least EUR 3,000 if you can, purely to avoid that lingering exposure and to look more solid to banks and clients.", "source_ids": [], "confidence": "editorial" },
+        { "text": "Spain does not have a separate \"freelancer\" legal form the way Germany's Freiberufler status exists. Regulated professions (lawyers, architects, doctors, etc.) may additionally need to join their professional college (colegio profesional) to practise, but the tax/social-security registration as autónomo is the same for everyone.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether personal, unlimited liability (autónomo) is acceptable for now.", "source_ids": [] },
+        { "text": "If your profession requires colegio profesional membership, check that requirement separately.", "source_ids": [] },
+        { "text": "If you choose SL/SLU, decide between the standard-bylaws express route and custom bylaws (section: Step by step, SL/SLU).", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, autónomo",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Register with the tax agency (Agencia Tributaria) using the census declaration, Modelo 036, to get your tax registration in order, declare your IAE activity heading(s), and set your VAT regime. Since 3 February 2025, the simplified Modelo 037 has been suppressed; Modelo 036 is now used for every registration, modification or deregistration on the census.", "source_ids": ["ES4", "ES5"], "confidence": "official" },
+        { "text": "2. Register with Social Security in the special self-employed regime (RETA) through the Import@SS portal, before starting the activity (up to 60 days in advance is allowed). You provide your IAE/CNAE activity code, start date, address and an estimate of your average monthly net income, which sets your contribution base; you also choose a mutua (occupational-accident insurer).", "source_ids": ["ES8"], "confidence": "official" },
+        { "text": "3. New self-employed workers can request a reduced flat-rate contribution (\"tarifa plana\" / cuota reducida): the law fixed this at EUR 80/month for the period 2023-2025; from 2026 onward, the amount is set for each year by that year's General State Budget Law rather than being written into the base law itself.", "source_ids": ["ES7"], "confidence": "official" },
+        { "text": "For 2026, secondary reporting (not yet superseded by a new State Budget figure at the time of this check) states the reduced rate remains EUR 80/month for the first 12 months, extendable for a further 12 months if net income stays under the minimum wage (SMI), available if you were not registered as autónomo in the 2 years before (3 years if you already used the flat rate once), and conditional on having no outstanding debt with Social Security or the tax agency.", "source_ids": ["ES21"], "confidence": "secondary" },
+        { "text": "4. Both the tax registration and the RETA registration (and deregistration) can instead be filed together electronically through the Documento Único Electrónico (DUE) at a Punto de Atención al Emprendedor (PAE) or via CIRCE's self-service portal; this channel typically completes in 1 to 10 days depending on how much of the process is standardised.", "source_ids": ["ES20"], "confidence": "official" },
+        { "text": "5. Open a separate business bank account (strongly advised, not a legal requirement for an autónomo).", "source_ids": [], "confidence": "editorial" },
+        { "text": "6. Bookkeeping: autónomos under the direct-estimation IRPF regime keep simplified income/expense records. Unless at least 70% of the previous year's income already carried tax withholding, you must file quarterly advance income-tax payments (Modelo 130): 20% of accumulated net income since 1 January, minus prior quarters' payments, due 1-20 April, 1-20 July, 1-20 October, and 1-30 January of the following year.", "source_ids": ["ES14"], "confidence": "official" },
+        { "text": "7. VAT: the general rate is 21%, with reduced rates of 10% and 4% (and 0% for certain operations). There is no small-business VAT exemption threshold in Spain today comparable to Germany's Kleinunternehmerregelung — the EU's Directive (EU) 2020/285 small-business scheme, meant to let low-turnover businesses skip charging VAT, has not been transposed into Spanish law as of this check, and Spain remains subject to EU infringement proceedings over the missed 1 January 2025 deadline.", "source_ids": ["ES13", "ES23"], "confidence": "secondary" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "File the census declaration (Modelo 036) with the Agencia Tributaria.", "source_ids": ["ES4"] },
+        { "text": "Register in RETA via Import@SS before starting the activity.", "source_ids": ["ES8"] },
+        { "text": "Ask about the reduced flat-rate contribution (tarifa plana) when you register.", "source_ids": ["ES7"] },
+        { "text": "Open a separate business bank account.", "source_ids": [] },
+        { "text": "Confirm whether you need to file quarterly Modelo 130 payments.", "source_ids": ["ES14"] },
+        { "text": "Confirm your VAT rate and invoicing obligations with an advisor; do not assume a small-business exemption applies.", "source_ids": ["ES13"] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, SL / SLU",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Reserve the company name at the Registro Mercantil Central: submit up to 5 alternative names; the negative-name certificate is issued within 6 working hours of the request.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "2. Choose standard bylaws (estatutos-tipo, the express CIRCE route) or custom bylaws. With standard bylaws, the whole formation (name reservation, notary, registration) is designed to complete within about 24 hours to a few days; with custom bylaws, definitive registration follows within 5 days of the filing entry once the deed is filed.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "3. Pay in the share capital (minimum EUR 1, see the legal-forms section for the EUR 3,000 solidarity-liability rule) into a company bank account, or rely on the founders' joint declaration of liability for the accuracy of their contributions in the deed instead of a bank certificate.", "source_ids": ["ES9", "ES10"], "confidence": "official" },
+        { "text": "4. Notary appointment: booked automatically in real time through the notarial electronic diary once the telematic process starts, for a date/time no later than 12 working hours later. The notary authorises the deed of incorporation electronically, using the standardised, coded-field format if the express route was chosen.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "5. The notary sends the deed electronically to the tax agency to request a provisional NIF, and to the Registro Mercantil of the company's registered address, via CIRCE.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "6. The Registro Mercantil registers the company (standard-bylaws route: within 6 working hours of electronic receipt) and requests the definitive NIF; publication of the registration in the Boletín Oficial del Registro Mercantil is fee-exempt.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "7. Register the company's activity, IAE heading and VAT position, and complete Social Security registration for any administrators/employees, through the same DUE/PAE channel used for an autónomo.", "source_ids": ["ES1"], "confidence": "official" },
+        { "text": "8. Ongoing: double-entry bookkeeping (Plan General Contable), annual accounts filed with the Registro Mercantil, and Impuesto sobre Sociedades (corporate tax): general rate 25%, with a reduced 15% rate for newly created entities carrying out an economic activity, applicable in the first tax period with a positive taxable base and the following one.", "source_ids": ["ES12"], "confidence": "official" },
+        { "text": "Reported (not officially confirmed this session) notary and Registro Mercantil fee ranges for a non-express SL formation with custom bylaws: figures circulating among Spanish company-formation advisors are not backed by an official aranceles schedule I checked directly.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "The express, standard-bylaws CIRCE route is built for simple, single-class-of-shares companies. If you plan anything non-standard — multiple share classes, a shareholders' agreement, vesting, a foreign shareholder needing extra checks — budget for the slower custom-bylaws route and a notary/lawyer's involvement in drafting, not the fastest advertised timeline.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Reserve your company name at the Registro Mercantil Central.", "source_ids": ["ES10"] },
+        { "text": "Decide standard bylaws (express) vs custom bylaws.", "source_ids": ["ES10"] },
+        { "text": "Arrange the share capital payment or prepare the joint-liability declaration instead.", "source_ids": ["ES9", "ES10"] },
+        { "text": "Complete the notary appointment via CIRCE.", "source_ids": ["ES10"] },
+        { "text": "Confirm Registro Mercantil registration and definitive NIF.", "source_ids": ["ES10"] },
+        { "text": "Register activity/IAE/VAT and any employee Social Security registrations.", "source_ids": ["ES1"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "VAT (IVA): general rate 21%; reduced rates 10% and 4% (0% applies to certain specific operations). Spain has no general small-business VAT exemption threshold today; VAT applies from the first taxable transaction for almost all activities.", "source_ids": ["ES13"], "confidence": "official" },
+        { "text": "The EU's small-business VAT exemption scheme, Directive (EU) 2020/285 (which would let low-turnover businesses skip charging VAT, with thresholds around EUR 85,000 national / EUR 100,000 EU-wide in other member states that adopted it), had a 1 January 2025 transposition deadline. As of this check, Spain has not transposed it, and is reported to be facing EU infringement proceedings that could reach the Court of Justice of the EU over the delay.", "source_ids": ["ES23"], "confidence": "secondary" },
+        { "text": "Sole-trader (autónomo) profit is taxed as personal income (IRPF) under the direct-estimation regime, generally with quarterly advance payments via Modelo 130 (20% of accumulated net income since 1 January, minus prior quarters paid), unless at least 70% of the previous year's income already carried withholding.", "source_ids": ["ES14"], "confidence": "official" },
+        { "text": "Impuesto sobre Sociedades (corporate tax) for an SL: general rate 25%. Newly created entities carrying out an economic activity get a reduced 15% rate for the first tax period with a positive taxable base and the following one.", "source_ids": ["ES12"], "confidence": "official" },
+        { "text": "Impuesto sobre Actividades Económicas (IAE), a municipal business-activity tax: natural persons (all autónomos) are always exempt. Companies are exempt if their net turnover is under EUR 1,000,000, and everyone (regardless of turnover) is exempt during their first two tax periods of activity.", "source_ids": ["ES11"], "confidence": "official" },
+        { "text": "VeriFactu / invoicing-software rules: businesses' invoicing software must comply with the new anti-fraud requirements (Sistemas Informáticos de Facturación) by 1 January 2027 for Impuesto sobre Sociedades taxpayers (companies) and by 1 July 2027 for other taxpayers, including autónomos under IRPF.", "source_ids": ["ES15"], "confidence": "official" },
+        { "text": "Separately, mandatory B2B electronic invoicing under the \"Crea y Crece\" law is being phased in: the implementing order entered into force in 2026, with businesses whose turnover exceeded EUR 8 million in the prior calendar year required to comply within 12 months of that date, and all other businesses and professionals within 24 months.", "source_ids": ["ES16"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "VeriFactu and mandatory B2B e-invoicing are two separate, overlapping reforms with different deadlines and different scopes (all invoicing software vs. specifically B2B invoices). A first-year founder should ask their gestor/accountant which regime(s) their invoicing software needs to support and by which date, rather than assuming one deadline covers both.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm your VAT rate(s) and that you're charging VAT correctly from your first invoice.", "source_ids": ["ES13"] },
+        { "text": "Set up quarterly Modelo 130 payments if applicable.", "source_ids": ["ES14"] },
+        { "text": "If forming an SL, check whether you qualify for the 15% new-company corporate tax rate.", "source_ids": ["ES12"] },
+        { "text": "Check your IAE exemption status (almost always exempt in year one and two).", "source_ids": ["ES11"] },
+        { "text": "Ask your accountant about VeriFactu and B2B e-invoicing deadlines for your business.", "source_ids": ["ES15", "ES16"] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social Security, Chamber of Commerce, funding",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Registering as autónomo means registering in RETA (Régimen Especial de Trabajadores Autónomos) with Social Security; monthly contributions are based on your estimated/actual net income, chosen from official contribution-base tables that are updated each year (2026 tables set by Orden PJC/297/2026).", "source_ids": ["ES8", "ES6"], "confidence": "official" },
+        { "text": "New self-employed workers can apply for a reduced flat-rate contribution: fixed at EUR 80/month for 2023-2025 by law, with the amount for 2026 onward set annually by that year's General State Budget Law rather than the base law itself.", "source_ids": ["ES7"], "confidence": "official" },
+        { "text": "Chamber of Commerce (Cámara de Comercio) membership: businesses carrying out commercial, industrial, service or shipping activity are automatically enrolled in their territorial Chamber by operation of law, but this carries no mandatory economic contribution (\"sin que de ello se desprenda obligación económica alguna\"); Chambers are funded by voluntary contributions and paid services rather than a compulsory fee.", "source_ids": ["ES17"], "confidence": "official" },
+        { "text": "ENISA (a state-owned public enterprise attached to the Ministry of Industry) offers participative loans to SMEs and startups; it describes a four-step process (requirements check, online application, ENISA evaluation, resolution) with a resolution target of around two months.", "source_ids": ["ES18"], "confidence": "official" },
+        { "text": "Reported detail (from a secondary source, not independently confirmed on ENISA's own line-specific page, which could not be located at a stable URL this session): the entrepreneur-focused ENISA line formerly branded \"Jóvenes Emprendedores\" has been folded into a general \"ENISA Startups y Pymes\" line; typical loan range EUR 25,000-1,500,000, repayment up to 7 years, up to 2 years' principal grace period, two-tranche interest (Euribor-linked plus a performance-linked tranche), and no real or personal collateral required.", "source_ids": ["ES22"], "confidence": "secondary" }
+      ],
+      "expert_interpretation": [
+        { "text": "Because Chamber of Commerce membership carries no compulsory fee, you can generally ignore Chamber dues as a cost of starting up in Spain — but Chambers do offer genuinely useful (sometimes subsidised) export, training and advisory services if you want them.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm your RETA contribution base and whether you qualify for the reduced flat-rate contribution.", "source_ids": ["ES8", "ES7"] },
+        { "text": "Don't budget for a mandatory Chamber of Commerce fee — there isn't one.", "source_ids": ["ES17"] },
+        { "text": "Look at ENISA's current loan lines directly on enisa.es before assuming a specific programme name or amount still applies.", "source_ids": ["ES18"] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "ES2",
+      "internal_notes": "Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the build doc's publishing gates). Two distinct routes exist for non-EU founders and this draft covers both; make sure a reviewer confirms which one is more relevant to KeralaFounders' actual audience (most Malayali founders doing an ordinary business, vs. the smaller number doing something ENISA would call 'innovative').",
+      "open_questions_for_reviewer": [
+        "For an ordinary (non-innovative) small business — the likely majority case for KeralaFounders' audience — is the general self-employment permit (RD 557/2011, arts. 104-108) really the applicable route, given it requires applying from a Spanish consulate abroad and is capped to one autonomous-community/sector? Is there a more commonly used practical alternative not captured here?",
+        "Article 68 of Ley 14/2013 (entry and stay for starting business activity) was suppressed by Ley 28/2022 — confirm the current practical effect: does this mean an applicant already in Spain on another permit can convert directly to the entrepreneur residence authorization without leaving, and how does someone abroad now enter?",
+        "What, in practice, counts as \"innovador y/o de especial interés económico\" for ENISA's favourable-report assessment under Ley 14/2013 art. 70 — is a fairly ordinary services or trading business (the likely majority of KeralaFounders' audience) realistically going to qualify, or is this route effectively reserved for tech/scalable startups?",
+        "Confirm current processing-time reality (UGE-CE's own stated maximum is 20 working days with silencio administrativo positivo) versus reported real-world waits.",
+        "Is there a more commonly used non-lucrative or investor route that should be covered instead of, or alongside, these two, for founders who don't fit either mould cleanly?",
+        "Are the disclaimer and the \"explain the rules, no advice\" framing adequate?"
+      ],
+      "official_information": [
+        { "text": "EU/EEA/Swiss nationals need no special permit. Third-country nationals generally need a residence authorisation before starting self-employment in Spain; general requirements include not being irregularly in Spain, being 18+, no relevant criminal record in Spain or in countries of residence over the last 2 years (plus a responsible declaration covering the last 5 years), adequate public or private health cover, sufficient economic resources, and payment of the applicable fee.", "source_ids": ["ES2"], "confidence": "official" },
+        { "text": "Route 1 — general self-employment permit (Real Decreto 557/2011, arts. 104-108): an initial residence-and-work authorisation for self-employment lasts 1 year and is limited to one autonomous community and one sector of activity. The applicant must show they meet the same legal requirements nationals face to open the planned activity, hold the required professional qualification or proven experience (plus professional-college membership where required), and demonstrate the investment is sufficient for the project and its impact on job creation, including self-employment. The application is filed in person at the Spanish consulate covering the applicant's place of residence, not electronically; the visa/authorisation stage can take roughly a month for each step (concession, then the visa application itself, each with roughly month-long official response windows described in the regulation), and the applicant must enter Spain and register with Social Security within 3 months of legal entry.", "source_ids": ["ES19"], "confidence": "official" },
+        { "text": "Route 2 — entrepreneur residence authorisation (Ley 14/2013, art. 69, as amended by Ley 28/2022): validity of 3 years, renewable for 2 years, with permanent residence available after 5 years. The application is filed electronically before the Unidad de Grandes Empresas y Colectivos Estratégicos (UGE-CE); if the applicant is outside Spain, the residence-authorisation request and the visa request are filed together and processed consecutively through the same single application.", "source_ids": ["ES2"], "confidence": "official" },
+        { "text": "For Route 2, the activity must qualify as \"actividad emprendedora\": innovative and/or of special economic interest for Spain, confirmed by a mandatory favourable report from ENISA, issued (per the law) within 10 working days of the request. The assessment weighs the applicant's professional profile and involvement in the project (and, where there are several partners, each partner's involvement), the business plan (project description, product/service, financing needed and sources), and the value the project would add to the Spanish economy, innovation or investment opportunities.", "source_ids": ["ES2"], "confidence": "official" },
+        { "text": "Article 68 of Ley 14/2013 (\"Entrada y estancia para inicio de actividad empresarial\", a separate short-stay entry route) was suppressed by Ley 28/2022 with effect from 23 December 2022; the law's text now marks it \"(Suprimido)\".", "source_ids": ["ES3"], "confidence": "official" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
