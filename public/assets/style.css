@@ -779,6 +779,19 @@ footer{
 @media(min-width:901px){
   .guidance-toc{position:sticky;top:90px}
 }
+/* Two-column guide layout: content + a sticky Contents sidebar, matching
+   the left/right ratio already used on company profile pages
+   (.company-detail-body). New classes rather than reusing that page's
+   exact classes, so the two pages' spacing can change independently. The
+   900px collapse lines up with .guidance-toc's own sticky breakpoint above,
+   so both flip together instead of leaving an in-between range where the
+   grid is two columns but the sidebar isn't sticky yet. */
+.guidance-body{display:grid;grid-template-columns:minmax(0,2fr) minmax(220px,1fr);gap:50px;margin-top:34px}
+.guidance-side .guidance-toc{margin:0}
+@media(max-width:900px){
+  .guidance-body{grid-template-columns:1fr;gap:0}
+  .guidance-side{order:-1}
+}
 .guidance-section{padding:30px 0;border-top:1px solid var(--line)}
 .guidance-section:first-of-type{border-top:0}
 .guidance-section h2{font-size:24px;margin:0 0 14px}
