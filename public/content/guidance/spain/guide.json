@@ -1,0 +1,156 @@
+{
+  "slug": "spain",
+  "title": "How to start a company in Spain",
+  "summary": "Spain gives a founder two main routes: register as a self-employed individual (autónomo, via the Agencia Tributaria census and RETA) or form a private limited company (Sociedad Limitada, SL) through a notary and the Registro Mercantil. Both can be bundled into a single free online submission through the CIRCE/PAE one-stop-shop system.",
+  "last_checked": "2026-09-25",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-25",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Spain gives a founder two main starting routes: register as a self-employed individual (autónomo, via the Agencia Tributaria tax census and the RETA social-security regime), or form a private limited company (Sociedad Limitada, SL) through a notary and the Registro Mercantil. Both routes can be bundled into a single free online submission through the CIRCE/PAE one-stop-shop system, which files the tax, Social Security and (for an SL) commercial-registry paperwork together. Autónomo registration is fast, cheap and can be done in days, but carries personal, unlimited liability. Forming an SL limits liability to the company and, since a 2022 reform, can technically start from as little as EUR 1 in share capital, but needs a notary and typically several working days end to end once the notary and bank steps are counted. Whichever legal form is used, a founder who is actually trading in their own name still has to register with RETA and pay self-employed social-security contributions.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form: autónomo or Sociedad Limitada",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Autónomo (self-employed individual)", "none", "personal, unlimited", "no", "same day to a few days (tax census + RETA registration, both available online)", "simplified income/expense records; quarterly IRPF instalments on Modelo 130 if under direct estimation", "official [S26, S34, S37]"],
+          ["Sociedad Limitada (SL)", "EUR 1 legal minimum (if under EUR 3,000, 20% of annual profit must go to a legal reserve until reserve plus capital reach EUR 3,000, and partners are jointly liable for the shortfall on liquidation)", "limited to the company", "yes", "as fast as about 24 hours from submitting the Documento Único Electrónico (DUE) via CIRCE in straightforward cases; name reservation, capital deposit and the notary/registry steps typically add several working days in practice", "double-entry; Impuesto sobre Sociedades", "official [S25, S28, S39]"]
+        ]
+      },
+      "official_information": [
+        { "text": "CIRCE (Centro de Información y Red de Creación de Empresas) is accessed via the PAE electrónico network — either with help at over 4,000 Puntos de Atención al Emprendedor (PAE) staffed by specialists, or directly online (\"PAE Virtual\") using a digital certificate or Cl@ve. It handles company creation and cessation for self-employed individuals and certain companies.", "source_ids": ["S23"], "confidence": "official" },
+        { "text": "Through CIRCE, the Documento Único Electrónico (DUE) online form bundles registration in the Registro Mercantil, tax registration with the Agencia Tributaria, and Social Security registration into a single submission. It supports individual entrepreneurs (autónomos) and Sociedades de Responsabilidad Limitada (SL); Comunidades de Bienes and Sociedades Civiles are also mentioned but are described as not fully developed on the platform. In straightforward cases, a company can be formed in about 24 working hours from submission.", "source_ids": ["S25"], "confidence": "official" },
+        { "text": "Minimum share capital for an SL is EUR 1 (Ley 18/2022, art. 2, amending the Capital Companies Law). While capital remains under EUR 3,000, at least 20% of annual profit must be allocated to the legal reserve until that reserve plus the share capital reach EUR 3,000; on liquidation, if company assets are insufficient to meet obligations, the partners are jointly and severally liable for the difference between EUR 3,000 and the capital actually subscribed.", "source_ids": ["S39"], "confidence": "official" },
+        { "text": "Under Real Decreto-ley 13/2010 (art. 5), standard telematic incorporation of an SL carries notary and Registro Mercantil fees of EUR 150 (notary) and EUR 100 (registrar). A reduced-fee route applies when standard bylaws (estatutos tipo approved by the Ministry of Justice) are used and share capital does not exceed EUR 3,100: EUR 60 (notary) and EUR 40 (registrar).", "source_ids": ["S28"], "confidence": "official" },
+        { "text": "A negative company-name certificate (certificación negativa de denominación) from the Registro Mercantil Central costs EUR 18.19.", "source_ids": ["S25"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "For a first-time founder testing an idea, autónomo is usually the cheaper and faster way to start, but the personal unlimited liability matters once you take on contracts, suppliers or any real business risk. An SL is worth the notary and registry steps once you want to limit personal liability, bring in a co-founder or investor, or plan to reinvest profit in the company rather than draw it all as personal income.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether personal, unlimited liability (autónomo) is acceptable for now, or whether you need the limited liability of an SL.", "source_ids": [] },
+        { "text": "If forming an SL, reserve your company name at the Registro Mercantil Central and decide on the amount of share capital.", "source_ids": ["S25"] },
+        { "text": "Check whether you're eligible to use the free CIRCE/PAE one-stop-shop (DUE) route before booking separate appointments with each agency.", "source_ids": ["S23", "S25"] }
+      ]
+    },
+    {
+      "id": "autonomo-steps",
+      "title": "Step by step, autónomo (self-employed)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Tax registration: file Modelo 036 (or the simplified Modelo 037) — the census declaration (declaración censal de alta) — with the Agencia Tributaria to register in the Censo de empresarios, profesionales y retenedores. This must be filed before starting the corresponding activity. It can be filed electronically with a recognised digital certificate or, for individuals, via Cl@ve.", "source_ids": ["S26"], "confidence": "official" },
+        { "text": "2. Social Security registration (alta en el RETA): request registration before starting self-employed activity, through the Import@ss portal or Social Security electronic office. Registration can be requested up to 60 days in advance of the actual start date. You need your IAE/CNAE economic-activity code, business start date and address, an estimate of annual net earnings, a chosen contribution base, a mutual-insurance collaborator (mutua), and a bank account for direct debit of contributions. If you start trading before registering, you must still register, but it is treated as a late registration.", "source_ids": ["S37"], "confidence": "official" },
+        { "text": "3. IAE (Impuesto sobre Actividades Económicas): self-employed individuals (personas físicas) are exempt from filing or paying IAE regardless of turnover, unlike companies, which are only exempt below EUR 1,000,000 in net turnover.", "source_ids": ["S36"], "confidence": "official" },
+        { "text": "4. Ongoing tax filing: an autónomo taxed under direct estimation (estimación directa) for IRPF (personal income tax) files quarterly instalment payments using Modelo 130.", "source_ids": ["S34"], "confidence": "official" },
+        { "text": "Both the tax census registration and (where supported) the RETA registration can be submitted together through the CIRCE/PAE one-stop-shop (DUE) instead of filing separately with each agency.", "source_ids": ["S23", "S25"], "confidence": "official" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "File Modelo 036/037 with the Agencia Tributaria before starting your activity.", "source_ids": ["S26"] },
+        { "text": "Register for RETA before starting your activity (up to 60 days in advance); choose your contribution base and mutua.", "source_ids": ["S37"] },
+        { "text": "Set up direct debit for your monthly RETA quota.", "source_ids": ["S37"] },
+        { "text": "Plan to file Modelo 130 quarterly if you're under direct estimation for IRPF.", "source_ids": ["S34"] }
+      ]
+    },
+    {
+      "id": "sl-steps",
+      "title": "Step by step, Sociedad Limitada (SL)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Reserve the company name: obtain a negative company-name certificate from the Registro Mercantil Central (EUR 18.19).", "source_ids": ["S25"], "confidence": "official" },
+        { "text": "2. Subscribe and pay in the share capital (minimum EUR 1; see the legal-forms section above for the conditions that apply below EUR 3,000).", "source_ids": ["S39"], "confidence": "official" },
+        { "text": "3. Notary appointment to execute the public deed of incorporation. Fees are EUR 150 (notary) plus EUR 100 (Registro Mercantil) for standard telematic incorporation, or EUR 60 plus EUR 40 respectively when standard bylaws are used and capital does not exceed EUR 3,100.", "source_ids": ["S28"], "confidence": "official" },
+        { "text": "4. Via CIRCE/PAE, the Documento Único Electrónico (DUE) submits the incorporation to the Registro Mercantil, requests the company's NIF from the Agencia Tributaria, and registers with Social Security in one process; formation can take about 24 working hours from submission in straightforward cases.", "source_ids": ["S25"], "confidence": "official" },
+        { "text": "5. Tax registration: the company must also be registered in the Agencia Tributaria census (Modelo 036).", "source_ids": ["S26"], "confidence": "official" },
+        { "text": "6. If and when the company hires its first employee, it must register as an employer with Social Security (Régimen General) before that person starts work, to be assigned a Código de Cuenta de Cotización (CCC). Individual employers need an application form, ID and tax-identification documentation; companies additionally need the registered articles of incorporation, the signatory's ID and any power of attorney.", "source_ids": ["S38"], "confidence": "official" },
+        { "text": "7. Ongoing: double-entry bookkeeping and Impuesto sobre Sociedades (see the Taxes section).", "source_ids": ["S35"], "confidence": "official" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Company name reserved (negative certificate from the Registro Mercantil Central).", "source_ids": ["S25"] },
+        { "text": "Share capital decided and bank certificate of deposit obtained.", "source_ids": [] },
+        { "text": "Notary booked; confirm whether you qualify for the reduced-fee standard-bylaws route (capital up to EUR 3,100).", "source_ids": ["S28"] },
+        { "text": "Confirm whether the CIRCE/PAE one-stop-shop route is available for your case before booking separate appointments.", "source_ids": ["S25"] },
+        { "text": "Register in the Agencia Tributaria census (Modelo 036).", "source_ids": ["S26"] },
+        { "text": "If hiring, register as an employer (CCC) before your first employee's start date.", "source_ids": ["S38"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes, VAT/IVA and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "A self-employed founder's profit is taxed through IRPF (personal income tax), not corporate tax. Under direct estimation (estimación directa), quarterly instalment payments are made using Modelo 130.", "source_ids": ["S34"], "confidence": "official" },
+        { "text": "A company (SL) is taxed through Impuesto sobre Sociedades (corporate income tax). For 2026: the general rate is 25%. Newly-created companies (entidades de nueva creación) that carry out an economic activity are taxed at 15% in the first tax period with a positive taxable base and in the following period. Companies with net turnover under EUR 1,000,000 (\"micro-companies\") are taxed at 19% on the first EUR 50,000 of taxable base and 21% on the remainder.", "source_ids": ["S35"], "confidence": "official" },
+        { "text": "IAE (Impuesto sobre Actividades Económicas): self-employed individuals are exempt regardless of turnover. Companies are exempt only if net turnover is under EUR 1,000,000; above that threshold, IAE applies.", "source_ids": ["S36"], "confidence": "official" },
+        { "text": "The Agencia Tributaria's own page on the IVA (VAT) general regime (régimen general) — the default regime when no special regime applies — describes the obligation to charge IVA to customers at the applicable rate (21%, 10% or 4%) and lists formal obligations (invoicing, records, periodic returns), without describing any minimum-turnover threshold below which registering for or charging IVA is optional.", "source_ids": ["S31"], "confidence": "official" },
+        { "text": "Conflicting/unresolved: EU Directive (EU) 2020/285 lets member states optionally apply a small-business VAT exemption domestically (in force EU-wide, for the cross-border version, since 1 January 2025). The European Commission's own SME-VAT-rules portal states it \"is possible to opt for the SME scheme in Spain\", but does not give a Spanish national threshold and instead points to a separate EU database. A 2026 European Commission press release, by contrast, states that the Commission is referring Spain to the Court of Justice of the EU specifically for failing to transpose Directive (EU) 2020/285 into Spanish law. These two official EU sources do not agree on Spain's actual transposition status, and no Spanish-government page confirming an operative domestic small-business VAT exemption threshold was found in this session.", "source_ids": ["S29", "S31", "S32", "S33"], "confidence": "hold" },
+        { "text": "Mandatory B2B e-invoicing: Real Decreto 238/2026 (developing the Ley Crea y Crece e-invoicing mandate) enters into force 20 days after its publication. Effective application is staggered from the date the public-invoicing-solution ministerial order takes effect: 12 months later for businesses/professionals with annual turnover over EUR 8 million, and 24 months later for everyone else. It applies to invoices between empresarios/profesionales where the recipient is established or resident in Spain; certain simplified invoices and a few regulated activities are excluded.", "source_ids": ["S30"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Because Spain's own tax-agency pages describe VAT as applying from the general regime with no stated small-business threshold, and because official EU sources disagree on whether Spain has actually adopted an optional domestic exemption, don't assume you're VAT-exempt as a small or early-stage founder — confirm your specific situation with a gestor/asesor fiscal or directly with the Agencia Tributaria before deciding not to charge IVA.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm with an advisor whether direct estimation or another IRPF regime applies to you (autónomo).", "source_ids": [] },
+        { "text": "File Modelo 130 quarterly if required (autónomo, direct estimation).", "source_ids": ["S34"] },
+        { "text": "Do not assume a small-business VAT exemption applies — confirm your IVA obligation directly, given the unresolved EU/Spain transposition conflict noted above.", "source_ids": [] },
+        { "text": "Check your company's Impuesto sobre Sociedades rate band (newly-created 15%, micro-company 19%/21%, or general 25%).", "source_ids": ["S35"] },
+        { "text": "Track the e-invoicing implementation dates that apply to your turnover band.", "source_ids": ["S30"] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "RETA social security, tarifa plana, and hiring",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "RETA (self-employed) contribution rates for 2026: 28.30% for common contingencies, 1.30% for professional contingencies, 0.90% for cese de actividad (cessation of activity cover), 0.10% for vocational training, and 0.90% for the Intergenerational Equity Mechanism (MEI) — applied to a monthly contribution base chosen within income-based brackets. Examples: reduced-table tier 1 (net income up to EUR 670/month) has a base of EUR 653.59 to EUR 718.94; general-table tier 11 (EUR 4,050 to EUR 6,000/month) has a base of EUR 1,732.03 to EUR 5,101.20.", "source_ids": ["S24"], "confidence": "official" },
+        { "text": "Tarifa plana (reduced flat quota) for new self-employed: available to those registering with RETA for the first time, or who have not been registered in RETA in the previous 2 years (3 years if they previously used this benefit). It must be requested at the time of registration through Import@ss. Family members of an existing autónomo cannot access it. It was set by law at EUR 80/month for 2023–2025; the rule provides that from 2026 onward the amount is to be set for each fiscal year rather than being fixed in the original law. It can be extended for a further 12 months at the same reduced quota if net income stays below the SMI (minimum interprofessional wage). Self-employed people with a disability of 33% or more, victims of gender violence, or victims of terrorism can access an extended reduced rate for 24 months, with a further extension of 36 months at EUR 160/month possible if projected net income remains at or below the SMI.", "source_ids": ["S27"], "confidence": "official" },
+        { "text": "The exact euro amount of the tarifa plana for 2026 specifically (commonly reported as remaining EUR 80/month by advisor sources) was not confirmed on an official Social Security page fetched in this session — the official page found confirms the mechanism and the 2023-2025 figure, and states the amount is set annually from 2026, without stating the 2026 figure itself. Confirm the exact current amount in Import@ss at the time of registration.", "source_ids": ["S27"], "confidence": "hold" },
+        { "text": "Before hiring a first employee, a company (or an autónomo taking on staff) must register as an employer with Social Security under the Régimen General to be assigned a Código de Cuenta de Cotización (CCC), before that employee's activity starts.", "source_ids": ["S38"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Budget for RETA contributions from day one — they are due monthly regardless of how much the business actually earns in its first months, aside from the tarifa plana reduction. Because the reduced-rate scheme now resets its amount every year, re-check the live figure in Import@ss when you register rather than relying on last year's number.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Check your tarifa plana eligibility and the current 2026 amount directly in Import@ss before registering.", "source_ids": ["S27"] },
+        { "text": "Choose a RETA contribution base appropriate to your expected net income.", "source_ids": ["S24"] },
+        { "text": "Set up direct debit for your monthly RETA quota.", "source_ids": ["S37"] },
+        { "text": "If hiring, register as an employer (CCC) before your first employee's start date.", "source_ids": ["S38"] }
+      ]
+    }
+  ]
+}
