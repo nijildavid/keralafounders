@@ -65,10 +65,15 @@ accessibility) are not urgent — left for a later pass.
 watched for CI/review activity — currently clean/no comments). Push
 further commits to this same branch/PR rather than opening a new one.
 
-Status: pilot research not yet started (Spain's first attempt was
-discarded per the network-access note above). Belgium and Greece haven't
-been started at all yet. Next step: confirm `WebFetch` works, then run
-`european-business-lawyer` on Spain, Belgium, Greece in that order.
+Status: **Spain done** — `ready_for_review` (not live), 17 official/
+government-portal sources, zero secondary, validator passes clean. Two
+things flagged for a human look before flipping it live: Spain's
+small-business VAT exemption status is genuinely disputed between two
+official EU Commission sources (left as an explicit sourced conflict,
+not resolved either way — see the `taxes` section and the
+`es-vat-small-business` FAQ entry); and the 2026 tarifa plana amount
+isn't confirmed by the one official page found, so it's hedged with
+attribution rather than stated as fact. Belgium is next, then Greece.
 
 ## Needs a live-site check
 
