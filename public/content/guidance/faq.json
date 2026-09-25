@@ -653,5 +653,232 @@
         "origin_ref": null,
         "status": "hold",
         "hold": true
+    },
+    {
+        "id": "be-vat-threshold",
+        "country": "belgium",
+        "topic": "tax",
+        "question": "What is the small-business VAT exemption threshold in Belgium?",
+        "answer": "EUR 25,000 in annual turnover (2026 figure). Belgium's own SPF Finances pages could not be reached directly this session (bot-protected), so this is confirmed via secondary professional sources and the EU Commission's SME-scheme page, not the ministry's own page.",
+        "source_ids": [
+            "BE20",
+            "BE21",
+            "BE22"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "be-vat-increase",
+        "country": "belgium",
+        "topic": "tax",
+        "question": "Is Belgium's VAT exemption threshold about to change?",
+        "answer": "A news report says Belgium's Parliament approved raising it from EUR 25,000 to EUR 30,000 on 17 September 2026, phased in EUR 1,000 annual increments between 2027 and 2031. This is a single, very recent secondary source, not yet confirmed on an official government page.",
+        "source_ids": [
+            "BE23"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "be-einvoicing",
+        "country": "belgium",
+        "topic": "tax",
+        "question": "Do I have to send electronic invoices in Belgium?",
+        "answer": "Yes, from 1 January 2026 structured B2B e-invoicing via Peppol is mandatory for VAT-registered businesses of any size or form, with a few exceptions and a three-month tolerance period for Q1 2026.",
+        "source_ids": [
+            "BE13"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-social-fund",
+        "country": "belgium",
+        "topic": "social",
+        "question": "Do I have to join a social insurance fund as a self-employed person?",
+        "answer": "Yes, affiliation with a social insurance fund is mandatory before you start, or you risk a fine and automatic enrolment in INASTI's national fund.",
+        "source_ids": [
+            "BE9"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-social-rate",
+        "country": "belgium",
+        "topic": "social",
+        "question": "How much are self-employed social contributions in Belgium?",
+        "answer": "20.5% of net taxable income up to EUR 75,024.54, and 14.16% above that up to EUR 110,562.42 (2026 figures). The legal minimum is based on a reference income of EUR 17,374.08.",
+        "source_ids": [
+            "BE10"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-srl-capital",
+        "country": "belgium",
+        "topic": "company",
+        "question": "Do I need minimum capital to start an SRL?",
+        "answer": "No legal minimum since the 2019 reform, but you must justify \"sufficient\" starting capital in a mandatory two-year financial plan, and founders can be held personally liable if the company turns out to have been undercapitalised.",
+        "source_ids": [
+            "BE4",
+            "BE7"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-sa-capital",
+        "country": "belgium",
+        "topic": "company",
+        "question": "What minimum capital does an SA need?",
+        "answer": "EUR 61,500, notarised, and typically used for larger companies or bigger capital raises rather than a first-time founder's starting form.",
+        "source_ids": [
+            "BE6"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-bce-fee",
+        "country": "belgium",
+        "topic": "fees",
+        "question": "How much does it cost to register with the BCE/KBO through an enterprise counter?",
+        "answer": "EUR 111.50 per establishment unit, in the Brussels-Capital Region.",
+        "source_ids": [
+            "BE3"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-complementary",
+        "country": "belgium",
+        "topic": "social",
+        "question": "Can I start a business alongside my job in Belgium?",
+        "answer": "Yes, as \"indépendant à titre complémentaire\" (side-activity self-employed). Below about EUR 1,922 of net income a year no social contributions are due; up to about EUR 17,374 reduced contributions apply; above that, standard principal-activity rates apply.",
+        "source_ids": [
+            "BE11"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-ubo",
+        "country": "belgium",
+        "topic": "company",
+        "question": "Do I have to register in the UBO register?",
+        "answer": "If you form a company (SRL, SA etc.), yes: register beneficial owners within 30 days of incorporation and reconfirm annually, even with no changes. Sole traders without a separate legal structure are excluded.",
+        "source_ids": [
+            "BE24"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render_with_attribution",
+        "hold": false
+    },
+    {
+        "id": "be-corporate-tax",
+        "country": "belgium",
+        "topic": "tax",
+        "question": "What corporate tax rate will my SRL pay?",
+        "answer": "Standard rate 25%; a reduced 20% rate applies to the first EUR 100,000 of profit if the company meets small-company and SME conditions, including paying at least one manager a gross annual salary of EUR 45,000 (with an exception in the company's first four years).",
+        "source_ids": [
+            "BE25"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-ipp",
+        "country": "belgium",
+        "topic": "tax",
+        "question": "How is a sole trader's income taxed in Belgium?",
+        "answer": "Progressive personal income tax: 25% up to EUR 16,720, 40% to EUR 29,510, 45% to EUR 51,070, 50% above that (2026 income), plus a municipal surcharge of roughly 7% on top, and a EUR 11,180 tax-free allowance.",
+        "source_ids": [
+            "BE26"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "be-professional-card",
+        "country": "belgium",
+        "topic": "visa",
+        "question": "Do I need a permit to be self-employed in Belgium as a non-EU national?",
+        "answer": "Yes, a professional card, unless you fall under a specific exemption (e.g. certain residence permit holders, refugees, short business trips). It's granted by the region where you'll be established.",
+        "source_ids": [
+            "BE2"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "be-professional-card-fee",
+        "country": "belgium",
+        "topic": "visa",
+        "question": "How much does the Belgian professional card cost and how long is it valid?",
+        "answer": "Brussels: EUR 140 at application plus EUR 90 when issued, valid up to 5 years (first card usually 2-year probation). Wallonia: EUR 140 at application, similar validity and probation.",
+        "source_ids": [
+            "BE2",
+            "BE19"
+        ],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "be-single-permit-vs-card",
+        "country": "belgium",
+        "topic": "visa",
+        "question": "What's the difference between the professional card and the single permit?",
+        "answer": "Understood to be: professional card for self-employment, single permit for salaried work. Not confirmed against an official federal source this session (the federal immigration authority's page was blocked).",
+        "source_ids": [],
+        "last_checked": "2026-09-25",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
     }
 ]
