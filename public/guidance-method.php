@@ -12,11 +12,11 @@
 <section class="section"><div class="wrap" style="max-width:800px">
 <div class="eyebrow">Guidance</div>
 <h1 style="font-family:Georgia,serif;font-size:48px;line-height:1.1;margin:12px 0 22px">How we check our information.</h1>
-<p class="muted" style="font-size:18px;line-height:1.85">Guidance is meant to save you time navigating bureaucracy — not to replace a lawyer, tax advisor or the official authority for your situation. Here's exactly how it's put together.</p>
+<p class="muted" style="font-size:18px;line-height:1.85">Guidance is meant to save you time navigating bureaucracy. It doesn't replace a lawyer, tax advisor or the official authority for your situation. Here's exactly how it's put together.</p>
 
 <div class="panel" style="margin-top:30px">
 <h2>Where facts come from</h2>
-<p class="muted">We look for official sources first: government pages, chambers of commerce (IHK and equivalents), and federal government portals. Where only an advisor, law firm or company blog covers something, we still include it — but we mark it clearly as a secondary source rather than presenting it as an official fact.</p>
+<p class="muted">We look for official sources first: government pages, chambers of commerce (IHK and equivalents), and federal government portals. Where only an advisor, law firm or company blog covers something, we still include it, but we mark it clearly as a secondary source rather than presenting it as an official fact.</p>
 </div>
 
 <div class="panel" style="margin-top:20px">
@@ -31,15 +31,15 @@
 
 <div class="panel" style="margin-top:20px">
 <h2>The 6-month re-check</h2>
-<p class="muted" style="margin:0">Rules, fees and thresholds change, and we don't catch every change the moment it happens. Every guide shows when it was last checked and when it's next due for a re-check. If a guide is overdue, you'll see a banner at the top telling you so — the content stays up, but treat it with extra caution and check the sources yourself.</p>
+<p class="muted" style="margin:0">Rules, fees and thresholds change, and we don't catch every change the moment it happens. Every guide shows when it was last checked and when it's next due for a re-check. If a guide is overdue, you'll see a banner at the top telling you so. The content stays up, but treat it with extra caution and check the sources yourself.</p>
 </div>
 
 <div class="panel" style="margin-top:20px">
 <h2>Reporting an error</h2>
-<p class="muted" style="margin:0">Every guide and FAQ entry has a "Was this information useful?" control at the end. A thumbs-down lets you tell us what's wrong or missing. You can also email us directly — please include a link to the source you're relying on, so we can check it quickly.</p>
+<p class="muted" style="margin:0">Every guide and FAQ entry has a "Was this information useful?" control at the end. A thumbs-down lets you tell us what's wrong or missing. You can also email us directly. Please include a link to the source you're relying on, so we can check it quickly.</p>
 </div>
 
-<div class="notice" style="margin-top:20px">Kerala Founders is not a law firm, tax practice or immigration advisory service. Guidance explains official rules using the sources listed on each page — it is not personalised legal, tax or immigration advice. Always confirm your own situation with a qualified professional or the responsible authority.</div>
+<div class="notice" style="margin-top:20px">Kerala Founders is not a law firm, tax practice or immigration advisory service. Guidance explains official rules using the sources listed on each page. It is not personalised legal, tax or immigration advice. Always confirm your own situation with a qualified professional or the responsible authority.</div>
 
 <div class="panel" style="margin-top:30px">
 <h2>Spotted something we should fix?</h2>

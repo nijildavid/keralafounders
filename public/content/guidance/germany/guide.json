@@ -42,8 +42,8 @@
         { "text": "GmbH formation cost reported at EUR 800 to 2,500 excluding the share capital (notary EUR 600 to 2,000, register about EUR 150, trade licence EUR 20 to 60). One person can be sole shareholder and managing director.", "source_ids": ["S17"], "confidence": "secondary" },
         { "text": "A GmbH tends to become tax-attractive from roughly EUR 80,000 to 100,000 of profit that stays in the company; below that, a sole proprietorship or UG is usually cheaper to run.", "source_ids": ["S17"], "confidence": "secondary" },
         { "text": "Corporate income tax is 15% plus solidarity surcharge, plus trade tax, giving about 30% on retained profit.", "source_ids": ["S17"], "confidence": "secondary" },
-        { "text": "Exact statutory wording of capital rules (GmbHG §5, §5a) — not yet checked manually against the statute text.", "source_ids": [], "confidence": "hold" },
-        { "text": "Official notary and court fee schedule (GNotKG) — the ranges above are advisor estimates, not the official schedule.", "source_ids": [], "confidence": "hold" }
+        { "text": "Exact statutory wording of capital rules (GmbHG §5, §5a): not yet checked manually against the statute text.", "source_ids": [], "confidence": "hold" },
+        { "text": "Official notary and court fee schedule (GNotKG): the ranges above are advisor estimates, not the official schedule.", "source_ids": [], "confidence": "hold" }
       ],
       "expert_interpretation": [
         { "text": "For most first-time founders, start with the simplest route (sole proprietor or freelancer) and move to UG or GmbH when you need to hire, raise money or limit personal risk.", "source_ids": [], "confidence": "editorial" }
@@ -99,7 +99,7 @@
       "checklist": [
         { "text": "Register your address (Anmeldung) within 2 weeks of moving in.", "source_ids": ["S16"] },
         { "text": "Confirm your residence permit is in place before starting self-employment (non-EU founders only).", "source_ids": ["S2"] },
-        { "text": "Register your trade (Gewerbeanmeldung) — EUR 26 to 31, plus EUR 15 for online processing.", "source_ids": ["S1"] },
+        { "text": "Register your trade (Gewerbeanmeldung): EUR 26 to 31, plus EUR 15 for online processing.", "source_ids": ["S1"] },
         { "text": "Complete the tax questionnaire in ELSTER.", "source_ids": ["S15"] },
         { "text": "Open a separate business bank account.", "source_ids": [] },
         { "text": "Set up health insurance and social security.", "source_ids": [] },
@@ -146,7 +146,7 @@
       "official_information": [
         { "text": "Small-business VAT scheme (Kleinunternehmerregelung, §19 UStG), valid from 1 Jan 2025: prior-year revenue up to EUR 25,000 and current-year revenue up to EUR 100,000. Exceeding EUR 100,000 ends the exemption immediately in that year (the transaction that crosses the limit is already taxed).", "source_ids": ["S5"], "confidence": "official" },
         { "text": "Trade tax (Gewerbesteuer) applies to trades, not freelancers. Sole proprietors and partnerships have an allowance of EUR 24,500. Formula: (trade profit minus 24,500) x 3.5% x municipal multiplier. Municipal multipliers range from 200% to 900%.", "source_ids": ["S10"], "confidence": "official" },
-        { "text": "Berlin's trade-tax multiplier — reported as 410% by secondary sources, not yet confirmed on a Berlin government page.", "source_ids": [], "confidence": "hold" },
+        { "text": "Berlin's trade-tax multiplier: reported as 410% by secondary sources, not yet confirmed on a Berlin government page.", "source_ids": [], "confidence": "hold" },
         { "text": "Sole-proprietor profit is taxed as personal income; it is added to any employment income.", "source_ids": ["S16"], "confidence": "secondary" },
         { "text": "E-invoicing (E-Rechnung): since 1 Jan 2025 every business must be able to receive e-invoices in B2B transactions. Issuing is mandatory from 2027 for businesses above EUR 800,000 prior-year B2B turnover, and from 2028 for everyone. Exempt: invoices under EUR 250 and small businesses using the small-business VAT scheme.", "source_ids": ["S9"], "confidence": "official" }
       ],
@@ -172,7 +172,7 @@
         { "text": "New founders (natural persons, not in the commercial register, no business income in the previous five years) get a 2-year full exemption from IHK contributions. Years 3 and 4 have reduced contributions. Companies (GmbH, UG) do not get this exemption.", "source_ids": ["S11"], "confidence": "official" },
         { "text": "Conflict: the income limit that keeps you exempt after year two. IHK Berlin states EUR 25,000 profit; Gründerplattform states EUR 5,200 for the base contribution. Neither figure is rendered until IHK Berlin confirms which applies when.", "source_ids": [], "confidence": "hold" },
         { "text": "Health insurance for the self-employed, 2026: you may choose voluntary statutory or private cover. Statutory: 14.6% base plus an average surcharge of about 2.5%, plus long-term-care insurance of 3.6% or 4.2%. Minimum monthly assessment base EUR 1,248.33; ceiling EUR 5,812.50. Family members with low income can be covered at no extra premium.", "source_ids": ["S12"], "confidence": "official" },
-        { "text": "Berlin funding: the Investitionsbank Berlin (IBB) offers founder loans, micro-loans, non-repayable grants for consulting and IT development, subsidised coaching and equity for technology and creative start-ups. Amounts and conditions are not stated on the page — check each programme.", "source_ids": ["S14"], "confidence": "official" }
+        { "text": "Berlin funding: the Investitionsbank Berlin (IBB) offers founder loans, micro-loans, non-repayable grants for consulting and IT development, subsidised coaching and equity for technology and creative start-ups. Amounts and conditions are not stated on the page: check each programme.", "source_ids": ["S14"], "confidence": "official" }
       ],
       "expert_interpretation": [],
       "founder_experience": [],
