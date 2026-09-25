@@ -35,7 +35,40 @@ to this repo — summarized here so it isn't lost):
   skill only, which never states a fact not read on a live official source
   in-session — same rule Germany's guide was built under.
 
-Status: pilot research not yet started as of this entry.
+**Network access lesson (read this before starting Spain research again):**
+a first attempt at Spain's guide hit a session where `WebFetch` was
+completely blocked by the environment's network policy (was set to
+"Trusted", which only allows package registries/GitHub/cloud SDKs — not
+government sites). The `european-business-lawyer` skill correctly fell
+back to WebSearch per its own documented fallback and downgraded every
+claim to `confidence:"secondary"` instead of `"official"` rather than
+pretend it had read the pages directly — but that draft was discarded
+rather than kept, since it didn't meet the same bar as Germany's guide.
+The environment's Network access has since been changed to **Full** (any
+domain) specifically so this doesn't recur — but **that only applies to
+new sessions**, not one already running when the setting was saved. If
+you're picking this up in a fresh session: first sanity-check `WebFetch`
+against an official site (e.g. `sede.agenciatributaria.gob.es`) before
+starting real research, to confirm you're not hitting the same wall.
+
+**Design audit already done, fixes already shipped** (see PR below): hub
+page scales fine responsively; found and fixed two real bugs — mobile
+comparison tables were missing their `data-label` attributes (silently
+broken on phones), and `company.php` had no link forward to its country's
+guidance page even though `countries.php` already did. Both fixed and
+pushed. Remaining lower-priority items (FAQ country-dropdown clutter as
+more countries get added with no content yet, flag-emoji cross-platform
+accessibility) are not urgent — left for a later pass.
+
+**Tracking**: `claude/tender-cori-j0l875` branch,
+[PR #21](https://github.com/nijildavid/keralafounders/pull/21) (draft,
+watched for CI/review activity — currently clean/no comments). Push
+further commits to this same branch/PR rather than opening a new one.
+
+Status: pilot research not yet started (Spain's first attempt was
+discarded per the network-access note above). Belgium and Greece haven't
+been started at all yet. Next step: confirm `WebFetch` works, then run
+`european-business-lawyer` on Spain, Belgium, Greece in that order.
 
 ## Needs a live-site check
 
