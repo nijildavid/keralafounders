@@ -1,0 +1,134 @@
+[
+    {
+        "slug": "germany",
+        "name": "Germany",
+        "flag_or_icon": "de",
+        "status": "ready_for_review",
+        "target_month": null,
+        "directory_country_name": "Germany",
+        "last_checked": "2026-09-21",
+        "next_check_due": "2027-03-21",
+        "order": 1
+    },
+    {
+        "slug": "netherlands",
+        "name": "Netherlands",
+        "flag_or_icon": "nl",
+        "status": "coming_soon",
+        "target_month": "2026-11",
+        "directory_country_name": "Netherlands",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 2
+    },
+    {
+        "slug": "austria",
+        "name": "Austria",
+        "flag_or_icon": "at",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Austria",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 3
+    },
+    {
+        "slug": "cyprus",
+        "name": "Cyprus",
+        "flag_or_icon": "cy",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Cyprus",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 4
+    },
+    {
+        "slug": "poland",
+        "name": "Poland",
+        "flag_or_icon": "pl",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Poland",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 5
+    },
+    {
+        "slug": "czechia",
+        "name": "Czechia",
+        "flag_or_icon": "cz",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Czechia",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 6
+    },
+    {
+        "slug": "ireland",
+        "name": "Ireland",
+        "flag_or_icon": "ie",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Ireland",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 7
+    },
+    {
+        "slug": "finland",
+        "name": "Finland",
+        "flag_or_icon": "fi",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Finland",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 8
+    },
+    {
+        "slug": "portugal",
+        "name": "Portugal",
+        "flag_or_icon": "pt",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Portugal",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 9
+    },
+    {
+        "slug": "malta",
+        "name": "Malta",
+        "flag_or_icon": "mt",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Malta",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 10
+    },
+    {
+        "slug": "slovakia",
+        "name": "Slovakia",
+        "flag_or_icon": "sk",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Slovakia",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 11
+    },
+    {
+        "slug": "sweden",
+        "name": "Sweden",
+        "flag_or_icon": "se",
+        "status": "planned",
+        "target_month": null,
+        "directory_country_name": "Sweden",
+        "last_checked": null,
+        "next_check_due": null,
+        "order": 12
+    }
+]

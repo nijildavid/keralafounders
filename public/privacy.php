@@ -66,6 +66,12 @@
 </div>
 
 <div class="panel" style="margin-top:20px">
+<h2>Guidance feedback</h2>
+<p class="muted" style="margin:0 0 10px">Guidance pages have a "Was this information useful?" thumbs up/down control, with an optional comment box on thumbs-down. We store the vote, any comment you write, the page it was left on, and a timestamp. We do not store your name, email address or raw IP address — a rate-limiting check uses a salted, irreversible hash of your IP address rather than the address itself, only to prevent abuse.</p>
+<p class="muted" style="margin:0">Please don't include personal details in a feedback comment. Feedback is kept for up to 24 months and used only to improve Guidance content.</p>
+</div>
+
+<div class="panel" style="margin-top:20px">
 <h2>Third-party links &amp; data security</h2>
 <p class="muted" style="margin:0 0 10px">Listings may contain links to external websites and social-media profiles. Kerala Founders does not control those websites and is not responsible for their privacy practices — please review the privacy policies of external websites when you visit them.</p>
 <p class="muted" style="margin:0">Reasonable measures are taken to protect information held by Kerala Founders. However, no website or online service can guarantee complete security.</p>

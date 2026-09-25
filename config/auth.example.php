@@ -10,6 +10,12 @@ define('LOGIN_ATTEMPTS_FILE', __DIR__ . '/login-attempts.json');
 define('LOGIN_MAX_ATTEMPTS', 5);
 define('LOGIN_LOCKOUT_SECONDS', 300);
 
+// Salt mixed into the hashed IP address stored against a Guidance feedback
+// vote, so the rate limiter can recognise repeat visitors without ever
+// storing a raw IP. Generate one with:
+//   php -r "echo bin2hex(random_bytes(32)), PHP_EOL;"
+define('GUIDANCE_FEEDBACK_IP_SALT', 'paste-your-generated-salt-here');
+
 function kf_session_start(): void
 {
     if (session_status() === PHP_SESSION_ACTIVE) {
