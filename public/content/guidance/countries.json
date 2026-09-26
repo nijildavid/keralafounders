@@ -130,5 +130,38 @@
         "last_checked": null,
         "next_check_due": null,
         "order": 12
+    },
+    {
+        "slug": "belgium",
+        "name": "Belgium",
+        "flag_or_icon": "be",
+        "status": "ready_for_review",
+        "target_month": null,
+        "directory_country_name": "Belgium",
+        "last_checked": "2026-09-25",
+        "next_check_due": "2027-03-25",
+        "order": 13
+    },
+    {
+        "slug": "greece",
+        "name": "Greece",
+        "flag_or_icon": "gr",
+        "status": "ready_for_review",
+        "target_month": null,
+        "directory_country_name": "Greece",
+        "last_checked": "2026-09-25",
+        "next_check_due": "2027-03-25",
+        "order": 14
+    },
+    {
+        "slug": "spain",
+        "name": "Spain",
+        "flag_or_icon": "es",
+        "status": "live",
+        "target_month": null,
+        "directory_country_name": "Spain",
+        "last_checked": "2026-09-25",
+        "next_check_due": "2027-03-25",
+        "order": 15
     }
 ]

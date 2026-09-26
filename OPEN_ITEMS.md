@@ -4,6 +4,57 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
+## Needs your review — Guidance content expansion (pilot)
+
+Goal: grow search-indexable content for SEO/traffic by filling the mostly-
+empty Guidance section (`public/content/guidance/`, see `CLAUDE.md`). Only
+Germany was `live` before this pilot; 8 countries with real companies in the
+directory had zero Guidance presence (Belgium, Greece, Luxembourg, Denmark,
+Spain, France, Romania, Slovenia).
+
+Plan (summarized here so it isn't lost):
+- **Pilot 3 countries first**: Spain, Belgium, Greece — Spain for traffic
+  upside, Belgium as a moderate case, Greece deliberately chosen as a
+  harder-to-source test case (per a `deep-thinker` sanity check) rather than
+  three easy wins.
+- **Publish bar**: a country goes `live` only once you've reviewed it and
+  are happy with what it says — the `european-business-lawyer` skill always
+  writes new guides to `ready_for_review`, never `live`, so nothing goes
+  public without you looking at it first, regardless of how well-sourced it
+  is.
+- After the pilot: a `deep-thinker` review gate decides whether/how to
+  scale to the remaining 5 gap countries (Luxembourg, Denmark, France,
+  Romania, Slovenia), followed by a design pass
+  (`senior-product-designer`, e.g. hub page at scale, directory→guidance
+  internal linking) and a distribution plan (`social-media-manager`) per
+  country as it goes live.
+- All content research/writing goes through the `european-business-lawyer`
+  skill only, which never states a fact not read on a live official source
+  in-session — same rule Germany's guide was built under.
+
+**Status: all three pilot guides written, sourced, and passing
+`scripts/validate-guidance-content.php`; all sitting at `status:
+"ready_for_review"` in `countries.json`, not live.** Each has an immigration
+section held back (`hold: true`) exactly like Germany's, and each guide
+flags a few specific things worth your eyes before you flip it live:
+
+- **Spain** (23 sources, mostly official incl. BOE statute text): whether
+  the general self-employment permit or the Ley 14/2013 entrepreneur-visa
+  route is the more realistic one to describe for a typical reader; and a
+  live EU-vs-Spain legal dispute over the small-business VAT threshold that
+  could resolve either way before the next check.
+- **Belgium**, Brussels-Capital Region edition (27 sources): several
+  Belgian federal sites (tax authority, immigration office, Flanders'
+  economic agency) blocked every fetch attempt with bot protection, so
+  federal-level sourcing is thinner than regional; worth a follow-up check
+  once those domains are reachable, especially the VAT threshold figure.
+- **Greece** (23 sources): aade.gr and gov.gr returned errors on every
+  attempt, so sourcing leans on chamber/portal mirrors instead of the tax
+  authority directly; also found a genuine conflict between two official
+  government pages on the Golden Visa minimum-investment amount (€250k vs.
+  €400k/€800k under a newer law) that's flagged in the guide rather than
+  silently picked.
+
 ## Needs a live-site check
 
 - **Compact-nav alignment fix** — confirmed committed on `main`
