@@ -61,6 +61,20 @@ than presenting them as settled:
 - Spain shipped clean — 23 sources, mostly official incl. BOE statute
   text, no comparable sourcing gap.
 
+## In progress — Netherlands Guidance guide
+
+Picked ahead of the other 5 gap countries once directory data showed why:
+Netherlands has **31** listed companies — more than Luxembourg, Denmark,
+France, Romania and Slovenia combined (1, 0, 2, 1, 5 respectively) — despite
+sitting at `coming_soon` (target month 2026-11) with zero Guidance content
+written. Denmark specifically has 0 companies right now, so a guide there
+today would be an orphan page with no directory link path; it stays parked
+until that changes. Slovenia (5) is the next reasonable single target after
+Netherlands; Luxembourg/France/Romania are thin enough to batch together
+later rather than treat individually.
+
+Status: research not yet started as of this entry.
+
 ## Needs a live-site check
 
 - **Compact-nav alignment fix** — confirmed committed on `main`
