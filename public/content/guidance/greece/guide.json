@@ -5,6 +5,24 @@
   "last_checked": "2026-09-25",
   "checked_by": "Nijil",
   "next_check_due": "2027-03-25",
+  "quick_facts": {
+    "structure": { "text": "Register as a freelance professional or sole trader (ατομική επιχείρηση) through a single digital AADE/gov.gr flow — no notary, no minimum capital. Form an ΙΚΕ later for limited liability, for as little as EUR 1 of reported capital.", "source_ids": ["GR3", "GR21"] },
+    "cost": { "text": "The digital sole-trader registration is free. An ΙΚΕ's reported government fees (GEMI + Chamber) run about EUR 90 to 160, more if you use a lawyer or accountant.", "source_ids": ["GR3", "GR21"] },
+    "time": { "text": "The digital gov.gr registration flow is reported to take about 12 minutes to complete. An ΙΚΕ can reportedly be formed in about 1 to 3 business days via the standard-template route.", "source_ids": ["GR3", "GR21"] },
+    "gotcha": { "text": "Greece's small-business VAT exemption threshold is just EUR 10,000 a year — much lower than in many other EU countries — so many founders will need to register for VAT quickly.", "source_ids": ["GR10"] }
+  },
+  "founder_checklist": [
+    { "text": "Decide whether your activity is a liberal/freelance profession or commercial — this affects whether GEMI and Chamber registration are required.", "section_id": "freelance-vs-commercial" },
+    { "text": "If you're from outside the EU, confirm your residence permit allows self-employment before you start.", "section_id": "sole-steps" },
+    { "text": "Log in to the digital start-of-business flow with your TAXISnet credentials and file your registration.", "section_id": "sole-steps" },
+    { "text": "Check whether your activity requires GEMI/Chamber registration and budget the fee if so.", "section_id": "sole-steps" },
+    { "text": "Select your EFKA insurance category by 31 January.", "section_id": "sole-steps" },
+    { "text": "Open a separate business bank account and set up simple bookkeeping.", "section_id": "sole-steps" },
+    { "text": "Decide with an accountant whether the small-business VAT exemption suits your expected turnover.", "section_id": "taxes" },
+    { "text": "Check your myDATA / e-invoicing obligations against the 2026 deadlines.", "section_id": "taxes" },
+    { "text": "If forming an ΙΚΕ instead, check the name and activity code and estimate the formation cost on the e-ΥΜΣ portal.", "section_id": "company-steps" },
+    { "text": "Register on Elevate Greece if you're a startup, and check current funding calls with an advisor.", "section_id": "social" }
+  ],
   "sections": [
     {
       "id": "overview",

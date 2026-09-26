@@ -5,6 +5,24 @@
   "last_checked": "2026-09-25",
   "checked_by": "Nijil",
   "next_check_due": "2027-03-25",
+  "quick_facts": {
+    "structure": { "text": "Register as autónomo (self-employed sole trader) — no notary, no minimum capital. Form a Sociedad Limitada (SL) later if you want limited liability, co-founders, or investors.", "source_ids": ["ES20"] },
+    "cost": { "text": "Autónomo registration carries no formation fee. An SL needs at least EUR 1 of share capital, though most advisors suggest funding it closer to EUR 3,000 to avoid a personal-liability catch on winding up.", "source_ids": ["ES9", "ES20"] },
+    "time": { "text": "Autónomo registration through CIRCE/DUE typically takes 1 to 10 days, often the same day. An SL with standard bylaws can be registered in as little as 24 hours.", "source_ids": ["ES20", "ES10"] },
+    "gotcha": { "text": "Unlike some other EU countries, Spain has no small-business VAT exemption threshold — VAT applies from your very first invoice.", "source_ids": ["ES13"] }
+  },
+  "founder_checklist": [
+    { "text": "Decide whether personal, unlimited liability (autónomo) is acceptable for now — most first-time founders start this way.", "section_id": "legal-forms" },
+    { "text": "If your profession needs colegio profesional (professional body) membership, check that separately.", "section_id": "legal-forms" },
+    { "text": "File the census declaration (Modelo 036) with the Agencia Tributaria.", "section_id": "sole-steps" },
+    { "text": "Register in RETA via Import@SS before you start the activity.", "section_id": "sole-steps" },
+    { "text": "Ask about the reduced flat-rate contribution (tarifa plana) when you register.", "section_id": "sole-steps" },
+    { "text": "Open a separate business bank account.", "section_id": "sole-steps" },
+    { "text": "Confirm whether you need to file quarterly Modelo 130 tax payments.", "section_id": "taxes" },
+    { "text": "Confirm your VAT rate and invoicing setup — there's no small-business exemption to fall back on.", "section_id": "taxes" },
+    { "text": "If forming an SL instead, reserve your company name and decide between the express standard-bylaws route and custom bylaws.", "section_id": "company-steps" },
+    { "text": "Don't budget for a Chamber of Commerce fee — membership is automatic but carries no compulsory charge.", "section_id": "social" }
+  ],
   "sections": [
     {
       "id": "overview",

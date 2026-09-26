@@ -5,6 +5,24 @@
   "last_checked": "2026-09-25",
   "checked_by": "Nijil",
   "next_check_due": "2027-03-25",
+  "quick_facts": {
+    "structure": { "text": "Register as a self-employed sole trader (indépendant/zelfstandige) — no notary, no minimum capital. Form an SRL/BV later for limited liability, though it needs a notary and a mandatory financial plan.", "source_ids": ["BE3", "BE4"] },
+    "cost": { "text": "Sole trader registration costs EUR 111.50 per establishment unit at an accredited enterprise counter. An SRL/BV has no legal minimum capital, but a standard online incorporation is reported at roughly EUR 515 in fixed and administrative costs.", "source_ids": ["BE3", "BE4"] },
+    "time": { "text": "Sole trader registration usually takes same day to about a week. An SRL/BV can be formed online in a few days to a few weeks with a single notary appointment.", "source_ids": ["BE3", "BE4"] },
+    "gotcha": { "text": "Structured e-invoicing via Peppol becomes mandatory for VAT-registered businesses of any size from 1 January 2026 — even sole traders who only invoice private customers must be able to receive it.", "source_ids": ["BE13"] }
+  },
+  "founder_checklist": [
+    { "text": "Decide whether personal, unlimited liability is acceptable for now — most first-time founders start as a sole trader.", "section_id": "legal-forms" },
+    { "text": "Check whether your planned activity is a regulated profession requiring proof of competence.", "section_id": "status-and-regulated-professions" },
+    { "text": "If you're from outside the EU, get your professional card sorted before you start.", "section_id": "sole-steps" },
+    { "text": "Register with an accredited enterprise counter for your BCE/KBO number.", "section_id": "sole-steps" },
+    { "text": "Get VAT-identified, or confirm you qualify for the small-business exemption.", "section_id": "sole-steps" },
+    { "text": "Affiliate with a social insurance fund and a health-insurance mutual fund before day one.", "section_id": "sole-steps" },
+    { "text": "Open a separate business bank account.", "section_id": "sole-steps" },
+    { "text": "Get Peppol-capable e-invoicing software in place before 1 January 2026.", "section_id": "taxes" },
+    { "text": "If forming an SRL instead, draft the mandatory financial plan with an accountant and book the notary.", "section_id": "company-steps" },
+    { "text": "Check hub.brussels' grants tool before spending on consultants.", "section_id": "social" }
+  ],
   "sections": [
     {
       "id": "overview",
