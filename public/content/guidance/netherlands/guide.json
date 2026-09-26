@@ -1,0 +1,224 @@
+{
+  "slug": "netherlands",
+  "title": "How to start a company in the Netherlands",
+  "summary": "The Netherlands gives a founder two main routes: register as a sole trader (eenmanszaak) — what most people mean by \"going zzp\" — for a fast, cheap start with unlimited personal liability, or form a besloten vennootschap (bv), a private limited company, for limited liability. Both routes run through the same front door: one appointment with KVK, the Dutch Chamber of Commerce and business register, which automatically forwards your details to the Belastingdienst (tax authority) for your VAT number.",
+  "last_checked": "2026-09-26",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-26",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "The Netherlands does not have a separate legal status called \"zzp\" (zelfstandige zonder personeel, self-employed without staff) — zzp is just the common label for someone who is self-employed, and in practice almost all zzp'ers register the same legal form everyone else starting alone does: the eenmanszaak (sole proprietorship). If you want to work with a partner as co-owners without a notary, a vennootschap onder firma (vof, general partnership) is the equivalent next step up. If you want limited liability, a separate legal entity that can hold contracts in its own name, or a structure a client or investor expects, you form a besloten vennootschap (bv), a private limited company, through a notary. Registration itself is genuinely fast in the Netherlands: KVK can typically issue a KVK number the same day as your appointment, and it automatically passes your details to the Belastingdienst for a VAT number. For founders from outside the EU/EEA/Switzerland, the residence permit — not the company registration — is usually the slower, more decisive step.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Eenmanszaak (sole proprietorship / \"zzp\")", "none", "personal, unlimited", "no", "same day at a KVK appointment", "simple records; no statutory double-entry requirement", "official [NL1]"],
+          ["Vennootschap onder firma (vof, general partnership)", "none", "personal, unlimited, joint and several between partners", "no", "same day at a KVK appointment (minimum 2 partners)", "simple records", "official [NL12]"],
+          ["Besloten vennootschap (bv, private limited company)", "no statutory minimum; KVK's own guidance describes funding the company bank account with as little as EUR 0.01", "limited to the company's assets, unless there is mismanagement or a personal guarantee", "yes, always — a civil-law notary must execute the deed of incorporation, though this can now be done fully digitally", "can be arranged digitally with the notary in as little as a few days; KVK registration itself is handled by the notary", "double-entry bookkeeping and annual accounts", "official [NL10, NL11]"]
+        ]
+      },
+      "official_information": [
+        { "text": "A legal form (rechtsvorm) is the legal structure of a business. With an eenmanszaak, one person is the owner (even if the business employs other people), and that owner is personally liable for the company's debts. A vof must have a minimum of two partners (people or organisations), who are personally liable for the company's debts, including debts run up by another partner. A bv is a legal entity with legal personality: the owner is not personally liable for the company's debts unless there is mismanagement, and can only lose the money invested in the company.", "source_ids": ["NL1", "NL12"], "confidence": "official" },
+        { "text": "A vof does not need a notary — you register it yourself with KVK. Partners can be natural persons or organisations (such as a bv, maatschap or another vof).", "source_ids": ["NL12"], "confidence": "official" },
+        { "text": "A bv is set up through a notary, and this can also be done digitally. KVK's own guidance describes the funding requirement for the company bank account as a minimum of EUR 0.01 — i.e. there is no statutory minimum share capital of the kind the bv used to have before the law changed. Notary fees for setting up a bv are reported by KVK as typically EUR 500 to 1,500. Before the deed is passed, the company can already act as a \"bv in oprichting (i.o.)\" (bv in formation), but during that phase the founder is personally liable for agreements made in the company's name.", "source_ids": ["NL10"], "confidence": "official" },
+        { "text": "If you are a director and majority shareholder (DGA, directeur-grootaandeelhouder) of your own bv and draw a salary from it, statutory rules (the gebruikelijkloonregeling, usual-wage scheme) require the bv to pay you a minimum salary — KVK's own guidance states this at EUR 56,000 per year.", "source_ids": ["NL10"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "For most first-time founders working alone, start as an eenmanszaak — it is the cheapest, fastest way to invoice legally, and you can convert to a vof or a bv later once you take on a partner or need to cap your personal risk. Because forming a bv also means the gebruikelijkloonregeling minimum-salary rule and full double-entry bookkeeping and annual accounts, it usually only pays off once you have real revenue, a co-founder situation, or a client/investor who specifically wants to contract with a limited company.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether personal, unlimited liability (eenmanszaak or vof) is acceptable for now.", "source_ids": [] },
+        { "text": "If working with a partner, decide between a vof (no notary) and a bv (notary, limited liability).", "source_ids": [] },
+        { "text": "If you choose a bv, budget for notary fees (reported EUR 500 to 1,500) and the gebruikelijkloonregeling minimum salary if you pay yourself from the company.", "source_ids": ["NL10"] }
+      ]
+    },
+    {
+      "id": "zzp-status",
+      "title": "Freelancer (zzp) status and false self-employment (schijnzelfstandigheid)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "The Belastingdienst enforces rules against schijnzelfstandigheid (false self-employment): a situation where someone works and invoices as a self-employed zzp'er for a client, but the actual working relationship looks like employment. Since 1 January 2025, the Belastingdienst applies its normal enforcement rules again after a multi-year moratorium: it can impose corrective obligations and back-tax assessments as soon as false self-employment is found, though it cannot levy back-taxes for periods before 1 January 2025 unless there was deliberate misconduct or a failure to follow the Belastingdienst's own guidance, in which case it can look back up to 5 years. From 1 January 2026, the Belastingdienst can also impose \"vergrijpboetes\" (penalty fines for serious cases); \"verzuimboetes\" (default/administrative fines) were not yet being applied at the time of this check. The Belastingdienst looks at the actual working relationship in practice, not just what a contract states — signing a standard model agreement is not enough if daily practice looks like employment.", "source_ids": ["NL24"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "This matters most for founders whose main or only client is a single company they work for continuously, especially IT contractors placed through a staffing agency or a single long-term client — a common pattern for Malayali professionals moving to the Netherlands. If your day-to-day work looks the same as an employee's (fixed hours, a manager directing your tasks, no real ability to send a substitute, no other clients), the client relationship risks being reclassified, which mainly creates tax and liability exposure for the client but can also affect your own position and future contracts. This is genuinely unsettled, fast-moving legal territory in the Netherlands — get advice from an accountant or employment lawyer before signing an exclusive, long-term single-client contract as a zzp'er.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "If most of your income will come from one client, ask an accountant whether your working arrangement could be seen as false self-employment (schijnzelfstandigheid).", "source_ids": ["NL24"] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, eenmanszaak or vof via KVK and the Belastingdienst",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Non-EU/EEA/Swiss founders: have your residence permit (or another status allowing self-employment) in place first — see the residence-permit section.", "source_ids": ["NL4"], "confidence": "official" },
+        { "text": "2. Register your address with the municipality to get a citizen service number (BSN, burgerservicenummer) and confirm you have a Dutch business address (your own, or a landlord's written consent to run a business there).", "source_ids": ["NL3"], "confidence": "official" },
+        { "text": "3. Check your business name is available, choose your legal form (eenmanszaak or vof), and pick your activity's SBI code.", "source_ids": ["NL3"], "confidence": "official" },
+        { "text": "4. Complete KVK's online registration form and book an in-person appointment — registration is not possible without one. You can register from 1 week before your start date up to 1 week after it; if you register earlier, the registration only becomes official 1 week before the appointment.", "source_ids": ["NL3"], "confidence": "official" },
+        { "text": "5. Attend the KVK appointment with valid proof of identity (and any lease/consent documents). You receive your KVK number at the appointment. A vof is registered by the partners themselves this way too — no notary is involved.", "source_ids": ["NL3", "NL12"], "confidence": "official" },
+        { "text": "6. KVK invoices you afterwards for the one-off registration fee of EUR 85.15 (no cash payments accepted at the appointment). This fee is tax-deductible and is not charged again in later years.", "source_ids": ["NL2"], "confidence": "official" },
+        { "text": "7. For a sole proprietorship, you do not need to register separately with the Belastingdienst: KVK passes your details on, and the Belastingdienst issues you a VAT identification number (btw-id) and a VAT number (omzetbelastingnummer) by post.", "source_ids": ["NL23"], "confidence": "official" },
+        { "text": "8. Check whether your sector needs a specific permit or licence (for example catering, taxi transport, healthcare, financial services or private security) — most businesses need none, but sector-specific and municipal permits (for things like market stalls or outdoor seating) exist.", "source_ids": ["NL22"], "confidence": "official" },
+        { "text": "9. If you form a vof, register the partnership's UBOs (ultimate beneficial owners) in KVK's UBO register; a sole-proprietor eenmanszaak is exempt from UBO registration.", "source_ids": ["NL13", "NL14"], "confidence": "official" },
+        { "text": "10. Open a separate business bank account (not a legal requirement, but strongly advised).", "source_ids": [], "confidence": "editorial" },
+        { "text": "11. Arrange health insurance (mandatory for everyone living in the Netherlands) and consider whether you want voluntary disability insurance — see the taxes/social-security section.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm your residence permit or other status allows self-employment (non-EU founders only).", "source_ids": ["NL4"] },
+        { "text": "Register your address with the municipality and get your BSN.", "source_ids": ["NL3"] },
+        { "text": "Book and attend your KVK registration appointment with valid ID.", "source_ids": ["NL3"] },
+        { "text": "Pay the one-off KVK registration fee (EUR 85.15).", "source_ids": ["NL2"] },
+        { "text": "Wait for your VAT number by post from the Belastingdienst.", "source_ids": ["NL23"] },
+        { "text": "Check whether your sector needs a specific permit or licence.", "source_ids": ["NL22"] },
+        { "text": "If forming a vof, register UBOs; skip this step for an eenmanszaak.", "source_ids": ["NL13", "NL14"] },
+        { "text": "Open a separate business bank account.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, bv (private limited company)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Choose a company name and decide your governance structure (one or more directors/shareholders).", "source_ids": ["NL10"], "confidence": "official" },
+        { "text": "2. Engage a civil-law notary (notaris) — this step is mandatory for a bv and cannot be skipped, unlike for an eenmanszaak or vof. The deed of incorporation (oprichtingsakte) can now be arranged and signed fully digitally with the notary.", "source_ids": ["NL10"], "confidence": "official" },
+        { "text": "3. Fund the company bank account. KVK's own guidance describes this as needing at least EUR 0.01 — there is no statutory minimum share capital requirement of the kind the bv used to have.", "source_ids": ["NL10"], "confidence": "official" },
+        { "text": "4. The notary registers the bv \"in oprichting\" (i.o., in formation) directly with KVK's Business Register — you do not need to visit a KVK office in person for a bv. This lets you start preliminary business activity and gives you a KVK number before the incorporation is fully complete.", "source_ids": ["NL11"], "confidence": "official" },
+        { "text": "5. You receive your KVK number by post, and KVK invoices the one-off registration fee separately from the notary's own fees (reported by KVK at EUR 500 to 1,500). The KVK registration fee is only paid once, not again when the company converts from i.o. to a full bv.", "source_ids": ["NL11", "NL2"], "confidence": "official" },
+        { "text": "6. Unlike a sole proprietorship, a bv (and an nv) must be registered separately with the Belastingdienst; this is handled by the notary alongside the Business Register filing, and you are issued an RSIN (Rechtspersonen en Samenwerkingsverbanden Informatienummer) in addition to VAT numbers.", "source_ids": ["NL23"], "confidence": "official" },
+        { "text": "7. The notary also arranges registration of the bv's UBOs (ultimate beneficial owners — broadly, anyone with more than 25% of the shares, voting rights, or equivalent control) in KVK's UBO register.", "source_ids": ["NL11", "NL14"], "confidence": "official" },
+        { "text": "8. If you are a director-majority shareholder (DGA) paying yourself a salary from the bv, budget for the gebruikelijkloonregeling minimum salary requirement (KVK reports this at EUR 56,000/year).", "source_ids": ["NL10"], "confidence": "official" },
+        { "text": "9. Ongoing: double-entry bookkeeping, filing annual accounts, and corporate income tax (vennootschapsbelasting) returns.", "source_ids": ["NL8"], "confidence": "official" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Choose your company name and governance structure.", "source_ids": [] },
+        { "text": "Engage a civil-law notary and decide whether to sign digitally.", "source_ids": ["NL10"] },
+        { "text": "Fund the company bank account.", "source_ids": ["NL10"] },
+        { "text": "Confirm the notary has registered the bv i.o. with KVK and requested the RSIN from the Belastingdienst.", "source_ids": ["NL11", "NL23"] },
+        { "text": "Confirm UBO registration is complete.", "source_ids": ["NL14"] },
+        { "text": "If paying yourself a salary as DGA, check the gebruikelijkloonregeling minimum with your accountant.", "source_ids": ["NL10"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "VAT (btw) rates: the general rate is 21%, applying to all products and services that are not exempt and do not fall under the 9% or 0% rate. The 9% reduced rate applies to foodstuffs and certain other goods and services. The 0% rate applies to a defined list of goods and services (mainly international transactions); btw paid on related costs can still be deducted as input tax under the 0% rate.", "source_ids": ["NL7"], "confidence": "official" },
+        { "text": "Small businesses scheme (kleineondernemersregeling, KOR): available to entrepreneurs (sole proprietors, partnerships of natural persons such as a vof, and legal entities such as a bv, foundation or association) established in the Netherlands with annual turnover not exceeding EUR 20,000 per calendar year. Under the KOR you do not charge VAT to customers, do not file VAT returns, and do not pay VAT to the Belastingdienst — but you also cannot reclaim VAT on your own business costs and investments. Since 1 January 2025, an EU-wide KOR variant lets a participating entrepreneur get the VAT exemption in other EU countries where they do business too.", "source_ids": ["NL5"], "confidence": "official" },
+        { "text": "To join the KOR from the start of a given filing period, your registration must reach the Belastingdienst (via Mijn Belastingdienst Zakelijk) at least 4 weeks before that period begins, to allow for administrative processing time; you can only submit the KOR registration after you have already received your VAT number by post.", "source_ids": ["NL6"], "confidence": "official" },
+        { "text": "Income tax (box 1) 2026 brackets for sole proprietors and vof partners (profit is added to other box 1 income): 35.75% up to EUR 38,883; 37.56% from EUR 38,883 to EUR 78,426; 49.50% above EUR 78,426.", "source_ids": ["NL9"], "confidence": "official" },
+        { "text": "Zelfstandigenaftrek (self-employed deduction), 2026: EUR 1,200 (down from EUR 2,470 in 2025, and due to fall further to EUR 900 in 2027). To qualify for this and other entrepreneur deductions, you generally need to meet the \"hour criterion\" (urencriterium) of at least 1,225 hours worked in your business in the year.", "source_ids": ["NL9"], "confidence": "official" },
+        { "text": "Mkb-winstvrijstelling (SME profit exemption), 2026: 12.70% of remaining profit (after other deductions such as the zelfstandigenaftrek) is exempt from income tax.", "source_ids": ["NL9"], "confidence": "official" },
+        { "text": "Corporate income tax (vennootschapsbelasting) for a bv, 2026: 19.0% on taxable profit up to EUR 200,000, and 25.8% on the portion above that.", "source_ids": ["NL8"], "confidence": "official" },
+        { "text": "Invoices must include: your VAT identification number, the applicable VAT rate, the VAT amount, the invoice date, a sequential invoice number, your name and address, your customer's name and address, your KVK number if you have one, the date of delivery, and a description and quantity of the goods or services supplied. An invoice must be sent no later than the 15th day of the month following the month the goods or services were supplied, and invoices must be kept for 7 years.", "source_ids": ["NL20"], "confidence": "official" },
+        { "text": "E-invoicing (structured electronic invoices) is mandatory when supplying Dutch central-government organisations: \"if so, you must send an e-invoice.\" The required format uses fixed-position, coded invoice fields, with Peppol described as one compliant channel.", "source_ids": ["NL25"], "confidence": "official" },
+        { "text": "Whether a general e-invoicing mandate for ordinary business-to-business or business-to-consumer sales exists (or is planned) in the Netherlands beyond the central-government requirement above was not confirmed on an official page this session.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "Most first-year founders with mainly private/individual customers should seriously consider the KOR: it removes VAT administration entirely, though it also means you cannot reclaim VAT on start-up purchases, which can matter if you have large upfront equipment or software costs. This is a decision worth making with an accountant, especially since KOR registration has to be timed around the 4-week processing window.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether the small-business VAT scheme (KOR) suits you, and register at least 4 weeks ahead if so.", "source_ids": ["NL5", "NL6"] },
+        { "text": "Confirm which VAT rate(s) apply to what you sell.", "source_ids": ["NL7"] },
+        { "text": "Check whether you meet the 1,225-hour criterion for the zelfstandigenaftrek and other entrepreneur deductions.", "source_ids": ["NL9"] },
+        { "text": "Set up invoicing that meets the legal requirements (VAT ID, sequential numbering, 15th-of-the-month deadline, 7-year retention).", "source_ids": ["NL20"] },
+        { "text": "If forming a bv, check whether your customers are government bodies that require e-invoicing.", "source_ids": ["NL25"] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "KVK fees, UBO register, health insurance, social security, funding",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "The KVK Business Register registration fee is a one-off EUR 85.15; there is no separate annual KVK membership fee.", "source_ids": ["NL2"], "confidence": "official" },
+        { "text": "UBO register: organisations with these legal forms must register their UBOs (ultimate beneficial owners — broadly, natural persons with more than 25% of shares/votes, or otherwise able to exercise dominant control) with KVK: bv, nv, foundations, associations with full legal capacity, cooperatives, mutual guarantee companies, vof, cv, maatschap, and some other partnership and European entity forms. Eenmanszaken (sole proprietorships) are explicitly exempt and do not need to register a UBO.", "source_ids": ["NL13", "NL14"], "confidence": "official" },
+        { "text": "Basic health insurance (basisverzekering, zorgverzekering) is mandatory for everyone living or working in the Netherlands, including the self-employed. The average premium people pay their insurer in 2026 is EUR 1,884 per year, an average of EUR 157 per month.", "source_ids": ["NL16"], "confidence": "official" },
+        { "text": "There is currently no legal requirement for the self-employed to carry disability insurance (arbeidsongeschiktheidsverzekering). The Dutch government has a plan for a mandatory basic disability insurance for the self-employed (BAZ, basisverzekering arbeidsongeschiktheid zelfstandigen), covering self-employed entrepreneurs with business profit (IB-ondernemers) but excluding director-majority shareholders and non-working business partners; as of this check, the draft legislation had been submitted to the Council of State for review and had not yet been passed into law, with implementation still described as several years away. Under the current proposal, the premium would be about 5.4% of gross income (capped around EUR 171/month, both subject to change before the law is finalised), giving a benefit of 70% of previously earned income up to a maximum of the minimum wage, after a 2-year waiting period.", "source_ids": ["NL15"], "confidence": "official" },
+        { "text": "Qredits, a government-linked microfinance foundation, offers a \"microkrediet\" business loan of up to EUR 50,000 to starting and existing entrepreneurs (and business take-overs) with a solid business plan; Qredits also offers coaching to help build a business plan if you don't have one, and a larger \"mkb-krediet\" business loan of EUR 50,000 to 250,000 for bigger financing needs.", "source_ids": ["NL17"], "confidence": "official" },
+        { "text": "Other support schemes listed on the Dutch government's business portal for starting entrepreneurs include: tax relief for new companies (startersaftrek, part of the entrepreneur allowance); Bbz (financial support for self-employed professionals in financial difficulty, run through municipalities); an SME loan of up to EUR 250,000; proof-of-concept funding for innovative start-ups; and support for starting a business while receiving a long-term incapacity-for-work benefit. Each scheme has its own separate eligibility rules to check directly.", "source_ids": ["NL18"], "confidence": "official" },
+        { "text": "Whether you need a permit or licence depends on your sector. Specific sectors do: for example, hospitality businesses need a municipal catering-establishment permit, taxi operators need a taxi operator's licence and driver's card, healthcare providers must register as a healthcare professional, financial-services businesses need a licence, and private security or detective agencies need a licence. Separately, some activities affecting public space (market stalls, festivals, outdoor seating, advertising) need municipal permits regardless of sector.", "source_ids": ["NL22"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Because disability insurance is not yet mandatory, many zzp'ers in the Netherlands currently go without it or buy private cover (an AOV) — that is a real financial risk if you cannot work due to illness or injury, worth weighing deliberately rather than by default, and worth watching for the mandatory scheme actually coming into force.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm whether your legal form needs UBO registration (eenmanszaak: no; vof and bv: yes).", "source_ids": ["NL13", "NL14"] },
+        { "text": "Arrange mandatory basic health insurance.", "source_ids": ["NL16"] },
+        { "text": "Decide whether to buy voluntary disability insurance (not yet mandatory as of this check).", "source_ids": ["NL15"] },
+        { "text": "Check Qredits and the government's subsidy overview before spending on consultants.", "source_ids": ["NL17", "NL18"] },
+        { "text": "Check whether your sector needs a specific licence or permit.", "source_ids": ["NL22"] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "NL4",
+      "internal_notes": "Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the build doc's publishing gates).",
+      "open_questions_for_reviewer": [
+        "Is the self-employed residence permit (verblijfsvergunning zelfstandig ondernemer) really the main practical route for KeralaFounders' likely audience (often Indian/Malayali IT contractors), or do most of them actually arrive via an employer-sponsored highly-skilled-migrant permit and only later consider self-employment? If the latter, should this section also cover switching from a highly-skilled-migrant permit to self-employment, which was not researched this session?",
+        "The IND page states a points-based 'essential Dutch interest' test (at least 30 points in each of personal experience / business plan / added value for the Netherlands, or 45+45 in the first two areas), and that the points system does not apply for Turkish nationals, long-term EU residents from elsewhere, or independent professions assessed via ministry advice instead — is this still current, and what does the points system look like in more detail (maximum points per area, exact scoring criteria)? Only the IND summary page was read this session, not RVO's own detailed scoring guidance (its page could not be reached this session).",
+        "Is there a specific minimum income or investment figure IND/RVO applies when assessing the business plan, beyond the general statement that the plan must show the venture meets an income threshold? Not found on an official page this session.",
+        "Is the Dutch-American Friendship Treaty (DAFT), reported elsewhere as a simplified path for US nationals specifically, still in effect and how does it interact with the standard self-employed permit? Not researched this session — no official source read.",
+        "Is the residence permit for foreign startups (1 year, via an RVO-recognised facilitator, for an 'innovative' business) a realistic route for KeralaFounders' likely audience, or mostly relevant to tech/scalable startups? What actually counts as 'innovative' in RVO's assessment?",
+        "Are the disclaimer and the \"explain the rules, no advice\" framing adequate?"
+      ],
+      "official_information": [
+        { "text": "EU/EEA/Swiss nationals need only a valid passport or ID card to work self-employed in the Netherlands, though those coming temporarily must file a notification via the Dutch online notification portal for posted workers. Third-country (non-EU/EEA/Swiss) nationals need either a residence permit for self-employment (verblijfsvergunning zelfstandig ondernemer), another residence permit that permits self-employment, or a permit annotated \"no employment restrictions, no work permit required\" — without one of these, self-employed work is not allowed.", "source_ids": ["NL21"], "confidence": "hold" },
+        { "text": "To get the residence permit for a self-employed person, an applicant must meet the Netherlands' general residence-permit requirements, be registered in the KVK Business Register, hold any permits/qualifications required to practise their profession, and show their activity is of \"essential interest\" to the Dutch economy, including meeting an income requirement demonstrated through a business plan; if working as a freelancer specifically, the applicant must maintain one or more active commissions (assignments) in the Netherlands.", "source_ids": ["NL4"], "confidence": "hold" },
+        { "text": "The Netherlands Enterprise Agency (RVO) assesses \"essential Dutch interest\" using a points-based system across three areas: personal experience, business plan, and added value for the Netherlands. IND states the applicant needs at least 30 points in each of the three areas, or alternatively at least 45 points each in personal experience and business plan (in which case the added-value score can be lower). This points system does not apply to Turkish nationals, people with long-term EU residence status obtained elsewhere, or people practising an independent profession, whose applications are assessed differently via ministerial advice instead.", "source_ids": ["NL4"], "confidence": "hold" },
+        { "text": "Application process: verify the general requirements and, if outside the Netherlands, apply for a provisional residence permit (MVV) at a Dutch embassy or consulate in your country of origin or continuous residence, submitting the application form, a passport photo, a valid passport, and the application fee; the standard IND decision period is 90 days, extendable up to 6 months while RVO or a ministry is consulted; once approved you collect the MVV visa sticker within 3 months and then collect the residence permit itself.", "source_ids": ["NL4"], "confidence": "hold" },
+        { "text": "The application fee for the self-employed residence permit is EUR 423.00. The permit is a temporary regular residence permit (type I), issued for a maximum of 2 years and extendable while the requirements continue to be met; after 5 years of lawful residence, self-employed permit holders may become eligible for unrestricted labour-market access.", "source_ids": ["NL4"], "confidence": "hold" },
+        { "text": "A separate residence permit for foreign startups exists for people from outside the EU/EEA/Switzerland who want to start an innovative business. It is valid for a maximum of 1 year, requires working with an experienced facilitator recognised by RVO, requires showing the product or service is innovative and that there is a plan to grow it into a viable business, and requires sufficient means to live in the Netherlands during that year. After the year, the founder can apply for the standard self-employed residence permit if they meet its requirements.", "source_ids": ["NL19"], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
