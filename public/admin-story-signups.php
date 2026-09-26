@@ -22,8 +22,9 @@ if (($_GET['export'] ?? '') === 'csv') {
     exit;
 }
 
-$rows = $db->query('SELECT email, created_at FROM story_signups ORDER BY created_at DESC')->fetchAll();
+$rows = $db->query('SELECT id, email, created_at FROM story_signups ORDER BY created_at DESC')->fetchAll();
 $activeAdminPage = 'story-signups';
+$csrfToken = csrf_token();
 ?>
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -49,12 +50,19 @@ $activeAdminPage = 'story-signups';
 <?php else: ?>
   <div class="panel" style="padding:0;overflow:hidden">
   <table style="width:100%;border-collapse:collapse">
-    <thead><tr style="text-align:left;border-bottom:1px solid var(--line)"><th style="padding:12px 16px">Email</th><th style="padding:12px 16px">Signed up</th></tr></thead>
+    <thead><tr style="text-align:left;border-bottom:1px solid var(--line)"><th style="padding:12px 16px">Email</th><th style="padding:12px 16px">Signed up</th><th style="padding:12px 16px"></th></tr></thead>
     <tbody>
     <?php foreach ($rows as $row): ?>
       <tr style="border-bottom:1px solid var(--line)">
         <td style="padding:10px 16px"><?= h($row['email']) ?></td>
         <td style="padding:10px 16px;color:var(--muted)"><?= h(date('j M Y, g:ia', strtotime($row['created_at']))) ?></td>
+        <td style="padding:10px 16px;text-align:right">
+          <form method="post" action="api/admin-story-signup-delete.php" onsubmit="return confirm('Delete this signup?')">
+            <input type="hidden" name="id" value="<?= (int)$row['id'] ?>">
+            <input type="hidden" name="csrf_token" value="<?= h($csrfToken) ?>">
+            <button class="pill light" type="submit" style="padding:6px 12px;font-size:12px">Delete</button>
+          </form>
+        </td>
       </tr>
     <?php endforeach; ?>
     </tbody>
