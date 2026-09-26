@@ -31,5 +31,7 @@ echo 'window.KF = ' . json_encode([
     'industries' => $KF_INDUSTRIES,
     'businessTypes' => $KF_BUSINESS_TYPES,
     'sizes' => $KF_SIZES,
+    'keralaDistricts' => $KF_KERALA_DISTRICTS,
+    'keralaConnections' => $KF_KERALA_CONNECTIONS,
     'companies' => $companies,
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . ';';

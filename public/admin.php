@@ -128,6 +128,15 @@ $activeAdminPage = 'submissions';
         <div class="meta"><?= h($c['city']) ?>, <?= h($c['country']) ?> · <?= h($c['industry']) ?></div>
         <div class="meta"><?= h(implode(', ', array_map(fn($f) => $f['name'], $c['founders']))) ?></div>
         <div class="meta"><?= $c['contact_email'] ? h($c['contact_email']) . ' (' . h($c['email_confidence'] ?? '') . ' · ' . h($c['email_source'] ?? '') . ')' : '<span class="muted">No email found</span>' ?></div>
+        <?php if ($c['kerala_connection'] || $c['instagram'] || $c['contact_ok_podcast_stories']): ?>
+        <div class="meta">
+          <?php if ($c['kerala_connection']): ?>Kerala connection: <?= h($c['kerala_connection']) ?><?php if ($c['kerala_district']): ?> (<?= h($c['kerala_district']) ?>)<?php endif; ?><?php endif; ?>
+          <?php if ($c['kerala_connection'] && ($c['instagram'] || $c['contact_ok_podcast_stories'])): ?> · <?php endif; ?>
+          <?php if ($c['instagram']): ?>Instagram: @<?= h($c['instagram']) ?><?php endif; ?>
+          <?php if ($c['instagram'] && $c['contact_ok_podcast_stories']): ?> · <?php endif; ?>
+          <?php if ($c['contact_ok_podcast_stories']): ?>OK to contact for stories/podcast<?php endif; ?>
+        </div>
+        <?php endif; ?>
       </div>
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
         <label class="email-switch" style="margin:0;min-height:auto">
