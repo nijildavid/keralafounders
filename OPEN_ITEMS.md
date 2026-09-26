@@ -4,6 +4,18 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
+## In progress — Slovenia Guidance guide
+
+Next after Netherlands per the directory-data-driven priority order: Slovenia
+has 5 listed companies, more than Luxembourg (1), France (2) or Romania (1),
+though fewer than Netherlands (31). No row exists yet in `countries.json`
+(same starting point Belgium/Greece/Spain had) and zero Guidance content.
+After this, Luxembourg/France/Romania are thin enough to batch together
+rather than treat individually; Denmark (0 companies) stays parked until it
+has at least one.
+
+Status: research not yet started as of this entry.
+
 ## Resolved — Guidance content expansion (pilot)
 
 Goal: grow search-indexable content for SEO/traffic by filling the mostly-
