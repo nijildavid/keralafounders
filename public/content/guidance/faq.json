@@ -931,7 +931,7 @@
         "country": "netherlands",
         "topic": "tax",
         "question": "Do I need to register for VAT separately from my KVK registration?",
-        "answer": "Not for a sole proprietorship: KVK automatically passes your details to the Belastingdienst, who post you a VAT identification number and VAT number, typically within about 2 weeks. A bv or nv is registered with the Belastingdienst separately by the notary, who also arranges its RSIN.",
+        "answer": "Not for a sole proprietorship: KVK automatically passes your details to the Belastingdienst, who post you a VAT identification number and VAT number. A bv or nv is registered with the Belastingdienst separately by the notary, who also arranges its RSIN.",
         "source_ids": [
             "NL23"
         ],
