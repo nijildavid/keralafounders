@@ -163,5 +163,16 @@
         "last_checked": "2026-09-25",
         "next_check_due": "2027-03-25",
         "order": 15
+    },
+    {
+        "slug": "slovenia",
+        "name": "Slovenia",
+        "flag_or_icon": "si",
+        "status": "ready_for_review",
+        "target_month": null,
+        "directory_country_name": "Slovenia",
+        "last_checked": "2026-09-26",
+        "next_check_due": "2027-03-26",
+        "order": 16
     }
 ]
