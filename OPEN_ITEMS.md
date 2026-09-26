@@ -4,17 +4,37 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
-## In progress — Slovenia Guidance guide
+## Needs your review — Slovenia Guidance guide
 
 Next after Netherlands per the directory-data-driven priority order: Slovenia
 has 5 listed companies, more than Luxembourg (1), France (2) or Romania (1),
-though fewer than Netherlands (31). No row exists yet in `countries.json`
-(same starting point Belgium/Greece/Spain had) and zero Guidance content.
-After this, Luxembourg/France/Romania are thin enough to batch together
-rather than treat individually; Denmark (0 companies) stays parked until it
-has at least one.
+though fewer than Netherlands (31). After this, Luxembourg/France/Romania are
+thin enough to batch together rather than treat individually; Denmark
+(0 companies) stays parked until it has at least one.
 
-Status: research not yet started as of this entry.
+**Status: written, sourced, passing `scripts/validate-guidance-content.php`,
+sitting at `status: "ready_for_review"`** (not live). 27 sources, 24 of them
+official/chamber/government-portal (SPOT, FURS, ZPIZ, ZZZS, AJPES, the
+Employment Service, Uradni list RS — Slovenia's Official Gazette), 3
+secondary (flagged inline, not dressed up as official). Includes a
+Slovenia-specific section on the "normiranec" flat-rate tax regime and
+"popoldanski s.p." (running a sole-trader business part-time alongside a
+job) — the local analogue to Netherlands' false-self-employment section.
+Immigration section held back (`hold: true`) as usual, and thinner-sourced
+than the rest of the guide (only one usable overview page found). Three
+things worth a look before flipping it live:
+
+- **A genuine conflict the guide surfaced rather than picked silently**:
+  SPOT's own English VAT page still states a EUR 50,000 small-business
+  exemption threshold, while FURS's own (more detailed) page confirms it
+  was raised to EUR 60,000/66,000 from 1 January 2025. The guide uses the
+  FURS figure but flags the conflict for a reviewer to settle definitively.
+- The residence-permit section should stay fully hidden until an
+  immigration-savvy reviewer looks at it specifically — it rests on one
+  SPOT overview page rather than a dedicated immigration-authority source.
+- The popoldanski-s.p. and normiranec figures are all dated 2026 —
+  Slovenian contribution bases and thresholds move at least annually, so
+  worth confirming they still hold whenever this actually goes live.
 
 ## Resolved — Guidance content expansion (pilot)
 
