@@ -6,7 +6,7 @@
       <div class="footer-tagline">People. Businesses. A Stronger Tomorrow.</div>
       <nav class="footer-links">
         <a href="founders.php">Directory</a>
-        <span class="footer-link-disabled" aria-disabled="true">Stories</span>
+        <a href="stories.php">Stories</a>
         <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?><a href="guidance.php">Guidance</a><?php else: ?><span class="footer-link-disabled" aria-disabled="true">Guidance</span><?php endif; ?>
         <a href="countries.php">Explore places</a>
         <a href="about.php">About</a>
