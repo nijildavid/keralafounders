@@ -134,9 +134,9 @@ button{cursor:pointer}
 .hint{font-size:12px;color:#78716c;margin-top:7px;line-height:1.5}
 .founder-extra{display:grid;grid-template-columns:1fr 1fr;gap:13px;padding:15px;background:#f5f5f4;border-radius:13px;margin-top:12px}
 .checkrow{display:flex;align-items:flex-start;gap:9px;font-size:13px;line-height:1.5}.checkrow input{margin-top:3px;flex-shrink:0}.checkrow a{color:var(--accent2);text-decoration:underline}.form-submit{display:flex;justify-content:space-between;align-items:center;gap:15px;padding-top:9px}
-.radio-group{display:flex;flex-direction:column;gap:var(--space-2);margin-top:var(--space-2)}
-.radio-group label{display:flex;align-items:flex-start;gap:9px;font-size:14px;line-height:1.5}
-.radio-group input{margin-top:3px;flex-shrink:0}
+.radio-group{display:flex;flex-direction:column;gap:var(--space-1);margin-top:var(--space-2)}
+.radio-group label{display:flex;align-items:center;gap:9px;font-size:14px;line-height:1.5;padding:9px 2px;min-height:24px}
+.radio-group input{flex-shrink:0}
 fieldset.form-fieldset{border:0;padding:0;margin:0}
 fieldset.form-fieldset legend{padding:0;width:100%}
 .profile{padding:70px 0}.profile-head{display:flex;gap:20px;align-items:center}.profile-logo{width:72px;height:72px;border-radius:17px;background:#f5f5f4;display:grid;place-items:center;font-size:20px;font-weight:800}
