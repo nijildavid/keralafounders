@@ -4,7 +4,7 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
-## Needs your review — Slovenia Guidance guide
+## Resolved — Slovenia Guidance guide
 
 Next after Netherlands per the directory-data-driven priority order: Slovenia
 has 5 listed companies, more than Luxembourg (1), France (2) or Romania (1),
@@ -12,9 +12,8 @@ though fewer than Netherlands (31). After this, Luxembourg/France/Romania are
 thin enough to batch together rather than treat individually; Denmark
 (0 companies) stays parked until it has at least one.
 
-**Status: written, sourced, independently audited, and fixed — passing
-`scripts/validate-guidance-content.php`, sitting at
-`status: "ready_for_review"`** (not live). 27 sources, 24 of them
+**Status: `live`.** Written, sourced, independently audited, and fixed —
+27 sources, 24 of them
 official/chamber/government-portal (SPOT, FURS, ZPIZ, ZZZS, AJPES, the
 Employment Service, Uradni list RS — Slovenia's Official Gazette), 3
 secondary (flagged inline, not dressed up as official). Includes a
