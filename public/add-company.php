@@ -35,7 +35,7 @@ $canonicalUrl = 'https://keralafounders.eu/add-company.php';
   <div><label class="label" for="city">City *</label><select id="city" class="select" name="city" required aria-describedby="city-error"><option value="">Select country first</option></select><span class="field-error" id="city-error" hidden></span></div>
   <div style="grid-column:1/-1" class="address-field"><label class="label" for="add-location">Company location / address <span class="muted" style="font-weight:400">(optional)</span></label><input class="field" id="add-location" name="location" placeholder="e.g. Berlin, Germany"><p class="hint">Shown publicly on your company page. Leave this blank if you would rather not share an address — city and country are enough to appear in the directory.</p></div>
 </div></div>
-<div class="form-section"><label class="checkrow"><input id="hasBranches" type="checkbox"> Does the company have branches in other EU countries?</label><div id="branchWrap" class="chips" style="margin-top:15px;display:none"></div></div>
+<div class="form-section"><label class="checkrow"><input id="hasBranches" type="checkbox"> Does the company have branches in other EU countries?</label><div id="branchWrap" class="branch-grid" style="display:none"></div></div>
 </section>
 
 <section data-step="2" aria-labelledby="h2" hidden>
@@ -122,7 +122,7 @@ document.getElementById('addFounder').onclick=()=>{const i=founderIndex++;const 
   </label>
   <div class="email-switch-note">Keep this off to keep the email hidden.</div>
 </div>`;n.querySelector('.remove-founder').onclick=()=>n.remove();document.getElementById('founders').appendChild(n)};
-const branchWrap=document.getElementById('branchWrap');branchWrap.innerHTML=Object.keys(KF.countries).map(x=>`<label class="checkrow"><input type="checkbox" value="${KFUI.esc(x)}"> ${KFUI.esc(x)}</label>`).join('');document.getElementById('hasBranches').onchange=e=>branchWrap.style.display=e.target.checked?'flex':'none';
+const branchWrap=document.getElementById('branchWrap');branchWrap.innerHTML=Object.keys(KF.countries).map(x=>`<label><input type="checkbox" value="${KFUI.esc(x)}"> <span class="branch-flag" aria-hidden="true">${KF.countryFlags[x]||''}</span> ${KFUI.esc(x)}</label>`).join('');document.getElementById('hasBranches').onchange=e=>branchWrap.style.display=e.target.checked?'grid':'none';
 const descField=document.getElementById('add-description'),descCount=document.getElementById('descCount');
 function updateDescCount(){descCount.textContent=descField.value.length+' / 300 (at least 40)';}
 descField.addEventListener('input',updateDescCount);
