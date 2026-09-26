@@ -61,19 +61,37 @@ than presenting them as settled:
 - Spain shipped clean — 23 sources, mostly official incl. BOE statute
   text, no comparable sourcing gap.
 
-## In progress — Netherlands Guidance guide
+## Needs your review — Netherlands Guidance guide
 
 Picked ahead of the other 5 gap countries once directory data showed why:
 Netherlands has **31** listed companies — more than Luxembourg, Denmark,
 France, Romania and Slovenia combined (1, 0, 2, 1, 5 respectively) — despite
-sitting at `coming_soon` (target month 2026-11) with zero Guidance content
-written. Denmark specifically has 0 companies right now, so a guide there
-today would be an orphan page with no directory link path; it stays parked
-until that changes. Slovenia (5) is the next reasonable single target after
-Netherlands; Luxembourg/France/Romania are thin enough to batch together
-later rather than treat individually.
+having sat at `coming_soon` (target month 2026-11) with zero Guidance
+content written. Denmark specifically has 0 companies right now, so a guide
+there today would be an orphan page with no directory link path; it stays
+parked until that changes. Slovenia (5) is the next reasonable single
+target after Netherlands; Luxembourg/France/Romania are thin enough to
+batch together later rather than treat individually.
 
-Status: research not yet started as of this entry.
+**Status: written, sourced, passing `scripts/validate-guidance-content.php`,
+sitting at `status: "ready_for_review"`** (not live). Sourcing is unusually
+clean — 25 sources, all `official`/`government_portal` (KVK, Belastingdienst,
+IND, business.gov.nl, Rijksoverheid), no advisor-blog fallbacks needed at
+all, a stronger profile than Germany/Spain/Belgium/Greece. Immigration
+section held back (`hold: true`) as usual. Three things worth a look before
+flipping it live:
+
+- Whether the standard self-employed residence permit is really the typical
+  route for KeralaFounders' audience vs. arriving on an employer-sponsored
+  permit first, and whether any Friendship-Treaty-style shortcut (the
+  US-NL DAFT arrangement) applies to a nationality relevant here — not
+  researched, flagged as an open question instead of guessed at.
+- The zelfstandigenaftrek (self-employment tax deduction) figure is on a
+  steep multi-year glide path down (€2,470 → €1,200 → €900 by 2027) — worth
+  confirming the 2026 figure was read correctly given the unusual swing.
+- The proposed-but-not-yet-law mandatory disability insurance (BAZ) for the
+  self-employed — worth checking the guide's wording is clearly framed as
+  "proposed," not current law.
 
 ## Needs a live-site check
 
