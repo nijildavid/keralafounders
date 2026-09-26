@@ -603,6 +603,249 @@
         "accessed": "2026-09-25"
     },
     {
+        "id": "SI1",
+        "title": "Registration of a sole trader (s.p.) in Slovenia",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/en/info/company-registration/register-as-a-sole-trader-s-p-in-slovenia",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI2",
+        "title": "How to register a company in Slovenia",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/en/info/company-registration/how-to-register-a-company-in-slovenia",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI3",
+        "title": "Limited liability company (d.o.o.)",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/en/info/company-registration/limited-liability-company-d-o-o",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI4",
+        "title": "How can non-EU nationals start a business in Slovenia?",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/en/info/how-can-non-eu-nationals-start-a-business-in-slovenia",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI5",
+        "title": "Value added tax (VAT)",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/en/info/taxes/value-added-tax-vat",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI6",
+        "title": "Davek od dohodkov pravnih oseb (DDPO)",
+        "publisher": "FURS (Financna uprava Republike Slovenije)",
+        "type": "official",
+        "url": "https://www.fu.gov.si/davki_in_druge_dajatve/podrocja/davek_od_dohodkov_pravnih_oseb_ddpo/",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI7",
+        "title": "Value added tax (VAT)",
+        "publisher": "FURS (Financna uprava Republike Slovenije)",
+        "type": "official",
+        "url": "https://www.fu.gov.si/en/taxes_and_other_duties/areas_of_work/value_added_tax_vat/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI8",
+        "title": "Davcni zavezanci in identifikacija za namene DDV",
+        "publisher": "FURS (Financna uprava Republike Slovenije)",
+        "type": "official",
+        "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Davcni_zavezanci_in_identifikacija_za_namene_DDV.doc",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI9",
+        "title": "Posebna ureditev za ugotavljanje davcne osnove z upostevanjem normiranih odhodkov za davek od dohodkov pravnih oseb",
+        "publisher": "FURS (Financna uprava Republike Slovenije)",
+        "type": "official",
+        "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_od_dohodkov_pravnih_oseb/Opis/Posebna_ureditev_za_ugotavljanje_davcne_osnove_z_upostevanjem_normiranih_odhodkov_za_davek_od_dohodkov_pravnih_oseb.doc",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI10",
+        "title": "Pravilnik o dolocitvi usklajenih zneskov olajsav, enacbe za dolocitev olajsave in lestvice za odmero dohodnine za leto 2026",
+        "publisher": "Uradni list Republike Slovenije (Official Gazette)",
+        "type": "official",
+        "url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3538/pravilnik-o-dolocitvi-usklajenih-zneskov-olajsav-enacbe-za-dolocitev-olajsave-in-lestvice-za-odmero-dohodnine-za-leto-2026",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI11",
+        "title": "Obvezni zdravstveni prispevek",
+        "publisher": "ZZZS (Zavod za zdravstveno zavarovanje Slovenije) — Portal za zavezance",
+        "type": "official",
+        "url": "https://zavezanec.zzzs.si/prispevki-za-obvezno-zdravstveno-zavarovanje/obvezni-zdravstveni-prispevek/",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI12",
+        "title": "Registration for compulsory social security insurance (M-1 form)",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/en/info/employees/social-security-and-insurance/registration-for-compulsory-social-security-insurance-m1-form/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI13",
+        "title": "Samozaposlene osebe",
+        "publisher": "ZPIZ (Zavod za pokojninsko in invalidsko zavarovanje Slovenije)",
+        "type": "official",
+        "url": "https://www.zpiz.si/cms/content2019/samozaposlene-osebe",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI14",
+        "title": "Gospodarska zbornica Slovenije ze 174 let pomembno prispeva k boljsemu poslovnemu okolju za slovensko gospodarstvo",
+        "publisher": "GZS (Gospodarska zbornica Slovenije) — Media GZS",
+        "type": "chamber",
+        "url": "https://media.gzs.si/gospodarska-zbornica-slovenije-ze-174-let-pomembno-prispeva-k-boljsemu-poslovnemu-okolju-za-slovensko-gospodarstvo/",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI15",
+        "title": "Clanarina",
+        "publisher": "OZS (Obrtno-podjetniska zbornica Slovenije)",
+        "type": "chamber",
+        "url": "https://www.ozs.si/o-zbornici/clanstvo/clanarina",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI16",
+        "title": "Ukinja se obvezno clanstvo v OZS",
+        "publisher": "Mladipodjetnik.si",
+        "type": "secondary",
+        "url": "https://mladipodjetnik.si/novice-in-dogodki/novice/ukinja-se-obvezno-clanstvo-v-ozs",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI17",
+        "title": "P2 2026 – Incentives for the establishment of innovative companies in 2026",
+        "publisher": "Slovenski podjetniski sklad (Slovene Enterprise Fund)",
+        "type": "official",
+        "url": "https://www.podjetniskisklad.si/en/p2-2026-incentives-for-the-establishment-of-innovative-companies-in-2026/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI18",
+        "title": "Vpis v register dejanskih lastnikov",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/sl/teme/vpis-v-register-dejanskih-lastnikov",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI19",
+        "title": "Enotno dovoljenje",
+        "publisher": "ESS / ZRSZ (Zavod Republike Slovenije za zaposlovanje, Employment Service of Slovenia)",
+        "type": "official",
+        "url": "https://www.ess.gov.si/delodajalci/zaposlovanje-tujcev-iz-tretjih-drzav/enotno-dovoljenje/",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI20",
+        "title": "Enotno dovoljenje za prebivanje in delo drzavljanov tretjih drzav",
+        "publisher": "InfoTujci (state-sponsored information portal for foreigners in Slovenia)",
+        "type": "government_portal",
+        "url": "https://infotujci.si/vsebina/drzavljani-izven-eu/dovoljenje-za-prebivanje/enotno-dovoljenje-za-prebivanje-in-delo-drzavljanov-tretjih-drzav/",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI21",
+        "title": "Davek na dodano vrednost — Racuni (podrobnejsi opis)",
+        "publisher": "FURS (Financna uprava Republike Slovenije)",
+        "type": "official",
+        "url": "https://www.fu.gov.si/fileadmin/Internet/Davki_in_druge_dajatve/Podrocja/Davek_na_dodano_vrednost/Opis/Racuni.doc",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI22",
+        "title": "Zakon o izmenjavi elektronskih racunov in drugih elektronskih dokumentov (ZIERDED)",
+        "publisher": "Uradni list Republike Slovenije (Official Gazette)",
+        "type": "official",
+        "url": "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/2025-01-3032/zakon-o-izmenjavi-elektronskih-racunov-in-drugih-elektronskih-dokumentov-zierded",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI23",
+        "title": "Vodenje poslovnih knjig",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/sl/teme/vodenje-poslovnih-knjig",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI24",
+        "title": "Prispevki za samostojne podjetnike za socialno varnost",
+        "publisher": "Mladipodjetnik.si",
+        "type": "secondary",
+        "url": "https://mladipodjetnik.si/podjetniski-koticek/racunovodstvo/prispevki-za-samostojne-podjetnike-za-socialno-varnost",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI25",
+        "title": "Davek od dohodka iz dejavnosti",
+        "publisher": "SPOT (Slovenia Business Point)",
+        "type": "official",
+        "url": "https://spot.gov.si/sl/teme/davek-od-dohodka-iz-dejavnosti/",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI26",
+        "title": "O nas (SPIRIT Slovenija)",
+        "publisher": "Podjetniski portal (run by SPIRIT Slovenija)",
+        "type": "official",
+        "url": "https://www.podjetniski-portal.si/o-nas",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "SI27",
+        "title": "Popoldanski s.p.: pogoji, prispevki in davki",
+        "publisher": "Mladipodjetnik.si",
+        "type": "secondary",
+        "url": "https://mladipodjetnik.si/podjetniski-koticek/ustanovitev-podjetja/popoldanski-s-p",
+        "language": "sl",
+        "accessed": "2026-09-26"
+    },
+    {
         "id": "ES23",
         "title": "La directiva del IVA que España no aplicó: sanciones europeas y qué cambia para los asesores",
         "publisher": "espacioasesoria.com",

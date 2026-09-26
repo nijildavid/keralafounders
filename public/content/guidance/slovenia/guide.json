@@ -1,0 +1,236 @@
+{
+  "slug": "slovenia",
+  "title": "How to start a company in Slovenia",
+  "summary": "Slovenia gives a founder two main routes: register as a samostojni podjetnik (s.p., sole trader) for a fast, free, low-formality start with unlimited personal liability, or form a druzba z omejeno odgovornostjo (d.o.o., limited liability company) for capped personal liability. Both routes run largely through the same front door: the SPOT (Slovenia Business Point) one-stop-shop system, which registers the business with AJPES and forwards details to FURS, the tax authority.",
+  "last_checked": "2026-09-26",
+  "checked_by": "Nijil",
+  "next_check_due": "2027-03-26",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Slovenia gives a founder two main routes: register as a samostojni podjetnik (s.p., sole trader) for a fast, free start with unlimited personal liability, or form a druzba z omejeno odgovornostjo (d.o.o., limited liability company) for capped personal liability. Both routes run largely through the same front door: the SPOT (Slovenia Business Point, formerly e-VEM) one-stop-shop system, which registers the business with AJPES (the Business Register), forwards tax details to FURS (the tax authority), and can register compulsory social security in the same session. Registration itself is fast by EU standards — a s.p. is typically live within a day or two, and a d.o.o. within about a working week — so the paperwork itself is less of a bottleneck than in many other EU countries. For founders from outside the EU, the residence-and-work permit is usually the slower, more decisive step, not the company registration itself.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Samostojni podjetnik (s.p., sole trader)", "none", "personal, unlimited", "no", "1 to 2 days via SPOT (online, in person, or by post)", "simple bookkeeping if under size thresholds; double-entry above them; or the flat-rate 'normiranec' regime if eligible", "official [SI1]"],
+          ["Druzba z omejeno odgovornostjo (d.o.o., limited liability company)", "EUR 7,500 total (minimum EUR 50 per individual contribution)", "limited to the company's assets", "only for non-cash contributions, deferred cash payment, or more complex structures — not required for the standard cash-capital SPOT route", "about 4 to 5 days via SPOT; a notary route is also available", "double-entry bookkeeping and annual accounts, always", "official [SI3]"]
+        ]
+      },
+      "official_information": [
+        { "text": "A samostojni podjetnik (s.p.) is a natural person independently pursuing a gainful activity on the market. There is no minimum capital requirement, and the owner is personally, unlimitedly liable for the business's debts.", "source_ids": ["SI1"], "confidence": "official" },
+        { "text": "A d.o.o. is a legal person that can be owned by one or more domestic or foreign natural or legal persons; owners are not personally liable for the company's debts beyond their capital contribution. Nominal capital must total at least EUR 7,500, with a minimum of EUR 50 per individual contribution, and this capital must be available to the company for business operations from the day of establishment — paid in cash before the application is submitted, for the standard SPOT route.", "source_ids": ["SI3"], "confidence": "official" },
+        { "text": "A d.o.o. can be single-member or multi-member. For the simplified SPOT registration route, natural-person founders must be registered in Slovenia's central population register (hold an EMSO personal identification number).", "source_ids": ["SI3"], "confidence": "official" },
+        { "text": "A notary is required for a d.o.o. when capital includes non-cash contributions, when cash contributions above EUR 7,500 are paid in on a deferred basis, when a single-member company wants formal written records of its decisions kept in a more complex form, when the company structure is more complex, or when establishing a branch of a foreign company. Outside those situations, both single-member and multi-member d.o.o.s can be registered for free via a SPOT point or the SPOT portal.", "source_ids": ["SI3"], "confidence": "official" },
+        { "text": "Registering a d.o.o. through a notary instead of SPOT is reported at approximately EUR 300 to 500.", "source_ids": ["SI4"], "confidence": "official" },
+        { "text": "Beyond s.p. and d.o.o., Slovenian company law also provides for a d.n.o. (unlimited/general partnership), a k.d. (limited partnership), and a d.d. (public limited company), among other forms. These are used far less often by first-time individual founders and are not covered in detail in this guide.", "source_ids": ["SI2"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "For most first-time founders working alone with modest early revenue, s.p. is the fastest and cheapest way to start invoicing legally — it is free, can be live within a day or two, and avoids the EUR 7,500 capital requirement and mandatory double-entry bookkeeping that come with a d.o.o. Move to a d.o.o. once you want to cap your personal liability, bring in a co-founder or investor, or a client specifically wants to contract with a company rather than an individual.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether personal, unlimited liability (s.p.) is acceptable for now.", "source_ids": [] },
+        { "text": "If forming a d.o.o., decide whether the standard cash-capital SPOT route or a notary fits your situation (see the step-by-step section below).", "source_ids": [] },
+        { "text": "Check whether your planned activity needs a specific licence or falls under a regulated profession before registering.", "source_ids": ["SI1"] }
+      ]
+    },
+    {
+      "id": "sp-variants-worth-knowing",
+      "title": "Worth knowing: the flat-rate ('normiranec') regime and popoldanski s.p.",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "For sole traders, income from activity can alternatively be taxed under a flat-rate ('normiranec') regime using normalised expenses instead of actual documented costs. A sole trader who was not mandatorily insured full-time based on self-employment for at least 75% of the standard full-time annual working-hours fund, looked at cumulatively across the two preceding tax years (in practice, mainly holders of a popoldanski, part-time, s.p.), pays a final tax of 20% on a tax base up to EUR 33,000, and 35% on the portion above that, provided their average income over the previous two years does not exceed EUR 50,000. This tax is final and is not adjusted through the general progressive income-tax scale.", "source_ids": ["SI25"], "confidence": "official" },
+        { "text": "A parallel flat-rate ('normirani odhodki') regime exists under the corporate income tax rules, available to a business (including a small company) whose income in the previous year did not exceed EUR 50,000, or EUR 100,000 if it kept at least one person in mandatory full-time insurance for a minimum of 5 months of the year. Under this regime, standardised expenses of 80% of tax-recognised income are deducted (capped at EUR 40,000, or EUR 80,000 if the employment condition is met), instead of actual documented expenses. A business must exit the regime if its average income over two consecutive tax periods exceeds EUR 150,000 (with an extension to remain if two-year cumulative income stays within EUR 300,000).", "source_ids": ["SI9"], "confidence": "official" },
+        { "text": "A 'popoldanski s.p.' is the common term for a sole trader registration held by someone who is simultaneously employed full-time (40 hours/week) with another employer. It is a recognised, commonly used route for testing a business idea alongside a job. It was removed as an option for students in 2013, and is generally not compatible with drawing a full pension.", "source_ids": ["SI27"], "confidence": "secondary" },
+        { "text": "A popoldanski s.p. pays a flat monthly social-security contribution rather than the usual income-based self-employed contributions — reported at EUR 113.01/month from around April 2026 (the flat amount is adjusted periodically) — due regardless of whether any income was earned that month, and payable by the 20th of the following month.", "source_ids": ["SI27"], "confidence": "secondary" },
+        { "text": "A person registering their first-ever s.p. as their primary (full-time) activity gets a partial exemption from pension and disability insurance (PIZ) contributions: 50% off in the first 12 months and 30% off in the following 12 months. This 24-month relief is available only once, to someone who has never previously been registered for an independent activity in any register.", "source_ids": ["SI13"], "confidence": "official" },
+        { "text": "This relief is understood to require a primary (full-time) s.p., so a popoldanski (part-time) s.p. — which pays a flat contribution rather than one based on an income base the relief could discount — would not qualify. This specific exclusion is not explicitly stated on the cited ZPIZ page itself, so it's flagged here as a reasonable inference rather than a directly confirmed fact.", "source_ids": ["SI13"], "confidence": "secondary" }
+      ],
+      "expert_interpretation": [
+        { "text": "If you're keeping a day job while testing a Slovenian side business, a popoldanski s.p. is worth understanding early: it changes both your monthly cost (a small flat fee instead of income-based contributions) and your tax treatment (a separate flat/final-tax regime), and it isn't available to everyone (for example, not to students). If you plan to make the business your main income from the start, decide up front whether to register a full, primary s.p. instead, since the new-founder PIZ relief above only applies to that route.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Check whether the normiranec (flat-rate expense) regime could simplify your bookkeeping and lower your effective tax rate.", "source_ids": ["SI9", "SI25"] },
+        { "text": "If you're employed full-time elsewhere, ask SPOT or an accountant whether a popoldanski s.p. suits your situation before registering a full s.p.", "source_ids": ["SI27"] },
+        { "text": "If registering your first-ever primary s.p., confirm you qualify for the new-founder PIZ contribution relief (50%/30%) when you register.", "source_ids": ["SI13"] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, s.p. via SPOT and AJPES",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Choose your activity classification (SKD code) and check whether it needs a specific licence or approval before you can register.", "source_ids": ["SI1"], "confidence": "official" },
+        { "text": "2. Register via the SPOT portal online (requires a Slovenian digital certificate), in person at a SPOT point (free, with advisory support), or by post with a verified signature.", "source_ids": ["SI1"], "confidence": "official" },
+        { "text": "3. Documents needed: valid personal identification, your tax identification number, and — if you don't own the business premises — a verified declaration of consent from the building's owner.", "source_ids": ["SI1"], "confidence": "official" },
+        { "text": "4. AJPES decides on the registration; it is typically live within 1 to 2 days, with AJPES publishing the registration decision on its website within about 2 to 3 days. Registration itself is free (EUR 0).", "source_ids": ["SI1"], "confidence": "official" },
+        { "text": "5. Within 8 days of registering, you must enrol in compulsory health insurance if you aren't already covered through employment, and submit a tax registration application to FURS declaring your accounting method (double-entry, simplified single-entry, or the flat-rate/normiranec regime).", "source_ids": ["SI1"], "confidence": "official" },
+        { "text": "6. Compulsory social security — pension/disability (ZPIZ), health (ZZZS), plus parental-care and unemployment insurance — is registered using the M-1 form, submitted electronically via SPOT or in paper form at a SPOT point or ZZZS regional office, within 8 days of when the insurance obligation takes effect.", "source_ids": ["SI12"], "confidence": "official" },
+        { "text": "7. You can use a personal bank account or open a dedicated business (type T) account.", "source_ids": ["SI1"], "confidence": "official" },
+        { "text": "8. Registration will be refused if the applicant appears on tax-defaulter lists from the last 12 months, held more than a 25% share in a defaulting company, held more than 50% ownership of a d.o.o. dissolved in the last year, received two Labour Inspectorate fines for undeclared work within a 3-year period, has certain criminal convictions on record, or owes company capital-preservation penalties. Someone undergoing personal bankruptcy needs court authorisation to register.", "source_ids": ["SI1"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "If you don't already hold a Slovenian qualified digital certificate, registering in person at a SPOT point is usually the simplest route for a first-time founder — it's free, staff can help you pick the right activity classification, and it avoids the digital-certificate setup the online SPOT portal requires.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Choose your activity code (SKD) and check for any licence requirement.", "source_ids": ["SI1"] },
+        { "text": "Register via the SPOT portal, a SPOT point, or by post.", "source_ids": ["SI1"] },
+        { "text": "Bring valid ID, your tax ID, and (if needed) the property owner's consent declaration.", "source_ids": ["SI1"] },
+        { "text": "Within 8 days: arrange health insurance and submit your accounting-method declaration to FURS.", "source_ids": ["SI1"] },
+        { "text": "Within 8 days: submit the M-1 form for compulsory social security.", "source_ids": ["SI12"] },
+        { "text": "Decide whether to use a personal account or open a business account.", "source_ids": ["SI1"] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, d.o.o.",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Check your company name is not already used in AJPES's Business Register.", "source_ids": ["SI2"], "confidence": "official" },
+        { "text": "2. Decide on a business address; if you don't own the premises, attach the property owner's certified consent to the application.", "source_ids": ["SI2"], "confidence": "official" },
+        { "text": "3. Decide the registration channel: the SPOT portal (needs a digital certificate, free), a SPOT point in person (free), or a notary (required in the situations described in the legal-forms section; reported at EUR 300 to 500).", "source_ids": ["SI3", "SI4"], "confidence": "official" },
+        { "text": "4. Pay the minimum EUR 7,500 capital (at least EUR 50 per contribution) into a bank account before applying via the standard SPOT route, and bring proof of the deposit if registering at a SPOT point.", "source_ids": ["SI3"], "confidence": "official" },
+        { "text": "5. AJPES registers the company within about 4 to 5 days, regardless of which of the three channels was used.", "source_ids": ["SI3"], "confidence": "official" },
+        { "text": "6. Once registered, register the company's beneficial owner(s) with AJPES's Register of Beneficial Owners (RDL) within 8 days of the Business Register entry. Sole traders are exempt from this requirement, but a d.o.o. is not.", "source_ids": ["SI18"], "confidence": "official" },
+        { "text": "7. Within 8 days of registration, submit a tax registration application to FURS. A d.o.o. must keep double-entry bookkeeping regardless of its size — there is no simplified-bookkeeping option for companies the way there is for sole traders.", "source_ids": ["SI23"], "confidence": "official" },
+        { "text": "8. Register for VAT once (or if) the turnover threshold is crossed (see the taxes section).", "source_ids": ["SI7", "SI8"], "confidence": "official" },
+        { "text": "9. Register any employees, or a working managing director, for compulsory social security via the M-1 form.", "source_ids": ["SI12"], "confidence": "official" },
+        { "text": "10. Ongoing: file annual accounts with AJPES and a corporate income tax (DDPO) return with FURS — the DDPO return for a given year is due by 31 March of the following year, filed electronically via eDavki.", "source_ids": ["SI6"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "The EUR 7,500 minimum capital isn't locked away — once the company is registered, it can be spent on normal business costs. Where the SPOT-versus-notary choice actually matters in practice is if you plan to contribute equipment, property, or other non-cash assets instead of paying the full amount in cash, or if you want custom governance terms rather than the standard template: budget for a notary and a little more time in that case.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Check your company name against AJPES's Business Register.", "source_ids": ["SI2"] },
+        { "text": "Confirm your business address and any owner's-consent paperwork.", "source_ids": ["SI2"] },
+        { "text": "Choose SPOT portal, SPOT point, or notary.", "source_ids": ["SI3", "SI4"] },
+        { "text": "Deposit the minimum EUR 7,500 capital before applying.", "source_ids": ["SI3"] },
+        { "text": "Register beneficial owners in the RDL within 8 days of the Business Register entry.", "source_ids": ["SI18"] },
+        { "text": "Submit your tax registration to FURS within 8 days and set up double-entry bookkeeping.", "source_ids": ["SI23"] },
+        { "text": "Register any employees or a working director for social security via M-1.", "source_ids": ["SI12"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "VAT (DDV) standard rate is 22%; a reduced rate of 9.5% applies to specified goods and services.", "source_ids": ["SI5", "SI7"], "confidence": "official" },
+        { "text": "FURS's own current guidance states the small-taxpayer VAT exemption threshold is EUR 60,000 of annual turnover in Slovenia: a business under this can stay outside the DDV system. If turnover in the current year is between EUR 60,000 and EUR 66,000, form DDV-P2 must be filed in time for DDV to apply from 1 January of the following year; if turnover in the current year exceeds EUR 66,000, VAT must be charged from the transaction that crosses that amount. Voluntary registration below the threshold is possible, but locks the business into the DDV system for at least the current and following calendar year.", "source_ids": ["SI8"], "confidence": "official" },
+        { "text": "Conflict for reviewer: SPOT's own English-language VAT page still states the exemption threshold as EUR 50,000, which appears to be the pre-1-January-2025 figure (the threshold was raised to EUR 60,000 from that date, per secondary reporting). FURS's own page (used above) is the more detailed and internally consistent source, so this guide uses EUR 60,000/66,000 — but the SPOT English page should be checked directly with FURS or an accountant before this is relied on for a specific filing decision.", "source_ids": ["SI5", "SI8"], "confidence": "hold" },
+        { "text": "Income tax (dohodnina) 2026 brackets for sole traders (on top of a general allowance of EUR 5,551.93/year): 16% up to EUR 9,721.43; EUR 1,555.43 plus 26% on the portion from EUR 9,721.43 to EUR 28,592.44; EUR 6,461.89 plus 33% from EUR 28,592.44 to EUR 57,184.88; EUR 15,897.40 plus 39% from EUR 57,184.88 to EUR 82,346.23; EUR 25,710.33 plus 50% above EUR 82,346.23.", "source_ids": ["SI10"], "confidence": "official" },
+        { "text": "Corporate income tax (DDPO) for a d.o.o.: the standard statutory rate is 19%, but a temporarily increased rate of 22% applies for tax years 2024 through 2028 under the law funding flood-reconstruction works, reverting to 19% from 2029.", "source_ids": ["SI6"], "confidence": "official" },
+        { "text": "A flat-rate ('normiranec') alternative to standard income/corporate tax exists for both sole traders and small companies below certain income thresholds — see the 'Worth knowing' section above for the mechanics.", "source_ids": ["SI9", "SI25"], "confidence": "official" },
+        { "text": "Standard invoice content required under the VAT Act (ZDDV-1, Article 82) includes: invoice date and sequential number, VAT identification numbers of the supplier and customer (where applicable), name and address of both parties, description/quantity of goods or services, supply date, tax base and VAT rate per rate category, and the VAT amount. A simplified invoice (Article 83) is allowed when the amount, excluding VAT, does not exceed EUR 100.", "source_ids": ["SI21"], "confidence": "official" },
+        { "text": "Mandatory business-to-business e-invoicing takes effect on 1 January 2028, under a law adopted 23 October 2025 (Zakon o izmenjavi elektronskih racunov in drugih elektronskih dokumentov, ZIERDED; Official Gazette of the Republic of Slovenia no. 85/2025): business entities in the Business Register and natural persons doing business will be required to exchange e-invoices for mutual supplies of goods and services, in the e-SLOG standard or another EN-16931-aligned format, sent via a registered e-path provider, the Peppol network, or a direct system-to-system connection. Ordinary email is not an accepted exchange channel.", "source_ids": ["SI22"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "For most new founders in the first year or two, the practical order of operations is: confirm whether you're under the VAT exemption threshold and want to stay there; decide whether the flat-rate (normiranec) regime suits your kind of business, since it trades a slightly blunt expense assumption for much simpler bookkeeping; and only then think about the 2028 e-invoicing mandate, which is still some way off and not yet something you need software for today.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm whether you're under the VAT exemption threshold, and whether you want to register voluntarily.", "source_ids": ["SI8"] },
+        { "text": "Decide with an accountant whether the normiranec flat-rate regime suits your business.", "source_ids": ["SI9", "SI25"] },
+        { "text": "Set up invoicing that meets ZDDV-1's content requirements.", "source_ids": ["SI21"] },
+        { "text": "Note the 1 January 2028 mandatory B2B e-invoicing date for future planning.", "source_ids": ["SI22"] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security, chamber membership, funding",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Sole traders and d.o.o. managing directors register for compulsory social security using the M-1 form, covering pension/disability (ZPIZ), health (ZZZS), parental-care, and unemployment insurance, within 8 days of the insurance obligation starting.", "source_ids": ["SI12"], "confidence": "official" },
+        { "text": "For a full-time self-employed person, pension and disability insurance (PIZ) contributions total 24.35% of the insurance base (15.5% plus 8.85%, both paid by the self-employed person themselves). The insurance base is based on the person's activity profit less 25%, subject to a minimum of 60% and a maximum of 350% of the national average annual wage, calculated monthly; the base can be voluntarily reduced by up to 20% if expected income is lower, but not below the legal minimum.", "source_ids": ["SI13"], "confidence": "official" },
+        { "text": "A person registering their first-ever s.p. as a primary/full-time activity gets a 50% reduction on these PIZ contributions in the first 12 months and a 30% reduction in the following 12 months; this 'first registration' condition is not met by someone who has ever previously been registered for an independent activity in any register.", "source_ids": ["SI13"], "confidence": "official" },
+        { "text": "This relief is understood to require a primary (full-time) s.p., so a popoldanski (part-time) s.p. would not qualify — a reasonable inference given a popoldanski s.p. pays a flat contribution rather than one based on an income base the relief could discount, but not a detail explicitly stated on the cited ZPIZ page.", "source_ids": ["SI13"], "confidence": "secondary" },
+        { "text": "Separately from PIZ, everyone insured under Slovenia's mandatory health insurance system — including the self-employed — pays a flat mandatory health contribution (obvezni zdravstveni prispevek, OZP), currently EUR 39.36/month for the period 1 March 2026 to 28 February 2027; it adjusts each 1 March based on the prior year's wage growth. For the self-employed, FURS bills this alongside their other social-security contributions, and it is due in full even during months of reduced income or benefit receipt.", "source_ids": ["SI11"], "confidence": "official" },
+        { "text": "Reported (secondary; not independently confirmed on an official FURS or ZPIZ page giving the current-year total in one place): a full-time s.p. paying from the legal minimum base is reported to owe about EUR 651.04/month in total contributions from March 2026, or about EUR 463.60/month in their first year of business once the 50% PIZ relief above is applied.", "source_ids": ["SI24"], "confidence": "secondary" },
+        { "text": "Chamber membership is not compulsory for either a s.p. or a d.o.o. in Slovenia today. The Chamber of Commerce and Industry of Slovenia (GZS) has been a voluntary-membership chamber since 2006, under the law on chambers of commerce.", "source_ids": ["SI14"], "confidence": "official" },
+        { "text": "The Chamber of Craft and Small Business of Slovenia (OZS) also moved from compulsory to voluntary membership; its current fee for a self-employed person, or a single-owner company where the owner is employed by and runs the business, is EUR 27.26/month (about EUR 272.60/year if paid annually by the end of February).", "source_ids": ["SI15"], "confidence": "official" },
+        { "text": "OZS membership became voluntary from 1 January 2013, following a change to the Craft Act (Obrtni zakon) and a 2012 member referendum, mirroring GZS's earlier move.", "source_ids": ["SI16"], "confidence": "secondary" },
+        { "text": "SPIRIT Slovenija is the state public agency for entrepreneurship, investment promotion, and internationalisation; it runs free advisory services, training, and networking programmes for founders through its Podjetniski portal (Entrepreneurial Portal).", "source_ids": ["SI26"], "confidence": "official" },
+        { "text": "The Slovenian Enterprise Fund (Slovenski podjetniski sklad, SPS) runs annual grant and loan programmes for founders. Its P2 2026 call ('Incentives for the establishment of innovative companies') offered up to EUR 72,000 in non-repayable grants, paid across three milestones, to micro/small companies registered between 1 January 2025 and 28 February 2026 developing innovative, market-oriented products aligned with Slovenia's Smart Specialisation Strategy. This specific call's application deadline (12 March 2026) has already passed as of this check — check podjetniskisklad.si directly for the current year's equivalent call and eligibility window.", "source_ids": ["SI17"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Contribution figures for the self-employed change at least once a year — the minimum insurance base moves with the national average wage, and the flat health contribution resets every 1 March — so treat any specific EUR figure here as a snapshot and re-check with FURS, ZPIZ, or an accountant before budgeting precisely. Chamber membership being voluntary in Slovenia is a genuine cost saver compared with countries where a form of chamber membership is compulsory — but GZS or OZS membership can still be worth paying for the trade credentials, networking, or specific member services they offer.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Register for compulsory social security via the M-1 form within 8 days.", "source_ids": ["SI12"] },
+        { "text": "Confirm your insurance base and whether the new-founder PIZ relief applies to you.", "source_ids": ["SI13"] },
+        { "text": "Budget for the flat mandatory health contribution on top of income-based contributions.", "source_ids": ["SI11"] },
+        { "text": "Don't budget for a mandatory chamber fee — GZS and OZS are both voluntary — but look at what each offers.", "source_ids": ["SI14", "SI15"] },
+        { "text": "Check SPIRIT Slovenija's portal and podjetniskisklad.si for current grant and loan calls before spending on consultants.", "source_ids": ["SI26", "SI17"] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "SI4",
+      "internal_notes": "Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the build doc's publishing gates). Most figures below come from a single SPOT overview page (SI4), which is thinner on this topic than SPOT's company-registration pages; a reviewer should independently verify the EUR 30,000 / EUR 10,000 investment figures and the fee/timeline figures against ZRSZ or MNZ (Ministry of the Interior) sources before this is trusted for anything specific.",
+      "open_questions_for_reviewer": [
+        "Are the EUR 30,000 (foreign representative) and EUR 10,000 (sole trader) investment/resource figures still current, and on which legal provision are they based? Only found on one secondary-leaning SPOT overview page (SI4), not cross-checked against ZRSZ's or MNZ's own detailed rules.",
+        "How exactly does the 'enotno dovoljenje' (single permit) process described by ZRSZ/ESS (SI19) for employees map onto a founder who wants to be self-employed (s.p.) or a company director, rather than an employee? SI19's page content fetched this session was mostly about employment-based permits, not self-employment specifically.",
+        "Is the one-year prior lawful residence requirement for self-employment, and its exception for someone already registered in the Business Register as planning independent activity (SI19), accurately and completely described here? This nuance (residence requirement waived vs not) needs confirmation from a primary legal source (Zakon o tujcih) or an immigration lawyer.",
+        "What are the current official processing times and fees specifically for a self-employment or company-director permit (as opposed to the general 15-day ZRSZ consent step referenced in SI19)?",
+        "A later audit pass found infotujci.si's dedicated self-employment-permit page, which states the self-employment permit runs for a maximum of two years, not the one-year-renewable term this section currently states — and separately says ZRSZ consent is not required for the self-employment route specifically (unlike the general process this section describes). Neither figure was reconciled against the other before this guide was drafted; a reviewer should resolve which is current before anything about permit duration is trusted.",
+        "Is there any Slovenia-specific 'startup' or innovative-founder residence route (as some other EU countries have), distinct from the general self-employment/investor routes described here? Not found on an official page this session.",
+        "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"
+      ],
+      "official_information": [
+        { "text": "EU/EEA/Swiss nationals need no special permit to be self-employed or run a company in Slovenia. Third-country nationals generally need a visa to enter and then a residence-and-work authorisation before starting self-employment or running a company.", "source_ids": ["SI4"], "confidence": "hold" },
+        { "text": "Non-EU founders can register a business (s.p. or d.o.o.) through the same SPOT/notary channels as anyone else, typically within about a week; registering the company does not by itself grant the right to reside or work in Slovenia.", "source_ids": ["SI4"], "confidence": "hold" },
+        { "text": "All non-EU nationals working or self-employed in Slovenia need a single residence-and-work permit ('enotno dovoljenje'); the Employment Service of Slovenia (ZRSZ) gives its consent as part of one combined application processed by administrative units, without a separate standalone work-permit application. ZRSZ aims to decide on its consent within 15 days of receiving the application.", "source_ids": ["SI19", "SI20"], "confidence": "hold" },
+        { "text": "For a foreign representative/director of a company with 10 or fewer employees (limited to one foreign representative per company), a work permit is reported as available for up to 2 years, renewable, conditional on a minimum reported investment of EUR 30,000 if the company has been operating for less than 6 months. A majority owner (51% or more) is reported to get employment permission without a labour-market test.", "source_ids": ["SI4"], "confidence": "hold" },
+        { "text": "For a sole trader (s.p.), a personal work permit for self-employment is reported as valid for one year, renewable, requiring one year of continuous prior lawful residence, about EUR 10,000 in financial resources, and proof of business premises.", "source_ids": ["SI4"], "confidence": "hold" },
+        { "text": "Reported average processing time for this type of permit is 30 to 60 days, at a reported cost of about EUR 90.", "source_ids": ["SI4"], "confidence": "hold" },
+        { "text": "Separately, the Employment Service of Slovenia states that a foreign national can become self-employed after one year of continuous lawful residence, unless they are already registered in the Business Register as someone who will perform independent professional activity, in which case this one-year residence requirement does not apply. It is not confirmed on an official page this session how this interacts with the s.p.-specific permit requirements described above.", "source_ids": ["SI19"], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}

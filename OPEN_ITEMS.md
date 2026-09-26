@@ -4,6 +4,46 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
+## Resolved — Slovenia Guidance guide
+
+Next after Netherlands per the directory-data-driven priority order: Slovenia
+has 5 listed companies, more than Luxembourg (1), France (2) or Romania (1),
+though fewer than Netherlands (31). After this, Luxembourg/France/Romania are
+thin enough to batch together rather than treat individually; Denmark
+(0 companies) stays parked until it has at least one.
+
+**Status: `live`.** Written, sourced, independently audited, and fixed —
+27 sources, 24 of them
+official/chamber/government-portal (SPOT, FURS, ZPIZ, ZZZS, AJPES, the
+Employment Service, Uradni list RS — Slovenia's Official Gazette), 3
+secondary (flagged inline, not dressed up as official). Includes a
+Slovenia-specific section on the "normiranec" flat-rate tax regime and
+"popoldanski s.p." (running a sole-trader business part-time alongside a
+job) — the local analogue to Netherlands' false-self-employment section.
+
+An independent `european-business-lawyer` audit re-fetched all 27 sources
+(full coverage, zero dead links) and **resolved** the VAT-threshold conflict
+the original research flagged: FURS's EUR 60,000/66,000 figure is correct
+and current (independently corroborated via the EU Commission's own
+Slovenia SME-VAT page); SPOT's English page, still showing EUR 50,000, is
+simply stale. The audit found and this session fixed two narrower
+overclaims — a PIZ new-founder relief detail and a normiranec eligibility
+test that didn't quite match their cited sources' actual wording — both now
+corrected or downgraded to secondary confidence.
+
+Still worth a look:
+
+- The residence-permit section stays fully held (`hold: true`) — it rests
+  on one SPOT overview page rather than a dedicated immigration-authority
+  source, and the audit surfaced a further discrepancy for the eventual
+  immigration-lawyer review: a second official-adjacent page states the
+  self-employment permit runs for up to 2 years, not the 1-year-renewable
+  term the guide's held content currently states. Logged in the guide's own
+  `open_questions_for_reviewer` list.
+- The popoldanski-s.p. and normiranec figures are all dated 2026 —
+  Slovenian contribution bases and thresholds move at least annually, so
+  worth confirming they still hold whenever this actually goes live.
+
 ## Resolved — Guidance content expansion (pilot)
 
 Goal: grow search-indexable content for SEO/traffic by filling the mostly-
