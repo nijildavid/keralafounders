@@ -880,5 +880,228 @@
         "origin_ref": null,
         "status": "hold",
         "hold": true
+    },
+    {
+        "id": "nl-legal-forms-basic",
+        "country": "netherlands",
+        "topic": "company",
+        "question": "What's the difference between an eenmanszaak and a bv in the Netherlands?",
+        "answer": "An eenmanszaak (sole proprietorship) has one personally liable owner and no minimum capital. A bv (private limited company) is a separate legal entity set up through a notary; the owner isn't personally liable for company debts beyond what they invested, barring mismanagement.",
+        "source_ids": [
+            "NL1"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-vof-liability",
+        "country": "netherlands",
+        "topic": "company",
+        "question": "How does liability work in a vof (general partnership)?",
+        "answer": "All partners are personally liable for the vof's debts, including debts run up by another partner. No notary is needed to set one up; a vof must have at least two partners.",
+        "source_ids": [
+            "NL12"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-kvk-fee",
+        "country": "netherlands",
+        "topic": "fees",
+        "question": "How much does it cost to register a business with KVK?",
+        "answer": "A one-off fee of EUR 85.15, paid once when you first register in the Business Register. There is no separate annual KVK fee.",
+        "source_ids": [
+            "NL2"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-vat-registration-auto",
+        "country": "netherlands",
+        "topic": "tax",
+        "question": "Do I need to register for VAT separately from my KVK registration?",
+        "answer": "Not for a sole proprietorship: KVK automatically passes your details to the Belastingdienst, who post you a VAT identification number and VAT number, typically within about 2 weeks. A bv or nv is registered with the Belastingdienst separately by the notary, who also arranges its RSIN.",
+        "source_ids": [
+            "NL23"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-kor-threshold",
+        "country": "netherlands",
+        "topic": "tax",
+        "question": "What is the Dutch small-business VAT scheme (KOR) and what's its turnover limit?",
+        "answer": "The kleineondernemersregeling (KOR) is open to businesses established in the Netherlands with annual turnover up to EUR 20,000. Under it you don't charge VAT, don't file VAT returns, and can't reclaim VAT on costs. Registration must reach the Belastingdienst at least 4 weeks before the filing period you want it to start in, and only after you've already received your VAT number.",
+        "source_ids": [
+            "NL5",
+            "NL6"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-vat-rates",
+        "country": "netherlands",
+        "topic": "tax",
+        "question": "What are the Dutch VAT (btw) rates?",
+        "answer": "21% general rate, 9% reduced rate (foodstuffs and certain other goods/services), and 0% for a defined list mainly covering international transactions.",
+        "source_ids": [
+            "NL7"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-zelfstandigenaftrek",
+        "country": "netherlands",
+        "topic": "tax",
+        "question": "What is the zelfstandigenaftrek and how much is it in 2026?",
+        "answer": "EUR 1,200 in 2026, a self-employed income-tax deduction that requires meeting the 1,225-hour-worked criterion. It has been falling steadily (EUR 2,470 in 2025) and is due to fall further to EUR 900 in 2027.",
+        "source_ids": [
+            "NL9"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-corporate-tax",
+        "country": "netherlands",
+        "topic": "tax",
+        "question": "What corporate tax rate does a bv pay?",
+        "answer": "19.0% on taxable profit up to EUR 200,000, and 25.8% on the portion above that (2026 rates).",
+        "source_ids": [
+            "NL8"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-bv-capital",
+        "country": "netherlands",
+        "topic": "company",
+        "question": "How much capital do I need to set up a bv?",
+        "answer": "There's no statutory minimum share capital. KVK's own guidance describes funding the company bank account with as little as EUR 0.01, though notary fees to set up the bv itself are reported at EUR 500 to 1,500.",
+        "source_ids": [
+            "NL10"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-ubo-eenmanszaak",
+        "country": "netherlands",
+        "topic": "company",
+        "question": "Do I need to register in the UBO register as a sole trader?",
+        "answer": "No. Eenmanszaken (sole proprietorships) are explicitly exempt from UBO registration. A vof or a bv does need to register its UBOs (broadly, anyone with over 25% ownership or control).",
+        "source_ids": [
+            "NL13",
+            "NL14"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-health-insurance",
+        "country": "netherlands",
+        "topic": "social",
+        "question": "Is health insurance mandatory for the self-employed in the Netherlands, and what does it cost?",
+        "answer": "Yes, basic health insurance is mandatory for everyone living in the Netherlands, including the self-employed. The average premium in 2026 is EUR 1,884 a year (about EUR 157 a month).",
+        "source_ids": [
+            "NL16"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-schijnzelfstandigheid",
+        "country": "netherlands",
+        "topic": "tax",
+        "question": "What is schijnzelfstandigheid and why does it matter for zzp'ers?",
+        "answer": "It's the Belastingdienst's term for false self-employment: invoicing as self-employed while the actual working relationship looks like a job. Since 1 January 2025 the Belastingdienst enforces this normally again, issuing back-tax assessments as soon as it's found (with fines possible from 1 January 2026) — a real risk if you work continuously for one client under their direction.",
+        "source_ids": [
+            "NL24"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-microcredit",
+        "country": "netherlands",
+        "topic": "funding",
+        "question": "Can I get a startup loan from Qredits?",
+        "answer": "Yes. Qredits offers a microkrediet business loan up to EUR 50,000 for starting or existing entrepreneurs with a solid business plan (plus coaching if you don't have one yet), and a larger mkb-krediet of EUR 50,000 to 250,000 for bigger needs.",
+        "source_ids": [
+            "NL17"
+        ],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "nl-visa-selfemployed",
+        "country": "netherlands",
+        "topic": "visa",
+        "question": "Can I get a Dutch residence permit as a self-employed founder?",
+        "answer": "Not yet answered here — under legal review.",
+        "source_ids": [],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "nl-visa-startup",
+        "country": "netherlands",
+        "topic": "visa",
+        "question": "Is there a Dutch startup visa for non-EU founders?",
+        "answer": "Not yet answered here — under legal review.",
+        "source_ids": [],
+        "last_checked": "2026-09-26",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
     }
 ]
