@@ -4,7 +4,7 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
-## Needs your review — Guidance content expansion (pilot)
+## Resolved — Guidance content expansion (pilot)
 
 Goal: grow search-indexable content for SEO/traffic by filling the mostly-
 empty Guidance section (`public/content/guidance/`, see `CLAUDE.md`). Only
@@ -32,28 +32,34 @@ Plan (summarized here so it isn't lost):
   skill only, which never states a fact not read on a live official source
   in-session — same rule Germany's guide was built under.
 
-**Status: all three pilot guides written, sourced, and passing
-`scripts/validate-guidance-content.php`; all sitting at `status:
-"ready_for_review"` in `countries.json`, not live.** Each has an immigration
-section held back (`hold: true`) exactly like Germany's, and each guide
-flags a few specific things worth your eyes before you flip it live:
+**Status: all three pilot guides are `live`** (Spain, then Belgium and
+Greece after Nijil reviewed each and chose to ship as-is). Each has an
+immigration section held back (`hold: true`) exactly like Germany's. Two
+sourcing gaps were deliberately shipped rather than blocked on, since the
+guides already state the affected figures at `secondary` confidence rather
+than presenting them as settled:
 
-- **Spain** (23 sources, mostly official incl. BOE statute text): whether
-  the general self-employment permit or the Ley 14/2013 entrepreneur-visa
-  route is the more realistic one to describe for a typical reader; and a
-  live EU-vs-Spain legal dispute over the small-business VAT threshold that
-  could resolve either way before the next check.
 - **Belgium**, Brussels-Capital Region edition (27 sources): several
   Belgian federal sites (tax authority, immigration office, Flanders'
-  economic agency) blocked every fetch attempt with bot protection, so
-  federal-level sourcing is thinner than regional; worth a follow-up check
-  once those domains are reachable, especially the VAT threshold figure.
-- **Greece** (23 sources): aade.gr and gov.gr returned errors on every
-  attempt, so sourcing leans on chamber/portal mirrors instead of the tax
-  authority directly; also found a genuine conflict between two official
-  government pages on the Golden Visa minimum-investment amount (€250k vs.
-  €400k/€800k under a newer law) that's flagged in the guide rather than
-  silently picked.
+  economic agency) blocked every fetch attempt with bot protection, both
+  during initial research and on a same-day retry — confirmed to be a
+  standing block, not a one-off. The small-business VAT threshold (€25,000,
+  reportedly rising to €30,000 from 2027) is sourced from two independent
+  accounting firms and an EU Commission page, never Belgium's own tax
+  authority directly. Worth a from-a-browser check against the EU's TEDB
+  tool (sme-vat-rules.ec.europa.eu → national threshold lookup) at the next
+  6-month check — it's a JS app that automated tools here couldn't render.
+- **Greece** (23 sources): aade.gr, gov.gr and mfa.gr returned errors on
+  every attempt, both during initial research and on a same-day retry.
+  Sourcing leans on chamber/portal mirrors instead of the tax authority
+  directly. A genuine conflict between two official government pages on the
+  Golden Visa minimum-investment amount (€250k vs. €400k/€800k under a
+  newer law) was found and left unresolved in the guide rather than
+  silently picked — still worth resolving whenever those sites become
+  reachable, since Golden Visa content stays hidden (`hold: true`) until
+  then regardless.
+- Spain shipped clean — 23 sources, mostly official incl. BOE statute
+  text, no comparable sourcing gap.
 
 ## Needs a live-site check
 
