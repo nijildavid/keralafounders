@@ -4,6 +4,37 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
+## Resolved — Guidance presentation layer
+
+After all 6 guides went live, a `deep-thinker`/`day-to-day-thinker` gut-check
+asked the real question: would a founder actually read 2,000+ words of
+citation-heavy legal/tax prose per guide, or is this built mainly to be
+crawled? Answer: it's genuinely useful reference material, but the page
+asked too much of a first-time visitor before showing anything scannable.
+A `senior-product-designer` pass (piloted first on Netherlands, reviewed via
+an interactive design-preview Artifact before rolling out) added three
+things on top of the existing content, without touching any sourced claim,
+confidence tag, or citation:
+
+- **Quick facts strip** near the top of each guide — cheapest route, typical
+  cost, typical time, biggest gotcha — each one a restatement of a fact
+  already cited elsewhere on the same page (same `source_ids`).
+- **A plain "your step-by-step checklist"** — one short, human-readable,
+  do-this-in-order list distinct from the existing per-section "Checklist"
+  lists (which stay as detailed, sourced reference material).
+- **Collapsible sections**: dense sections (taxes, legal forms, social
+  security) now start closed (native `<details>`), short ones stay open.
+  Full text is still in the DOM either way, so this doesn't affect SEO
+  indexing — confirmed via `guidance_section_html()` rendering the same
+  markup either way, just wrapped.
+
+`quick_facts` and `founder_checklist` are new optional `guide.json` fields,
+validated by `scripts/validate-guidance-content.php` (source IDs must
+already exist; `section_id` on a checklist item must reference a real
+section). Rolled out to all 6 live guides (Germany, Netherlands, Spain,
+Belgium, Greece, Slovenia) in one pass. **Status: merged and deployed**
+(`keralafounders#32`).
+
 ## Resolved — Slovenia Guidance guide
 
 Next after Netherlands per the directory-data-driven priority order: Slovenia
