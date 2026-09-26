@@ -3,14 +3,19 @@ CREATE TABLE IF NOT EXISTS companies (
   slug VARCHAR(160) NOT NULL UNIQUE,
   name VARCHAR(160) NOT NULL,
   website VARCHAR(255) NULL,
+  instagram VARCHAR(120) NULL,
+  contact_ok_podcast_stories TINYINT(1) NOT NULL DEFAULT 0,
+  contact_permission_at TIMESTAMP NULL,
   industry VARCHAR(80) NOT NULL,
   business_type VARCHAR(60) NOT NULL DEFAULT '',
   industry_detail VARCHAR(160) NULL,
+  kerala_connection VARCHAR(60) NULL,
+  kerala_district VARCHAR(60) NULL,
   size VARCHAR(20) NULL,
   founded_year SMALLINT NULL,
   country VARCHAR(80) NOT NULL,
   city VARCHAR(80) NOT NULL,
-  location VARCHAR(255) NOT NULL,
+  location VARCHAR(255) NULL,
   description TEXT NOT NULL,
   status ENUM('pending','approved') NOT NULL DEFAULT 'pending',
   verified TINYINT(1) NOT NULL DEFAULT 0,
@@ -22,7 +27,9 @@ CREATE TABLE IF NOT EXISTS companies (
   email_source_url VARCHAR(500) NULL,
   outreach_status ENUM('not_contacted','sent','responded') NOT NULL DEFAULT 'not_contacted',
   outreach_sent_at TIMESTAMP NULL,
-  outreach_responded_at TIMESTAMP NULL
+  outreach_responded_at TIMESTAMP NULL,
+  ip_hash CHAR(64) NULL,
+  INDEX idx_ip_hash_created (ip_hash, created_at)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS founders (

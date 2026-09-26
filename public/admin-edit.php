@@ -51,18 +51,22 @@ function h(?string $s): string
 <div class="form-section"><h2>→ The company</h2><div class="form-grid">
   <div><label class="label" for="edit-company">Company name *</label><input class="field" id="edit-company" name="company" required value="<?= h($company['name']) ?>"></div>
   <div><label class="label" for="edit-website">Website</label><input class="field" id="edit-website" name="website" value="<?= h($company['website']) ?>"></div>
+  <div><label class="label" for="edit-instagram">Instagram</label><input class="field" id="edit-instagram" name="instagram" value="<?= h((string)($company['instagram'] ?? '')) ?>" placeholder="@yourcompany"></div>
   <div><label class="label" for="edit-industry">Industry *</label><select class="select" id="edit-industry" name="industry" required></select></div>
   <div><label class="label" for="edit-business-type">Business type *</label><select class="select" id="edit-business-type" name="businessType" required></select></div>
   <div><label class="label" for="edit-industry-detail">Specific type (optional)</label><input class="field" id="edit-industry-detail" name="industryDetail" value="<?= h((string)($company['industry_detail'] ?? '')) ?>" placeholder="e.g. Ayurveda retail, Import/export"></div>
   <div><label class="label" for="edit-size">Company size</label><select class="select" id="edit-size" name="size"></select></div>
   <div><label class="label" for="edit-founded">Founded year</label><input class="field" id="edit-founded" name="founded" type="number" min="1800" max="2026" value="<?= h((string)$company['founded_year']) ?>"></div>
   <div style="grid-column:1/-1"><label class="label" for="edit-description">Company description *</label><textarea class="textarea" id="edit-description" name="description" rows="5" required><?= h($company['description']) ?></textarea></div>
+  <div><label class="label" for="edit-kerala-connection">Kerala connection</label><select class="select" id="edit-kerala-connection" name="keralaConnection"></select></div>
+  <div><label class="label" for="edit-kerala-district">Kerala district</label><select class="select" id="edit-kerala-district" name="keralaDistrict"></select></div>
+  <div><label class="checkrow" style="margin-top:28px"><input type="checkbox" id="edit-contact-ok" name="contactOkPodcastStories" value="yes" <?= $company['contact_ok_podcast_stories'] ? 'checked' : '' ?>> <span>OK to contact about podcast/stories</span></label></div>
   <div class="form-section location-section">
     <h2>The location</h2>
     <div class="form-grid">
       <div><label class="label" for="country">Country *</label><select id="country" class="select" name="country" required></select></div>
       <div><label class="label" for="city">City *</label><select id="city" class="select" name="city" required></select></div>
-      <div style="grid-column:1/-1" class="address-field"><label class="label" for="edit-location">Company location / address *</label><input class="field" id="edit-location" name="location" required value="<?= h($company['location']) ?>"></div>
+      <div style="grid-column:1/-1" class="address-field"><label class="label" for="edit-location">Company location / address</label><input class="field" id="edit-location" name="location" value="<?= h((string)($company['location'] ?? '')) ?>"></div>
     </div>
   </div>
 </div></div>
@@ -70,15 +74,17 @@ function h(?string $s): string
 <div class="form-section"><h2>→ Branches</h2><div id="branchWrap" class="chips" style="margin-top:15px"></div></div>
 <div class="form-submit"><span class="hint">* Required fields</span><button class="pill" type="submit">Save changes →</button></div></form></section>
 <script>
-const existingCompany = <?= json_encode(['country' => $company['country'], 'city' => $company['city'], 'industry' => $company['industry'], 'businessType' => $company['business_type'], 'size' => $company['size']]) ?>;
+const existingCompany = <?= json_encode(['country' => $company['country'], 'city' => $company['city'], 'industry' => $company['industry'], 'businessType' => $company['business_type'], 'size' => $company['size'], 'keralaConnection' => $company['kerala_connection'], 'keralaDistrict' => $company['kerala_district']]) ?>;
 const existingFounders = <?= json_encode($founders) ?>;
 const existingBranches = <?= json_encode(array_values($branches)) ?>;
 
-const form=document.getElementById('editForm'),country=document.getElementById('country'),city=document.getElementById('city'),industry=form.elements.industry,businessType=form.elements.businessType,size=form.elements.size;
+const form=document.getElementById('editForm'),country=document.getElementById('country'),city=document.getElementById('city'),industry=form.elements.industry,businessType=form.elements.businessType,size=form.elements.size,keralaConnection=form.elements.keralaConnection,keralaDistrict=form.elements.keralaDistrict;
 function fillSelect(el,arr,selected){el.innerHTML='<option value="">Select</option>'+arr.map(x=>`<option ${x===selected?'selected':''}>${KFUI.esc(x)}</option>`).join('')}
 fillSelect(industry,KF.industries,existingCompany.industry);
 fillSelect(businessType,KF.businessTypes,existingCompany.businessType);
 fillSelect(size,KF.sizes,existingCompany.size);
+fillSelect(keralaConnection,KF.keralaConnections,existingCompany.keralaConnection);
+fillSelect(keralaDistrict,KF.keralaDistricts,existingCompany.keralaDistrict);
 fillSelect(country,Object.keys(KF.countries),existingCompany.country);
 fillSelect(city,KF.countries[existingCompany.country]||[],existingCompany.city);
 country.onchange=()=>fillSelect(city,KF.countries[country.value]||[]);
@@ -116,7 +122,8 @@ form.onsubmit=async e=>{
     csrfToken: <?= json_encode($csrfToken) ?>,
     status: fd.get('status'),
     verified: fd.get('verified') === '1',
-    company:fd.get('company'),website:fd.get('website'),industry:fd.get('industry'),businessType:fd.get('businessType'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),
+    company:fd.get('company'),website:fd.get('website'),instagram:fd.get('instagram'),industry:fd.get('industry'),businessType:fd.get('businessType'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),
+    keralaConnection:fd.get('keralaConnection'),keralaDistrict:fd.get('keralaDistrict'),contactOkPodcastStories:fd.get('contactOkPodcastStories')==='yes',
     founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),
     founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})).filter(f=>f.name.trim()!==''),
     branches

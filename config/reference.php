@@ -61,6 +61,25 @@ $KF_BUSINESS_TYPES = [
 
 $KF_SIZES = ['1–10', '11–50', '51–200', '201–500', '500+'];
 
+// The 14 districts of Kerala, for the optional "which district" follow-up
+// on add-company.php once someone picks a Kerala-connection option.
+$KF_KERALA_DISTRICTS = [
+    'Thiruvananthapuram', 'Kollam', 'Pathanamthitta', 'Alappuzha', 'Kottayam',
+    'Idukki', 'Ernakulam', 'Thrissur', 'Palakkad', 'Malappuram', 'Kozhikode',
+    'Wayanad', 'Kannur', 'Kasaragod',
+];
+
+// Options for the "how are you connected to Kerala?" question on
+// add-company.php. Free text stored as-is in companies.kerala_connection —
+// not shown publicly, used only to help an admin judge Verified status.
+$KF_KERALA_CONNECTIONS = [
+    'Born and raised in Kerala',
+    'Family roots in Kerala',
+    'Studied in Kerala',
+    'Married into a Kerala family',
+    'Other Kerala connection',
+];
+
 // Emoji flags for the footer's country list. Keyed by the exact country name
 // as stored in companies.country (a free-text column, not constrained to
 // $KF_COUNTRIES) — includes a few real countries seen in data that aren't in

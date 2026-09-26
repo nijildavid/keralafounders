@@ -31,8 +31,23 @@ $country = trim((string)($input['country'] ?? ''));
 $city = trim((string)($input['city'] ?? ''));
 $location = trim((string)($input['location'] ?? ''));
 $description = trim((string)($input['description'] ?? ''));
+$keralaConnection = trim((string)($input['keralaConnection'] ?? ''));
+$keralaDistrict = trim((string)($input['keralaDistrict'] ?? ''));
+$contactOkPodcastStories = !empty($input['contactOkPodcastStories']);
 $founders = is_array($input['founders'] ?? null) ? $input['founders'] : [];
 $founders = array_values(array_filter($founders, fn($f) => trim((string)($f['name'] ?? '')) !== ''));
+
+// Kept in sync with submit-company.php's Instagram normalization.
+$instagram = null;
+$instagramRaw = trim((string)($input['instagram'] ?? ''));
+if ($instagramRaw !== '') {
+    $handle = strtolower(preg_replace('/^https?:\/\/(www\.)?instagram\.com\//i', '', $instagramRaw));
+    $handle = preg_replace('/[\/?#].*$/', '', $handle);
+    $handle = ltrim($handle, '@');
+    if (preg_match('/^[a-z0-9._]{1,30}$/', $handle)) {
+        $instagram = $handle;
+    }
+}
 
 if ($id <= 0) {
     http_response_code(404);
@@ -42,7 +57,7 @@ if ($id <= 0) {
 if (!in_array($status, ['pending', 'approved'], true)) {
     $status = 'pending';
 }
-if ($name === '' || $industry === '' || $businessType === '' || $country === '' || $city === '' || $location === '' || $description === '' || !$founders) {
+if ($name === '' || $industry === '' || $businessType === '' || $country === '' || $city === '' || $description === '' || !$founders) {
     http_response_code(422);
     echo json_encode(['error' => 'Please fill in all required fields.']);
     exit;
@@ -61,19 +76,23 @@ if (!$check->fetch()) {
 $db->beginTransaction();
 
 $stmt = $db->prepare(
-    'UPDATE companies SET name = ?, website = ?, industry = ?, business_type = ?, industry_detail = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, status = ?, verified = ? WHERE id = ?'
+    'UPDATE companies SET name = ?, website = ?, instagram = ?, industry = ?, business_type = ?, industry_detail = ?, kerala_connection = ?, kerala_district = ?, contact_ok_podcast_stories = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, status = ?, verified = ? WHERE id = ?'
 );
 $stmt->execute([
     $name,
     trim((string)($input['website'] ?? '')) ?: null,
+    $instagram,
     $industry,
     $businessType,
     $industryDetail ?: null,
+    $keralaConnection ?: null,
+    $keralaDistrict ?: null,
+    $contactOkPodcastStories ? 1 : 0,
     trim((string)($input['size'] ?? '')) ?: null,
     !empty($input['founded']) ? (int)$input['founded'] : null,
     $country,
     $city,
-    $location,
+    $location ?: null,
     $description,
     $status,
     $verified,
