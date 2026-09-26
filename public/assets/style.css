@@ -580,6 +580,14 @@ footer{
 .location-section input{
   width:100%;
 }
+@media(max-width:600px){
+  /* The V9/V10 mobile overrides above got overridden by V12's unconditional
+     two-column rule — Country/City were staying side-by-side and truncating
+     on phones. This is the one that actually wins, at the site's real
+     mobile breakpoint (600px, not the legacy 700px used above). */
+  .location-section .form-grid{grid-template-columns:1fr}
+  .location-section .form-grid .address-field{grid-column:auto}
+}
 
 /* V13: directory cards link to company detail pages */
 .list-view .company-link{
