@@ -61,7 +61,7 @@ than presenting them as settled:
 - Spain shipped clean — 23 sources, mostly official incl. BOE statute
   text, no comparable sourcing gap.
 
-## Needs your review — Netherlands Guidance guide
+## Resolved — Netherlands Guidance guide
 
 Picked ahead of the other 5 gap countries once directory data showed why:
 Netherlands has **31** listed companies — more than Luxembourg, Denmark,
@@ -73,25 +73,27 @@ parked until that changes. Slovenia (5) is the next reasonable single
 target after Netherlands; Luxembourg/France/Romania are thin enough to
 batch together later rather than treat individually.
 
-**Status: written, sourced, passing `scripts/validate-guidance-content.php`,
-sitting at `status: "ready_for_review"`** (not live). Sourcing is unusually
-clean — 25 sources, all `official`/`government_portal` (KVK, Belastingdienst,
-IND, business.gov.nl, Rijksoverheid), no advisor-blog fallbacks needed at
-all, a stronger profile than Germany/Spain/Belgium/Greece. Immigration
-section held back (`hold: true`) as usual. Three things worth a look before
-flipping it live:
+**Status: `live`.** Sourcing is unusually clean — 25 sources, all
+`official`/`government_portal` (KVK, Belastingdienst, IND, business.gov.nl,
+Rijksoverheid), no advisor-blog fallbacks needed at all, a stronger profile
+than Germany/Spain/Belgium/Greece. Immigration section held back
+(`hold: true`) as usual. Before shipping, an independent
+`european-business-lawyer` audit re-fetched all 25 sources itself (not a
+sample) and confirmed the two trickiest figures exactly right — the fast-
+declining zelfstandigenaftrek (€2,470 → €1,200 → €900 over three years) and
+the not-yet-law mandatory disability insurance (BAZ) proposal, correctly
+framed as proposed rather than current law. It found and this session fixed
+three narrow attribution issues (an unsupported "most businesses need no
+permit" framing, an uncited "about 2 weeks" VAT-number turnaround claim,
+and a missing source citation on a vof-liability detail) — none were wrong
+facts with real sources, just overstatements or gaps, now closed.
 
-- Whether the standard self-employed residence permit is really the typical
-  route for KeralaFounders' audience vs. arriving on an employer-sponsored
-  permit first, and whether any Friendship-Treaty-style shortcut (the
-  US-NL DAFT arrangement) applies to a nationality relevant here — not
-  researched, flagged as an open question instead of guessed at.
-- The zelfstandigenaftrek (self-employment tax deduction) figure is on a
-  steep multi-year glide path down (€2,470 → €1,200 → €900 by 2027) — worth
-  confirming the 2026 figure was read correctly given the unusual swing.
-- The proposed-but-not-yet-law mandatory disability insurance (BAZ) for the
-  self-employed — worth checking the guide's wording is clearly framed as
-  "proposed," not current law.
+Still worth a look whenever the immigration section comes off hold: whether
+the standard self-employed residence permit is really the typical route for
+KeralaFounders' audience vs. arriving on an employer-sponsored permit
+first, and whether any Friendship-Treaty-style shortcut (the US-NL DAFT
+arrangement) applies to a nationality relevant here — not researched,
+flagged as an open question in the guide rather than guessed at.
 
 ## Needs a live-site check
 
