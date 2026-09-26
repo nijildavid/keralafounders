@@ -12,26 +12,35 @@ though fewer than Netherlands (31). After this, Luxembourg/France/Romania are
 thin enough to batch together rather than treat individually; Denmark
 (0 companies) stays parked until it has at least one.
 
-**Status: written, sourced, passing `scripts/validate-guidance-content.php`,
-sitting at `status: "ready_for_review"`** (not live). 27 sources, 24 of them
+**Status: written, sourced, independently audited, and fixed — passing
+`scripts/validate-guidance-content.php`, sitting at
+`status: "ready_for_review"`** (not live). 27 sources, 24 of them
 official/chamber/government-portal (SPOT, FURS, ZPIZ, ZZZS, AJPES, the
 Employment Service, Uradni list RS — Slovenia's Official Gazette), 3
 secondary (flagged inline, not dressed up as official). Includes a
 Slovenia-specific section on the "normiranec" flat-rate tax regime and
 "popoldanski s.p." (running a sole-trader business part-time alongside a
 job) — the local analogue to Netherlands' false-self-employment section.
-Immigration section held back (`hold: true`) as usual, and thinner-sourced
-than the rest of the guide (only one usable overview page found). Three
-things worth a look before flipping it live:
 
-- **A genuine conflict the guide surfaced rather than picked silently**:
-  SPOT's own English VAT page still states a EUR 50,000 small-business
-  exemption threshold, while FURS's own (more detailed) page confirms it
-  was raised to EUR 60,000/66,000 from 1 January 2025. The guide uses the
-  FURS figure but flags the conflict for a reviewer to settle definitively.
-- The residence-permit section should stay fully hidden until an
-  immigration-savvy reviewer looks at it specifically — it rests on one
-  SPOT overview page rather than a dedicated immigration-authority source.
+An independent `european-business-lawyer` audit re-fetched all 27 sources
+(full coverage, zero dead links) and **resolved** the VAT-threshold conflict
+the original research flagged: FURS's EUR 60,000/66,000 figure is correct
+and current (independently corroborated via the EU Commission's own
+Slovenia SME-VAT page); SPOT's English page, still showing EUR 50,000, is
+simply stale. The audit found and this session fixed two narrower
+overclaims — a PIZ new-founder relief detail and a normiranec eligibility
+test that didn't quite match their cited sources' actual wording — both now
+corrected or downgraded to secondary confidence.
+
+Still worth a look:
+
+- The residence-permit section stays fully held (`hold: true`) — it rests
+  on one SPOT overview page rather than a dedicated immigration-authority
+  source, and the audit surfaced a further discrepancy for the eventual
+  immigration-lawyer review: a second official-adjacent page states the
+  self-employment permit runs for up to 2 years, not the 1-year-renewable
+  term the guide's held content currently states. Logged in the guide's own
+  `open_questions_for_reviewer` list.
 - The popoldanski-s.p. and normiranec figures are all dated 2026 —
   Slovenian contribution bases and thresholds move at least annually, so
   worth confirming they still hold whenever this actually goes live.
