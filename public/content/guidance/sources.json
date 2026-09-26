@@ -853,5 +853,230 @@
         "url": "https://www.xerius.be/fr-be/independants/securite-sociale/cotisations-sociales",
         "language": "fr",
         "accessed": "2026-09-25"
+    },
+    {
+        "id": "NL1",
+        "title": "What is a legal form?",
+        "publisher": "KVK (Netherlands Chamber of Commerce)",
+        "type": "official",
+        "url": "https://www.kvk.nl/en/starting/what-is-a-legal-form/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL2",
+        "title": "Registration fee",
+        "publisher": "KVK (Netherlands Chamber of Commerce)",
+        "type": "official",
+        "url": "https://www.kvk.nl/en/registration/registration-fee/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL3",
+        "title": "Register your Dutch business with KVK",
+        "publisher": "Business.gov.nl (Dutch government portal for entrepreneurs)",
+        "type": "official",
+        "url": "https://business.gov.nl/starting-your-business/registering-your-business/registration-at-the-netherlands-chamber-of-commerce-kvk/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL4",
+        "title": "Residence permit self-employed person",
+        "publisher": "IND (Immigratie- en Naturalisatiedienst / Immigration and Naturalisation Service)",
+        "type": "official",
+        "url": "https://ind.nl/en/residence-permits/work/residence-permit-self-employed-person",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL5",
+        "title": "Kleineondernemersregeling (KOR)",
+        "publisher": "Belastingdienst (Dutch Tax and Customs Administration)",
+        "type": "official",
+        "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/hoe_werkt_de_btw/kleineondernemersregeling/kleineondernemersregeling",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL6",
+        "title": "Aanmelden kleineondernemersregeling (KOR)",
+        "publisher": "Belastingdienst",
+        "type": "official",
+        "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/aanmelden-kor",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL7",
+        "title": "Btw-tarieven: welke tarieven zijn er, en wanneer moet u ze toepassen?",
+        "publisher": "Belastingdienst",
+        "type": "official",
+        "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_berekenen_aan_uw_klanten/btw_berekenen/btw_tarief/btw_tarief",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL8",
+        "title": "Tarieven voor de vennootschapsbelasting",
+        "publisher": "Belastingdienst",
+        "type": "official",
+        "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/tarieven_vennootschapsbelasting",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL9",
+        "title": "Belastingtarieven 2026",
+        "publisher": "KVK",
+        "type": "official",
+        "url": "https://www.kvk.nl/geldzaken/belastingtarieven-2026/",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL10",
+        "title": "De besloten vennootschap: rechtsvorm met minder privé risico",
+        "publisher": "KVK",
+        "type": "official",
+        "url": "https://www.kvk.nl/starten/de-besloten-vennootschap-bv/",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL11",
+        "title": "Inschrijven besloten vennootschap (bv) of naamloze vennootschap (nv) in oprichting",
+        "publisher": "KVK",
+        "type": "official",
+        "url": "https://www.kvk.nl/inschrijven/inschrijven-besloten-vennootschap-of-naamloze-vennootschap-in-oprichting/",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL12",
+        "title": "De vennootschap onder firma: rechtsvorm voor samenwerking",
+        "publisher": "KVK",
+        "type": "official",
+        "url": "https://www.kvk.nl/starten/de-vennootschap-onder-firma-vof/",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL13",
+        "title": "UBO inschrijven in UBO-register",
+        "publisher": "Ondernemersplein (Dutch government portal for entrepreneurs)",
+        "type": "government_portal",
+        "url": "https://ondernemersplein.overheid.nl/wetten-en-regels/inschrijven-ubo-register/",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL14",
+        "title": "UBO's inschrijven, wijzigen en uitschrijven - UBO-register",
+        "publisher": "KVK",
+        "type": "official",
+        "url": "https://www.kvk.nl/ubo/opgave-doen/",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL15",
+        "title": "Plannen voor verplichte basisverzekering arbeidsongeschiktheid voor zelfstandigen",
+        "publisher": "Rijksoverheid (Dutch central government)",
+        "type": "official",
+        "url": "https://www.rijksoverheid.nl/themas/werk/hervormingen-arbeidsmarkt/meer-zekerheid-voor-werkenden/verplichte-arbeidsongeschiktheidsverzekering-voor-zelfstandigen",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL16",
+        "title": "Wat kost het om een zorgverzekering af te sluiten?",
+        "publisher": "Rijksoverheid",
+        "type": "official",
+        "url": "https://www.rijksoverheid.nl/onderwerpen/zorgverzekering/vraag-en-antwoord/premie-zorgverzekering",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL17",
+        "title": "Microcredit: business loans up to €50,000",
+        "publisher": "Business.gov.nl",
+        "type": "official",
+        "url": "https://business.gov.nl/subsidies-and-schemes/microcredit/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL18",
+        "title": "Subsidies and schemes (starting your business)",
+        "publisher": "Business.gov.nl",
+        "type": "official",
+        "url": "https://business.gov.nl/subsidies-and-schemes/?subject=starting-your-business",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL19",
+        "title": "Dutch residence permit for foreign startups",
+        "publisher": "Business.gov.nl",
+        "type": "official",
+        "url": "https://business.gov.nl/coming-to-the-netherlands/permits-and-visa/residence-permit-for-foreign-startups/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL20",
+        "title": "Invoice requirements in the Netherlands",
+        "publisher": "Business.gov.nl",
+        "type": "official",
+        "url": "https://business.gov.nl/regulations/invoice-requirements/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL21",
+        "title": "Permits for self-employed professionals or freelancers",
+        "publisher": "Business.gov.nl",
+        "type": "official",
+        "url": "https://business.gov.nl/regulations/work-permit-self-employed-professionals/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL22",
+        "title": "Permits for your business",
+        "publisher": "Business.gov.nl",
+        "type": "official",
+        "url": "https://business.gov.nl/business-location/establishing-or-relocating-a-business/permits-for-your-business/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL23",
+        "title": "Business Register and Tax Administration",
+        "publisher": "KVK",
+        "type": "official",
+        "url": "https://www.kvk.nl/en/starting/business-register-and-tax-administration/",
+        "language": "en",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL24",
+        "title": "Arbeidsrelaties en handhaving door de Belastingdienst",
+        "publisher": "Belastingdienst",
+        "type": "official",
+        "url": "https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving",
+        "language": "nl",
+        "accessed": "2026-09-26"
+    },
+    {
+        "id": "NL25",
+        "title": "E-invoicing government organisations",
+        "publisher": "Business.gov.nl",
+        "type": "official",
+        "url": "https://business.gov.nl/regulations/e-invoicing-government-organisations/",
+        "language": "en",
+        "accessed": "2026-09-26"
     }
 ]

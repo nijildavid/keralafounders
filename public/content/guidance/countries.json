@@ -14,11 +14,11 @@
         "slug": "netherlands",
         "name": "Netherlands",
         "flag_or_icon": "nl",
-        "status": "coming_soon",
-        "target_month": "2026-11",
+        "status": "ready_for_review",
+        "target_month": null,
         "directory_country_name": "Netherlands",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-09-26",
+        "next_check_due": "2027-03-26",
         "order": 2
     },
     {
