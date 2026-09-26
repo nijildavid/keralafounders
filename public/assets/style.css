@@ -249,6 +249,11 @@ footer{
 .footer-country-name{color:var(--ink)}
 .footer-country-count{color:var(--muted);font-size:12px}
 .footer-col .arrow{display:inline-block;margin-top:6px;font-size:13px;color:var(--accent2)}
+.footer-bottom{border-top:1px solid var(--line);padding:20px 0}
+.footer-inner{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;margin-left:auto}
+.footer-links a{color:var(--muted)}
+.footer-links a:hover{color:var(--accent2)}
 .footer-bottom-bar{border-top:1px solid var(--line);padding:20px 0}
 .footer-bottom-inner{
   display:flex;
