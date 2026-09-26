@@ -5,6 +5,24 @@
   "last_checked": "2026-09-26",
   "checked_by": "Nijil",
   "next_check_due": "2027-03-26",
+  "quick_facts": {
+    "structure": { "text": "Register as a sole trader (eenmanszaak) — no notary, no minimum capital, and you can convert to a partnership or company later once you need to.", "source_ids": ["NL1"] },
+    "cost": { "text": "EUR 85.15 one-off KVK fee for a sole trader or partnership. A private company (bv) adds notary fees of roughly EUR 500 to 1,500.", "source_ids": ["NL2", "NL10"] },
+    "time": { "text": "KVK usually issues your registration the same day as your appointment. A bv can be arranged digitally with a notary in as little as a few days.", "source_ids": ["NL3", "NL10"] },
+    "gotcha": { "text": "If almost all your income comes from one client, the Belastingdienst may treat you as a disguised employee rather than genuinely self-employed — get advice before signing an exclusive long-term contract.", "source_ids": ["NL24"] }
+  },
+  "founder_checklist": [
+    { "text": "Confirm you're allowed to work self-employed here — non-EU/EEA/Swiss founders need a residence permit first.", "section_id": "sole-steps" },
+    { "text": "Pick your legal form: sole trader is fastest and cheapest; a private company (bv) gives limited liability but needs a notary.", "section_id": "legal-forms" },
+    { "text": "Register your address with the municipality and get your BSN (citizen service number).", "section_id": "sole-steps" },
+    { "text": "Book your KVK appointment, bring valid ID, and register your business.", "section_id": "sole-steps" },
+    { "text": "Pay the one-off KVK registration fee.", "section_id": "sole-steps" },
+    { "text": "Wait for your VAT number to arrive by post from the Belastingdienst.", "section_id": "sole-steps" },
+    { "text": "Check whether your sector needs a specific permit or licence.", "section_id": "social" },
+    { "text": "Open a business bank account and arrange mandatory health insurance.", "section_id": "sole-steps" },
+    { "text": "If most of your income comes from one client, get advice on false self-employment before you sign.", "section_id": "zzp-status" },
+    { "text": "Decide how you'll handle VAT — many first-year sole traders qualify for the small-business scheme (KOR).", "section_id": "taxes" }
+  ],
   "sections": [
     {
       "id": "overview",

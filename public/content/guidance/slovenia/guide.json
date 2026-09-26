@@ -5,6 +5,24 @@
   "last_checked": "2026-09-26",
   "checked_by": "Nijil",
   "next_check_due": "2027-03-26",
+  "quick_facts": {
+    "structure": { "text": "Register as a samostojni podjetnik (s.p., sole trader) — free, no notary needed. Form a d.o.o. later for limited liability, which needs EUR 7,500 minimum capital.", "source_ids": ["SI1", "SI3"] },
+    "cost": { "text": "Registering an s.p. is free. A d.o.o. needs EUR 7,500 minimum capital (at least EUR 50 per contribution); a notary route instead costs about EUR 300 to 500.", "source_ids": ["SI1", "SI3", "SI4"] },
+    "time": { "text": "An s.p. is typically live within 1 to 2 days. A d.o.o. is registered within about 4 to 5 days, whichever of the three channels you use.", "source_ids": ["SI1", "SI3"] },
+    "gotcha": { "text": "A part-time (popoldanski) s.p. run alongside a job pays a different flat contribution and tax regime than a full-time one — and the new-founder PIZ contribution discount (50%/30% off) only applies to a primary, full-time s.p.", "source_ids": ["SI13", "SI27"] }
+  },
+  "founder_checklist": [
+    { "text": "Decide whether personal, unlimited liability (s.p.) is acceptable for now.", "section_id": "legal-forms" },
+    { "text": "Check whether your planned activity needs a specific licence before registering.", "section_id": "sole-steps" },
+    { "text": "Choose your activity code (SKD) and register via SPOT online, in person, or by post.", "section_id": "sole-steps" },
+    { "text": "Within 8 days: arrange health insurance and submit your accounting-method declaration to FURS.", "section_id": "sole-steps" },
+    { "text": "Within 8 days: submit the M-1 form for compulsory social security.", "section_id": "sole-steps" },
+    { "text": "If you're employed full-time elsewhere, ask whether a popoldanski (part-time) s.p. suits your situation before registering.", "section_id": "sp-variants-worth-knowing" },
+    { "text": "If registering your first-ever primary s.p., confirm you qualify for the new-founder PIZ contribution relief.", "section_id": "sp-variants-worth-knowing" },
+    { "text": "Confirm whether you're under the VAT exemption threshold, and decide with an accountant whether the normiranec flat-rate regime suits you.", "section_id": "taxes" },
+    { "text": "If forming a d.o.o. instead, deposit the EUR 7,500 minimum capital and register beneficial owners within 8 days of your Business Register entry.", "section_id": "company-steps" },
+    { "text": "Check SPIRIT Slovenija's portal and podjetniskisklad.si for current grant and loan calls before spending on consultants.", "section_id": "social" }
+  ],
   "sections": [
     {
       "id": "overview",

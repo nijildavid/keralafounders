@@ -208,6 +208,12 @@ function guidance_hold_placeholder_html(array $section, array $sourcesById): str
  * Renders one section. Returns [html, usedSourceIds] — usedSourceIds (array
  * keyed by source id) is merged into the caller's running set so the sources
  * box only lists sources actually cited by what rendered.
+ *
+ * Sections render as a native <details> so dense ones (taxes, social
+ * security, funding...) don't read as one long wall of text on page load —
+ * full content stays in the DOM either way, just collapsed, so this doesn't
+ * affect SEO indexing. A short section (few claims) still opens by default;
+ * only sections past the threshold start collapsed.
  */
 function guidance_section_html(array $section, array $sourcesById, array $usedSourceIds): array
 {
@@ -215,7 +221,8 @@ function guidance_section_html(array $section, array $sourcesById, array $usedSo
         return [guidance_hold_placeholder_html($section, $sourcesById), $usedSourceIds];
     }
 
-    $parts = '';
+    $filteredParts = [];
+    $claimCount = 0;
     foreach (['official_information', 'expert_interpretation', 'founder_experience', 'checklist'] as $partKey) {
         $claims = array_values(array_filter(
             $section[$partKey] ?? [],
@@ -224,6 +231,12 @@ function guidance_section_html(array $section, array $sourcesById, array $usedSo
         if (!$claims) {
             continue;
         }
+        $filteredParts[$partKey] = $claims;
+        $claimCount += count($claims);
+    }
+
+    $parts = '';
+    foreach ($filteredParts as $partKey => $claims) {
         [$partHtml, $usedSourceIds] = guidance_part_html($partKey, $claims, $usedSourceIds);
         $parts .= $partHtml;
     }
@@ -235,10 +248,78 @@ function guidance_section_html(array $section, array $sourcesById, array $usedSo
     }
 
     $note = !empty($section['note']) ? '<p class="hint">' . h($section['note']) . '</p>' : '';
+    $openAttr = $claimCount > 6 ? '' : ' open';
 
-    $html = '<section id="gs-' . h($section['id']) . '" class="guidance-section"><h2>' . h($section['title']) . '</h2>'
-        . $note . $tableHtml . $parts . '</section>';
+    $html = '<details id="gs-' . h($section['id']) . '" class="guidance-section"' . $openAttr . '>'
+        . '<summary><h2>' . h($section['title']) . '</h2></summary>'
+        . '<div class="guidance-section-body">' . $note . $tableHtml . $parts . '</div>'
+        . '</details>';
     return [$html, $usedSourceIds];
+}
+
+/**
+ * A scannable strip near the top of a guide: the handful of numbers/decisions
+ * a founder actually needs before reading the full page. Every value is a
+ * restatement of a claim already sourced elsewhere in the guide (same
+ * source_ids), never a new unaudited fact — this is a presentation layer on
+ * top of already-reviewed content, not new research.
+ */
+function guidance_quick_facts_html(array $quickFacts): string
+{
+    $labels = [
+        'structure' => 'Cheapest way to start',
+        'cost' => 'Typical cost to register',
+        'time' => 'Typical time',
+        'gotcha' => 'Biggest thing to watch for',
+    ];
+    $tiles = '';
+    foreach ($labels as $key => $label) {
+        $fact = $quickFacts[$key] ?? null;
+        if (empty($fact['text'])) {
+            continue;
+        }
+        $tiles .= '<div class="guidance-quick-fact">'
+            . '<div class="guidance-quick-fact-label">' . h($label) . '</div>'
+            . '<div class="guidance-quick-fact-text">' . h($fact['text']) . guidance_source_ref_html($fact['source_ids'] ?? []) . '</div>'
+            . '</div>';
+    }
+    if ($tiles === '') {
+        return '';
+    }
+    return '<div class="guidance-quick-facts" role="group" aria-label="Quick facts">' . $tiles . '</div>';
+}
+
+/**
+ * A single, plain-language, do-this-in-order checklist — distinct from the
+ * per-section "Checklist" lists (which stay as detailed, sourced, legalistic
+ * reference material inside each section). Each step here links to the
+ * section it's drawn from rather than repeating citations.
+ */
+function guidance_founder_checklist_html(array $checklist, array $sections): string
+{
+    if (!$checklist) {
+        return '';
+    }
+    $sectionTitles = [];
+    foreach ($sections as $s) {
+        $sectionTitles[$s['id']] = $s['title'];
+    }
+    $items = '';
+    foreach ($checklist as $item) {
+        if (empty($item['text'])) {
+            continue;
+        }
+        $jump = '';
+        $sectionId = $item['section_id'] ?? null;
+        if ($sectionId && isset($sectionTitles[$sectionId])) {
+            $jump = ' <a href="#gs-' . h($sectionId) . '" class="guidance-checklist-jump">Details →</a>';
+        }
+        $items .= '<li>' . h($item['text']) . $jump . '</li>';
+    }
+    if ($items === '') {
+        return '';
+    }
+    return '<div class="panel guidance-founder-checklist"><h2>Your step-by-step checklist</h2><ol>' . $items . '</ol></div>';
 }
 
 function guidance_sources_box_html(array $usedSourceIds, array $sourcesById): string

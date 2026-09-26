@@ -5,6 +5,23 @@
   "last_checked": "2026-09-21",
   "checked_by": "Nijil",
   "next_check_due": "2027-03-21",
+  "quick_facts": {
+    "structure": { "text": "Register as a freelancer (Freiberufler) if your profession qualifies, or a sole trader (Gewerbe) otherwise — neither needs a notary. Move to a UG or GmbH later once you need to hire, raise money, or limit personal risk.", "source_ids": ["S8", "S16"] },
+    "cost": { "text": "Berlin trade registration (Gewerbeanmeldung) costs EUR 26 to 31, plus EUR 15 for online processing. Freelancers register with the tax office instead, at no separate fee.", "source_ids": ["S1"] },
+    "time": { "text": "Address and trade registration usually take about 1 to 2 weeks; your tax number normally arrives within 2 to 4 weeks after that. A UG or GmbH's commercial-register entry typically takes 1 to 4 weeks after notarisation.", "source_ids": ["S16"] },
+    "gotcha": { "text": "The tax office decides whether you count as a freelancer or a trade under §18 EStG — and that first classification isn't final. It can be changed in a later tax audit, with back-payment of trade tax.", "source_ids": ["S8"] }
+  },
+  "founder_checklist": [
+    { "text": "Decide whether your work counts as freelance (Freiberufler) or a trade (Gewerbe) — ask the tax office or an advisor and get the answer in writing.", "section_id": "freelance-vs-trade" },
+    { "text": "If you're from outside the EU, get your residence permit sorted before you start self-employment.", "section_id": "sole-steps" },
+    { "text": "Register your address (Anmeldung) within 2 weeks of moving in.", "section_id": "sole-steps" },
+    { "text": "Register your trade (Gewerbeanmeldung) if you're not a freelancer.", "section_id": "sole-steps" },
+    { "text": "Complete the tax questionnaire in ELSTER to get your tax number.", "section_id": "sole-steps" },
+    { "text": "Open a separate business bank account and arrange health insurance.", "section_id": "sole-steps" },
+    { "text": "Check whether you're exempt from IHK membership and contributions as a new founder.", "section_id": "social" },
+    { "text": "Decide with an advisor whether the small-business VAT scheme suits you.", "section_id": "taxes" },
+    { "text": "If forming a UG or GmbH instead, budget for the notary and register fees, and file the transparency register within 2 weeks of your commercial-register entry.", "section_id": "company-steps" }
+  ],
   "sections": [
     {
       "id": "overview",

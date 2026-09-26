@@ -122,6 +122,9 @@ if ($country !== null) {
 
   <?= $overviewHtml ?>
 
+  <?= guidance_quick_facts_html($guide['quick_facts'] ?? []) ?>
+  <?= guidance_founder_checklist_html($guide['founder_checklist'] ?? [], $guide['sections']) ?>
+
   <div class="guidance-body">
     <div class="guidance-main">
       <?= $sectionsHtml ?>

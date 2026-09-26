@@ -161,6 +161,19 @@ foreach ($slugsNeedingGuide as $slug) {
             check_source_ids($failures, $referencedSourceIds, $sourceIdSet, $guideFile, [$section['hold_note_source_id']], "$context hold_note_source_id");
         }
     }
+
+    // Optional presentation-layer fields: additive, restate content already
+    // sourced elsewhere in the guide, so they're checked but never required.
+    $sectionIdSet = array_flip(array_column($guide['sections'] ?? [], 'id'));
+    foreach ($guide['quick_facts'] ?? [] as $key => $fact) {
+        check_source_ids($failures, $referencedSourceIds, $sourceIdSet, $guideFile, $fact['source_ids'] ?? [], "quick_facts.$key");
+    }
+    foreach ($guide['founder_checklist'] ?? [] as $i => $item) {
+        $sid = $item['section_id'] ?? null;
+        if ($sid !== null && !isset($sectionIdSet[$sid])) {
+            fail($failures, $guideFile, "founder_checklist #$i references section_id \"$sid\" which does not exist in this guide");
+        }
+    }
 }
 
 // Warn (not fail) about a guide.json that exists but isn't referenced by countries.json —
