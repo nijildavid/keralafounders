@@ -25,7 +25,7 @@ $footerTopCountries = fetch_top_countries($db, 10);
           <li><a href="business-types.php">Business Types</a></li>
           <li><a href="cities.php">Cities</a></li>
           <li><a href="industries.php">Industries</a></li>
-          <li><span class="footer-link-disabled" aria-disabled="true">Featured Stories</span></li>
+          <li><a href="stories.php">Stories</a></li>
           <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?>
           <li><a href="guidance.php">Guidance</a></li>
           <?php else: ?>
