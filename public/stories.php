@@ -25,12 +25,6 @@ $canonicalUrl = 'https://keralafounders.eu/stories.php';
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1cewGKxs6k8ZrTRmlL6qxW?utm_source=generator" width="100%" height="232" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
-<div class="coming-soon-panel">
-  <div class="eyebrow">Coming soon</div>
-  <h2 style="font-size:26px;margin:10px 0 12px">More stories are being recorded.</h2>
-  <p class="muted" style="font-size:16px;line-height:1.8;margin:0">The first conversation is out now. More are already in progress — soon you'll be able to listen to the podcast, read the full conversations and discover the people behind the businesses.</p>
-</div>
-
 <div class="coming-soon-panel" style="margin-top:24px">
   <div class="eyebrow">Get notified</div>
   <h2 style="font-size:22px;margin:10px 0 12px">Be the first to know when the next story goes live.</h2>
