@@ -11,9 +11,18 @@
 -- `karinkada-ayurveda`. Reasoning — "sonnentag-kerala-ayurveda-shop"
 -- matches the live website's own name and domain, so it's the more
 -- recognizable listing for a visitor searching for this shop. If you'd
--- rather keep `karinkada-ayurveda` instead, swap the two slug literals in
--- the two SET lines directly below before running this file — nothing
--- else needs to change.
+-- rather keep `karinkada-ayurveda` instead, swap every occurrence of the
+-- two slug literals below before running this file — nothing else needs
+-- to change.
+--
+-- 2026-09-27 fix: the first version of this script stored the two slugs
+-- in variables (SET @keep_slug = '...') and compared those to the `slug`
+-- column, which errored on production with "Illegal mix of collations"
+-- (production's `slug` column and a plain session variable didn't agree
+-- on text encoding rules). Fixed by comparing the literal slug strings
+-- directly instead of through a variable — same behavior, no encoding
+-- clash. Nothing had been written when that error occurred; safe to run
+-- this corrected version from scratch.
 --
 -- What this does:
 --   1. Re-points any founders/branches/claim-request rows from the row
@@ -45,16 +54,13 @@
 
 START TRANSACTION;
 
-SET @keep_slug = 'sonnentag-kerala-ayurveda-shop';
-SET @remove_slug = 'karinkada-ayurveda';
-
 -- Check this returns exactly one row for each slug before going further.
 SELECT
-  (SELECT COUNT(*) FROM `companies` WHERE `slug` = @keep_slug) AS keep_slug_found,
-  (SELECT COUNT(*) FROM `companies` WHERE `slug` = @remove_slug) AS remove_slug_found;
+  (SELECT COUNT(*) FROM `companies` WHERE `slug` = 'sonnentag-kerala-ayurveda-shop') AS keep_slug_found,
+  (SELECT COUNT(*) FROM `companies` WHERE `slug` = 'karinkada-ayurveda') AS remove_slug_found;
 
-SET @keep_id = (SELECT id FROM `companies` WHERE `slug` = @keep_slug);
-SET @remove_id = (SELECT id FROM `companies` WHERE `slug` = @remove_slug);
+SET @keep_id = (SELECT id FROM `companies` WHERE `slug` = 'sonnentag-kerala-ayurveda-shop');
+SET @remove_id = (SELECT id FROM `companies` WHERE `slug` = 'karinkada-ayurveda');
 
 UPDATE `companies` AS keep
 JOIN `companies` AS rem ON rem.id = @remove_id
@@ -93,8 +99,8 @@ DELETE FROM `companies` WHERE `id` = @remove_id;
 --   3. merged_founders lists every founder now on the merged listing —
 --      look for an accidental duplicate (same person listed twice).
 SELECT `id`, `slug`, `name`, `website`, `instagram`, `verified`, `status`, `description`
-  FROM `companies` WHERE `slug` = @keep_slug;
-SELECT COUNT(*) AS karinkada_row_gone FROM `companies` WHERE `slug` = @remove_slug;
+  FROM `companies` WHERE `slug` = 'sonnentag-kerala-ayurveda-shop';
+SELECT COUNT(*) AS karinkada_row_gone FROM `companies` WHERE `slug` = 'karinkada-ayurveda';
 SELECT `name`, `email`, `linkedin` FROM `founders` WHERE `company_id` = @keep_id;
 
 COMMIT;
