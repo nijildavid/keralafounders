@@ -143,6 +143,20 @@ Nijil to decide on, not auto-merged: `karinkada-ayurveda` /
 `igcs-indo-german-services` / `igcs-consultancy` (same founder + website,
 possibly two distinct legal entities rather than duplicates).
 
+Nijil reviewed the two pairs and confirmed the Ayurveda one should be
+merged; the IGCS pair stays as two listings for now (see `OPEN_ITEMS.md`
+for why). Wrote `import/migration-merge-ayurveda-listings-2026-09-27.sql`
+to do it: keeps `sonnentag-kerala-ayurveda-shop` (matches the live
+website's own name/domain), carries over founders/branches/claim history
+from `karinkada-ayurveda`, fills in any field the survivor was missing
+without overwriting what it already had, and deletes the duplicate row.
+Tested against a local copy with dummy data standing in for the two real
+rows, including confirming a second run (after the merge already
+happened) is a safe no-op. Not run against production yet — no DB/SSH
+access from this session; see `OPEN_ITEMS.md` for the manual step and
+what to double-check afterward (possible duplicate founder entry,
+`karinkada-ayurveda`'s URL 404ing with no redirect built for it).
+
 ## Open threads
 
 See `OPEN_ITEMS.md`.
