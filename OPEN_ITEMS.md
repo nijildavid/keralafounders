@@ -166,6 +166,35 @@ first, and whether any Friendship-Treaty-style shortcut (the US-NL DAFT
 arrangement) applies to a nationality relevant here — not researched,
 flagged as an open question in the guide rather than guessed at.
 
+## Needs a production DB action (Nijil, via phpMyAdmin)
+
+- **Instagram backfill** — code and data are ready (see `HISTORY.md`
+  2026-09-27), but nothing has been run against the live database yet
+  (no SSH/CLI access to production from this side). Two SQL files to run
+  in phpMyAdmin, in this order:
+  1. `migration-add-instagram-provenance.sql` — adds the
+     `instagram_source`/`instagram_confidence`/`instagram_note` columns.
+  2. `import/migration-instagram-backfill-2026-09-27.sql` — the actual
+     backfill (71 high-confidence handles published immediately, 7
+     medium-confidence held for review). Its last query lists any slug
+     from the research that doesn't exist in the live `companies` table
+     under that exact name — check that list is empty (or investigate any
+     slug it names) before considering the backfill done.
+- **Two duplicate-listing pairs flagged, not merged** — a decision for
+  Nijil, not something to resolve automatically:
+  - `karinkada-ayurveda` / `sonnentag-kerala-ayurveda-shop` — confirmed
+    same business (same website `keralaayurvedashop.at`, same director).
+  - `igcs-indo-german-services` / `igcs-consultancy` — same founder (Saju
+    Jakob) and website (`igcsvisa.de`), but may be two distinct legal
+    entities rather than one listing duplicated.
+- **7 medium-confidence Instagram handles need a review decision** —
+  `admin.php?instagram=needs_review` lists them with the reviewer's note;
+  `admin-edit.php` has a "Publish this handle" checkbox to approve each
+  one (or edit/clear the field to reject). Two of the seven
+  (`acsia-systems-deutschland`, `beta-group`) are the founder's *personal*
+  Instagram rather than a company page — worth a judgment call on whether
+  that's appropriate for a business listing before approving.
+
 ## Needs a live-site check
 
 - **Compact-nav alignment fix** — confirmed committed on `main`

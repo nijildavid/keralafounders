@@ -17,6 +17,10 @@ $outreachFilter = $_GET['outreach'] ?? 'all';
 if (!in_array($outreachFilter, ['all', 'ready', 'sent', 'none'], true)) {
     $outreachFilter = 'all';
 }
+$instagramFilter = $_GET['instagram'] ?? 'all';
+if (!in_array($instagramFilter, ['all', 'needs_review'], true)) {
+    $instagramFilter = 'all';
+}
 $q = trim((string)($_GET['q'] ?? ''));
 
 $where = [];
@@ -37,6 +41,9 @@ if ($outreachFilter === 'ready') {
 } elseif ($outreachFilter === 'none') {
     $where[] = 'contact_email IS NULL';
 }
+if ($instagramFilter === 'needs_review') {
+    $where[] = "instagram_source = 'research' AND instagram_confidence = 'medium'";
+}
 if ($q !== '') {
     $where[] = '(name LIKE ? OR slug LIKE ? OR city LIKE ? OR country LIKE ?)';
     $like = '%' . $q . '%';
@@ -52,16 +59,16 @@ $stmt = $db->prepare($sql);
 $stmt->execute($params);
 $companies = $stmt->fetchAll();
 
-function admin_filter_url(string $status, string $verified, string $outreach, string $q = ''): string
+function admin_filter_url(string $status, string $verified, string $outreach, string $instagram, string $q = ''): string
 {
-    $url = 'admin.php?status=' . urlencode($status) . '&verified=' . urlencode($verified) . '&outreach=' . urlencode($outreach);
+    $url = 'admin.php?status=' . urlencode($status) . '&verified=' . urlencode($verified) . '&outreach=' . urlencode($outreach) . '&instagram=' . urlencode($instagram);
     if ($q !== '') {
         $url .= '&q=' . urlencode($q);
     }
     return $url;
 }
 
-$currentUrl = admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, $q);
+$currentUrl = admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, $instagramFilter, $q);
 
 foreach ($companies as &$row) {
     $founders = $db->prepare('SELECT name, email, linkedin, show_email FROM founders WHERE company_id = ? ORDER BY id');
@@ -89,24 +96,29 @@ $activeAdminPage = 'submissions';
   <input type="hidden" name="status" value="<?= h($statusFilter) ?>">
   <input type="hidden" name="verified" value="<?= h($verifiedFilter) ?>">
   <input type="hidden" name="outreach" value="<?= h($outreachFilter) ?>">
+  <input type="hidden" name="instagram" value="<?= h($instagramFilter) ?>">
   <input class="field" type="search" name="q" value="<?= h($q) ?>" placeholder="Search by name, city or country…" style="margin:0">
 </form>
 <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:16px">
   <div class="toggle">
-    <a href="<?= admin_filter_url('all', $verifiedFilter, $outreachFilter, $q) ?>" class="<?= $statusFilter === 'all' ? 'active' : '' ?>">All status</a>
-    <a href="<?= admin_filter_url('pending', $verifiedFilter, $outreachFilter, $q) ?>" class="<?= $statusFilter === 'pending' ? 'active' : '' ?>">Pending</a>
-    <a href="<?= admin_filter_url('approved', $verifiedFilter, $outreachFilter, $q) ?>" class="<?= $statusFilter === 'approved' ? 'active' : '' ?>">Approved</a>
+    <a href="<?= admin_filter_url('all', $verifiedFilter, $outreachFilter, $instagramFilter, $q) ?>" class="<?= $statusFilter === 'all' ? 'active' : '' ?>">All status</a>
+    <a href="<?= admin_filter_url('pending', $verifiedFilter, $outreachFilter, $instagramFilter, $q) ?>" class="<?= $statusFilter === 'pending' ? 'active' : '' ?>">Pending</a>
+    <a href="<?= admin_filter_url('approved', $verifiedFilter, $outreachFilter, $instagramFilter, $q) ?>" class="<?= $statusFilter === 'approved' ? 'active' : '' ?>">Approved</a>
   </div>
   <div class="toggle">
-    <a href="<?= admin_filter_url($statusFilter, 'all', $outreachFilter, $q) ?>" class="<?= $verifiedFilter === 'all' ? 'active' : '' ?>">All</a>
-    <a href="<?= admin_filter_url($statusFilter, 'verified', $outreachFilter, $q) ?>" class="<?= $verifiedFilter === 'verified' ? 'active' : '' ?>">Verified</a>
-    <a href="<?= admin_filter_url($statusFilter, 'unverified', $outreachFilter, $q) ?>" class="<?= $verifiedFilter === 'unverified' ? 'active' : '' ?>">Not yet verified</a>
+    <a href="<?= admin_filter_url($statusFilter, 'all', $outreachFilter, $instagramFilter, $q) ?>" class="<?= $verifiedFilter === 'all' ? 'active' : '' ?>">All</a>
+    <a href="<?= admin_filter_url($statusFilter, 'verified', $outreachFilter, $instagramFilter, $q) ?>" class="<?= $verifiedFilter === 'verified' ? 'active' : '' ?>">Verified</a>
+    <a href="<?= admin_filter_url($statusFilter, 'unverified', $outreachFilter, $instagramFilter, $q) ?>" class="<?= $verifiedFilter === 'unverified' ? 'active' : '' ?>">Not yet verified</a>
   </div>
   <div class="toggle">
-    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'all', $q) ?>" class="<?= $outreachFilter === 'all' ? 'active' : '' ?>">Any outreach</a>
-    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'ready', $q) ?>" class="<?= $outreachFilter === 'ready' ? 'active' : '' ?>">Ready to email</a>
-    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'sent', $q) ?>" class="<?= $outreachFilter === 'sent' ? 'active' : '' ?>">Emailed</a>
-    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'none', $q) ?>" class="<?= $outreachFilter === 'none' ? 'active' : '' ?>">No email found</a>
+    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'all', $instagramFilter, $q) ?>" class="<?= $outreachFilter === 'all' ? 'active' : '' ?>">Any outreach</a>
+    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'ready', $instagramFilter, $q) ?>" class="<?= $outreachFilter === 'ready' ? 'active' : '' ?>">Ready to email</a>
+    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'sent', $instagramFilter, $q) ?>" class="<?= $outreachFilter === 'sent' ? 'active' : '' ?>">Emailed</a>
+    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, 'none', $instagramFilter, $q) ?>" class="<?= $outreachFilter === 'none' ? 'active' : '' ?>">No email found</a>
+  </div>
+  <div class="toggle">
+    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, 'all', $q) ?>" class="<?= $instagramFilter === 'all' ? 'active' : '' ?>">Any Instagram</a>
+    <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, 'needs_review', $q) ?>" class="<?= $instagramFilter === 'needs_review' ? 'active' : '' ?>">Instagram: needs review</a>
   </div>
   <span class="muted" style="font-size:13px"><?= count($companies) ?> <?= count($companies) === 1 ? 'company' : 'companies' ?></span>
 </div>
@@ -132,7 +144,7 @@ $activeAdminPage = 'submissions';
         <div class="meta">
           <?php if ($c['kerala_connection']): ?>Kerala connection: <?= h($c['kerala_connection']) ?><?php if ($c['kerala_district']): ?> (<?= h($c['kerala_district']) ?>)<?php endif; ?><?php endif; ?>
           <?php if ($c['kerala_connection'] && ($c['instagram'] || $c['contact_ok_podcast_stories'])): ?> · <?php endif; ?>
-          <?php if ($c['instagram']): ?>Instagram: @<?= h($c['instagram']) ?><?php endif; ?>
+          <?php if ($c['instagram']): ?>Instagram: @<?= h($c['instagram']) ?><?php if (($c['instagram_source'] ?? null) === 'research' && ($c['instagram_confidence'] ?? null) === 'medium'): ?> <span class="chip" style="font-size:11px;color:#9a3412;border-color:#9a3412">Needs review</span><?php endif; ?><?php endif; ?>
           <?php if ($c['instagram'] && $c['contact_ok_podcast_stories']): ?> · <?php endif; ?>
           <?php if ($c['contact_ok_podcast_stories']): ?>OK to contact for stories/podcast<?php endif; ?>
         </div>

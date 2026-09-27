@@ -116,6 +116,33 @@ decisions in plain, non-engineer terms, was added directly by the owner
 working with another session — merged with this session's own
 `CLAUDE.md`/`HISTORY.md`/`OPEN_ITEMS.md` effort on 2026-09-19.
 
+## 2026-09-27 — Instagram backfill on existing profiles
+
+Backfilled Instagram handles onto the 130 companies already in the
+directory, from an external research pass (separate from the `instagram`
+field the 5-step submission form already collects for new companies).
+Added `instagram_source` (`founder_submitted` vs `research`),
+`instagram_confidence` (`high`/`medium`), and `instagram_note` columns
+(`migration-add-instagram-provenance.sql`) so a founder's own entry always
+wins over a researched guess, and a not-fully-confirmed guess can be held
+back from public view. `company.php` now shows an Instagram link on the
+profile page whenever a handle is on file and not `medium` confidence.
+71 high-confidence handles publish immediately; 7 medium-confidence ones
+(2 of them a founder's personal account rather than a company page) import
+flagged for review — `admin.php` has an "Instagram: needs review" filter,
+and `admin-edit.php` shows the reviewer's note plus a one-click "Publish
+this handle" checkbox that approves without retyping it. Data backfill
+itself lives in `import/migration-instagram-backfill-2026-09-27.sql`,
+guarded so it never overwrites a handle a founder already submitted
+themselves; not yet run against production (see `OPEN_ITEMS.md`).
+
+Two listing pairs the research flagged as likely duplicates were left for
+Nijil to decide on, not auto-merged: `karinkada-ayurveda` /
+`sonnentag-kerala-ayurveda-shop` (same website + director — same pair the
+2026-09-18 email enrichment migration already flagged), and
+`igcs-indo-german-services` / `igcs-consultancy` (same founder + website,
+possibly two distinct legal entities rather than duplicates).
+
 ## Open threads
 
 See `OPEN_ITEMS.md`.

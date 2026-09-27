@@ -98,14 +98,15 @@ for ($suffix = 2; ; $suffix++) {
 $db->beginTransaction();
 
 $stmt = $db->prepare(
-    'INSERT INTO companies (slug, name, website, instagram, contact_ok_podcast_stories, contact_permission_at, industry, business_type, industry_detail, kerala_connection, kerala_district, size, founded_year, country, city, location, description, status, ip_hash)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "pending", ?)'
+    'INSERT INTO companies (slug, name, website, instagram, instagram_source, contact_ok_podcast_stories, contact_permission_at, industry, business_type, industry_detail, kerala_connection, kerala_district, size, founded_year, country, city, location, description, status, ip_hash)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "pending", ?)'
 );
 $stmt->execute([
     $slug,
     $name,
     trim((string)($input['website'] ?? '')) ?: null,
     $instagram,
+    $instagram !== null ? 'founder_submitted' : null,
     $contactOkPodcastStories ? 1 : 0,
     $contactOkPodcastStories ? date('Y-m-d H:i:s') : null,
     $industry,
