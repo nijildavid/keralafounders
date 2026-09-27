@@ -152,10 +152,20 @@ fieldset.form-fieldset legend{padding:0;width:100%}
    admin/claim forms (10px uppercase labels, 12-13px muted hint text) — too
    small and low-contrast for a public-facing form people fill in once.
    Scoped to .wizard only; claim.php and admin-edit.php keep the original. */
-.wizard .label{font-size:14px;letter-spacing:.03em;color:var(--ink2);margin-bottom:8px}
+.wizard .label{font-size:14px;letter-spacing:.03em;color:var(--ink2);margin-bottom:8px;min-height:42px}
 .wizard .hint{font-size:14px;color:#57534e;line-height:1.5}
+.wizard .hint a{color:var(--accent2);text-decoration:underline}
 .wizard .location-intro{font-size:15px;color:#57534e;margin:0 0 20px}
+/* The shared .location-section rule (also used by admin-edit.php) adds its
+   own top divider on top of the .form-section it follows — doubles up the
+   line inside the wizard. Remove it here only; admin-edit.php is untouched. */
+.wizard .location-section{border-top:0;margin-top:0;padding-top:0}
 .wizard .checkrow{font-size:15px;line-height:1.6}
+.wizard .stay-touch{align-items:center;padding:14px 16px;border:1.5px solid var(--line);border-radius:var(--radius-md);transition:background-color .15s ease,border-color .15s ease}
+.wizard .stay-touch:has(input:checked){border-color:var(--primary);background:var(--mint)}
+.wizard .stay-touch-check{display:none;color:var(--primary);font-weight:800;font-size:18px;margin-left:auto;flex-shrink:0}
+.wizard .stay-touch:has(input:checked) .stay-touch-check{display:inline-block}
+@media(prefers-reduced-motion:reduce){.wizard .stay-touch{transition:none}}
 .wizard .checkrow input[type=checkbox],.wizard .radio-group input[type=radio]{width:20px;height:20px;accent-color:var(--primary)}
 
 /* "Edit" buttons on the review step, and the "Add another company" link on
@@ -193,6 +203,7 @@ fieldset.form-fieldset legend{padding:0;width:100%}
 .wizard .summary dd{margin:0;word-break:break-word}
 .wizard .callout{background:var(--mint);border-radius:var(--radius-md);padding:16px 18px;font-size:15px;margin-bottom:var(--space-6)}
 .wizard-success{text-align:center;padding-top:40px}
+.wizard-success-illustration{width:100%;max-width:280px;height:auto;margin:0 0 var(--space-6)}
 .wizard h1:focus-visible{outline:2px solid var(--accent2);outline-offset:4px;border-radius:4px}
 
 @media(max-width:600px){
