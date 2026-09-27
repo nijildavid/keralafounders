@@ -21,14 +21,20 @@ $canonicalUrl = 'https://keralafounders.eu/stories.php';
 
 <section class="section" style="padding-top:40px"><div class="wrap" style="max-width:780px">
 <div class="coming-soon-panel">
+  <div class="eyebrow">Episode 1</div>
+  <h2 style="font-size:26px;margin:10px 0 16px">The first story is live.</h2>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1cewGKxs6k8ZrTRmlL6qxW?utm_source=generator" width="100%" height="232" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+
+<div class="coming-soon-panel">
   <div class="eyebrow">Coming soon</div>
-  <h2 style="font-size:26px;margin:10px 0 12px">Stories are being collected.</h2>
-  <p class="muted" style="font-size:16px;line-height:1.8;margin:0">The first conversations are already happening. Soon you'll be able to listen to the podcast, read the full conversations and discover the people behind the businesses.</p>
+  <h2 style="font-size:26px;margin:10px 0 12px">More stories are being recorded.</h2>
+  <p class="muted" style="font-size:16px;line-height:1.8;margin:0">The first conversation is out now. More are already in progress — soon you'll be able to listen to the podcast, read the full conversations and discover the people behind the businesses.</p>
 </div>
 
 <div class="coming-soon-panel" style="margin-top:24px">
   <div class="eyebrow">Get notified</div>
-  <h2 style="font-size:22px;margin:10px 0 12px">Be the first to know when stories go live.</h2>
+  <h2 style="font-size:22px;margin:10px 0 12px">Be the first to know when the next story goes live.</h2>
   <form id="storySignupForm" style="display:flex;gap:10px;flex-wrap:wrap;align-items:start;margin-top:14px">
     <input class="field" style="flex:1;min-width:220px" id="storyEmail" name="email" type="email" required placeholder="you@company.com" aria-label="Email address">
     <input type="text" name="website" class="guidance-feedback-website" tabindex="-1" autocomplete="off" aria-hidden="true">
