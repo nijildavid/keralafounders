@@ -63,13 +63,13 @@ $canonicalUrl = 'https://keralafounders.eu/add-company.php';
   <div class="email-switch-note">Keep this off to keep the email hidden.</div>
 </div></div></div><button type="button" id="addFounder" class="pill light" style="margin-top:14px">+ Add another founder</button></div>
 <div class="form-section"><p class="hint" style="margin-top:0">This helps us know which listings to mark as Verified. It is not shown publicly as plain text.</p><fieldset class="form-fieldset"><legend class="label">How are you connected to Kerala? <span class="muted" style="font-weight:400;text-transform:none;letter-spacing:normal">(optional)</span></legend><div id="keralaConnectionGroup" class="radio-group"></div></fieldset><div id="keralaDistrictWrap" hidden style="margin-top:17px"><label class="label" for="add-kerala-district">Which district? <span class="muted" style="font-weight:400">(optional)</span></label><select class="select" id="add-kerala-district" name="keralaDistrict"><option value="">Select</option></select></div></div>
-<div class="form-section"><div><label class="label" for="add-instagram">Instagram <span class="muted" style="font-weight:400">(optional)</span></label><input class="field" id="add-instagram" name="instagram" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="add-instagram-error" placeholder="@yourcompany"><p class="hint">We'd love to see what you're building — tag or mention @keralafounders.eu on Instagram.</p><span class="field-error" id="add-instagram-error" hidden></span></div></div>
+<div class="form-section"><div><label class="label" for="add-instagram">Instagram <span class="muted" style="font-weight:400">(optional)</span></label><input class="field" id="add-instagram" name="instagram" autocomplete="off" autocapitalize="none" spellcheck="false" aria-describedby="add-instagram-error" placeholder="@yourcompany"><p class="hint">We'd love to see what you're building — tag or mention <a href="https://www.instagram.com/keralafounders.eu/" target="_blank" rel="noopener">@keralafounders.eu</a> on Instagram.</p><span class="field-error" id="add-instagram-error" hidden></span></div></div>
 </section>
 
 <section data-step="4" aria-labelledby="h4" hidden>
 <h1 id="h4" tabindex="-1">Stay in touch</h1>
 <p class="wizard-lead">Optional, and nothing here affects your listing.</p>
-<div class="form-section"><label class="checkrow"><input id="add-contact-ok" type="checkbox" name="contactOkPodcastStories" value="yes"> <span>It's okay for Kerala Founders to contact me about a podcast episode, a story about my company, or other ways to feature it. <span class="muted" style="font-weight:400">(optional — off by default)</span></span></label><p class="hint">We'll only contact you about this, and you can say stop at any time.</p></div>
+<div class="form-section"><label class="checkrow stay-touch"><input id="add-contact-ok" type="checkbox" name="contactOkPodcastStories" value="yes"> <span>It's okay for Kerala Founders to contact me about a podcast episode, a story about my company, or other ways to feature it. <span class="muted" style="font-weight:400">(optional — off by default)</span></span><span class="stay-touch-check" aria-hidden="true">✓</span></label><p class="hint">We'll only contact you about this, and you can say stop at any time.</p></div>
 <div class="callout">More is coming for founders. We're working on new ways to help you get found and share your story.</div>
 </section>
 
@@ -82,6 +82,7 @@ $canonicalUrl = 'https://keralafounders.eu/add-company.php';
 </section>
 
 <section data-step="done" aria-labelledby="hd" hidden class="wizard-success">
+<img src="assets/celebration.svg" alt="" class="wizard-success-illustration">
 <h1 id="hd" tabindex="-1">Thank you, we have it</h1>
 <p class="wizard-lead">We review new companies within a few days and will email you when it is live.</p>
 <p><button type="button" class="linkbtn" id="restart">Add another company</button></p>
@@ -181,7 +182,7 @@ function validateForm(form){
 }
 form.addEventListener('focusout',e=>{ if(e.target.matches && e.target.matches('[required]')) validateField(e.target); });
 
-function show(n){
+function show(n,moveFocus=true){
   document.querySelectorAll('[data-step]').forEach(s=>{ s.hidden = s.dataset.step !== String(n); });
   const isDone = (n === 'done');
   document.getElementById('wizardActions').hidden = isDone;
@@ -195,8 +196,10 @@ function show(n){
     document.querySelectorAll('.wizard-bar span').forEach((el,i)=>{ el.classList.toggle('done', i<n-1); el.classList.toggle('now', i===n-1); });
     if(n===TOTAL_STEPS) buildSummary();
   }
-  const heading=stepEl(n).querySelector('h1');
-  if(heading) heading.focus({preventScroll:true});
+  if(moveFocus){
+    const heading=stepEl(n).querySelector('h1');
+    if(heading) heading.focus({preventScroll:true});
+  }
   live.textContent = isDone ? 'Submitted. Thank you.' : `Step ${n} of ${TOTAL_STEPS}: ${stepNames[n]||''}`;
   window.scrollTo({top:0});
 }
@@ -258,6 +261,6 @@ document.getElementById('restart').onclick=()=>{
   show(1);
 };
 
-show(1);
+show(1,false);
 </script>
 </body></html>
