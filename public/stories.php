@@ -5,7 +5,6 @@ $canonicalUrl = 'https://keralafounders.eu/stories.php';
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
-<meta name="robots" content="noindex">
 <?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
