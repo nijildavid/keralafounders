@@ -85,6 +85,55 @@ function fetch_approved_companies(PDO $db, ?string $country = null): array
     return companies_with_founders($db, $stmt->fetchAll());
 }
 
+/**
+ * Same as fetch_approved_companies(), but does the pagination in SQL
+ * (COUNT + LIMIT/OFFSET) instead of fetching every approved row and
+ * array_slice()-ing down to one page — founders.php/countries.php only
+ * ever display $pageSize rows, so there's no reason to pull (and run
+ * founders queries for) every other approved company on every pageview.
+ *
+ * Returns ['companies' => ..., 'total' => int, 'page' => int (clamped into
+ * range), 'totalPages' => int].
+ */
+function fetch_approved_companies_page(PDO $db, int $page, int $pageSize, ?string $country = null): array
+{
+    $where = "status = 'approved'";
+    $params = [];
+    if ($country !== null) {
+        $where .= ' AND country = ?';
+        $params[] = $country;
+    }
+
+    $countStmt = $db->prepare("SELECT COUNT(*) FROM companies WHERE $where");
+    $countStmt->execute($params);
+    $total = (int)$countStmt->fetchColumn();
+
+    $totalPages = max(1, (int)ceil($total / $pageSize));
+    if ($page > $totalPages) {
+        $page = $totalPages;
+    }
+    if ($page < 1) {
+        $page = 1;
+    }
+    $offset = ($page - 1) * $pageSize;
+
+    $stmt = $db->prepare("SELECT * FROM companies WHERE $where ORDER BY name LIMIT ? OFFSET ?");
+    $i = 1;
+    foreach ($params as $param) {
+        $stmt->bindValue($i++, $param);
+    }
+    $stmt->bindValue($i++, $pageSize, PDO::PARAM_INT);
+    $stmt->bindValue($i++, $offset, PDO::PARAM_INT);
+    $stmt->execute();
+
+    return [
+        'companies' => companies_with_founders($db, $stmt->fetchAll()),
+        'total' => $total,
+        'page' => $page,
+        'totalPages' => $totalPages,
+    ];
+}
+
 function fetch_approved_companies_by_industry(PDO $db, string $industry): array
 {
     $stmt = $db->prepare("SELECT * FROM companies WHERE status = 'approved' AND industry = ? ORDER BY name");

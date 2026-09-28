@@ -42,6 +42,19 @@ Options -Indexes
     </FilesMatch>
 </IfModule>
 
+# data.php declares itself as application/javascript (so the client-side
+# filtering JS can load it via <script src>), which makes the
+# ExpiresByType application/javascript rule above match it too — by
+# content-type, not file extension, so the "excludes .php files" comment
+# above doesn't actually cover it. Without this override a stale company
+# edit/approval could take up to a month to show up for visitors.
+<IfModule mod_headers.c>
+    <Files "data.php">
+        Header always set Cache-Control "no-store"
+        Header unset Expires
+    </Files>
+</IfModule>
+
 ErrorDocument 404 /404.php
 
 RewriteEngine On

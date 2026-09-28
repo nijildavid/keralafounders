@@ -27,17 +27,14 @@ if ($selected !== '') {
     $canonicalUrl = 'https://keralafounders.eu/countries.php';
 }
 
-$companies = $selected !== '' ? fetch_approved_companies($db, $selected) : [];
 $totalPages = 1;
-$pageRows = $companies;
+$pageRows = [];
 if ($selected !== '') {
-    $total = count($companies);
-    $totalPages = max(1, (int)ceil($total / PAGE_SIZE));
-    if ($page > $totalPages) {
-        $page = $totalPages;
-    }
-    $start = ($page - 1) * PAGE_SIZE;
-    $pageRows = array_slice($companies, $start, PAGE_SIZE);
+    $result = fetch_approved_companies_page($db, $page, PAGE_SIZE, $selected);
+    $pageRows = $result['companies'];
+    $total = $result['total'];
+    $page = $result['page'];
+    $totalPages = $result['totalPages'];
 }
 
 $guidanceGuideSlug = null;
