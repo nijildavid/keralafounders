@@ -3,6 +3,9 @@ require __DIR__ . '/../config/auth.php';
 kf_session_start();
 
 $error = '';
+if (($_GET['timeout'] ?? '') === '1') {
+    $error = 'You were signed out after a period of inactivity. Please sign in again.';
+}
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (login_is_locked_out()) {
         $error = 'Too many failed attempts. Please try again in a few minutes.';
@@ -12,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             login_reset_attempts();
             session_regenerate_id(true);
             $_SESSION['is_admin'] = true;
+            $_SESSION['last_activity'] = time();
             header('Location: admin-dashboard.php');
             exit;
         }

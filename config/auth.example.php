@@ -10,6 +10,11 @@ define('LOGIN_ATTEMPTS_FILE', __DIR__ . '/login-attempts.json');
 define('LOGIN_MAX_ATTEMPTS', 5);
 define('LOGIN_LOCKOUT_SECONDS', 300);
 
+// An admin session left open with no activity for this long is force-expired
+// on the next admin page load — limits how long a stolen/leaked session
+// cookie or an unattended logged-in browser stays useful.
+define('ADMIN_SESSION_IDLE_TIMEOUT', 1800);
+
 // Salt mixed into the hashed IP address stored against a Guidance feedback
 // vote, so the rate limiter can recognise repeat visitors without ever
 // storing a raw IP. Generate one with:
@@ -38,6 +43,13 @@ function require_admin(): void
         header('Location: admin-login.php');
         exit;
     }
+    if (!empty($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > ADMIN_SESSION_IDLE_TIMEOUT) {
+        session_unset();
+        session_destroy();
+        header('Location: admin-login.php?timeout=1');
+        exit;
+    }
+    $_SESSION['last_activity'] = time();
 }
 
 /** Per-session CSRF token, embedded in every admin form/fetch and checked on every state-changing request. */
