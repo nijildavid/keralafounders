@@ -61,23 +61,49 @@ if ($name === '' || $industry === '' || $businessType === '' || $country === '' 
 
 $db = get_db();
 
-$check = $db->prepare('SELECT id FROM companies WHERE id = ?');
+$check = $db->prepare('SELECT instagram, instagram_source, instagram_confidence, instagram_note FROM companies WHERE id = ?');
 $check->execute([$id]);
-if (!$check->fetch()) {
+$existing = $check->fetch();
+if (!$existing) {
     http_response_code(404);
     echo json_encode(['error' => 'Company not found']);
     exit;
 }
 
+// A manually typed/cleared Instagram value is treated as admin-confirmed and
+// always wins over a research-sourced guess. Leaving the value unchanged
+// (the common case — this form resubmits every field on every save) keeps
+// whatever source/confidence/note was already on file, so re-saving an
+// unrelated field never silently "approves" a pending research guess. The
+// one exception: the instagramApproved checkbox, shown only for a pending
+// medium-confidence research row, flips it to high/published without
+// requiring the admin to retype the handle.
+if ($instagram !== $existing['instagram']) {
+    $instagramSource = $instagram !== null ? 'founder_submitted' : null;
+    $instagramConfidence = null;
+    $instagramNote = null;
+} else {
+    $instagramSource = $existing['instagram_source'];
+    $instagramNote = $existing['instagram_note'];
+    if ($existing['instagram_source'] === 'research' && $existing['instagram_confidence'] === 'medium') {
+        $instagramConfidence = !empty($input['instagramApproved']) ? 'high' : 'medium';
+    } else {
+        $instagramConfidence = $existing['instagram_confidence'];
+    }
+}
+
 $db->beginTransaction();
 
 $stmt = $db->prepare(
-    'UPDATE companies SET name = ?, website = ?, instagram = ?, industry = ?, business_type = ?, industry_detail = ?, kerala_connection = ?, kerala_district = ?, contact_ok_podcast_stories = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, status = ?, verified = ? WHERE id = ?'
+    'UPDATE companies SET name = ?, website = ?, instagram = ?, instagram_source = ?, instagram_confidence = ?, instagram_note = ?, industry = ?, business_type = ?, industry_detail = ?, kerala_connection = ?, kerala_district = ?, contact_ok_podcast_stories = ?, size = ?, founded_year = ?, country = ?, city = ?, location = ?, description = ?, status = ?, verified = ? WHERE id = ?'
 );
 $stmt->execute([
     $name,
     trim((string)($input['website'] ?? '')) ?: null,
     $instagram,
+    $instagramSource,
+    $instagramConfidence,
+    $instagramNote,
     $industry,
     $businessType,
     $industryDetail ?: null,

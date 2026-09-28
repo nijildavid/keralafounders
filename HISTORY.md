@@ -116,6 +116,47 @@ decisions in plain, non-engineer terms, was added directly by the owner
 working with another session — merged with this session's own
 `CLAUDE.md`/`HISTORY.md`/`OPEN_ITEMS.md` effort on 2026-09-19.
 
+## 2026-09-27 — Instagram backfill on existing profiles
+
+Backfilled Instagram handles onto the 130 companies already in the
+directory, from an external research pass (separate from the `instagram`
+field the 5-step submission form already collects for new companies).
+Added `instagram_source` (`founder_submitted` vs `research`),
+`instagram_confidence` (`high`/`medium`), and `instagram_note` columns
+(`migration-add-instagram-provenance.sql`) so a founder's own entry always
+wins over a researched guess, and a not-fully-confirmed guess can be held
+back from public view. `company.php` now shows an Instagram link on the
+profile page whenever a handle is on file and not `medium` confidence.
+71 high-confidence handles publish immediately; 7 medium-confidence ones
+(2 of them a founder's personal account rather than a company page) import
+flagged for review — `admin.php` has an "Instagram: needs review" filter,
+and `admin-edit.php` shows the reviewer's note plus a one-click "Publish
+this handle" checkbox that approves without retyping it. Data backfill
+itself lives in `import/migration-instagram-backfill-2026-09-27.sql`,
+guarded so it never overwrites a handle a founder already submitted
+themselves; not yet run against production (see `OPEN_ITEMS.md`).
+
+Two listing pairs the research flagged as likely duplicates were left for
+Nijil to decide on, not auto-merged: `karinkada-ayurveda` /
+`sonnentag-kerala-ayurveda-shop` (same website + director — same pair the
+2026-09-18 email enrichment migration already flagged), and
+`igcs-indo-german-services` / `igcs-consultancy` (same founder + website,
+possibly two distinct legal entities rather than duplicates).
+
+Nijil reviewed the two pairs and confirmed the Ayurveda one should be
+merged; the IGCS pair stays as two listings for now (see `OPEN_ITEMS.md`
+for why). Wrote `import/migration-merge-ayurveda-listings-2026-09-27.sql`
+to do it: keeps `sonnentag-kerala-ayurveda-shop` (matches the live
+website's own name/domain), carries over founders/branches/claim history
+from `karinkada-ayurveda`, fills in any field the survivor was missing
+without overwriting what it already had, and deletes the duplicate row.
+Tested against a local copy with dummy data standing in for the two real
+rows, including confirming a second run (after the merge already
+happened) is a safe no-op. Not run against production yet — no DB/SSH
+access from this session; see `OPEN_ITEMS.md` for the manual step and
+what to double-check afterward (possible duplicate founder entry,
+`karinkada-ayurveda`'s URL 404ing with no redirect built for it).
+
 ## Open threads
 
 See `OPEN_ITEMS.md`.
