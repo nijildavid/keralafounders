@@ -180,7 +180,7 @@ than presenting them as settled:
   every attempt, both during initial research and on a same-day retry.
   Sourcing leans on chamber/portal mirrors instead of the tax authority
   directly. A genuine conflict between two official government pages on the
-  Golden Visa minimum-investment amount (⊂250k vs. ⊂400k/⊂800k under a
+  Golden Visa minimum-investment amount (€250k vs. €400k/€800k under a
   newer law) was found and left unresolved in the guide rather than
   silently picked — still worth resolving whenever those sites become
   reachable, since Golden Visa content stays hidden (`hold: true`) until
