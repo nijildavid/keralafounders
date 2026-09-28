@@ -4,6 +4,7 @@ declare(strict_types=1);
 require __DIR__ . '/../../config/auth.php';
 require_admin();
 require __DIR__ . '/../../config/db.php';
+require __DIR__ . '/../assets/validation-helpers.php';
 
 header('Content-Type: application/json');
 
@@ -37,16 +38,11 @@ $contactOkPodcastStories = !empty($input['contactOkPodcastStories']);
 $founders = is_array($input['founders'] ?? null) ? $input['founders'] : [];
 $founders = array_values(array_filter($founders, fn($f) => trim((string)($f['name'] ?? '')) !== ''));
 
-// Kept in sync with submit-company.php's Instagram normalization.
-$instagram = null;
-$instagramRaw = trim((string)($input['instagram'] ?? ''));
-if ($instagramRaw !== '') {
-    $handle = strtolower(preg_replace('/^https?:\/\/(www\.)?instagram\.com\//i', '', $instagramRaw));
-    $handle = preg_replace('/[\/?#].*$/', '', $handle);
-    $handle = ltrim($handle, '@');
-    if (preg_match('/^[a-z0-9._]{1,30}$/', $handle)) {
-        $instagram = $handle;
-    }
+$instagram = normalize_instagram_handle((string)($input['instagram'] ?? ''));
+if ($instagram === false) {
+    // Admin form doesn't hard-validate the way the public form does —
+    // an unparseable handle is silently dropped rather than blocking the save.
+    $instagram = null;
 }
 
 if ($id <= 0) {

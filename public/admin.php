@@ -120,9 +120,9 @@ $activeAdminPage = 'submissions';
         <div style="display:flex;gap:8px;align-items:center">
           <strong><?= h($c['name']) ?></strong>
           <?php if ($c['status'] === 'approved'): ?>
-            <span class="chip" style="color:#166534;border-color:#166534">Approved</span>
+            <span class="chip chip-positive">Approved</span>
           <?php else: ?>
-            <span class="chip" style="color:#9a3412;border-color:#9a3412">Pending</span>
+            <span class="chip chip-attention">Pending</span>
           <?php endif; ?>
         </div>
         <div class="meta"><?= h($c['city']) ?>, <?= h($c['country']) ?> · <?= h($c['industry']) ?></div>
