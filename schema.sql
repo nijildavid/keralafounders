@@ -29,7 +29,11 @@ CREATE TABLE IF NOT EXISTS companies (
   outreach_sent_at TIMESTAMP NULL,
   outreach_responded_at TIMESTAMP NULL,
   ip_hash CHAR(64) NULL,
-  INDEX idx_ip_hash_created (ip_hash, created_at)
+  INDEX idx_ip_hash_created (ip_hash, created_at),
+  INDEX idx_status_country (status, country),
+  INDEX idx_status_industry (status, industry),
+  INDEX idx_status_business_type (status, business_type),
+  INDEX idx_status_city (status, city)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS founders (
