@@ -679,7 +679,7 @@ footer{
 }
 .company-link:hover{color:inherit !important}
 .company-link:focus-visible{
-  outline:2px solid var(--accent);
+  outline:2px solid var(--accent2);
   outline-offset:4px;
 }
 .company-detail{

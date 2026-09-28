@@ -2,18 +2,19 @@
 header('Content-Type: application/javascript; charset=utf-8');
 require __DIR__ . '/../../config/db.php';
 require __DIR__ . '/../../config/reference.php';
+require __DIR__ . '/render-helpers.php';
 
 $db = get_db();
 
-$companies = [];
-foreach ($db->query("SELECT * FROM companies WHERE status = 'approved' ORDER BY created_at DESC, id DESC") as $row) {
-    $founders = $db->prepare('SELECT name FROM founders WHERE company_id = ? ORDER BY id');
-    $founders->execute([$row['id']]);
+$companyRows = $db->query("SELECT * FROM companies WHERE status = 'approved' ORDER BY created_at DESC, id DESC")->fetchAll();
+$foundersByCompany = fetch_founders_by_company_id($db, array_column($companyRows, 'id'));
 
+$companies = [];
+foreach ($companyRows as $row) {
     $companies[] = [
         'id' => $row['slug'],
         'name' => $row['name'],
-        'founders' => $founders->fetchAll(PDO::FETCH_COLUMN),
+        'founders' => $foundersByCompany[$row['id']] ?? [],
         'country' => $row['country'],
         'city' => $row['city'],
         'industry' => $row['industry'],
