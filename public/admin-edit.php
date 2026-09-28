@@ -51,7 +51,17 @@ function h(?string $s): string
 <div class="form-section"><h2>→ The company</h2><div class="form-grid">
   <div><label class="label" for="edit-company">Company name *</label><input class="field" id="edit-company" name="company" required value="<?= h($company['name']) ?>"></div>
   <div><label class="label" for="edit-website">Website</label><input class="field" id="edit-website" name="website" value="<?= h($company['website']) ?>"></div>
-  <div><label class="label" for="edit-instagram">Instagram</label><input class="field" id="edit-instagram" name="instagram" value="<?= h((string)($company['instagram'] ?? '')) ?>" placeholder="@yourcompany"></div>
+  <div><label class="label" for="edit-instagram">Instagram</label><input class="field" id="edit-instagram" name="instagram" value="<?= h((string)($company['instagram'] ?? '')) ?>" placeholder="@yourcompany">
+    <?php if (($company['instagram_source'] ?? null) === 'research' && ($company['instagram_confidence'] ?? null) === 'medium'): ?>
+    <div class="muted" style="font-size:12px;margin-top:6px;padding:8px;border:1px solid #e5e0d8;border-radius:6px">
+      <strong>Needs review</strong> — found by research, not confirmed by the founder.
+      <?php if (!empty($company['instagram_note'])): ?><br><?= h($company['instagram_note']) ?><?php endif; ?>
+      <label class="checkrow" style="margin-top:6px"><input type="checkbox" id="edit-instagram-approved" name="instagramApproved" value="yes"> <span>Publish this handle on the public profile</span></label>
+    </div>
+    <?php elseif (($company['instagram_source'] ?? null) === 'research'): ?>
+    <div class="muted" style="font-size:12px;margin-top:4px">From research, shown on the public profile.</div>
+    <?php endif; ?>
+  </div>
   <div><label class="label" for="edit-industry">Industry *</label><select class="select" id="edit-industry" name="industry" required></select></div>
   <div><label class="label" for="edit-business-type">Business type *</label><select class="select" id="edit-business-type" name="businessType" required></select></div>
   <div><label class="label" for="edit-industry-detail">Specific type (optional)</label><input class="field" id="edit-industry-detail" name="industryDetail" value="<?= h((string)($company['industry_detail'] ?? '')) ?>" placeholder="e.g. Ayurveda retail, Import/export"></div>
@@ -122,7 +132,7 @@ form.onsubmit=async e=>{
     csrfToken: <?= json_encode($csrfToken) ?>,
     status: fd.get('status'),
     verified: fd.get('verified') === '1',
-    company:fd.get('company'),website:fd.get('website'),instagram:fd.get('instagram'),industry:fd.get('industry'),businessType:fd.get('businessType'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),
+    company:fd.get('company'),website:fd.get('website'),instagram:fd.get('instagram'),instagramApproved:fd.get('instagramApproved')==='yes',industry:fd.get('industry'),businessType:fd.get('businessType'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),
     keralaConnection:fd.get('keralaConnection'),keralaDistrict:fd.get('keralaDistrict'),contactOkPodcastStories:fd.get('contactOkPodcastStories')==='yes',
     founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),
     founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})).filter(f=>f.name.trim()!==''),

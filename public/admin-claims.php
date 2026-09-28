@@ -160,9 +160,9 @@ $activeAdminPage = 'claims';
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
           <strong><?= h($cl['company_name']) ?></strong>
           <?php if ($cl['status'] === 'pending'): ?>
-            <span class="chip" style="color:#9a3412;border-color:#9a3412">Pending</span>
+            <span class="chip chip-attention">Pending</span>
           <?php elseif ($cl['status'] === 'resolved'): ?>
-            <span class="chip" style="color:#166534;border-color:#166534">Resolved</span>
+            <span class="chip chip-positive">Resolved</span>
           <?php else: ?>
             <span class="chip">Dismissed</span>
           <?php endif; ?>

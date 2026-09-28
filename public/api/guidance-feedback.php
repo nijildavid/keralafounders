@@ -11,6 +11,7 @@ declare(strict_types=1);
 header('Content-Type: application/json');
 require __DIR__ . '/../../config/db.php';
 require __DIR__ . '/../../config/auth.php';
+require __DIR__ . '/../assets/validation-helpers.php';
 
 const RATE_LIMIT_WINDOW_MINUTES = 10;
 const RATE_LIMIT_MAX_VOTES = 30;
@@ -51,11 +52,7 @@ $ipHash = hash('sha256', GUIDANCE_FEEDBACK_IP_SALT . (string)($_SERVER['REMOTE_A
 
 $db = get_db();
 
-$rateCheck = $db->prepare(
-    'SELECT COUNT(*) FROM guidance_feedback WHERE ip_hash = ? AND created_at > NOW() - INTERVAL ' . RATE_LIMIT_WINDOW_MINUTES . ' MINUTE'
-);
-$rateCheck->execute([$ipHash]);
-if ((int)$rateCheck->fetchColumn() >= RATE_LIMIT_MAX_VOTES) {
+if (rate_limit_exceeded($db, 'guidance_feedback', $ipHash, RATE_LIMIT_WINDOW_MINUTES, RATE_LIMIT_MAX_VOTES)) {
     http_response_code(429);
     echo json_encode(['ok' => false, 'error' => 'Too many votes from this connection — please try again later.']);
     exit;

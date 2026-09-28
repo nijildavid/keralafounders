@@ -162,6 +162,12 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
             <span><?= $raw ? h($raw) : 'Website not provided' ?></span>
             <?php endif; ?>
           </div>
+          <?php if (!empty($company['instagram']) && ($company['instagram_confidence'] ?? null) !== 'medium'): ?>
+          <div class="side-section">
+            <div class="eyebrow">Instagram</div>
+            <a class="arrow" href="https://www.instagram.com/<?= rawurlencode($company['instagram']) ?>/" target="_blank" rel="noopener">@<?= h($company['instagram']) ?></a>
+          </div>
+          <?php endif; ?>
           <?php if ($founders): ?>
           <div class="side-section">
             <div class="eyebrow">Founders</div>

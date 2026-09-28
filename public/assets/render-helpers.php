@@ -249,14 +249,14 @@ function ssr_pagination_html(string $baseUrl, array $extraParams, int $page, int
 
 function companies_with_founders(PDO $db, array $rows): array
 {
+    $foundersByCompany = fetch_founders_by_company_id($db, array_column($rows, 'id'));
+
     $companies = [];
     foreach ($rows as $row) {
-        $fs = $db->prepare('SELECT name FROM founders WHERE company_id = ? ORDER BY id');
-        $fs->execute([$row['id']]);
         $companies[] = [
             'id' => $row['slug'],
             'name' => $row['name'],
-            'founders' => $fs->fetchAll(PDO::FETCH_COLUMN),
+            'founders' => $foundersByCompany[$row['id']] ?? [],
             'country' => $row['country'],
             'city' => $row['city'],
             'industry' => $row['industry'],
@@ -267,4 +267,23 @@ function companies_with_founders(PDO $db, array $rows): array
         ];
     }
     return $companies;
+}
+
+/**
+ * One query for every company's founder names, keyed by company_id, instead
+ * of one query per company — avoids the N+1 pattern as the directory grows.
+ */
+function fetch_founders_by_company_id(PDO $db, array $companyIds): array
+{
+    if (!$companyIds) {
+        return [];
+    }
+    $placeholders = implode(',', array_fill(0, count($companyIds), '?'));
+    $stmt = $db->prepare("SELECT company_id, name FROM founders WHERE company_id IN ($placeholders) ORDER BY id");
+    $stmt->execute($companyIds);
+    $byCompany = [];
+    foreach ($stmt->fetchAll() as $f) {
+        $byCompany[$f['company_id']][] = $f['name'];
+    }
+    return $byCompany;
 }
