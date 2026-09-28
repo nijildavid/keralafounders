@@ -15,6 +15,83 @@ define('LOGIN_LOCKOUT_SECONDS', 300);
 // cookie or an unattended logged-in browser stays useful.
 define('ADMIN_SESSION_IDLE_TIMEOUT', 1800);
 
+// Optional second login factor (TOTP, e.g. Google Authenticator/Authy) on
+// top of the password. Leave both blank to skip 2FA entirely — nothing
+// below runs unless a real secret is set, so a fresh install still logs in
+// with just the password until you deliberately turn this on.
+// Generate a secret + one-time backup code with:
+//   php scripts/generate-2fa-secret.php
+define('ADMIN_TOTP_SECRET', '');
+define('ADMIN_TOTP_BACKUP_CODE_HASH', '');
+define('ADMIN_TOTP_BACKUP_USED_FILE', __DIR__ . '/totp-backup-used.flag');
+
+function admin_2fa_enabled(): bool
+{
+    return ADMIN_TOTP_SECRET !== '';
+}
+
+const TOTP_BASE32_ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
+
+function totp_base32_decode(string $b32): string
+{
+    $b32 = strtoupper(preg_replace('/[^A-Za-z2-7]/', '', $b32));
+    $bits = '';
+    foreach (str_split($b32) as $char) {
+        $val = strpos(TOTP_BASE32_ALPHABET, $char);
+        if ($val === false) {
+            continue;
+        }
+        $bits .= str_pad(decbin($val), 5, '0', STR_PAD_LEFT);
+    }
+    $bytes = '';
+    foreach (str_split($bits, 8) as $byte) {
+        if (strlen($byte) === 8) {
+            $bytes .= chr(bindec($byte));
+        }
+    }
+    return $bytes;
+}
+
+/** 6-digit code for the 30-second window containing $timestamp (RFC 6238, SHA-1 — the Google Authenticator default). */
+function totp_code(string $secret, int $timestamp): string
+{
+    $counter = intdiv($timestamp, 30);
+    $binCounter = str_pad(pack('N', $counter), 8, "\0", STR_PAD_LEFT);
+    $hash = hash_hmac('sha1', $binCounter, totp_base32_decode($secret), true);
+    $offset = ord(substr($hash, -1)) & 0x0F;
+    $truncated = unpack('N', substr($hash, $offset, 4))[1] & 0x7FFFFFFF;
+    return str_pad((string)($truncated % 1000000), 6, '0', STR_PAD_LEFT);
+}
+
+/** Accepts the current code plus one 30s step either side, to tolerate small clock drift. */
+function totp_verify(string $secret, string $code): bool
+{
+    $code = preg_replace('/\D/', '', $code);
+    if (strlen($code) !== 6) {
+        return false;
+    }
+    $now = time();
+    for ($step = -1; $step <= 1; $step++) {
+        if (hash_equals(totp_code($secret, $now + ($step * 30)), $code)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+/** Single-use recovery code for when the authenticator app/device is unavailable. */
+function totp_backup_code_verify(string $code): bool
+{
+    if (ADMIN_TOTP_BACKUP_CODE_HASH === '' || file_exists(ADMIN_TOTP_BACKUP_USED_FILE)) {
+        return false;
+    }
+    if (!password_verify(trim($code), ADMIN_TOTP_BACKUP_CODE_HASH)) {
+        return false;
+    }
+    @file_put_contents(ADMIN_TOTP_BACKUP_USED_FILE, (string)time(), LOCK_EX);
+    return true;
+}
+
 // Salt mixed into the hashed IP address stored against a Guidance feedback
 // vote, so the rate limiter can recognise repeat visitors without ever
 // storing a raw IP. Generate one with:

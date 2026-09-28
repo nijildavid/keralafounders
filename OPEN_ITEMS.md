@@ -4,6 +4,35 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
+## Pending — admin 2FA and nightly DB backups need manual server-side setup
+
+Code for both landed in `keralafounders#43` (part of a broader security
+hardening pass — see that PR for the full list, including the CSP header,
+admin session idle timeout, and hidden error output already live via
+`.htaccess`/`config/db.example.php`). These two need one-time manual steps
+outside git before they're actually protecting anything:
+
+- **Admin 2FA** (`config/auth.example.php`, `public/admin-login.php`,
+  `scripts/generate-2fa-secret.php`): off by default — a fresh
+  `config/auth.php` with blank `ADMIN_TOTP_SECRET`/`ADMIN_TOTP_BACKUP_CODE_HASH`
+  logs in with just the password, unchanged from before. To turn it on, run
+  `php scripts/generate-2fa-secret.php` and paste its two output lines into
+  the live `config/auth.php` on the server (cPanel File Manager), then add
+  the printed secret to an authenticator app and store the printed one-time
+  backup code somewhere safe.
+- **Nightly DB backup** (`.github/workflows/backup-database.yml`,
+  `scripts/backup-database.php`): the workflow exists and reuses the same
+  SSH secrets `deploy-cpanel.yml` already has, but needs one new GitHub repo
+  secret, `BACKUP_ENCRYPTION_PASSPHRASE` (Settings → Secrets and variables →
+  Actions → New repository secret — any long random string), before its
+  first scheduled run. Without it the job will fail on `openssl enc` with an
+  empty passphrase. Restore: download the artifact from a workflow run,
+  then `openssl enc -d -aes-256-cbc -pbkdf2 -pass pass:<passphrase> -in
+  backup.sql.gz.enc | gunzip | mysql -u <user> -p <db>`. Repo is public, so
+  the dump is encrypted before it ever leaves the server — the passphrase is
+  the only thing standing between the artifact and the founder/claimant
+  emails it contains; treat it like any other production credential.
+
 ## Resolved — Guidance presentation layer
 
 After all 6 guides went live, a `deep-thinker`/`day-to-day-thinker` gut-check
