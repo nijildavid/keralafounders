@@ -2,8 +2,11 @@
 require __DIR__ . '/../config/auth.php';
 require_admin();
 require __DIR__ . '/../config/db.php';
+require __DIR__ . '/assets/render-helpers.php';
 $db = get_db();
 $csrfToken = csrf_token();
+
+const PAGE_SIZE = 20;
 
 $statusFilter = $_GET['status'] ?? 'all';
 if (!in_array($statusFilter, ['all', 'pending', 'approved'], true)) {
@@ -50,25 +53,60 @@ if ($q !== '') {
     array_push($params, $like, $like, $like, $like);
 }
 
+$page = (int)($_GET['page'] ?? 1);
+if ($page < 1) {
+    $page = 1;
+}
+
+$countSql = 'SELECT COUNT(*) FROM companies';
+if ($where) {
+    $countSql .= ' WHERE ' . implode(' AND ', $where);
+}
+$countStmt = $db->prepare($countSql);
+$countStmt->execute($params);
+$total = (int)$countStmt->fetchColumn();
+$totalPages = max(1, (int)ceil($total / PAGE_SIZE));
+if ($page > $totalPages) {
+    $page = $totalPages;
+}
+$offset = ($page - 1) * PAGE_SIZE;
+
 $sql = 'SELECT * FROM companies';
 if ($where) {
     $sql .= ' WHERE ' . implode(' AND ', $where);
 }
-$sql .= " ORDER BY (status = 'pending') DESC, created_at DESC";
+$sql .= " ORDER BY (status = 'pending') DESC, created_at DESC LIMIT ? OFFSET ?";
 $stmt = $db->prepare($sql);
-$stmt->execute($params);
+$i = 1;
+foreach ($params as $param) {
+    $stmt->bindValue($i++, $param);
+}
+$stmt->bindValue($i++, PAGE_SIZE, PDO::PARAM_INT);
+$stmt->bindValue($i++, $offset, PDO::PARAM_INT);
+$stmt->execute();
 $companies = $stmt->fetchAll();
 
-function admin_filter_url(string $status, string $verified, string $outreach, string $instagram, string $q = ''): string
+function admin_filter_url(string $status, string $verified, string $outreach, string $instagram, string $q = '', int $page = 1): string
 {
     $url = 'admin.php?status=' . urlencode($status) . '&verified=' . urlencode($verified) . '&outreach=' . urlencode($outreach) . '&instagram=' . urlencode($instagram);
     if ($q !== '') {
         $url .= '&q=' . urlencode($q);
     }
+    if ($page > 1) {
+        $url .= '&page=' . $page;
+    }
     return $url;
 }
 
-$currentUrl = admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, $instagramFilter, $q);
+// Preserves the current page (unlike the filter-toggle links below, which
+// intentionally reset to page 1 — a changed filter means a different result
+// set, so any pagination position from before no longer means anything).
+$currentUrl = admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, $instagramFilter, $q, $page);
+
+$paginationExtraParams = ['status' => $statusFilter, 'verified' => $verifiedFilter, 'outreach' => $outreachFilter, 'instagram' => $instagramFilter];
+if ($q !== '') {
+    $paginationExtraParams['q'] = $q;
+}
 
 foreach ($companies as &$row) {
     $founders = $db->prepare('SELECT name, email, linkedin, show_email FROM founders WHERE company_id = ? ORDER BY id');
@@ -76,11 +114,6 @@ foreach ($companies as &$row) {
     $row['founders'] = $founders->fetchAll();
 }
 unset($row);
-
-function h(?string $s): string
-{
-    return htmlspecialchars($s ?? '', ENT_QUOTES);
-}
 
 $activeAdminPage = 'submissions';
 ?>
@@ -120,7 +153,7 @@ $activeAdminPage = 'submissions';
     <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, 'all', $q) ?>" class="<?= $instagramFilter === 'all' ? 'active' : '' ?>">Any Instagram</a>
     <a href="<?= admin_filter_url($statusFilter, $verifiedFilter, $outreachFilter, 'needs_review', $q) ?>" class="<?= $instagramFilter === 'needs_review' ? 'active' : '' ?>">Instagram: needs review</a>
   </div>
-  <span class="muted" style="font-size:13px"><?= count($companies) ?> <?= count($companies) === 1 ? 'company' : 'companies' ?></span>
+  <span class="muted" style="font-size:13px"><?= $total ?> <?= $total === 1 ? 'company' : 'companies' ?></span>
 </div>
 <div style="margin-top:20px">
 <?php if (!$companies): ?>
@@ -190,6 +223,7 @@ $activeAdminPage = 'submissions';
     <p class="muted" style="margin-top:12px"><?= h($c['description']) ?></p>
   </div>
 <?php endforeach; endif; ?>
+<?= ssr_pagination_html('admin.php', $paginationExtraParams, $page, $totalPages) ?>
 </div>
 </div></section></main><?php include __DIR__ . '/partials/footer-full.php'; ?>
 <script>

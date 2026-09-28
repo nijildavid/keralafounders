@@ -14,14 +14,12 @@ if ($page < 1) {
 // for the default (unfiltered) state only — this is a first-paint for SEO/no-JS
 // clients; the existing JS takes over immediately for everything else (filtering,
 // pagination clicks, view toggle) exactly as it already did before this change.
-$companies = fetch_approved_companies($db);
-$total = count($companies);
-$totalPages = max(1, (int)ceil($total / PAGE_SIZE));
-if ($page > $totalPages) {
-    $page = $totalPages;
-}
+$result = fetch_approved_companies_page($db, $page, PAGE_SIZE);
+$pageRows = $result['companies'];
+$total = $result['total'];
+$page = $result['page'];
+$totalPages = $result['totalPages'];
 $start = ($page - 1) * PAGE_SIZE;
-$pageRows = array_slice($companies, $start, PAGE_SIZE);
 
 $resultCountText = $total === 0
     ? '0 companies'
