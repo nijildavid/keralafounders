@@ -13,6 +13,7 @@ header('Content-Type: application/json');
 require __DIR__ . '/../../config/db.php';
 require __DIR__ . '/../../config/auth.php';
 require __DIR__ . '/../../config/reference.php';
+require __DIR__ . '/../assets/validation-helpers.php';
 
 $input = json_decode(file_get_contents('php://input'), true);
 if (!is_array($input)) {
@@ -56,28 +57,17 @@ if (mb_strlen($description) < 40) {
     exit;
 }
 
-$instagram = null;
-$instagramRaw = trim((string)($input['instagram'] ?? ''));
-if ($instagramRaw !== '') {
-    $handle = strtolower(preg_replace('/^https?:\/\/(www\.)?instagram\.com\//i', '', $instagramRaw));
-    $handle = preg_replace('/[\/?#].*$/', '', $handle);
-    $handle = ltrim($handle, '@');
-    if (!preg_match('/^[a-z0-9._]{1,30}$/', $handle)) {
-        http_response_code(422);
-        echo json_encode(['error' => 'That Instagram handle does not look right — use letters, numbers, dots, or underscores.']);
-        exit;
-    }
-    $instagram = $handle;
+$instagram = normalize_instagram_handle((string)($input['instagram'] ?? ''));
+if ($instagram === false) {
+    http_response_code(422);
+    echo json_encode(['error' => 'That Instagram handle does not look right — use letters, numbers, dots, or underscores.']);
+    exit;
 }
 
 $db = get_db();
 
 $ipHash = hash('sha256', GUIDANCE_FEEDBACK_IP_SALT . (string)($_SERVER['REMOTE_ADDR'] ?? ''));
-$rateCheck = $db->prepare(
-    'SELECT COUNT(*) FROM companies WHERE ip_hash = ? AND created_at > NOW() - INTERVAL ' . RATE_LIMIT_WINDOW_MINUTES . ' MINUTE'
-);
-$rateCheck->execute([$ipHash]);
-if ((int)$rateCheck->fetchColumn() >= RATE_LIMIT_MAX_SUBMISSIONS) {
+if (rate_limit_exceeded($db, 'companies', $ipHash, RATE_LIMIT_WINDOW_MINUTES, RATE_LIMIT_MAX_SUBMISSIONS)) {
     http_response_code(429);
     echo json_encode(['error' => 'Too many submissions from this connection — please try again later.']);
     exit;

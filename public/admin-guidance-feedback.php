@@ -106,7 +106,7 @@ foreach (guidance_load_countries() as $c) {
     <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
       <div>
         <strong><?= h($t['target_type']) ?>:<?= h($t['target_id']) ?></strong>
-        <?php if ($t['flagged']): ?><span class="chip" style="color:#9a3412;border-color:#9a3412;margin-left:8px">Flagged</span><?php endif; ?>
+        <?php if ($t['flagged']): ?><span class="chip chip-attention" style="margin-left:8px">Flagged</span><?php endif; ?>
       </div>
       <span class="muted" style="font-size:13px">👍 <?= (int)$t['up'] ?> · 👎 <?= (int)$t['down'] ?> · <?= round($t['ratio'] * 100) ?>% down</span>
     </div>
