@@ -43,3 +43,44 @@ function rate_limit_exceeded(PDO $db, string $table, string $ipHash, int $window
     $stmt->execute([$ipHash]);
     return (int)$stmt->fetchColumn() >= $max;
 }
+
+/** True once config/turnstile.php has been created on the server with a real secret key. */
+function turnstile_enabled(): bool
+{
+    return defined('TURNSTILE_SECRET_KEY') && TURNSTILE_SECRET_KEY !== '';
+}
+
+/**
+ * Verifies a Cloudflare Turnstile response token server-side. Returns true
+ * (i.e. doesn't block the submission) when Turnstile isn't configured yet,
+ * so this code is safe to deploy before config/turnstile.php exists — see
+ * config/turnstile.example.php. Fails closed (rejects) on a missing token or
+ * a network/API problem reaching Cloudflare, same as any CAPTCHA service.
+ */
+function turnstile_verify(string $token, string $remoteIp): bool
+{
+    if (!turnstile_enabled()) {
+        return true;
+    }
+    if ($token === '') {
+        return false;
+    }
+    $ch = curl_init('https://challenges.cloudflare.com/turnstile/v0/siteverify');
+    curl_setopt_array($ch, [
+        CURLOPT_POST => true,
+        CURLOPT_POSTFIELDS => http_build_query([
+            'secret' => TURNSTILE_SECRET_KEY,
+            'response' => $token,
+            'remoteip' => $remoteIp,
+        ]),
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_TIMEOUT => 8,
+    ]);
+    $response = curl_exec($ch);
+    curl_close($ch);
+    if ($response === false) {
+        return false;
+    }
+    $data = json_decode($response, true);
+    return is_array($data) && !empty($data['success']);
+}
