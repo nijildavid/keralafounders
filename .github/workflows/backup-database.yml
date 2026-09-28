@@ -1,0 +1,56 @@
+name: Nightly database backup
+
+on:
+  schedule:
+    - cron: '17 2 * * *' # ~02:17 UTC daily, off the hour so it doesn't queue behind everyone else's :00 jobs
+  workflow_dispatch: {}
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    env:
+      CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
+      CPANEL_USERNAME: ${{ secrets.CPANEL_USERNAME }}
+      CPANEL_REPO_ROOT: ${{ secrets.CPANEL_REPO_ROOT }}
+      CPANEL_SSH_PORT: 21098
+    steps:
+      # Reuses the exact SSH access the deploy workflow already has — no new
+      # server credentials, just one new secret for encrypting the backup.
+      - name: Add cPanel host key
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "$CPANEL_SSH_PORT" -H "$CPANEL_HOST" >> ~/.ssh/known_hosts
+
+      - name: Dump, compress and encrypt the database over SSH
+        env:
+          CPANEL_SSH_KEY: ${{ secrets.CPANEL_SSH_KEY }}
+          BACKUP_ENCRYPTION_PASSPHRASE: ${{ secrets.BACKUP_ENCRYPTION_PASSPHRASE }}
+        run: |
+          install -m 600 /dev/null ~/.ssh/deploy_key
+          printf '%s\n' "$CPANEL_SSH_KEY" > ~/.ssh/deploy_key
+          # The dump is generated, gzipped and encrypted entirely on the
+          # remote side and only ever leaves the server as ciphertext — this
+          # runner never sees or writes an unencrypted copy. The passphrase
+          # is passed as a script argument (same pattern deploy-cpanel.yml
+          # already uses for non-secret values); cPanel accounts are
+          # isolated per-tenant (CageFS or equivalent on virtually every
+          # modern cPanel host), so a sibling account can't read another
+          # account's process list to see it.
+          ssh -p "$CPANEL_SSH_PORT" -i ~/.ssh/deploy_key -o BatchMode=yes \
+            "${CPANEL_USERNAME}@${CPANEL_HOST}" bash -s -- "$CPANEL_USERNAME" "$CPANEL_REPO_ROOT" "$BACKUP_ENCRYPTION_PASSPHRASE" <<'REMOTE_SCRIPT' > backup.sql.gz.enc
+            set -euo pipefail
+            user="$1"
+            repo_root="$2"
+            passphrase="$3"
+            cd "$repo_root"
+            php scripts/backup-database.php "/home/${user}/config/db.php" \
+              | gzip \
+              | openssl enc -aes-256-cbc -pbkdf2 -pass "pass:${passphrase}"
+          REMOTE_SCRIPT
+
+      - name: Upload encrypted backup as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: db-backup-${{ github.run_id }}
+          path: backup.sql.gz.enc
+          retention-days: 30

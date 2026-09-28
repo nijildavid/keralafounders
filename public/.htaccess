@@ -20,6 +20,17 @@ Options -Indexes
     Header set X-Content-Type-Options "nosniff"
     Header set X-Frame-Options "SAMEORIGIN"
     Header set Referrer-Policy "strict-origin-when-cross-origin"
+    # Stops PHP from advertising its exact version to every visitor — free
+    # recon for an attacker looking for a known vulnerability to try.
+    Header always unset X-Powered-By
+    # Locks down where the browser is allowed to load/execute code from.
+    # script-src is deliberately the tight part (blocks a malicious <script
+    # src="attacker.com/x.js"> even if it gets injected somewhere); the rest
+    # stays permissive (https: for images/fonts/connections) because the site
+    # has no build step to switch every inline <script>/onclick handler and
+    # the consent/analytics tools (CookieHub, Google Analytics) call several
+    # subdomains that aren't practical to enumerate one by one.
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.cookiehub.eu; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src https://open.spotify.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
 </IfModule>
 
 # Let browsers cache static assets instead of re-downloading them on every
