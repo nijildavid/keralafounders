@@ -4,13 +4,17 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
-## Pending — admin 2FA and nightly DB backups need manual server-side setup
+## Resolved — admin 2FA and nightly DB backups
 
 Code for both landed in `keralafounders#43` (part of a broader security
 hardening pass — see that PR for the full list, including the CSP header,
 admin session idle timeout, and hidden error output already live via
-`.htaccess`/`config/db.example.php`). These two need one-time manual steps
-outside git before they're actually protecting anything:
+`.htaccess`/`config/db.example.php`). Both manual server-side steps below
+are now done — 2FA is live on the admin login, and
+`BACKUP_ENCRYPTION_PASSPHRASE` is set. A manual test run of the backup
+workflow was kicked off to confirm it works end-to-end against the live
+server; still needs its result checked (a platform outage interrupted that
+check — see `keralafounders#43` follow-up conversation).
 
 - **Admin 2FA** (`config/auth.example.php`, `public/admin-login.php`,
   `scripts/generate-2fa-secret.php`): off by default — a fresh
@@ -32,6 +36,29 @@ outside git before they're actually protecting anything:
   the dump is encrypted before it ever leaves the server — the passphrase is
   the only thing standing between the artifact and the founder/claimant
   emails it contains; treat it like any other production credential.
+
+## Pending — Cloudflare Turnstile on add-company needs a server-side secret key
+
+The public "add your company" form previously only had a honeypot field and
+IP-based rate limiting against spam/bot submissions — no real challenge.
+Added a Cloudflare Turnstile widget (`public/add-company.php`,
+`public/assets/validation-helpers.php`'s `turnstile_verify()`,
+`public/api/submit-company.php`, CSP additions in `.htaccess`) — the widget
+appears near the submit button (mostly invisible in "Managed" mode) and the
+token it produces is verified server-side before a submission is accepted.
+
+Off by default — same "safe to deploy before configured" pattern as 2FA and
+backups: without `config/turnstile.php`, `turnstile_verify()` always returns
+true and the form works exactly as before (honeypot + rate limit only). To
+turn it on: copy `config/turnstile.example.php` to `config/turnstile.php` on
+the server (cPanel File Manager) and set `TURNSTILE_SECRET_KEY` to the
+Secret Key from the Cloudflare Turnstile dashboard (the Site Key is public
+and already deploys automatically via `config/reference.php`).
+
+Not yet tested end-to-end (syntax check + a live round-trip against
+Cloudflare's siteverify API + a dev-server submission test) — a platform
+outage blocked command execution while this was being verified. Needs that
+follow-up before trusting it fully in production.
 
 ## Resolved — Guidance presentation layer
 
@@ -153,7 +180,7 @@ than presenting them as settled:
   every attempt, both during initial research and on a same-day retry.
   Sourcing leans on chamber/portal mirrors instead of the tax authority
   directly. A genuine conflict between two official government pages on the
-  Golden Visa minimum-investment amount (€250k vs. €400k/€800k under a
+  Golden Visa minimum-investment amount (⊂250k vs. ⊂400k/⊂800k under a
   newer law) was found and left unresolved in the guide rather than
   silently picked — still worth resolving whenever those sites become
   reachable, since Golden Visa content stays hidden (`hold: true`) until

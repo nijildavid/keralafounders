@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/../config/reference.php';
 $pageTitle = 'Add your company — Kerala Founders';
 $metaDescription = 'Add your company to the Kerala Founders directory and get discovered by fellow Keralites building across Europe.';
 $canonicalUrl = 'https://keralafounders.eu/add-company.php';
@@ -7,7 +8,8 @@ $canonicalUrl = 'https://keralafounders.eu/add-company.php';
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
 <?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Add your company","item":"https://keralafounders.eu/add-company.php"}]}</script>
-<link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<link rel="stylesheet" href="assets/style.css"><script src="assets/data.php"></script><script src="assets/app.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><div class="wrap nav">
 <a class="brand" href="index.php"><img class="brand-mark" src="assets/logo.svg" alt="Kerala Founders">Kerala Founders</a>
 <div class="navright"><a class="arrow" href="index.php">Close ×</a></div>
@@ -88,6 +90,7 @@ $canonicalUrl = 'https://keralafounders.eu/add-company.php';
 <p><button type="button" class="linkbtn" id="restart">Add another company</button></p>
 </section>
 
+<div class="turnstile-wrap" id="turnstileWrap" style="margin-top:20px"><div class="cf-turnstile" data-sitekey="<?= htmlspecialchars($KF_TURNSTILE_SITE_KEY, ENT_QUOTES) ?>"></div></div>
 <div class="wizard-actions" id="wizardActions">
   <div class="wrap wizard-actions-in">
     <button type="button" class="back" id="backBtn" hidden>&larr; Back</button>
@@ -187,6 +190,7 @@ function show(n,moveFocus=true){
   const isDone = (n === 'done');
   document.getElementById('wizardActions').hidden = isDone;
   document.getElementById('wizardProgress').hidden = isDone;
+  document.getElementById('turnstileWrap').hidden = isDone;
   if(!isDone){
     currentStep=n;
     document.getElementById('backBtn').hidden=(n===1);
@@ -236,7 +240,8 @@ form.onsubmit=async e=>{
   }
   const fd=new FormData(form),names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...fd.getAll('founderShow[]')];
   const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value);
-  const item={company:fd.get('company'),website:fd.get('website'),instagram:fd.get('instagram'),industry:fd.get('industry'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),keralaConnection:fd.get('keralaConnection')||'',keralaDistrict:fd.get('keralaDistrict')||'',contactOkPodcastStories:fd.get('contactOkPodcastStories')==='yes',founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})),branches,hpField:fd.get('hp_field')};
+  const turnstileToken=document.querySelector('[name="cf-turnstile-response"]')?.value||'';
+  const item={company:fd.get('company'),website:fd.get('website'),instagram:fd.get('instagram'),industry:fd.get('industry'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),keralaConnection:fd.get('keralaConnection')||'',keralaDistrict:fd.get('keralaDistrict')||'',contactOkPodcastStories:fd.get('contactOkPodcastStories')==='yes',founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})),branches,hpField:fd.get('hp_field'),turnstileToken};
   const submitBtn=document.getElementById('nextBtn');
   submitBtn.disabled=true;const originalBtnHTML=submitBtn.innerHTML;submitBtn.setAttribute('aria-busy','true');submitBtn.innerHTML='<span class="btn-spinner" aria-hidden="true"></span>Submitting…';
   try{
