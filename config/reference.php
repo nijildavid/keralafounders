@@ -128,3 +128,9 @@ $KF_GUIDANCE_NAV_LIVE = true;
 $GUIDANCE_FLAG_STREAK = 3;      // N consecutive thumbs-down votes flags a target
 $GUIDANCE_FLAG_RATIO = 0.40;    // down-vote ratio above this flags a target...
 $GUIDANCE_FLAG_MIN_VOTES = 10;  // ...but only once it has at least this many votes
+
+// Cloudflare Turnstile site key for the add-company anti-spam widget. Not
+// secret — it's already visible in add-company.php's rendered HTML either
+// way. The matching secret key stays private, server-side only, in
+// config/turnstile.php (gitignored, same pattern as config/db.php).
+$KF_TURNSTILE_SITE_KEY = '0x4AAAAAAFGvJE5DPcD-RSAj';
