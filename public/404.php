@@ -5,7 +5,7 @@ http_response_code(404);
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
 <title>Page not found — Kerala Founders</title><meta name="description" content="This page could not be found on Kerala Founders.">
 <meta name="robots" content="noindex">
-<link rel="stylesheet" href="assets/style.css?v=<?= (int)@filemtime(__DIR__ . "/assets/style.css") ?>"><script src="assets/nav-toggle.js?v=<?= (int)@filemtime(__DIR__ . "/assets/nav-toggle.js") ?>" defer></script><script src="assets/data.php"></script><script src="assets/app.js?v=<?= (int)@filemtime(__DIR__ . "/assets/app.js") ?>"></script></head>
+<link rel="stylesheet" href="assets/style.css?v=<?= (int)@filemtime(__DIR__ . "/assets/style.css") ?>"><script src="assets/nav-toggle.js?v=<?= (int)@filemtime(__DIR__ . "/assets/nav-toggle.js") ?>" defer></script><script src="assets/data.php?v=<?= (int)@filemtime(__DIR__ . "/assets/data.php") ?>"></script><script src="assets/app.js?v=<?= (int)@filemtime(__DIR__ . "/assets/app.js") ?>"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
 <section class="section"><div class="wrap" style="max-width:850px;text-align:center">
