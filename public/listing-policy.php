@@ -7,7 +7,7 @@ $canonicalUrl = 'https://keralafounders.eu/listing-policy.php';
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
 <?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Listing Policy","item":"https://keralafounders.eu/listing-policy.php"}]}</script>
-<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script></head>
+<link rel="stylesheet" href="assets/style.css?v=<?= (int)@filemtime(__DIR__ . "/assets/style.css") ?>"><script src="assets/nav-toggle.js?v=<?= (int)@filemtime(__DIR__ . "/assets/nav-toggle.js") ?>" defer></script><script src="assets/data.php"></script><script src="assets/app.js?v=<?= (int)@filemtime(__DIR__ . "/assets/app.js") ?>"></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
 <section class="section"><div class="wrap" style="max-width:850px">
