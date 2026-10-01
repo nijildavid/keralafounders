@@ -11,10 +11,9 @@ hardening pass — see that PR for the full list, including the CSP header,
 admin session idle timeout, and hidden error output already live via
 `.htaccess`/`config/db.example.php`). Both manual server-side steps below
 are now done — 2FA is live on the admin login, and
-`BACKUP_ENCRYPTION_PASSPHRASE` is set. A manual test run of the backup
-workflow was kicked off to confirm it works end-to-end against the live
-server; still needs its result checked (a platform outage interrupted that
-check — see `keralafounders#43` follow-up conversation).
+`BACKUP_ENCRYPTION_PASSPHRASE` is set. The backup workflow is confirmed
+fully working: the manual test run succeeded, and the first two automatic
+nightly runs (2026-09-29, 2026-09-30) both completed successfully too.
 
 - **Admin 2FA** (`config/auth.example.php`, `public/admin-login.php`,
   `scripts/generate-2fa-secret.php`): off by default — a fresh
