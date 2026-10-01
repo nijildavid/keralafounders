@@ -8,7 +8,7 @@ $canonicalUrl = 'https://keralafounders.eu/guidance-method.php';
 <meta name="robots" content="noindex">
 <?php include __DIR__ . '/partials/meta-tags.php'; ?>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://keralafounders.eu/"},{"@type":"ListItem","position":2,"name":"Guidance","item":"https://keralafounders.eu/guidance.php"},{"@type":"ListItem","position":3,"name":"How we check our information","item":"https://keralafounders.eu/guidance-method.php"}]}</script>
-<link rel="stylesheet" href="assets/style.css"><script src="assets/nav-toggle.js" defer></script><script src="assets/data.php"></script><script src="assets/app.js"></script><script src="assets/guidance.js" defer></script></head>
+<link rel="stylesheet" href="assets/style.css?v=<?= (int)@filemtime(__DIR__ . "/assets/style.css") ?>"><script src="assets/nav-toggle.js?v=<?= (int)@filemtime(__DIR__ . "/assets/nav-toggle.js") ?>" defer></script><script src="assets/data.php?v=<?= (int)@filemtime(__DIR__ . "/assets/data.php") ?>"></script><script src="assets/app.js?v=<?= (int)@filemtime(__DIR__ . "/assets/app.js") ?>"></script><script src="assets/guidance.js?v=<?= (int)@filemtime(__DIR__ . "/assets/guidance.js") ?>" defer></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
 <section class="section"><div class="wrap" style="max-width:800px">
