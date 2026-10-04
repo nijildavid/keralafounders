@@ -53,7 +53,7 @@ $footerTopCountries = fetch_top_countries($db, 10);
       <div class="footer-col">
         <h3 class="footer-col-title">Contact</h3>
         <ul>
-          <li><a href="mailto:hello@keralafounders.eu">Contact Us</a></li>
+          <li><a href="contact.php">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -66,7 +66,7 @@ $footerTopCountries = fetch_top_countries($db, 10);
         <a href="terms.php">Terms of Use</a>
         <a href="listing-policy.php#accuracy">Disclaimer</a>
         <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?><a href="guidance-method.php">How we check our information</a><?php endif; ?>
-        <a href="mailto:hello@keralafounders.eu">Contact Us</a>
+        <a href="contact.php">Contact Us</a>
       </nav>
     </div>
   </div>
