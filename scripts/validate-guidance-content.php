@@ -98,8 +98,10 @@ foreach ($countries as $c) {
             fail($failures, $file, "$slug: status \"$status\" requires last_checked and next_check_due to be set");
         } else {
             $expected = guidance_add_months_safe($c['last_checked'], 6);
-            if ($c['next_check_due'] !== $expected) {
-                fail($failures, $file, "$slug: next_check_due is \"{$c['next_check_due']}\", expected \"$expected\" (last_checked + 6 months)");
+            // Never later than last_checked + 6 months; earlier is allowed so a guide
+            // whose figures reset on a known date (e.g. 1 January) can be re-checked then.
+            if ($c['next_check_due'] > $expected || $c['next_check_due'] <= $c['last_checked']) {
+                fail($failures, $file, "$slug: next_check_due is \"{$c['next_check_due']}\", expected a date after last_checked and no later than \"$expected\" (last_checked + 6 months)");
             }
         }
     }
@@ -125,8 +127,8 @@ foreach ($slugsNeedingGuide as $slug) {
         fail($failures, $guideFile, 'missing last_checked or next_check_due');
     } else {
         $expected = guidance_add_months_safe($guide['last_checked'], 6);
-        if ($guide['next_check_due'] !== $expected) {
-            fail($failures, $guideFile, "next_check_due is \"{$guide['next_check_due']}\", expected \"$expected\" (last_checked + 6 months)");
+        if ($guide['next_check_due'] > $expected || $guide['next_check_due'] <= $guide['last_checked']) {
+            fail($failures, $guideFile, "next_check_due is \"{$guide['next_check_due']}\", expected a date after last_checked and no later than \"$expected\" (last_checked + 6 months)");
         }
         if ($countryEntry) {
             if ($guide['last_checked'] !== $countryEntry['last_checked']) {

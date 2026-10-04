@@ -1,15 +1,15 @@
 {
   "slug": "spain",
   "title": "How to start a company in Spain",
-  "summary": "Spain gives a founder two main routes: register as autónomo (self-employed sole trader) for a simple, low-cost start with unlimited personal liability, or form a Sociedad Limitada (SL/SLU) for limited liability, which can now be set up with as little as EUR 1 of share capital and processed electronically through the CIRCE one-stop-shop system in as little as 24 hours.",
+  "summary": "Spain gives a founder two main routes: register as autónomo (self-employed sole trader) for a simple, low-cost start with unlimited personal liability, or form a Sociedad Limitada (SL/SLU) for limited liability, which can now be set up with as little as EUR 1 of share capital and processed electronically through the CIRCE one-stop-shop system.",
   "last_checked": "2026-09-25",
   "checked_by": "Nijil",
   "next_check_due": "2027-03-25",
   "quick_facts": {
     "structure": { "text": "Register as autónomo (self-employed sole trader) — no notary, no minimum capital. Form a Sociedad Limitada (SL) later if you want limited liability, co-founders, or investors.", "source_ids": ["ES20"] },
     "cost": { "text": "Autónomo registration carries no formation fee. An SL needs at least EUR 1 of share capital, though most advisors suggest funding it closer to EUR 3,000 to avoid a personal-liability catch on winding up.", "source_ids": ["ES9", "ES20"] },
-    "time": { "text": "Autónomo registration through CIRCE/DUE typically takes 1 to 10 days, often the same day. An SL with standard bylaws can be registered in as little as 24 hours.", "source_ids": ["ES20", "ES10"] },
-    "gotcha": { "text": "Unlike some other EU countries, Spain has no small-business VAT exemption threshold — VAT applies from your very first invoice.", "source_ids": ["ES13"] }
+    "time": { "text": "Autónomo registration through CIRCE/DUE typically takes 1 to 10 days. An SL with standard bylaws goes through the faster express CIRCE route, but the total time depends on the notary and the registry.", "source_ids": ["ES20", "ES10"] },
+    "gotcha": { "text": "Unlike some other EU countries, Spain has no small-business VAT exemption threshold — VAT applies from your very first invoice.", "source_ids": ["ES13", "ES23"] }
   },
   "founder_checklist": [
     { "text": "Decide whether personal, unlimited liability (autónomo) is acceptable for now — most first-time founders start this way.", "section_id": "legal-forms" },
@@ -48,8 +48,8 @@
       "comparison_table": {
         "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
         "rows": [
-          ["Autónomo (empresario individual / trabajador por cuenta propia)", "none", "personal, unlimited", "no", "1 to 10 days via CIRCE/DUE, often same day", "simplified IRPF direct-estimation records", "official [ES20]"],
-          ["Sociedad Limitada (SL) / Sociedad Limitada Unipersonal (SLU)", "from EUR 1 (see note below)", "limited to company assets", "yes, always", "as little as 24 hours (standard bylaws via CIRCE) up to a few weeks (custom bylaws)", "double-entry (Plan General Contable)", "official [ES9, ES10]"]
+          ["Autónomo (empresario individual / trabajador por cuenta propia)", "none", "personal, unlimited", "no", "1 to 10 days via CIRCE/DUE", "simplified IRPF direct-estimation records", "official [ES20]"],
+          ["Sociedad Limitada (SL) / Sociedad Limitada Unipersonal (SLU)", "from EUR 1 (see note below)", "limited to company assets", "yes, always", "faster with standard bylaws via CIRCE, slower with custom bylaws; timing varies", "double-entry (Plan General Contable)", "official [ES9, ES10]"]
         ]
       },
       "official_information": [
@@ -107,7 +107,7 @@
       "reviewed_on": null,
       "official_information": [
         { "text": "1. Reserve the company name at the Registro Mercantil Central: submit up to 5 alternative names; the negative-name certificate is issued within 6 working hours of the request.", "source_ids": ["ES10"], "confidence": "official" },
-        { "text": "2. Choose standard bylaws (estatutos-tipo, the express CIRCE route) or custom bylaws. With standard bylaws, the whole formation (name reservation, notary, registration) is designed to complete within about 24 hours to a few days; with custom bylaws, definitive registration follows within 5 days of the filing entry once the deed is filed.", "source_ids": ["ES10"], "confidence": "official" },
+        { "text": "2. Choose standard bylaws (estatutos-tipo, the express CIRCE route) or custom bylaws. With standard bylaws, the whole formation (name reservation, notary, registration) uses the express route, where each step has a short legal time limit; with custom bylaws, definitive registration follows within 5 days of the filing entry once the deed is filed.", "source_ids": ["ES10"], "confidence": "official" },
         { "text": "3. Pay in the share capital (minimum EUR 1, see the legal-forms section for the EUR 3,000 solidarity-liability rule) into a company bank account, or rely on the founders' joint declaration of liability for the accuracy of their contributions in the deed instead of a bank certificate.", "source_ids": ["ES9", "ES10"], "confidence": "official" },
         { "text": "4. Notary appointment: booked automatically in real time through the notarial electronic diary once the telematic process starts, for a date/time no later than 12 working hours later. The notary authorises the deed of incorporation electronically, using the standardised, coded-field format if the express route was chosen.", "source_ids": ["ES10"], "confidence": "official" },
         { "text": "5. The notary sends the deed electronically to the tax agency to request a provisional NIF, and to the Registro Mercantil of the company's registered address, via CIRCE.", "source_ids": ["ES10"], "confidence": "official" },
@@ -137,7 +137,7 @@
       "reviewed_by": null,
       "reviewed_on": null,
       "official_information": [
-        { "text": "VAT (IVA): general rate 21%; reduced rates 10% and 4% (0% applies to certain specific operations). Spain has no general small-business VAT exemption threshold today; VAT applies from the first taxable transaction for almost all activities.", "source_ids": ["ES13"], "confidence": "official" },
+        { "text": "VAT (IVA): general rate 21%; reduced rates 10% and 4% (0% applies to certain specific operations). Spain has no general small-business VAT exemption threshold today; VAT applies from the first taxable transaction for almost all activities.", "source_ids": ["ES13", "ES23"], "confidence": "official" },
         { "text": "The EU's small-business VAT exemption scheme, Directive (EU) 2020/285 (which would let low-turnover businesses skip charging VAT, with thresholds around EUR 85,000 national / EUR 100,000 EU-wide in other member states that adopted it), had a 1 January 2025 transposition deadline. As of this check, Spain has not transposed it, and is reported to be facing EU infringement proceedings that could reach the Court of Justice of the EU over the delay.", "source_ids": ["ES23"], "confidence": "secondary" },
         { "text": "Sole-trader (autónomo) profit is taxed as personal income (IRPF) under the direct-estimation regime, generally with quarterly advance payments via Modelo 130 (20% of accumulated net income since 1 January, minus prior quarters paid), unless at least 70% of the previous year's income already carried withholding.", "source_ids": ["ES14"], "confidence": "official" },
         { "text": "Impuesto sobre Sociedades (corporate tax) for an SL: general rate 25%. Newly created entities carrying out an economic activity get a reduced 15% rate for the first tax period with a positive taxable base and the following one.", "source_ids": ["ES12"], "confidence": "official" },
