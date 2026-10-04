@@ -44,19 +44,54 @@ if ($id > 0 && $action === 'resolve') {
             $companyId,
         ]);
 
+        // The claim form never receives a hidden email or a LinkedIn URL (see
+        // claim.php), so a blank value there means "keep what is on file", not
+        // "delete it". Load the current founders before they are replaced and
+        // match each proposed founder by name, or by position when the number
+        // of founders is unchanged and the name was edited.
+        $currentStmt = $db->prepare('SELECT name, email, linkedin, show_email FROM founders WHERE company_id = ? ORDER BY id');
+        $currentStmt->execute([$companyId]);
+        $currentFounders = $currentStmt->fetchAll();
+        $currentByName = [];
+        foreach ($currentFounders as $cf) {
+            $currentByName[mb_strtolower(trim((string)$cf['name']))] = $cf;
+        }
+        $proposedFounders = array_values(array_filter(
+            is_array($proposed['founders'] ?? null) ? $proposed['founders'] : [],
+            fn($f) => trim((string)($f['name'] ?? '')) !== ''
+        ));
+        $samePositions = count($proposedFounders) === count($currentFounders);
+
         $db->prepare('DELETE FROM founders WHERE company_id = ?')->execute([$companyId]);
         $founderStmt = $db->prepare('INSERT INTO founders (company_id, name, email, linkedin, show_email) VALUES (?, ?, ?, ?, ?)');
-        foreach (($proposed['founders'] ?? []) as $f) {
+        foreach ($proposedFounders as $idx => $f) {
             $fname = trim((string)($f['name'] ?? ''));
-            if ($fname === '') {
-                continue;
+            $email = trim((string)($f['email'] ?? ''));
+            $linkedin = trim((string)($f['linkedin'] ?? ''));
+            $showEmail = !empty($f['showEmail']) ? 1 : 0;
+
+            $existing = $currentByName[mb_strtolower($fname)] ?? ($samePositions ? $currentFounders[$idx] : null);
+            if ($existing) {
+                // A blank LinkedIn keeps the one on file (no public page shows it).
+                if ($linkedin === '' && trim((string)$existing['linkedin']) !== '') {
+                    $linkedin = trim((string)$existing['linkedin']);
+                }
+                // A blank email keeps the one on file only when it was hidden,
+                // which is the case the form could not show. A visible email
+                // that was cleared on purpose is still removed. A kept hidden
+                // email stays hidden, even if the claimant ticked "show".
+                if ($email === '' && empty($existing['show_email']) && trim((string)$existing['email']) !== '') {
+                    $email = trim((string)$existing['email']);
+                    $showEmail = 0;
+                }
             }
+
             $founderStmt->execute([
                 $companyId,
                 $fname,
-                trim((string)($f['email'] ?? '')) ?: null,
-                trim((string)($f['linkedin'] ?? '')) ?: null,
-                !empty($f['showEmail']) ? 1 : 0,
+                $email ?: null,
+                $linkedin ?: null,
+                $showEmail,
             ]);
         }
 
