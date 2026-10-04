@@ -49,10 +49,13 @@ token it produces is verified server-side before a submission is accepted.
 Off by default — same "safe to deploy before configured" pattern as 2FA and
 backups: without `config/turnstile.php`, `turnstile_verify()` always returns
 true and the form works exactly as before (honeypot + rate limit only). To
-turn it on: copy `config/turnstile.example.php` to `config/turnstile.php` on
-the server (cPanel File Manager) and set `TURNSTILE_SECRET_KEY` to the
-Secret Key from the Cloudflare Turnstile dashboard (the Site Key is public
-and already deploys automatically via `config/reference.php`).
+turn it on: in cPanel File Manager open the private `config/` folder
+(`/home/nijiwdhp/config/`, next to `db.php`) and create a **new** file named
+`turnstile.php` containing the lines from `config/turnstile.example.php`
+(the deploy only copies `reference.php` there, so the example file is not on
+the server), with `TURNSTILE_SECRET_KEY` set to the Secret Key from the
+Cloudflare Turnstile dashboard (the Site Key is public and already deploys
+automatically via `config/reference.php`).
 
 Not yet tested end-to-end (syntax check + a live round-trip against
 Cloudflare's siteverify API + a dev-server submission test) — a platform

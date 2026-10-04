@@ -1,7 +1,9 @@
 <?php
-// Copy this file to turnstile.php (on the server, outside the web root, same
-// place as db.php/auth.php) and fill in your real secret key. turnstile.php
-// itself is gitignored — never commit a real secret key.
+// This is a template. On the server, create a NEW file named turnstile.php
+// (outside the web root, same place as db.php/auth.php) with these lines and
+// your real secret key. The deploy only copies reference.php into that folder,
+// so this example file is not there to copy. turnstile.php itself is
+// gitignored — never commit a real secret key.
 //
 // Get both keys from the Cloudflare dashboard: Turnstile -> your widget.
 // The Site Key isn't secret (it's already in config/reference.php, which
