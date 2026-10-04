@@ -13,10 +13,18 @@
 --     Education is the closest and the gap should be logged for the next
 --     taxonomy checkpoint. That record is 'pending' anyway, so it is not
 --     shown publicly.
---   * `verified` stays 0 for all five. On this site "Verified" means the
---     owner claimed the listing and an admin approved it, not that research
---     found evidence. The research confidence level is written in the
---     description instead, in plain words.
+--   * `verified` follows the research label, using the rule in the site's
+--     Listing Policy ("Verified" = sufficient evidence found for the key
+--     listing information). The research marked KCAB and Berlin Kerala
+--     Samajam "Verified" (official site and court registry for KCAB; the
+--     Indian Consulate's association register and business registries for the
+--     Samajam), so those two get verified=1. KOKOLAND, WMC Berlin and
+--     Kombans FC were "Partially verified" or "Unverified", and the site only
+--     has two display states (Verified / Not yet verified), so they stay 0.
+--     The research confidence is also written in each description in plain
+--     words. If you would rather not show a Verified badge on the Samajam
+--     while its activity is unconfirmed, change its verified value to 0
+--     before running, or flip it later in admin-edit.php.
 --   * No founders are inserted. None were identified for KOKOLAND, and the
 --     four organisations have office-bearers, not founders; naming private
 --     individuals as "founders" would be wrong and is personal data.
@@ -28,11 +36,11 @@
 --     import/migration-import-contacts-batch1.sql). Both were seen on the
 --     organisations' own sites on 4 Oct 2026.
 --   * NILA Restaurants Berlin: the CSV recommends moving it from "Not yet
---     verified" to "Partially verified". The site has no such level (only
---     Verified / Not yet verified), and setting verified=1 would claim an
---     owner confirmation that does not exist, so nothing is changed for NILA
---     here. Its listing becomes Verified the normal way, when the owner
---     claims it.
+--     verified" to "Partially verified". The site has no such display level
+--     (only Verified / Not yet verified), and setting verified=1 would show
+--     a full Verified badge on evidence the research itself rated partial,
+--     so nothing is changed for NILA here. It can be switched to Verified in
+--     admin-edit.php once someone has confirmed the key details.
 
 INSERT IGNORE INTO companies
   (slug, name, website, industry, business_type, size, founded_year, country, city, location, description, status, verified)
@@ -42,13 +50,13 @@ VALUES
  'approved', 0),
 ('kcab-berlin-malayalees', 'Kerala Cultural Association of Berlin (Berlin Malayalees)', 'https://www.berlinmalayalees.com/', 'Education', 'Association', NULL, NULL, 'Germany', 'Berlin', 'Berlin, Germany',
  'Non-profit cultural association for Malayalees in Berlin and the surrounding area. It runs cultural programmes, family activities and social events. Registered as Kerala Cultural Association of Berlin e.V. in the German court register. Research confidence: verified.',
- 'approved', 0),
+ 'approved', 1),
 ('wmc-berlin', 'World Malayalee Council, Berlin Chapter', 'https://wmcberlin.de/', 'Education', 'Community Organisation', NULL, NULL, 'Germany', 'Berlin', 'Berlin, Germany',
  'Berlin chapter of the World Malayalee Council, the international Malayalee diaspora organisation. It hosts cultural events such as Onam and professional networking meetups for the Malayalam community in Berlin. Research confidence: the organisation is clearly Malayalee-oriented, but no office-bearers were found to cross-check.',
  'approved', 0),
 ('berlin-kerala-samajam', 'Berlin Kerala Samajam', NULL, 'Education', 'Association', NULL, NULL, 'Germany', 'Berlin', 'Berlin, Germany',
- 'Registered association (Berlin Kerala Samajan e.V.) for the Kerala community in Berlin, listed in the Indian Consulate General in Frankfurt''s register of Kerala and Malayali associations. No website or current contact could be found, so whether it is still active is unconfirmed.',
- 'approved', 0),
+ 'Registered association (Berlin Kerala Samajan e.V.) for the Kerala community in Berlin, listed in the Indian Consulate General in Frankfurt''s register of Kerala and Malayali associations. No website or current contact could be found, so whether it is still active is unconfirmed. Research confidence: verified that the association exists.',
+ 'approved', 1),
 ('kombans-fc-berlin', 'Kombans FC Berlin', NULL, 'Education', 'Community Organisation', NULL, NULL, 'Germany', 'Berlin', 'Berlin, Germany',
  'Amateur football club of the Malayali diaspora in Berlin, playing in the Kerala European Football Federation (KEFF). Research confidence: unverified. Evidence is a single fixture listing, and the name may be confused with a club of the same name in Thiruvananthapuram. Kept unpublished until a person confirms the club.',
  'pending', 0);

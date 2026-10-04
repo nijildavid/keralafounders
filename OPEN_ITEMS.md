@@ -232,13 +232,19 @@ note here saying otherwise:
   database twice; the 5 pages render correctly and the pending one 404s.
   Afterwards the approved Berlin count should be 10 (6 existing plus 4
   new). The file's header explains each choice: no founders, no street
-  addresses or phone numbers, `verified` left at 0, and only the two
-  mailboxes the organisations publish themselves are stored (admin-only).
-  The sprint also recommended moving NILA Restaurants Berlin to
-  "Partially verified". The site has no such level, so nothing is changed;
-  NILA becomes Verified when the owner claims the listing. A sports club
-  has no matching industry in the frozen taxonomy; Education was used as
-  the closest and the gap should be logged at the next taxonomy checkpoint.
+  addresses or phone numbers, and only the two mailboxes the organisations
+  publish themselves are stored (admin-only). `verified` follows the
+  research label under the Listing Policy rule ("Verified" = sufficient
+  evidence found): KCAB and Berlin Kerala Samajam get the Verified badge;
+  KOKOLAND, WMC Berlin and Kombans FC do not. Decide before running whether
+  the Samajam should show Verified while its activity is unconfirmed (the
+  header says how to change it). The sprint also recommended moving NILA
+  Restaurants Berlin to "Partially verified". The site only shows
+  Verified / Not yet verified, so nothing is changed; switch NILA to
+  Verified in `admin-edit.php` once the key details are confirmed. A sports
+  club has no matching industry in the frozen taxonomy; Education was used
+  as the closest and the gap should be logged at the next taxonomy
+  checkpoint.
 
 ## Needs a step from Nijil — turn on the Impressum page
 
