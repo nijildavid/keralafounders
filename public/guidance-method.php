@@ -45,7 +45,7 @@ $canonicalUrl = 'https://keralafounders.eu/guidance-method.php';
 
 <div class="panel" style="margin-top:30px">
 <h2>Spotted something we should fix?</h2>
-<p class="muted" style="margin:0"><a class="arrow" href="mailto:hello@keralafounders.eu">Get in touch →</a></p>
+<p class="muted" style="margin:0"><a class="arrow" href="contact.php">Get in touch →</a></p>
 </div>
 
 </div></section></main><?php include __DIR__ . '/partials/footer-full.php'; ?></body></html>
