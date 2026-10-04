@@ -33,7 +33,7 @@ Options -Indexes
     # style-src must include cdn.cookiehub.eu: CookieHub only shows its banner
     # after its own stylesheet (cdn.cookiehub.eu/c2/css/...) finishes loading,
     # so blocking it hides the banner and leaves analytics consent denied.
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.cookiehub.eu; style-src 'self' 'unsafe-inline' https://cdn.cookiehub.eu; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src https://open.spotify.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.cookiehub.eu https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.cookiehub.eu; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src https://open.spotify.com https://challenges.cloudflare.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
 </IfModule>
 
 # Let browsers cache static assets instead of re-downloading them on every

@@ -14,6 +14,9 @@ require __DIR__ . '/../../config/db.php';
 require __DIR__ . '/../../config/auth.php';
 require __DIR__ . '/../../config/reference.php';
 require __DIR__ . '/../assets/validation-helpers.php';
+if (file_exists(__DIR__ . '/../../config/turnstile.php')) {
+    require __DIR__ . '/../../config/turnstile.php';
+}
 
 $input = json_decode(file_get_contents('php://input'), true);
 if (!is_array($input)) {
@@ -26,6 +29,12 @@ if (!is_array($input)) {
 // doesn't learn the field is being checked, but don't write a row.
 if (trim((string)($input['hpField'] ?? '')) !== '') {
     echo json_encode(['ok' => true]);
+    exit;
+}
+
+if (!turnstile_verify((string)($input['turnstileToken'] ?? ''), (string)($_SERVER['REMOTE_ADDR'] ?? ''))) {
+    http_response_code(422);
+    echo json_encode(['error' => 'We could not verify you are not a robot. Please try again.']);
     exit;
 }
 
