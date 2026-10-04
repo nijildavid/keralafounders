@@ -14,7 +14,13 @@ $action = (string)($_POST['action'] ?? '');
 if ($id > 0 && $action === 'approve') {
     get_db()->prepare("UPDATE companies SET status = 'approved' WHERE id = ?")->execute([$id]);
 } elseif ($id > 0 && $action === 'delete') {
-    get_db()->prepare('DELETE FROM companies WHERE id = ?')->execute([$id]);
+    // Typed-name confirmation is enforced here, not just in the browser.
+    $nameStmt = get_db()->prepare('SELECT name FROM companies WHERE id = ?');
+    $nameStmt->execute([$id]);
+    $companyName = $nameStmt->fetchColumn();
+    if ($companyName !== false && trim((string)($_POST['confirm_name'] ?? '')) === $companyName) {
+        get_db()->prepare('DELETE FROM companies WHERE id = ?')->execute([$id]);
+    }
 } elseif ($id > 0 && $action === 'toggle-verified') {
     get_db()->prepare('UPDATE companies SET verified = NOT verified WHERE id = ?')->execute([$id]);
 }
