@@ -55,6 +55,7 @@ echo url("{$baseUrl}/privacy.php", null, 'yearly');
 echo url("{$baseUrl}/guidance.php", null, 'monthly');
 echo url("{$baseUrl}/guidance-faq.php", null, 'weekly');
 echo url("{$baseUrl}/guidance-method.php", null, 'yearly');
+echo url("{$baseUrl}/stories.php", null, 'weekly');
 
 foreach (guidance_load_countries() as $gc) {
     if ($gc['status'] === 'live') {
