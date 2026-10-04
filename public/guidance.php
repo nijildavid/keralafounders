@@ -56,7 +56,7 @@ $canonicalUrl = 'https://keralafounders.eu/guidance.php';
 
 <div class="panel" style="margin-top:20px">
 <h2>Have a question, or a country we should cover next?</h2>
-<p class="muted" style="margin:0"><a class="arrow" href="mailto:hello@keralafounders.eu">Get in touch →</a></p>
+<p class="muted" style="margin:0"><a class="arrow" href="contact.php">Get in touch →</a></p>
 </div>
 
 </div></section>
