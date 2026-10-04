@@ -66,7 +66,7 @@ public/                  # document root
 config/                  # OUTSIDE the document root
   db.php, auth.php, report-auth.php, legal.php   real secrets/details — gitignored, never committed,
                           must already exist on the server; deploy never touches these
-                          (legal.php is optional: without it /impressum 404s and its footer link hides)
+                          (legal.php is optional: without it /impressum shows a "registration in progress" notice)
   db.example.php, auth.example.php, report-auth.example.php, legal.example.php, reference.php   committed, no secrets
 import/                 # historical one-off CSV imports + migration SQL (changelog, not for re-running)
 schema.sql               full current schema + seed data
