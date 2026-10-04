@@ -18,7 +18,7 @@
         "target_month": null,
         "directory_country_name": "Netherlands",
         "last_checked": "2026-09-26",
-        "next_check_due": "2027-03-26",
+        "next_check_due": "2027-01-15",
         "order": 2
     },
     {
@@ -139,7 +139,7 @@
         "target_month": null,
         "directory_country_name": "Belgium",
         "last_checked": "2026-09-25",
-        "next_check_due": "2027-03-25",
+        "next_check_due": "2027-01-15",
         "order": 13
     },
     {
