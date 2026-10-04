@@ -31,6 +31,7 @@ $q = trim((string)($_GET['q'] ?? ''));
 $sortColumns = [
     'needs'    => ['label' => 'Needs action first', 'sql' => [], 'default_dir' => 'desc'],
     'name'     => ['label' => 'Company', 'sql' => ['c.name'], 'default_dir' => 'asc'],
+    'industry' => ['label' => 'Industry', 'sql' => ['c.industry'], 'default_dir' => 'asc'],
     'country'  => ['label' => 'Location', 'sql' => ['c.country', 'c.city'], 'default_dir' => 'asc'],
     'founders' => ['label' => 'Founders', 'sql' => ['founder_count'], 'default_dir' => 'desc'],
     'created'  => ['label' => 'Submitted', 'sql' => ['c.created_at'], 'default_dir' => 'desc'],
@@ -198,6 +199,18 @@ if ($sort !== 'needs') {
     $paginationExtraParams['dir'] = $dir;
 }
 
+// Lucide icons (https://lucide.dev, ISC licence), inlined so there is no
+// external dependency. Decorative: the sort state is conveyed by aria-sort.
+function admin_sort_icon(string $name): string
+{
+    $paths = [
+        'arrow-up-down' => '<path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/>',
+        'arrow-up'      => '<path d="m5 12 7-7 7 7"/><path d="M12 19V5"/>',
+        'arrow-down'    => '<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>',
+    ];
+    return '<svg class="adm-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' . $paths[$name] . '</svg>';
+}
+
 // Header cell: a real link (works without JS) that flips direction when the
 // column is already the active sort.
 function admin_sort_th(string $key, string $label, array $state, array $cols, string $class = ''): string
@@ -206,10 +219,10 @@ function admin_sort_th(string $key, string $label, array $state, array $cols, st
     $nextDir = $active ? ($state['dir'] === 'asc' ? 'desc' : 'asc') : $cols[$key]['default_dir'];
     $href = admin_url($state, ['sort' => $key, 'dir' => $nextDir, 'page' => 1]);
     $aria = $active ? ($state['dir'] === 'asc' ? 'ascending' : 'descending') : 'none';
-    $icon = $active ? ($state['dir'] === 'asc' ? '&#9650;' : '&#9660;') : '&#8693;';
+    $icon = admin_sort_icon($active ? ($state['dir'] === 'asc' ? 'arrow-up' : 'arrow-down') : 'arrow-up-down');
     return '<th scope="col" aria-sort="' . $aria . '"' . ($class ? ' class="' . $class . '"' : '') . '>'
         . '<a class="adm-sort' . ($active ? ' is-active' : '') . '" href="' . h($href) . '">' . h($label)
-        . ' <span aria-hidden="true">' . $icon . '</span></a></th>';
+        . ' ' . $icon . '</a></th>';
 }
 
 function admin_status_badge(array $c): string
@@ -269,7 +282,7 @@ $activeAdminPage = 'submissions';
 <link rel="stylesheet" href="assets/style.css?v=<?= (int)@filemtime(__DIR__ . "/assets/style.css") ?>"><script src="assets/nav-toggle.js?v=<?= (int)@filemtime(__DIR__ . "/assets/nav-toggle.js") ?>" defer></script><script src="assets/data.php?v=<?= (int)@filemtime(__DIR__ . "/assets/data.php") ?>"></script><script src="assets/app.js?v=<?= (int)@filemtime(__DIR__ . "/assets/app.js") ?>"></script><script src="assets/admin-table.js?v=<?= (int)@filemtime(__DIR__ . "/assets/admin-table.js") ?>" defer></script></head>
 <?php include __DIR__ . '/partials/header.php'; ?>
 <main id="main">
-<section class="page-head"><div class="wrap"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><div class="eyebrow">Admin</div><h1>All submissions.</h1></div><a class="arrow" href="admin-logout.php">Log out</a></div><p class="muted">Every company ever submitted via "Add your company", with its current status. Select a company to see the full picture.</p>
+<section class="page-head"><div class="wrap adm-wide"><div style="display:flex;justify-content:space-between;align-items:baseline"><div><div class="eyebrow">Admin</div><h1>All submissions.</h1></div><a class="arrow" href="admin-logout.php">Log out</a></div><p class="muted">Every company ever submitted via "Add your company", with its current status. Select a company to see the full picture.</p>
 <?php include __DIR__ . '/admin-nav.php'; ?>
 
 <form method="get" action="admin.php" class="adm-filters" role="search" aria-label="Filter submissions">
@@ -343,6 +356,7 @@ $activeAdminPage = 'submissions';
   <thead><tr>
     <?= admin_sort_th('name', 'Company', $state, $sortColumns) ?>
     <?= admin_sort_th('country', 'Location', $state, $sortColumns, 'adm-col-opt') ?>
+    <?= admin_sort_th('industry', 'Industry', $state, $sortColumns, 'adm-col-opt') ?>
     <?= admin_sort_th('founders', 'Founders', $state, $sortColumns) ?>
     <?= admin_sort_th('created', 'Submitted', $state, $sortColumns, 'adm-col-opt') ?>
     <?= admin_sort_th('status', 'Status', $state, $sortColumns) ?>
@@ -362,6 +376,7 @@ $activeAdminPage = 'submissions';
   <tr data-id="<?= $id ?>" data-has-email="<?= $hasEmail ? '1' : '0' ?>">
     <th scope="row" data-label="Company"><a class="adm-name" href="admin-edit.php?id=<?= $id ?>" data-open="<?= $id ?>" aria-haspopup="dialog"><?= h($c['name']) ?></a></th>
     <td data-label="Location" class="adm-col-opt"><?= h($c['city']) ?>, <?= h($c['country']) ?></td>
+    <td data-label="Industry" class="adm-col-opt"><?= h($c['industry']) ?></td>
     <td data-label="Founders"><?= $firstFounder !== '' ? h($firstFounder) . ($extraFounders ? ' <span class="adm-muted">+' . $extraFounders . '</span>' : '') : '<span class="adm-muted">None</span>' ?></td>
     <td data-label="Submitted" class="adm-col-opt"><?= h(date('j M Y', strtotime((string)$c['created_at']))) ?></td>
     <td data-label="Status" class="adm-cell-status"><?= admin_status_badge($c) ?></td>
