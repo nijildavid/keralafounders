@@ -4,7 +4,6 @@
   --primary:#0f5132;--primary2:#0b3d26;--mint:#e6f3ec;
   --accent:#f97316;--accent2:#c2410c;
   --cream:#f8faf7;--paper:#fff;--soft:#f5f5f4;--line:#d1d5db;--muted:#6b7280;
-  --status-positive:#166534;--status-attention:#9a3412;
   --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;--space-7:32px;--space-8:40px;--space-9:48px;
   --radius-sm:10px;--radius-md:14px;--radius-lg:18px;--radius-xl:22px;--radius-pill:999px;
 }
@@ -81,7 +80,7 @@ button{cursor:pointer}
 .hero-stats{display:flex;gap:36px;flex-wrap:wrap;margin-top:40px}
 .hero-stat strong{display:block;font-size:29px}
 .hero-stat span{display:block;margin-top:4px;font-size:12px;color:var(--muted)}
-.hero-visual{position:absolute;top:0;right:0;bottom:0;width:46%;background:url('keralafounders_bg.webp') center right/cover no-repeat}
+.hero-visual{position:absolute;top:0;right:0;bottom:0;width:46%;background:url('keralafounders_bg.webp') center right/cover no-repeat;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);mask-composite:intersect}
 .orbit{height:390px;position:relative}
 .orbit .ring{position:absolute;border:1px solid #d6d3d1;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
 .ring.r1{width:210px;height:210px}.ring.r2{width:300px;height:300px}.ring.r3{width:370px;height:370px}
@@ -104,8 +103,6 @@ button{cursor:pointer}
 .verified{background:#ecfdf3;color:#166534}.neutral{background:#f5f5f4;color:#57534e}
 .company-card h3{font-size:21px;margin:18px 0 5px;letter-spacing:-.02em}.meta{font-size:13px;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.chip{background:#f5f5f4;border-radius:999px;padding:6px 9px;font-size:11px}
-.chip-positive{color:var(--status-positive);border-color:var(--status-positive)}
-.chip-attention{color:var(--status-attention);border-color:var(--status-attention)}
 .arrow{color:var(--accent2);font-weight:700;font-size:13px;margin-top:18px;display:inline-block}
 .map-panel{border:1px solid var(--line);border-radius:22px;background:#fff;overflow:hidden}
 .map-art{min-height:390px;background:#f5f5f4;position:relative;overflow:hidden}
@@ -147,24 +144,43 @@ fieldset.form-fieldset legend{padding:0;width:100%}
    .radio-group/.location-section rules shared with claim.php/admin-edit.php */
 .wizard{max-width:640px;margin:0 auto;padding:var(--space-8) var(--space-5) 140px}
 .wizard .form-card{padding:0;border:0;background:transparent}
+/* Shared .form-section/h2 use pre-token-system hardcoded 27px/21px (also used
+   unmodified by claim.php/admin-edit.php) — round to the nearest token here,
+   scoped to .wizard only. */
+.wizard .form-section{padding:0 0 var(--space-6);margin-bottom:var(--space-6)}
+.wizard .form-section h2{margin:0 0 var(--space-5)}
 .wizard-lead{color:#57534e;font-size:16px;margin:0 0 var(--space-6)}
 .wizard .radio-group label{min-height:44px}
 .wizard .field,.wizard .select,.wizard .textarea{min-height:44px}
+
+/* Row gap between fields: deliberately larger than the label-to-its-own-input
+   gap below, so fields read as distinct from each other while a label stays
+   visually glued to its own input. 20px matches the gap .location-section's
+   form-grid already uses (see V12 rule further down) rather than introducing
+   a third value. */
+.wizard .form-grid{gap:var(--space-5)}
 
 /* Accessibility pass: the site's shared .label/.hint are tuned for dense
    admin/claim forms (10px uppercase labels, 12-13px muted hint text) — too
    small and low-contrast for a public-facing form people fill in once.
    Scoped to .wizard only; claim.php and admin-edit.php keep the original. */
-.wizard .label{font-size:14px;letter-spacing:.03em;color:var(--ink2);margin-bottom:8px;min-height:42px}
+.wizard .label{font-size:14px;line-height:1.4;letter-spacing:.03em;color:var(--ink2);margin-bottom:var(--space-2);min-height:var(--space-5)}
+/* The shared .muted{line-height:1.75} rule, used for the "(optional)" suffix
+   span inside some labels, makes that one line taller than a plain label's
+   (e.g. "Industry *" vs "More specific? (optional)") — the real cause of
+   same-row fields not lining up, not 2-line wrapping. Match the label's own
+   line-height here so every label renders at the same height regardless of
+   whether it has an "(optional)" suffix. */
+.wizard .label .muted{line-height:inherit}
 .wizard .hint{font-size:14px;color:#57534e;line-height:1.5}
 .wizard .hint a{color:var(--accent2);text-decoration:underline}
-.wizard .location-intro{font-size:15px;color:#57534e;margin:0 0 20px}
+.wizard .location-intro{font-size:15px;color:#57534e;margin:0 0 var(--space-5)}
 /* The shared .location-section rule (also used by admin-edit.php) adds its
    own top divider on top of the .form-section it follows — doubles up the
    line inside the wizard. Remove it here only; admin-edit.php is untouched. */
 .wizard .location-section{border-top:0;margin-top:0;padding-top:0}
 .wizard .checkrow{font-size:15px;line-height:1.6}
-.wizard .stay-touch{align-items:center;padding:14px 16px;border:1.5px solid var(--line);border-radius:var(--radius-md);transition:background-color .15s ease,border-color .15s ease}
+.wizard .stay-touch{align-items:center;padding:var(--space-3) var(--space-4);border:1.5px solid var(--line);border-radius:var(--radius-md);transition:background-color .15s ease,border-color .15s ease}
 .wizard .stay-touch:has(input:checked){border-color:var(--primary);background:var(--mint)}
 .wizard .stay-touch-check{display:none;color:var(--primary);font-weight:800;font-size:18px;margin-left:auto;flex-shrink:0}
 .wizard .stay-touch:has(input:checked) .stay-touch-check{display:inline-block}
@@ -174,14 +190,14 @@ fieldset.form-fieldset legend{padding:0;width:100%}
 /* "Edit" buttons on the review step, and the "Add another company" link on
    the success screen, were unstyled <button>s relying on the browser's
    default appearance — looked out of place next to the site's pill buttons. */
-.wizard .linkbtn{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius-pill);padding:8px 16px;font-size:14px;font-weight:700;color:var(--ink2);cursor:pointer;min-height:40px}
+.wizard .linkbtn{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius-pill);padding:var(--space-2) var(--space-4);font-size:14px;font-weight:700;color:var(--ink2);cursor:pointer;min-height:40px}
 .wizard .linkbtn:hover{border-color:var(--primary);color:var(--primary)}
 .wizard .linkbtn:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
 
 /* Branch country list: was a wrapped inline row of tiny bare checkboxes.
    Now a proper grid of tappable rows with a flag per country. */
 .wizard .branch-grid{display:none;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:var(--space-2);margin-top:var(--space-3)}
-.wizard .branch-grid label{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1.5px solid var(--line);border-radius:var(--radius-md);font-size:14px;line-height:1.3;cursor:pointer;min-height:44px;min-width:0}
+.wizard .branch-grid label{display:flex;align-items:center;gap:10px;padding:var(--space-2) var(--space-3);border:1.5px solid var(--line);border-radius:var(--radius-md);font-size:14px;line-height:1.3;cursor:pointer;min-height:44px;min-width:0}
 .wizard .branch-grid label:has(input:checked){border-color:var(--primary);background:var(--mint)}
 .wizard .branch-grid input{width:20px;height:20px;accent-color:var(--primary);flex-shrink:0}
 .wizard .branch-flag{font-size:18px;line-height:1}
@@ -201,7 +217,7 @@ fieldset.form-fieldset legend{padding:0;width:100%}
 .wizard .summary .blk{padding:var(--space-4) 0;border-bottom:1px solid var(--line)}
 .wizard .summary .blk:last-child{border-bottom:0}
 .wizard .summary .blk h2{font-size:16px;margin:0 0 var(--space-2);display:flex;justify-content:space-between;align-items:center;letter-spacing:normal;text-transform:none;font-weight:700}
-.wizard .summary dl{margin:0;display:grid;grid-template-columns:120px 1fr;gap:6px 12px;font-size:15px}
+.wizard .summary dl{margin:0;display:grid;grid-template-columns:120px 1fr;gap:var(--space-2) var(--space-3);font-size:15px}
 .wizard .summary dt{color:#57534e;font-weight:600}
 .wizard .summary dd{margin:0;word-break:break-word}
 .wizard .callout{background:var(--mint);border-radius:var(--radius-md);padding:16px 18px;font-size:15px;margin-bottom:var(--space-6)}
@@ -500,7 +516,6 @@ footer{
   line-height:1;
 }
 .remove-founder:hover{background:#f5f5f4;color:#1c1917}
-@media(max-width:600px){.remove-founder{width:40px;height:40px}}
 
 .location-section{padding-top:27px}
 .location-section h2{font-size:24px;margin:0 0 10px}
@@ -683,7 +698,7 @@ footer{
 }
 .company-link:hover{color:inherit !important}
 .company-link:focus-visible{
-  outline:2px solid var(--accent2);
+  outline:2px solid var(--accent);
   outline-offset:4px;
 }
 .company-detail{

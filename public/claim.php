@@ -108,12 +108,14 @@ let founderIndex=0;
 function founderBlockHtml(i,f,isFirst){
   const req=isFirst?'required':'';
   const reqMark=isFirst?' *':'';
+  const reqEmail=isFirst&&!f.keep_email?'required':'';
+  const reqEmailMark=isFirst&&!f.keep_email?' *':'';
   const removeBtn=isFirst?'':'<button type="button" class="remove-founder" aria-label="Remove founder" title="Remove founder">×</button>';
   const cls=isFirst?'founder-extra':'founder-extra additional-founder';
   const style=isFirst?' style="background:transparent;padding:0"':'';
   const errSpan=isFirst?`<span class="field-error" data-error-for="founderName-${i}" hidden></span>`:'';
   const errSpanEmail=isFirst?`<span class="field-error" data-error-for="founderEmail-${i}" hidden></span>`:'';
-  return `<div class="${cls}"${style}>${removeBtn}<div><label class="label" for="founderName-${i}">Founder name${reqMark}</label><input class="field" id="founderName-${i}" name="founderName[]" ${req} value="${KFUI.esc(f.name||'')}" placeholder="Full name">${errSpan}</div><div><label class="label" for="founderLinkedin-${i}">LinkedIn profile</label><input class="field" id="founderLinkedin-${i}" name="founderLinkedin[]" value="${KFUI.esc(f.linkedin||'')}" placeholder="linkedin.com/in/you"></div><div><label class="label" for="founderEmail-${i}">Email address${reqMark}</label><input class="field" id="founderEmail-${i}" type="email" name="founderEmail[]" ${req} value="${KFUI.esc(f.email||'')}" placeholder="email@company.com">${errSpanEmail}</div><div>
+  return `<div class="${cls}"${style}>${removeBtn}<div><label class="label" for="founderName-${i}">Founder name${reqMark}</label><input class="field" id="founderName-${i}" name="founderName[]" ${req} value="${KFUI.esc(f.name||'')}" placeholder="Full name">${errSpan}</div><div><label class="label" for="founderLinkedin-${i}">LinkedIn profile</label><input class="field" id="founderLinkedin-${i}" name="founderLinkedin[]" value="${KFUI.esc(f.linkedin||'')}" placeholder="${f.keep_linkedin?'On file. Leave blank to keep it.':'linkedin.com/in/you'}"></div><div><label class="label" for="founderEmail-${i}">Email address${reqEmailMark}</label><input class="field" id="founderEmail-${i}" type="email" name="founderEmail[]" ${reqEmail} value="${KFUI.esc(f.email||'')}" placeholder="${f.keep_email?'On file and hidden. Leave blank to keep it.':'email@company.com'}">${errSpanEmail}</div><div>
   <span class="label">Email visibility</span>
   <label class="email-switch">
     <input type="checkbox" name="founderShow[]" value="yes" ${f.show_email?'checked':''}>
@@ -132,7 +134,21 @@ function addFounderNode(f,isFirst){
   if(rm)rm.onclick=()=>node.remove();
   document.getElementById('founders').appendChild(node);
 }
-const currentFounders=<?= json_encode(array_map(fn($f) => ['name' => $f['name'], 'email' => $f['email'], 'linkedin' => $f['linkedin'], 'show_email' => (bool)$f['show_email']], $founders)) ?>;
+const currentFounders=<?= json_encode(array_map(function ($f) {
+    // Only an email the listing already shows publicly is sent to the browser.
+    // A hidden email (and LinkedIn, which no public page shows) stays on the
+    // server: the form just says it is on file, and claim-action.php keeps it
+    // when the claimant leaves the field blank.
+    $showEmail = !empty($f['show_email']);
+    return [
+        'name' => $f['name'],
+        'email' => $showEmail ? (string)$f['email'] : '',
+        'linkedin' => '',
+        'show_email' => $showEmail,
+        'keep_email' => !$showEmail && trim((string)$f['email']) !== '',
+        'keep_linkedin' => trim((string)$f['linkedin']) !== '',
+    ];
+}, $founders)) ?>;
 if(currentFounders.length){currentFounders.forEach((f,idx)=>addFounderNode(f,idx===0));}else{addFounderNode({},true);}
 document.getElementById('addFounder').onclick=()=>addFounderNode({},false);
 

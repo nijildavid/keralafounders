@@ -4,6 +4,7 @@ config/db.php
 config/auth.php
 config/report-auth.php
 config/turnstile.php
+config/legal.php
 
 # Runtime state written by the app itself, not source.
 config/login-attempts.json

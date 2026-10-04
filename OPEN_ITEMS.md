@@ -221,46 +221,87 @@ first, and whether any Friendship-Treaty-style shortcut (the US-NL DAFT
 arrangement) applies to a nationality relevant here — not researched,
 flagged as an open question in the guide rather than guessed at.
 
-## Needs a production DB action (Nijil, via phpMyAdmin)
+## Production DB actions — Instagram backfill and Ayurveda merge verified done (4 Oct 2026)
 
-- **Instagram backfill** — code and data are ready (see `HISTORY.md`
-  2026-09-27), but nothing has been run against the live database yet
-  (no SSH/CLI access to production from this side). Two SQL files to run
-  in phpMyAdmin, in this order:
-  1. `migration-add-instagram-provenance.sql` — adds the
-     `instagram_source`/`instagram_confidence`/`instagram_note` columns.
-  2. `import/migration-instagram-backfill-2026-09-27.sql` — the actual
-     backfill (71 high-confidence handles published immediately, 7
-     medium-confidence held for review). Its last query lists any slug
-     from the research that doesn't exist in the live `companies` table
-     under that exact name — check that list is empty (or investigate any
-     slug it names) before considering the backfill done.
-- **Ayurveda duplicate pair — merge approved, script ready to run** —
-  Nijil confirmed `karinkada-ayurveda` and `sonnentag-kerala-ayurveda-shop`
-  are the same business and asked to merge them.
-  `import/migration-merge-ayurveda-listings-2026-09-27.sql` keeps
-  `sonnentag-kerala-ayurveda-shop` (matches the live website's own name)
-  and removes `karinkada-ayurveda`, carrying over its founders/branches/
-  claim history and filling in any field the surviving row was missing.
-  Tested against a local copy with dummy data (including a re-run after
-  the fact, to confirm it's a safe no-op the second time) — not run
-  against production from this session (no DB/SSH access). Run it any
-  time relative to the Instagram backfill above; it sets the Instagram
-  handle itself either way. After running: check the script's own
-  validation queries, and manually check `admin-edit.php` for the merged
-  listing in case the same founder was entered on both original rows
-  (the script doesn't try to dedupe founders). `karinkada-ayurveda`'s URL
-  will 404 after this — no redirect was built for it (see the script's
-  header for why).
+Checked against the live site on 4 Oct 2026 (company pages fetched one by
+one, compared with `import/migration-instagram-backfill-2026-09-27.sql`).
+Both migrations have clearly been run on production, despite the earlier
+note here saying otherwise:
+
+- **Instagram backfill — done.** All 78 slugs in the backfill file resolve
+  to a live page (the one 404 is `karinkada-ayurveda`, merged away, see
+  below). 70 of the 71 high-confidence handles show on their own page; the
+  71st (`keralaayurvedashop`) shows on the surviving Ayurveda listing. All
+  7 medium-confidence handles are hidden, none leaking. Because the hiding
+  depends on the `instagram_confidence` column, the provenance columns
+  exist and are filled in on production.
+- **Ayurveda duplicate pair — merged.** `karinkada-ayurveda` now returns
+  404 and is no longer in the sitemap; `sonnentag-kerala-ayurveda-shop`
+  carries the Instagram handle. Still worth a manual look at
+  `admin-edit.php` for the merged listing, in case the same founder was
+  entered on both original rows (the script doesn't dedupe founders).
+  No redirect was built for the old URL (see the script's header).
 - **igcs-indo-german-services / igcs-consultancy — left as two listings**
   — same founder (Saju Jakob) and website (`igcsvisa.de`), but possibly
   two distinct legal entities (GmbH vs Ltd.) rather than one listing
   duplicated, so not merged like the Ayurveda pair above. Revisit if
   that gets clarified.
+
+## Needs a production DB action (Nijil, via phpMyAdmin)
+
+- **Berlin research sprint records (4 Oct 2026)** — run
+  `import/migration-berlin-sprint-2026-10-04.sql` once in phpMyAdmin. It
+  adds 5 records: KOKOLAND, Kerala Cultural Association of Berlin, World
+  Malayalee Council Berlin Chapter and Berlin Kerala Samajam as public
+  (approved) listings, and Kombans FC Berlin as `pending` (hidden) until a
+  person confirms the club. Safe to re-run. Tested against the dev
+  database twice; the 5 pages render correctly and the pending one 404s.
+  Afterwards the approved Berlin count should be 10 (6 existing plus 4
+  new). The file's header explains each choice: no founders, no street
+  addresses or phone numbers, and only the two mailboxes the organisations
+  publish themselves are stored (admin-only). `verified` follows the
+  research label under the Listing Policy rule ("Verified" = sufficient
+  evidence found): KCAB and Berlin Kerala Samajam get the Verified badge;
+  KOKOLAND, WMC Berlin and Kombans FC do not. Decide before running whether
+  the Samajam should show Verified while its activity is unconfirmed (the
+  header says how to change it). The sprint also recommended moving NILA
+  Restaurants Berlin to "Partially verified". The site only shows
+  Verified / Not yet verified, so nothing is changed; switch NILA to
+  Verified in `admin-edit.php` once the key details are confirmed. A sports
+  club has no matching industry in the frozen taxonomy; Education was used
+  as the closest and the gap should be logged at the next taxonomy
+  checkpoint.
+
+## Needs a step from Nijil — turn on the Impressum page
+
+The Impressum page (`public/impressum.php`, reachable at `/impressum`) is
+built and deployed but stays hidden (404, no footer link) until the server
+has a `config/legal.php` with the operator's real details. To switch it on:
+
+1. In cPanel File Manager, open the private `config/` folder (the same one
+   that holds `db.php`) and copy `legal.example.php` to `legal.php`.
+2. Fill in `name`, `street` and `city` (a street address where you can be
+   reached, not a P.O. box). Optionally add `phone`, `vat_id`, `register`.
+3. Open `https://keralafounders.eu/impressum` and check it. The footer link
+   appears by itself on every page.
+
+`legal.php` is gitignored, so the address never goes into git. A lawyer or
+IT-law service should confirm the final wording (the page cites § 5 DDG and
+§ 18 Abs. 2 MStV; both are marked "verify" in the legal research). The
+privacy policy still needs the operator name, hosting, tools and cookies
+added; that wording needs human sign-off and is not part of this change.
+
+## Needs a decision from Nijil
+
 - **7 medium-confidence Instagram handles need a review decision** —
-  `admin.php?instagram=needs_review` lists them with the reviewer's note;
-  `admin-edit.php` has a "Publish this handle" checkbox to approve each
-  one (or edit/clear the field to reject). Two of the seven
+  they stay hidden until approved. Open each company in `admin-edit.php`
+  and tick "Publish this handle on the public profile" to approve (or
+  edit/clear the field to reject); the reviewer's reasoning is shown on
+  that page. The old `admin.php?instagram=needs_review` filter no longer
+  exists (removed in `keralafounders#42`). The seven are
+  `acsia-systems-deutschland`, `ammas-food-dortmund`, `beta-group`,
+  `igcs-indo-german-services`, `indian-koffie-house-almere`,
+  `kalikut-1498` and `malabar-cafe-brandenburg`. Two of them
   (`acsia-systems-deutschland`, `beta-group`) are the founder's *personal*
   Instagram rather than a company page — worth a judgment call on whether
   that's appropriate for a business listing before approving.

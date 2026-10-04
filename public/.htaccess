@@ -30,7 +30,10 @@ Options -Indexes
     # has no build step to switch every inline <script>/onclick handler and
     # the consent/analytics tools (CookieHub, Google Analytics) call several
     # subdomains that aren't practical to enumerate one by one.
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.cookiehub.eu https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src https://open.spotify.com https://challenges.cloudflare.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    # style-src must include cdn.cookiehub.eu: CookieHub only shows its banner
+    # after its own stylesheet (cdn.cookiehub.eu/c2/css/...) finishes loading,
+    # so blocking it hides the banner and leaves analytics consent denied.
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.cookiehub.eu https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdn.cookiehub.eu; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src https://open.spotify.com https://challenges.cloudflare.com; frame-ancestors 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
 </IfModule>
 
 # Let browsers cache static assets instead of re-downloading them on every
@@ -70,6 +73,9 @@ ErrorDocument 404 /404.php
 
 RewriteEngine On
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+# /impressum (the URL German visitors and lawyers expect) serves impressum.php.
+RewriteRule ^impressum/?$ impressum.php [L]
 
 # Canonicalize the homepage to / — index.php still serves it (DirectoryIndex),
 # this only fires when the URL itself literally says /index.php.
