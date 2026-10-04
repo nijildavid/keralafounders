@@ -221,6 +221,25 @@ note here saying otherwise:
   duplicated, so not merged like the Ayurveda pair above. Revisit if
   that gets clarified.
 
+## Needs a production DB action (Nijil, via phpMyAdmin)
+
+- **Berlin research sprint records (4 Oct 2026)** — run
+  `import/migration-berlin-sprint-2026-10-04.sql` once in phpMyAdmin. It
+  adds 5 records: KOKOLAND, Kerala Cultural Association of Berlin, World
+  Malayalee Council Berlin Chapter and Berlin Kerala Samajam as public
+  (approved) listings, and Kombans FC Berlin as `pending` (hidden) until a
+  person confirms the club. Safe to re-run. Tested against the dev
+  database twice; the 5 pages render correctly and the pending one 404s.
+  Afterwards the approved Berlin count should be 10 (6 existing plus 4
+  new). The file's header explains each choice: no founders, no street
+  addresses or phone numbers, `verified` left at 0, and only the two
+  mailboxes the organisations publish themselves are stored (admin-only).
+  The sprint also recommended moving NILA Restaurants Berlin to
+  "Partially verified". The site has no such level, so nothing is changed;
+  NILA becomes Verified when the owner claims the listing. A sports club
+  has no matching industry in the frozen taxonomy; Education was used as
+  the closest and the gap should be logged at the next taxonomy checkpoint.
+
 ## Needs a decision from Nijil
 
 - **7 medium-confidence Instagram handles need a review decision** —
