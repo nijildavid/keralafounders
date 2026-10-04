@@ -1,4 +1,12 @@
 <?php
+// Linked from every company page as contact.php?topic=remove&listing=<slug>.
+// The slug is cut down to safe characters before it goes into the form.
+$prefillRemove = (($_GET['topic'] ?? '') === 'remove');
+$prefillListing = preg_replace('/[^a-z0-9-]/', '', strtolower((string)($_GET['listing'] ?? '')));
+$prefillListing = substr($prefillListing, 0, 120);
+$prefillMessage = ($prefillRemove && $prefillListing !== '')
+    ? "Listing: https://keralafounders.eu/company.php?id=" . $prefillListing . "\n\nPlease remove or correct this listing. What should change: "
+    : '';
 $pageTitle = 'Contact — Kerala Founders';
 $metaDescription = 'Have a question, or a country we should cover next? Get in touch with the Kerala Founders team.';
 $canonicalUrl = 'https://keralafounders.eu/contact.php';
@@ -33,12 +41,13 @@ $canonicalUrl = 'https://keralafounders.eu/contact.php';
         <option>Question</option>
         <option>Suggest a country</option>
         <option>Feedback</option>
+        <option<?= $prefillRemove ? ' selected' : '' ?>>Remove or correct a listing</option>
         <option>Something else</option>
       </select>
     </div>
     <div style="margin-bottom:20px">
       <label class="label" for="contactMessage">Message</label>
-      <textarea class="textarea" id="contactMessage" name="message" rows="6" required maxlength="5000"></textarea>
+      <textarea class="textarea" id="contactMessage" name="message" rows="6" required maxlength="5000"><?= htmlspecialchars($prefillMessage, ENT_QUOTES, 'UTF-8') ?></textarea>
     </div>
     <input type="text" name="website" class="guidance-feedback-website" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button class="pill" type="submit">Send message →</button>

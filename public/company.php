@@ -196,6 +196,7 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         <p class="muted" style="margin:6px 0 16px">Let us know what's changed and we'll update the listing.</p>
         <?php endif; ?>
         <a class="pill light" href="claim.php?id=<?= rawurlencode($slug) ?>"><?= $company['verified'] ? 'Suggest an edit' : 'Claim this listing' ?> →</a>
+        <p class="muted" style="margin:16px 0 0;font-size:14px">Want this listing corrected or removed? <a class="arrow" href="contact.php?topic=remove&amp;listing=<?= rawurlencode($slug) ?>">Ask us</a>.</p>
       </div>
     </div>
     <?php endif; ?>

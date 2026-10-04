@@ -44,7 +44,7 @@ if (mb_strlen($name) > 120 || mb_strlen($topic) > 60 || mb_strlen($message) > 50
     exit;
 }
 
-$allowedTopics = ['Question', 'Suggest a country', 'Feedback', 'Something else'];
+$allowedTopics = ['Question', 'Suggest a country', 'Feedback', 'Remove or correct a listing', 'Something else'];
 if (!in_array($topic, $allowedTopics, true)) {
     $topic = 'Something else';
 }
