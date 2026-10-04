@@ -13,7 +13,7 @@ $canonicalUrl = 'https://keralafounders.eu/privacy.php';
 <section class="section"><div class="wrap" style="max-width:850px">
 <div class="eyebrow">Privacy</div>
 <h1 style="font-family:Georgia,serif;font-size:55px;margin:12px 0 6px">Privacy Policy</h1>
-<p class="hint" style="margin-bottom:25px">Last updated: 17 September 2026</p>
+<p class="hint" style="margin-bottom:25px">Last updated: 4 October 2026</p>
 <div class="muted" style="font-size:17px;line-height:1.8">
 <p><strong style="color:var(--ink)">Kerala Founders</strong> is an independent directory that documents Kerala-connected and Malayali-led businesses, founders, professionals and organisations in Europe, built to make them easier to discover and connect with.</p>
 </div>
@@ -48,6 +48,13 @@ $canonicalUrl = 'https://keralafounders.eu/privacy.php';
 <div class="panel" style="margin-top:20px">
 <h2>Public information</h2>
 <p class="muted" style="margin:0">Some directory information may already be publicly available elsewhere. The fact that information is publicly available does not mean it is permanently fixed on Kerala Founders. If information is inaccurate, outdated, inappropriate or should no longer appear, you can contact us and request a review.</p>
+</div>
+
+<div class="panel" style="margin-top:20px">
+<h2>Why founders' names are shown</h2>
+<p class="muted" style="margin:0 0 10px">Kerala Founders is a directory that helps people find Kerala-connected businesses in Europe. To do that, each listing names the founder or owner where a public source ties them to the business. We rely on our legitimate interest in running that directory (Art. 6(1)(f) GDPR).</p>
+<p class="muted" style="margin:0 0 10px">We show only business facts. A founder's email address appears only if the listing allows it. We do not show LinkedIn links, private phone numbers or home addresses.</p>
+<p class="muted" style="margin:0">You can ask us to correct or remove your name at any time with the "Ask us" link on your listing, through <a class="arrow" href="contact.php?topic=remove">the contact form</a>, or at hello@keralafounders.eu. You also have the right to object to this use of your data.</p>
 </div>
 
 <div class="panel" style="margin-top:20px">
