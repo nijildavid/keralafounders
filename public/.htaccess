@@ -74,6 +74,9 @@ ErrorDocument 404 /404.php
 RewriteEngine On
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
 
+# /impressum (the URL German visitors and lawyers expect) serves impressum.php.
+RewriteRule ^impressum/?$ impressum.php [L]
+
 # Canonicalize the homepage to / — index.php still serves it (DirectoryIndex),
 # this only fires when the URL itself literally says /index.php.
 RewriteRule ^index\.php$ / [R=301,L]
