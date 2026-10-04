@@ -5,9 +5,9 @@
 // with your real details. The deploy only copies reference.php into that
 // folder, so this example file is not there to copy. legal.php itself is
 // gitignored, so your name and address never go into git. Until legal.php
-// exists and has at least a name, street and city, the Impressum page returns
-// a 404 and the "Impressum" footer link stays hidden, so nothing half-filled
-// is ever shown to visitors.
+// exists and has at least a name, street and city, the Impressum page shows a
+// "business registration in progress" notice with the contact email and form
+// instead of the operator's details.
 //
 // What goes on the public page (Germany, Digitale-Dienste-Gesetz § 5): the
 // operator's full name, a street address where you can be reached (a P.O. box

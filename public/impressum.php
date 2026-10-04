@@ -1,13 +1,10 @@
 <?php
 require __DIR__ . '/assets/legal-helpers.php';
 
+// null until config/legal.php has a name, street and city (see
+// config/legal.example.php); the page then shows a "registration in
+// progress" notice instead of the operator's details.
 $legal = kf_legal_details();
-if ($legal === null) {
-    // Not configured yet (see config/legal.example.php): behave like any
-    // other missing page rather than show an empty legal notice.
-    include __DIR__ . '/404.php';
-    exit;
-}
 
 function legal_h($value): string
 {
@@ -17,7 +14,7 @@ function legal_h($value): string
 $pageTitle = 'Impressum — Kerala Founders';
 $metaDescription = 'Legal notice (Impressum) for Kerala Founders: who runs this website and how to reach them.';
 $canonicalUrl = 'https://keralafounders.eu/impressum';
-$country = trim((string)($legal['country'] ?? ''));
+$country = $legal !== null ? trim((string)($legal['country'] ?? '')) : '';
 ?>
 <!doctype html>
 <html lang="en"><head><?php include __DIR__ . '/partials/head-common.php'; ?>
@@ -30,6 +27,20 @@ $country = trim((string)($legal['country'] ?? ''));
 <h1 style="font-family:Georgia,serif;font-size:55px;margin:12px 0 6px">Impressum</h1>
 <p class="hint" style="margin-bottom:25px">Information in line with § 5 Digitale-Dienste-Gesetz (DDG).</p>
 
+<?php if ($legal === null): ?>
+<div class="panel">
+<h2>Who runs this website</h2>
+<p class="muted" style="margin:0;line-height:1.8">Kerala Founders is currently being set up as a registered business. The operator's full legal name and address will be published on this page as soon as the registration is complete.</p>
+</div>
+
+<div class="panel" style="margin-top:20px">
+<h2>Contact</h2>
+<p class="muted" style="margin:0;line-height:1.8">
+Email: <a class="arrow" href="mailto:hello@keralafounders.eu">hello@keralafounders.eu</a><br>
+Contact form: <a class="arrow" href="contact.php">keralafounders.eu/contact.php</a>
+</p>
+</div>
+<?php else: ?>
 <div class="panel">
 <h2>Who runs this website</h2>
 <p class="muted" style="margin:0;line-height:1.8">
@@ -62,6 +73,7 @@ Contact form: <a class="arrow" href="contact.php">keralafounders.eu/contact.php<
 <h2>Responsible for content</h2>
 <p class="muted" style="margin:0;line-height:1.8">Responsible for the content of this website (§ 18 Abs. 2 Medienstaatsvertrag): <?= legal_h($legal['name']) ?>, address as above.</p>
 </div>
+<?php endif; ?>
 
 <p class="hint" style="margin-top:25px">See also our <a href="privacy.php">Privacy Policy</a>, <a href="terms.php">Terms of Use</a> and <a href="listing-policy.php#accuracy">Disclaimer</a>.</p>
 

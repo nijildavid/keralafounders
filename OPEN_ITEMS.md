@@ -275,8 +275,10 @@ note here saying otherwise:
 ## Needs a step from Nijil — turn on the Impressum page
 
 The Impressum page (`public/impressum.php`, reachable at `/impressum`) is
-built and deployed but stays hidden (404, no footer link) until the server
-has a `config/legal.php` with the operator's real details. To switch it on:
+live with a placeholder ("the business is being registered; details will be
+published once registration is complete", plus the contact email and form).
+Once the registration is through, replace the placeholder with the real
+details by adding a `config/legal.php` on the server:
 
 1. In cPanel File Manager, open the private `config/` folder (the same one
    that holds `db.php`, `/home/nijiwdhp/config/`). The deploy only copies
