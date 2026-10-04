@@ -279,7 +279,10 @@ built and deployed but stays hidden (404, no footer link) until the server
 has a `config/legal.php` with the operator's real details. To switch it on:
 
 1. In cPanel File Manager, open the private `config/` folder (the same one
-   that holds `db.php`) and copy `legal.example.php` to `legal.php`.
+   that holds `db.php`, `/home/nijiwdhp/config/`). The deploy only copies
+   `reference.php` there, so `legal.example.php` is **not** on the server:
+   create a new file named `legal.php` and paste in the contents of
+   `config/legal.example.php` from the repo.
 2. Fill in `name`, `street` and `city` (a street address where you can be
    reached, not a P.O. box). Optionally add `phone`, `vat_id`, `register`.
 3. Open `https://keralafounders.eu/impressum` and check it. The footer link

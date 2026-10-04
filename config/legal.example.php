@@ -1,8 +1,10 @@
 <?php
 
-// Copy this file to legal.php (on the server, in this same config/ folder,
-// outside the web root) and fill in your real details. legal.php itself is
-// gitignored — your name and address never go into git. Until this file
+// This is a template. On the server, create a NEW file named legal.php in the
+// private config/ folder (next to db.php) and paste this content in, filled in
+// with your real details. The deploy only copies reference.php into that
+// folder, so this example file is not there to copy. legal.php itself is
+// gitignored, so your name and address never go into git. Until legal.php
 // exists and has at least a name, street and city, the Impressum page returns
 // a 404 and the "Impressum" footer link stays hidden, so nothing half-filled
 // is ever shown to visitors.
