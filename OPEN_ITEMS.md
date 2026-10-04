@@ -240,6 +240,25 @@ note here saying otherwise:
   has no matching industry in the frozen taxonomy; Education was used as
   the closest and the gap should be logged at the next taxonomy checkpoint.
 
+## Needs a step from Nijil — turn on the Impressum page
+
+The Impressum page (`public/impressum.php`, reachable at `/impressum`) is
+built and deployed but stays hidden (404, no footer link) until the server
+has a `config/legal.php` with the operator's real details. To switch it on:
+
+1. In cPanel File Manager, open the private `config/` folder (the same one
+   that holds `db.php`) and copy `legal.example.php` to `legal.php`.
+2. Fill in `name`, `street` and `city` (a street address where you can be
+   reached, not a P.O. box). Optionally add `phone`, `vat_id`, `register`.
+3. Open `https://keralafounders.eu/impressum` and check it. The footer link
+   appears by itself on every page.
+
+`legal.php` is gitignored, so the address never goes into git. A lawyer or
+IT-law service should confirm the final wording (the page cites § 5 DDG and
+§ 18 Abs. 2 MStV; both are marked "verify" in the legal research). The
+privacy policy still needs the operator name, hosting, tools and cookies
+added; that wording needs human sign-off and is not part of this change.
+
 ## Needs a decision from Nijil
 
 - **7 medium-confidence Instagram handles need a review decision** —

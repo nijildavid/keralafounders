@@ -67,6 +67,9 @@ $footerTopCountries = fetch_top_countries($db, 10);
         <a href="listing-policy.php#accuracy">Disclaimer</a>
         <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?><a href="guidance-method.php">How we check our information</a><?php endif; ?>
         <a href="contact.php">Contact Us</a>
+        <?php
+          require_once __DIR__ . '/../assets/legal-helpers.php';
+          if (kf_legal_details() !== null): ?><a href="impressum">Impressum</a><?php endif; ?>
       </nav>
     </div>
   </div>
