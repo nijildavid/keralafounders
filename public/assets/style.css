@@ -927,6 +927,7 @@ footer{
 
 /* ---- Admin: All submissions (data table + side drawer) ---- */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.adm-wide{max-width:1560px}
 .adm-filters{display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:flex-end;margin-top:var(--space-5)}
 .adm-filter{display:flex;flex-direction:column;gap:var(--space-1);min-width:140px}
 .adm-filter label{font-size:13px;font-weight:600;color:var(--ink2)}
@@ -946,8 +947,8 @@ footer{
 .adm-table tbody tr:hover{background:var(--cream)}
 .adm-sort{display:flex;align-items:center;gap:var(--space-1);padding:var(--space-3) var(--space-4);min-height:44px;color:var(--ink2);text-decoration:none}
 .adm-sort:hover,.adm-sort.is-active{color:var(--primary)}
-.adm-sort span{font-size:11px;color:var(--muted)}
-.adm-sort.is-active span{color:var(--primary)}
+.adm-icon{flex:0 0 auto;color:var(--muted)}
+.adm-sort.is-active .adm-icon{color:var(--primary)}
 .adm-name{font-weight:700;color:var(--ink2);text-decoration:none}
 .adm-name:hover{text-decoration:underline}
 .adm-muted{color:#4b5563}
