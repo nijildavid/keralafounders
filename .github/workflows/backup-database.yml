@@ -26,6 +26,12 @@ jobs:
           CPANEL_SSH_KEY: ${{ secrets.CPANEL_SSH_KEY }}
           BACKUP_ENCRYPTION_PASSPHRASE: ${{ secrets.BACKUP_ENCRYPTION_PASSPHRASE }}
         run: |
+          # openssl happily encrypts with an empty passphrase, so a missing
+          # secret would otherwise produce a green run with a useless backup.
+          if [ -z "$BACKUP_ENCRYPTION_PASSPHRASE" ]; then
+            echo "::error::BACKUP_ENCRYPTION_PASSPHRASE secret is missing or empty"
+            exit 1
+          fi
           install -m 600 /dev/null ~/.ssh/deploy_key
           printf '%s\n' "$CPANEL_SSH_KEY" > ~/.ssh/deploy_key
           # The dump is generated, gzipped and encrypted entirely on the
