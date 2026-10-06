@@ -4,6 +4,18 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
+## Pending — social image upload endpoint: server steps + live check
+
+Code is in `public/api/social-upload.php` and `public/social/.htaccess`. It
+does nothing until, on the server (cPanel File Manager): (1) create
+`config/social-upload-auth.php` next to `db.php` from the `.example.php`
+(real random token), (2) merge to `main` so the deploy copies the code.
+Then run the acceptance test from the handoff (upload, bare-image URL,
+`/social/` listing blocked, `X-Robots-Tag`, 409 on repeat, 401 on bad key,
+`.php`/`.svg` rejected, file still present after the next deploy). Also
+confirm the host's PHP `upload_max_filesize` is at least 8 MB (the endpoint
+returns 413 if it is lower).
+
 ## Resolved — admin 2FA and nightly DB backups
 
 Code for both landed in `keralafounders#43` (part of a broader security

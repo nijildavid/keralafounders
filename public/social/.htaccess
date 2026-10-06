@@ -1,0 +1,38 @@
+# Public image folder for scheduled social posts (Buffer/Instagram). Files are
+# uploaded here by public/api/social-upload.php and never come from git, so a
+# deploy (which only copies, never deletes) leaves them alone.
+#
+# This folder only ever serves PNG/JPG images — nothing else is reachable and
+# nothing is ever executed, even if a script somehow landed here.
+
+Options -Indexes -ExecCGI
+
+# Deny everything by default (this also means /social/ itself shows no
+# listing), then allow only plain image filenames.
+<IfModule mod_authz_core.c>
+    <FilesMatch ".*">
+        Require all denied
+    </FilesMatch>
+    <FilesMatch "^[a-z0-9_-]+\.(png|jpe?g)$">
+        Require all granted
+    </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+    <FilesMatch ".*">
+        Order allow,deny
+        Deny from all
+    </FilesMatch>
+    <FilesMatch "^[a-z0-9_-]+\.(png|jpe?g)$">
+        Order allow,deny
+        Allow from all
+    </FilesMatch>
+</IfModule>
+
+# Belt and braces: no script handlers in this folder.
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phps .pl .py .cgi
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phps
+
+<IfModule mod_headers.c>
+    Header always set X-Robots-Tag "noindex, nofollow, noimageindex"
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
