@@ -62,12 +62,16 @@ public/                  # document root
   about.php, add-company.php, privacy.php, terms.php, listing-policy.php,
   stories.php, guidance.php
   api/                    submit-company.php, submit-claim.php, admin-update.php,
-                          admin-action.php, claim-action.php, admin-outreach.php, report.php
+                          admin-action.php, claim-action.php, admin-outreach.php, report.php,
+                          social-upload.php (private image upload for Buffer, see below)
+  social/                 public post images; only .htaccess is in git, files are uploaded
+                          on the server and never overwritten by deploys
 config/                  # OUTSIDE the document root
-  db.php, auth.php, report-auth.php, legal.php   real secrets/details — gitignored, never committed,
+  db.php, auth.php, report-auth.php, social-upload-auth.php, legal.php   real secrets/details — gitignored, never committed,
                           must already exist on the server; deploy never touches these
                           (legal.php is optional: without it /impressum shows a "registration in progress" notice)
-  db.example.php, auth.example.php, report-auth.example.php, legal.example.php, reference.php   committed, no secrets
+  db.example.php, auth.example.php, report-auth.example.php, social-upload-auth.example.php,
+                          legal.example.php, reference.php   committed, no secrets
 import/                 # historical one-off CSV imports + migration SQL (changelog, not for re-running)
 schema.sql               full current schema + seed data
 migration-*.sql          historical top-level migrations
@@ -138,6 +142,19 @@ UI does anything; the real trigger is a push to `main`.
 6. Spacing/border-radius tokens and the canonical breakpoint set live in
    `STYLE-GUIDE.md` — new or touched CSS should use them; don't mass-migrate
    existing hardcoded values.
+
+## Social image hosting (Buffer/Instagram)
+
+`POST /api/social-upload.php` (bearer token from `config/social-upload-auth.php`)
+stores a PNG/JPEG in `public/social/`, served at
+`https://keralafounders.eu/social/<name>` — no listing, `noindex`, no script
+execution, never overwrites (409). Uploads live only on the server (git-ignored,
+and deploys only copy, never delete), so they survive deploys. Log and rate
+limit state are in `config/social-upload.log` / `social-upload-rate.json`.
+**Rotate the token**: replace the value in the server's
+`config/social-upload-auth.php` (File Manager) and hand the new one to the
+automation. Don't add `/social/` to `robots.txt` — it would stop crawlers from
+seeing the `noindex`.
 
 ## Current feature surface
 

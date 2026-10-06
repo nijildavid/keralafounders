@@ -5,10 +5,18 @@ config/auth.php
 config/report-auth.php
 config/turnstile.php
 config/legal.php
+config/social-upload-auth.php
 
 # Runtime state written by the app itself, not source.
 config/login-attempts.json
 config/totp-backup-used.flag
+config/social-upload.log
+config/social-upload-rate.json
+
+# Images uploaded through public/api/social-upload.php live on the server only;
+# just the folder's .htaccess is tracked.
+public/social/*
+!public/social/.htaccess
 
 .DS_Store
 

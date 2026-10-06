@@ -160,3 +160,11 @@ what to double-check afterward (possible duplicate founder entry,
 ## Open threads
 
 See `OPEN_ITEMS.md`.
+
+## 2026-10-06 — Private image-upload endpoint for Buffer
+
+Added `public/api/social-upload.php` + public `/social/` folder so the weekly
+Instagram automation can upload post images and get permanent public URLs
+for Buffer. Bearer-token auth, content-checked PNG/JPEG only, 8 MB cap,
+JPEG EXIF stripped, no overwrites, hourly rate limit, upload log.
+
