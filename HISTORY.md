@@ -168,3 +168,12 @@ Instagram automation can upload post images and get permanent public URLs
 for Buffer. Bearer-token auth, content-checked PNG/JPEG only, 8 MB cap,
 JPEG EXIF stripped, no overwrites, hourly rate limit, upload log.
 
+
+## 2026-10-07 — Google Analytics events (ticket A1)
+
+Added `public/assets/analytics.js` (loaded from `head-common.php`). Events are
+sent only after the visitor accepts analytics cookies (it reads the cookie
+banner's consent signal). Events: `claim_listing_click`, `claim_start`,
+`claim_submit`, `add_company_step` (param `step` 1-5), `add_company_submit`,
+`follow_instagram_click`. Share events: put `data-kf-event="share_click"` on a
+button/link once share buttons exist (tickets A3/A4); no share button exists yet.

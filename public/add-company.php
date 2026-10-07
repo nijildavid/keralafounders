@@ -193,6 +193,7 @@ function show(n,moveFocus=true){
   document.getElementById('turnstileWrap').hidden = isDone;
   if(!isDone){
     currentStep=n;
+    if(window.kfTrack) kfTrack('add_company_step',{step:n});
     document.getElementById('backBtn').hidden=(n===1);
     document.getElementById('nextBtn').textContent=(n===TOTAL_STEPS)?'Submit for review →':'Continue';
     document.getElementById('stepLabel').textContent=`Step ${n} of ${TOTAL_STEPS}`;
@@ -248,6 +249,7 @@ form.onsubmit=async e=>{
     const res=await fetch('api/submit-company.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(item)});
     const data=await res.json();
     if(!res.ok) throw new Error(data.error||'Submission failed');
+    if(window.kfTrack) kfTrack('add_company_submit');
     show('done');
   }catch(err){
     showBanner(KFUI.esc(err.message),true);

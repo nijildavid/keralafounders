@@ -91,6 +91,9 @@ const form=document.getElementById('claimForm'),country=document.getElementById(
 function fillSelect(el,arr){el.innerHTML='<option value="">Select</option>'+arr.map(x=>`<option>${KFUI.esc(x)}</option>`).join('')}
 fillSelect(industry,KF.industries);fillSelect(businessType,KF.businessTypes);fillSelect(size,KF.sizes);fillSelect(country,Object.keys(KF.countries));
 
+let claimStarted=false;
+form.addEventListener('input',()=>{ if(!claimStarted){ claimStarted=true; if(window.kfTrack) kfTrack('claim_start'); } });
+
 const currentIndustry=<?= json_encode((string)$company['industry']) ?>;
 const currentBusinessType=<?= json_encode((string)($company['business_type'] ?? '')) ?>;
 const currentSize=<?= json_encode((string)($company['size'] ?? '')) ?>;
@@ -223,6 +226,7 @@ form.onsubmit=async e=>{
     const res=await fetch('api/submit-claim.php',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(item)});
     const data=await res.json();
     if(!res.ok)throw new Error(data.error||'Submission failed');
+    if(window.kfTrack) kfTrack('claim_submit');
     showBanner('Thanks! Your claim was submitted — we\'ll review it and be in touch by email.',false);
     form.reset();
   }catch(err){
