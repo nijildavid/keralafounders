@@ -85,6 +85,7 @@ $breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 <h1><?= h($selected) ?> founders</h1>
 <p class="muted section-intro">Discover Keralite-founded companies building in <?= h($selected) ?>.</p>
 <a class="arrow" href="cities.php">← All cities</a>
+<div class="page-cta"><a class="pill" href="add-company.php">Add your company</a></div>
 <div class="cards" style="margin-top:20px">
 <?php if ($pageRows): foreach ($pageRows as $c): echo company_card_html($c); endforeach; else: ?>
   <div class="panel" style="grid-column:1/-1;text-align:center">No companies published in this city yet.</div>
@@ -94,6 +95,7 @@ $breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 <?php else: ?>
 <h1>Keralite founders by city.</h1>
 <p class="muted section-intro">Explore the Kerala founder network city by city across the European Union.</p>
+<div class="page-cta"><a class="pill" href="add-company.php">Add your company</a></div>
 <div class="country-grid">
 <?php foreach ($cityCounts as $city => $n): ?>
   <a class="country-card" href="cities.php?city=<?= rawurlencode($city) ?>"><strong><?= h($city) ?></strong><small><?= $n ?> compan<?= $n === 1 ? 'y' : 'ies' ?> →</small></a>

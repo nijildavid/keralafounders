@@ -110,6 +110,12 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         <?php if (!empty($company['business_type'])): ?><span class="chip"><?= h($company['business_type']) ?></span><?php endif; ?>
         <?php if ($company['size']): ?><span class="chip"><?= h($company['size']) ?></span><?php endif; ?>
       </div>
+      <?php if (!$company['verified']): ?>
+      <div class="claim-callout">
+        <p><strong>Is this your business?</strong> Claim this listing to confirm your details and get the verified badge.</p>
+        <a class="pill" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a>
+      </div>
+      <?php endif; ?>
       <?php if ($branches): ?>
       <div class="company-detail-meta" style="margin-top:10px">
         <span class="muted" style="font-size:13px;align-self:center">Also operates in:</span>
