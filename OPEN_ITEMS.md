@@ -270,21 +270,20 @@ note here saying otherwise:
 
 - **Berlin research sprint records (4 Oct 2026)** — run
   `import/migration-berlin-sprint-2026-10-04.sql` once in phpMyAdmin. It
-  adds 4 records: KOKOLAND, Kerala Cultural Association of Berlin and World
-  Malayalee Council Berlin Chapter as public (approved) listings, and Kombans
-  FC Berlin as `pending` (hidden) until a person confirms the club. Berlin
-  Kerala Samajam was dropped from the import (not a company; activity
-  unconfirmed). Safe to re-run. Afterwards the approved Berlin count should
-  be 9 (6 existing plus 3 new). The file's header explains each choice: no
-  founders, no street addresses or phone numbers, and only the two mailboxes
-  the organisations publish themselves are stored (admin-only). `verified`
-  follows the research label under the Listing Policy rule: only KCAB gets
-  the Verified badge. The sprint also recommended moving NILA Restaurants
-  Berlin to "Partially verified". The site only shows Verified / Not yet
-  verified, so nothing is changed; switch NILA to Verified in `admin-edit.php`
-  once the key details are confirmed. A sports club has no matching industry
-  in the frozen taxonomy; Education was used as the closest and the gap
-  should be logged at the next taxonomy checkpoint.
+  adds 2 records: KOKOLAND as a public (approved) listing and Kombans FC
+  Berlin as `pending` (hidden) until a person confirms the club. The three
+  associations from the sprint (Berlin Kerala Samajam, Kerala Cultural
+  Association of Berlin, World Malayalee Council Berlin chapter) were
+  dropped on purpose: they are not companies. Safe to re-run. Afterwards
+  the approved Berlin count should be 7 (6 existing plus 1 new). No
+  founders, street addresses or phone numbers are stored, and neither
+  record is marked Verified. The sprint also recommended moving NILA
+  Restaurants Berlin to "Partially verified". The site only shows
+  Verified / Not yet verified, so nothing is changed; switch NILA to
+  Verified in `admin-edit.php` once the key details are confirmed. A sports
+  club has no matching industry in the frozen taxonomy; Education was used
+  as the closest and the gap should be logged at the next taxonomy
+  checkpoint.
 
 ## Needs a step from Nijil — turn on the Impressum page
 
