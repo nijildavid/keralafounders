@@ -87,6 +87,7 @@ $canonicalUrl = 'https://keralafounders.eu/add-company.php';
 <img src="assets/celebration.svg" alt="" class="wizard-success-illustration">
 <h1 id="hd" tabindex="-1">Thank you, we have it</h1>
 <p class="wizard-lead">We review new companies within a few days and will email you when it is live.</p>
+<?php include __DIR__ . '/partials/follow-share.php'; ?>
 <p><button type="button" class="linkbtn" id="restart">Add another company</button></p>
 </section>
 
@@ -251,6 +252,7 @@ form.onsubmit=async e=>{
     if(!res.ok) throw new Error(data.error||'Submission failed');
     if(window.kfTrack) kfTrack('add_company_submit');
     show('done');
+    document.getElementById('followShare').hidden=false;
   }catch(err){
     showBanner(KFUI.esc(err.message),true);
     window.scrollTo({top:0});
