@@ -93,6 +93,7 @@ $breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 <h1>Keralite founders in <?= h($selected) ?></h1>
 <p class="muted section-intro">Discover Keralite-founded companies building in <?= h($selected) ?>.</p>
 <a class="arrow" href="countries.php">← All countries</a>
+<div class="page-cta"><a class="pill" href="add-company.php">Add your company</a></div>
 <?php if ($guidanceGuideSlug): ?>
 <p class="muted" style="margin-top:12px"><a class="arrow" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($selected) ?> →</a></p>
 <?php endif; ?>
@@ -105,6 +106,7 @@ $breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 <?php else: ?>
 <h1>Keralite founders across the EU.</h1>
 <p class="muted section-intro">Explore the Kerala founder network country by country across the European Union.</p>
+<div class="page-cta"><a class="pill" href="add-company.php">Add your company</a></div>
 <div class="country-grid">
 <?php foreach ($countryCounts as $country => $n): ?>
   <a class="country-card" href="countries.php?country=<?= rawurlencode($country) ?>"><strong><?= h($country) ?></strong><small><?= $n ?> compan<?= $n === 1 ? 'y' : 'ies' ?> →</small></a>
