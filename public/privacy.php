@@ -72,6 +72,7 @@ $legal = kf_legal_details();
 </div>
 
 <?php if ($legal !== null): ?>
+<?php $legalEmail = trim((string)($legal['email'] ?? '')) !== '' ? (string)$legal['email'] : 'hello@keralafounders.eu'; ?>
 <div class="panel" style="margin-top:20px">
 <h2>Who is responsible</h2>
 <p class="muted" style="margin:0 0 10px">The controller for this website under data-protection law is:</p>
@@ -79,7 +80,7 @@ $legal = kf_legal_details();
 <strong style="color:var(--ink)"><?= htmlspecialchars((string)$legal['name'], ENT_QUOTES, 'UTF-8') ?></strong><br>
 <?= htmlspecialchars((string)$legal['street'], ENT_QUOTES, 'UTF-8') ?><br>
 <?= htmlspecialchars((string)$legal['city'], ENT_QUOTES, 'UTF-8') ?><?= trim((string)($legal['country'] ?? '')) !== '' ? '<br>' . htmlspecialchars((string)$legal['country'], ENT_QUOTES, 'UTF-8') : '' ?><br>
-Email: <a class="arrow" href="mailto:<?= htmlspecialchars((string)$legal['email'], ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars((string)$legal['email'], ENT_QUOTES, 'UTF-8') ?></a>
+Email: <a class="arrow" href="mailto:<?= htmlspecialchars($legalEmail, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($legalEmail, ENT_QUOTES, 'UTF-8') ?></a>
 </p>
 <p class="muted" style="margin:0">See also the <a href="impressum">Impressum</a>.</p>
 </div>
@@ -88,7 +89,8 @@ Email: <a class="arrow" href="mailto:<?= htmlspecialchars((string)$legal['email'
 <div class="panel" style="margin-top:20px">
 <h2>Legal basis and your rights</h2>
 <p class="muted" style="margin:0 0 10px">Where personal data is processed, Kerala Founders relies on an appropriate legal basis under applicable data-protection law — depending on the circumstances, this may include legitimate interests, consent, or another lawful basis.</p>
-<p class="muted" style="margin:0">Where required by law, you may have rights to access, correct, delete or object to the processing of your personal data.</p>
+<p class="muted" style="margin:0 0 10px">Where required by law, you may have rights to access, correct, delete or object to the processing of your personal data.</p>
+<p class="muted" style="margin:0">You also have the right to lodge a complaint with a data-protection supervisory authority, in particular in the EU country where you live or work or where you believe a problem happened.</p>
 </div>
 
 <div class="panel" style="margin-top:20px">
