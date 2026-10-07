@@ -6,7 +6,7 @@ require __DIR__ . '/assets/render-helpers.php';
 $db = get_db();
 $csrfToken = csrf_token();
 
-const PAGE_SIZE = 20;
+const PAGE_SIZE = 30;
 
 $statusFilter = $_GET['status'] ?? 'all';
 if (!in_array($statusFilter, ['all', 'pending', 'approved'], true)) {
