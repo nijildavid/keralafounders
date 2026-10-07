@@ -199,6 +199,19 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         <a class="pill light" href="https://wa.me/?text=<?= rawurlencode($shareText) ?>" target="_blank" rel="noopener" data-kf-event="share_click" data-kf-share="whatsapp">Share on WhatsApp</a>
       </div>
 
+      <?php if ($company['verified']):
+        $kitBase = 'share-kit.php?id=' . rawurlencode($slug);
+        $badgeSnippet = '<a href="' . $canonicalUrl . '"><img src="https://keralafounders.eu/' . $kitBase . '&type=badge" alt="Featured on Kerala Founders" width="220" height="56"></a>'; ?>
+      <div class="share-kit" style="margin-top:20px">
+        <div class="eyebrow">Share kit</div>
+        <p class="muted" style="margin:6px 0 10px">Featured on Kerala Founders. Post these or add the badge to your own website.</p>
+        <p style="margin:0 0 10px"><img src="<?= h($kitBase) ?>&amp;type=badge" alt="Featured on Kerala Founders badge" width="220" height="56"></p>
+        <p style="margin:0 0 10px"><a class="pill light" href="<?= h($kitBase) ?>&amp;type=square" download>Square image</a> <a class="pill light" href="<?= h($kitBase) ?>&amp;type=story" download>Story image</a></p>
+        <label class="muted" for="kitSnippet" style="font-size:14px">Badge code for your website</label>
+        <textarea id="kitSnippet" readonly rows="3" style="width:100%;font-family:monospace;font-size:13px"><?= h($badgeSnippet) ?></textarea>
+      </div>
+      <?php endif; ?>
+
       <div style="margin-top:20px">
         <?php if (!$company['verified']): ?>
         <div class="eyebrow">Is this your business?</div>
