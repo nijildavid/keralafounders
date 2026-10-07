@@ -78,11 +78,9 @@ $legal = kf_legal_details();
 <p class="muted" style="margin:0 0 10px">The controller for this website under data-protection law is:</p>
 <p class="muted" style="margin:0 0 10px;line-height:1.8">
 <strong style="color:var(--ink)"><?= htmlspecialchars((string)$legal['name'], ENT_QUOTES, 'UTF-8') ?></strong><br>
-<?= htmlspecialchars((string)$legal['street'], ENT_QUOTES, 'UTF-8') ?><br>
-<?= htmlspecialchars((string)$legal['city'], ENT_QUOTES, 'UTF-8') ?><?= trim((string)($legal['country'] ?? '')) !== '' ? '<br>' . htmlspecialchars((string)$legal['country'], ENT_QUOTES, 'UTF-8') : '' ?><br>
 Email: <a class="arrow" href="mailto:<?= htmlspecialchars($legalEmail, ENT_QUOTES, 'UTF-8') ?>"><?= htmlspecialchars($legalEmail, ENT_QUOTES, 'UTF-8') ?></a>
 </p>
-<p class="muted" style="margin:0">See also the <a href="impressum">Impressum</a>.</p>
+<p class="muted" style="margin:0">Postal address: see the <a href="impressum">Impressum</a>.</p>
 </div>
 
 <?php endif; ?>
