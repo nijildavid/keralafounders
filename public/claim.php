@@ -85,6 +85,7 @@ $pageTitle = $company ? 'Claim ' . h($company['name']) . ' — ' . $siteName : '
 </div>
 
 <div class="form-submit"><span class="hint">* Required fields</span><button class="pill" type="submit">Submit claim →</button></div></form>
+<?php include __DIR__ . '/partials/follow-share.php'; ?>
 </section>
 <script>
 const form=document.getElementById('claimForm'),country=document.getElementById('claim-country'),city=document.getElementById('claim-city'),industry=form.elements.industry,businessType=form.elements.businessType,size=form.elements.size;
@@ -229,6 +230,7 @@ form.onsubmit=async e=>{
     if(window.kfTrack) kfTrack('claim_submit');
     showBanner('Thanks! Your claim was submitted — we\'ll review it and be in touch by email.',false);
     form.reset();
+    document.getElementById('followShare').hidden=false;
   }catch(err){
     showBanner(KFUI.esc(err.message),true);
   }finally{

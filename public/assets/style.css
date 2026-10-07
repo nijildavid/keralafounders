@@ -1010,3 +1010,7 @@ footer{
   .adm-dl{grid-template-columns:100px 1fr}
 }
 .share-row{margin-top:20px}
+.follow-share{margin-top:var(--space-6);text-align:center}
+.follow-share[hidden]{display:none}
+.follow-share-lead{font-weight:600;margin:0 0 12px}
+.follow-share-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
