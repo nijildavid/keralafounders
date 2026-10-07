@@ -1009,3 +1009,4 @@ footer{
   .adm-drawer-body{padding:var(--space-4) var(--space-4) var(--space-8)}
   .adm-dl{grid-template-columns:100px 1fr}
 }
+.share-row{margin-top:20px}

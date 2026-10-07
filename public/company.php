@@ -29,6 +29,9 @@ if ($company) {
     $pageTitle = $company['name'] . ' — ' . $siteName;
     $metaDescription = truncate_meta($company['description']);
     $canonicalUrl = 'https://keralafounders.eu/company.php?id=' . rawurlencode($slug);
+    $place = implode(', ', array_filter([$company['city'], $company['country']]));
+    $ogTitle = $company['name'] . ($place !== '' ? ' — ' . $place : '') . ' — ' . $siteName;
+    $shareText = $company['name'] . ($place !== '' ? ' (' . $place . ')' : '') . ' on Kerala Founders: ' . $canonicalUrl;
 } else {
     $pageTitle = 'Company not found — ' . $siteName;
     $metaDescription = 'This company could not be found in the Kerala Founders directory.';
@@ -190,6 +193,10 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
           </div>
           <?php endif; ?>
         </div>
+      </div>
+
+      <div class="share-row">
+        <a class="pill light" href="https://wa.me/?text=<?= rawurlencode($shareText) ?>" target="_blank" rel="noopener" data-kf-event="share_click" data-kf-share="whatsapp">Share on WhatsApp</a>
       </div>
 
       <div style="margin-top:20px">
