@@ -270,20 +270,16 @@ note here saying otherwise:
 
 - **Berlin research sprint records (4 Oct 2026)** — run
   `import/migration-berlin-sprint-2026-10-04.sql` once in phpMyAdmin. It
-  adds 2 records: KOKOLAND as a public (approved) listing and Kombans FC
-  Berlin as `pending` (hidden) until a person confirms the club. The three
-  associations from the sprint (Berlin Kerala Samajam, Kerala Cultural
-  Association of Berlin, World Malayalee Council Berlin chapter) were
-  dropped on purpose: they are not companies. Safe to re-run. Afterwards
-  the approved Berlin count should be 7 (6 existing plus 1 new). No
-  founders, street addresses or phone numbers are stored, and neither
-  record is marked Verified. The sprint also recommended moving NILA
-  Restaurants Berlin to "Partially verified". The site only shows
+  adds 1 record: KOKOLAND, as a public (approved) listing, not marked
+  Verified. The other four sprint records (Berlin Kerala Samajam, Kerala
+  Cultural Association of Berlin, World Malayalee Council Berlin chapter,
+  Kombans FC Berlin) were dropped on purpose: they are associations or a
+  sports club, not companies. Safe to re-run. Afterwards the approved
+  Berlin count should be 7 (6 existing plus 1 new). No founders, street
+  addresses or phone numbers are stored. The sprint also recommended moving
+  NILA Restaurants Berlin to "Partially verified". The site only shows
   Verified / Not yet verified, so nothing is changed; switch NILA to
-  Verified in `admin-edit.php` once the key details are confirmed. A sports
-  club has no matching industry in the frozen taxonomy; Education was used
-  as the closest and the gap should be logged at the next taxonomy
-  checkpoint.
+  Verified in `admin-edit.php` once the key details are confirmed.
 
 ## Needs a step from Nijil — turn on the Impressum page
 

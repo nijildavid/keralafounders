@@ -1,4 +1,4 @@
--- Kerala Founders: add the 2 new Berlin records from the 4 Oct 2026 research
+-- Kerala Founders: add the new Berlin record (KOKOLAND) from the 4 Oct 2026 research
 -- sprint (source: berlin_research_sprint_2026-10-04.csv, project Drive folder).
 -- Run once in phpMyAdmin against the live database. Safe to re-run: INSERT
 -- IGNORE skips slugs that already exist (slug is UNIQUE).
@@ -6,20 +6,18 @@
 -- Decisions made while turning the CSV into rows (change before running if
 -- you disagree):
 --   * Industry and business type use only the frozen taxonomy lists in
---     config/reference.php. A Berlin amateur football club has no matching
---     industry; Education is the closest and the gap should be logged for the
---     next taxonomy checkpoint. That record is 'pending' anyway, so it is not
---     shown publicly.
---   * `verified` stays 0 for both: the research rated KOKOLAND "Partially
---     verified" and Kombans FC "Unverified", and the site only has two display
---     states (Verified / Not yet verified). The research confidence is also
---     written in each description in plain words.
---   * Berlin Kerala Samajam, the Kerala Cultural Association of Berlin and the
---     World Malayalee Council Berlin chapter are deliberately left out: they
---     are community associations, not companies.
---   * No founders are inserted. None were identified for KOKOLAND, and the
---     club has office-bearers, not founders; naming private
---     individuals as "founders" would be wrong and is personal data.
+--     config/reference.php.
+--   * `verified` stays 0: the research rated KOKOLAND "Partially verified",
+--     and the site only has two display states (Verified / Not yet verified).
+--     The research confidence is also written in the description in plain
+--     words.
+--   * Berlin Kerala Samajam, the Kerala Cultural Association of Berlin, the
+--     World Malayalee Council Berlin chapter and Kombans FC Berlin are
+--     deliberately left out: they are community associations or a sports
+--     club, not companies.
+--   * No founders are inserted. None were identified for KOKOLAND; naming
+--     private individuals as "founders" without evidence would be wrong and
+--     is personal data.
 --   * No street addresses, phone numbers or WhatsApp numbers are stored. Public
 --     location is just "Berlin, Germany".
 --   * NILA Restaurants Berlin: the CSV recommends moving it from "Not yet
@@ -34,13 +32,10 @@ INSERT IGNORE INTO companies
 VALUES
 ('kokoland-berlin', 'KOKOLAND', 'https://kokoland.de/', 'Food & Hospitality', 'Restaurant', NULL, NULL, 'Germany', 'Berlin', 'Berlin, Germany',
  'Cloud kitchen in Berlin serving Kerala and South Indian food (biryanis, curries, porottas) through delivery platforms. It also runs a community events brand, Kokoland Kollective. Research confidence: the business is clearly Kerala-branded, but no founder or owner name could be confirmed from public sources.',
- 'approved', 0),
-('kombans-fc-berlin', 'Kombans FC Berlin', NULL, 'Education', 'Community Organisation', NULL, NULL, 'Germany', 'Berlin', 'Berlin, Germany',
- 'Amateur football club of the Malayali diaspora in Berlin, playing in the Kerala European Football Federation (KEFF). Research confidence: unverified. Evidence is a single fixture listing, and the name may be confused with a club of the same name in Thiruvananthapuram. Kept unpublished until a person confirms the club.',
- 'pending', 0);
+ 'approved', 0);
 
--- Check after running: expect 2 rows (1 approved, 1 pending), and the
+-- Check after running: expect 1 row (approved), and the
 -- approved Berlin count should now be 7 (the 6 existing plus 1 new).
 SELECT slug, status, verified, business_type, industry FROM companies
- WHERE slug IN ('kokoland-berlin','kombans-fc-berlin');
+ WHERE slug = 'kokoland-berlin';
 SELECT COUNT(*) AS approved_berlin FROM companies WHERE city = 'Berlin' AND status = 'approved';
