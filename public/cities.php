@@ -38,6 +38,7 @@ if ($selected !== '') {
     $start = ($page - 1) * PAGE_SIZE;
     $pageRows = array_slice($companies, $start, PAGE_SIZE);
 }
+$robotsNoindex = $selected !== '' && count($companies) === 0;
 
 // Real cities only — no zero-fill. $KF_COUNTRIES' nested city lists run to
 // ~140 entries; showing every one (most with 0 companies) would be exactly
