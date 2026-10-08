@@ -48,3 +48,20 @@ This file did not exist in the repo when the hourly run started on 7 Oct 2026. I
 - Recommendation: wait. Finish PR #75 first, approve its look, then reuse the same square image for previews. Until then the one site image is fine.
 
 **The one thing Nijil needs to do:** paste one company link and the Stories link into WhatsApp, look at the preview, and tell me yes or no to a branded image per company.
+
+### 8 Oct 2026 · Growth C7: do the Add-your-company and Claim forms keep emails hidden?
+
+**State:** Found one real bug and fixed it. Pull request open (draft), not merged or deployed.
+
+**What I checked in the repo (main at c486a87):**
+- Company page: a founder's email shows only when "show email" is on for that founder; otherwise it says "Email hidden".
+- Claim form: hidden emails and LinkedIn links are never sent to the browser; the form just says "on file". Approving a claim keeps a hidden email hidden. This was fixed earlier (PR #58) and still holds.
+- Add-your-company form: the "Show email publicly" switch starts off. The privacy page says a founder's email appears only if the listing allows it.
+- **Bug found:** a browser leaves unticked switches out of the form data, so the switches were matched to founders by position. With two founders where only the second ticks "show", the FIRST founder's email would have gone public and the second stayed hidden. Fixed in `add-company.php` and `claim.php`: each founder's own switch is now read directly.
+
+**Unverified:**
+- Not tested in a real browser with two founders (PHP syntax check only; the change is one line per form).
+- Whether any live listing was already affected: the repo cannot show it. Admin can look at listings with several founders that show an email.
+- Whether the live server matches the repo.
+
+**The one thing Nijil needs to do:** after deploy, add a test company with two founders, tick "show" only on the second, and check the company page shows only the second email. Also glance through live listings with several founders to see none shows the wrong email.

@@ -213,7 +213,7 @@ document.getElementById('backBtn').onclick=()=>show(currentStep-1);
 
 function buildSummary(){
   const fd=new FormData(form);
-  const names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],shows=[...fd.getAll('founderShow[]')];
+  const names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],shows=[...document.querySelectorAll('input[name="founderShow[]"]')].map(c=>c.checked?'yes':'no');
   const foundersText=names.map((n,i)=>`${KFUI.esc(n||'(unnamed)')} (${KFUI.esc(emails[i]||'no email')}, email ${shows[i]==='yes'?'shown':'hidden'})`).join('<br>');
   const kc=document.querySelector('input[name=keralaConnection]:checked');
   const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value).join(', ');
@@ -240,7 +240,7 @@ form.onsubmit=async e=>{
     live.textContent='Please fix the highlighted fields.';
     return;
   }
-  const fd=new FormData(form),names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...fd.getAll('founderShow[]')];
+  const fd=new FormData(form),names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...document.querySelectorAll('input[name="founderShow[]"]')].map(c=>c.checked?'yes':'no');
   const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value);
   const turnstileToken=document.querySelector('[name="cf-turnstile-response"]')?.value||'';
   const item={company:fd.get('company'),website:fd.get('website'),instagram:fd.get('instagram'),industry:fd.get('industry'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),keralaConnection:fd.get('keralaConnection')||'',keralaDistrict:fd.get('keralaDistrict')||'',contactOkPodcastStories:fd.get('contactOkPodcastStories')==='yes',founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})),branches,hpField:fd.get('hp_field'),turnstileToken};
