@@ -15,6 +15,7 @@ $verifiedCompanies = (int)$db->query('SELECT COUNT(*) FROM companies WHERE verif
 $confirmedSql = "verified = 0 AND ((contact_email <> '' AND email_source_url <> '') OR (instagram <> '' AND instagram_confidence = 'high'))";
 $confirmedCompanies = (int)$db->query("SELECT COUNT(*) FROM companies WHERE $confirmedSql")->fetchColumn();
 $unconfirmedCompanies = $totalCompanies - $verifiedCompanies - $confirmedCompanies;
+$ownerClaimed = (int)$db->query("SELECT COUNT(DISTINCT cr.company_id) FROM claim_requests cr JOIN companies c ON c.id = cr.company_id WHERE cr.status = 'resolved' AND c.verified = 1")->fetchColumn();
 $pendingClaims = (int)$db->query("SELECT COUNT(*) FROM claim_requests WHERE status = 'pending'")->fetchColumn();
 $contactsFound = (int)$db->query('SELECT COUNT(*) FROM companies WHERE contact_email IS NOT NULL')->fetchColumn();
 $emailedCount = (int)$db->query("SELECT COUNT(*) FROM companies WHERE outreach_status = 'sent'")->fetchColumn();
@@ -35,17 +36,17 @@ $activeAdminPage = 'dashboard';
 <div class="stats" style="margin-top:24px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
   <div class="stat"><strong><?= $totalCompanies ?></strong><span>Companies</span></div>
   <div class="stat"><strong><?= $pendingCompanies ?></strong><span>Pending review</span></div>
-  <div class="stat"><strong><?= $verifiedCompanies ?></strong><span>Owner verified</span></div>
+  <div class="stat"><strong><?= $verifiedCompanies ?></strong><span>Verified</span></div>
   <div class="stat"><strong><?= $pendingClaims ?></strong><span>Pending claims</span></div>
 </div></div>
 <div class="stats" style="margin-top:16px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
   <div class="stat"><strong><?= $contactsFound ?></strong><span>Contact emails found</span></div>
   <div class="stat"><strong><?= $emailedCount ?></strong><span>Verification emails sent</span></div>
   <div class="stat"><strong><?= $toEmailCount ?></strong><span>Found, not yet emailed</span></div>
-  <div class="stat"><strong><?= $confirmedCompanies ?></strong><span>Contact confirmed</span></div>
+  <div class="stat"><strong><?= $ownerClaimed ?></strong><span>Of the verified: owner claimed</span></div>
 </div></div>
 <div class="stats" style="margin-top:16px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
-  <div class="stat"><strong><?= $verifiedCompanies ?></strong><span>Tier 1 · Verified</span></div>
+  <div class="stat"><strong><?= $verifiedCompanies ?></strong><span>Tier 1 · Verified (owner or checked by us)</span></div>
   <div class="stat"><strong><?= $confirmedCompanies ?></strong><span>Tier 2 · Contact confirmed</span></div>
   <div class="stat"><strong><?= $unconfirmedCompanies ?></strong><span>Tier 3 · Needs a contact point</span></div>
   <div class="stat"><strong><?= $totalCompanies ? round(100 * ($verifiedCompanies + $confirmedCompanies) / $totalCompanies) : 0 ?>%</strong><span>Have a verified or sourced contact</span></div>
