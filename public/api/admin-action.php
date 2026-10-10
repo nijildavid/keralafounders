@@ -56,7 +56,7 @@ function notify_listing_live(string $name, string $slug, array $emails): void
         . "It would help us a lot if you shared the link with your own network (WhatsApp works well) and followed us on Instagram: https://www.instagram.com/keralafounders.eu/\n\n"
         . "You are receiving this one email because you submitted this company on keralafounders.eu. "
         . "If you did not, or want the listing removed, just reply to this email.\n\n"
-        . "Kerala Founders\nhttps://keralafounders.eu\n";
+        . "Nijil\nKerala Founders\nhttps://keralafounders.eu\n";
     $headers = "From: Kerala Founders <hello@keralafounders.eu>\r\n"
         . "Reply-To: hello@keralafounders.eu\r\n"
         . "Content-Type: text/plain; charset=UTF-8";
