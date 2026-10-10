@@ -13,3 +13,17 @@ The real queue file (claude/engineer-tickets-queue.md) is not in this repo, so r
 **Not verified:** A real submit (the bot check blocks it locally), a phone, real WhatsApp, and the events in Google Analytics real-time. The shared link points to the homepage, because a new listing has no page until approved. The queue file was not available, so scope came from the board card.
 
 **What Nijil needs to do:** After the PR is merged and deployed, submit one test company, check the three buttons appear and work, and tell me if the WhatsApp text wording is right.
+
+## 8 Oct 2026, card C9: city and category pages findable in search
+
+**State:** Checked, one small fix in a draft pull request. Not merged, not deployed.
+
+**What I checked in the repo and live:**
+- City, country, industry and business-type pages each have their own title, description and address (canonical). All four lists are in the sitemap (live sitemap: 267 addresses, 70 of them cities). The Berlin city page exists, returns 200 and is in the sitemap.
+- Problem found: any made-up name, for example `cities.php?city=Nowhere`, returned 200 with a normal title and no "keep out of search" marker. Search engines could index empty pages.
+
+**What I changed:** pages for a city, country, industry or business type with zero approved companies now carry a "noindex" marker. Pages with companies are unchanged.
+
+**Not verified:** how Google currently treats these pages (needs Search Console), whether any live page is empty, and the live server. Tested on a local test database only; sitemap only lists names that have companies, so it is unaffected. Not done: Berlin pages beyond the existing one (nothing missing found).
+
+**The one thing Nijil needs to do:** after deploy, open `cities.php?city=Nowhere` and view page source to confirm "noindex" is there, and check that Berlin is not marked.

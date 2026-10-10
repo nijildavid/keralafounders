@@ -29,6 +29,7 @@ if ($selected !== '') {
 
 $totalPages = 1;
 $pageRows = [];
+$total = 0;
 if ($selected !== '') {
     $result = fetch_approved_companies_page($db, $page, PAGE_SIZE, $selected);
     $pageRows = $result['companies'];
@@ -36,6 +37,7 @@ if ($selected !== '') {
     $page = $result['page'];
     $totalPages = $result['totalPages'];
 }
+$robotsNoindex = $selected !== '' && $total === 0;
 
 $guidanceGuideSlug = null;
 if ($selected !== '' && !empty($KF_GUIDANCE_NAV_LIVE)) {
