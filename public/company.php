@@ -113,12 +113,12 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         <div class="company-detail-title">
           <h1><?= h($company['name']) ?></h1>
           <div class="company-detail-sub">
-            <span id="companyVerified"><?= $tier === 'owner' ? verified_badge_strong_html('Owner confirmed') : ($company['verified'] ? verified_badge_strong_html() : verified_chip_html($tier)) ?></span>
+            <span id="companyVerified"><?= verified_chip_html($tier, 'lg') ?></span>
             <?php if ($foundersLine !== ''): ?><span class="muted">Founded by <?= h($foundersLine) ?></span><?php endif; ?>
           </div>
         </div>
         <?php if ($siteHref): ?>
-        <a class="pill company-detail-cta" href="<?= h($siteHref) ?>" target="_blank" rel="noopener"><span class="company-detail-cta-label">Visit <?= h($siteLabel) ?></span> ↗</a>
+        <a class="pill light company-detail-cta" href="<?= h($siteHref) ?>" target="_blank" rel="noopener"><span class="company-detail-cta-label">Visit <?= h($siteLabel) ?></span> ↗</a>
         <?php endif; ?>
       </div>
 
@@ -185,7 +185,7 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         </p>
         <div class="company-detail-foot-actions">
           <a class="muted company-detail-report" href="contact.php?topic=remove&amp;listing=<?= rawurlencode($slug) ?>">Request a correction or removal</a>
-          <a class="pill light small" href="https://wa.me/?text=<?= rawurlencode($shareText) ?>" target="_blank" rel="noopener" data-kf-event="share_click" data-kf-share="whatsapp">Share on WhatsApp</a>
+          <a class="company-detail-share" href="https://wa.me/?text=<?= rawurlencode($shareText) ?>" target="_blank" rel="noopener" data-kf-event="share_click" data-kf-share="whatsapp">Share on WhatsApp</a>
         </div>
       </div>
     </div>

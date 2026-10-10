@@ -42,6 +42,32 @@ step to work around that), so this is a naming convention only:
 - **700px** — legacy, non-canonical. Appears in a handful of older rules.
   Don't use it for new work; use 600 or 900 instead.
 
+## Button hierarchy (primary / secondary / tertiary)
+
+One primary action per site: **Add your company** (solid green `.pill`). It
+already lives in the header and footer, so a page should not add another
+solid green button for something else.
+
+| Level | Look | Use for |
+|---|---|---|
+| Primary | solid green `.pill` | Add your company; form submit buttons inside a form |
+| Secondary | outlined `.pill.light` | Visit website, Explore the directory, filters, downloads |
+| Tertiary | orange text link (`.arrow`, `--accent2`) | Claim this listing, Suggest an edit, Share, Request a correction |
+
+Green is reserved for the primary button. Verification never uses green.
+
+## Verification badge
+
+One component (`.vbadge`) rendered by `verified_chip_html()` in
+`render-helpers.php` and `KFUI.verifiedChip()` in `app.js` (keep them
+identical). Same colours on cards and on the detail page; the detail page only
+adds `lg` for size.
+
+- **Owner confirmed**: gold seal, filled, cream chip with a darker gold border.
+- **Verified**: gold seal, outlined, cream chip.
+- **Contact confirmed**: neutral grey chip, no seal.
+- **Not yet verified**: neutral grey chip, dashed border, no seal.
+
 ## Adoption policy
 
 These tokens are **additive**. Existing hardcoded px values throughout

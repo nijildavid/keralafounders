@@ -266,8 +266,21 @@ fieldset.form-fieldset legend{padding:0;width:100%}
 @media(max-width:900px){.category-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:600px){.category-grid{grid-template-columns:repeat(2,1fr)}}
 .notice{padding:13px 15px;background:#ecfdf3;border-radius:10px;color:#166534;font-size:13px;margin-bottom:18px}.error{padding:13px 15px;background:#fff1ed;border-radius:10px;color:#9a3412;font-size:13px;margin-bottom:18px}
-.verified-badge-strong{display:inline-flex;align-items:center;gap:9px;background:#166534;color:#fff;padding:11px 20px;border-radius:999px;font-size:15px;font-weight:800;letter-spacing:.01em;box-shadow:0 6px 16px rgba(22,101,52,.28)}
-.verified-badge-check{width:21px;height:21px;border-radius:50%;background:#fff;color:#166534;display:grid;place-items:center;font-size:12px;font-weight:900;flex-shrink:0}
+/* Verification badge: one component, used on cards and the detail page.
+   Gold (kasavu) = verified; never green, which is reserved for the primary button. */
+.vbadge{display:inline-flex;align-items:center;gap:6px;padding:3px 10px 3px 4px;border-radius:var(--radius-pill);border:1px solid #d8bf84;background:#fbf4e2;color:#5c4310;font-size:12px;font-weight:700;line-height:1.4;white-space:nowrap}
+.vbadge--lg{font-size:14px;padding:4px 14px 4px 5px;gap:8px}
+.vbadge--lg .vbadge-seal{width:22px;height:22px}
+.vbadge-seal{flex-shrink:0}
+.vbadge-seal-rim{fill:#b7892b}
+.vbadge-seal-ring{fill:none;stroke:#fbf4e2;stroke-width:.9}
+.vbadge-seal-check{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.vbadge--verified .vbadge-seal-rim{fill:#fbf4e2;stroke:#b7892b;stroke-width:1}
+.vbadge--verified .vbadge-seal-ring{stroke:#b7892b}
+.vbadge--verified .vbadge-seal-check{stroke:#8a6414}
+.vbadge--owner{border-color:#b7892b}
+.vbadge--plain,.vbadge--none{padding-left:10px;background:#fff;border-color:var(--line);color:var(--muted);font-weight:600}
+.vbadge--none{border-style:dashed}
 .side-section{padding:16px 0}
 .side-section:first-child{padding-top:0}
 .side-section + .side-section{border-top:1px solid var(--line)}
@@ -763,7 +776,7 @@ footer{
 .company-detail-foot .arrow{margin:0;font-size:14px}
 .company-detail-foot-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-5)}
 .company-detail-report{font-size:13px;text-decoration:underline;text-underline-offset:3px}
-.pill.small{padding:8px 14px;font-size:13px}
+.company-detail-share{font-size:13px;font-weight:700;color:var(--accent2)}
 @media(max-width:700px){
   .company-detail{padding:26px}
   .company-detail-top{flex-wrap:wrap}
