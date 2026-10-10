@@ -240,12 +240,22 @@ first, and whether any Friendship-Treaty-style shortcut (the US-NL DAFT
 arrangement) applies to a nationality relevant here — not researched,
 flagged as an open question in the guide rather than guessed at.
 
-## Production DB actions — Instagram backfill and Ayurveda merge verified done (4 Oct 2026)
+## Production DB actions — done (Instagram backfill and Ayurveda merge verified 4 Oct 2026; Berlin import 7 Oct 2026)
 
 Checked against the live site on 4 Oct 2026 (company pages fetched one by
 one, compared with `import/migration-instagram-backfill-2026-09-27.sql`).
 Both migrations have clearly been run on production, despite the earlier
 note here saying otherwise:
+
+- **Berlin research sprint records — done (7 Oct 2026).** Nijil ran
+  `import/migration-berlin-sprint-2026-10-04.sql` in phpMyAdmin; the
+  Berlin page now shows 7 listings (6 existing plus KOKOLAND, not marked
+  Verified). Berlin Kerala Samajam, Kerala Cultural Association of Berlin,
+  World Malayalee Council Berlin chapter and Kombans FC Berlin were left
+  out on purpose: associations or a sports club, not companies. Still open:
+  the sprint recommended moving NILA Restaurants Berlin to "Partially
+  verified"; the site only shows Verified / Not yet verified, so switch NILA
+  to Verified in `admin-edit.php` once its key details are confirmed.
 
 - **Instagram backfill — done.** All 78 slugs in the backfill file resolve
   to a live page (the one 404 is `karinkada-ayurveda`, merged away, see
@@ -265,31 +275,6 @@ note here saying otherwise:
   two distinct legal entities (GmbH vs Ltd.) rather than one listing
   duplicated, so not merged like the Ayurveda pair above. Revisit if
   that gets clarified.
-
-## Needs a production DB action (Nijil, via phpMyAdmin)
-
-- **Berlin research sprint records (4 Oct 2026)** — run
-  `import/migration-berlin-sprint-2026-10-04.sql` once in phpMyAdmin. It
-  adds 5 records: KOKOLAND, Kerala Cultural Association of Berlin, World
-  Malayalee Council Berlin Chapter and Berlin Kerala Samajam as public
-  (approved) listings, and Kombans FC Berlin as `pending` (hidden) until a
-  person confirms the club. Safe to re-run. Tested against the dev
-  database twice; the 5 pages render correctly and the pending one 404s.
-  Afterwards the approved Berlin count should be 10 (6 existing plus 4
-  new). The file's header explains each choice: no founders, no street
-  addresses or phone numbers, and only the two mailboxes the organisations
-  publish themselves are stored (admin-only). `verified` follows the
-  research label under the Listing Policy rule ("Verified" = sufficient
-  evidence found): KCAB and Berlin Kerala Samajam get the Verified badge;
-  KOKOLAND, WMC Berlin and Kombans FC do not. Decide before running whether
-  the Samajam should show Verified while its activity is unconfirmed (the
-  header says how to change it). The sprint also recommended moving NILA
-  Restaurants Berlin to "Partially verified". The site only shows
-  Verified / Not yet verified, so nothing is changed; switch NILA to
-  Verified in `admin-edit.php` once the key details are confirmed. A sports
-  club has no matching industry in the frozen taxonomy; Education was used
-  as the closest and the gap should be logged at the next taxonomy
-  checkpoint.
 
 ## Needs a step from Nijil — turn on the Impressum page
 
