@@ -97,13 +97,29 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
     </div>
     <?php else: ?>
     <div class="company-detail">
-      <span id="companyVerified" style="position:absolute;top:24px;right:24px"><?php $tier = company_contact_tier($company); ?><?= $tier === 'owner' ? verified_badge_strong_html('Owner confirmed') : ($company['verified'] ? verified_badge_strong_html() : verified_chip_html($tier)) ?></span>
+      <?php
+        $tier = company_contact_tier($company);
+        $siteRaw = $company['website'] ?? '';
+        $siteHref = '';
+        $siteLabel = '';
+        if ($siteRaw && strpos($siteRaw, '.example') === false) {
+            $siteHref = preg_match('#^https?://#i', $siteRaw) ? $siteRaw : 'https://' . $siteRaw;
+            $siteLabel = rtrim(preg_replace('#^https?://(www\.)?#i', '', $siteRaw), '/');
+        }
+        $foundersLine = implode(', ', array_column($founders, 'name'));
+      ?>
       <div class="company-detail-top">
         <div class="logo company-detail-logo"><?= h(initials($company['name'])) ?></div>
-        <div>
+        <div class="company-detail-title">
           <h1><?= h($company['name']) ?></h1>
-          <p class="muted"><?= h(implode(', ', array_column($founders, 'name'))) ?></p>
+          <div class="company-detail-sub">
+            <span id="companyVerified"><?= $tier === 'owner' ? verified_badge_strong_html('Owner confirmed') : ($company['verified'] ? verified_badge_strong_html() : verified_chip_html($tier)) ?></span>
+            <?php if ($foundersLine !== ''): ?><span class="muted">Founded by <?= h($foundersLine) ?></span><?php endif; ?>
+          </div>
         </div>
+        <?php if ($siteHref): ?>
+        <a class="pill company-detail-cta" href="<?= h($siteHref) ?>" target="_blank" rel="noopener"><span class="company-detail-cta-label">Visit <?= h($siteLabel) ?></span> ↗</a>
+        <?php endif; ?>
       </div>
 
       <div class="company-detail-meta">
@@ -112,70 +128,25 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         <?php if ($company['industry']): ?><span class="chip"><?= h($company['industry']) ?></span><?php endif; ?>
         <?php if (!empty($company['business_type'])): ?><span class="chip"><?= h($company['business_type']) ?></span><?php endif; ?>
         <?php if ($company['size']): ?><span class="chip"><?= h($company['size']) ?></span><?php endif; ?>
-      </div>
-      <?php if (!$company['verified']): ?>
-      <div class="claim-callout">
-        <p><strong>Is this your business?</strong> Claim this listing to confirm your details and get the verified badge.</p>
-        <a class="pill" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a>
-      </div>
-      <?php elseif ($tier !== 'owner'): ?>
-      <div class="claim-callout">
-        <p><strong>Are you the owner?</strong> This listing was checked by Kerala Founders. Claim it to get the Owner confirmed badge.</p>
-        <a class="pill" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a>
-      </div>
-      <?php endif; ?>
-      <?php if ($branches): ?>
-      <div class="company-detail-meta" style="margin-top:10px">
-        <span class="muted" style="font-size:13px;align-self:center">Also operates in:</span>
+        <?php if ($branches): ?>
+        <span class="muted company-detail-also">Also in</span>
         <?php foreach ($branches as $b): ?><span class="chip"><?= h($b) ?></span><?php endforeach; ?>
+        <?php endif; ?>
       </div>
-      <?php endif; ?>
+
       <div class="company-detail-body">
         <div>
           <div class="eyebrow">About the company</div>
           <p><?= h($company['description']) ?></p>
+          <?php if (!empty($company['industry_detail'])): ?><p class="company-detail-focus"><strong>Focus:</strong> <?= h($company['industry_detail']) ?></p><?php endif; ?>
         </div>
         <div class="company-detail-side">
-          <?php if ($company['industry']): ?>
-          <div class="side-section">
-            <div class="eyebrow">Industry</div>
-            <p><?= h($company['industry']) ?></p>
-            <?php if (!empty($company['industry_detail'])): ?><p class="muted" style="font-size:13px;margin-top:2px"><?= h($company['industry_detail']) ?></p><?php endif; ?>
-          </div>
-          <?php endif; ?>
-          <?php if (!empty($company['business_type'])): ?>
-          <div class="side-section">
-            <div class="eyebrow">Business type</div>
-            <p><?= h($company['business_type']) ?></p>
-          </div>
-          <?php endif; ?>
-          <?php if ($company['country']): ?>
-          <div class="side-section">
-            <div class="eyebrow">Country</div>
-            <p><?= h($company['country']) ?></p>
-            <?php if ($guidanceGuideSlug): ?>
-            <p class="muted" style="font-size:13px;margin-top:4px"><a class="arrow" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($company['country']) ?> →</a></p>
-            <?php endif; ?>
-          </div>
-          <?php endif; ?>
           <?php if ($company['location']): ?>
           <div class="side-section">
             <div class="eyebrow">Address</div>
             <p><?= h($company['location']) ?></p>
           </div>
           <?php endif; ?>
-          <div class="side-section">
-            <div class="eyebrow">Website</div>
-            <?php
-              $raw = $company['website'] ?? '';
-              if ($raw && strpos($raw, '.example') === false):
-                  $href = preg_match('#^https?://#i', $raw) ? $raw : 'https://' . $raw;
-            ?>
-            <a class="arrow" href="<?= h($href) ?>" target="_blank" rel="noopener"><?= h(preg_replace('#^https?://#i', '', $raw)) ?></a>
-            <?php else: ?>
-            <span><?= $raw ? h($raw) : 'Website not provided' ?></span>
-            <?php endif; ?>
-          </div>
           <?php if (!empty($company['instagram']) && ($company['instagram_confidence'] ?? null) !== 'medium'): ?>
           <div class="side-section">
             <div class="eyebrow">Instagram</div>
@@ -190,24 +161,23 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
               <div style="font-weight:600"><?= h($f['name']) ?></div>
               <?php if (!empty($f['show_email']) && !empty($f['email'])): ?>
               <a class="arrow" href="mailto:<?= h($f['email']) ?>" style="margin-top:2px;display:inline-block"><?= h($f['email']) ?></a>
-              <?php else: ?>
-              <span class="chip" style="font-size:11px;margin-top:4px;display:inline-block">Email hidden</span>
               <?php endif; ?>
             </div>
             <?php endforeach; ?>
           </div>
           <?php endif; ?>
+          <?php if ($guidanceGuideSlug): ?>
+          <div class="side-section">
+            <a class="arrow" style="margin-top:0" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($company['country']) ?> →</a>
+          </div>
+          <?php endif; ?>
         </div>
-      </div>
-
-      <div class="share-row">
-        <a class="pill light" href="https://wa.me/?text=<?= rawurlencode($shareText) ?>" target="_blank" rel="noopener" data-kf-event="share_click" data-kf-share="whatsapp">Share on WhatsApp</a>
       </div>
 
       <?php if ($company['verified']):
         $kitBase = 'share-kit.php?id=' . rawurlencode($slug);
         $badgeSnippet = '<a href="' . $canonicalUrl . '"><img src="https://keralafounders.eu/' . $kitBase . '&type=badge" alt="Featured on Kerala Founders" width="220" height="56"></a>'; ?>
-      <div class="share-kit" style="margin-top:20px">
+      <div class="share-kit">
         <div class="eyebrow">Share kit</div>
         <p class="muted" style="margin:6px 0 10px">Featured on Kerala Founders. Post these or add the badge to your own website.</p>
         <p style="margin:0 0 10px"><img src="<?= h($kitBase) ?>&amp;type=badge" alt="Featured on Kerala Founders badge" width="220" height="56"></p>
@@ -217,17 +187,20 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
       </div>
       <?php endif; ?>
 
-      <div style="margin-top:20px">
-        <?php if (!$company['verified']): ?>
-        <div class="eyebrow">Is this your business?</div>
-        <h2 style="font-size:20px;margin:6px 0 8px">Claim this listing</h2>
-        <p class="muted" style="margin:0 0 16px">Confirm your details are correct, add anything missing, and get the verified badge.</p>
-        <?php else: ?>
-        <div class="eyebrow">Spot something outdated?</div>
-        <p class="muted" style="margin:6px 0 16px">Let us know what's changed and we'll update the listing.</p>
-        <?php endif; ?>
-        <a class="pill light" href="claim.php?id=<?= rawurlencode($slug) ?>"><?= $company['verified'] ? 'Suggest an edit' : 'Claim this listing' ?> →</a>
-        <p class="muted" style="margin:16px 0 0;font-size:14px">Want this listing corrected or removed? <a class="arrow" href="contact.php?topic=remove&amp;listing=<?= rawurlencode($slug) ?>">Ask us</a>.</p>
+      <div class="company-detail-foot">
+        <p class="company-detail-foot-claim">
+          <?php if (!$company['verified']): ?>
+          <strong>Is this your business?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a>
+          <?php elseif ($tier !== 'owner'): ?>
+          <strong>Are you the owner?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a>
+          <?php else: ?>
+          <strong>Spot something outdated?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Suggest an edit →</a>
+          <?php endif; ?>
+        </p>
+        <div class="company-detail-foot-actions">
+          <a class="muted company-detail-report" href="contact.php?topic=remove&amp;listing=<?= rawurlencode($slug) ?>">Request a correction or removal</a>
+          <a class="pill light small" href="https://wa.me/?text=<?= rawurlencode($shareText) ?>" target="_blank" rel="noopener" data-kf-event="share_click" data-kf-share="whatsapp">Share on WhatsApp</a>
+        </div>
       </div>
     </div>
     <?php endif; ?>

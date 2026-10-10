@@ -715,8 +715,12 @@ footer{
 .company-detail-top{
   display:flex;
   align-items:center;
-  gap:20px;
+  gap:var(--space-5);
 }
+.company-detail-title{flex:1 1 auto;min-width:0}
+.company-detail-sub{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2) var(--space-3);font-size:14px}
+.company-detail-cta{margin-left:auto;max-width:300px}
+.company-detail-cta-label{overflow:hidden;text-overflow:ellipsis}
 .company-detail-logo{
   width:72px !important;
   height:72px !important;
@@ -724,24 +728,39 @@ footer{
   flex:0 0 auto;
 }
 .company-detail h1{
-  margin:5px 0 6px;
+  margin:0 0 var(--space-2);
 }
 .company-detail-meta{
   display:flex;
   flex-wrap:wrap;
   gap:8px;
-  margin-top:28px;
-  padding-top:24px;
+  align-items:center;
+  margin-top:var(--space-6);
+  padding-top:var(--space-5);
   border-top:1px solid var(--line);
 }
+.company-detail-also{font-size:13px;margin-left:var(--space-2)}
 .company-detail-body{
   display:grid;
   grid-template-columns:minmax(0,2fr) minmax(180px,1fr);
   gap:50px;
-  margin-top:34px;
-  padding-top:28px;
+  margin-top:var(--space-7);
+  padding-top:var(--space-6);
   border-top:1px solid var(--line);
 }
+.company-detail-focus{margin-top:var(--space-4) !important;font-size:15px}
+.company-detail .share-kit{margin-top:var(--space-7);padding-top:var(--space-6);border-top:1px solid var(--line)}
+.company-detail-foot{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+  gap:var(--space-3) var(--space-5);
+  margin-top:var(--space-7);padding-top:var(--space-5);
+  border-top:1px solid var(--line);
+}
+.company-detail-foot p{margin:0;font-size:15px;display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--space-1) var(--space-2)}
+.company-detail-foot .arrow{margin:0;font-size:14px}
+.company-detail-foot-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-5)}
+.company-detail-report{font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.pill.small{padding:8px 14px;font-size:13px}
 .company-detail-body p{
   color:var(--muted);
   line-height:1.8;
@@ -755,10 +774,8 @@ footer{
   .company-detail{padding:26px}
   .company-detail-body{grid-template-columns:1fr;gap:28px}
   .company-detail-side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:24px}
-  /* The verified badge is absolutely positioned top-right for desktop, where the heading
-     never wraps far enough to reach it. On narrow screens the company name can wrap to
-     2-3 lines and run underneath it — let it flow inline above the heading instead. */
-  #companyVerified{position:static !important;display:inline-block;margin-bottom:14px}
+  .company-detail-top{flex-wrap:wrap}
+  .company-detail-cta{margin-left:0;width:100%;max-width:none}
 }
 
 /* V17 directory filter refinements */
