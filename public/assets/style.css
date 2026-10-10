@@ -275,11 +275,8 @@ fieldset.form-fieldset legend{padding:0;width:100%}
 .vbadge-seal-rim{fill:#b7892b}
 .vbadge-seal-ring{fill:none;stroke:#fbf4e2;stroke-width:.9}
 .vbadge-seal-check{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.vbadge--verified .vbadge-seal-rim{fill:#fbf4e2;stroke:#b7892b;stroke-width:1}
-.vbadge--verified .vbadge-seal-ring{stroke:#b7892b}
-.vbadge--verified .vbadge-seal-check{stroke:#8a6414}
-.vbadge--owner{border-color:#b7892b}
-.vbadge--plain,.vbadge--none{padding-left:10px;background:#fff;border-color:var(--line);color:var(--muted);font-weight:600}
+.vbadge--verified{border-color:#b7892b}
+.vbadge--none{padding-left:10px;background:#fff;border-color:var(--line);color:var(--muted);font-weight:600}
 .vbadge--none{border-style:dashed}
 .side-section{padding:16px 0}
 .side-section:first-child{padding-top:0}
