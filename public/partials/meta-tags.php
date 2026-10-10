@@ -12,6 +12,7 @@ $ogImage = $ogImage ?? 'https://keralafounders.eu/assets/og-image.png';
 $canonicalAttr = isset($canonicalId) ? ' id="' . h($canonicalId) . '"' : '';
 ?>
 <title><?= h($pageTitle) ?></title><meta name="description" content="<?= h($metaDescription) ?>">
+<?php if (!empty($robotsNoindex)): ?><meta name="robots" content="noindex"><?php endif; ?>
 <link rel="canonical"<?= $canonicalAttr ?> href="<?= h($canonicalUrl) ?>">
 <meta property="og:type" content="<?= h($ogType) ?>"><meta property="og:site_name" content="Kerala Founders"><meta property="og:title" content="<?= h($ogTitle) ?>"><meta property="og:description" content="<?= h($metaDescription) ?>"><meta property="og:url" content="<?= h($canonicalUrl) ?>"><meta property="og:image" content="<?= h($ogImage) ?>"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="<?= h($ogTitle) ?>"><meta name="twitter:description" content="<?= h($metaDescription) ?>"><meta name="twitter:image" content="<?= h($ogImage) ?>">

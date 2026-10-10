@@ -68,3 +68,32 @@ This file did not exist in the repo when the hourly run started on 7 Oct 2026. I
 - Live server matches the repo.
 
 **The one thing Nijil needs to do:** after deploy, set the Instagram bio link to https://keralafounders.eu/instagram.php, open it on your phone and say if the layout is fine.
+### 8 Oct 2026 · Growth D1: homepage counters for crawlers and no-script visitors
+
+**State:** Fixed in code, draft pull request open. Not merged, not deployed.
+
+**What I checked in the repo (main at c486a87):** The four homepage numbers (Companies, Founders, Countries, Cities) were printed as `0` in the page itself and filled in only by JavaScript (`app.js`). So search crawlers and visitors without JavaScript saw 0, which matches what the agent fetches saw. That is now confirmed.
+
+**What I changed:** `public/index.php` now prints the real numbers on the server, using the same rules as the script (approved companies, their founders, distinct countries and cities). The script still runs and shows the same figures.
+
+**Tested:** PHP syntax is clean. On a local test database (3 companies) the page source shows 3/3/3/3 without running any script.
+
+**Unverified:** the live site, the live numbers, and what Google shows for the page.
+
+**The one thing Nijil needs to do:** After deploy, open the live homepage source (view-source) and check the four numbers are not 0 and match the page you see.
+### 8 Oct 2026 · Growth C7: do the Add-your-company and Claim forms keep emails hidden?
+
+**State:** Found one real bug and fixed it. Pull request open (draft), not merged or deployed.
+
+**What I checked in the repo (main at c486a87):**
+- Company page: a founder's email shows only when "show email" is on for that founder; otherwise it says "Email hidden".
+- Claim form: hidden emails and LinkedIn links are never sent to the browser; the form just says "on file". Approving a claim keeps a hidden email hidden. This was fixed earlier (PR #58) and still holds.
+- Add-your-company form: the "Show email publicly" switch starts off. The privacy page says a founder's email appears only if the listing allows it.
+- **Bug found:** a browser leaves unticked switches out of the form data, so the switches were matched to founders by position. With two founders where only the second ticks "show", the FIRST founder's email would have gone public and the second stayed hidden. Fixed in `add-company.php` and `claim.php`: each founder's own switch is now read directly.
+
+**Unverified:**
+- Not tested in a real browser with two founders (PHP syntax check only; the change is one line per form).
+- Whether any live listing was already affected: the repo cannot show it. Admin can look at listings with several founders that show an email.
+- Whether the live server matches the repo.
+
+**The one thing Nijil needs to do:** after deploy, add a test company with two founders, tick "show" only on the second, and check the company page shows only the second email. Also glance through live listings with several founders to see none shows the wrong email.

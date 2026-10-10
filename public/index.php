@@ -20,6 +20,17 @@ $industryCounts = $db->query(
     "SELECT industry, COUNT(*) AS n FROM companies WHERE status = 'approved' GROUP BY industry"
 )->fetchAll(PDO::FETCH_KEY_PAIR);
 
+// First-paint counters for crawlers and no-script visitors; app.js overwrites
+// them with the same figures (approved companies, their founders, distinct
+// non-empty countries and cities).
+$heroStats = $db->query(
+    "SELECT COUNT(*) AS companies, COUNT(DISTINCT NULLIF(country, '')) AS countries, COUNT(DISTINCT NULLIF(city, '')) AS cities
+     FROM companies WHERE status = 'approved'"
+)->fetch();
+$heroStats['founders'] = (int)$db->query(
+    "SELECT COUNT(*) FROM founders f JOIN companies c ON c.id = f.company_id WHERE c.status = 'approved'"
+)->fetchColumn();
+
 $jsonLd = [
     '@context' => 'https://schema.org',
     '@type' => 'WebSite',
@@ -42,7 +53,7 @@ $canonicalUrl = 'https://keralafounders.eu/';
 <h1>Keralites building<br><span>across the EU.</span></h1>
 <p class="hero-copy">A place to discover founders and businesses from Kerala building across Europe in technology and AI to food, manufacturing, healthcare and much more.</p>
 <div class="hero-actions"><a class="pill" href="founders.php">Explore the directory →</a><a class="pill light" href="add-company.php">Add your company</a></div>
-<div class="hero-stats"><div class="hero-stat"><strong id="statCompanies">0</strong><span>Companies</span></div><div class="hero-stat"><strong id="statFounders">0</strong><span>Founders</span></div><div class="hero-stat"><strong id="statCountries">0</strong><span>Countries</span></div><div class="hero-stat"><strong id="statCities">0</strong><span>Cities</span></div></div>
+<div class="hero-stats"><div class="hero-stat"><strong id="statCompanies"><?= (int)$heroStats['companies'] ?></strong><span>Companies</span></div><div class="hero-stat"><strong id="statFounders"><?= (int)$heroStats['founders'] ?></strong><span>Founders</span></div><div class="hero-stat"><strong id="statCountries"><?= (int)$heroStats['countries'] ?></strong><span>Countries</span></div><div class="hero-stat"><strong id="statCities"><?= (int)$heroStats['cities'] ?></strong><span>Cities</span></div></div>
 </div></div></section>
 <section class="section" style="padding-bottom:0"><div class="wrap">
 <div class="section-head"><div class="eyebrow">Explore by category</div><a class="arrow" href="industries.php">View all categories →</a></div>
