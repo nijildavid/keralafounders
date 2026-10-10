@@ -9,15 +9,15 @@ $csrfToken = csrf_token();
 const PAGE_SIZE = 30;
 
 $statusFilter = $_GET['status'] ?? 'all';
-if (!in_array($statusFilter, ['all', 'pending', 'approved'], true)) {
+if (!in_array($statusFilter, ['all', 'pending', 'approved', 'rejected'], true)) {
     $statusFilter = 'all';
 }
 $verifiedFilter = $_GET['verified'] ?? 'all';
-if (!in_array($verifiedFilter, ['all', 'verified', 'unverified', 'confirmed', 'gap'], true)) {
+if (!in_array($verifiedFilter, ['all', 'verified', 'owner', 'unverified', 'confirmed', 'gap'], true)) {
     $verifiedFilter = 'all';
 }
 $outreachFilter = $_GET['outreach'] ?? 'all';
-if (!in_array($outreachFilter, ['all', 'ready', 'sent', 'none'], true)) {
+if (!in_array($outreachFilter, ['all', 'found', 'ready', 'sent', 'none'], true)) {
     $outreachFilter = 'all';
 }
 $claimFilter = $_GET['claim'] ?? 'all';
@@ -25,6 +25,29 @@ if (!in_array($claimFilter, ['all', 'pending', 'any', 'none'], true)) {
     $claimFilter = 'all';
 }
 $q = trim((string)($_GET['q'] ?? ''));
+
+// Reject needs the 'rejected' value in companies.status (migration-company-rejected-2026-10-10.sql).
+// Until it has been run, the Reject buttons stay hidden instead of failing.
+$canReject = false;
+try {
+    $col = $db->query("SHOW COLUMNS FROM companies LIKE 'status'")->fetch();
+    $canReject = $col && strpos((string)$col['Type'], "'rejected'") !== false;
+} catch (PDOException $e) {
+    $canReject = false;
+}
+if ($statusFilter === 'rejected' && !$canReject) {
+    $statusFilter = 'all';
+}
+
+// The Owner confirmed filter needs the owner_confirmed column (added by
+// migration-owner-confirmed-2026-10-10.sql); fall back to "all" if it is missing.
+if ($verifiedFilter === 'owner') {
+    try {
+        $db->query('SELECT owner_confirmed FROM companies LIMIT 0');
+    } catch (PDOException $e) {
+        $verifiedFilter = 'all';
+    }
+}
 
 // Sortable columns. Keys are the only values ever accepted from the URL;
 // the SQL fragments are fixed strings, never built from user input.
@@ -56,6 +79,8 @@ if ($statusFilter !== 'all') {
 }
 if ($verifiedFilter === 'verified') {
     $where[] = 'c.verified = 1';
+} elseif ($verifiedFilter === 'owner') {
+    $where[] = 'c.verified = 1 AND c.owner_confirmed = 1';
 } elseif ($verifiedFilter === 'unverified') {
     $where[] = 'c.verified = 0';
 } elseif ($verifiedFilter === 'confirmed' || $verifiedFilter === 'gap') {
@@ -63,7 +88,9 @@ if ($verifiedFilter === 'verified') {
     $confirmedSql = "(COALESCE(c.contact_email, '') <> '' AND COALESCE(c.email_source_url, '') <> '') OR (COALESCE(c.instagram, '') <> '' AND c.instagram_confidence = 'high')";
     $where[] = $verifiedFilter === 'confirmed' ? "c.verified = 0 AND ($confirmedSql)" : "c.verified = 0 AND NOT ($confirmedSql)";
 }
-if ($outreachFilter === 'ready') {
+if ($outreachFilter === 'found') {
+    $where[] = 'c.contact_email IS NOT NULL';
+} elseif ($outreachFilter === 'ready') {
     $where[] = "c.contact_email IS NOT NULL AND c.outreach_status = 'not_contacted'";
 } elseif ($outreachFilter === 'sent') {
     $where[] = "c.outreach_status = 'sent'";
@@ -231,6 +258,9 @@ function admin_sort_th(string $key, string $label, array $state, array $cols, st
 
 function admin_status_badge(array $c): string
 {
+    if ($c['status'] === 'rejected') {
+        return '<span class="adm-badge adm-badge-neutral"><span aria-hidden="true">&times;</span> Rejected</span>';
+    }
     if ($c['status'] === 'approved') {
         $html = '<span class="adm-badge adm-badge-ok"><span aria-hidden="true">&#10003;</span> Approved</span>';
     } else {
@@ -267,6 +297,82 @@ function admin_claim_badge(array $c): string
     return '<span class="adm-muted">None</span>';
 }
 
+// Turns stored free-text into a safe external link, or plain escaped text if
+// it doesn't look like a web address. Only http(s) is ever linked, so a stored
+// "javascript:" value can never become a clickable link.
+function admin_ext_link(?string $value, string $kind = 'url'): string
+{
+    $v = trim((string)$value);
+    if ($v === '') {
+        return '';
+    }
+    $href = null;
+    if ($kind === 'email') {
+        if (filter_var($v, FILTER_VALIDATE_EMAIL)) {
+            $href = 'mailto:' . $v;
+        }
+    } elseif ($kind === 'instagram') {
+        $handle = ltrim($v, '@');
+        if (preg_match('/^[A-Za-z0-9._]{1,30}$/', $handle)) {
+            $href = 'https://www.instagram.com/' . $handle . '/';
+            $v = '@' . $handle;
+        }
+    } else {
+        if (preg_match('#^https?://\S+$#i', $v)) {
+            $href = $v;
+        } elseif (preg_match('#^(www\.)?[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+(/\S*)?$#', $v) || preg_match('#^linkedin\.com/\S+$#i', $v)) {
+            $href = 'https://' . $v;
+        }
+    }
+    if ($href === null) {
+        return h($v);
+    }
+    if ($kind === 'email') {
+        return '<a href="' . h($href) . '">' . h($v) . '</a>';
+    }
+    return '<a href="' . h($href) . '" target="_blank" rel="noopener noreferrer">' . h($v)
+        . ' <span aria-hidden="true">&#8599;</span><span class="sr-only">(opens in a new tab)</span></a>';
+}
+
+// Approve emails the submitter a "you are live" message when the listing came
+// from the public form, so the confirm dialog says so; Reject is reversible.
+function admin_will_email_on_approve(array $c, array $founders): bool
+{
+    if ($c['status'] !== 'pending' || (string)($c['ip_hash'] ?? '') === '') {
+        return false;
+    }
+    foreach ($founders as $f) {
+        if (filter_var(trim((string)$f['email']), FILTER_VALIDATE_EMAIL)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function admin_quick_actions(array $c, array $founders, bool $canReject, string $redirect, string $csrf): string
+{
+    $id = (int)$c['id'];
+    $name = (string)$c['name'];
+    $html = '';
+    if ($c['status'] === 'pending') {
+        $msg = 'Approve ' . $name . '? It goes live on the public site now'
+            . (admin_will_email_on_approve($c, $founders) ? ', and an email saying so is sent to the founders. The email cannot be unsent.' : '.');
+        $html .= '<form method="post" action="api/admin-action.php" onsubmit="return confirm(this.getAttribute(\'data-confirm\'))" data-confirm="' . h($msg) . '">'
+            . admin_hidden_fields($id, 'approve', $redirect, $csrf)
+            . '<button class="adm-qbtn adm-qbtn-ok" type="submit" aria-label="Approve ' . h($name) . '">Approve</button></form>';
+        if ($canReject) {
+            $html .= '<form method="post" action="api/admin-action.php">'
+                . admin_hidden_fields($id, 'reject', $redirect, $csrf)
+                . '<button class="adm-qbtn" type="submit" aria-label="Reject ' . h($name) . '">Reject</button></form>';
+        }
+    } elseif ($c['status'] === 'rejected') {
+        $html .= '<form method="post" action="api/admin-action.php">'
+            . admin_hidden_fields($id, 'restore', $redirect, $csrf)
+            . '<button class="adm-qbtn" type="submit" aria-label="Restore ' . h($name) . ' to pending">Restore</button></form>';
+    }
+    return $html !== '' ? '<div class="adm-qactions">' . $html . '</div>' : '<span class="adm-muted">&mdash;</span>';
+}
+
 function admin_hidden_fields(int $id, string $action, string $redirect, string $csrf): string
 {
     return '<input type="hidden" name="id" value="' . $id . '">'
@@ -300,6 +406,7 @@ $activeAdminPage = 'submissions';
       <option value="all"<?= $statusFilter === 'all' ? ' selected' : '' ?>>All</option>
       <option value="pending"<?= $statusFilter === 'pending' ? ' selected' : '' ?>>Pending</option>
       <option value="approved"<?= $statusFilter === 'approved' ? ' selected' : '' ?>>Approved</option>
+      <?php if ($canReject): ?><option value="rejected"<?= $statusFilter === 'rejected' ? ' selected' : '' ?>>Rejected</option><?php endif; ?>
     </select>
   </div>
   <div class="adm-filter">
@@ -307,6 +414,7 @@ $activeAdminPage = 'submissions';
     <select class="select" id="adm-verified" name="verified">
       <option value="all"<?= $verifiedFilter === 'all' ? ' selected' : '' ?>>All</option>
       <option value="verified"<?= $verifiedFilter === 'verified' ? ' selected' : '' ?>>Verified</option>
+      <option value="owner"<?= $verifiedFilter === 'owner' ? ' selected' : '' ?>>Owner confirmed</option>
       <option value="unverified"<?= $verifiedFilter === 'unverified' ? ' selected' : '' ?>>Not yet verified</option>
       <option value="confirmed"<?= $verifiedFilter === 'confirmed' ? ' selected' : '' ?>>Contact confirmed (tier 2)</option>
       <option value="gap"<?= $verifiedFilter === 'gap' ? ' selected' : '' ?>>Needs a contact point (tier 3)</option>
@@ -316,6 +424,7 @@ $activeAdminPage = 'submissions';
     <label for="adm-outreach">Contact</label>
     <select class="select" id="adm-outreach" name="outreach">
       <option value="all"<?= $outreachFilter === 'all' ? ' selected' : '' ?>>Any</option>
+      <option value="found"<?= $outreachFilter === 'found' ? ' selected' : '' ?>>Email found</option>
       <option value="ready"<?= $outreachFilter === 'ready' ? ' selected' : '' ?>>Ready to email</option>
       <option value="sent"<?= $outreachFilter === 'sent' ? ' selected' : '' ?>>Emailed</option>
       <option value="none"<?= $outreachFilter === 'none' ? ' selected' : '' ?>>No email found</option>
@@ -368,6 +477,7 @@ $activeAdminPage = 'submissions';
     <?= admin_sort_th('status', 'Status', $state, $sortColumns) ?>
     <?= admin_sort_th('contact', 'Contact', $state, $sortColumns) ?>
     <?= admin_sort_th('claims', 'Claim', $state, $sortColumns) ?>
+    <th scope="col">Quick actions</th>
   </tr></thead>
   <tbody>
 <?php foreach ($companies as $c):
@@ -388,6 +498,7 @@ $activeAdminPage = 'submissions';
     <td data-label="Status" class="adm-cell-status"><?= admin_status_badge($c) ?></td>
     <td data-label="Contact" class="adm-cell-contact"><?= admin_contact_badge($c) ?></td>
     <td data-label="Claim"><?= admin_claim_badge($c) ?></td>
+    <td data-label="Quick actions"><?= admin_quick_actions($c, $founders, $canReject, $currentUrl, $csrfToken) ?></td>
   </tr>
 <?php endforeach; ?>
   </tbody>
@@ -411,10 +522,26 @@ $activeAdminPage = 'submissions';
 
   <div class="adm-actions">
     <a class="pill light" href="admin-edit.php?id=<?= $id ?>">Edit</a>
+    <?php if ($c['status'] === 'approved'): ?>
+    <a class="pill light" href="company.php?id=<?= h(rawurlencode((string)$c['slug'])) ?>" target="_blank" rel="noopener">View live listing <span aria-hidden="true">&#8599;</span><span class="sr-only">(opens in a new tab)</span></a>
+    <?php else: ?>
+    <span class="adm-muted">Not public until approved</span>
+    <?php endif; ?>
     <?php if ($c['status'] !== 'approved'): ?>
     <form method="post" action="api/admin-action.php">
       <?= admin_hidden_fields($id, 'approve', $openUrl, $csrfToken) ?>
       <button class="pill" type="submit">Approve</button>
+    </form>
+    <?php endif; ?>
+    <?php if ($canReject && $c['status'] === 'pending'): ?>
+    <form method="post" action="api/admin-action.php">
+      <?= admin_hidden_fields($id, 'reject', $openUrl, $csrfToken) ?>
+      <button class="pill light" type="submit">Reject</button>
+    </form>
+    <?php elseif ($c['status'] === 'rejected'): ?>
+    <form method="post" action="api/admin-action.php">
+      <?= admin_hidden_fields($id, 'restore', $openUrl, $csrfToken) ?>
+      <button class="pill light" type="submit">Restore to pending</button>
     </form>
     <?php endif; ?>
     <form method="post" action="api/admin-action.php" class="adm-switch-form">
@@ -437,11 +564,11 @@ $activeAdminPage = 'submissions';
     <p><?= h($c['description']) ?></p>
     <dl class="adm-dl">
       <dt>Industry</dt><dd><?= h($c['industry']) ?><?= $c['business_type'] !== '' ? ' · ' . h($c['business_type']) : '' ?><?= $c['industry_detail'] ? ' · ' . h($c['industry_detail']) : '' ?></dd>
-      <?php if ($c['website']): ?><dt>Website</dt><dd><?= h($c['website']) ?></dd><?php endif; ?>
+      <?php if ($c['website']): ?><dt>Website</dt><dd><?= admin_ext_link($c['website']) ?></dd><?php endif; ?>
       <?php if ($c['founded_year']): ?><dt>Founded</dt><dd><?= (int)$c['founded_year'] ?></dd><?php endif; ?>
       <?php if ($c['size']): ?><dt>Size</dt><dd><?= h($c['size']) ?></dd><?php endif; ?>
       <?php if ($c['kerala_connection']): ?><dt>Kerala link</dt><dd><?= h($c['kerala_connection']) ?><?= $c['kerala_district'] ? ' (' . h($c['kerala_district']) . ')' : '' ?></dd><?php endif; ?>
-      <?php if ($c['instagram']): ?><dt>Instagram</dt><dd>@<?= h($c['instagram']) ?><?php if (($c['instagram_source'] ?? null) === 'research' && ($c['instagram_confidence'] ?? null) === 'medium'): ?> <span class="adm-badge adm-badge-attn">Needs review</span><?php endif; ?></dd><?php endif; ?>
+      <?php if ($c['instagram']): ?><dt>Instagram</dt><dd><?= admin_ext_link($c['instagram'], 'instagram') ?><?php if (($c['instagram_source'] ?? null) === 'research' && ($c['instagram_confidence'] ?? null) === 'medium'): ?> <span class="adm-badge adm-badge-attn">Needs review</span><?php endif; ?></dd><?php endif; ?>
       <dt>Stories / podcast</dt><dd><?= $c['contact_ok_podcast_stories'] ? 'OK to contact' : 'Not opted in' ?></dd>
       <dt>Submitted</dt><dd><?= h(date('j M Y, H:i', strtotime((string)$c['created_at']))) ?></dd>
     </dl>
@@ -453,8 +580,8 @@ $activeAdminPage = 'submissions';
     <ul class="adm-list">
       <?php foreach ($founders as $f): ?>
       <li><strong><?= h($f['name']) ?></strong>
-        <?php if ($f['email']): ?><div class="meta"><?= h($f['email']) ?><?= $f['show_email'] ? ' · shown publicly' : ' · private' ?></div><?php endif; ?>
-        <?php if ($f['linkedin']): ?><div class="meta"><?= h($f['linkedin']) ?></div><?php endif; ?>
+        <?php if ($f['email']): ?><div class="meta"><?= admin_ext_link($f['email'], 'email') ?><?= $f['show_email'] ? ' · shown publicly' : ' · private' ?></div><?php endif; ?>
+        <?php if ($f['linkedin']): ?><div class="meta"><?= admin_ext_link($f['linkedin']) ?></div><?php endif; ?>
       </li>
       <?php endforeach; ?>
     </ul>
@@ -472,11 +599,11 @@ $activeAdminPage = 'submissions';
     <h3 id="adm-s-contact-<?= $id ?>">Contact &amp; outreach</h3>
     <?php if (!$hasEmail): ?><p class="adm-muted">No email found yet.</p><?php else: ?>
     <dl class="adm-dl">
-      <dt>Email</dt><dd><?= h($c['contact_email']) ?></dd>
+      <dt>Email</dt><dd><?= admin_ext_link($c['contact_email'], 'email') ?></dd>
       <?php if ($c['email_type']): ?><dt>Type</dt><dd><?= h($c['email_type']) ?></dd><?php endif; ?>
       <?php if ($c['email_source']): ?><dt>Source</dt><dd><?= h($c['email_source']) ?></dd><?php endif; ?>
       <?php if ($c['email_confidence']): ?><dt>Confidence</dt><dd><?= h($c['email_confidence']) ?></dd><?php endif; ?>
-      <?php if ($c['email_source_url']): ?><dt>Source URL</dt><dd><?= h($c['email_source_url']) ?></dd><?php endif; ?>
+      <?php if ($c['email_source_url']): ?><dt>Source URL</dt><dd><?= admin_ext_link($c['email_source_url']) ?></dd><?php endif; ?>
       <dt>Outreach</dt><dd><?= h(str_replace('_', ' ', $c['outreach_status'])) ?></dd>
       <?php if ($c['outreach_sent_at']): ?><dt>Emailed on</dt><dd><?= h(date('j M Y', strtotime((string)$c['outreach_sent_at']))) ?></dd><?php endif; ?>
       <?php if ($c['outreach_responded_at']): ?><dt>Responded on</dt><dd><?= h(date('j M Y', strtotime((string)$c['outreach_responded_at']))) ?></dd><?php endif; ?>
