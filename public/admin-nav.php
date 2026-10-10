@@ -1,6 +1,6 @@
 <?php
 // Shared admin sub-nav. Include after $db is available and $activeAdminPage is set
-// to one of: 'dashboard', 'submissions', 'claims', 'guidance-feedback', 'story-signups'.
+// to one of: 'dashboard', 'submissions', 'claims', 'guidance-feedback', 'story-signups', 'suggestions'.
 $navPendingClaims = (int)$db->query("SELECT COUNT(*) FROM claim_requests WHERE status = 'pending'")->fetchColumn();
 ?>
 <div class="toggle" style="margin-top:20px">
@@ -9,4 +9,5 @@ $navPendingClaims = (int)$db->query("SELECT COUNT(*) FROM claim_requests WHERE s
   <a href="admin-claims.php" class="<?= $activeAdminPage === 'claims' ? 'active' : '' ?>">Claims<?= $navPendingClaims ? ' (' . $navPendingClaims . ')' : '' ?></a>
   <a href="admin-guidance-feedback.php" class="<?= $activeAdminPage === 'guidance-feedback' ? 'active' : '' ?>">Guidance feedback</a>
   <a href="admin-story-signups.php" class="<?= $activeAdminPage === 'story-signups' ? 'active' : '' ?>">Story signups</a>
+  <a href="admin-suggestions.php" class="<?= $activeAdminPage === 'suggestions' ? 'active' : '' ?>">Suggestions</a>
 </div>

@@ -41,11 +41,37 @@ function initials(string $name): string
     return $result !== '' ? $result : 'KF';
 }
 
-function verified_chip_html(bool $v): string
+/**
+ * Trust tier for a company row (needs verified, contact_email, email_source_url,
+ * instagram, instagram_confidence). Mirrored by the `tier` field sent to app.js.
+ *  - verified:    owner confirmed (approved claim, or set by an admin)
+ *  - confirmed:   we found a working channel on the company's own pages
+ *                 (email with a saved source URL, or a high-confidence Instagram)
+ *  - unconfirmed: listed, no sourced contact point yet
+ */
+function company_contact_tier(array $row): string
 {
-    return $v
-        ? '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)">Verified</span>'
-        : '<span class="chip" style="color:#9a3412;border-color:#9a3412" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
+    if (!empty($row['verified'])) {
+        return 'verified';
+    }
+    $hasEmail = trim((string)($row['contact_email'] ?? '')) !== '' && trim((string)($row['email_source_url'] ?? '')) !== '';
+    $hasInstagram = trim((string)($row['instagram'] ?? '')) !== '' && ($row['instagram_confidence'] ?? '') === 'high';
+    return ($hasEmail || $hasInstagram) ? 'confirmed' : 'unconfirmed';
+}
+
+/** $tier is 'verified' | 'confirmed' | 'unconfirmed'; a bool is still accepted (true = verified). */
+function verified_chip_html($tier): string
+{
+    if (is_bool($tier)) {
+        $tier = $tier ? 'verified' : 'unconfirmed';
+    }
+    if ($tier === 'verified') {
+        return '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)">Verified</span>';
+    }
+    if ($tier === 'confirmed') {
+        return '<span class="chip" style="color:#1e40af;border-color:#1e40af" title="We found a working contact on this company\'s own website or profile. The owner has not verified the listing yet.">Contact confirmed</span>';
+    }
+    return '<span class="chip" style="color:#9a3412;border-color:#9a3412" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
 }
 
 /** Large, high-visibility verified badge for the company detail page. */
@@ -66,7 +92,7 @@ function company_card_html(array $c): string
         . '<div class="company-main"><h3>' . h($c['name']) . '</h3><div class="meta">' . $founders . '</div></div>'
         . '<div class="chips"><span class="chip">' . h($c['country']) . '</span><span class="chip">' . h($c['industry']) . '</span>'
         . (!empty($c['business_type']) ? '<span class="chip">' . h($c['business_type']) . '</span>' : '')
-        . verified_chip_html((bool)$c['verified']) . '</div>'
+        . verified_chip_html($c['tier'] ?? (!empty($c['verified']) ? 'verified' : 'unconfirmed')) . '</div>'
         . '</a>';
 }
 
@@ -264,6 +290,7 @@ function companies_with_founders(PDO $db, array $rows): array
             'industry_detail' => $row['industry_detail'],
             'size' => $row['size'],
             'verified' => (bool)$row['verified'],
+            'tier' => company_contact_tier($row),
         ];
     }
     return $companies;

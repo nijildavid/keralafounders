@@ -87,6 +87,7 @@ $canonicalUrl = 'https://keralafounders.eu/add-company.php';
 <img src="assets/celebration.svg" alt="" class="wizard-success-illustration">
 <h1 id="hd" tabindex="-1">Thank you, we have it</h1>
 <p class="wizard-lead">We review new companies within a few days and will email you when it is live.</p>
+<?php include __DIR__ . '/partials/follow-share.php'; ?>
 <p><button type="button" class="linkbtn" id="restart">Add another company</button></p>
 </section>
 
@@ -212,7 +213,7 @@ document.getElementById('backBtn').onclick=()=>show(currentStep-1);
 
 function buildSummary(){
   const fd=new FormData(form);
-  const names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],shows=[...fd.getAll('founderShow[]')];
+  const names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],shows=[...document.querySelectorAll('input[name="founderShow[]"]')].map(c=>c.checked?'yes':'no');
   const foundersText=names.map((n,i)=>`${KFUI.esc(n||'(unnamed)')} (${KFUI.esc(emails[i]||'no email')}, email ${shows[i]==='yes'?'shown':'hidden'})`).join('<br>');
   const kc=document.querySelector('input[name=keralaConnection]:checked');
   const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value).join(', ');
@@ -239,7 +240,7 @@ form.onsubmit=async e=>{
     live.textContent='Please fix the highlighted fields.';
     return;
   }
-  const fd=new FormData(form),names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...fd.getAll('founderShow[]')];
+  const fd=new FormData(form),names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...document.querySelectorAll('input[name="founderShow[]"]')].map(c=>c.checked?'yes':'no');
   const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value);
   const turnstileToken=document.querySelector('[name="cf-turnstile-response"]')?.value||'';
   const item={company:fd.get('company'),website:fd.get('website'),instagram:fd.get('instagram'),industry:fd.get('industry'),industryDetail:fd.get('industryDetail'),size:fd.get('size'),founded:Number(fd.get('founded'))||null,country:fd.get('country'),city:fd.get('city'),location:fd.get('location'),description:fd.get('description'),keralaConnection:fd.get('keralaConnection')||'',keralaDistrict:fd.get('keralaDistrict')||'',contactOkPodcastStories:fd.get('contactOkPodcastStories')==='yes',founders:names.map((n,i)=>({name:n,email:emails[i],linkedin:lins[i],showEmail:shows[i]==='yes'})),branches,hpField:fd.get('hp_field'),turnstileToken};
@@ -251,6 +252,7 @@ form.onsubmit=async e=>{
     if(!res.ok) throw new Error(data.error||'Submission failed');
     if(window.kfTrack) kfTrack('add_company_submit');
     show('done');
+    document.getElementById('followShare').hidden=false;
   }catch(err){
     showBanner(KFUI.esc(err.message),true);
     window.scrollTo({top:0});
