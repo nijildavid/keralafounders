@@ -322,8 +322,8 @@ contact confirmed, 18 needing a contact point (out of 128).
   clear the wording. A neutral "information notice" draft exists but is
   shelved; revisit with legal advice before any send. Instagram DMs to cold
   contacts carry the same risk.
-- **Worth a look when there is time (not urgent):** `sandeep-soman` (id 72)
-  looks like an individual and `stichting-aram-netherlands` (id 134) like a
+- **Worth a look when there is time (not urgent):** "Sandeep Soman" (id 72)
+  looks like an individual and "Stichting Aram Netherlands" (id 134) like a
   foundation rather than companies; the website stored for EGA VIDA WELLNESS
   (id 110) does not resolve.
 - Database changes for this work were run by hand in phpMyAdmin from `.sql`
