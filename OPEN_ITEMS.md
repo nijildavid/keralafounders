@@ -300,6 +300,35 @@ IT-law service should confirm the final wording (the page cites § 5 DDG and
 privacy policy still needs the operator name, hosting, tools and cookies
 added; that wording needs human sign-off and is not part of this change.
 
+## Decided — verification tiers, and 18 companies left without a contact point (10 Oct 2026)
+
+Public badges are now four tiers (`keralafounders#90`, `#91`, `#92`): **Owner
+confirmed** (`owner_confirmed = 1`, set only when a claim is applied via
+"Apply & mark verified"), **Verified** (checked by Kerala Founders, 63
+listings, no owner claim), **Contact confirmed** (an email with a saved
+`email_source_url`, or a high-confidence Instagram) and **Not yet verified**.
+Counts on 10 Oct: 9 owner confirmed, 72 verified or owner confirmed, 38
+contact confirmed, 18 needing a contact point (out of 128).
+
+- **The 18 stay as "Not yet verified" on purpose.** Contact research on the
+  original 23 added sourced contacts for 5; web search found nothing for the
+  other 18 (ids 18, 32, 37, 48, 53, 57, 63, 70, 72, 92, 93, 101, 102, 107,
+  108, 110, 117, 134). None has an email without a source page (checked with
+  a query, zero rows), so nothing is just waiting on a source URL. Decided
+  not to spend more time on manual lookups; owners reach the claim form
+  through the "Are you the owner?" box on each listing.
+- **No outreach emails.** An unrequested email can be treated as advertising
+  under § 7 UWG even between businesses, and there is no lawyer or budget to
+  clear the wording. A neutral "information notice" draft exists but is
+  shelved; revisit with legal advice before any send. Instagram DMs to cold
+  contacts carry the same risk.
+- **Worth a look when there is time (not urgent):** `sandeep-soman` (id 72)
+  looks like an individual and `stichting-aram-netherlands` (id 134) like a
+  foundation rather than companies; the website stored for EGA VIDA WELLNESS
+  (id 110) does not resolve.
+- Database changes for this work were run by hand in phpMyAdmin from `.sql`
+  files handed over in chat (see convention 7 in `CLAUDE.md`).
+
 ## Needs a decision from Nijil
 
 - **7 medium-confidence Instagram handles need a review decision** —
