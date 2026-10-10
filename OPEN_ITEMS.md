@@ -402,3 +402,6 @@ again:
 - Other Claude sessions work on this same repo — `main` can move between
   sessions. Always `git fetch origin main` and diff before assuming your
   branch is still ahead/current.
+- Copilot code review test: check whether automatic Copilot PR review works
+  on the Free plan. If it does, set up a branch ruleset (Settings → Rules →
+  Rulesets) with automatic Copilot review; if not, drop it and delete this note.
