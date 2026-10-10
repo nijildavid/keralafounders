@@ -60,28 +60,29 @@ function company_contact_tier(array $row): string
     return ($hasEmail || $hasInstagram) ? 'confirmed' : 'unconfirmed';
 }
 
-/** $tier is 'owner' | 'verified' | 'confirmed' | 'unconfirmed'; a bool is still accepted (true = verified). */
-function verified_chip_html($tier): string
+/**
+ * One verification badge for every page (cards and detail). Kasavu-gold seal for
+ * the two verified tiers, quiet neutral chip for the rest. Mirrors KFUI.verifiedChip()
+ * in assets/app.js exactly. $tier is 'owner' | 'verified' | 'confirmed' | 'unconfirmed';
+ * a bool is still accepted (true = verified). $size is '' or 'lg' (detail page).
+ */
+function verified_chip_html($tier, string $size = ''): string
 {
     if (is_bool($tier)) {
         $tier = $tier ? 'verified' : 'unconfirmed';
     }
+    $seal = '<svg class="vbadge-seal" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path class="vbadge-seal-rim" d="M12.00 1.00 L13.83 2.78 L16.21 1.84 L17.22 4.18 L19.78 4.22 L19.82 6.78 L22.16 7.79 L21.22 10.17 L23.00 12.00 L21.22 13.83 L22.16 16.21 L19.82 17.22 L19.78 19.78 L17.22 19.82 L16.21 22.16 L13.83 21.22 L12.00 23.00 L10.17 21.22 L7.79 22.16 L6.78 19.82 L4.22 19.78 L4.18 17.22 L1.84 16.21 L2.78 13.83 L1.00 12.00 L2.78 10.17 L1.84 7.79 L4.18 6.78 L4.22 4.22 L6.78 4.18 L7.79 1.84 L10.17 2.78Z"/><circle class="vbadge-seal-ring" cx="12" cy="12" r="7.2"/><path class="vbadge-seal-check" d="M8.4 12.3l2.5 2.5 4.7-5.1"/></svg>';
+    $cls = $size === 'lg' ? ' vbadge--lg' : '';
     if ($tier === 'owner') {
-        return '<span class="chip" style="color:#fff;background:var(--accent2);border-color:var(--accent2)" title="The owner of this business claimed and confirmed this listing."><span aria-hidden="true">&#10003;</span> Owner confirmed</span>';
+        return '<span class="vbadge vbadge--owner' . $cls . '" title="The owner of this business claimed and confirmed this listing.">' . $seal . 'Owner confirmed</span>';
     }
     if ($tier === 'verified') {
-        return '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)" title="Checked by Kerala Founders. The owner has not confirmed the listing yet.">Verified</span>';
+        return '<span class="vbadge vbadge--verified' . $cls . '" title="Checked by Kerala Founders. The owner has not confirmed the listing yet.">' . $seal . 'Verified</span>';
     }
     if ($tier === 'confirmed') {
-        return '<span class="chip" style="color:#1e40af;border-color:#1e40af" title="We found a working contact on this company\'s own website or profile. The owner has not verified the listing yet.">Contact confirmed</span>';
+        return '<span class="vbadge vbadge--plain' . $cls . '" title="We found a working contact on this company\'s own website or profile. The owner has not verified the listing yet.">Contact confirmed</span>';
     }
-    return '<span class="chip" style="color:#9a3412;border-color:#9a3412" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
-}
-
-/** Large, high-visibility verified badge for the company detail page. */
-function verified_badge_strong_html(string $label = 'Verified'): string
-{
-    return '<span class="verified-badge-strong"><span class="verified-badge-check" aria-hidden="true">&#10003;</span>' . h($label) . '</span>';
+    return '<span class="vbadge vbadge--none' . $cls . '" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
 }
 
 /**

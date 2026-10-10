@@ -266,8 +266,21 @@ fieldset.form-fieldset legend{padding:0;width:100%}
 @media(max-width:900px){.category-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:600px){.category-grid{grid-template-columns:repeat(2,1fr)}}
 .notice{padding:13px 15px;background:#ecfdf3;border-radius:10px;color:#166534;font-size:13px;margin-bottom:18px}.error{padding:13px 15px;background:#fff1ed;border-radius:10px;color:#9a3412;font-size:13px;margin-bottom:18px}
-.verified-badge-strong{display:inline-flex;align-items:center;gap:9px;background:#166534;color:#fff;padding:11px 20px;border-radius:999px;font-size:15px;font-weight:800;letter-spacing:.01em;box-shadow:0 6px 16px rgba(22,101,52,.28)}
-.verified-badge-check{width:21px;height:21px;border-radius:50%;background:#fff;color:#166534;display:grid;place-items:center;font-size:12px;font-weight:900;flex-shrink:0}
+/* Verification badge: one component, used on cards and the detail page.
+   Gold (kasavu) = verified; never green, which is reserved for the primary button. */
+.vbadge{display:inline-flex;align-items:center;gap:6px;padding:3px 10px 3px 4px;border-radius:var(--radius-pill);border:1px solid #d8bf84;background:#fbf4e2;color:#5c4310;font-size:12px;font-weight:700;line-height:1.4;white-space:nowrap}
+.vbadge--lg{font-size:14px;padding:4px 14px 4px 5px;gap:8px}
+.vbadge--lg .vbadge-seal{width:22px;height:22px}
+.vbadge-seal{flex-shrink:0}
+.vbadge-seal-rim{fill:#b7892b}
+.vbadge-seal-ring{fill:none;stroke:#fbf4e2;stroke-width:.9}
+.vbadge-seal-check{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.vbadge--verified .vbadge-seal-rim{fill:#fbf4e2;stroke:#b7892b;stroke-width:1}
+.vbadge--verified .vbadge-seal-ring{stroke:#b7892b}
+.vbadge--verified .vbadge-seal-check{stroke:#8a6414}
+.vbadge--owner{border-color:#b7892b}
+.vbadge--plain,.vbadge--none{padding-left:10px;background:#fff;border-color:var(--line);color:var(--muted);font-weight:600}
+.vbadge--none{border-style:dashed}
 .side-section{padding:16px 0}
 .side-section:first-child{padding-top:0}
 .side-section + .side-section{border-top:1px solid var(--line)}
@@ -715,8 +728,12 @@ footer{
 .company-detail-top{
   display:flex;
   align-items:center;
-  gap:20px;
+  gap:var(--space-5);
 }
+.company-detail-title{flex:1 1 auto;min-width:0}
+.company-detail-sub{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-2) var(--space-3);font-size:14px}
+.company-detail-cta{margin-left:auto;max-width:300px}
+.company-detail-cta-label{overflow:hidden;text-overflow:ellipsis}
 .company-detail-logo{
   width:72px !important;
   height:72px !important;
@@ -724,41 +741,46 @@ footer{
   flex:0 0 auto;
 }
 .company-detail h1{
-  margin:5px 0 6px;
+  margin:0 0 var(--space-2);
 }
 .company-detail-meta{
   display:flex;
   flex-wrap:wrap;
   gap:8px;
-  margin-top:28px;
-  padding-top:24px;
+  align-items:center;
+  margin-top:var(--space-6);
+  padding-top:var(--space-5);
   border-top:1px solid var(--line);
 }
-.company-detail-body{
-  display:grid;
-  grid-template-columns:minmax(0,2fr) minmax(180px,1fr);
-  gap:50px;
-  margin-top:34px;
-  padding-top:28px;
+.company-detail-also{font-size:13px;margin-left:var(--space-2)}
+.company-detail-about{margin-top:var(--space-6)}
+.company-detail-about .eyebrow{margin-bottom:var(--space-3)}
+.company-detail-about p{margin:0;color:var(--muted);line-height:1.7;max-width:70ch}
+.company-detail-facts{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:var(--space-5) var(--space-6);
+  margin:var(--space-7) 0 0;padding:var(--space-5) 0 0;
   border-top:1px solid var(--line);
 }
-.company-detail-body p{
-  color:var(--muted);
-  line-height:1.8;
-  max-width:680px;
+.company-detail-facts dt{margin-bottom:var(--space-1)}
+.company-detail-facts dd{margin:0;color:var(--muted);line-height:1.5}
+.company-detail-focus{margin-top:var(--space-4) !important;font-size:15px}
+.company-detail .share-kit{margin-top:var(--space-7);padding-top:var(--space-6);border-top:1px solid var(--line)}
+.company-detail-foot{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
+  gap:var(--space-3) var(--space-5);
+  margin-top:var(--space-7);padding-top:var(--space-5);
+  border-top:1px solid var(--line);
 }
-.company-detail-side{
-  border-left:1px solid var(--line);
-  padding-left:28px;
-}
+.company-detail-foot p{margin:0;font-size:15px;display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--space-1) var(--space-2)}
+.company-detail-foot .arrow{margin:0;font-size:14px}
+.company-detail-foot-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-5)}
+.company-detail-report{font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.company-detail-share{font-size:13px;font-weight:700;color:var(--accent2)}
 @media(max-width:700px){
   .company-detail{padding:26px}
-  .company-detail-body{grid-template-columns:1fr;gap:28px}
-  .company-detail-side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:24px}
-  /* The verified badge is absolutely positioned top-right for desktop, where the heading
-     never wraps far enough to reach it. On narrow screens the company name can wrap to
-     2-3 lines and run underneath it — let it flow inline above the heading instead. */
-  #companyVerified{position:static !important;display:inline-block;margin-bottom:14px}
+  .company-detail-top{flex-wrap:wrap}
+  .company-detail-cta{margin-left:0;width:100%;max-width:none}
 }
 
 /* V17 directory filter refinements */
