@@ -12,6 +12,9 @@ function h(?string $s): string
 $totalCompanies = (int)$db->query('SELECT COUNT(*) FROM companies')->fetchColumn();
 $pendingCompanies = (int)$db->query("SELECT COUNT(*) FROM companies WHERE status = 'pending'")->fetchColumn();
 $verifiedCompanies = (int)$db->query('SELECT COUNT(*) FROM companies WHERE verified = 1')->fetchColumn();
+$confirmedSql = "verified = 0 AND ((contact_email <> '' AND email_source_url <> '') OR (instagram <> '' AND instagram_confidence = 'high'))";
+$confirmedCompanies = (int)$db->query("SELECT COUNT(*) FROM companies WHERE $confirmedSql")->fetchColumn();
+$unconfirmedCompanies = $totalCompanies - $verifiedCompanies - $confirmedCompanies;
 $pendingClaims = (int)$db->query("SELECT COUNT(*) FROM claim_requests WHERE status = 'pending'")->fetchColumn();
 $contactsFound = (int)$db->query('SELECT COUNT(*) FROM companies WHERE contact_email IS NOT NULL')->fetchColumn();
 $emailedCount = (int)$db->query("SELECT COUNT(*) FROM companies WHERE outreach_status = 'sent'")->fetchColumn();
@@ -39,7 +42,13 @@ $activeAdminPage = 'dashboard';
   <div class="stat"><strong><?= $contactsFound ?></strong><span>Contact emails found</span></div>
   <div class="stat"><strong><?= $emailedCount ?></strong><span>Verification emails sent</span></div>
   <div class="stat"><strong><?= $toEmailCount ?></strong><span>Found, not yet emailed</span></div>
-  <div class="stat"><strong>&nbsp;</strong><span></span></div>
+  <div class="stat"><strong><?= $confirmedCompanies ?></strong><span>Contact confirmed</span></div>
+</div></div>
+<div class="stats" style="margin-top:16px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
+  <div class="stat"><strong><?= $verifiedCompanies ?></strong><span>Tier 1 · Verified</span></div>
+  <div class="stat"><strong><?= $confirmedCompanies ?></strong><span>Tier 2 · Contact confirmed</span></div>
+  <div class="stat"><strong><?= $unconfirmedCompanies ?></strong><span>Tier 3 · Needs a contact point</span></div>
+  <div class="stat"><strong><?= $totalCompanies ? round(100 * ($verifiedCompanies + $confirmedCompanies) / $totalCompanies) : 0 ?>%</strong><span>Have a verified or sourced contact</span></div>
 </div></div>
 <div style="margin-top:24px;display:flex;gap:16px;flex-wrap:wrap">
   <a class="panel" style="flex:1;min-width:220px;text-decoration:none;color:inherit" href="admin.php">

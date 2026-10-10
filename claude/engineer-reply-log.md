@@ -25,3 +25,16 @@ The real queue file (claude/engineer-tickets-queue.md) is not in this repo, so r
 **Not verified:** a phone, the live server, the Analytics event in real time, and whether the privacy page needs a sentence for this form (no legal text added; the form only tells visitors not to add personal details). No bot check widget (Turnstile) on this form, only the honeypot and rate limit.
 
 **What Nijil needs to do:** say yes or no to the form going live. If yes: run the SQL file in phpMyAdmin first, merge, then tell me where to link it (footer, Instagram bio page) and whether a lawyer should add a privacy sentence.
+## 8 Oct 2026, card C9: city and category pages findable in search
+
+**State:** Checked, one small fix in a draft pull request. Not merged, not deployed.
+
+**What I checked in the repo and live:**
+- City, country, industry and business-type pages each have their own title, description and address (canonical). All four lists are in the sitemap (live sitemap: 267 addresses, 70 of them cities). The Berlin city page exists, returns 200 and is in the sitemap.
+- Problem found: any made-up name, for example `cities.php?city=Nowhere`, returned 200 with a normal title and no "keep out of search" marker. Search engines could index empty pages.
+
+**What I changed:** pages for a city, country, industry or business type with zero approved companies now carry a "noindex" marker. Pages with companies are unchanged.
+
+**Not verified:** how Google currently treats these pages (needs Search Console), whether any live page is empty, and the live server. Tested on a local test database only; sitemap only lists names that have companies, so it is unaffected. Not done: Berlin pages beyond the existing one (nothing missing found).
+
+**The one thing Nijil needs to do:** after deploy, open `cities.php?city=Nowhere` and view page source to confirm "noindex" is there, and check that Berlin is not marked.

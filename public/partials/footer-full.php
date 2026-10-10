@@ -67,6 +67,7 @@ $footerTopCountries = fetch_top_countries($db, 10);
         <a href="listing-policy.php#accuracy">Disclaimer</a>
         <?php if (!empty($KF_GUIDANCE_NAV_LIVE)): ?><a href="guidance-method.php">How we check our information</a><?php endif; ?>
         <a href="contact.php">Contact Us</a>
+        <a href="https://www.instagram.com/keralafounders.eu/" target="_blank" rel="noopener">Instagram</a>
         <a href="impressum">Impressum</a>
       </nav>
     </div>
