@@ -142,6 +142,15 @@ UI does anything; the real trigger is a push to `main`.
 6. Spacing/border-radius tokens and the canonical breakpoint set live in
    `STYLE-GUIDE.md` — new or touched CSS should use them; don't mass-migrate
    existing hardcoded values.
+7. **Database changes are delivered as ready-to-run `.sql` files, not left in
+   the repo.** Whenever a change needs SQL run on the production database,
+   give the owner the file(s) directly in the chat (attach them, e.g. via
+   `SendUserFile`) — he runs them in phpMyAdmin and does not want to dig
+   through GitHub. Split risky work into separate numbered files (e.g. a
+   read-only review query before any `UPDATE`/`DELETE`), put a plain-English
+   comment at the top of each file saying what it does and when to run it,
+   and test it on the local database first. Still commit the migration to the
+   repo as the historical record. Never run SQL on production yourself.
 
 ## Social image hosting (Buffer/Instagram)
 
