@@ -155,9 +155,10 @@ UI does anything; the real trigger is a push to `main`.
 ## Social image hosting (Buffer/Instagram)
 
 `POST /api/social-upload.php` (bearer token from `config/social-upload-auth.php`)
-stores a PNG/JPEG in `public/social/`, served at
+stores a PNG/JPEG (up to 8 MB) or MP4 video (up to 50 MB) in `public/social/`, served at
 `https://keralafounders.eu/social/<name>` — no listing, `noindex`, no script
-execution, never overwrites (409). Uploads live only on the server (git-ignored,
+execution, never overwrites (409). Videos need PHP `upload_max_filesize` ≥ 50M and
+`post_max_size` ≥ 60M on the host (cPanel → MultiPHP INI Editor). Uploads live only on the server (git-ignored,
 and deploys only copy, never delete), so they survive deploys. Log and rate
 limit state are in `config/social-upload.log` / `social-upload-rate.json`.
 **Rotate the token**: replace the value in the server's
