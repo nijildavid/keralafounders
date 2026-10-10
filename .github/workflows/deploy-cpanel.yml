@@ -3,6 +3,9 @@ name: Deploy to cPanel
 on:
   push:
     branches: [main]
+  # PRs run the lint job only, so a broken file is caught before merge.
+  pull_request:
+    branches: [main]
   workflow_dispatch: {}
 
 jobs:
@@ -21,6 +24,7 @@ jobs:
 
   deploy:
     needs: lint
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     env:
       CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
