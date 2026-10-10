@@ -740,14 +740,17 @@ footer{
   border-top:1px solid var(--line);
 }
 .company-detail-also{font-size:13px;margin-left:var(--space-2)}
-.company-detail-body{
-  display:grid;
-  grid-template-columns:minmax(0,2fr) minmax(180px,1fr);
-  gap:50px;
-  margin-top:var(--space-7);
-  padding-top:var(--space-6);
+.company-detail-about{margin-top:var(--space-6)}
+.company-detail-about .eyebrow{margin-bottom:var(--space-3)}
+.company-detail-about p{margin:0;color:var(--muted);line-height:1.7;max-width:70ch}
+.company-detail-facts{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:var(--space-5) var(--space-6);
+  margin:var(--space-7) 0 0;padding:var(--space-5) 0 0;
   border-top:1px solid var(--line);
 }
+.company-detail-facts dt{margin-bottom:var(--space-1)}
+.company-detail-facts dd{margin:0;color:var(--muted);line-height:1.5}
 .company-detail-focus{margin-top:var(--space-4) !important;font-size:15px}
 .company-detail .share-kit{margin-top:var(--space-7);padding-top:var(--space-6);border-top:1px solid var(--line)}
 .company-detail-foot{
@@ -761,19 +764,8 @@ footer{
 .company-detail-foot-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-5)}
 .company-detail-report{font-size:13px;text-decoration:underline;text-underline-offset:3px}
 .pill.small{padding:8px 14px;font-size:13px}
-.company-detail-body p{
-  color:var(--muted);
-  line-height:1.8;
-  max-width:680px;
-}
-.company-detail-side{
-  border-left:1px solid var(--line);
-  padding-left:28px;
-}
 @media(max-width:700px){
   .company-detail{padding:26px}
-  .company-detail-body{grid-template-columns:1fr;gap:28px}
-  .company-detail-side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:24px}
   .company-detail-top{flex-wrap:wrap}
   .company-detail-cta{margin-left:0;width:100%;max-width:none}
 }

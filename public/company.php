@@ -134,45 +134,31 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         <?php endif; ?>
       </div>
 
-      <div class="company-detail-body">
-        <div>
-          <div class="eyebrow">About the company</div>
-          <p><?= h($company['description']) ?></p>
-          <?php if (!empty($company['industry_detail'])): ?><p class="company-detail-focus"><strong>Focus:</strong> <?= h($company['industry_detail']) ?></p><?php endif; ?>
-        </div>
-        <div class="company-detail-side">
-          <?php if ($company['location']): ?>
-          <div class="side-section">
-            <div class="eyebrow">Address</div>
-            <p><?= h($company['location']) ?></p>
-          </div>
-          <?php endif; ?>
-          <?php if (!empty($company['instagram']) && ($company['instagram_confidence'] ?? null) !== 'medium'): ?>
-          <div class="side-section">
-            <div class="eyebrow">Instagram</div>
-            <a class="arrow" href="https://www.instagram.com/<?= rawurlencode($company['instagram']) ?>/" target="_blank" rel="noopener">@<?= h($company['instagram']) ?></a>
-          </div>
-          <?php endif; ?>
-          <?php if ($founders): ?>
-          <div class="side-section">
-            <div class="eyebrow">Founders</div>
-            <?php foreach ($founders as $f): ?>
-            <div class="founder-mini">
-              <div style="font-weight:600"><?= h($f['name']) ?></div>
-              <?php if (!empty($f['show_email']) && !empty($f['email'])): ?>
-              <a class="arrow" href="mailto:<?= h($f['email']) ?>" style="margin-top:2px;display:inline-block"><?= h($f['email']) ?></a>
-              <?php endif; ?>
-            </div>
-            <?php endforeach; ?>
-          </div>
-          <?php endif; ?>
-          <?php if ($guidanceGuideSlug): ?>
-          <div class="side-section">
-            <a class="arrow" style="margin-top:0" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($company['country']) ?> →</a>
-          </div>
-          <?php endif; ?>
-        </div>
+      <div class="company-detail-about">
+        <div class="eyebrow">About</div>
+        <p><?= h($company['description']) ?></p>
+        <?php if (!empty($company['industry_detail'])): ?><p class="company-detail-focus"><strong>Focus:</strong> <?= h($company['industry_detail']) ?></p><?php endif; ?>
       </div>
+
+      <?php
+        $showInsta = !empty($company['instagram']) && ($company['instagram_confidence'] ?? null) !== 'medium';
+        if ($company['location'] || $showInsta || $founders || $guidanceGuideSlug):
+      ?>
+      <dl class="company-detail-facts">
+        <?php if ($company['location']): ?>
+        <div><dt class="eyebrow">Address</dt><dd><?= h($company['location']) ?></dd></div>
+        <?php endif; ?>
+        <?php if ($showInsta): ?>
+        <div><dt class="eyebrow">Instagram</dt><dd><a class="arrow" style="margin:0" href="https://www.instagram.com/<?= rawurlencode($company['instagram']) ?>/" target="_blank" rel="noopener">@<?= h($company['instagram']) ?></a></dd></div>
+        <?php endif; ?>
+        <?php foreach ($founders as $f): ?>
+        <div><dt class="eyebrow">Founder</dt><dd><?= h($f['name']) ?><?php if (!empty($f['show_email']) && !empty($f['email'])): ?><br><a class="arrow" style="margin:0" href="mailto:<?= h($f['email']) ?>"><?= h($f['email']) ?></a><?php endif; ?></dd></div>
+        <?php endforeach; ?>
+        <?php if ($guidanceGuideSlug): ?>
+        <div><dt class="eyebrow">Starting up here?</dt><dd><a class="arrow" style="margin:0" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">Guide: <?= h($company['country']) ?> →</a></dd></div>
+        <?php endif; ?>
+      </dl>
+      <?php endif; ?>
 
       <?php if ($company['verified']):
         $kitBase = 'share-kit.php?id=' . rawurlencode($slug);
