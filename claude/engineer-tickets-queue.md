@@ -49,6 +49,19 @@ This file did not exist in the repo when the hourly run started on 7 Oct 2026. I
 
 **The one thing Nijil needs to do:** paste one company link and the Stories link into WhatsApp, look at the preview, and tell me yes or no to a branded image per company.
 
+### 8 Oct 2026 · Growth D1: homepage counters for crawlers and no-script visitors
+
+**State:** Fixed in code, draft pull request open. Not merged, not deployed.
+
+**What I checked in the repo (main at c486a87):** The four homepage numbers (Companies, Founders, Countries, Cities) were printed as `0` in the page itself and filled in only by JavaScript (`app.js`). So search crawlers and visitors without JavaScript saw 0, which matches what the agent fetches saw. That is now confirmed.
+
+**What I changed:** `public/index.php` now prints the real numbers on the server, using the same rules as the script (approved companies, their founders, distinct countries and cities). The script still runs and shows the same figures.
+
+**Tested:** PHP syntax is clean. On a local test database (3 companies) the page source shows 3/3/3/3 without running any script.
+
+**Unverified:** the live site, the live numbers, and what Google shows for the page.
+
+**The one thing Nijil needs to do:** After deploy, open the live homepage source (view-source) and check the four numbers are not 0 and match the page you see.
 ### 8 Oct 2026 · Growth C7: do the Add-your-company and Claim forms keep emails hidden?
 
 **State:** Found one real bug and fixed it. Pull request open (draft), not merged or deployed.
