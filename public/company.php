@@ -165,24 +165,48 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         $badgeSnippet = '<a href="' . $canonicalUrl . '"><img src="https://keralafounders.eu/' . $kitBase . '&type=badge" alt="Featured on Kerala Founders" width="220" height="56"></a>'; ?>
       <div class="share-kit">
         <div class="eyebrow">Share kit</div>
-        <p class="muted" style="margin:6px 0 10px">Featured on Kerala Founders. Post these or add the badge to your own website.</p>
-        <p style="margin:0 0 10px"><img src="<?= h($kitBase) ?>&amp;type=badge" alt="Featured on Kerala Founders badge" width="220" height="56"></p>
-        <p style="margin:0 0 10px"><a class="pill light" href="<?= h($kitBase) ?>&amp;type=square" download>Square image</a> <a class="pill light" href="<?= h($kitBase) ?>&amp;type=story" download>Story image</a></p>
-        <label class="muted" for="kitSnippet" style="font-size:14px">Badge code for your website</label>
-        <textarea id="kitSnippet" readonly rows="3" style="width:100%;font-family:monospace;font-size:13px"><?= h($badgeSnippet) ?></textarea>
+        <p class="muted" style="margin:6px 0 var(--space-4)">Featured on Kerala Founders. Add this badge to your own website.</p>
+        <p style="margin:0 0 var(--space-4)"><img src="<?= h($kitBase) ?>&amp;type=badge" alt="Featured on Kerala Founders badge" width="220" height="56"></p>
+        <div class="code-box">
+          <code id="kitSnippet"><?= h($badgeSnippet) ?></code>
+          <button type="button" class="copy-btn" id="kitCopyBtn" aria-label="Copy badge code" title="Copy badge code" data-kf-event="share_click" data-kf-label="copy_badge_code">
+            <svg class="copy-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg class="check-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <span class="copy-msg" id="kitCopyMsg" role="status" aria-live="polite"></span>
+        </div>
       </div>
+      <script>
+      (function(){
+        var btn=document.getElementById('kitCopyBtn'),code=document.getElementById('kitSnippet'),msg=document.getElementById('kitCopyMsg');
+        if(!btn||!code)return;
+        function done(ok){
+          msg.textContent=ok?'Copied':'Press Ctrl+C to copy';
+          if(ok){btn.classList.add('is-copied');}
+          setTimeout(function(){btn.classList.remove('is-copied');msg.textContent='';},2000);
+        }
+        function fallback(){
+          var r=document.createRange();r.selectNodeContents(code);
+          var sel=window.getSelection();sel.removeAllRanges();sel.addRange(r);
+          var ok=false;try{ok=document.execCommand('copy');}catch(e){}
+          done(ok);
+        }
+        btn.addEventListener('click',function(){
+          var text=code.textContent;
+          if(navigator.clipboard&&window.isSecureContext){
+            navigator.clipboard.writeText(text).then(function(){done(true);},fallback);
+          }else{fallback();}
+        });
+      })();
+      </script>
       <?php endif; ?>
 
       <div class="company-detail-foot">
-        <p class="company-detail-foot-claim">
-          <?php if (!$company['verified']): ?>
-          <strong>Is this your business?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a>
-          <?php elseif ($tier !== 'owner'): ?>
-          <strong>Are you the owner?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a>
-          <?php else: ?>
-          <strong>Spot something outdated?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Suggest an edit →</a>
-          <?php endif; ?>
-        </p>
+        <?php if (!$company['verified']): ?>
+        <p class="company-detail-foot-claim"><strong>Is this your business?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Claim this listing →</a></p>
+        <?php elseif ($tier === 'owner'): ?>
+        <p class="company-detail-foot-claim"><strong>Spot something outdated?</strong> <a class="arrow" href="claim.php?id=<?= rawurlencode($slug) ?>">Suggest an edit →</a></p>
+        <?php endif; ?>
         <div class="company-detail-foot-actions">
           <a class="muted company-detail-report" href="contact.php?topic=remove&amp;listing=<?= rawurlencode($slug) ?>">Request a correction or removal</a>
           <a class="company-detail-share" href="https://wa.me/?text=<?= rawurlencode($shareText) ?>" target="_blank" rel="noopener" data-kf-event="share_click" data-kf-share="whatsapp">Share on WhatsApp</a>

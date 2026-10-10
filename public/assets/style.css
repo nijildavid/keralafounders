@@ -765,6 +765,17 @@ footer{
 .company-detail-facts dt{margin-bottom:var(--space-1)}
 .company-detail-facts dd{margin:0;color:var(--muted);line-height:1.5}
 .company-detail-focus{margin-top:var(--space-4) !important;font-size:15px}
+.code-box{position:relative;background:var(--soft);border:1px solid var(--line);border-radius:var(--radius-sm);padding:var(--space-3) 52px var(--space-3) var(--space-4)}
+.code-box code{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;line-height:1.6;color:var(--ink);word-break:break-all;user-select:all}
+.copy-btn{position:absolute;top:var(--space-2);right:var(--space-2);display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--line);border-radius:var(--radius-sm);background:#fff;color:var(--ink);cursor:pointer}
+.copy-btn:hover{border-color:var(--ink)}
+.copy-btn:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+.copy-btn .check-icon{display:none}
+.copy-btn.is-copied{color:var(--primary);border-color:var(--primary)}
+.copy-btn.is-copied .copy-icon{display:none}
+.copy-btn.is-copied .check-icon{display:block}
+.copy-msg{position:absolute;right:0;top:-26px;font-size:12px;font-weight:700;color:var(--primary)}
+.copy-msg:empty{display:none}
 .company-detail .share-kit{margin-top:var(--space-7);padding-top:var(--space-6);border-top:1px solid var(--line)}
 .company-detail-foot{
   display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;
@@ -774,7 +785,7 @@ footer{
 }
 .company-detail-foot p{margin:0;font-size:15px;display:flex;flex-wrap:wrap;align-items:baseline;gap:var(--space-1) var(--space-2)}
 .company-detail-foot .arrow{margin:0;font-size:14px}
-.company-detail-foot-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-5)}
+.company-detail-foot-actions{margin-left:auto;display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-5)}
 .company-detail-report{font-size:13px;text-decoration:underline;text-underline-offset:3px}
 .company-detail-share{font-size:13px;font-weight:700;color:var(--accent2)}
 @media(max-width:700px){
