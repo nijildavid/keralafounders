@@ -49,6 +49,24 @@ This file did not exist in the repo when the hourly run started on 7 Oct 2026. I
 
 **The one thing Nijil needs to do:** paste one company link and the Stories link into WhatsApp, look at the preview, and tell me yes or no to a branded image per company.
 
+### 7 Oct 2026 · Growth A6: Berlin import, verify after the SQL
+
+**State:** Checked, notes only. The card's old target (4 new pages, Berlin count 10) no longer applies, because the import was cut down to KOKOLAND only before you ran it. Pull request open (notes only, no site change).
+
+**What I checked (repo main at c486a87, and the live site):**
+- The import file now adds one record: KOKOLAND (approved, not Verified, no founders, no street address or phone). It deliberately leaves out Berlin Kerala Samajam, the Kerala Cultural Association of Berlin, WMC Berlin and Kombans FC Berlin.
+- Live: the KOKOLAND page returns 200, shows "Not yet verified", and is in the sitemap (267 URLs in total).
+- Live: the Kombans FC Berlin page returns 404 (hidden, as intended) and is not in the sitemap.
+- The page address `company.php?id=kokoland-berlin` is the one the sitemap uses.
+
+**Unverified:**
+- The approved Berlin count (expected 7). The directory list is built in the browser, so I could not read the number from the page.
+- That no founders, addresses or phones are stored: I only read the SQL file, not the live database.
+- Whether the live database really matches the file (I did not touch it).
+
+**Knock-on:** the Instagram post and association asks assumed 10 Berlin companies. With 7 they need the new number (cards G2, G4).
+
+**The one thing Nijil needs to do:** open the Berlin filter on the live directory, confirm it shows 7 companies, then tell me to close this card and fix the Berlin number in the dependent drafts.
 ### 8 Oct 2026 · Growth C4: Instagram link-in-bio page with tracking
 
 **State:** Built, pull request open (draft). Not merged, not deployed.
