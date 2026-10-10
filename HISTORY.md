@@ -169,6 +169,13 @@ for Buffer. Bearer-token auth, content-checked PNG/JPEG only, 8 MB cap,
 JPEG EXIF stripped, no overwrites, hourly rate limit, upload log.
 
 
+## 2026-10-10 — MP4 uploads for Reels (Buffer)
+
+`social-upload.php` now also accepts real MP4 videos (up to 50 MB; checked by
+content, not extension) and `public/social/.htaccess` serves `.mp4` as
+`video/mp4`, uncompressed, with Content-Length and range support. Images
+unchanged. Needs PHP `upload_max_filesize` ≥ 50M / `post_max_size` ≥ 60M.
+
 ## 2026-10-07 — Google Analytics events (ticket A1)
 
 Added `public/assets/analytics.js` (loaded from `head-common.php`). Events are
