@@ -38,21 +38,21 @@ $activeAdminPage = 'dashboard';
 <p class="muted">Overview of submissions, claims and the outreach/verification pipeline.</p>
 <?php include __DIR__ . '/admin-nav.php'; ?>
 <div class="stats" style="margin-top:24px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
-  <div class="stat"><strong><?= $totalCompanies ?></strong><span>Companies</span></div>
-  <div class="stat"><strong><?= $pendingCompanies ?></strong><span>Pending review</span></div>
-  <div class="stat"><strong><?= $verifiedCompanies ?></strong><span>Verified</span></div>
-  <div class="stat"><strong><?= $pendingClaims ?></strong><span>Pending claims</span></div>
+  <a class="stat stat-link" href="admin.php"><strong><?= $totalCompanies ?></strong><span>Companies</span></a>
+  <a class="stat stat-link" href="admin.php?status=pending"><strong><?= $pendingCompanies ?></strong><span>Pending review</span></a>
+  <a class="stat stat-link" href="admin.php?verified=verified"><strong><?= $verifiedCompanies ?></strong><span>Verified</span></a>
+  <a class="stat stat-link" href="admin-claims.php"><strong><?= $pendingClaims ?></strong><span>Pending claims</span></a>
 </div></div>
 <div class="stats" style="margin-top:16px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
-  <div class="stat"><strong><?= $contactsFound ?></strong><span>Contact emails found</span></div>
-  <div class="stat"><strong><?= $emailedCount ?></strong><span>Verification emails sent</span></div>
-  <div class="stat"><strong><?= $toEmailCount ?></strong><span>Found, not yet emailed</span></div>
-  <div class="stat"><strong><?= $ownerClaimed ?></strong><span>Owner confirmed</span></div>
+  <a class="stat stat-link" href="admin.php?outreach=found"><strong><?= $contactsFound ?></strong><span>Contact emails found</span></a>
+  <a class="stat stat-link" href="admin.php?outreach=sent"><strong><?= $emailedCount ?></strong><span>Verification emails sent</span></a>
+  <a class="stat stat-link" href="admin.php?outreach=ready"><strong><?= $toEmailCount ?></strong><span>Found, not yet emailed</span></a>
+  <a class="stat stat-link" href="admin.php?verified=owner"><strong><?= $ownerClaimed ?></strong><span>Owner confirmed</span></a>
 </div></div>
 <div class="stats" style="margin-top:16px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
-  <div class="stat"><strong><?= $verifiedCompanies ?></strong><span>Tier 1 · Verified or Owner confirmed</span></div>
-  <div class="stat"><strong><?= $confirmedCompanies ?></strong><span>Tier 2 · Contact confirmed</span></div>
-  <div class="stat"><strong><?= $unconfirmedCompanies ?></strong><span>Tier 3 · Needs a contact point</span></div>
+  <a class="stat stat-link" href="admin.php?verified=verified"><strong><?= $verifiedCompanies ?></strong><span>Tier 1 · Verified or Owner confirmed</span></a>
+  <a class="stat stat-link" href="admin.php?verified=confirmed"><strong><?= $confirmedCompanies ?></strong><span>Tier 2 · Contact confirmed</span></a>
+  <a class="stat stat-link" href="admin.php?verified=gap"><strong><?= $unconfirmedCompanies ?></strong><span>Tier 3 · Needs a contact point</span></a>
   <div class="stat"><strong><?= $totalCompanies ? round(100 * ($verifiedCompanies + $confirmedCompanies) / $totalCompanies) : 0 ?>%</strong><span>Have a verified or sourced contact</span></div>
 </div></div>
 <div style="margin-top:24px;display:flex;gap:16px;flex-wrap:wrap">

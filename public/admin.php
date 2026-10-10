@@ -13,11 +13,11 @@ if (!in_array($statusFilter, ['all', 'pending', 'approved'], true)) {
     $statusFilter = 'all';
 }
 $verifiedFilter = $_GET['verified'] ?? 'all';
-if (!in_array($verifiedFilter, ['all', 'verified', 'unverified', 'confirmed', 'gap'], true)) {
+if (!in_array($verifiedFilter, ['all', 'verified', 'owner', 'unverified', 'confirmed', 'gap'], true)) {
     $verifiedFilter = 'all';
 }
 $outreachFilter = $_GET['outreach'] ?? 'all';
-if (!in_array($outreachFilter, ['all', 'ready', 'sent', 'none'], true)) {
+if (!in_array($outreachFilter, ['all', 'found', 'ready', 'sent', 'none'], true)) {
     $outreachFilter = 'all';
 }
 $claimFilter = $_GET['claim'] ?? 'all';
@@ -25,6 +25,16 @@ if (!in_array($claimFilter, ['all', 'pending', 'any', 'none'], true)) {
     $claimFilter = 'all';
 }
 $q = trim((string)($_GET['q'] ?? ''));
+
+// The Owner confirmed filter needs the owner_confirmed column (added by
+// migration-owner-confirmed-2026-10-10.sql); fall back to "all" if it is missing.
+if ($verifiedFilter === 'owner') {
+    try {
+        $db->query('SELECT owner_confirmed FROM companies LIMIT 0');
+    } catch (PDOException $e) {
+        $verifiedFilter = 'all';
+    }
+}
 
 // Sortable columns. Keys are the only values ever accepted from the URL;
 // the SQL fragments are fixed strings, never built from user input.
@@ -56,6 +66,8 @@ if ($statusFilter !== 'all') {
 }
 if ($verifiedFilter === 'verified') {
     $where[] = 'c.verified = 1';
+} elseif ($verifiedFilter === 'owner') {
+    $where[] = 'c.verified = 1 AND c.owner_confirmed = 1';
 } elseif ($verifiedFilter === 'unverified') {
     $where[] = 'c.verified = 0';
 } elseif ($verifiedFilter === 'confirmed' || $verifiedFilter === 'gap') {
@@ -63,7 +75,9 @@ if ($verifiedFilter === 'verified') {
     $confirmedSql = "(COALESCE(c.contact_email, '') <> '' AND COALESCE(c.email_source_url, '') <> '') OR (COALESCE(c.instagram, '') <> '' AND c.instagram_confidence = 'high')";
     $where[] = $verifiedFilter === 'confirmed' ? "c.verified = 0 AND ($confirmedSql)" : "c.verified = 0 AND NOT ($confirmedSql)";
 }
-if ($outreachFilter === 'ready') {
+if ($outreachFilter === 'found') {
+    $where[] = 'c.contact_email IS NOT NULL';
+} elseif ($outreachFilter === 'ready') {
     $where[] = "c.contact_email IS NOT NULL AND c.outreach_status = 'not_contacted'";
 } elseif ($outreachFilter === 'sent') {
     $where[] = "c.outreach_status = 'sent'";
@@ -307,6 +321,7 @@ $activeAdminPage = 'submissions';
     <select class="select" id="adm-verified" name="verified">
       <option value="all"<?= $verifiedFilter === 'all' ? ' selected' : '' ?>>All</option>
       <option value="verified"<?= $verifiedFilter === 'verified' ? ' selected' : '' ?>>Verified</option>
+      <option value="owner"<?= $verifiedFilter === 'owner' ? ' selected' : '' ?>>Owner confirmed</option>
       <option value="unverified"<?= $verifiedFilter === 'unverified' ? ' selected' : '' ?>>Not yet verified</option>
       <option value="confirmed"<?= $verifiedFilter === 'confirmed' ? ' selected' : '' ?>>Contact confirmed (tier 2)</option>
       <option value="gap"<?= $verifiedFilter === 'gap' ? ' selected' : '' ?>>Needs a contact point (tier 3)</option>
@@ -316,6 +331,7 @@ $activeAdminPage = 'submissions';
     <label for="adm-outreach">Contact</label>
     <select class="select" id="adm-outreach" name="outreach">
       <option value="all"<?= $outreachFilter === 'all' ? ' selected' : '' ?>>Any</option>
+      <option value="found"<?= $outreachFilter === 'found' ? ' selected' : '' ?>>Email found</option>
       <option value="ready"<?= $outreachFilter === 'ready' ? ' selected' : '' ?>>Ready to email</option>
       <option value="sent"<?= $outreachFilter === 'sent' ? ' selected' : '' ?>>Emailed</option>
       <option value="none"<?= $outreachFilter === 'none' ? ' selected' : '' ?>>No email found</option>
@@ -411,6 +427,11 @@ $activeAdminPage = 'submissions';
 
   <div class="adm-actions">
     <a class="pill light" href="admin-edit.php?id=<?= $id ?>">Edit</a>
+    <?php if ($c['status'] === 'approved'): ?>
+    <a class="pill light" href="company.php?id=<?= h(rawurlencode((string)$c['slug'])) ?>" target="_blank" rel="noopener">View live listing <span aria-hidden="true">&#8599;</span><span class="sr-only">(opens in a new tab)</span></a>
+    <?php else: ?>
+    <span class="adm-muted">Not public until approved</span>
+    <?php endif; ?>
     <?php if ($c['status'] !== 'approved'): ?>
     <form method="post" action="api/admin-action.php">
       <?= admin_hidden_fields($id, 'approve', $openUrl, $csrfToken) ?>

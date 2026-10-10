@@ -1014,3 +1014,6 @@ footer{
 .follow-share[hidden]{display:none}
 .follow-share-lead{font-weight:600;margin:0 0 12px}
 .follow-share-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+
+/* Admin dashboard: stat tiles that link to the matching company list */
+a.stat-link{display:block;color:inherit;text-decoration:none}a.stat-link:hover{background:var(--soft,rgba(0,0,0,.03))}a.stat-link:hover strong{text-decoration:underline}a.stat-link:focus-visible{outline:2px solid var(--accent2);outline-offset:-2px}
