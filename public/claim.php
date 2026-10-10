@@ -195,7 +195,7 @@ form.onsubmit=async e=>{
   e.preventDefault();
   if(!validateForm(form))return;
   const fd=new FormData(form);
-  const names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...fd.getAll('founderShow[]')];
+  const names=[...fd.getAll('founderName[]')],emails=[...fd.getAll('founderEmail[]')],lins=[...fd.getAll('founderLinkedin[]')],shows=[...document.querySelectorAll('input[name="founderShow[]"]')].map(c=>c.checked?'yes':'no');
   const branches=[...branchWrap.querySelectorAll('input:checked')].map(x=>x.value);
   const item={
     slug:<?= json_encode($slug) ?>,
