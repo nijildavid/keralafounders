@@ -20,19 +20,21 @@ $place = implode(', ', array_filter([$c['city'], $c['country']]));
 if ($type === 'badge') {
     header('Content-Type: image/svg+xml; charset=utf-8');
     echo '<svg xmlns="http://www.w3.org/2000/svg" width="220" height="56" viewBox="0 0 220 56" role="img" aria-label="Featured on Kerala Founders">'
-        . '<rect width="220" height="56" rx="8" fill="#0f5132"/>'
-        . '<circle cx="28" cy="28" r="12" fill="#fff"/><path d="M22 28l4 4 8-9" fill="none" stroke="#0f5132" stroke-width="3"/>'
-        . '<text x="50" y="24" font-family="Arial,sans-serif" font-size="12" fill="#cfe8da">Featured on</text>'
-        . '<text x="50" y="42" font-family="Arial,sans-serif" font-size="16" font-weight="bold" fill="#fff">Kerala Founders</text></svg>';
+        . '<rect x="0.5" y="0.5" width="219" height="55" rx="8" fill="#f8faf7" stroke="#d1d5db"/>'
+        . '<circle cx="28" cy="28" r="12" fill="#0f5132"/><path d="M22 28l4 4 8-9" fill="none" stroke="#fff" stroke-width="3"/>'
+        . '<text x="50" y="24" font-family="Inter,Arial,sans-serif" font-size="12" fill="#6b7280">Featured on</text>'
+        . '<text x="50" y="42" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="bold" fill="#1f2937">Kerala Founders</text></svg>';
     exit;
 }
 
-$font = null;
-foreach (['/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', '/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf',
+// Site style: Inter (bundled so it looks the same on any server), cream background, dark ink text, green link.
+$fontBold = null;
+foreach ([__DIR__ . '/assets/fonts/Inter-Bold.otf', '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf', '/usr/share/fonts/dejavu/DejaVuSans-Bold.ttf',
           '/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf', '/usr/share/fonts/liberation/LiberationSans-Bold.ttf'] as $f) {
-    if (is_file($f)) { $font = $f; break; }
+    if (is_file($f)) { $fontBold = $f; break; }
 }
-if (!function_exists('imagettftext') || $font === null) {
+$fontMed = is_file(__DIR__ . '/assets/fonts/Inter-Medium.otf') ? __DIR__ . '/assets/fonts/Inter-Medium.otf' : $fontBold;
+if (!function_exists('imagettftext') || $fontBold === null) {
     http_response_code(404);
     header('Content-Type: text/plain; charset=utf-8');
     exit('Image not available');
@@ -41,13 +43,14 @@ if (!function_exists('imagettftext') || $font === null) {
 $w = 1080;
 $h = $type === 'story' ? 1920 : 1080;
 $im = imagecreatetruecolor($w, $h);
-$green = imagecolorallocate($im, 15, 81, 50);
-$white = imagecolorallocate($im, 255, 255, 255);
-$soft = imagecolorallocate($im, 207, 232, 218);
-imagefilledrectangle($im, 0, 0, $w, $h, $green);
+$cream = imagecolorallocate($im, 248, 250, 247);   // --cream
+$ink = imagecolorallocate($im, 31, 41, 55);        // --ink
+$muted = imagecolorallocate($im, 107, 114, 128);   // --muted
+$green = imagecolorallocate($im, 15, 81, 50);      // --primary
+imagefilledrectangle($im, 0, 0, $w, $h, $cream);
 
-// Draw text centred, wrapping to the width of the card.
-$draw = function (string $text, int $size, $color, int $y) use ($im, $font, $w) {
+// Draw text centred, wrapping to the width of the card. Returns the next free y.
+$draw = function (string $text, int $size, $color, int $y, string $font) use ($im, $w) {
     $lines = [];
     $line = '';
     foreach (explode(' ', $text) as $word) {
@@ -59,16 +62,18 @@ $draw = function (string $text, int $size, $color, int $y) use ($im, $font, $w) 
     foreach ($lines as $l) {
         $box = imagettfbbox($size, 0, $font, $l);
         imagettftext($im, $size, 0, (int)(($w - ($box[2] - $box[0])) / 2), $y, $color, $font, $l);
-        $y += (int)($size * 1.6);
+        $y += (int)($size * 1.4);
     }
     return $y;
 };
-$top = (int)($h / 2) - 220;
-$y = $draw('Featured on', 40, $soft, $top);
-$y = $draw('Kerala Founders', 64, $white, $y + 10);
-$y = $draw($c['name'], 72, $white, $y + 90);
-if ($place !== '') { $y = $draw($place, 40, $soft, $y + 20); }
-$draw('keralafounders.eu', 36, $soft, $h - 120);
+// Stories keep text clear of Instagram's top and bottom overlays (about 250px / 340px).
+$top = (int)($h / 2) - 230;
+$y = $draw('Featured on', 36, $muted, $top, $fontMed);
+$y = $draw('Kerala Founders', 60, $ink, $y + 44, $fontBold);
+$nameSize = mb_strlen($c['name']) > 24 ? 54 : 72;   // long names get a smaller size so they never reach the link
+$y = $draw($c['name'], $nameSize, $ink, $y + 90, $fontBold);
+if ($place !== '') { $y = $draw($place, 38, $muted, $y + 16, $fontMed); }
+$draw('keralafounders.eu', 40, $green, $h - ($type === 'story' ? 360 : 120), $fontBold);
 
 header('Content-Type: image/png');
 header('Cache-Control: public, max-age=86400');
