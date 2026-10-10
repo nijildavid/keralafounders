@@ -281,6 +281,43 @@ function admin_claim_badge(array $c): string
     return '<span class="adm-muted">None</span>';
 }
 
+// Turns stored free-text into a safe external link, or plain escaped text if
+// it doesn't look like a web address. Only http(s) is ever linked, so a stored
+// "javascript:" value can never become a clickable link.
+function admin_ext_link(?string $value, string $kind = 'url'): string
+{
+    $v = trim((string)$value);
+    if ($v === '') {
+        return '';
+    }
+    $href = null;
+    if ($kind === 'email') {
+        if (filter_var($v, FILTER_VALIDATE_EMAIL)) {
+            $href = 'mailto:' . $v;
+        }
+    } elseif ($kind === 'instagram') {
+        $handle = ltrim($v, '@');
+        if (preg_match('/^[A-Za-z0-9._]{1,30}$/', $handle)) {
+            $href = 'https://www.instagram.com/' . $handle . '/';
+            $v = '@' . $handle;
+        }
+    } else {
+        if (preg_match('#^https?://\S+$#i', $v)) {
+            $href = $v;
+        } elseif (preg_match('#^(www\.)?[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+(/\S*)?$#', $v) || preg_match('#^linkedin\.com/\S+$#i', $v)) {
+            $href = 'https://' . $v;
+        }
+    }
+    if ($href === null) {
+        return h($v);
+    }
+    if ($kind === 'email') {
+        return '<a href="' . h($href) . '">' . h($v) . '</a>';
+    }
+    return '<a href="' . h($href) . '" target="_blank" rel="noopener noreferrer">' . h($v)
+        . ' <span aria-hidden="true">&#8599;</span><span class="sr-only">(opens in a new tab)</span></a>';
+}
+
 function admin_hidden_fields(int $id, string $action, string $redirect, string $csrf): string
 {
     return '<input type="hidden" name="id" value="' . $id . '">'
@@ -458,11 +495,11 @@ $activeAdminPage = 'submissions';
     <p><?= h($c['description']) ?></p>
     <dl class="adm-dl">
       <dt>Industry</dt><dd><?= h($c['industry']) ?><?= $c['business_type'] !== '' ? ' · ' . h($c['business_type']) : '' ?><?= $c['industry_detail'] ? ' · ' . h($c['industry_detail']) : '' ?></dd>
-      <?php if ($c['website']): ?><dt>Website</dt><dd><?= h($c['website']) ?></dd><?php endif; ?>
+      <?php if ($c['website']): ?><dt>Website</dt><dd><?= admin_ext_link($c['website']) ?></dd><?php endif; ?>
       <?php if ($c['founded_year']): ?><dt>Founded</dt><dd><?= (int)$c['founded_year'] ?></dd><?php endif; ?>
       <?php if ($c['size']): ?><dt>Size</dt><dd><?= h($c['size']) ?></dd><?php endif; ?>
       <?php if ($c['kerala_connection']): ?><dt>Kerala link</dt><dd><?= h($c['kerala_connection']) ?><?= $c['kerala_district'] ? ' (' . h($c['kerala_district']) . ')' : '' ?></dd><?php endif; ?>
-      <?php if ($c['instagram']): ?><dt>Instagram</dt><dd>@<?= h($c['instagram']) ?><?php if (($c['instagram_source'] ?? null) === 'research' && ($c['instagram_confidence'] ?? null) === 'medium'): ?> <span class="adm-badge adm-badge-attn">Needs review</span><?php endif; ?></dd><?php endif; ?>
+      <?php if ($c['instagram']): ?><dt>Instagram</dt><dd><?= admin_ext_link($c['instagram'], 'instagram') ?><?php if (($c['instagram_source'] ?? null) === 'research' && ($c['instagram_confidence'] ?? null) === 'medium'): ?> <span class="adm-badge adm-badge-attn">Needs review</span><?php endif; ?></dd><?php endif; ?>
       <dt>Stories / podcast</dt><dd><?= $c['contact_ok_podcast_stories'] ? 'OK to contact' : 'Not opted in' ?></dd>
       <dt>Submitted</dt><dd><?= h(date('j M Y, H:i', strtotime((string)$c['created_at']))) ?></dd>
     </dl>
@@ -474,8 +511,8 @@ $activeAdminPage = 'submissions';
     <ul class="adm-list">
       <?php foreach ($founders as $f): ?>
       <li><strong><?= h($f['name']) ?></strong>
-        <?php if ($f['email']): ?><div class="meta"><?= h($f['email']) ?><?= $f['show_email'] ? ' · shown publicly' : ' · private' ?></div><?php endif; ?>
-        <?php if ($f['linkedin']): ?><div class="meta"><?= h($f['linkedin']) ?></div><?php endif; ?>
+        <?php if ($f['email']): ?><div class="meta"><?= admin_ext_link($f['email'], 'email') ?><?= $f['show_email'] ? ' · shown publicly' : ' · private' ?></div><?php endif; ?>
+        <?php if ($f['linkedin']): ?><div class="meta"><?= admin_ext_link($f['linkedin']) ?></div><?php endif; ?>
       </li>
       <?php endforeach; ?>
     </ul>
@@ -493,11 +530,11 @@ $activeAdminPage = 'submissions';
     <h3 id="adm-s-contact-<?= $id ?>">Contact &amp; outreach</h3>
     <?php if (!$hasEmail): ?><p class="adm-muted">No email found yet.</p><?php else: ?>
     <dl class="adm-dl">
-      <dt>Email</dt><dd><?= h($c['contact_email']) ?></dd>
+      <dt>Email</dt><dd><?= admin_ext_link($c['contact_email'], 'email') ?></dd>
       <?php if ($c['email_type']): ?><dt>Type</dt><dd><?= h($c['email_type']) ?></dd><?php endif; ?>
       <?php if ($c['email_source']): ?><dt>Source</dt><dd><?= h($c['email_source']) ?></dd><?php endif; ?>
       <?php if ($c['email_confidence']): ?><dt>Confidence</dt><dd><?= h($c['email_confidence']) ?></dd><?php endif; ?>
-      <?php if ($c['email_source_url']): ?><dt>Source URL</dt><dd><?= h($c['email_source_url']) ?></dd><?php endif; ?>
+      <?php if ($c['email_source_url']): ?><dt>Source URL</dt><dd><?= admin_ext_link($c['email_source_url']) ?></dd><?php endif; ?>
       <dt>Outreach</dt><dd><?= h(str_replace('_', ' ', $c['outreach_status'])) ?></dd>
       <?php if ($c['outreach_sent_at']): ?><dt>Emailed on</dt><dd><?= h(date('j M Y', strtotime((string)$c['outreach_sent_at']))) ?></dd><?php endif; ?>
       <?php if ($c['outreach_responded_at']): ?><dt>Responded on</dt><dd><?= h(date('j M Y', strtotime((string)$c['outreach_responded_at']))) ?></dd><?php endif; ?>

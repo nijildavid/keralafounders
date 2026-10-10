@@ -1017,3 +1017,6 @@ footer{
 
 /* Admin dashboard: stat tiles that link to the matching company list */
 a.stat-link{display:block;color:inherit;text-decoration:none}a.stat-link:hover{background:var(--soft,rgba(0,0,0,.03))}a.stat-link:hover strong{text-decoration:underline}a.stat-link:focus-visible{outline:2px solid var(--accent2);outline-offset:-2px}
+/* Admin drawer: contact details that open in mail / a new tab */
+.adm-drawer-body .adm-dl a,.adm-drawer-body .adm-list .meta a{color:var(--accent2);text-decoration:underline;text-underline-offset:2px}
+.adm-drawer-body .adm-list .meta{overflow-wrap:anywhere}
