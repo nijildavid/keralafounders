@@ -13,7 +13,7 @@ if (!in_array($statusFilter, ['all', 'pending', 'approved'], true)) {
     $statusFilter = 'all';
 }
 $verifiedFilter = $_GET['verified'] ?? 'all';
-if (!in_array($verifiedFilter, ['all', 'verified', 'unverified'], true)) {
+if (!in_array($verifiedFilter, ['all', 'verified', 'unverified', 'confirmed', 'gap'], true)) {
     $verifiedFilter = 'all';
 }
 $outreachFilter = $_GET['outreach'] ?? 'all';
@@ -58,6 +58,10 @@ if ($verifiedFilter === 'verified') {
     $where[] = 'c.verified = 1';
 } elseif ($verifiedFilter === 'unverified') {
     $where[] = 'c.verified = 0';
+} elseif ($verifiedFilter === 'confirmed' || $verifiedFilter === 'gap') {
+    // Fixed SQL, mirrors company_contact_tier() in assets/render-helpers.php.
+    $confirmedSql = "(COALESCE(c.contact_email, '') <> '' AND COALESCE(c.email_source_url, '') <> '') OR (COALESCE(c.instagram, '') <> '' AND c.instagram_confidence = 'high')";
+    $where[] = $verifiedFilter === 'confirmed' ? "c.verified = 0 AND ($confirmedSql)" : "c.verified = 0 AND NOT ($confirmedSql)";
 }
 if ($outreachFilter === 'ready') {
     $where[] = "c.contact_email IS NOT NULL AND c.outreach_status = 'not_contacted'";
@@ -304,6 +308,8 @@ $activeAdminPage = 'submissions';
       <option value="all"<?= $verifiedFilter === 'all' ? ' selected' : '' ?>>All</option>
       <option value="verified"<?= $verifiedFilter === 'verified' ? ' selected' : '' ?>>Verified</option>
       <option value="unverified"<?= $verifiedFilter === 'unverified' ? ' selected' : '' ?>>Not yet verified</option>
+      <option value="confirmed"<?= $verifiedFilter === 'confirmed' ? ' selected' : '' ?>>Contact confirmed (tier 2)</option>
+      <option value="gap"<?= $verifiedFilter === 'gap' ? ' selected' : '' ?>>Needs a contact point (tier 3)</option>
     </select>
   </div>
   <div class="adm-filter">

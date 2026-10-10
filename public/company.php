@@ -97,7 +97,7 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
     </div>
     <?php else: ?>
     <div class="company-detail">
-      <span id="companyVerified" style="position:absolute;top:24px;right:24px"><?= $company['verified'] ? verified_badge_strong_html() : verified_chip_html(false) ?></span>
+      <span id="companyVerified" style="position:absolute;top:24px;right:24px"><?= $company['verified'] ? verified_badge_strong_html() : verified_chip_html(company_contact_tier($company)) ?></span>
       <div class="company-detail-top">
         <div class="logo company-detail-logo"><?= h(initials($company['name'])) ?></div>
         <div>
