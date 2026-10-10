@@ -1027,3 +1027,7 @@ a.stat-link{display:block;color:inherit;text-decoration:none}a.stat-link:hover{b
 .adm-qbtn:hover{background:var(--cream)}
 .adm-qbtn-ok{border-color:var(--accent2);color:var(--accent2)}
 .adm-qbtn:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+/* Make the dashboard tiles read as links without hovering */
+a.stat-link span::after{content:" \2192";color:var(--accent2);font-weight:600}
+a.stat-link{cursor:pointer}
+a.stat-link:hover{background:var(--cream)}
