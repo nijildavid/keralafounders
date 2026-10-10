@@ -24,6 +24,7 @@ foreach ($companyRows as $row) {
         'description' => $row['description'],
         'website' => $row['website'],
         'verified' => (bool)$row['verified'],
+        'tier' => company_contact_tier($row),
     ];
 }
 

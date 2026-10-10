@@ -19,10 +19,16 @@
     }[m]));
   }
 
-  function verifiedChip(v){
-    return v
-      ? '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)">Verified</span>'
-      : '<span class="chip" style="color:#9a3412;border-color:#9a3412" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
+  // tier: 'verified' | 'confirmed' | 'unconfirmed' (a bool is still accepted: true = verified)
+  function verifiedChip(tier){
+    if (tier === true) tier = 'verified';
+    if (tier === 'verified') {
+      return '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)">Verified</span>';
+    }
+    if (tier === 'confirmed') {
+      return '<span class="chip" style="color:#1e40af;border-color:#1e40af" title="We found a working contact on this company\'s own website or profile. The owner has not verified the listing yet.">Contact confirmed</span>';
+    }
+    return '<span class="chip" style="color:#9a3412;border-color:#9a3412" title="If you own this company, email hello@keralafounders.eu to get verified.">Not yet verified</span>';
   }
 
   function companyCard(c){
@@ -37,7 +43,7 @@
           <span class="chip">${esc(c.country)}</span>
           <span class="chip">${esc(c.industry)}</span>
           ${c.business_type ? `<span class="chip">${esc(c.business_type)}</span>` : ''}
-          ${verifiedChip(c.verified)}
+          ${verifiedChip(c.tier || c.verified)}
         </div>
       </a>`;
   }
