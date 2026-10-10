@@ -38,6 +38,7 @@ if ($selected !== '') {
     $start = ($page - 1) * PAGE_SIZE;
     $pageRows = array_slice($companies, $start, PAGE_SIZE);
 }
+$robotsNoindex = $selected !== '' && count($companies) === 0;
 
 $industryCounts = [];
 if ($selected === '') {
