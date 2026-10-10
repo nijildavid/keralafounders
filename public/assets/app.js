@@ -19,11 +19,14 @@
     }[m]));
   }
 
-  // tier: 'verified' | 'confirmed' | 'unconfirmed' (a bool is still accepted: true = verified)
+  // tier: 'owner' | 'verified' | 'confirmed' | 'unconfirmed' (a bool is still accepted: true = verified)
   function verifiedChip(tier){
     if (tier === true) tier = 'verified';
+    if (tier === 'owner') {
+      return '<span class="chip" style="color:#fff;background:var(--accent2);border-color:var(--accent2)" title="The owner of this business claimed and confirmed this listing."><span aria-hidden="true">&#10003;</span> Owner confirmed</span>';
+    }
     if (tier === 'verified') {
-      return '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)">Verified</span>';
+      return '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)" title="Checked by Kerala Founders. The owner has not confirmed the listing yet.">Verified</span>';
     }
     if (tier === 'confirmed') {
       return '<span class="chip" style="color:#1e40af;border-color:#1e40af" title="We found a working contact on this company\'s own website or profile. The owner has not verified the listing yet.">Contact confirmed</span>';

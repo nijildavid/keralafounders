@@ -44,7 +44,8 @@ function initials(string $name): string
 /**
  * Trust tier for a company row (needs verified, contact_email, email_source_url,
  * instagram, instagram_confidence). Mirrored by the `tier` field sent to app.js.
- *  - verified:    owner confirmed (approved claim, or set by an admin)
+ *  - owner:       the owner claimed the listing and an admin applied it (owner_confirmed = 1)
+ *  - verified:    checked by Kerala Founders (verified = 1 without an owner claim)
  *  - confirmed:   we found a working channel on the company's own pages
  *                 (email with a saved source URL, or a high-confidence Instagram)
  *  - unconfirmed: listed, no sourced contact point yet
@@ -52,21 +53,24 @@ function initials(string $name): string
 function company_contact_tier(array $row): string
 {
     if (!empty($row['verified'])) {
-        return 'verified';
+        return !empty($row['owner_confirmed']) ? 'owner' : 'verified';
     }
     $hasEmail = trim((string)($row['contact_email'] ?? '')) !== '' && trim((string)($row['email_source_url'] ?? '')) !== '';
     $hasInstagram = trim((string)($row['instagram'] ?? '')) !== '' && ($row['instagram_confidence'] ?? '') === 'high';
     return ($hasEmail || $hasInstagram) ? 'confirmed' : 'unconfirmed';
 }
 
-/** $tier is 'verified' | 'confirmed' | 'unconfirmed'; a bool is still accepted (true = verified). */
+/** $tier is 'owner' | 'verified' | 'confirmed' | 'unconfirmed'; a bool is still accepted (true = verified). */
 function verified_chip_html($tier): string
 {
     if (is_bool($tier)) {
         $tier = $tier ? 'verified' : 'unconfirmed';
     }
+    if ($tier === 'owner') {
+        return '<span class="chip" style="color:#fff;background:var(--accent2);border-color:var(--accent2)" title="The owner of this business claimed and confirmed this listing."><span aria-hidden="true">&#10003;</span> Owner confirmed</span>';
+    }
     if ($tier === 'verified') {
-        return '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)">Verified</span>';
+        return '<span class="chip" style="color:var(--accent2);border-color:var(--accent2)" title="Checked by Kerala Founders. The owner has not confirmed the listing yet.">Verified</span>';
     }
     if ($tier === 'confirmed') {
         return '<span class="chip" style="color:#1e40af;border-color:#1e40af" title="We found a working contact on this company\'s own website or profile. The owner has not verified the listing yet.">Contact confirmed</span>';
@@ -75,9 +79,9 @@ function verified_chip_html($tier): string
 }
 
 /** Large, high-visibility verified badge for the company detail page. */
-function verified_badge_strong_html(): string
+function verified_badge_strong_html(string $label = 'Verified'): string
 {
-    return '<span class="verified-badge-strong"><span class="verified-badge-check" aria-hidden="true">&#10003;</span>Verified</span>';
+    return '<span class="verified-badge-strong"><span class="verified-badge-check" aria-hidden="true">&#10003;</span>' . h($label) . '</span>';
 }
 
 /**

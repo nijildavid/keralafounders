@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS companies (
   description TEXT NOT NULL,
   status ENUM('pending','approved') NOT NULL DEFAULT 'pending',
   verified TINYINT(1) NOT NULL DEFAULT 0,
+  owner_confirmed TINYINT(1) NOT NULL DEFAULT 0,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   contact_email VARCHAR(255) NULL,
   email_type VARCHAR(60) NULL,
