@@ -9,7 +9,7 @@ $csrfToken = csrf_token();
 const PAGE_SIZE = 30;
 
 $statusFilter = $_GET['status'] ?? 'all';
-if (!in_array($statusFilter, ['all', 'pending', 'approved'], true)) {
+if (!in_array($statusFilter, ['all', 'pending', 'approved', 'rejected'], true)) {
     $statusFilter = 'all';
 }
 $verifiedFilter = $_GET['verified'] ?? 'all';
@@ -25,6 +25,19 @@ if (!in_array($claimFilter, ['all', 'pending', 'any', 'none'], true)) {
     $claimFilter = 'all';
 }
 $q = trim((string)($_GET['q'] ?? ''));
+
+// Reject needs the 'rejected' value in companies.status (migration-company-rejected-2026-10-10.sql).
+// Until it has been run, the Reject buttons stay hidden instead of failing.
+$canReject = false;
+try {
+    $col = $db->query("SHOW COLUMNS FROM companies LIKE 'status'")->fetch();
+    $canReject = $col && strpos((string)$col['Type'], "'rejected'") !== false;
+} catch (PDOException $e) {
+    $canReject = false;
+}
+if ($statusFilter === 'rejected' && !$canReject) {
+    $statusFilter = 'all';
+}
 
 // The Owner confirmed filter needs the owner_confirmed column (added by
 // migration-owner-confirmed-2026-10-10.sql); fall back to "all" if it is missing.
@@ -245,6 +258,9 @@ function admin_sort_th(string $key, string $label, array $state, array $cols, st
 
 function admin_status_badge(array $c): string
 {
+    if ($c['status'] === 'rejected') {
+        return '<span class="adm-badge adm-badge-neutral"><span aria-hidden="true">&times;</span> Rejected</span>';
+    }
     if ($c['status'] === 'approved') {
         $html = '<span class="adm-badge adm-badge-ok"><span aria-hidden="true">&#10003;</span> Approved</span>';
     } else {
@@ -318,6 +334,45 @@ function admin_ext_link(?string $value, string $kind = 'url'): string
         . ' <span aria-hidden="true">&#8599;</span><span class="sr-only">(opens in a new tab)</span></a>';
 }
 
+// Approve emails the submitter a "you are live" message when the listing came
+// from the public form, so the confirm dialog says so; Reject is reversible.
+function admin_will_email_on_approve(array $c, array $founders): bool
+{
+    if ($c['status'] !== 'pending' || (string)($c['ip_hash'] ?? '') === '') {
+        return false;
+    }
+    foreach ($founders as $f) {
+        if (filter_var(trim((string)$f['email']), FILTER_VALIDATE_EMAIL)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function admin_quick_actions(array $c, array $founders, bool $canReject, string $redirect, string $csrf): string
+{
+    $id = (int)$c['id'];
+    $name = (string)$c['name'];
+    $html = '';
+    if ($c['status'] === 'pending') {
+        $msg = 'Approve ' . $name . '? It goes live on the public site now'
+            . (admin_will_email_on_approve($c, $founders) ? ', and an email saying so is sent to the founders. The email cannot be unsent.' : '.');
+        $html .= '<form method="post" action="api/admin-action.php" onsubmit="return confirm(this.getAttribute(\'data-confirm\'))" data-confirm="' . h($msg) . '">'
+            . admin_hidden_fields($id, 'approve', $redirect, $csrf)
+            . '<button class="adm-qbtn adm-qbtn-ok" type="submit" aria-label="Approve ' . h($name) . '">Approve</button></form>';
+        if ($canReject) {
+            $html .= '<form method="post" action="api/admin-action.php">'
+                . admin_hidden_fields($id, 'reject', $redirect, $csrf)
+                . '<button class="adm-qbtn" type="submit" aria-label="Reject ' . h($name) . '">Reject</button></form>';
+        }
+    } elseif ($c['status'] === 'rejected') {
+        $html .= '<form method="post" action="api/admin-action.php">'
+            . admin_hidden_fields($id, 'restore', $redirect, $csrf)
+            . '<button class="adm-qbtn" type="submit" aria-label="Restore ' . h($name) . ' to pending">Restore</button></form>';
+    }
+    return $html !== '' ? '<div class="adm-qactions">' . $html . '</div>' : '<span class="adm-muted">&mdash;</span>';
+}
+
 function admin_hidden_fields(int $id, string $action, string $redirect, string $csrf): string
 {
     return '<input type="hidden" name="id" value="' . $id . '">'
@@ -351,6 +406,7 @@ $activeAdminPage = 'submissions';
       <option value="all"<?= $statusFilter === 'all' ? ' selected' : '' ?>>All</option>
       <option value="pending"<?= $statusFilter === 'pending' ? ' selected' : '' ?>>Pending</option>
       <option value="approved"<?= $statusFilter === 'approved' ? ' selected' : '' ?>>Approved</option>
+      <?php if ($canReject): ?><option value="rejected"<?= $statusFilter === 'rejected' ? ' selected' : '' ?>>Rejected</option><?php endif; ?>
     </select>
   </div>
   <div class="adm-filter">
@@ -421,6 +477,7 @@ $activeAdminPage = 'submissions';
     <?= admin_sort_th('status', 'Status', $state, $sortColumns) ?>
     <?= admin_sort_th('contact', 'Contact', $state, $sortColumns) ?>
     <?= admin_sort_th('claims', 'Claim', $state, $sortColumns) ?>
+    <th scope="col">Quick actions</th>
   </tr></thead>
   <tbody>
 <?php foreach ($companies as $c):
@@ -441,6 +498,7 @@ $activeAdminPage = 'submissions';
     <td data-label="Status" class="adm-cell-status"><?= admin_status_badge($c) ?></td>
     <td data-label="Contact" class="adm-cell-contact"><?= admin_contact_badge($c) ?></td>
     <td data-label="Claim"><?= admin_claim_badge($c) ?></td>
+    <td data-label="Quick actions"><?= admin_quick_actions($c, $founders, $canReject, $currentUrl, $csrfToken) ?></td>
   </tr>
 <?php endforeach; ?>
   </tbody>
@@ -473,6 +531,17 @@ $activeAdminPage = 'submissions';
     <form method="post" action="api/admin-action.php">
       <?= admin_hidden_fields($id, 'approve', $openUrl, $csrfToken) ?>
       <button class="pill" type="submit">Approve</button>
+    </form>
+    <?php endif; ?>
+    <?php if ($canReject && $c['status'] === 'pending'): ?>
+    <form method="post" action="api/admin-action.php">
+      <?= admin_hidden_fields($id, 'reject', $openUrl, $csrfToken) ?>
+      <button class="pill light" type="submit">Reject</button>
+    </form>
+    <?php elseif ($c['status'] === 'rejected'): ?>
+    <form method="post" action="api/admin-action.php">
+      <?= admin_hidden_fields($id, 'restore', $openUrl, $csrfToken) ?>
+      <button class="pill light" type="submit">Restore to pending</button>
     </form>
     <?php endif; ?>
     <form method="post" action="api/admin-action.php" class="adm-switch-form">

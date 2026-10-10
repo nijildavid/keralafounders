@@ -26,6 +26,16 @@ if ($id > 0 && $action === 'approve') {
         $fStmt->execute([$id]);
         notify_listing_live((string)$before['name'], (string)$before['slug'], $fStmt->fetchAll(PDO::FETCH_COLUMN));
     }
+} elseif ($id > 0 && $action === 'reject') {
+    // Soft reject: the listing stays in admin (and can be restored) but is never public.
+    // Needs the 'rejected' status from migration-company-rejected-2026-10-10.sql.
+    try {
+        get_db()->prepare("UPDATE companies SET status = 'rejected' WHERE id = ? AND status = 'pending'")->execute([$id]);
+    } catch (PDOException $e) {
+        // status column not migrated yet: leave the listing untouched
+    }
+} elseif ($id > 0 && $action === 'restore') {
+    get_db()->prepare("UPDATE companies SET status = 'pending' WHERE id = ? AND status = 'rejected'")->execute([$id]);
 } elseif ($id > 0 && $action === 'delete') {
     // Typed-name confirmation is enforced here, not just in the browser.
     $nameStmt = get_db()->prepare('SELECT name FROM companies WHERE id = ?');

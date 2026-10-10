@@ -42,6 +42,7 @@ function h(?string $s): string
   <div><label class="label" for="edit-status">Status</label><select class="select" id="edit-status" name="status">
     <option value="pending" <?= $company['status'] === 'pending' ? 'selected' : '' ?>>Pending</option>
     <option value="approved" <?= $company['status'] === 'approved' ? 'selected' : '' ?>>Approved</option>
+    <?php if ($company['status'] === 'rejected'): ?><option value="rejected" selected>Rejected</option><?php endif; ?>
   </select></div>
   <div><label class="label" for="edit-verified">Verified</label><select class="select" id="edit-verified" name="verified">
     <option value="0" <?= !$company['verified'] ? 'selected' : '' ?>>Not verified</option>

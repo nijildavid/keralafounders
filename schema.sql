@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS companies (
   city VARCHAR(80) NOT NULL,
   location VARCHAR(255) NULL,
   description TEXT NOT NULL,
-  status ENUM('pending','approved') NOT NULL DEFAULT 'pending',
+  status ENUM('pending','approved','rejected') NOT NULL DEFAULT 'pending',
   verified TINYINT(1) NOT NULL DEFAULT 0,
   owner_confirmed TINYINT(1) NOT NULL DEFAULT 0,
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,

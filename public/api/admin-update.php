@@ -50,7 +50,7 @@ if ($id <= 0) {
     echo json_encode(['error' => 'Company not found']);
     exit;
 }
-if (!in_array($status, ['pending', 'approved'], true)) {
+if (!in_array($status, ['pending', 'approved', 'rejected'], true)) {
     $status = 'pending';
 }
 if ($name === '' || $industry === '' || $businessType === '' || $country === '' || $city === '' || $description === '' || !$founders) {
