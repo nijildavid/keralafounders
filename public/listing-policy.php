@@ -43,9 +43,10 @@ $canonicalUrl = 'https://keralafounders.eu/listing-policy.php';
 
 <div class="panel" style="margin-top:20px">
 <h2>Verification</h2>
-<p class="muted">Kerala Founders uses three broad verification statuses:</p>
+<p class="muted">Kerala Founders uses these verification statuses:</p>
 <ul style="margin:18px 0;padding-left:20px;color:#57534e;line-height:1.9">
-<li><strong style="color:var(--ink)">Verified</strong> — sufficient evidence has been found to support the key listing information</li>
+<li><strong style="color:var(--ink)">Owner confirmed</strong> — the owner of the business claimed the listing and confirmed its details</li>
+<li><strong style="color:var(--ink)">Verified</strong> — sufficient evidence has been found by Kerala Founders to support the key listing information</li>
 <li><strong style="color:var(--ink)">Partially verified</strong> — some information has been confirmed, but not everything has been independently verified</li>
 <li><strong style="color:var(--ink)">Unverified</strong> — the listing may be relevant, but the available evidence is not sufficient to confirm all important details</li>
 </ul>
