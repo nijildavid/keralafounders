@@ -60,13 +60,16 @@ Green is reserved for the primary button. Verification never uses green.
 
 One component (`.vbadge`) rendered by `verified_chip_html()` in
 `render-helpers.php` and `KFUI.verifiedChip()` in `app.js` (keep them
-identical). Same colours on cards and on the detail page; the detail page only
+identical). Same look on cards and on the detail page; the detail page only
 adds `lg` for size.
 
-- **Owner confirmed**: gold seal, filled, cream chip with a darker gold border.
-- **Verified**: gold seal, outlined, cream chip.
-- **Contact confirmed**: neutral grey chip, no seal.
-- **Not yet verified**: neutral grey chip, dashed border, no seal.
+- **Verified**: gold seal on a cream chip. Used for both the "verified" and
+  "owner confirmed" tiers; the public sees one status.
+- **Not yet verified**: neutral grey chip, dashed border, no seal. Used for
+  the "contact confirmed" and "unconfirmed" tiers.
+
+The finer tiers (owner, verified, confirmed, unconfirmed) still exist in the
+data and in admin; only the public badge is two-state.
 
 ## Adoption policy
 
