@@ -2,8 +2,8 @@
 declare(strict_types=1);
 
 // Private upload door for the weekly Instagram/Buffer automation. Takes one
-// PNG or JPEG plus a filename, stores it in public/social/ and answers with
-// the permanent public URL Buffer needs. Authenticated with a long bearer
+// PNG, JPEG or MP4 video plus a filename, stores it in public/social/ and
+// answers with the permanent public URL Buffer needs. Authenticated with a long bearer
 // token (config/social-upload-auth.php, outside the web root) — nothing
 // about this endpoint is linked from the site.
 //
@@ -12,8 +12,15 @@ declare(strict_types=1);
 //     -F "name=2026-10-05_01_country-spotlight_germany.png" \
 //     -F "file=@/path/to/image.png"
 //
+//   Videos work the same way (MP4 only, up to 50 MB):
+//     -F "name=2026-10-12_reel_germany.mp4" -F "file=@/path/to/reel.mp4"
+//
 // Files are never overwritten (a scheduled post may already point at one) and
-// only real PNG/JPEG bytes are accepted — checked by content, not extension.
+// only real PNG/JPEG/MP4 bytes are accepted — checked by content, not extension.
+// Buffer links to the file instead of copying it, so nothing is ever deleted.
+//
+// Server needs upload_max_filesize >= 50M and post_max_size >= 60M for videos
+// (cPanel > MultiPHP INI Editor); below that the endpoint answers 413.
 
 require __DIR__ . '/../../config/social-upload-auth.php';
 
@@ -22,6 +29,7 @@ const SOCIAL_PUBLIC_BASE = 'https://keralafounders.eu/social/';
 const SOCIAL_LOG_FILE = __DIR__ . '/../../config/social-upload.log';
 const SOCIAL_RATE_FILE = __DIR__ . '/../../config/social-upload-rate.json';
 const SOCIAL_MAX_BYTES = 8 * 1024 * 1024;
+const SOCIAL_MAX_VIDEO_BYTES = 50 * 1024 * 1024;
 const SOCIAL_MIN_SIDE = 200;
 const SOCIAL_MAX_SIDE = 8000;
 const SOCIAL_UPLOADS_PER_HOUR = 40;
@@ -85,7 +93,7 @@ function social_rate_allow(string $bucket, int $limit, bool $record): bool
     return $allowed;
 }
 
-/** Lowercase, spaces to hyphens, drop everything but a-z 0-9 _ - and one final .png/.jpg/.jpeg. */
+/** Lowercase, spaces to hyphens, drop everything but a-z 0-9 _ - and one final .png/.jpg/.jpeg/.mp4. */
 function social_clean_name(string $raw): ?string
 {
     $raw = strtolower(trim(str_replace('\\', '/', $raw)));
@@ -97,7 +105,7 @@ function social_clean_name(string $raw): ?string
     }
     $ext = substr($raw, $dot + 1);
     $base = preg_replace('/[^a-z0-9_-]/', '', substr($raw, 0, $dot));
-    if (!in_array($ext, ['png', 'jpg', 'jpeg'], true) || $base === '' || strlen($base) > 120) {
+    if (!in_array($ext, ['png', 'jpg', 'jpeg', 'mp4'], true) || $base === '' || strlen($base) > 120) {
         return null;
     }
     return $base . '.' . $ext;
@@ -157,7 +165,7 @@ $postMax = (int)ini_get('post_max_size');
 $unit = strtoupper(substr(trim((string)ini_get('post_max_size')), -1));
 $postMaxBytes = $postMax * ($unit === 'G' ? 1073741824 : ($unit === 'M' ? 1048576 : ($unit === 'K' ? 1024 : 1)));
 if ((int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 0 && $postMaxBytes > 0 && (int)$_SERVER['CONTENT_LENGTH'] > $postMaxBytes) {
-    social_fail(413, 'File too large for this server (max ' . ini_get('post_max_size') . ')');
+    social_fail(413, 'File too large for this server (max ' . ini_get('post_max_size') . '; the host\'s PHP upload limit needs raising for videos)');
 }
 
 $rawName = (string)($_POST['name'] ?? '');
@@ -166,48 +174,63 @@ if ($rawName === '' && isset($_FILES['file']['name'])) {
 }
 $name = social_clean_name($rawName);
 if ($name === null) {
-    social_fail(400, 'Bad filename: use letters, digits, hyphens or underscores, ending in .png, .jpg or .jpeg', $rawName);
+    social_fail(400, 'Bad filename: use letters, digits, hyphens or underscores, ending in .png, .jpg, .jpeg or .mp4', $rawName);
 }
+
+$ext = substr($name, strrpos($name, '.') + 1);
+$isVideo = $ext === 'mp4';
+$maxBytes = $isVideo ? SOCIAL_MAX_VIDEO_BYTES : SOCIAL_MAX_BYTES;
+$maxLabel = $isVideo ? '50 MB' : '8 MB';
 
 if (!isset($_FILES['file'])) {
     social_fail(400, 'No file received (send it as multipart field "file")', $name);
 }
 $upErr = $_FILES['file']['error'];
 if ($upErr === UPLOAD_ERR_INI_SIZE || $upErr === UPLOAD_ERR_FORM_SIZE) {
-    social_fail(413, 'File too large (max 8 MB)', $name);
+    social_fail(413, 'File too large (max ' . $maxLabel . ', or the host\'s PHP upload_max_filesize is lower than that)', $name);
 }
 if ($upErr !== UPLOAD_ERR_OK || !is_uploaded_file($_FILES['file']['tmp_name'])) {
     social_fail(400, 'Upload failed, please try again', $name);
 }
 $tmp = $_FILES['file']['tmp_name'];
 $bytes = (int)filesize($tmp);
-if ($bytes > SOCIAL_MAX_BYTES) {
-    social_fail(413, 'File too large (max 8 MB)', $name, $bytes);
+if ($bytes > $maxBytes) {
+    social_fail(413, 'File too large (max ' . $maxLabel . ')', $name, $bytes);
 }
 if ($bytes === 0) {
     social_fail(400, 'File is empty', $name);
 }
 
-// Content check: real PNG or JPEG bytes only. SVG, scripts and anything else fail here.
 $mime = (string)(new finfo(FILEINFO_MIME_TYPE))->file($tmp);
-$info = @getimagesize($tmp);
-if (!in_array($mime, ['image/png', 'image/jpeg'], true) || $info === false
-    || !in_array($info[2], [IMAGETYPE_PNG, IMAGETYPE_JPEG], true)) {
-    social_fail(415, 'Only real PNG or JPEG images are accepted', $name, $bytes);
-}
-$isJpeg = $mime === 'image/jpeg';
-$ext = substr($name, strrpos($name, '.') + 1);
-if ($isJpeg !== ($ext === 'jpg' || $ext === 'jpeg')) {
-    social_fail(415, 'File extension does not match the image content', $name, $bytes);
-}
-[$width, $height] = $info;
-if ($width < SOCIAL_MIN_SIDE || $height < SOCIAL_MIN_SIDE || $width > SOCIAL_MAX_SIDE || $height > SOCIAL_MAX_SIDE) {
-    social_fail(400, 'Image dimensions out of range (' . SOCIAL_MIN_SIDE . '–' . SOCIAL_MAX_SIDE . ' px per side)', $name, $bytes);
-}
+$width = $height = null;
+$data = null;
 
-$data = (string)file_get_contents($tmp);
-if ($isJpeg) {
-    $data = social_strip_jpeg_metadata($data);
+if ($isVideo) {
+    // Content check: a real MP4 starts with an "ftyp" box (bytes 4-8) and libmagic
+    // must call it video/mp4. Renamed images, scripts or other containers fail here.
+    $head = (string)file_get_contents($tmp, false, null, 0, 12);
+    if ($mime !== 'video/mp4' || strlen($head) < 12 || substr($head, 4, 4) !== 'ftyp') {
+        social_fail(415, 'Only real MP4 videos are accepted (file content is not MP4)', $name, $bytes);
+    }
+} else {
+    // Content check: real PNG or JPEG bytes only. SVG, scripts and anything else fail here.
+    $info = @getimagesize($tmp);
+    if (!in_array($mime, ['image/png', 'image/jpeg'], true) || $info === false
+        || !in_array($info[2], [IMAGETYPE_PNG, IMAGETYPE_JPEG], true)) {
+        social_fail(415, 'Only real PNG or JPEG images are accepted', $name, $bytes);
+    }
+    $isJpeg = $mime === 'image/jpeg';
+    if ($isJpeg !== ($ext === 'jpg' || $ext === 'jpeg')) {
+        social_fail(415, 'File extension does not match the image content', $name, $bytes);
+    }
+    [$width, $height] = $info;
+    if ($width < SOCIAL_MIN_SIDE || $height < SOCIAL_MIN_SIDE || $width > SOCIAL_MAX_SIDE || $height > SOCIAL_MAX_SIDE) {
+        social_fail(400, 'Image dimensions out of range (' . SOCIAL_MIN_SIDE . '–' . SOCIAL_MAX_SIDE . ' px per side)', $name, $bytes);
+    }
+    $data = (string)file_get_contents($tmp);
+    if ($isJpeg) {
+        $data = social_strip_jpeg_metadata($data);
+    }
 }
 
 if (!is_dir(SOCIAL_DIR) && !@mkdir(SOCIAL_DIR, 0755, true) && !is_dir(SOCIAL_DIR)) {
@@ -223,17 +246,31 @@ if ($out === false) {
     }
     social_fail(500, 'Server could not save the file', $name, $bytes);
 }
-$written = fwrite($out, $data);
+if ($isVideo) {
+    // Stream from the temp file so a 50 MB video never has to fit in PHP's memory.
+    $in = fopen($tmp, 'rb');
+    $written = $in ? stream_copy_to_stream($in, $out) : false;
+    if ($in) {
+        fclose($in);
+    }
+    $expected = $bytes;
+} else {
+    $written = fwrite($out, $data);
+    $expected = strlen($data);
+}
 fclose($out);
-if ($written !== strlen($data)) {
+if ($written !== $expected) {
     @unlink($dest);
     social_fail(500, 'Server could not save the file', $name, $bytes);
 }
 @chmod($dest, 0644);
 
-social_respond(201, [
-    'url' => SOCIAL_PUBLIC_BASE . $name,
-    'width' => $width,
-    'height' => $height,
-    'bytes' => strlen($data),
-], $name, strlen($data));
+$response = ['url' => SOCIAL_PUBLIC_BASE . $name];
+if ($isVideo) {
+    $response['type'] = 'video/mp4';
+} else {
+    $response['width'] = $width;
+    $response['height'] = $height;
+}
+$response['bytes'] = $expected;
+social_respond(201, $response, $name, $expected);

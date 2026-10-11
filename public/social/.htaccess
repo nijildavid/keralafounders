@@ -2,8 +2,11 @@
 # uploaded here by public/api/social-upload.php and never come from git, so a
 # deploy (which only copies, never deletes) leaves them alone.
 #
-# This folder only ever serves PNG/JPG images — nothing else is reachable and
-# nothing is ever executed, even if a script somehow landed here.
+# This folder only ever serves PNG/JPG images and MP4 videos — nothing else is
+# reachable and nothing is ever executed, even if a script somehow landed here.
+# Videos are served as plain static files, so Apache itself sends the correct
+# Content-Length and answers Range requests (206 Partial Content), which
+# Buffer/Instagram use to download them. No hotlink rules exist anywhere.
 
 Options -Indexes -ExecCGI
 
@@ -13,7 +16,7 @@ Options -Indexes -ExecCGI
     <FilesMatch ".*">
         Require all denied
     </FilesMatch>
-    <FilesMatch "^[a-z0-9_-]+\.(png|jpe?g)$">
+    <FilesMatch "^[a-z0-9_-]+\.(png|jpe?g|mp4)$">
         Require all granted
     </FilesMatch>
 </IfModule>
@@ -22,9 +25,19 @@ Options -Indexes -ExecCGI
         Order allow,deny
         Deny from all
     </FilesMatch>
-    <FilesMatch "^[a-z0-9_-]+\.(png|jpe?g)$">
+    <FilesMatch "^[a-z0-9_-]+\.(png|jpe?g|mp4)$">
         Order allow,deny
         Allow from all
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+    AddType video/mp4 .mp4
+</IfModule>
+# Never gzip videos: compressing would drop Content-Length and break range requests.
+<IfModule mod_env.c>
+    <FilesMatch "\.mp4$">
+        SetEnv no-gzip 1
     </FilesMatch>
 </IfModule>
 
