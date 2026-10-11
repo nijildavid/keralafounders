@@ -12,14 +12,6 @@ function h(?string $s): string
 $totalCompanies = (int)$db->query('SELECT COUNT(*) FROM companies')->fetchColumn();
 $pendingCompanies = (int)$db->query("SELECT COUNT(*) FROM companies WHERE status = 'pending'")->fetchColumn();
 $verifiedCompanies = (int)$db->query('SELECT COUNT(*) FROM companies WHERE verified = 1')->fetchColumn();
-$confirmedSql = "verified = 0 AND ((contact_email <> '' AND email_source_url <> '') OR (instagram <> '' AND instagram_confidence = 'high'))";
-$confirmedCompanies = (int)$db->query("SELECT COUNT(*) FROM companies WHERE $confirmedSql")->fetchColumn();
-$unconfirmedCompanies = $totalCompanies - $verifiedCompanies - $confirmedCompanies;
-try {
-    $ownerClaimed = (int)$db->query('SELECT COUNT(*) FROM companies WHERE verified = 1 AND owner_confirmed = 1')->fetchColumn();
-} catch (PDOException $e) {
-    $ownerClaimed = 0; // owner_confirmed column not added yet (see migration-owner-confirmed-2026-10-10.sql)
-}
 $pendingClaims = (int)$db->query("SELECT COUNT(*) FROM claim_requests WHERE status = 'pending'")->fetchColumn();
 $contactsFound = (int)$db->query('SELECT COUNT(*) FROM companies WHERE contact_email IS NOT NULL')->fetchColumn();
 $emailedCount = (int)$db->query("SELECT COUNT(*) FROM companies WHERE outreach_status = 'sent'")->fetchColumn();
@@ -40,20 +32,14 @@ $activeAdminPage = 'dashboard';
 <div class="stats" style="margin-top:24px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
   <a class="stat stat-link" href="admin.php"><strong><?= $totalCompanies ?></strong><span>Companies</span></a>
   <a class="stat stat-link" href="admin.php?status=pending"><strong><?= $pendingCompanies ?></strong><span>Pending review</span></a>
-  <a class="stat stat-link" href="admin.php?verified=verified"><strong><?= $verifiedCompanies ?></strong><span>Verified</span></a>
   <a class="stat stat-link" href="admin-claims.php"><strong><?= $pendingClaims ?></strong><span>Pending claims</span></a>
+  <a class="stat stat-link" href="admin.php?verified=verified"><strong><?= $verifiedCompanies ?></strong><span>Verified</span></a>
 </div></div>
 <div class="stats" style="margin-top:16px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
   <a class="stat stat-link" href="admin.php?outreach=found"><strong><?= $contactsFound ?></strong><span>Contact emails found</span></a>
-  <a class="stat stat-link" href="admin.php?outreach=sent"><strong><?= $emailedCount ?></strong><span>Verification emails sent</span></a>
   <a class="stat stat-link" href="admin.php?outreach=ready"><strong><?= $toEmailCount ?></strong><span>Found, not yet emailed</span></a>
-  <a class="stat stat-link" href="admin.php?verified=owner"><strong><?= $ownerClaimed ?></strong><span>Owner confirmed</span></a>
-</div></div>
-<div class="stats" style="margin-top:16px;border-radius:18px;border:1px solid var(--line)"><div class="wrap stats-grid" style="padding:0">
-  <a class="stat stat-link" href="admin.php?verified=verified"><strong><?= $verifiedCompanies ?></strong><span>Tier 1 · Verified or Owner confirmed</span></a>
-  <a class="stat stat-link" href="admin.php?verified=confirmed"><strong><?= $confirmedCompanies ?></strong><span>Tier 2 · Contact confirmed</span></a>
-  <a class="stat stat-link" href="admin.php?verified=gap"><strong><?= $unconfirmedCompanies ?></strong><span>Tier 3 · Needs a contact point</span></a>
-  <div class="stat"><strong><?= $totalCompanies ? round(100 * ($verifiedCompanies + $confirmedCompanies) / $totalCompanies) : 0 ?>%</strong><span>Have a verified or sourced contact</span></div>
+  <a class="stat stat-link" href="admin.php?outreach=sent"><strong><?= $emailedCount ?></strong><span>Verification emails sent</span></a>
+  <a class="stat stat-link" href="admin.php?verified=unverified"><strong><?= $totalCompanies - $verifiedCompanies ?></strong><span>Not yet verified</span></a>
 </div></div>
 <div style="margin-top:24px;display:flex;gap:16px;flex-wrap:wrap">
   <a class="panel" style="flex:1;min-width:220px;text-decoration:none;color:inherit" href="admin.php">

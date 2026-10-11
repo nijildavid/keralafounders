@@ -252,7 +252,7 @@ function admin_status_badge(array $c): string
         $html = '<span class="adm-badge adm-badge-attn"><span aria-hidden="true">&#9679;</span> Pending</span>';
     }
     if ((int)$c['verified'] === 1) {
-        $html .= ' <span class="adm-badge adm-badge-ok"><span aria-hidden="true">&#10003;</span> Verified</span>';
+        $html .= ' ' . verified_chip_html('verified');
     }
     return $html;
 }
@@ -389,10 +389,7 @@ $activeAdminPage = 'submissions';
     <select class="select" id="adm-verified" name="verified">
       <option value="all"<?= $verifiedFilter === 'all' ? ' selected' : '' ?>>All</option>
       <option value="verified"<?= $verifiedFilter === 'verified' ? ' selected' : '' ?>>Verified</option>
-      <option value="owner"<?= $verifiedFilter === 'owner' ? ' selected' : '' ?>>Owner confirmed</option>
       <option value="unverified"<?= $verifiedFilter === 'unverified' ? ' selected' : '' ?>>Not yet verified</option>
-      <option value="confirmed"<?= $verifiedFilter === 'confirmed' ? ' selected' : '' ?>>Contact confirmed (tier 2)</option>
-      <option value="gap"<?= $verifiedFilter === 'gap' ? ' selected' : '' ?>>Needs a contact point (tier 3)</option>
     </select>
   </div>
   <div class="adm-filter">
@@ -611,5 +608,5 @@ $activeAdminPage = 'submissions';
   <div class="adm-drawer-body" id="adm-drawer-body"></div>
 </dialog>
 <p class="sr-only" role="status" aria-live="polite" id="adm-live"></p>
-</div></section></main><?php include __DIR__ . '/partials/footer-full.php'; ?>
+</div></section></main><?php include __DIR__ . '/partials/footer-minimal.php'; ?>
 </body></html>
