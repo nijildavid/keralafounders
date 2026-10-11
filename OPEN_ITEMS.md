@@ -4,17 +4,27 @@ Read `CLAUDE.md` first for architecture/conventions, `HISTORY.md` for how
 things got here. This file is a living list — update it as items resolve or
 new ones come up, don't let it go stale.
 
-## Pending — social image upload endpoint: server steps + live check
+## Pending — social upload endpoint: finish the live check (images, Buffer fetch)
 
-Code is in `public/api/social-upload.php` and `public/social/.htaccess`. It
-does nothing until, on the server (cPanel File Manager): (1) create
-`config/social-upload-auth.php` next to `db.php` from the `.example.php`
-(real random token), (2) merge to `main` so the deploy copies the code.
-Then run the acceptance test from the handoff (upload, bare-image URL,
-`/social/` listing blocked, `X-Robots-Tag`, 409 on repeat, 401 on bad key,
-`.php`/`.svg` rejected, file still present after the next deploy). Also
-confirm the host's PHP `upload_max_filesize` is at least 8 MB (the endpoint
-returns 413 if it is lower).
+Code is in `public/api/social-upload.php` and `public/social/.htaccess`
+(images and, since `keralafounders#98`, MP4 video up to 50 MB).
+
+**Done on 2026-10-11 (video, live site):** token file exists on the server and
+is accepted; `#98` is merged and the deploy succeeded; the host's PHP limits
+(PHP Selector, account global) are already 1024M for `upload_max_filesize` and
+`post_max_size`, so nothing needed changing. A real MP4 uploaded with 201 and
+returned its public URL; it plays in a browser; the live response is
+`200` with `Content-Type: video/mp4`, a correct `Content-Length`,
+`Accept-Ranges: bytes`, `X-Robots-Tag: noindex, nofollow, noimageindex`, and a
+`Range: bytes=0-1023` request returns `206` with the right `Content-Range`.
+The host runs LiteSpeed (not Apache) and honours the `/social/` rules. The test
+file `2026-10-13_reel_germany-vat.mp4` is still in `/social/` (never
+overwritten, remove it by hand in File Manager if unwanted).
+
+**Still to check:** a real Buffer/Instagram fetch of a hosted video (the final
+proof); on the live site, the image path (PNG upload, bare-image URL), `/social/`
+listing blocked, 409 on a repeat name, 401 on a bad token, `.php`/`.svg`
+rejected, and files still present after the next deploy.
 
 ## Resolved — admin 2FA and nightly DB backups
 

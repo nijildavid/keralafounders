@@ -176,6 +176,13 @@ content, not extension) and `public/social/.htaccess` serves `.mp4` as
 `video/mp4`, uncompressed, with Content-Length and range support. Images
 unchanged. Needs PHP `upload_max_filesize` ≥ 50M / `post_max_size` ≥ 60M.
 
+## 2026-10-11 — MP4 upload live test passed
+
+`#98` merged and deployed. On the live site a real MP4 uploaded (201), played in
+a browser, and was served as `video/mp4` with correct `Content-Length`, range
+support (206) and the `noindex` header. PHP limits on the host were already
+1024M. Not yet tested: a real Buffer/Instagram fetch. Details in `OPEN_ITEMS.md`.
+
 ## 2026-10-07 — Google Analytics events (ticket A1)
 
 Added `public/assets/analytics.js` (loaded from `head-common.php`). Events are
