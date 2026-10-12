@@ -1,0 +1,230 @@
+{
+  "slug": "finland",
+  "title": "How to start a company in Finland",
+  "summary": "Finland gives a founder two main routes: register as a toiminimi (private trader, sole trader) for a cheap, low-formality start where you and the business are the same legal person, or form an osakeyhtio (Oy, private limited company), which since 2019 can be started with EUR 0 share capital. Both routes are filed through the same front door: the YTJ business information system run jointly by PRH (the Finnish Patent and Registration Office, which keeps the Trade Register) and the Tax Administration (Vero), so one start-up notification can also register you for tax. Founders who live outside the EEA face an extra Finland-specific check on who may sit on the board.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-15",
+  "quick_facts": {
+    "structure": { "text": "Register as a toiminimi (private trader) for the simplest start, or form an osakeyhtio (Oy). An Oy can have EUR 0 share capital, and PRH's process has no notary step: you file the start-up notification online in the YTJ service.", "source_ids": ["FI1", "FI3", "FI5"] },
+    "cost": { "text": "PRH start-up notification fee (2026 price list): EUR 75 for a private trader, EUR 400 for an Oy, or EUR 300 for an Oy through the guided online package at ytj.fi.", "source_ids": ["FI2"] },
+    "time": { "text": "For an Oy filed in the YTJ service, PRH's March 2026 notice said such notifications were being handled in about a week; its status table of 12 Oct 2026 lists the arrival dates it is currently processing, not a promised time. The Oy must be notified within 3 months of signing the memorandum of association or it lapses.", "source_ids": ["FI3", "FI7", "FI8"] },
+    "gotcha": { "text": "If you do not live permanently in the EEA, PRH rules require permission (EUR 150 per person, plus a EUR 6.50 invoicing charge) for board members and the managing director, unless at least one ordinary board member lives in the EEA and any managing director and deputy do too. Citizenship does not decide this; residence does.", "source_ids": ["FI4", "FI6"] }
+  },
+  "founder_checklist": [
+    { "text": "Check your own right to live and work self-employed in Finland first; non-EU/EEA founders need a residence permit.", "section_id": "visa" },
+    { "text": "Choose between a toiminimi (private trader) and an Oy (limited company).", "section_id": "legal-forms" },
+    { "text": "Check where you and any co-directors live: PRH treats residence outside the EEA as a trigger for a permit.", "section_id": "residence-trap" },
+    { "text": "For an Oy, pick the filing route (guided package or full start-up notification) and file in YTJ within 3 months of signing.", "section_id": "company-steps" },
+    { "text": "For a toiminimi, file the private-trader start-up notification and pay the EUR 75 fee.", "section_id": "sole-steps" },
+    { "text": "Take out YEL pension insurance within six months of starting self-employment.", "section_id": "social" },
+    { "text": "Check whether you will exceed the EUR 20,000 yearly turnover limit that makes VAT registration compulsory.", "section_id": "taxes" },
+    { "text": "Set up invoicing that meets Vero's VAT invoice rules and keep invoices for at least six years.", "section_id": "taxes" }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Finland keeps its business start-up process in one place. PRH, which runs the Trade Register, and the Tax Administration share the YTJ business information system, and a start-up notification filed there can also register the business for tax. The two ordinary routes are the toiminimi (private trader or sole trader, where you and the business are one legal person) and the osakeyhtio (Oy, private limited company, a separate legal person). For a founder who is moving to Finland, the harder question is usually not the company form but where the people involved live: Finnish rules look at whether board members and the managing director have a permanent place of residence in the EEA, and a founder from outside the EU/EEA also needs a residence permit before working in Finland. Finnish administration is largely digital and most online services use a Finnish personal identity code, which you receive when you register as a resident, so plan the order of steps early.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Toiminimi (private trader, sole trader)", "none mentioned on PRH's private-trader page", "personal, unlimited (editorial: you and the business are one legal person; PRH pages read do not spell this out)", "no notary step in PRH's process", "PRH's private-trader page gives no processing time; it says paper filings take longer than online", "register with the Trade Register if the Accounting Act requires financial statements", "official [FI5]"],
+          ["Osakeyhtio (Oy, private limited company)", "EUR 0 allowed; the register then shows share capital of 0 euros", "limited to the company's assets (editorial: standard limited-company principle; not spelled out on the PRH pages read)", "no notary step in PRH's process; filed online in YTJ", "PRH said in March 2026 that YTJ-filed notifications were handled in about a week; notify within 3 months of signing", "annual financial statements must be filed for every financial period, even if the company is inactive", "official [FI1, FI8, FI10]"]
+        ]
+      },
+      "official_information": [
+        { "text": "A private trader (toiminimi) start-up notification costs EUR 75 on PRH's price list (latest update 1 January 2026). The applicant must be at least 18 years old, not bankrupt, and with legal competency not restricted.", "source_ids": ["FI2", "FI5"], "confidence": "official" },
+        { "text": "A limited liability company (Oy) can be started with or without share capital; if there is none, the register records the share capital as 0 euros. The start-up notification fee is EUR 400, or EUR 300 through the guided set-up package in the ytj.fi online service (2026 price list). From 1 January 2026 companies can no longer file start-up notifications on paper; this does not apply to private traders, associations or foundations.", "source_ids": ["FI1", "FI2", "FI9"], "confidence": "official" },
+        { "text": "The guided package (Alternative A) can be used only if there is no subscription price for shares and share capital is 0 euros, all shareholders are adults, all listed persons have Finnish personal identity codes, and the standard articles are enough. Otherwise use the full start-up notification (Alternative B).", "source_ids": ["FI1"], "confidence": "official" },
+        { "text": "General and limited partnerships also exist; PRH's 2026 start-up fee for these is EUR 300. Their liability rules were not read for this draft.", "source_ids": ["FI2"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "For a first-time founder working alone, the toiminimi is the cheapest and simplest way to start invoicing. An Oy makes sense once you want limited liability, a co-founder or investor, or a client that prefers to contract with a company. Because an Oy can start with EUR 0 share capital, the barrier is paperwork and ongoing duties (annual financial statements, board rules) rather than money.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether personal, unlimited liability as a toiminimi is acceptable for now.", "source_ids": [] },
+        { "text": "If you choose an Oy, decide whether you qualify for the EUR 300 guided package or need the EUR 400 full notification.", "source_ids": ["FI1", "FI2"] }
+      ]
+    },
+    {
+      "id": "residence-trap",
+      "title": "Living outside the EEA: the PRH permit and the order of steps",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "A person without a permanent place of residence in the EEA who holds a management or responsibility role in a company in the Finnish Trade Register (for example board member or managing director) needs a permit from PRH. Citizenship does not determine whether a permit is needed.", "source_ids": ["FI4"], "confidence": "official" },
+        { "text": "No permit is needed if at least one ordinary board member has a permanent place of residence in the EEA; the same test is applied separately to deputy members. The managing director and any deputy must live in the EEA, otherwise a permit is needed.", "source_ids": ["FI4"], "confidence": "official" },
+        { "text": "The permit application fee is EUR 150 per person, plus a EUR 6.50 invoicing charge per application, invoiced afterwards (page last updated 24 March 2026). PRH says it has granted permits to people permanently living in Switzerland (Lugano Convention) and to US citizens living permanently in the USA; for some other countries a permit may be granted on condition. A permit is not granted, for example, when all board members live outside the EEA.", "source_ids": ["FI4"], "confidence": "official" },
+        { "text": "For a private trader, a person without a permanent residence in the EEA needs a PRH permit before filing the start-up notification (EUR 150 plus a EUR 6.50 invoicing charge; page last updated 9 January 2026), and must have a representative with a permanent place of residence in Finland. PRH says it has in practice granted such permits to people living permanently in Switzerland.", "source_ids": ["FI5", "FI6"], "confidence": "official" },
+        { "text": "Establishing a company in the YTJ system requires a Finnish personal identity code, which the Digital and Population Data Services Agency issues when it stores your basic information. PRH's start-up page says persons without one can still be listed by giving date of birth, home address and a passport copy, but then the guided package cannot be used.", "source_ids": ["FI3", "FI26", "FI1"], "confidence": "official" },
+        { "text": "An entrepreneur residence permit applicant usually has to register the business in the Trade Register before the permit is issued. Light entrepreneurs who work through an invoicing service without their own business ID do not qualify for the entrepreneur permit.", "source_ids": ["FI28", "FI32"], "confidence": "official" },
+        { "text": "How a non-EU founder who already lives in Finland on a residence permit is counted for PRH's 'permanent place of residence in the EEA' test is not stated on the PRH pages read (PRH refers to the Digital and Population Data Services Agency and Migri). It is also not confirmed how the PRH permit, the Trade Register registration and the entrepreneur residence permit are ordered for someone applying from outside Finland.", "source_ids": ["FI6"], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "The practical trap for a founder applying from outside Europe is a circle: the residence permit usually presupposes a registered business, while PRH's own permit rules look at where the people live. Because PRH's published practice mentions permits mainly for residents of Switzerland and the USA, a non-EU founder should not assume a PRH permit will be granted, and should confirm the order of steps with PRH and Migri (or a local adviser) before paying any fees.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "List where each board member and the managing director permanently live; at least one ordinary board member in the EEA avoids the PRH permit.", "source_ids": ["FI4"] },
+        { "text": "If a permit is needed, budget EUR 150 per person plus EUR 6.50 per application and allow time for the decision.", "source_ids": ["FI4"] },
+        { "text": "Confirm the order of steps (PRH permit, registration, residence permit) with PRH and Migri before you pay.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, toiminimi (private trader)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Non-EU/EEA founders: have the right to live and work in Finland in place first (an entrepreneur residence permit). EU citizens register their right of residence with the Finnish Immigration Service within three months of moving to Finland, and, if staying at least a year, register with the Digital and Population Data Services Agency, which assigns a municipality of residence.", "source_ids": ["FI25", "FI26"], "confidence": "official" },
+        { "text": "2. If you do not have a permanent residence in the EEA, obtain the PRH permit before filing (see the section above).", "source_ids": ["FI5", "FI6"], "confidence": "official" },
+        { "text": "3. File the private-trader start-up notification, online at ytj.fi (available in Finnish and Swedish) or on paper. The fee is EUR 75 (2026), and each auxiliary company name costs another EUR 75. You can track progress in the Virre information service.", "source_ids": ["FI2", "FI5"], "confidence": "official" },
+        { "text": "4. Report the business to the Tax Administration's registers as part of the start-up notification or by a change notification. VAT registration usually happens with the start-up notification but can be done later through ytj.fi.", "source_ids": ["FI15", "FI25"], "confidence": "official" },
+        { "text": "5. Some trades need a permit before you start, and others (for example real-estate brokerage or package-tour services) need no permit but must be notified to the supervisory authority. Some professions require recognition of qualifications first.", "source_ids": ["FI25", "FI26"], "confidence": "official" },
+        { "text": "6. Take out YEL pension insurance within six months of starting self-employment.", "source_ids": ["FI20"], "confidence": "official" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Confirm you have the right to work self-employed in Finland (non-EU founders: residence permit).", "source_ids": ["FI25"] },
+        { "text": "File the private-trader start-up notification (EUR 75).", "source_ids": ["FI2", "FI5"] },
+        { "text": "Check whether your trade needs a permit or a notification to a supervisory authority.", "source_ids": ["FI25"] },
+        { "text": "Take out YEL insurance within six months.", "source_ids": ["FI20"] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, osakeyhtio (Oy, private limited company)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Choose a company name and check it in PRH's name checking service. Do not publish the name before it is entered in the Trade Register.", "source_ids": ["FI1", "FI9"], "confidence": "official" },
+        { "text": "2. Choose the filing route: Alternative A (guided set-up package, EUR 300; the service creates the memorandum of association and standard articles) or Alternative B (full start-up notification, EUR 400; you add your own documents). Alternative B is also needed if the company has share capital, if shareholders include companies, or if some persons lack a Finnish personal identity code.", "source_ids": ["FI1", "FI2"], "confidence": "official" },
+        { "text": "3. Log in to the YTJ service and file online. A board member or deputy signs the filing, and the board and any managing director attach a declaration of compliance with the law. Paper forms are not accepted from 1 January 2026.", "source_ids": ["FI3"], "confidence": "official" },
+        { "text": "4. Persons without a Finnish personal identity code (beneficial owners, board members, managing director and others listed) give date of birth, home address and a passport copy or other proof of identity instead.", "source_ids": ["FI3"], "confidence": "official" },
+        { "text": "5. File within three months of signing the memorandum of association. If the notification is late, the formation lapses and no company comes into existence.", "source_ids": ["FI3"], "confidence": "official" },
+        { "text": "6. Check the residence rules for the board and managing director before filing (see the residence section above).", "source_ids": ["FI4"], "confidence": "official" },
+        { "text": "7. Board rules: with one ordinary board member the board must also have at least one deputy member; with several ordinary members it must have a chairperson.", "source_ids": ["FI10"], "confidence": "official" },
+        { "text": "8. After registration, keep address, board, managing director and beneficial-owner details up to date, and file approved financial statements for every financial period, even if the company is inactive. A company cannot simply be closed informally; liquidation takes at least five months and carries a fee.", "source_ids": ["FI1", "FI10"], "confidence": "official" },
+        { "text": "9. Processing: PRH said in March 2026 that YTJ-filed start-up notifications were being handled in about a week; online-form notifications become pending within about five working days, and PRH's status table (updated weekly) shows the arrival dates it is currently processing. These are PRH's statements about current workload, not guarantees.", "source_ids": ["FI7", "FI8"], "confidence": "official" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Check the company name in PRH's name checking service.", "source_ids": ["FI1"] },
+        { "text": "Decide between the EUR 300 guided package and the EUR 400 full notification.", "source_ids": ["FI1", "FI2"] },
+        { "text": "Make sure all board members and the managing director meet the EEA residence rule or have a PRH permit.", "source_ids": ["FI4"] },
+        { "text": "File in YTJ within three months of signing the memorandum of association.", "source_ids": ["FI3"] },
+        { "text": "Diarise the annual financial statements and the beneficial-owner updates.", "source_ids": ["FI1", "FI10"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "VAT rates: the standard rate is 25.5% (in force since 1 September 2024, replacing 24%). A 13.5% reduced rate applies to items such as groceries, restaurant services, books, passenger transport, accommodation and cultural and sports admissions (since 1 January 2026, down from 14%). A 10% rate applies to newspapers and magazines, and a 0% rate to certain sales such as exports outside the EU.", "source_ids": ["FI13"], "confidence": "official" },
+        { "text": "VAT registration threshold: a business is liable to VAT and must be entered in the VAT register when its turnover exceeds EUR 20,000 in a calendar year (page updated 18 May 2026). Turnover is calculated per calendar year on sales excluding VAT and includes certain VAT-exempt sales such as exports and intra-EU supplies. A business under the limit can register voluntarily if its activity counts as business, and must then charge VAT on all taxable sales; deregistration is possible only after turnover has stayed below EUR 20,000 in two consecutive calendar years.", "source_ids": ["FI11", "FI12"], "confidence": "official" },
+        { "text": "Corporate income tax for a limited company is 20% (Tax Administration, 2026). In September 2026 the Government proposed lowering it to 18%; this is a proposal, not law, and Vero says it would first apply to tax year 2027.", "source_ids": ["FI15", "FI16"], "confidence": "official" },
+        { "text": "Private trader income: the Tax Administration's guidance (issued 28 March 2024, valid until further notice) splits business income into an earned-income part and a capital-income part. Earned income is taxed at the combined average municipal tax rate and the progressive state tax rate; capital income is taxed at 30%, rising to 34% on the part above EUR 30,000 in a calendar year. That guidance is written for non-resident self-employed individuals, so check with Vero how the split applies to you as a Finland resident.", "source_ids": ["FI17"], "confidence": "official" },
+        { "text": "Income tax is mainly paid through prepayments invoiced by the Tax Administration during the year, credited in the annual assessment, with any excess refunded.", "source_ids": ["FI17"], "confidence": "official" },
+        { "text": "A VAT invoice must show, among other things, the date of issue, a unique sequential number, the seller's VAT identification number, names and addresses of seller and buyer, the quantity and nature of the goods or services, the VAT base per rate, the VAT rate and the VAT payable. Invoices must be kept for at least six years, counted from the start of the calendar year after the year of the taxable event.", "source_ids": ["FI14"], "confidence": "official" },
+        { "text": "Issue deadline: for intra-EU supplies of goods and for services under the general EU rule, the invoice must be issued by the 15th day of the month after the supply; Vero says the VAT Act sets no other time limits.", "source_ids": ["FI14"], "confidence": "official" },
+        { "text": "E-invoicing: invoices may be paper or electronic, but sending an electronic invoice requires the recipient's consent. Public contracting entities must accept and process e-invoices that meet the European standard (E-Invoice Act 241/2019), and a supplier selling to an organisation that requires e-invoices must be able to send them.", "source_ids": ["FI14", "FI24"], "confidence": "official" },
+        { "text": "Whether Finland has a general mandatory e-invoicing rule for ordinary business-to-business or business-to-consumer sales was not confirmed on any official page read. The Tax Administration notes EU VAT-in-the-digital-age (ViDA) changes mostly in 2028 to 2035.", "source_ids": ["FI16"], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "Many first-year sole traders stay under the EUR 20,000 limit and can avoid VAT administration, but remember that you then cannot deduct VAT on your own purchases unless you register voluntarily. Ask an accountant to model both options before your first invoice.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Track turnover against the EUR 20,000 calendar-year VAT limit, or decide to register voluntarily.", "source_ids": ["FI11", "FI12"] },
+        { "text": "Confirm which VAT rate applies to what you sell (25.5% standard in 2026).", "source_ids": ["FI13"] },
+        { "text": "Set up invoices with the required fields and keep them at least six years.", "source_ids": ["FI14"] },
+        { "text": "If you sell to the public sector, check the customer's e-invoice requirements.", "source_ids": ["FI24"] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security: YEL pension and Kela",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "YEL pension insurance is mandatory for self-employed people who do not work under an employment contract. You must take it out within six months of starting self-employment; the work must have lasted at least four months and estimated annual earnings must be at least EUR 9,423.09 (2026). Coverage starts from the beginning of the self-employment, not the date you apply. Citizenship does not matter.", "source_ids": ["FI19", "FI20", "FI21"], "confidence": "official" },
+        { "text": "Owner-managers of limited companies are covered if they hold a leading position and own more than 30% of the company or its voting rights alone, or more than 50% together with family members.", "source_ids": ["FI20", "FI21"], "confidence": "official" },
+        { "text": "YEL contribution in 2026 is 24.40% of confirmed income. Newly self-employed people get a 22% discount on the contribution for the first 48 months. Insurable income is capped at EUR 214,000 per year (2026).", "source_ids": ["FI18", "FI19", "FI21"], "confidence": "official" },
+        { "text": "ETK's page gives the insured age range as 18 to 69, with coverage ending at 68, 69 or 70 depending on birth year; read the page for your own birth year.", "source_ids": ["FI20"], "confidence": "official" },
+        { "text": "Kela: a self-employed person moving to Finland is eligible for Kela benefits only if insured under YEL, and people from outside the EU/EEA, Switzerland and the UK also need a valid residence permit. Daily allowances are based on the income reported under YEL. Health-insurance contributions in 2026 are 1.10% (medical care) and 1.11% (daily allowances); the daily-allowance contribution applies only if entrepreneurial income is EUR 17,255 or more.", "source_ids": ["FI22", "FI23"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Your confirmed YEL income also drives sickness and parental allowances, so setting it too low saves contributions now but lowers your benefits later. Ask the pension provider for its income recommendation before you choose.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Take out YEL insurance within six months of starting, choosing a pension provider and estimating your yearly income.", "source_ids": ["FI20", "FI19"] },
+        { "text": "Ask whether the 22% start-up discount (48 months) applies to you.", "source_ids": ["FI18"] },
+        { "text": "Check your Kela entitlement and health-insurance contributions once your YEL income is confirmed.", "source_ids": ["FI22", "FI23"] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "FI29",
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. Migri's own site (migri.fi) blocked automated access (HTTP 403) during drafting, so the Migri fee and processing-time figures were NOT verified and are left out; the claims below rest on Enter Finland, Suomi.fi, the ELY Centre and Business Finland pages.",
+      "open_questions_for_reviewer": [
+        "What are the current Migri fee (online and paper) and expected processing time for a first entrepreneur permit and a first start-up permit? Migri pages could not be read during drafting. Enter Finland pages say a fee applies and point to the Processing Time Checker, without amounts.",
+        "For an applicant outside Finland, in what order do the PRH permit (if no EEA residence), Trade Register registration and the entrepreneur residence permit happen in practice? Suomi.fi says entrepreneurs usually need to be registered in the Trade Register before the permit is issued; PRH's published practice mentions permits mainly for Switzerland and the USA.",
+        "How does PRH treat a non-EU founder who already holds a Finnish residence permit when it applies the 'permanent place of residence in the EEA' test?",
+        "Is the ELY income guideline of about EUR 15,000 per year (net, from 1 November 2024) still current, and what business plan and profitability evidence does the ELY Centre actually expect?",
+        "Is the Business Finland Startup Permit realistic for Kerala-origin founders whose business is a service or consultancy, which Business Finland lists as ineligible? Should this section also cover switching from an employed (specialist) permit to self-employment?",
+        "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"
+      ],
+      "official_information": [
+        { "text": "Non-EU citizens always need a residence permit to move to Finland as an entrepreneur. The entrepreneur's permit covers entrepreneurs in limited companies, private entrepreneurs and general partners and similar roles; a start-up entrepreneur's permit is for establishing a start-up company. Freelancers and light entrepreneurs do not need a separate permit but must hold a residence permit in Finland.", "source_ids": ["FI25"], "confidence": "hold" },
+        { "text": "Entrepreneur permit, who can apply: sole traders, general-partnership partners and other registered partners, and shareholders of a limited company who hold a management position (managing director or board member) and own at least 30% of the company. You cannot get a residence permit only because you own a company; you must work in the company, and the work must be done in Finland. Light entrepreneurs without their own business ID do not qualify.", "source_ids": ["FI28", "FI29"], "confidence": "hold" },
+        { "text": "Entrepreneur permit, process: two stages. The ELY Centre (Economic Development Centre) first assesses the business (profitability, sufficient resources and permits, no material neglect of tax obligations, and income sufficient for a livelihood), then the Finnish Immigration Service decides. The ELY general guideline is income of approximately EUR 15,000 per year, net after taxes, applying from 1 November 2024 and open to later adjustment. The business is run through a company registered in Finland with a business ID, and entrepreneurs usually need to be registered in the Trade Register before the permit is issued.", "source_ids": ["FI28", "FI32"], "confidence": "hold" },
+        { "text": "Entrepreneur permit, steps: prepare the business plan, calculations, company form, start-up notification and attachments (translated and legalised if needed); apply in Enter Finland and pay the fee; answer requests for more information; the Immigration Service issues the decision; start the business after a positive decision; keep proper accounts; apply for an extension before the permit expires. You must prove your identity in person at a Finnish mission or service point, bring original documents and give fingerprints.", "source_ids": ["FI28", "FI29"], "confidence": "hold" },
+        { "text": "Start-up entrepreneur permit: you need a positive Eligibility Statement from Business Finland, no more than four months old when you apply for the permit. Business Finland's criteria include a team of at least two founders who plan to move to Finland, the team holding at least 60% of the company, an innovative and scalable idea, full-time work in the company, and sufficient funding and personal means. Restaurants, consultancies, import/distribution and other service businesses, Finnish subsidiaries and companies aimed only at the Finnish market are not eligible. The Startup Permit is issued for a maximum of two years, is renewable, and does not include investment or financial support.", "source_ids": ["FI30", "FI31"], "confidence": "hold" },
+        { "text": "Costs and processing time: the Enter Finland pages say a processing fee applies and refer to Migri's Processing Time Checker, but they give no amounts or times, and the fee and time figures could not be confirmed on a page opened for this draft. Business Finland mentions a Fast Track option described as a permit 'in just two weeks' for qualifying applicants, without a general processing time.", "source_ids": ["FI29", "FI30", "FI31"], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
