@@ -89,3 +89,12 @@ RewriteRule ^company\.html$ company.php [R=301,L]
 RewriteRule ^about\.html$ about.php [R=301,L]
 RewriteRule ^add-company\.html$ add-company.php [R=301,L]
 RewriteRule ^privacy\.html$ privacy.php [R=301,L]
+
+# Runs the site on PHP 8.4 (host-level handler set up by hosting support).
+# The cPanel "PHP version" dropdown can't be changed for this domain, so this
+# line is what actually selects the version. It lives here so deploys (which
+# overwrite .htaccess) don't silently drop the site back to PHP 7.4. If the
+# host ever changes, this handler name must change with it.
+<FilesMatch ".(?:html|php)$">
+SetHandler application/x-httpd-alt-php84
+</FilesMatch>
