@@ -40,8 +40,11 @@ with a plain-language recommendation, not just a neutral list.
 
 ## Tech stack & hard constraints
 
-- **PHP 7.4-compatible syntax required** in everything under `public/` —
-  hosting constraint, not a style preference.
+- **Production runs PHP 8.4** (since Oct 2026), selected by a `SetHandler`
+  block at the bottom of `public/.htaccess` — see Deployment gotcha 5. The
+  Claude Code web sandbox runs PHP 8.3, so avoid 8.4-only syntax in
+  `public/` to keep it testable there. Don't rely on `public/` being
+  7.4-compatible any more; 7.4 is end-of-life.
 - MySQL/MariaDB. `schema.sql` is the full current schema, including seed
   data — safe to load fresh, but its `INSERT`s aren't idempotent (unique
   slugs), so don't re-run it against an already-seeded database.
@@ -121,6 +124,16 @@ UI does anything; the real trigger is a push to `main`.
    `index.php` no matter how many times you redeploy.
 4. `logo.svg` is deliberately excluded from ever being overwritten by a
    deploy — see "public/assets/logo.svg is off-limits" above.
+5. *(PHP version)* cPanel's PHP-version dropdown can't be changed for this
+   domain (host-level "Site Isolation" restriction), and its Per Domain
+   Settings tab still shows 7.4. The real version comes from the
+   `<FilesMatch>`/`SetHandler application/x-httpd-alt-php84` block at the
+   end of `public/.htaccess`. Deploys copy `public/.` (dotfiles included)
+   over the docroot, so that block **must stay in the repo** or the next
+   deploy silently reverts the site to the old PHP. The handler name is
+   host-specific — change it if the host changes. To check the live version,
+   create a one-line `<?php echo PHP_VERSION;` file, open it, and delete it
+   straight away.
 
 ## Conventions (follow these)
 
