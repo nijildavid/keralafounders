@@ -81,5 +81,5 @@ forward; don't go rewrite unrelated rules just to use a token.
 
 ## See also
 
-- `CLAUDE.md` — hard constraints (PHP 7.4, no build step, `--accent2` for
-  orange text, etc.) and repo conventions.
+- `CLAUDE.md` — hard constraints (PHP 8.4 in production, no build step,
+  `--accent2` for orange text, etc.) and repo conventions.
