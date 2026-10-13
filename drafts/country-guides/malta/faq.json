@@ -50,7 +50,7 @@
     "id": "mt-remote",
     "country": "malta",
     "topic": "company",
-    "question": "Do I need to live in Malta to be a shareholder or company secretary?",
+    "question": "Does the company secretary have to live in Malta, and what else is needed for a non-EU founder?",
     "answer": "The MBR guide says the company secretary does not have to be resident in Malta and may be a licensed company service provider. A registered office in Malta is required, and a non-EU individual needs a character reference from a lawyer, auditor, accountant or notary.",
     "source_ids": [
       "MT1"
@@ -97,7 +97,7 @@
     "country": "malta",
     "topic": "social",
     "question": "How much social security does a self-employed person pay?",
-    "answer": "Self-employed and self-occupied people pay Class Two contributions every four months in arrears. For persons born from 1962 with prior-year net earnings above EUR 27,679.09 the Act shows EUR 79.84 per week; below that it is 15% of net earnings, or EUR 34.70 per week at the lowest band.",
+    "answer": "Self-employed and self-occupied people pay Class Two contributions every four months in arrears, at the Malta Tax and Customs Administration. The weekly amount depends on the previous year's net earnings, with a lowest band, a middle band of 15% of net earnings and a top band. The weekly amounts are not stated here because the Act's printed table could not be matched to the Department of Social Security's current 2026 table; check the current rates with the Department of Social Security.",
     "source_ids": [
       "MT7"
     ],

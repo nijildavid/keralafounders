@@ -614,21 +614,19 @@
           "confidence": "official"
         },
         {
-          "text": "Class Two weekly rates for self-occupied persons, based on net earnings of the preceding calendar year, as printed in the Act consolidated to Act III of 2026: EUR 34.70 where annual net earnings are less than EUR 12,028.92; 15% of annual net earnings (weekly equivalent) between EUR 12,028.93 and EUR 27,678.08 for persons born on or after 1 January 1962; EUR 79.84 where they exceed EUR 27,679.09. Lower figures apply to persons born on or before 31 December 1961.",
+          "text": "Class Two weekly amounts: the Social Security Act as consolidated to Act III of 2026 prints a table with a lowest band of EUR 34.70 a week, a middle band of 15% of annual net earnings (weekly equivalent) and a top band of EUR 79.84 for persons born on or after 1 January 1962. The independent check could not open the Department of Social Security's own 2026 table (HTTP 403), and secondary search snippets suggest the 2026 amounts are higher than the Act's printed table, so no weekly amount is stated here. Check the current weekly rates with the Department of Social Security before relying on any figure.",
+          "source_ids": [],
+          "confidence": "hold"
+        },
+        {
+          "text": "A self-employed person who is not self-occupied and whose yearly means do not exceed EUR 1,005 (EUR 1,470 for a married person wholly maintaining a spouse) can obtain a certificate of low income valid for twelve months and be exempt from Class Two contributions.",
           "source_ids": [
             "MT7"
           ],
           "confidence": "official"
         },
         {
-          "text": "A self-employed person who is not self-occupied and whose yearly means do not exceed EUR 1,005 can obtain a certificate of low income valid for twelve months and be exempt from Class Two contributions.",
-          "source_ids": [
-            "MT7"
-          ],
-          "confidence": "official"
-        },
-        {
-          "text": "Employed persons pay Class One contributions at 10% of basic weekly wage, with the employer paying a matching 10%, subject to weekly maximums (Tenth Schedule, Part I). The weekly maximum figures are held because the table layout was ambiguous in the extracted text.",
+          "text": "Employed persons pay Class One contributions at 10% of basic weekly wage, with the employer paying a matching 10%, subject to weekly maximums (Tenth Schedule, Part I). The weekly maximum amounts are held: the table layout was ambiguous in the extracted text and the Act's printed amounts may lag the current year.",
           "source_ids": [
             "MT7"
           ],
@@ -695,9 +693,11 @@
           "confidence": "hold"
         },
         {
-          "text": "Identita says non-EU nationals require a residence permit to be employed in Malta. The most common employment-related permits are the Single Permit, Self-Employment, Employment of less than six months, the Blue Card and the Intra-Corporate Transferee permit. A third-country national may only apply if still residing in a third country or legally residing in Malta or another EU state.",
+          "text": "Identita says non-EU nationals require a residence permit to be employed in Malta. The most common employment-related permits are the Single Permit, Self-Employment, Employment of less than six months, the Blue Card and the Intra-Corporate Transferee permit. The Expatriates Unit processes applications only where the third-country national is still in the country of residence or holds legal status in Malta, or is legally staying in another Schengen state (Single Permit pages).",
           "source_ids": [
-            "MT8"
+            "MT8",
+            "MT10",
+            "MT13"
           ],
           "confidence": "hold"
         },
