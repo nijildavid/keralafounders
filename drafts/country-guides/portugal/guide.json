@@ -1,0 +1,854 @@
+{
+  "slug": "portugal",
+  "title": "How to start a company in Portugal",
+  "summary": "Portugal gives a founder two practical routes: register as a self-employed person (trabalhador independente, or empresario em nome individual for a commercial activity) with the tax authority, or form a sociedade por quotas (Lda.) or single-member sociedade unipessoal por quotas through the state services Empresa na Hora (at a counter) or Empresa Online (with a digital identity). Each quota must be worth at least EUR 1, so capital is not a barrier. A Portuguese tax number (NIF) comes first, and founders living outside the EU/EEA face a fiscal-representative rule for VAT.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-08",
+  "quick_facts": {
+    "structure": {
+      "text": "Register as a trabalhador independente or empresario em nome individual (ENI) with the tax authority, no company needed. Or form a sociedade por quotas (Lda.) or a single-member sociedade unipessoal por quotas through Empresa na Hora or Empresa Online.",
+      "source_ids": [
+        "PT3",
+        "PT4",
+        "PT9"
+      ]
+    },
+    "cost": {
+      "text": "Empresa na Hora costs EUR 360; Empresa Online costs EUR 220 with a pre-approved articles template or EUR 360 with your own articles (IRN pages, accessed 2026). Each quota must be worth at least EUR 1 (Companies Code, art. 219), so there is no large minimum capital. Registering as a sole trader with the tax office is not charged on the pages we read.",
+      "source_ids": [
+        "PT1",
+        "PT4",
+        "PT6"
+      ]
+    },
+    "time": {
+      "text": "Empresa Online: the registry step takes 5 days with pre-approved articles and 10 days with custom articles, per gov.pt. The Empresa na Hora pages we read give no processing time, so we do not quote one. Sole trader: the start-of-activity declaration is filed online with Financas before you start work.",
+      "source_ids": [
+        "PT3",
+        "PT9"
+      ]
+    },
+    "gotcha": {
+      "text": "The small-business VAT exemption (EUR 15,000 turnover in 2026) is only for businesses with a registered office or domicile in Portugal. A self-employed person living outside the EU/EEA must name a VAT-registered fiscal representative in Portugal before starting.",
+      "source_ids": [
+        "PT8",
+        "PT10",
+        "PT11",
+        "PT12"
+      ]
+    }
+  },
+  "founder_checklist": [
+    {
+      "text": "Decide between working as a sole trader (trabalhador independente / ENI) and forming a Lda., using the comparison table.",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "Get a Portuguese tax number (NIF). Non-residents can ask through a legal representative or book a Financas appointment.",
+      "section_id": "non-resident-nif-vat"
+    },
+    {
+      "text": "If you live outside the EU/EEA, appoint a VAT-registered fiscal representative in Portugal before you start self-employed work.",
+      "section_id": "non-resident-nif-vat"
+    },
+    {
+      "text": "Sole trader: file the start-of-activity declaration on the Portal das Financas before you start, with your activity code and expected turnover.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "Company: choose Empresa na Hora (all partners at the counter) or Empresa Online (each partner needs a NIF and a digital authentication method).",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Company: deposit the share capital within 5 working days and declare the beneficial owner within 30 days.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Check which VAT regime applies to you and set up invoicing with a certified program or the free AT invoicing tool (ATCUD on every document).",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Plan for social security: the first contribution period for a new self-employed person starts in the 12th month after you begin.",
+      "section_id": "social"
+    },
+    {
+      "text": "If you need a residence permit, read the non-EU route overview and check the official pages before booking any move.",
+      "section_id": "visa"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "expert_interpretation": [
+        {
+          "text": "Portugal gives a founder two practical starting points. You can register as a self-employed person (trabalhador independente, or empresario em nome individual for a commercial or industrial activity) with the tax authority and invoice clients quickly, or you can form a sociedade por quotas (Lda.) and run the business through a company. Company formation runs through state-run services at the IRN: Empresa na Hora at a counter, or Empresa Online with a digital identity. Two things decide how easy it is for a founder who is not yet resident: the Portuguese tax number (NIF), which is needed for almost everything, and the rules on a fiscal representative for people living abroad. For founders from outside the EU, the residence permit is usually the slower and more decisive step than the registration itself. This guide explains the rules and points to the official source. It is general information, not legal or tax advice.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "official_information": [],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Trabalhador independente / empresario em nome individual (sole trader)",
+            "none",
+            "personal",
+            "no",
+            "start-of-activity declaration filed online with Financas before you start work",
+            "simplified regime up to EUR 200,000 gross income per year; organised accounting above that or by choice",
+            "official [PT9]"
+          ],
+          [
+            "Sociedade por quotas (Lda.), two or more partners",
+            "each quota at least EUR 1; total capital set by the partners",
+            "limited to the company (general rule)",
+            "not required on the Empresa na Hora / Empresa Online routes",
+            "Empresa Online: 5 days (pre-approved articles) or 10 days (custom articles); Empresa na Hora: no time stated on the pages read",
+            "company accounts; a certified accountant files the start-of-activity declaration",
+            "official [PT1, PT3, PT6]"
+          ],
+          [
+            "Sociedade unipessoal por quotas (single-member Lda.)",
+            "same as Lda.: quota at least EUR 1",
+            "limited to the company (general rule)",
+            "not required on the Empresa Online route",
+            "Empresa Online: 5 or 10 days as above",
+            "company accounts",
+            "official [PT3, PT4, PT6]"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "Each quota in a sociedade por quotas can have a different nominal value, but none may be worth less than EUR 1 (Codigo das Sociedades Comerciais, art. 219(3)). On formation each partner holds one quota matching their contribution.",
+          "source_ids": [
+            "PT6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Empresa Online lets you create a sociedade unipessoal por quotas, a sociedade por quotas or a sociedade anonima.",
+          "source_ids": [
+            "PT3",
+            "PT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Social security treats trabalhadores independentes and empresarios em nome individual as insured persons in the self-employed regime, with a higher contribution rate for sole traders (ENI) and holders of an establishment of limited liability (EIRL) than for professionals, see the social section.",
+          "source_ids": [
+            "PT13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A sole trader with annual category B income up to EUR 200,000 is placed in the simplified IRS regime unless they opt for organised accounting. Organised accounting is mandatory above EUR 200,000.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The simplified regime stops applying automatically if income exceeds EUR 200,000 in two consecutive years, or exceeds EUR 250,000 (25% above the limit) in a single year; organised accounting then applies from the following year.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The company contract (contrato de sociedade) must be in writing and identify the partners, the type, the name, the registered office, the corporate purpose and the capital. Registration must be requested within 2 months of the company being constituted (gov.pt page updated 6 August 2026).",
+          "source_ids": [
+            "PT24"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For a founder working alone with modest early revenue, registering as an independent worker is the lightest way to start invoicing. A Lda. makes sense when you want your personal assets separate from the business, bring in a co-founder or investor, or a client wants to contract with a company. Because the sole-trader route is personal, ask a local accountant to check your liability and tax position before you sign large contracts.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Decide whether personal liability (sole trader) is acceptable for now.",
+          "source_ids": []
+        },
+        {
+          "text": "If forming a Lda., decide between Empresa na Hora and Empresa Online.",
+          "source_ids": [
+            "PT1",
+            "PT4"
+          ]
+        }
+      ],
+      "founder_experience": []
+    },
+    {
+      "id": "non-resident-nif-vat",
+      "title": "Worth knowing: NIF, fiscal representative and VAT if you live abroad",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "A tax number (NIF) is required for every person, resident or not, who has tax obligations in Portugal or wants to deal with the tax authority. Banks, contracts and social security also ask for it.",
+          "source_ids": [
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A NIF can be requested electronically through the Portal das Financas e-balcao by a legal representative holding a power of attorney (signature recognition is waived for powers granted to a lawyer or solicitor), or in person at a Servico de Financas or Loja do Cidadao after booking an appointment. Documents: a valid passport and proof of the foreign address, unless the address is in the passport.",
+          "source_ids": [
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A third-country national who requests the NIF in person should have an entry visa in the passport, unless the passport shows an entry visa to any EU country or the person's nationality is exempt from a Schengen visa.",
+          "source_ids": [
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A fiscal representative is not required when the NIF is first issued to a non-resident.",
+          "source_ids": [
+            "PT7",
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Once a person has a tax-legal relationship with the tax authority (for example self-employment in Portugal), a person living in a country outside the EU, Norway, Iceland or Liechtenstein must within 15 days appoint a fiscal representative in Portugal or join electronic notifications (Portal das Financas or ViaCTT). For people resident in the EU, Norway, Iceland or Liechtenstein this is optional.",
+          "source_ids": [
+            "PT7",
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A non-resident from a third country who carries on self-employed activity subject to VAT in Portugal must appoint a fiscal representative who is a VAT taxpayer resident in Portugal. Joining electronic notifications does not remove this duty, and the appointment must be made before starting the activity.",
+          "source_ids": [
+            "PT7",
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Not appointing a required representative can be fined between EUR 75 and EUR 7,500. The representative can be jointly liable for the VAT.",
+          "source_ids": [
+            "PT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The special VAT exemption for small businesses (art. 53 CIVA) does not apply to taxable persons without a registered office or domicile in Portugal, even if they have a permanent establishment or VAT registration there.",
+          "source_ids": [
+            "PT11",
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Taxable persons established in another EU Member State can use the art. 53 exemption in Portugal if their annual EU turnover does not exceed EUR 100,000, after notifying their home state and holding an identification number with the suffix EX.",
+          "source_ids": [
+            "PT10"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Empresa Online cannot be used if any partner lacks a Portuguese NIF. Foreign citizens can authenticate with a Chave Movel Digital linked to their passport or with eIDAS.",
+          "source_ids": [
+            "PT4"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "This is where non-resident founders most often lose time. Get the NIF first, because the company route and the sole-trader route both depend on it. Then check, with a local accountant, whether your residence triggers the fiscal representative duty and whether you will charge VAT from day one, because the small-business exemption may not be open to you.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Request a NIF (own appointment or through a lawyer with a power of attorney).",
+          "source_ids": [
+            "PT8"
+          ]
+        },
+        {
+          "text": "If you live outside the EU/EEA, line up a VAT-registered representative in Portugal before starting.",
+          "source_ids": [
+            "PT7",
+            "PT8"
+          ]
+        }
+      ],
+      "founder_experience": []
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, sole trader (trabalhador independente / ENI)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Get a NIF (see the section above).",
+          "source_ids": [
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. File the declaracao de inicio de atividade on the Portal das Financas before you start working on your own account. Log in with NIF and password, Cartao de Cidadao or Chave Movel Digital.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Have ready: your activity code (the list in art. 151 CIRS, classified by CAE Rev. 4), your expected turnover until the end of the year, and the IBAN and BIC/SWIFT of a bank account in your own name.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. If you are obliged to or choose organised accounting, the declaration must be filed by a certified accountant (contabilista certificado).",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. If you live outside the EU/EEA and the activity is subject to VAT, appoint a VAT-registered fiscal representative before you start.",
+          "source_ids": [
+            "PT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Issue invoices through the free invoicing system on the Portal das Financas (or the ATGO app) or a certified invoicing program. Using the AT system removes the duty to report invoice data by the 5th of the following month. Pre-printed invoices from authorised printers are allowed only if the previous year's turnover was below EUR 50,000.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. Report changes to the activity within 15 days, and file a cessation declaration within 30 days of stopping.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. Annually: file the IRS return with Annex B between 1 April and 30 June, and pay advance payments on account by 20 July, 20 September and 20 December if they apply.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Registration itself is online and quick if you hold a NIF and a way to log in. If you do not yet have a Portuguese login, the NIF and the access credentials are the first thing to sort out, and a local accountant can usually file the declaration on your behalf.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Get a NIF.",
+          "source_ids": [
+            "PT8"
+          ]
+        },
+        {
+          "text": "File the start-of-activity declaration before you start.",
+          "source_ids": [
+            "PT9"
+          ]
+        },
+        {
+          "text": "Choose an invoicing tool.",
+          "source_ids": [
+            "PT9"
+          ]
+        },
+        {
+          "text": "Register for social security (see the social section).",
+          "source_ids": [
+            "PT13"
+          ]
+        }
+      ],
+      "founder_experience": []
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, Lda. (Empresa na Hora or Empresa Online)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Every individual partner needs a NIF. For Empresa na Hora, partners provide their tax numbers at the counter.",
+          "source_ids": [
+            "PT1",
+            "PT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Empresa na Hora: all future partners must be present at the counter (or legally represented) with an ID document, which can be a passport or a residence permit. The standard request costs EUR 360. If capital is paid in assets other than cash, the registration cost for each asset transfer is added.",
+          "source_ids": [
+            "PT1",
+            "PT2",
+            "PT5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Empresa Online: authenticate with Cartao de Cidadao, Chave Movel Digital, a legal professional's certificate, or eIDAS. Price: EUR 220 with a pre-approved articles template, EUR 360 with articles drafted by the founders; urgent requests EUR 440 and EUR 720; correcting non-conformities costs EUR 30 extra.",
+          "source_ids": [
+            "PT3",
+            "PT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Empresa Online timing: the chosen name is held for 24 hours, extended to 48 hours when you choose a payment method; you have 48 hours to pay by Multibanco; non-conformities must be corrected within 5 days. Once the registry finds no problems, registration takes 5 days with pre-approved articles and 10 days with custom articles. Empresa Online cannot be used when the capital includes non-cash assets subject to registration, such as property or vehicles.",
+          "source_ids": [
+            "PT3",
+            "PT4",
+            "PT5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Within 5 working days after the company is created, deposit the share capital in the company's bank account. Alternatively, partners can declare that the capital is delivered to the company's cash desk by the end of the first financial year.",
+          "source_ids": [
+            "PT1",
+            "PT2",
+            "PT3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Declare the beneficial owner (RCBE) within 30 days of the company's constitution if it was not completed during the process.",
+          "source_ids": [
+            "PT1",
+            "PT2",
+            "PT3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. File the start-of-activity declaration within 15 days of the company's constitution. The certified accountant's declaration can be filed at Financas up to 15 days after the company is created.",
+          "source_ids": [
+            "PT1",
+            "PT2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. A refusal or provisional registration can be challenged within 30 days of notification (hierarchical appeal or court).",
+          "source_ids": [
+            "PT5"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Empresa na Hora needs everyone at the counter in Portugal or properly represented, so for a founder abroad Empresa Online with a passport-linked Chave Movel Digital, or a lawyer with a power of attorney, is often the practical route. Ask whether you can open the company bank account remotely, because the capital deposit deadline is short.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Choose Empresa na Hora or Empresa Online.",
+          "source_ids": [
+            "PT1",
+            "PT4"
+          ]
+        },
+        {
+          "text": "Deposit the share capital within 5 working days.",
+          "source_ids": [
+            "PT1",
+            "PT3"
+          ]
+        },
+        {
+          "text": "Declare the beneficial owner within 30 days.",
+          "source_ids": [
+            "PT1",
+            "PT3"
+          ]
+        },
+        {
+          "text": "File the start-of-activity declaration within 15 days.",
+          "source_ids": [
+            "PT2"
+          ]
+        }
+      ],
+      "founder_experience": []
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "VAT (IVA) standard rate on the mainland is 23% (intermediate 13%, reduced 6%). Madeira: 22% and 5%. Azores: 16% and 4%. (gov.pt guide, page marked updated 04/09/2026.)",
+          "source_ids": [
+            "PT12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Small-business VAT exemption (art. 53 CIVA): the 2026 limit is EUR 15,000 of annual turnover in Portugal. It applies to businesses with a registered office or domicile in Portugal that do not export. For a new business, the declaration of start of activity states an estimate for the current year, without annualising it.",
+          "source_ids": [
+            "PT10",
+            "PT11",
+            "PT12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "An exempt business that exceeds EUR 15,000 but stays below EUR 18,750 moves to normal VAT from 1 January of the following year. If the EUR 18,750 limit (25% over) is exceeded within the year, VAT applies from the invoice that crosses it. Exempt invoices must carry the mention 'IVA - regime de isencao'.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Under the normal VAT regime, returns are quarterly if annual turnover is below EUR 650,000 and monthly from EUR 650,000. According to the tax authority leaflet, the return is due by the 20th of the 2nd month after the period and the tax paid by the 25th of the 2nd month. A return is required even with no activity.",
+          "source_ids": [
+            "PT9",
+            "PT12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Services to businesses in other EU Member States use reverse charge with the invoice mention 'IVA - autoliquidacao', and a recapitulative statement is required, due by the 20th of the following month (monthly filers).",
+          "source_ids": [
+            "PT9",
+            "PT12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Conflict for the reviewer: the gov.pt guide gives VAT return deadlines of the 15th (quarterly) and the 10th (monthly) of the 2nd month, while the tax authority's own start-of-activity leaflet gives the 20th, with payment by the 25th. This draft uses the tax authority leaflet.",
+          "source_ids": [
+            "PT9",
+            "PT12"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Simplified IRS regime for sole traders (art. 31 CIRS): income is taxed after applying a coefficient: 0.75 to professional activities listed in the art. 151 CIRS table, 0.35 to other services, 0.15 to sales of goods and most restaurant and hotel services, 0.10 to other category B income. In the start-up period and the following one the coefficients for services are reduced by 50% and 25%. Taxable income is raised if documented expenses are below 15% of gross service income.",
+          "source_ids": [
+            "PT17"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Withholding tax on invoices to clients with organised accounting applies if your income the year before was above EUR 15,000: 23% for professional activities in the art. 151 CIRS table and 11.5% for other services.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Corporate income tax (IRC): the general rate for tax periods starting in 2026 is 19%, 18% for periods starting in 2027, and 17% from 1 January 2028. The first EUR 50,000 of taxable profit of small and medium enterprises is taxed at 15% from 2026, and at 12.5% for qualifying start-ups.",
+          "source_ids": [
+            "PT16"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Invoicing: documents must carry the ATCUD (a unique document code) whatever the issuer's turnover or VAT regime, from 1 January 2023; invoice series are reported to the tax authority before use; a QR code is required on documents from certified invoicing programs.",
+          "source_ids": [
+            "PT18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Invoicing programs: certified programs or the free AT invoicing system on the Portal das Financas / ATGO app. Invoice data must be reported by the 5th of the following month unless the AT system is used.",
+          "source_ids": [
+            "PT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Structured B2B e-invoicing mandate and the timing of signature rules for PDF invoices in 2026-2027: only found on accountant and vendor sites in search results, not on an official page we opened. Not stated here.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For most first-year founders the useful order is: confirm which VAT regime applies to you (the exemption may be closed to a non-resident), choose between the simplified IRS regime and organised accounting with an accountant, and pick invoicing software that can add the ATCUD. Local municipal surtax (derrama) and other local taxes are not covered here.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Confirm your VAT regime and whether the art. 53 exemption is open to you.",
+          "source_ids": [
+            "PT10",
+            "PT11"
+          ]
+        },
+        {
+          "text": "Choose the simplified IRS regime or organised accounting with an accountant.",
+          "source_ids": [
+            "PT9",
+            "PT17"
+          ]
+        },
+        {
+          "text": "Set up invoicing with the ATCUD.",
+          "source_ids": [
+            "PT18"
+          ]
+        }
+      ],
+      "founder_experience": []
+    },
+    {
+      "id": "social",
+      "title": "Social security for the self-employed and for directors",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Trabalhadores independentes and their spouses contribute at 21.4% of the monthly contribution base. Empresarios em nome individual and holders of an establishment of limited liability (EIRL) contribute at 25.2% (ISS practical guide v1.14, 16 May 2025).",
+          "source_ids": [
+            "PT13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Relevant income is worked out each quarter from the previous three months: 70% of services provided, or 20% of income from producing and selling goods. The monthly contribution base is one third of the relevant income. Example in the guide: EUR 6,000 of services in a quarter gives relevant income of EUR 4,200 and a base of EUR 1,400, so EUR 299.60 per month at 21.4%.",
+          "source_ids": [
+            "PT13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "You can choose a base up to 25% higher or lower in steps of 5%. The minimum monthly contribution is EUR 20 and the maximum base is 12 times the IAS (EUR 6,270 with the 2025 IAS of EUR 522.50).",
+          "source_ids": [
+            "PT13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The quarterly declaration is due by the last day of January, April, July and October for the previous three months. Payment is made between the 10th and the 20th of each month for the previous month (gov.pt page updated 28 May 2026).",
+          "source_ids": [
+            "PT13",
+            "PT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "First time as self-employed: the first inclusion in the independent workers regime takes effect only on the first day of the 12th month after the start of activity, so there are no contributions during the first year. You can ask to start earlier in the quarterly declaration. If you stop within the first 12 months, the count is suspended and resumes if you restart within 12 months.",
+          "source_ids": [
+            "PT13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2026 IAS: EUR 537.13. Someone who also has an employment contract with another employer can be exempt if independent income is below 4 times the IAS (EUR 2,148.52), per the gov.pt guide for 2026.",
+          "source_ids": [
+            "PT12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Conflict for the reviewer: the gov.pt guide (page updated 04/09/2026) states a self-employed contribution rate of 29.6% on 70% of quarterly income, while the Social Security Institute's own guide (v1.14, May 2025) states 21.4% (25.2% for sole traders). This draft uses the Institute's figure and holds the 29.6%.",
+          "source_ids": [
+            "PT12",
+            "PT13"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Employees' contributions in general: 23.75% paid by the employer and 11% by the worker, 34.75% in total, for profit-making entities (gov.pt page updated 7 September 2026).",
+          "source_ids": [
+            "PT14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Whether a Lda. manager (gerente), paid or unpaid, is insured at the 34.75% employee rate, and the exceptions for unpaid managers: the Social Security page on statutory body members could not be read (cookie wall). Search snippets only. Not stated as fact.",
+          "source_ids": [
+            "PT14"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The first-12-months rule is a real cash-flow benefit for a new independent worker, but it is not an exemption from the system: it delays when contributions start. If you run a Lda. and pay yourself as manager, ask an accountant how your own contributions work before you set a salary.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Check that you are placed in the self-employed regime after filing the start-of-activity declaration.",
+          "source_ids": [
+            "PT13"
+          ]
+        },
+        {
+          "text": "Diary the quarterly declaration dates (last day of Jan, Apr, Jul, Oct).",
+          "source_ids": [
+            "PT13"
+          ]
+        },
+        {
+          "text": "If you run a Lda., confirm your own contribution position with an accountant.",
+          "source_ids": [
+            "PT14"
+          ]
+        }
+      ],
+      "founder_experience": []
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "PT19",
+      "internal_notes": "Agent draft, agent review, not legal advice. The immigration authority AIMA's own pages (aima.gov.pt) returned HTTP 503 / certificate errors in this session and were NOT opened, so permit validity, AIMA steps and fees come from nothing opened and are left out. Visa documents come from the MNE visa portal; the 60-day figure from a gov.pt service page; Startup Visa from a May 2022 IAPMEI guide (old). An immigration lawyer must verify everything and Nijil must lift the flag before it can go live.",
+      "open_questions_for_reviewer": [
+        "AIMA pages were unreachable this session. What are the current AIMA steps, validity (a search snippet said 2 years then 3-year renewals), and fees for a residence authorization for independent activity and for entrepreneurs?",
+        "The consular visa fee: a search snippet showed EUR 90 on a gov.pt page, but the page we opened only points to the consular fee table. What is the current fee?",
+        "The gov.pt page says '60 dias' for the visa. Is that calendar or business days, and is it the legal decision deadline or typical practice?",
+        "The Startup Visa guide we read is the May 2022 version. Is it still current (steps, EUR 12 x IAS funds, 30 and 40 business-day periods, certified incubators)?",
+        "What 'means of subsistence' amount is currently required for independent workers and entrepreneurs (the MNE page we could not reach)?",
+        "Is the common D2 / D8 labelling correct for these categories? The official pages we opened use descriptions, not codes.",
+        "Does IFICI (the replacement for the NHR regime) cover a self-employed founder or a company director in practice, given the activity list in art. 58-A EBF, which we did not open?",
+        "Is there a residency or EU/EEA-resident requirement for a Lda. director or partner? None found on the pages opened."
+      ],
+      "official_information": [
+        {
+          "text": "A residence visa for independent activity or entrepreneurs is for nationals who are not citizens of an EU/EEA State or Switzerland and want to carry out independent activity or invest in Portugal. gov.pt shows a decision period of '60 dias' and refers the fee to the consular fee table (page updated 25 May 2026).",
+          "source_ids": [
+            "PT21"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The MNE visa portal distinguishes: a residence visa for independent professional activity or immigrant entrepreneurs, including the Startup Visa; a separate residence visa for remote work / digital nomad; and a temporary-stay visa for independent activity under one year.",
+          "source_ids": [
+            "PT20"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "A residence visa is valid for two entries and four months. During that time the holder must apply to AIMA for a residence title.",
+          "source_ids": [
+            "PT20"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Documents common to all residence visa applications: application form, two photos, passport valid 3 months beyond the stay, travel insurance, criminal record certificate from the country of origin or of residence for over a year (apostilled or legalised), and proof of means of subsistence.",
+          "source_ids": [
+            "PT19"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Independent professional activity: a company contract or written proposal of a services contract in the liberal professions, and, where applicable, a declaration from the competent body that you may practise in Portugal.",
+          "source_ids": [
+            "PT19"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Immigrant entrepreneurs: a declaration of the investment made or planned (nature, value and duration), plus proof of the investment or proof of funds available in Portugal and the intention to invest.",
+          "source_ids": [
+            "PT19"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Startup Visa: a declaration from IAPMEI confirming an incubation contract with a certified incubator, under Despacho Normativo 4/2018.",
+          "source_ids": [
+            "PT19"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Startup Visa process per the IAPMEI guide (May 2022 version): register and obtain interest from at least one incubator, then apply to IAPMEI with a motivation letter, passport, criminal record certificate and a bank statement showing own funds of 12 times the IAS per entrepreneur. IAPMEI decides within 30 working days. After a favourable decision there are 40 working days to sign an incubation contract (physical incubation). The Declaracao de Aceitacao is valid for 180 days and is used for the visa and residence permit applications.",
+          "source_ids": [
+            "PT23"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "IFICI tax regime (successor to the non-habitual resident regime): 20% special rate on Portuguese-source category A and B income from eligible activities, for 10 consecutive years, for people who were not Portuguese tax residents in the previous 5 years and never used the NHR regime. Apply by 15 January of the year after becoming resident. Startup employees are assessed by Startup Portugal. A deferred IFICI request after 23 December 2024 ends pending NHR applications.",
+          "source_ids": [
+            "PT22"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
