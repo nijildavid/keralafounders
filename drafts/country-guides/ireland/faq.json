@@ -36,7 +36,7 @@
     "country": "ireland",
     "topic": "tax",
     "question": "When must I register for VAT in Ireland?",
-    "answer": "Registration is obligatory above EUR 42,500 annual turnover for services and EUR 85,000 for goods (Revenue, page published May 2026). Below that you may choose to register.",
+    "answer": "Registration is obligatory above EUR 42,500 annual turnover for services and EUR 85,000 for goods, including mixed supplies where 90% or more of turnover is goods (Revenue, page published 6 May 2026). Below that you may choose to register.",
     "source_ids": [
       "IE15"
     ],
@@ -51,7 +51,7 @@
     "country": "ireland",
     "topic": "social-security",
     "question": "What social insurance does a self-employed founder pay?",
-    "answer": "Self-employed people pay PRSI Class S: 4.20% up to 30 September 2026 and 4.35% from 1 October 2026, with a EUR 650 minimum annual contribution. Directors owning or controlling 50% or more of the shares are also Class S.",
+    "answer": "Self-employed people pay PRSI Class S: 4.20% up to 30 September 2026 and 4.35% from 1 October 2026, with a EUR 650 minimum annual contribution (Department of Social Protection page updated 20 January 2026). Directors owning or controlling 50% or more of the shares are also Class S.",
     "source_ids": [
       "IE30",
       "IE31"

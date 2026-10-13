@@ -38,3 +38,11 @@
 3. Is Citizens Information acceptable as an `official` source for the SURE 41% figure?
 4. Should the Immigrant Investor Programme be left out of the guide entirely?
 5. Do you want a January 2027 re-check (after Budget 2027 becomes law) before this guide is considered for publishing?
+
+## Added by independent check (2026-10-13)
+- Twelve official pages (gov.ie, Citizens Information, irishimmigration.ie) block automated fetch (HTTP 403). The checker read them through a text proxy; a human should glance at IE1, IE30, IE33, IE37 in a normal browser, especially "last updated" stamps.
+- SURE "up to 41%" appears only on Citizens Information, not on Revenue's SURE page. Kept rendered because Citizens Information is a statutory body; Nijil to confirm or hold.
+- Dublin visa office processing dates (IE39) sit in a table that could not be read; none given in the guide.
+- The name of the Department of Social Protection office that issues formal PRSI decisions did not render on IE31; confirm before naming it.
+- DETE Critical Skills page (IE41) and Enterprise Ireland page (IE44) carry no date.
+- Budget 2027 (6 Oct 2026) may change tax, USC, PRSI and VAT figures from 1 Jan 2027; re-check by 2027-01-15.

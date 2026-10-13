@@ -85,3 +85,69 @@ Verification method for every row: the agent opened the page (HTTP 200) with cur
 - Whether India is on the Irish visa-required list: ISD list page opened but its table did not render. Not stated.
 - Employer PRSI rate for a director on payroll (Class A), beneficial ownership register deadline, invoice content/retention rules: not opened. Held.
 - Business name registration fee on paper (EUR 40) appears only in search snippets, not on an opened page. Not stated.
+
+## Independent check (2026-10-13, checker agent, not the author)
+
+Method: every cited URL re-fetched on 2026-10-13. Direct fetch (curl) worked for IE2-IE11, IE13-IE29, IE34, IE41-IE44. For IE1, IE12, IE30-IE33 and IE35-IE40 (gov.ie, Citizens Information, irishimmigration.ie) curl and WebFetch were refused (HTTP 403 CloudFront/Cloudflare), so those pages were read as plain text through the r.jina.ai reader proxy applied to the official URL. Limits of that route: page "last updated" stamps and JavaScript-built tables may not show. Agent review, not legal advice.
+
+| Row / figure | Verdict | What I saw | URL |
+|---|---|---|---|
+| 1-5 CRO fees EUR 50 / 25 / 25 / 20 / s.140 EUR 40 paper | CONFIRMED | Schedule items 1, 3, 4, 18, 11 of S.I. 329/2025: EUR 50 electronic only; 25; 25; 20; EUR 40 paper, electronic n/a | IE11 irishstatutebook.ie/eli/2025/si/329 |
+| 6 EUR 25,000 bond; Act "revised to 15 Jul 2025, up to date 17 Sep 2026" | CONFIRMED | s.137(2) "bond ... to the value of EUR 25,000"; full-act page header "Updated to 15 July 2025 ... as of 17 September 2026 up to date" | IE2; revisedacts.lawreform.ie/eli/2014/act/38/revised/en/html |
+| 7-9 EEA-resident director, alternate excluded, category 4 | CONFIRMED | s.137(1), (7), (6) | IE2 |
+| 10 bond copy to incorporation statement / annual return | CONFIRMED | s.138(5)(a),(c) | IE3 |
+| 11-12 s.140 certificate, Revenue statement in prior 2 months, link conditions | CONFIRMED | s.140(5), (9)(a)-(d), revocation (6) | IE4 |
+| 13-17 director, secretary, body corporate, share, registered office rules | CONFIRMED | s.128(1); s.129(1),(6); s.130(1); s.19(1)(e); s.50(1),(4) | IE5-IE8, IE10 |
+| 18 business name EUR 20 online, Irish place of business, print-sign-return | CONFIRMED (value) | Text matches. Page shows no date, so "updated 29 Nov 2023" not verified | IE12 (via proxy) |
+| 19-20 VAT thresholds EUR 42,500 services / EUR 85,000 goods | CONFIRMED; wording CORRECTED | Values match, page "Published: 06 May 2026". Page also says EUR 85,000 applies to mixed supplies only where 90% or more is goods, turnover per calendar year. Added to guide.json and faq.json | IE15 |
+| 21-24 VAT rates 23 / 13.5 / 9 / 4.8 from 1 Jan 2025 | CONFIRMED | Top row of rate history | IE17 |
+| 25 VAT detail change within 30 days; Wexford paper forms | CONFIRMED | Page published 06 Oct 2026 | IE16 |
+| 26-27 Income tax 20% to EUR 44,000 (single, no qualifying children); EITC EUR 2,000 (2026) | CONFIRMED | 2026 column. Added "without qualifying children" | IE18 |
+| 28-31 USC 0.5% / 2% / 3% / 8% at EUR 12,012 / 16,688 / 41,344 (2026) | CONFIRMED | 2026 table | IE19 |
+| 32 USC on full income above EUR 13,000 | CONFIRMED | Page published 12 Dec 2025 | IE20 |
+| 33-34 CT 12.5% / 25%; incorporated on/after 1 Jan 2015 deemed resident | CONFIRMED | Pages published 25 Sep 2025. Added page date to the claim | IE21, IE22 |
+| 35-38 Start-up CT relief (5 years; EUR 40,000 / 60,000; EUR 5,000; EUR 1,000 Class S) | CONFIRMED | Page published 02 Apr 2025 | IE23 |
+| 39 SURE conditions | CONFIRMED | Page published 23 Apr 2026 | IE24 |
+| 40 SURE "up to 41%", PAYE tax of investment year + 6 | CONFIRMED (single non-Revenue source) | Citizens Information: "refund of up to 41% of the capital they invest"; "year you invested and the 6 years before"; page edited 26 March 2026. Not on Revenue's SURE page | IE1 (via proxy) |
+| 41 31 October return/payment date | CONFIRMED | Page published 26 Jan 2026 | IE25 |
+| 42 e-invoicing: no B2B/B2C mandate; EN 16931 for public bodies since 12 Jun 2019 | CONFIRMED | EC page "last updated Mar 06, 2026" | IE29 |
+| 43 ViDA July 2030 | CONFIRMED | Revenue page published 10 Jul 2025 | IE26 |
+| 44 Budget 2027 presented 6 Oct 2026 | CONFIRMED | Page published 06 Oct 2026 | IE28 |
+| 45-47 PRSI Class S 4.20% to 30 Sep 2026, 4.35% from 1 Oct 2026, 4.2375% blended for 2026 income, EUR 650 minimum | CONFIRMED | "Last updated on: 20 January 2026" | IE30 (via proxy) |
+| 48 Class S income EUR 5,000 or more | CONFIRMED (value) | Text matches; page date not shown | IE32 (via proxy) |
+| 49 Directors with 50%+ shares are Class S from 1 Jul 2013 | CONFIRMED | Text matches | IE31 (via proxy) |
+| 49b "the Scope Section ... gives formal decisions" | UNSUPPORTED, reworded | Page says "request a formal decision from:" but the addressee did not render. Reworded to the Department of Social Protection | IE31 |
+| 50-51 MFI EUR 2,000-50,000; 31 Local Enterprise Offices | CONFIRMED | Page edited 26 March 2026 | IE1 (via proxy) |
+| 52-55 Enterprise Ireland EUR 30,000 / 100,000 / 800,000; HPSU definition | CONFIRMED | Page carries no date; claim now says "page undated" | IE44 |
+| 56-58 STEP EUR 50,000, EUR 350 non-refundable, quarterly consideration; conditions | CONFIRMED | All on STEP page; "updated 14 Oct 2025" not visible | IE33 (via proxy) |
+| 59-61 STEP EUR 30,000 second principal; 2 yrs + 3 yrs + 5-yr instalments; HPSU 10 jobs / EUR 1m / 3 yrs | CONFIRMED | Guidelines PDF (file modified 21 Sep 2023) | IE34 |
+| 62 IIP closed to applications from 15 Feb 2023 | CONFIRMED | FAQ Q1 "close the IIP to further applications from 15 February 2023"; pending applications still being decided | IE37 (via proxy) |
+| 63 IIP still shown open on another ISD page | CONFLICT (real, already held) | "Coming to work for more than 90 days" says IIP "is open to non-EEA nationals" at EUR 1m / EUR 0.5m. FAQ followed; guide says do not present as a route | IE35 vs IE37 |
+| 64-68 Critical Skills: EUR 40,904 / 36,848 / over 68,911; EUR 1,000 fee, 90% refund; 12 weeks; 50% rule waiver; Stamp 4, 60 months | CONFIRMED | Page has no date, so "2026 page" in the earlier log is not shown by the page | IE41 |
+| 69 DETE processing dates as of 12 Oct 2026 | CONFIRMED | CSEP 06 Oct 2026; new GEP 04 Sep 2026 | IE43 |
+| 70 Visa 3 months before travel; documents within 30 days | CONFIRMED | Also "apply from your home country or where you are a legal resident" | IE40 (via proxy) |
+| 71 Dublin visa office dates (Business before 27 Aug 2026; Employment before 8 Aug 2026) | UNSUPPORTED, removed | Heading "updated: 6th October 2026" confirmed, but the dates table did not render | IE39 (via proxy) |
+| 72 Register within 90 days; fee could be EUR 300; IRP within 10 working days | CONFIRMED | Text matches; ISD took over registration from 13/01/2025 | IE38 (via proxy) |
+| Extra: PPSN support "for applicants who cannot attend" | CORRECTED | DSP Client Identity Services serve non-resident applicants who cannot attend a PPS Registration Centre | IE27 |
+| Extra: summary "fast start"; overview "usually the slower one"; quick_facts.time cited permit committee timing | CORRECTED | Sources state no speed. Phrases removed; quick_facts.time no longer repeats held visa content (source now IE9) | n/a |
+
+### Counts (77 figures/claims checked)
+- CONFIRMED: 72 (one rests on a single non-Revenue source; several page dates not visible)
+- CORRECTED: 4 (VAT mixed-supply wording, PPSN wording, speed phrases, quick_facts.time)
+- UNSUPPORTED: 2 (Scope Section name; Dublin visa dates), removed or reworded
+- CONFLICT: 1 (IIP, already held, real conflict inside ISD)
+- COULD NOT OPEN: 0 sources in the end (12 needed the proxy route). Still unverified as before: CRO processing time, bond price, EUR 40 paper business-name fee.
+
+### Changes made to guide.json / faq.json
+1. summary: removed "for a fast start".
+2. overview: "is usually the slower one" replaced with "has its own application and processing time".
+3. quick_facts.time: permit sentence removed, source_ids IE33 -> IE9.
+4. sole-steps step 2: PPSN service described as for non-resident applicants.
+5. taxes: VAT threshold text adds 90% mixed-supplies rule, calendar year, excl. VAT; CT claim gets page date; income-tax claim adds "without qualifying children".
+6. social: "Scope Section" replaced by "the Department of Social Protection" (two places); MFI and Enterprise Ireland claims get page date or "undated".
+7. visa (held): Dublin processing dates removed.
+8. faq ie-vat-threshold: adds mixed-supplies rule and 6 May 2026 date; ie-prsi-class-s: adds page date.
+No source IDs added; sources.json unchanged (type tags checked and acceptable).
+
+### Other checks
+quick_facts has exactly structure/cost/time/gotcha; visa section hold:true with hold_note; next_check_due 2027-01-15 is within 6 months and aligned to the January reset after Budget 2027; no claim rests only on a secondary-type source.

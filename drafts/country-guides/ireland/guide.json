@@ -1,7 +1,7 @@
 {
   "slug": "ireland",
   "title": "How to start a company in Ireland",
-  "summary": "Ireland gives a founder two main routes: register as a sole trader with Revenue, for a fast start with unlimited personal liability, or form a private company limited by shares (LTD) with the Companies Registration Office (CRO) for limited liability. The route that catches non-EEA founders is the rule that a company needs an EEA-resident director, a EUR 25,000 bond or a Registrar certificate. Both routes finish with registration for tax on the Revenue Online Service.",
+  "summary": "Ireland gives a founder two main routes: register as a sole trader with Revenue, with unlimited personal liability, or form a private company limited by shares (LTD) with the Companies Registration Office (CRO) for limited liability. The route that catches non-EEA founders is the rule that a company needs an EEA-resident director, a EUR 25,000 bond or a Registrar certificate. Both routes finish with registration for tax on the Revenue Online Service.",
   "last_checked": "2026-10-12",
   "checked_by": "Claude agent draft, unreviewed",
   "next_check_due": "2027-01-15",
@@ -24,9 +24,9 @@
       ]
     },
     "time": {
-      "text": "The CRO's own processing time could not be confirmed from an official page (the CRO site blocked automated access). If you need a permit, Start-up Entrepreneur Programme proposals are considered quarterly by an evaluation committee.",
+      "text": "The CRO's own processing time could not be confirmed from an official page (the CRO site blocked automated access), so no timing is promised here. Permit timelines for non-EEA founders are covered separately in the residence section, which is on hold.",
       "source_ids": [
-        "IE33"
+        "IE9"
       ]
     },
     "gotcha": {
@@ -87,7 +87,7 @@
       "official_information": [],
       "expert_interpretation": [
         {
-          "text": "Ireland gives a founder two main routes. A sole trader registers directly with Revenue, trades under their own name or a registered business name, and is personally liable for the business. A private company limited by shares (called an LTD) is registered with the Companies Registration Office (CRO), is a separate legal entity, and files annual returns and accounts. The rule that catches most non-EU founders is that a company needs a director who lives in the EEA, or a bond, or a Registrar certificate, so it is not possible to simply form a company from abroad with only non-EEA directors. For founders from outside the EEA, the right to live and work in Ireland is a separate step from registering the business and is usually the slower one. Ireland also has upcoming changes: Budget 2027 was announced on 6 October 2026 and is not yet law, so check rates again in January 2027.",
+          "text": "Ireland gives a founder two main routes. A sole trader registers directly with Revenue, trades under their own name or a registered business name, and is personally liable for the business. A private company limited by shares (called an LTD) is registered with the Companies Registration Office (CRO), is a separate legal entity, and files annual returns and accounts. The rule that catches most non-EU founders is that a company needs a director who lives in the EEA, or a bond, or a Registrar certificate, so it is not possible to simply form a company from abroad with only non-EEA directors. For founders from outside the EEA, the right to live and work in Ireland is a separate step from registering the business, with its own application and processing time. Ireland also has upcoming changes: Budget 2027 was announced on 6 October 2026 and is not yet law, so check rates again in January 2027.",
           "source_ids": [],
           "confidence": "editorial"
         }
@@ -277,7 +277,7 @@
           "confidence": "official"
         },
         {
-          "text": "2. Get a Personal Public Service Number (PPSN). Revenue says you must have one before you register for tax, and your Tax Reference Number is the same number. The Department of Social Protection issues PPSNs, and its Client Identity Services handle applicants who cannot attend a PPS Registration Centre.",
+          "text": "2. Get a Personal Public Service Number (PPSN). Revenue says you must have one before you register for tax, and your Tax Reference Number is the same number. The Department of Social Protection issues PPSNs, and its Client Identity Services provide a service for non-resident applicants who need a PPSN and cannot attend a PPS Registration Centre.",
           "source_ids": [
             "IE13",
             "IE27"
@@ -508,7 +508,7 @@
           "confidence": "official"
         },
         {
-          "text": "VAT registration is obligatory when annual turnover passes the threshold: EUR 42,500 for persons supplying services only, and EUR 85,000 for persons supplying goods (page published 6 May 2026). Below the threshold you may elect to register. A person not established in the State who supplies taxable goods or services to taxable customers in the State must register regardless of turnover, unless they use the VAT SME scheme.",
+          "text": "VAT registration is obligatory when annual turnover passes the threshold: EUR 42,500 for persons supplying services only, and EUR 85,000 for persons supplying goods, including mixed supplies where 90% or more of turnover is goods; turnover is counted per calendar year, excluding VAT (Revenue page published 6 May 2026). Below the threshold you may elect to register. A person not established in the State who supplies taxable goods or services to taxable customers in the State must register regardless of turnover, unless they use the VAT SME scheme.",
           "source_ids": [
             "IE15"
           ],
@@ -522,7 +522,7 @@
           "confidence": "official"
         },
         {
-          "text": "Income tax 2026 for a single person: 20% on the first EUR 44,000 and 40% on the balance. The Earned Income Tax Credit for the self-employed is a maximum of EUR 2,000 in 2026.",
+          "text": "Income tax 2026 for a single person without qualifying children: 20% on the first EUR 44,000 and 40% on the balance. The Earned Income Tax Credit for the self-employed is a maximum of EUR 2,000 in 2026.",
           "source_ids": [
             "IE18"
           ],
@@ -537,7 +537,7 @@
           "confidence": "official"
         },
         {
-          "text": "Corporation Tax: 12.5% on trading income and 25% on non-trading income such as rental and investment income and income from an excepted trade. An Irish-incorporated company formed on or after 1 January 2015 is treated as tax resident in Ireland unless a tax treaty makes it resident elsewhere.",
+          "text": "Corporation Tax (Revenue page published 25 September 2025): 12.5% on trading income and 25% on non-trading income such as rental and investment income and income from an excepted trade. An Irish-incorporated company formed on or after 1 January 2015 is treated as tax resident in Ireland unless a tax treaty makes it resident elsewhere.",
           "source_ids": [
             "IE21",
             "IE22"
@@ -647,7 +647,7 @@
           "confidence": "official"
         },
         {
-          "text": "Since 1 July 2013 proprietary directors who own or control 50% or more of the shares, directly or indirectly, are classified as self-employed and pay Class S. The class of a director holding less than 50% is decided case by case under the Code of Practice on Determining Employment Status; the Scope Section of the Department of Social Protection gives formal decisions.",
+          "text": "Since 1 July 2013 proprietary directors who own or control 50% or more of the shares, directly or indirectly, are classified as self-employed and pay Class S. The class of a director holding less than 50% is decided case by case under the Code of Practice on Determining Employment Status; you can ask the Department of Social Protection for a formal decision.",
           "source_ids": [
             "IE31"
           ],
@@ -662,7 +662,7 @@
           "confidence": "official"
         },
         {
-          "text": "Microfinance Ireland offers Small Business Cashflow Loans from EUR 2,000 to EUR 50,000 to businesses that cannot get bank loans. There are 31 Local Enterprise Offices that advise start-ups, and Enterprise Ireland supports high potential start-ups (HPSU Feasibility Study Grant up to EUR 30,000, Pre-Seed Start Fund investment up to EUR 100,000, Innovative HPSU Fund equity up to EUR 800,000).",
+          "text": "Microfinance Ireland offers Small Business Cashflow Loans from EUR 2,000 to EUR 50,000 to businesses that cannot get bank loans (Citizens Information page edited 26 March 2026). There are 31 Local Enterprise Offices that advise start-ups, and Enterprise Ireland supports high potential start-ups (HPSU Feasibility Study Grant up to EUR 30,000, Pre-Seed Start Fund investment up to EUR 100,000, Innovative HPSU Fund equity up to EUR 800,000; Enterprise Ireland page undated, read 12 October 2026).",
           "source_ids": [
             "IE1",
             "IE44"
@@ -686,7 +686,7 @@
       ],
       "expert_interpretation": [
         {
-          "text": "Class S gives fewer benefits than the employee class: the Department's Class S list does not name Illness Benefit. Founders who are also directors should ask an accountant whether to pay themselves a salary (Class A as an employee) or take profit another way, and should request a formal PRSI decision from the Scope Section if their shareholding is under 50%.",
+          "text": "Class S gives fewer benefits than the employee class: the Department's Class S list does not name Illness Benefit. Founders who are also directors should ask an accountant whether to pay themselves a salary (Class A as an employee) or take profit another way, and should request a formal PRSI decision from the Department of Social Protection if their shareholding is under 50%.",
           "source_ids": [],
           "confidence": "editorial"
         }
@@ -811,7 +811,7 @@
           "confidence": "hold"
         },
         {
-          "text": "If a visa is required, apply for a long-stay D visa after permission is granted; for an employment visa ISD says to apply up to 3 months before travel, from your home country or country of legal residence, using the AVATS online system, and send documents within 30 days. As of 6 October 2026 the Dublin visa office was processing Business visa applications received before 27 August 2026 and Employment visa applications received before 8 August 2026.",
+          "text": "If a visa is required, apply for a long-stay D visa after permission is granted; for an employment visa ISD says to apply up to 3 months before travel, from your home country or country of legal residence, using the AVATS online system, and send documents within 30 days. The ISD visa-decisions page (updated 6 October 2026) lists current Dublin visa office processing dates by visa type; the dates table could not be read in this check, so no date is given here.",
           "source_ids": [
             "IE35",
             "IE40",
