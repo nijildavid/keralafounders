@@ -19,7 +19,7 @@
   "country": "sweden",
   "topic": "legal",
   "question": "How much share capital does an aktiebolag need?",
-  "answer": "At least SEK 25,000 (Companies Act 1 kap. 5 §, text current to SFS 2026:783). It can be cash or property useful to the business, which an authorised auditor must value.",
+  "answer": "At least SEK 25,000 (Companies Act 1 kap. 5 §, text current to SFS 2026:783). It can be cash or property useful to the business, which an approved or authorised auditor must value.",
   "source_ids": [
    "SE2",
    "SE8"
@@ -53,6 +53,7 @@
   "question": "What does it cost to register as a sole trader?",
   "answer": "Registering with Skatteverket is free. Registering the business name with Bolagsverket is optional and costs from SEK 1,800 (October 2026).",
   "source_ids": [
+   "SE1",
    "SE3",
    "SE6"
   ],

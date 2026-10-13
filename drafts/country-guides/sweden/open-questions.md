@@ -31,3 +31,10 @@
 
 ## Decisions for Nijil
 See the pull request body (top 5).
+
+## Added by the independent check (2026-10-13)
+- Bolagsverket pages (fees, processing times) were still not opened by the checker; only verksamt.se figures are confirmed. Someone with a normal browser should open Bolagsverket's fee and current-processing-time pages once.
+- verksamt.se is a JavaScript page and Skatteverket blocked curl from the sandbox, so those rows were read through a summarising fetch tool, not raw HTML. A human should glance at the SEK 2,400 / 250 / 1,800 fees and the SEK 120,000 VAT limit in a browser before publishing.
+- Board rule: verksamt.se says "at least one member and one deputy"; the Companies Act (8 kap. 1 and 3 §§) needs a deputy only when the board has fewer than three members. The guide now states both. A professional should confirm which wording to lead with.
+- Migrationsverket's news box mentions stricter conduct (vandel) rules from 13 July (2026); details not read. Part of the held visa section.
+- Handelsbolag capital and partner liability remain "not stated on the pages read"; nothing was added from memory.

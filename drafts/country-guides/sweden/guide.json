@@ -17,9 +17,10 @@
   "cost": {
    "text": "Sole trader registration with Skatteverket is free. An AB needs SEK 25,000 share capital plus a Bolagsverket fee from SEK 2,400 and SEK 250 for the beneficial owner (as shown October 2026).",
    "source_ids": [
+    "SE1",
     "SE2",
-    "SE3",
-    "SE5"
+    "SE5",
+    "SE7"
    ]
   },
   "time": {
@@ -159,7 +160,7 @@
      "confidence": "official"
     },
     {
-     "text": "An aktiebolag needs at least SEK 25,000 in share capital (aktiekapital). This is also the statutory minimum in the Companies Act (1 kap. 5 §, text current to SFS 2026:783). Capital can be cash, or property useful to the business, which an authorised auditor must value.",
+     "text": "An aktiebolag needs at least SEK 25,000 in share capital (aktiekapital). This is also the statutory minimum in the Companies Act (1 kap. 5 §, text current to SFS 2026:783). Capital can be cash, or property useful to the business, which an approved or authorised auditor must value.",
      "source_ids": [
       "SE2",
       "SE8"
@@ -169,6 +170,7 @@
     {
      "text": "Registration with Bolagsverket costs from SEK 2,400 for an aktiebolag and SEK 250 to register the beneficial owner (verklig huvudman), as shown on verksamt.se in October 2026. Registering a sole trader with Bolagsverket is optional and only protects the business name (from SEK 1,800); the Skatteverket registration is free.",
      "source_ids": [
+      "SE1",
       "SE2",
       "SE3",
       "SE5",
@@ -238,14 +240,14 @@
      "confidence": "official"
     },
     {
-     "text": "Approval can be refused if you have seriously failed to report or pay taxes and fees, are under a business ban or bankrupt, or have misused an earlier F-skatt approval.",
+     "text": "Approval can be refused if you have failed to report or pay taxes and fees to more than a trivial extent, are under a business ban or bankrupt, have misused an earlier F-skatt approval, or have an unpaid repayment claim for ROT, RUT or green-technology deductions.",
      "source_ids": [
       "SE12"
      ],
      "confidence": "official"
     },
     {
-     "text": "A samordningsnummer (coordination number) is an identity number for people who are not and have not been registered in Sweden. You can apply yourself if you plan to stay less than one year, then book an identity check at a service centre. It stays active for five years. If you move to Sweden for one year or more you should register your move instead, and a samordningsnummer is later replaced by a personnummer.",
+     "text": "A samordningsnummer (coordination number) is an identity number for people who are not and have not been registered in Sweden. You can apply yourself if you plan to stay less than one year and can show a connection to Sweden and a need for the number, then book an identity check at a service centre in person. It stays active for five years. If you move to Sweden for one year or more you should register your move instead, and a samordningsnummer is later replaced by a personnummer.",
      "source_ids": [
       "SE14"
      ],
@@ -393,10 +395,11 @@
      "confidence": "official"
     },
     {
-     "text": "4. Appoint a board of at least one member and one deputy; if there are two or more members, one is chair. A managing director (vd) is optional.",
+     "text": "4. Appoint a board. Verksamt.se states at least one board member and one deputy; the Companies Act (8 kap. 1 and 3 §§) requires one or more members and at least one deputy if the board has fewer than three members. If there are two or more members, one is chair. A managing director (vd) is optional.",
      "source_ids": [
       "SE2",
-      "SE5"
+      "SE5",
+      "SE8"
      ],
      "confidence": "official"
     },
@@ -472,7 +475,7 @@
      "confidence": "official"
     },
     {
-     "text": "Small-business VAT exemption: you do not have to register for VAT if your turnover in Sweden is at most SEK 120,000 in the current calendar year and has not exceeded that in either of the two previous years. The limit applies to the amount excluding VAT. If the conditions are met the exemption is automatic. Invoices must state that the sale is VAT-exempt, and input VAT can generally not be deducted.",
+     "text": "Small-business VAT exemption: you do not have to register for VAT if your turnover in Sweden is at most SEK 120,000 in the current calendar year (limit as shown by Skatteverket in October 2026) and has not exceeded that in either of the two previous years. The limit applies to the amount excluding VAT. If the conditions are met the exemption is automatic. Invoices must state that the sale is VAT-exempt, and input VAT can generally not be deducted.",
      "source_ids": [
       "SE9"
      ],
@@ -516,14 +519,14 @@
      "confidence": "official"
     },
     {
-     "text": "Bookkeeping: sole traders and companies must keep books and archive records for at least seven years. A sole trader whose turnover is normally under SEK 3 million may prepare a simplified annual closing and use the cash method.",
+     "text": "Bookkeeping: sole traders and companies must keep books and archive records for at least seven years. A sole trader whose turnover is normally under SEK 3 million (as shown October 2026) may prepare a simplified annual closing and use the cash method.",
      "source_ids": [
       "SE16"
      ],
      "confidence": "official"
     },
     {
-     "text": "Non-EU businesses that register for VAT in Sweden generally need a VAT representative (form SKV 5703); VAT reporting frequency depends on expected turnover.",
+     "text": "Non-EU businesses that register for VAT in Sweden must appoint a VAT representative based in Sweden (form SKV 5703, or another document stating the agent will handle the VAT reporting); VAT reporting frequency depends on expected turnover.",
      "source_ids": [
       "SE13"
      ],
@@ -621,7 +624,7 @@
    "open_questions_for_reviewer": [
     "Is the egen-företagare permit realistic for the likely audience (often Indian IT contractors), or do most arrive on an employer work permit and later switch? Switching routes were not researched.",
     "Migrationsverket requires a credible business plan, customer contacts and own funds of SEK 200,000 before the permit: confirm how this works for someone who has not yet started trading, and whether the company must be registered before applying (the document list asks for a registration certificate).",
-    "Confirm the 2026 permit rules, including tightened conduct (vandel) requirements said to apply from 13 July 2026, which appeared only in a search snippet and not on a page opened.",
+    "Tightened conduct (vandel) requirements: the Migrationsverket news box on the egen-foretagare page (SE21) says stricter requirements apply from 13 July (2026 item), but the details were not read. Confirm what they mean for a self-employed permit.",
     "Are the processing-time figures (11 months, 19 months, incomplete cases only) fair to show, or should the guide only say 'check the Migrationsverket waiting-time page'?",
     "Does any EU Blue Card, researcher or other permit let a founder in Sweden own a company while employed elsewhere? Not researched.",
     "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"

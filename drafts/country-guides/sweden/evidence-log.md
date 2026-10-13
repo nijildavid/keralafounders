@@ -56,3 +56,84 @@ Author: Claude agent (draft). Pages opened 2026-10-12 via WebFetch (the fetch to
 ## Not verified (not in the guide as fact)
 - Bolagsverket processing times (about 7 working days for a new AB, 9 for other forms, snapshot 5 Oct 2026): came from a search-result summary only; Bolagsverket's page showed a bot check. Held as a hold claim.
 - Bolagsverket's own fee page: not reachable (bot check). Fees taken from verksamt.se.
+
+## Independent check (2026-10-13, checker agent, not the author)
+
+Method. Every cited URL was re-opened on 2026-10-13. Raw text via curl for the statute (SE8), Upphandlingsmyndigheten (SE18), Forsakringskassan (SE19, SE20) and Migrationsverket (SE21 to SE23). verksamt.se is a JavaScript page (curl returns an empty shell) and Skatteverket closes curl connections from this sandbox, so those pages were read through the fetch tool, which summarises: quotes for those rows are the tool's quotes, not a raw-HTML check. Bolagsverket's own pages were not opened (the author could not either). Row numbers refer to the table above. "A1 to A8" are claims in guide.json not numbered in the table above.
+
+| Row / figure | Verdict | What I saw | URL |
+|---|---|---|---|
+| 1 SEK 25,000 minimum capital | CONFIRMED | "minst 25 000 kronor i aktiekapital"; EN "minimum SEK 25,000" | SE2, SE5 |
+| 2 Statute 1 kap. 5 § | CONFIRMED | raw text: "ska det uppgå till minst 25 000 kronor"; header "Ändrad: t.o.m. SFS 2026:783" | https://data.riksdagen.se/dokument/sfs-2005-551.text |
+| 3 AB fee from SEK 2,400 | CONFIRMED | SV and EN both "from 2 400"; page updated 29 Sep 2026 | SE2, SE5 |
+| 4 Beneficial owner SEK 250 | CONFIRMED | SV and EN | SE2, SE5 |
+| 5 Name protection from SEK 1,800 | CONFIRMED | SV "från 1 800 kronor", EN "from 1,800 SEK"; updated 29 Sep 2026 | SE3, SE6 |
+| 6 Skatteverket registration free | CORRECTED (citation only) | Value true, but the sentence "Alla ärenden ... avgiftsfria" is on SE1/SE7 (EN: "free of charge"), NOT on SE3, SE5 or SE6 (they say nothing on it). Source ids on quick_facts.cost, the legal-forms fee claim and faq se-sole-cost fixed | SE1, SE7 |
+| 7 Board: 1 member and 1 deputy | CORRECTED (refined) | Verksamt says so, but the statute says 8 kap. 1 §: one or more members; 8 kap. 3 §: a deputy is required only if fewer than three members. Step 4 now gives both and cites SE8. Not a conflict: verksamt gives the minimum set-up | SE8 |
+| 8 Half of board in EEA, Bolagsverket exemption | CONFIRMED | 8 kap. 9 § raw text matches | SE8 |
+| 9 Managing director EEA | CONFIRMED | 8 kap. 30 § | SE8 |
+| 10 One special signatory EEA | CONFIRMED | 8 kap. 37 § ("Minst en av de särskilda firmatecknarna") | SE8 |
+| 11 Service recipient resident in Sweden | CONFIRMED | 8 kap. 40 §: needed if no competent representative lives in Sweden | SE8 |
+| 12 VAT threshold SEK 120,000 | CONFIRMED | "högst 120 000 kronor"; calendar year Jan to Dec; excl. VAT ("Du ska inte ta med någon moms"). Page has no date, so "as shown October 2026" added to the guide | SE9 |
+| 13 Two previous years | CONFIRMED | quoted as in the log | SE9 |
+| 14 EUR 100,000 EU-wide | CONFIRMED | "överstiger 100 000 euro"; home-country notification required | SE9 |
+| 15 Non-EU seat not exempt | CONFIRMED | "kan ditt företag inte vara undantaget från momsplikt i Sverige" | SE9 |
+| 16 VAT 25/12/6 (2026) | CONFIRMED | "25 procent ... 12 ... 6", page "inkomstår 2026" | SE10 |
+| 17 Food VAT 6% from 1 Apr 2026 | CONFIRMED | quoted | SE10 |
+| 18 Corporate tax 20.6% (2026) | CONFIRMED | "20,6 procent" | SE10 |
+| 19 Egenavgifter 28.97% (2025, 2026) | CONFIRMED | born 1959 or later 28,97 in both years; SE10 "Summa 28,97 procent" | SE11, SE10 |
+| 20 Standard deduction 25% | CONFIRMED | "högst 25 procent" (SE17), 25 percent in table (SE11) | SE11, SE17 |
+| 21 Employer contributions 31.42% | CONFIRMED | "Summa 31,42 procent" (born 1959 to 2002; other age groups differ, guide text does not claim otherwise) | SE10 |
+| 22 Prisbasbelopp 59,200; inkomstbasbelopp 83,400 | CONFIRMED | both quoted for 2026 | SE10 |
+| 23 Simplified invoice SEK 4,000 | CONFIRMED | "inte överstiger 4 000 kronor inklusive moms" | SE15 |
+| 24 SEK 3 million simplified closing and cash method | CONFIRMED | "normalt understiger 3 miljoner kronor"; applies to sole traders. Page undated, as-of added | SE16 |
+| 25 Keep books 7 years | CONFIRMED | "minst 7 år" (page does not say when the period starts; guide does not claim it) | SE16 |
+| 26 Fiscal year max 18 months | CONFIRMED | not used in guide text | SE16 |
+| 27 E-invoice public procurement from 1 Apr 2019 | CONFIRMED | raw text; applies to suppliers "oavsett i vilket land" | SE18 |
+| 28 EN 16931, UBL/CII, PDF not e-invoice | CONFIRMED | raw text | SE18 |
+| 29 Tax-debt documents, 2 years, 3 months old | CONFIRMED | "högst tre månader gamla"; company: every manager and controlling person under 2 years in Sweden | SE12, SE13 |
+| 30 Verksamt: not older than 3 months | CONFIRMED | EN quote | SE4 |
+| 31 Samordningsnummer under 1 year, 5 years | CONFIRMED | plus an extra condition (see A3) | SE14 |
+| 32 SKV 4620 | CONFIRMED | paper form if the e-service cannot be used | SE3, SE6 |
+| 33 SKV 5703 | CONFIRMED (wording tightened, see A4) | | SE13 |
+| 34 Karens 7 days; 1/14/30/60/90 | CONFIRMED | raw text | SE19 |
+| 35 Sickness benefit 25/50/75/100% | CONFIRMED | raw text | SE19 |
+| 36 Report sick day 1 or within 7 days | CONFIRMED | raw text | SE19 |
+| 37 SGI different first 36 months | CONFIRMED | "kortare tid än 36 månader finns undantag" | SE20 |
+| 38 SEK 200,000 own funds | CONFIRMED (visa, hold) | "minst 200 000 kronor på ett bankkonto i ditt namn"; need not be in Sweden | SE21 |
+| 39 SEK 100,000 spouse, 50,000 child | CONFIRMED (hold) | raw text | SE21 |
+| 40 Bank statements 3 months | CONFIRMED (hold) | raw text | SE21 |
+| 41 Fees 2,000 / 1,500 / 750 | CONFIRMED (hold) | also on SE22; page notes Japan citizens pay no fee (not in guide) | SE21, SE22 |
+| 42 Own at least 51% | CONFIRMED (hold) | raw text | SE21, SE22 |
+| 43 Permit max 2 years | CONFIRMED (hold) | raw text | SE21 |
+| 44 11 months (incomplete), too few complete cases | CONFIRMED (hold) | statistics from last 12 months | SE21 |
+| 45 19 months; apply 2 months before expiry | CONFIRMED (hold) | "tidigast två månader innan" | SE22 |
+| 46 Permanent residence after 2 years; SEK 6,243 | CONFIRMED (hold) | "För 2026 ... 6 243 kronor per månad" | SE22 |
+| 47 Form 124011 | CONFIRMED (hold) | raw text | SE21 |
+| 48 next_check_due 2027-01-15 | CONFIRMED (logic) | Base amounts, egenavgifter and fees reset each 1 Jan; verksamt fee pages were updated 29 Sep 2026; date is sensible | n/a |
+| A1 Property as capital valued by "an authorised auditor" | CORRECTED | Verksamt: "godkänd eller auktoriserad revisor" (approved or authorised); statute 2 kap. 19 § says only "en revisor". Wording fixed in guide and faq se-ab-capital | SE2, SE5, SE8 |
+| A2 F-skatt refusal "seriously failed" | CORRECTED | Page: failed to report or pay "beyond a trivial extent" (not "seriously"); a further ground (unpaid ROT/RUT/green-technology repayment claim) was missing | SE12 |
+| A3 Samordningsnummer | CORRECTED | Page also requires showing a connection to Sweden and a need for the number, and an in-person identity check; added | SE14 |
+| A4 VAT representative | CORRECTED | Page: non-EU businesses must be represented by a Sweden-based agent; SKV 5703 or another document; the softer "generally" wording replaced | SE13 |
+| A5 Invoice content list | CONFIRMED | date, serial number, seller VAT number, names/addresses, goods/services, VAT rate and amount; same for paper and electronic | SE15 |
+| A6 Name protection county vs nationwide; auditor optional | CONFIRMED | sole trader and handelsbolag county; AB nationwide; "Det flesta nystartade aktiebolag kan välja att inte ha revisor" | SE1, SE2, SE3 |
+| A7 Board members personally liable (unpaid taxes); half of capital used up | CONFIRMED | quoted | SE2 |
+| A8 Handelsbolag always bookkeeping-obliged; AB annual report; owner treated as employee | CONFIRMED | "Aktiebolag, handelsbolag och ekonomiska föreningar är alltid bokföringsskyldiga"; "Bolagsverket registrerar inte vilka som är aktieägare" | SE16, SE2 |
+
+Counts (55 claims checked: 47 numbered rows + A1 to A8; row 48 is editorial): CONFIRMED 49, CORRECTED 6 (rows 6, 7, A1, A2, A3, A4), UNSUPPORTED 0, CONFLICT 0, COULD NOT OPEN 0 for rendered claims. Not checkable and still held: the Bolagsverket "about 7 working days" processing time (company-steps, confidence hold, no source; Bolagsverket pages not opened by me either).
+
+Other checks. Visa section hold:true with all claims confidence hold: yes. quick_facts has exactly structure/cost/time/gotcha: yes. No sentence promises speed or certainty: none found. Source type tags: verksamt.se pages "government_portal" and all others "official" are right; no rendered claim rests on a secondary source. Every annual figure shows its year (2026 / 2025 and 2026 / "October 2026"); the SEK 120,000 and SEK 3 million figures, which are not annual rates but carry no date on the page, now say "as shown October 2026". The Migrationsverket page (SE21) does show a news item that stricter conduct (vandel) rules apply from 13 July, so that open question is partly answered (details unread; visa is held anyway).
+
+Changes made by this check.
+guide.json:
+1. quick_facts.cost source_ids: SE2, SE3, SE5 changed to SE1, SE2, SE5, SE7.
+2. legal-forms fee claim source_ids: added SE1.
+3. legal-forms capital claim: "authorised auditor" changed to "approved or authorised auditor".
+4. f-skatt-and-ids refusal claim: "seriously failed" changed to "failed ... to more than a trivial extent"; ROT/RUT/green-technology ground added.
+5. f-skatt-and-ids samordningsnummer claim: connection-to-Sweden condition and in-person identity check added.
+6. company-steps step 4 (board): statute rule added (deputy needed if fewer than three members); SE8 added to source_ids.
+7. taxes: "(limit as shown by Skatteverket in October 2026)" added to the VAT exemption; "(as shown October 2026)" added to the SEK 3 million rule.
+8. taxes VAT representative: reworded to "must appoint a VAT representative based in Sweden (form SKV 5703, or another document ...)".
+9. visa open_questions_for_reviewer item 3: vandel update (hold section, not rendered).
+faq.json: se-ab-capital auditor wording; se-sole-cost source_ids SE3, SE6 changed to SE1, SE3, SE6.
+sources.json: unchanged (no new source opened beyond the existing 23).
