@@ -4,7 +4,7 @@
     "country": "austria",
     "topic": "company",
     "question": "How much capital does an Austrian GmbH need?",
-    "answer": "EUR 10,000 minimum share capital, of which at least EUR 5,000 must be paid in cash (GmbHG, consolidated version of 12 Oct 2026).",
+    "answer": "EUR 10,000 minimum share capital, of which at least EUR 5,000 must be paid in cash (GmbHG, consolidated version of 13 Oct 2026).",
     "source_ids": [
       "AT1"
     ],
@@ -67,9 +67,10 @@
     "country": "austria",
     "topic": "social_security",
     "question": "What is the minimum social-insurance contribution for a trader in 2026?",
-    "answer": "EUR 160.81 per month in total (base EUR 551.10; pension 18.5%, health 6.8%, provision 1.53%, plus EUR 12.95 accident insurance). Very low earners may apply for an exemption.",
+    "answer": "Contributions are charged on a minimum base of EUR 551.10 per month (2026): pension 18.5%, health 6.8% and provision 1.53%, plus a flat accident insurance contribution of EUR 12.96 per month (SVS; the WKO page shows EUR 12.95), so the minimum is about EUR 161 per month in total. Very low earners may apply for an exemption.",
     "source_ids": [
       "AT20",
+      "AT21",
       "AT22"
     ],
     "last_checked": "2026-10-12",

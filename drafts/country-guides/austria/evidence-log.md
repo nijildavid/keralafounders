@@ -76,3 +76,73 @@ Written 2026-10-12 by the drafting agent. Every number in the guide is listed. '
 | 70 | Renewal window | earliest 3 months before expiry | 2026 | AT31 | https://www.oesterreich.gv.at/de/themen/menschen_aus_anderen_staaten/aufenthalt/3/2/2/Seite.120233 | see source page (figure stated as in guide) | opened | high (held) |
 | 71 | Photo size | 45 x 35 mm, not older than 6 months | 2026 | AT31 | https://www.oesterreich.gv.at/de/themen/menschen_aus_anderen_staaten/aufenthalt/3/2/2/Seite.120233 | see source page (figure stated as in guide) | opened | high (held) |
 | 72 | GmbH total time to Firmenbuch | not found in any official source | 2026 | AT13 | https://www.wko.at/vlbg/gruendung/ein-personen-gmbh | WKO says only: file within a few days of bank confirmation | no figure available (HOLD) | hold |
+
+## Independent check (2026-10-13, checker agent, not the author)
+
+Method: every source URL was re-fetched with curl (raw HTML, or pdftotext for the WKO brochure) and read in German. Rows refer to the numbered rows above. A new source AT37 (USP news on the 4.9% VAT rate) was opened and added. Agent review, not legal advice; no German-law-family skill consult was run (Austrian law differs from German law).
+
+| Row / figure | Verdict | What I saw | URL |
+|---|---|---|---|
+| 1-5 GmbH capital EUR 10,000, EUR 70 per share, quarter paid in, EUR 5,000 cash, s.9a | CONFIRMED | GmbHG s.6(1), 9a(2), 10(1). RIS now shows 'Fassung vom 13.10.2026' (guide said 12 Oct; fixed) | AT1 |
+| 6-8 FlexKapG in force 1 Jan 2024, EUR 1 contribution, under 25% employee shares | CONFIRMED | s.28, s.3, s.9 ('das 25% des Stammkapitals nicht erreicht') | AT2 |
+| 9 FlexKapG total capital | UNSUPPORTED (stays hold) | Statute gives no total. ABA (English) says EUR 10,000 with EUR 5,000 cash; English-only, so left on hold | AT2, AT33 |
+| 10 EUR 700,000 Firmenbuch line | CORRECTED | WKO AT36 says 700,000 'grundsätzlich' and elsewhere 'zweimaligen Überschreiten'; USP AT17 gives two consecutive years or EUR 1,000,000 once. Guide said 'once reached'. Fixed | AT36, AT17 |
+| 11 bookkeeping thresholds | CONFIRMED | updated 1 Jan 2026; GmbH/FlexKapG always double-entry | AT17 |
+| 12 eGruendung needs ID Austria | CONFIRMED | sole trader, s.9a GmbH, one-person FlexKapG | AT8 |
+| 13 trade registration free | CONFIRMED | 'Die Gewerbeanmeldung ist daher kostenlos!' (no page date) | AT10 |
+| 14 WKO free, exception special laws | CONFIRMED | page 06.02.2025 | AT12 |
+| 15 individual competence free | CONFIRMED | updated 20 Mar 2026 | AT7 |
+| 16 GISA extract within 3 months | CONFIRMED | also on BMWET page. Added exception: some trades (insurance, securities, credit brokering) start only after GISA entry | AT10, AT6 |
+| 17 criminal-record rule | CONFIRMED | under 5 years resident; sworn statement can replace; Stand 14.10.2025 | AT11 |
+| 18-22 notary and Firmenbuch estimates | CONFIRMED | EUR 100-150, 500-1,000, min 2,000, GmbH about 450, sole trader about 100; WKO estimates, not the court tariff | AT12 |
+| 23-25 NeuFoeG 5 years, 14 days, payroll relief | CONFIRMED | form is 'NeuFö2'; Stand 01.01.2026 | AT26 |
+| 26 tax office within one month; Verf 24/15 | CONFIRMED | | AT15 |
+| 27 SVS report within one month | CONFIRMED | | AT25 |
+| 28 cash register 15,000 / 7,500 | CONFIRMED | s.6.2 | AT15 |
+| 29 VAT 20% | CONFIRMED | s.13.2 | AT15 |
+| 30 reduced rates 10/13/4.9% | CORRECTED | 4.9% only for selected basic foods (Annex 3 UStG) since 1 July 2026 per USP (10 Jul 2026); the January brochure only announced it. Text dated and limited | AT15, AT37 |
+| 31-32 small-business VAT EUR 55,000, 10% tolerance | CONFIRMED | USP (BMF) updated 1 Jan 2026 | AT5, AT15 |
+| 33 waiver binds 5 years | CONFIRMED | 'mindestens 5 Kalenderjahre' | AT15, AT5 |
+| 34 simplified invoice EUR 400 | CONFIRMED | s.13.7 | AT15 |
+| 35-36 VAT return exemption, due date | CONFIRMED | | AT15 |
+| 37 income tax bands 2026 | CONFIRMED | 55% until 2029; brochure '401 %' is a typo | AT16, AT15 |
+| 38-40 prepayments, 30 Apr / 30 Jun, e-filing over EUR 55,000 | CONFIRMED | s.7.2 | AT15 |
+| 41 Grundfreibetrag 15% to 33,000, max 4,950 | CONFIRMED | | AT15 |
+| 42 flat rate 45%/24,750, 20%/11,000, EUR 60,500 | CONFIRMED | chamber brochure only; no official page opened | AT15 |
+| 43-44 CIT 23%, 27.5% | CONFIRMED | | AT15, AT14 |
+| 45 minimum CIT EUR 500 | CONFIRMED | Stand 10.08.2026 | AT14 |
+| 46-47 e-invoicing | CONFIRMED | | AT18, AT19 |
+| 48 SVS rates | CONFIRMED | SVS 18,50%, 6,8%, 1,53% | AT21 |
+| 49 accident insurance EUR 12.95 | CONFLICT | SVS: EUR 12,96 per month in 2026; WKO (AT20, AT25, AT35): 12,95. Official page followed | AT21 vs AT20 |
+| 50 min base EUR 551.10 | CONFIRMED | | AT21, AT20 |
+| 51 min total EUR 160.81 | CONFLICT | WKO sum uses 12.95; with 12.96 it is 160.82. Guide now says 'about EUR 161' | AT20, AT21 |
+| 52 max base EUR 8,085 | UNSUPPORTED | only WKO; WKO page of 31 Aug 2026 calls values non-binding. Removed from rendered text | AT20, AT35 |
+| 53 max total EUR 2,182.17 | UNSUPPORTED | derived from the same WKO figures. Removed | AT20 |
+| 54-56 EUR 6,613.20; EUR 55,000; 12 of 60 months | CONFIRMED | | AT22, AT23 |
+| 57 KU1 free limit EUR 150,000 | CONFIRMED | page Stand 01.04.2025 | AT28 |
+| 58 Grundumlage exemption | CONFIRMED (checklist CORRECTED) | exempt in the calendar year AFTER the start year; the founding year owes it (half if up to half a year, none if 31 days or less). Checklist said 'from the second calendar year', wrong; fixed | AT28 |
+| 59 ASVG 25% / 50% | CONFIRMED | | AT14 |
+| 60 trade-law director working time | CONFLICT (statute used) | RIS s.39: half of normal weekly working time; ABA: 20 hours | AT4, AT33 |
+| 61-62 start-up card EUR 30,000; 50 of 85 points | CONFIRMED (held) | | AT29, AT31 |
+| 63-64 points table; EUR 50,000 bonus | CONFIRMED (held) | table also gives 5 points for French, Spanish, BCS B1 (omitted, harmless) | AT29, AT34 |
+| 65 EUR 100,000 example | CONFIRMED (held) | | AT30, AT32 |
+| 66 fee EUR 218 | CONFIRMED (held) | | AT29, AT30, AT31 |
+| 67 validity 24 months | CONFIRMED (held) | | AT29, AT30 |
+| 68 decision 8 weeks | CONFIRMED (held) | | AT31, AT32 |
+| 69 AMS 3 weeks | CONFIRMED (held) | | AT29, AT30 |
+| 70 renewal 3 months before expiry | CONFIRMED (held) | | AT31 |
+| 71 photo 45 x 35 mm, 6 months | CONFIRMED (held) | | AT29, AT31 |
+| 72 GmbH total time to Firmenbuch | UNSUPPORTED (stays hold) | no official range on pages read | AT13 |
+| Extra: 'non-EU founder needs a permit before the trade' (gotcha, overview, checklist) | CORRECTED | GewO s.14(1): only first-time applicants not yet lawfully in Austria; those allowed to work may trade like Austrians. Qualified | AT3 |
+| Extra: 'cash-basis accounting is the norm' | CORRECTED | source says allowed, not the norm | AT17 |
+| Extra: status tag 'official [AT36]' | CORRECTED | AT36 is a chamber source; tag changed | sources.json |
+| Extra: 'start on the day of registration' | CORRECTED | now conditional, with exceptions | AT10 |
+
+Counts (77 items: 72 log rows + 5 extras; row 58's checklist fix is one of the extras' CORRECTED count, see below): CONFIRMED 63, CORRECTED 7, CONFLICT 3 (rows 49, 51, 60), UNSUPPORTED 4 (rows 9, 52, 53, 72), COULD NOT OPEN 0.
+
+Other checks: visa section is hold:true (kept); quick_facts has exactly structure, cost, time, gotcha; annual figures show their year after the edits; no rendered claim rests on a secondary source (ABA appears only in hold and conflict notes); next_check_due 2027-01-11 is within 6 months and sensible for the 1 January resets. Weak spots: flat-rate figures and some SVS figures rest on chamber pages; the RIS 'Fassung vom' date changes daily.
+
+Changes made:
+- guide.json: quick_facts.gotcha and .time; overview and founder_checklist[0] permit wording; legal-forms status tag, Firmenbuch/700,000 text, GmbHG date; sole-steps 4 and 9; trade-or-freelance checklist (Grundumlage timing); taxes VAT-rates claim (AT37 added) and accounting claim; social contributions claim (EUR 12.96, approximate total, maximums removed, AT21 added) and extended hold claim.
+- faq.json: at-gmbh-capital date; at-svs-minimum answer and sources.
+- sources.json: AT37 added.

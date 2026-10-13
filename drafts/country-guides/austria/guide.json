@@ -22,7 +22,7 @@
       ]
     },
     "time": {
-      "text": "A trade can start on the day of registration for most trades. No official range was found for a GmbH to reach the Firmenbuch; the WKO only says to file within a few days of the bank confirmation.",
+      "text": "A trade can usually start on the day of registration if all requirements are met (not for trades with a reliability check, chimney sweeping, or those that need a GISA entry first). No official range was found for a GmbH to reach the Firmenbuch; the WKO only says to file within a few days of the bank confirmation.",
       "source_ids": [
         "AT6",
         "AT10",
@@ -30,7 +30,7 @@
       ]
     },
     "gotcha": {
-      "text": "A founder from outside the EU needs a residence permit that allows self-employment before the trade may lawfully be run, and a GmbH with a trade licence needs a trade-law managing director who, as a rule, lives in Austria.",
+      "text": "A founder from outside the EU who is not yet lawfully living in Austria needs a residence permit that allows self-employment before the trade may lawfully be run, and a GmbH with a trade licence needs a trade-law managing director who, as a rule, lives in Austria.",
       "source_ids": [
         "AT3",
         "AT4"
@@ -39,7 +39,7 @@
   },
   "founder_checklist": [
     {
-      "text": "Confirm whether you are allowed to be self-employed here: non-EU founders need a residence permit first.",
+      "text": "Confirm whether you are allowed to be self-employed here: non-EU founders who are not yet lawfully living in Austria need a residence permit first.",
       "section_id": "visa"
     },
     {
@@ -86,7 +86,7 @@
       "official_information": [],
       "expert_interpretation": [
         {
-          "text": "Austria gives a founder two main routes: register as a sole trader (Einzelunternehmen) with a free trade registration, or form a GmbH, the private limited company. Almost all ordinary business activity needs a trade licence (Gewerbeberechtigung), and the trade registration is the front door for both routes. For a founder from outside the EU the order matters: Austrian trade law expects a residence permit that allows self-employment before the trade may lawfully be run, so the permit is usually the decisive step, not the company paperwork. A GmbH is easier to set up from abroad on paper, but if it needs a trade licence it also needs a trade-law managing director who, as a rule, lives in Austria. Taxes, social insurance and the chamber (WKO) all hang off the trade registration, so read the 'Worth knowing' section before choosing a route.",
+          "text": "Austria gives a founder two main routes: register as a sole trader (Einzelunternehmen) with a free trade registration, or form a GmbH, the private limited company. Almost all ordinary business activity needs a trade licence (Gewerbeberechtigung), and the trade registration is the front door for both routes. For a founder from outside the EU the order matters: Austrian trade law expects a first-time applicant from outside the EU to hold a residence permit that allows self-employment before the trade may lawfully be run, so for a founder who is not yet lawfully in Austria the permit is usually the decisive step, not the company paperwork. A GmbH is easier to set up from abroad on paper, but if it needs a trade licence it also needs a trade-law managing director who, as a rule, lives in Austria. Taxes, social insurance and the chamber (WKO) all hang off the trade registration, so read the 'Worth knowing' section before choosing a route.",
           "source_ids": [],
           "confidence": "editorial"
         }
@@ -119,7 +119,7 @@
             "no",
             "trade may start on the day of registration for most trades [AT10]",
             "cash-basis accounting until EUR 700,000 turnover (two years in a row); double-entry above [AT17]",
-            "official [AT36]"
+            "chamber [AT36]"
           ],
           [
             "GmbH (private limited company)",
@@ -143,14 +143,14 @@
       },
       "official_information": [
         {
-          "text": "An Einzelunternehmen comes into being, in principle, with the trade registration (Gewerbeanmeldung). The owner is personally liable without limit, including with private assets. The WKO page names no minimum capital. Entry in the commercial register (Firmenbuch) is mandatory once the accounting-duty line of EUR 700,000 net annual turnover is reached (2026 page), and optional below it.",
+          "text": "An Einzelunternehmen comes into being, in principle, with the trade registration (Gewerbeanmeldung). The owner is personally liable without limit, including with private assets. The WKO page names no minimum capital. Entry in the commercial register (Firmenbuch) comes with the accounting duty, which starts after turnover above EUR 700,000 in two consecutive years (or above EUR 1,000,000 once) (WKO page of 16 Apr 2026; USP, 1 Jan 2026), and is optional below it.",
           "source_ids": [
             "AT36"
           ],
           "confidence": "official"
         },
         {
-          "text": "A GmbH needs a minimum share capital of EUR 10,000, with each share at least EUR 70; at least a quarter of each cash contribution, and at least EUR 5,000 in total across cash contributions, must be paid in (GmbHG as consolidated on 12 Oct 2026, sections 6 and 10).",
+          "text": "A GmbH needs a minimum share capital of EUR 10,000, with each share at least EUR 70; at least a quarter of each cash contribution, and at least EUR 5,000 in total across cash contributions, must be paid in (GmbHG as consolidated on 13 Oct 2026, sections 6 and 10).",
           "source_ids": [
             "AT1"
           ],
@@ -303,7 +303,7 @@
           ]
         },
         {
-          "text": "Budget for chamber levies from the second calendar year.",
+          "text": "Budget for chamber levies: the Grundumlage is owed in the founding year (half if membership lasts no more than half the year, none if 31 days or less), waived in the following calendar year for genuine new founders, and due from the year after that.",
           "source_ids": [
             "AT28"
           ]
@@ -343,7 +343,7 @@
           "confidence": "official"
         },
         {
-          "text": "4. For most trades you may start on the day of registration if all requirements are met. Exceptions: 'section 95' trades (for example electrical engineering, travel agencies) and chimney sweeping may start only after a final decision (Bescheid). After registration the trade is entered in GISA and you receive a GISA extract within three months as proof.",
+          "text": "4. For most trades you may start on the day of registration if all requirements are met. Exceptions: 'section 95' trades (for example electrical engineering, travel agencies) and chimney sweeping may start only after a final decision (Bescheid); some trades (for example insurance, securities and credit brokering) may start only after the GISA entry. After registration the trade is entered in GISA and you receive a GISA extract within three months as proof.",
           "source_ids": [
             "AT6",
             "AT10"
@@ -380,7 +380,7 @@
           "confidence": "official"
         },
         {
-          "text": "9. Commercial register entry is optional for a sole trader below EUR 700,000 net annual turnover; the WKO gives the cost as about EUR 100 (page of 6 Feb 2025).",
+          "text": "9. Commercial register entry is optional for a sole trader who has not passed the accounting-duty thresholds (EUR 700,000 in two consecutive years, EUR 1,000,000 once); the WKO gives the cost as about EUR 100 (page of 6 Feb 2025).",
           "source_ids": [
             "AT36",
             "AT12"
@@ -569,9 +569,10 @@
       "reviewed_on": null,
       "official_information": [
         {
-          "text": "VAT (Umsatzsteuer): standard rate 20%; reduced rates 10%, 13% and 4.9% (WKO brochure, January 2026). The 10% rate applies in general to food, books, newspapers, medicines, accommodation and passenger transport.",
+          "text": "VAT (Umsatzsteuer): standard rate 20%; reduced rates 10% and 13%, plus 4.9% for selected basic foods listed in Annex 3 to the VAT Act since 1 July 2026 (WKO brochure, January 2026; USP news, 10 Jul 2026). The 10% rate applies in general to food, books, newspapers, medicines, accommodation and passenger transport.",
           "source_ids": [
-            "AT15"
+            "AT15",
+            "AT37"
           ],
           "confidence": "official"
         },
@@ -627,7 +628,7 @@
           "confidence": "official"
         },
         {
-          "text": "Cash-basis accounting is the norm for new sole traders; double-entry applies after EUR 700,000 turnover in two consecutive years or EUR 1,000,000 once (USP, 1 Jan 2026).",
+          "text": "Cash-basis accounting (Einnahmen-Ausgaben-Rechnung) is allowed for sole traders; double-entry becomes compulsory after EUR 700,000 turnover in two consecutive years or EUR 1,000,000 once (USP, 1 Jan 2026).",
           "source_ids": [
             "AT17"
           ],
@@ -688,9 +689,10 @@
           "confidence": "official"
         },
         {
-          "text": "2026 contributions (WKO, as of 1 Jan 2026): pension 18.5%, health 6.8%, self-employed provision 1.53%, plus accident insurance EUR 12.95 per month. Minimum monthly contribution base EUR 551.10; minimum total contribution EUR 160.81 per month. Maximum base EUR 8,085.00 per month; maximum total EUR 2,182.17 per month.",
+          "text": "2026 contributions (SVS and WKO, as of 1 Jan 2026): pension 18.5%, health 6.8%, self-employed provision 1.53%, plus a flat accident insurance contribution of EUR 12.96 per month (SVS; the WKO page shows EUR 12.95). Minimum monthly contribution base EUR 551.10; the minimum total is about EUR 161 per month (WKO shows EUR 160.81 using the EUR 12.95 figure).",
           "source_ids": [
-            "AT20"
+            "AT20",
+            "AT21"
           ],
           "confidence": "official"
         },
@@ -732,7 +734,7 @@
           "confidence": "official"
         },
         {
-          "text": "The WKO 'voraussichtliche Werte 2026' page (dated 31 Aug 2026) labels the same 2026 values as provisional and non-binding, while the WKO contributions page presents them as final. Re-check against SVS in January 2027.",
+          "text": "The WKO 'voraussichtliche Werte 2026' page (dated 31 Aug 2026) labels the same 2026 values as provisional and non-binding, while the WKO contributions page presents them as final. Re-check against SVS in January 2027. Also unconfirmed from an official page: the 2026 maximum contribution base (EUR 8,085.00 per month on the WKO pages) and the maximum monthly total (EUR 2,182.17 on WKO), so neither is stated in the guide. The SVS page gives EUR 12.96 per month for accident insurance in 2026, the WKO pages EUR 12.95.",
           "source_ids": [
             "AT35",
             "AT20"

@@ -322,5 +322,14 @@
     "url": "https://www.wko.at/gruendung/einzelunternehmen-eu",
     "language": "de",
     "accessed": "2026-10-12"
+  },
+  {
+    "id": "AT37",
+    "title": "Neuer Umsatzsteuersatz von 4,9 Prozent",
+    "publisher": "Unternehmensserviceportal (USP), Bundesministerium fuer Finanzen",
+    "type": "government_portal",
+    "url": "https://www.usp.gv.at/aktuelles/newsliste/neuer_ustsatz.html",
+    "language": "de",
+    "accessed": "2026-10-13"
   }
 ]

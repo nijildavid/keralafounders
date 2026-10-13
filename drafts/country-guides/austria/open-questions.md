@@ -50,3 +50,15 @@ Agent draft, agent review, not legal advice. Nothing here was reviewed by a lawy
 3. Do you want FlexKapG (FlexCo) covered in more depth, or kept as a short row until its capital is confirmed?
 4. May the guide use WKO (chamber) pages for cost estimates (notary, Firmenbuch) when no official tariff was read?
 5. Should the next re-check be set for January 2027 (current) or later?
+
+## Added by the independent checker (2026-10-13)
+
+- Agent review, not legal advice. No German-law-family skill consult was run; Austrian law differs from German law.
+- SVS accident insurance: SVS says EUR 12.96 per month for 2026, WKO says EUR 12.95. Guide follows SVS and says the minimum total is "about EUR 161". Re-check in January 2027.
+- The 2026 maximum SVS base (EUR 8,085) and maximum monthly total were removed from the rendered text: only WKO states them and a WKO page of 31 Aug 2026 calls the values non-binding. Confirm from SVS.
+- The 4.9% VAT rate exists only for selected basic foods from 1 July 2026 (USP). Reviewer may prefer to drop it.
+- Small-business flat rate (EUR 60,500; 45% / 20%) rests on the WKO brochure alone. Find the BMF or USP page.
+- FlexKapG total capital: ABA (English) says EUR 10,000 with EUR 5,000 cash; still held until a primary page confirms it.
+- Grundumlage: the exemption is the calendar year after the start year, so the founding year owes it. A local adviser should confirm for the founder's Fachgruppe.
+- GewO s.14(1) requires a new permit only from first-time applicants not yet lawfully in Austria. Whether a founder already living in another EU country on a national permit counts is for the immigration lawyer.
+- WKO page AT13 still mentions Handysignatur (replaced by ID Austria); not used in the guide.
