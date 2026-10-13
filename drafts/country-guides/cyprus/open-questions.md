@@ -44,3 +44,14 @@ Agent draft, agent review, not legal advice.
 3. Keep the extra "directors, tax residence and running a company from abroad" section, or drop it until the director-residence question is settled?
 4. Who does the independent re-verification (Standard QA 4) and the Migration Department check?
 5. Should the guide say anything about Category F / Startup Visa at all before they are verified (currently reviewer questions only)?
+
+## Added by the independent check (2026-10-13)
+- Settled by official pages: company tax 15% from 1 Jan 2026 (Tax Department), dividend SDC 5% for individuals, VAT threshold EUR 15,600 (Tax Department and EC SME portal), no minimum share capital for a private company. An accountant should still confirm company and non-resident dividend cases. Earlier lines above saying these are open are superseded.
+- The Registrar comparison table and the Point of Single Contact still print 12.5% corporate tax; the Tax Department says 15%. Readers of those pages will see conflicting numbers.
+- Self-employed social insurance for 2026 (16.6%) and the self-employed ceiling are confirmed only by KPMG; the official notice found covers employees (EUR 5,742 a month).
+- The Point of Single Contact says self-employed social insurance "now includes" the health-system contribution, while EURES lists GeSY 4.00% separately. The guide treats them as two charges; confirm.
+- The EUR 70,000 self-employed audit threshold and filing dates on the PSC page may predate the 2026 reform; check the Tax Department's 2026 guide for individuals.
+- Director-residence conflict (PSC vs Registrar directors page) still needs a Cyprus lawyer.
+- Visa figures (Category F, Startup Visa, self-employment permit) still could not be opened; Migration Department pages need a normal browser.
+- Tax Department VAT-rates and news pages returned blocks; VAT rates rest on EURES and PSC only.
+- The Tax Department site (gov.cy/mof-tax) is reachable by curl with a browser user agent, so the author's "blocked" finding applied to other hosts.

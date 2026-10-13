@@ -67,3 +67,58 @@ All pages read 2026-10-12. "Opened" means fetched and read in full text by the d
 | 60 | GeSY ceiling EUR 180,000 | unknown | none | search summaries | conflicting | NOT verified, left out | not used |
 
 Figures stated in the guide: rows 1-4, 6-10, 12-20, 25-29, 32-41, 43-53 plus rows 21-23, 30, 31, 55 held. Rows 56-59 appear only as reviewer questions; 5, 11, 24, 42, 54, 60 are not used.
+
+
+## Independent check (2026-10-13, checker agent, not the author)
+
+Agent review, not legal advice. All 21 original sources re-fetched with curl on 2026-10-13 (every one opened, HTTP 200). Unlike the author, the checker could open the Cyprus Tax Department site at gov.cy/mof-tax by curl with a browser user agent (the old mof.gov.cy host redirects there), plus the Tax Department's Greek PDFs, the Social Insurance Services contributions site, and the European Commission SME VAT portal. Greek pages were read for the Tax Department, Social Insurance and the Registrar's 30 Sept announcement. Row numbers refer to the author's table above.
+
+| Row / figure | Verdict | What I saw | URL |
+|---|---|---|---|
+| 1-4 Registration EUR 165 / 235 (online, no share capital) / +100 accelerated / +160 translations | CONFIRMED | Exact amounts on page; hand/post route lists EUR 165 and +100 only, forms HE1, HE2, HE3 | CY1 |
+| 5 HE5 +EUR 20 (not in guide) | CONFIRMED | as stated | CY1 |
+| 6-8 Name EUR 10 / +20 accelerated / reserved 6 months | CONFIRMED | as stated | CY2 |
+| 9-11 Certified copies EUR 120/130, +100; public commencement EUR 2,020 (not in guide) | CONFIRMED | as stated | CY3 |
+| 12 Tax registration within 60 days | CONFIRMED | as stated | CY4 |
+| 13 VAT threshold EUR 15,600 | CONFIRMED (now by 2 further official sources) | Tax Department VAT registration page (Greek): must register if taxable supplies in the year ending at any month-end exceed 15.600, or are expected to exceed it in the next 30 days; capital assets excluded; late-notice charge EUR 85 per month. EC SME portal for Cyprus: "Cyprus national annual threshold is EUR 15.600", no sectoral thresholds, no separate national SME scheme. Also CY4, CY9, CY11, CY12. | CY22, CY23 |
+| 14 Annual fee EUR 350 by 30 June | CONFIRMED | CY4, CY5 | CY4 |
+| 15-17 Business name EUR 80 / +40 / within 1 month | CONFIRMED | as stated | CY8 |
+| 18 Partnership EUR 120 | CONFIRMED | comparison table | CY5 |
+| 19-20 Private company up to 50 members; five company types | CONFIRMED | CY27 also: at least 1, at most 50 members | CY5, CY20, CY27 |
+| 21 Corporate tax 12.5% on Registrar table / PSC | CORRECTED (rate is 15%) | Registrar table and PSC still print 12.5% (stale). Tax Department 2026 reform presentation (March 2026): "From 1/1/2026 companies are subject to corporate tax at 15%." Guide now renders 15% as official. | CY24 |
+| 22 Corporate tax 15% from 1 Jan 2026 (was held, press only) | CONFIRMED by official source | as above; press (Cyprus Mail, EY) agrees | CY24 |
+| 23 Dividend SDC 17% to 5%; deemed dividend | CORRECTED | Tax Department SDC presentation (6 Mar 2026): individuals 5% (from 17%); dividends from profits of tax years up to 2025 stay 17% until 31 Dec 2031; deemed distribution only for profits up to tax year 2025, so it ends for profits from 2026. Press wording "after 2026" was off by one year. Rendered as official with limits stated. | CY25 |
+| 24 PSC defence tax 20% x 87.5% (not used) | CONFIRMED as printed; not used | likely stale | CY13 |
+| 25 SI number 1-2 weeks | CONFIRMED | as stated | CY12 |
+| 26-27 SI 16.6%+5.2% state, 8.8/8.8/5.2 (2025) | CONFIRMED | EURES "relevant for 2025"; CY13 undated but same | CY16, CY13 |
+| 28 Employer extras 1.2 / 0.5 / 2% | CONFIRMED | also KPMG table for 2026 | CY13, CY18 |
+| 29 SI paid quarterly, estimated earnings | CONFIRMED | CY12 also says SI "now include a contribution to the National Health System" (old wording; see open questions) | CY12 |
+| 30 SE 16.6% unchanged 2026 | UNSUPPORTED on an official page | Only KPMG states it for 2026. EURES gives 16.6% for 2025. Stays hold. | CY18 |
+| 31 Max insurable earnings 2026 EUR 68,904 / 5,742 / 1,325 | PARTLY CONFIRMED | Official Social Insurance notice (Dec 2025): employees EUR 5,742 a month, EUR 1,325 a week from 2026. EUR 68,904 a year (12 x 5,742) appears only on KPMG; self-employed ceiling not confirmed. Item stays hold, official source added. | CY26, CY18 |
+| 32 GeSY 2.65 / 2.90 / 4.70 / 4.00 / 2.65 / 2.65 | CONFIRMED | EURES list; page undated | CY16 |
+| 33-34 Personal tax bands and EUR 22,000 allowance | CONFIRMED | PSC and EURES agree; Tax Department presentation also states allowance 19,500 to 22,000 | CY11, CY16, CY24 |
+| 35 Registration duty 19,500 (2025); 25 to under 71 from 2026 | CONFIRMED | as stated | CY11 |
+| 36 183 days / 60-day rule | CONFIRMED | as stated | CY11 |
+| 37 VAT rates 19/9/5/0 | CONFIRMED | EURES and PSC; Tax Department rates page returned a block, so not cross-checked there | CY16, CY12 |
+| 38 Acquisitions threshold EUR 10,251.61 | CONFIRMED | also on Tax Department page | CY11, CY22 |
+| 39 VAT return quarterly, pay by 10th of 2nd month | CONFIRMED as stated by PSC | | CY11 |
+| 40 Self-employed EUR 70,000 audit trigger | CONFIRMED as printed; staleness risk remains | CY11 and CY12 both print it; not checked against 2026 law. Guide already attributes it to the PSC. | CY11, CY12 |
+| 41 Temp. tax instalments 31 Jul / 31 Dec | CONFIRMED as printed | | CY11 |
+| 42 Other filing dates (not used) | CONFIRMED as printed; correctly not used | | CY11 |
+| 43 SME VAT scheme from 1 Jan 2025; Cyprus threshold | RESOLVED (was hold) | EC portal: threshold EUR 15,600, no special national scheme. Upgraded to official with the caveat that the EC page is dated 3 Sept 2024. | CY23, CY22 |
+| 44 E-invoicing no mandates; sheet updated 14 Aug 2025 | CONFIRMED | "Next steps": long-term plan only, no dates, so "no planned dates" is accurate | CY17 |
+| 45-52 Visa-section figures (MEU1A EUR 20, 4 months, BFU EUR 2,500 / 200k / 3 years / 70-30%, digital nomad EUR 3,500 net, 1+2 years, 500 cap, Type C 90 days, naturalisation 5/4 years) | CONFIRMED against page text; remain hold | Match CY13 and the February 2024 strategy PDF (CY15). Dated, not re-confirmed with the Migration Department. | CY13, CY15 |
+| 53 BO register window 1 Oct to 31 Dec 2026; striking-off from December | CONFIRMED | English announcement 16 Sept; Greek announcement 30 Sept (striking-off under s.327(2A)(b) from December for unpaid annual fees) | CY10 |
+| 54 Annual return / audited accounts | CONFIRMED (no dates stated) | | CY4 |
+| 55 Director must be Cypriot resident (PSC) | CONFLICT (stays hold) | Registrar directors page: private company needs at least one director aged 18+ and a secretary; no residence rule mentioned. Needs a Cyprus lawyer. | CY13 vs CY28 |
+| 56-59 Category F, self-employment permit, Startup Visa figures | COULD NOT OPEN | Migration Department and Startup Visa pages blocked or not found by curl (gov.cy/moi, gov.cy/crmd, cyprusstartupvisa.com). Remain reviewer questions only. | none |
+| 60 GeSY ceiling EUR 180,000 | not used | | none |
+| NEW Minimum share capital, private company | CONFIRMED (was a gap) | Registrar: "For private companies there is no minimum share capital requirement"; public company EUR 25,629; private 1 to 50 members; at least 1 director 18+; secretary required; one person may be both only for a one-member, one-director company | CY27, CY28 |
+| Structure checks | PASS | quick_facts exactly structure/cost/time/gotcha; visa section has hold_note and review_status pending; annual figures carry their year; no speed/certainty promises ("usually 1 to 2 weeks" is attributed); source type tags correct; no rendered claim rests only on a secondary source; next_check_due 2027-01-11 sensible (rates reset 1 January). | |
+
+Counts (about 62 rows): CONFIRMED 49, CORRECTED 2 (rows 21, 23), UPGRADED from hold to official 3 (row 22, row 43, minimum capital), UNSUPPORTED 1 (row 30), PARTLY CONFIRMED 1 (row 31), CONFLICT 1 (row 55), COULD NOT OPEN 4 (rows 56-59).
+
+### Changes made
+guide.json: (1) corporate tax item: hold to official 15% from 1 Jan 2026 (CY24); (2) dividends item: hold to official, "after 2026" corrected to profits from 2026, individuals 5% (CY25); (3) small-enterprise VAT item: hold to official, EUR 15,600 and no separate national scheme (CY22, CY23); (4) minimum-capital item: hold to official, none for a private company, plus member/director counts (CY27, CY28); legal-forms minimum-capital cell and status tag updated; (5) director-residence item stays hold, records the Registrar conflict, CY28 added; (6) 2026 contribution item reworded: official employee ceiling EUR 5,742 a month / 1,325 a week (CY26); 16.6% for 2026 and EUR 68,904 stay hold; (7) taxes expert note and two taxes checklist lines updated; (8) VAT registration item gains CY22; (9) checked_by updated (last_checked left at 2026-10-12 because the validator ties it to countries.json, which I may not edit).
+faq.json: cy-vat-threshold answer rewritten, sources CY22, CY23, CY11.
+sources.json: added CY22 to CY28 (all opened, official).
