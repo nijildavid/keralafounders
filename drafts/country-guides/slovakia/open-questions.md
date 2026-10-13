@@ -13,7 +13,7 @@ Agent review, not legal advice. Nothing here has been reviewed by a lawyer.
 8. **Director residence**: I wrote that the Commercial Code sets no nationality or residence condition. That is an inference from reading section 133(2) only; the register law or other acts could add conditions.
 
 ## Conflicts between sources
-- The Sociálna poisťovňa page (SK9) states the no-obligation income limit as EUR 2,876.90 and also uses EUR 2,983.37 in an example (10.5 times 284.13). It also uses EUR 9,144 and EUR 9,720 for the upper band in different places. Held.
+- Resolved by the 2026-10-13 checker: the two no-obligation limits (EUR 2,876.90 and 2,983.37) and the two upper bands (9,144 and 9,720) are for different income years (2025 and 2026), not a conflict.
 - Search snippets disagreed on whether an electronic trade-licence filing is discounted or free. The fee table does not settle it. Held.
 
 ## A local professional must confirm
@@ -28,3 +28,10 @@ Agent review, not legal advice. Nothing here has been reviewed by a lawyer.
 ## Could not verify
 - Everything in the visa section beyond the statute and the July 2024 FAQ: current consulate practice, real processing time (the FAQ gives a 90-day legal period), the income amount for renewal, and the effect of the OECD distinction on Indian nationals (India is not an OECD member, so the register-entry route applies on the FAQ's wording).
 - Any second-agent re-verification (Standard QA check 4).
+
+## Added by the independent checker (2026-10-13, agent review, not legal advice)
+- Fee for registering an s.r.o. through a notary acting as registrar (instead of the court) was not found; the EUR 220 item covers the register court.
+- Whether health insurance has any start-up holiday for a new sole trader, and the exact first-year health minimum, remain unverified (no official page opened).
+- The draft cited section 32(1) for in-person embassy filing; the rule is section 31(1) of Act 404/2011 (visa section, still held).
+- The fee schedule (SK3) and subsistence minimum may change on 1 Dec 2026, 1 Jan 2027 and 1 Jul 2027; the December 2026 fee-schedule version shows no change to items 148 and 24.
+- The inferred 2024 average wage (EUR 1,524) and derived health minimum (EUR 121.92) are still unsupported by an official page.

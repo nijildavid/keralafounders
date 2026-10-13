@@ -14,7 +14,7 @@
       ]
     },
     "cost": {
-      "text": "A trade licence costs EUR 7 per free trade (2026 fee table). An s.r.o. needs minimum capital of EUR 5,000 (2026 text) and a EUR 220 court registration fee; notary or lawyer fees for the founding deed are not covered here.",
+      "text": "A trade licence costs EUR 7 per free trade (2026 fee table). An s.r.o. needs minimum capital of EUR 5,000 (2026 text) and a EUR 220 court registration fee (schedule in force from 17 August 2026); notary or lawyer fees for the founding deed are not covered here.",
       "source_ids": [
         "SK3",
         "SK1",
@@ -29,7 +29,7 @@
       ]
     },
     "gotcha": {
-      "text": "A new sole trader's compulsory social insurance starts only from the sixth calendar month after the licence, but health insurance and the later minimum levy still apply (2026: minimum base EUR 914.40, about EUR 303.11 a month for social insurance). Plan cash for the end of the holiday.",
+      "text": "A new sole trader's compulsory sickness and pension insurance starts only from the first day of the sixth calendar month after the licence. Health insurance is a separate system, so check its start with a health insurer. After the holiday a starter pays the micro-contribution (2026: EUR 131.34 a month on a EUR 396.24 base); once income passes the thresholds the levy rises (2026: minimum base EUR 914.40, about EUR 303.11 a month, from 1 July 2026). Plan cash for the end of the holiday.",
       "source_ids": [
         "SK7",
         "SK9"
@@ -399,7 +399,7 @@
       "reviewed_on": null,
       "official_information": [
         {
-          "text": "1. Optionally reserve the company name in the register of reserved names: the fee is EUR 50 and the reservation lasts up to 60 days (Zákon č. 29/2026 § 111(3) and court-fee schedule item 17a).",
+          "text": "1. Optionally reserve the company name in the register of reserved names: the fee is EUR 50 (schedule in force from 17 August 2026) and the reservation lasts up to 60 days (Zákon č. 29/2026 § 111(3) and court-fee schedule item 17a).",
           "source_ids": [
             "SK4"
           ],
@@ -420,7 +420,7 @@
           "confidence": "official"
         },
         {
-          "text": "4. File the registration proposal with the register court or a notary acting as registrar. The proposer must have an activated electronic mailbox for delivery, and the court fee for a first entry of an s.r.o. is EUR 220, including publication in the Commercial Bulletin (Zákon č. 29/2026; schedule item 17).",
+          "text": "4. File the registration proposal with the register court or a notary acting as registrar. The proposer must have an activated electronic mailbox for delivery, and the court fee for a first entry of an s.r.o. made by the register court is EUR 220 (schedule in force from 17 August 2026), including publication in the Commercial Bulletin (Zákon č. 29/2026; schedule item 17). The fee for registration through a notary acting as registrar was not checked.",
           "source_ids": [
             "SK4"
           ],
@@ -465,7 +465,7 @@
       ],
       "expert_interpretation": [
         {
-          "text": "The statutory two-day registration deadline starts only once the proposal is complete and the court fee is received. Gaps in the documents restart the clock, so a first attempt that is rejected can take much longer than the headline figure. Ask your notary or lawyer for a realistic estimate.",
+          "text": "The statutory two-day registration deadline applies where the review finds the conditions met, and delivery of a court proposal counts only once the court has the information that the court fee was paid (Zákon č. 29/2026 § 44(3)). If registration is refused (§ 59), the proposer must fix the problem, so a first attempt that is rejected can take much longer than the headline figure. Ask your notary or lawyer for a realistic estimate.",
           "source_ids": [],
           "confidence": "editorial"
         }
@@ -538,9 +538,10 @@
           "confidence": "official"
         },
         {
-          "text": "From 1 January 2027 VAT payers must issue invoices for domestic supplies as electronic invoices in the prescribed structured format (XML, Peppol BIS); every business, VAT-registered or not, must be able to receive them, normally via a certified delivery provider on the Peppol network. A non-VAT payer is not required to issue e-invoices. 1 January 2026 to 1 January 2027 is a transition period in which the system can be tried voluntarily (Finančná správa FAQ 9/DPH/2025/IM, version of 15 September 2026).",
+          "text": "From 1 January 2027 VAT payers must issue invoices for domestic supplies as electronic invoices in the prescribed structured format (XML, Peppol BIS); every business, VAT-registered or not, must be able to receive them, normally via a certified delivery provider on the Peppol network. A non-VAT payer is not required to issue e-invoices. 1 January 2026 to 1 January 2027 is a transition period in which the system can be tried voluntarily (Finančná správa FAQ 9/DPH/2025/IM, version of 15 September 2026). The VAT act text in force from 1 January 2027 also contains the issue-and-receive duty (Zákon o DPH, version from 1 January 2027).",
           "source_ids": [
-            "SK10"
+            "SK10",
+            "SK15"
           ],
           "confidence": "official"
         },
@@ -604,7 +605,7 @@
           "confidence": "official"
         },
         {
-          "text": "The minimum monthly assessment base is 60% of one twelfth of the general assessment base from two years earlier (§ 138(8)); for 2026 the Sociálna poisťovňa gives it as EUR 914.40, on which a self-employed person pays EUR 303.11 a month. This applies where prior-year income exceeds EUR 9,144 (50% of the general base); the assessment base is then one twelfth of the tax base, adjusted and multiplied by 1.486, subject to that minimum.",
+          "text": "The minimum monthly assessment base is 60% of one twelfth of the general assessment base from two years earlier (§ 138(8)); for 1 July to 31 December 2026 the Sociálna poisťovňa gives it as EUR 914.40, on which a self-employed person pays EUR 303.11 a month. This applies where income for 2025 exceeded EUR 9,144 (50% of the general base); the assessment base is then one twelfth of the tax base, adjusted and multiplied by 1.486, subject to that minimum.",
           "source_ids": [
             "SK7",
             "SK9"
@@ -612,7 +613,7 @@
           "confidence": "official"
         },
         {
-          "text": "A self-employed person whose prior-year income is not above 10.5 times the subsistence minimum is not obliged to pay; between that amount and EUR 9,144 they pay a micro-contribution of EUR 131.34 a month (2026) on a special base of EUR 396.24, which is 26% of one twelfth of the general base from two years earlier (§ 138(2)(b); Sociálna poisťovňa page, 2026). The income test is applied on 1 July, or 1 October if the tax-return deadline is extended.",
+          "text": "A self-employed person whose income is not above 10.5 times the subsistence minimum valid on 1 January of the income year is not obliged to pay (EUR 2,876.90 for income of 2025, tested in 2026; EUR 2,983.37 for income of 2026, tested in 2027); between that amount and EUR 9,144 (2025 income) they pay a micro-contribution of EUR 131.34 a month (2026) on a special base of EUR 396.24, which is 26% of one twelfth of the general base from two years earlier (§ 138(2)(b); Sociálna poisťovňa page, 2026). The income test is applied on 1 July, or 1 October if the tax-return deadline is extended.",
           "source_ids": [
             "SK7",
             "SK9"
@@ -651,11 +652,12 @@
           "confidence": "hold"
         },
         {
-          "text": "The Sociálna poisťovňa page gives the no-obligation income limit as EUR 2,876.90 in one place and uses EUR 2,983.37 (10.5 times EUR 284.13) in an example. The statute ties it to the subsistence minimum valid on 1 January, so the EUR 2,983.37 version is likelier correct for 2026; unresolved.",
+          "text": "The two limits on the Sociálna poisťovňa page are not a conflict: the statute ties the limit to the subsistence minimum valid on 1 January of the income year (§ 21(4) and (5)), so EUR 2,876.90 applies to income of 2025 (tested 1 July 2026) and EUR 2,983.37 to income of 2026 (tested in 2027).",
           "source_ids": [
+            "SK7",
             "SK9"
           ],
-          "confidence": "hold"
+          "confidence": "official"
         },
         {
           "text": "How a managing director of an s.r.o. is insured for social security (as an employee, as self-employed, or not at all) was not verified.",

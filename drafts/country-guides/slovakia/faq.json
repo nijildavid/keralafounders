@@ -35,7 +35,7 @@
     "country": "slovakia",
     "topic": "company",
     "question": "Can a non-resident be managing director of an s.r.o.?",
-    "answer": "The Commercial Code (text from 17 August 2026) requires only a natural person not listed in the execution-authorisation register; it sets no residence or nationality condition. A director with no Slovak residence and no EU health cover is not publicly health-insured for that role.",
+    "answer": "The Commercial Code (text from 17 August 2026) requires only a natural person not listed in the execution-authorisation register; it sets no residence or nationality condition. A director with no Slovak permanent residence who is not health-insured in another EU/EEA state or Switzerland is not publicly health-insured for that role.",
     "source_ids": [
       "SK1",
       "SK8"
@@ -66,7 +66,7 @@
     "country": "slovakia",
     "topic": "social",
     "question": "Do new sole traders pay social contributions from day one?",
-    "answer": "No for sickness and pension insurance: it starts on the first day of the sixth calendar month after the licence, per Sociálna poisťovňa (2026). After that the 2026 minimum base is EUR 914.40, about EUR 303.11 a month. Health insurance is separate.",
+    "answer": "No for sickness and pension insurance: it starts on the first day of the sixth calendar month after the licence, per Sociálna poisťovňa (2026). After that a starter pays the micro-contribution, EUR 131.34 a month on a EUR 396.24 base in 2026; the EUR 914.40 minimum base (about EUR 303.11 a month, from 1 July 2026) applies once prior-year income exceeds EUR 9,144. Health insurance is separate.",
     "source_ids": [
       "SK7",
       "SK9"
@@ -84,7 +84,8 @@
     "question": "When does e-invoicing become mandatory?",
     "answer": "From 1 January 2027 VAT payers must issue domestic invoices as structured e-invoices (XML, Peppol BIS), and all businesses must be able to receive them via a certified delivery provider. Non-VAT payers need not issue them.",
     "source_ids": [
-      "SK10"
+      "SK10",
+      "SK15"
     ],
     "last_checked": "2026-10-12",
     "origin": "research",
