@@ -1,0 +1,786 @@
+{
+  "slug": "malta",
+  "title": "How to start a company in Malta",
+  "summary": "Malta gives a founder two main routes: work as a self-employed person (sole trader), registering the activity with Jobsplus and the tax authority, or form a private limited company through the Malta Business Registry (MBR), which since 1 March 2025 takes new incorporations only through its online portal BAROS. A private company needs authorised share capital of at least EUR 1,164.69 with at least 20% of each share paid up at signing. A trap for founders from outside the EU: a person who runs their own Maltese company is treated as its employee, not as self-employed.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-11",
+  "quick_facts": {
+    "structure": {
+      "text": "Register as self-employed (sole trader) with Jobsplus, or form a private limited company (a separate legal entity) through the MBR online portal BAROS.",
+      "source_ids": [
+        "MT1",
+        "MT18"
+      ]
+    },
+    "cost": {
+      "text": "A private company needs authorised share capital of at least EUR 1,164.69, with at least 20% of each share paid up when the memorandum is signed. MBR's online registration fee is EUR 100 for authorised capital up to EUR 1,500 (fee page read October 2026), plus EUR 10 to reserve a name.",
+      "source_ids": [
+        "MT1",
+        "MT2",
+        "MT3"
+      ]
+    },
+    "time": {
+      "text": "MBR says a company registration can take as little as 24 hours once all documents are in order. Since 1 March 2025 new incorporations must be filed online through BAROS.",
+      "source_ids": [
+        "MT1"
+      ]
+    },
+    "gotcha": {
+      "text": "Directors, shareholders and owners who do executive work in a Maltese company count as its employees, so a non-EU founder needs a Single Permit, not a self-employment permit. The self-employment licence is for individuals only and has demanding criteria.",
+      "source_ids": [
+        "MT9",
+        "MT15",
+        "MT16"
+      ]
+    }
+  },
+  "founder_checklist": [
+    {
+      "text": "Decide between working as a self-employed person and forming a private limited company.",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "Understand that a founder who works in their own company is its employee, and what that means for a non-EU founder.",
+      "section_id": "founders-are-employees"
+    },
+    {
+      "text": "Prepare the memorandum and articles, director consent forms, certified ID copies and a character reference for any non-EU individual.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Pay in at least 20% of the share capital into a company-in-formation bank account and keep the deposit slip.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Register as an authorised user and file the incorporation on the BAROS portal.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "If working as self-employed, notify Jobsplus with the self-employed engagement form and obtain a VAT number.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "Apply for VAT registration within 30 days of your first taxable supply in Malta, or ask whether the small-enterprise (Article 11) exemption fits.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Plan for the 35% company tax and ask a Maltese tax adviser how the shareholder tax refund would apply to you.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Set up Class 2 social security contributions as a self-employed person, or Class 1 if you are employed by your own company.",
+      "section_id": "social"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        {
+          "text": "Malta offers a founder two practical routes. The first is to register as a self-employed person, the Maltese equivalent of a sole trader, which is quick and keeps the paperwork light but gives no separate legal entity. The second is a private limited company registered with the Malta Business Registry, which is the most common form of business in Malta and the route most founders choose once they want limited liability, a co-founder or an investor. New company registrations are filed online through the BAROS portal. Company profits are taxed at the company level, and shareholders can then claim a refund of part of that tax when profits are paid out; how that refund works is explained in the taxes section and should always be confirmed with a Maltese tax adviser. For founders from outside the EU the company itself is the easy part: the right to live and work in Malta is a separate process run by Identita and Jobsplus, and there is a country-specific trap about directors being treated as employees. EU and EEA nationals do not face that permit step.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Self-employed person (sole trader)",
+            "none",
+            "no separate legal entity, so personal",
+            "no",
+            "notification to Jobsplus and tax registration; no registry filing",
+            "tax and social-security records; details to be confirmed with an adviser",
+            "official [MT18]"
+          ],
+          [
+            "Private limited company",
+            "authorised share capital at least EUR 1,164.69; at least 20% of each share paid up at signing",
+            "limited, the company is a separate legal entity",
+            "not mentioned in the MBR guide; filed online via BAROS by the shareholders or a licensed service provider",
+            "as little as 24 hours once documents are in order (MBR)",
+            "proper accounting records, annual accounts and an appointed auditor",
+            "official [MT1, MT3]"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "A commercial partnership can be a partnership en nom collectif, a partnership en commandite or a limited liability company. A commercial partnership is a legal entity with a separate identity from those who own or run it, and a limited liability company is the most common form of business entity in Malta.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A private company must, by its memorandum and articles, restrict the right to transfer its shares, limit its members to fifty, and prohibit any invitation to the public to subscribe for shares or debentures.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The minimum authorised share capital of a private company is EUR 1,164.69. At least that minimum must be subscribed in the memorandum, and not less than 20% of the nominal value of each share taken up must be paid up on signing the memorandum.",
+          "source_ids": [
+            "MT1",
+            "MT3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A limited liability company may be registered by the shareholders themselves or through a licensed company service provider. Time to register depends on whether all information and documents are in order; once the Registrar has everything, the process may take from as little as 24 hours.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A person who works independently and takes up a gainful occupation, whole-time or part-time, other than under a contract of employment, must notify Jobsplus of the occupation (Article 37 of the Employment and Training Services Act).",
+          "source_ids": [
+            "MT18"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For a first-time founder testing an idea alone, self-employment is the lighter start: no share capital, no memorandum, no auditor. Move to a private company when you want limited liability, a co-founder or investor, or when a client wants to contract with a company. Remember the permit consequence for non-EU founders: once you work inside your own company you are its employee (see the next section), and the self-employed route has its own, very different criteria.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide whether personal liability as a self-employed person is acceptable for now.",
+          "source_ids": []
+        },
+        {
+          "text": "If forming a company, check the minimum authorised capital and the 20% paid-up rule.",
+          "source_ids": [
+            "MT1",
+            "MT3"
+          ]
+        },
+        {
+          "text": "Check whether your activity needs a licence or authorisation beyond registration.",
+          "source_ids": [
+            "MT1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "founders-are-employees",
+      "title": "Worth knowing: a founder who works in their own company is its employee",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Identita states that any person carrying out work for a registered company is an employee of that company. This applies also to company directors, shareholders and ultimate beneficial owners who perform an executive function, who would have to apply for a Single (Work) Permit.",
+          "source_ids": [
+            "MT9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Jobsplus says the sole owner of a registered company, which has a separate legal status from its owner, must submit an engagement form as an employee of the company. The designation should be Managing Director or Director, and the form should include the company number from the Malta Business Registry, the VAT number and a PE number if there are employees.",
+          "source_ids": [
+            "MT18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A self-employment licence is issued in the name of an individual and never a company; applications submitted under a limited company are sent back. A director or shareholder of a company must instead apply for a Single Permit as a company director.",
+          "source_ids": [
+            "MT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A Jobsplus guide dated January 2021 says employment licences are not issued for foreign non-resident and non-executive directors, meaning directors who do not ordinarily reside in Malta, have no employment relationship with the company and receive director remuneration but no salary.",
+          "source_ids": [
+            "MT16"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "In practice this means a non-EU founder cannot simply form a Maltese company and run it as the owner. The founder normally has to be sponsored by the company as an employee, or qualify under a special route such as the Start-up Residence Programme described in the visa section. EU and EEA nationals do not need a permit but are still registered with Jobsplus as employees of their own company. Ask an immigration adviser before incorporating if you will move to Malta.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide early whether you will be an employee-director, a self-employed person, or a non-resident non-executive director.",
+          "source_ids": [
+            "MT9",
+            "MT18"
+          ]
+        },
+        {
+          "text": "If you are not an EU or EEA national, read the visa section before you incorporate.",
+          "source_ids": [
+            "MT9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, working as a self-employed person",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Take up the activity and notify Jobsplus: a self-employed person who takes up a gainful occupation must notify Jobsplus. A registered Jobsplus jobseeker dashboard user can submit the self-employed engagement form online under the Self-Employment tab; alternatively a paper form can be sent by email. The designation should reflect the role and not be 'owner' or 'director'.",
+          "source_ids": [
+            "MT18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Self-employed individuals complete the Engagement Form - Self Employed, which requires a VAT number, and a PE number once the first employee is recruited. Employees are registered with an engagement form through the Jobsplus website.",
+          "source_ids": [
+            "MT18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Register for VAT: a taxable person established in Malta must apply to register under Article 10 within thirty days of making a supply for consideration in Malta, other than a supply that is exempt without credit. A small enterprise may instead apply for registration under Article 11 (see the taxes section).",
+          "source_ids": [
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Partners: partners who form a partnership en nom collectif or en commandite register first with the MBR; they are then employees of the partnership and need a common VAT number and a PE number from the Malta Tax and Customs Administration. A civil partnership (partnership de facto) is still treated as self-employed under the new common name.",
+          "source_ids": [
+            "MT18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Register with the Malta Tax and Customs Administration (formerly the Commissioner for Revenue) for income tax and social security. The official pages could not be opened during this research (see the open questions), so the step-by-step detail is held.",
+          "source_ids": [],
+          "confidence": "hold"
+        },
+        {
+          "text": "6. Family members who help in the business must be registered with Jobsplus through an engagement form.",
+          "source_ids": [
+            "MT18"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "A non-EU national cannot just register as self-employed: a Jobsplus self-employment licence and an Identita permit come first, and the licence is granted only in specific cases (see the visa section). Everything on this page assumes you already have the right to live and work in Malta, for example as an EU or EEA national.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Notify Jobsplus with the self-employed engagement form.",
+          "source_ids": [
+            "MT18"
+          ]
+        },
+        {
+          "text": "Obtain a VAT number, or apply for the small-enterprise exemption.",
+          "source_ids": [
+            "MT4",
+            "MT18"
+          ]
+        },
+        {
+          "text": "Register for income tax and social security with the tax authority.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, private limited company",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Check and, if you like, reserve the company name through BAROS. A reservation lasts 3 months, costs EUR 10, and can be renewed for a further 3 months. The Registrar may refuse a name that is the same as, or so similar to, another commercial partnership that it could confuse, is offensive or undesirable, or has been reserved for another.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Prepare the memorandum of association: company name; registered office in Malta; electronic mail address; private or public; objects (they may not simply be stated as any lawful purpose or trade in general); authorised capital, shares and the shares taken up by each subscriber; subscribers' name, residence and identification number; directors; and the name and residence of the first company secretary. For a single-member company the main trading activity must also be specified.",
+          "source_ids": [
+            "MT1",
+            "MT3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Share capital: authorised share capital of at least EUR 1,164.69. If the authorised capital equals the minimum it must be fully subscribed; if higher, at least the minimum must be subscribed. At least 20% of the nominal value of each share taken up must be paid up on signing the memorandum, evidenced by a bank deposit slip confirming that the funds were deposited in a company-in-formation account, filed with the memorandum and articles.",
+          "source_ids": [
+            "MT1",
+            "MT3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Directors and secretary: a private company needs at least one director. Every company must have a company secretary, who cannot be the sole director unless the company is a private exempt company. The law does not require the company secretary to be resident in Malta, and the secretary may be a registered company service provider.",
+          "source_ids": [
+            "MT1",
+            "MT3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Identity documents: a certified true copy of an official identification document for each shareholder, director, legal and judicial representative and company secretary. For a non-EU individual a bank or professional character reference is also required, made within the preceding six months by a warrant holder (lawyer, auditor, accountant or notary) who has known the individual for at least one year.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Forms: each proposed director signs Form K(1), declaring consent and any circumstances that could lead to disqualification, dated not more than one month before filing. If any shareholder is a body corporate, Form BO1 on the beneficial owner is filed with the memorandum.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. Registered office and email: every company must have a registered office in Malta, which can be the office of a licensed company service provider; otherwise a proof of address and the premises owner's authorisation is required. A registered email address for communication with the Registrar is also required.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. File online: since 1 March 2025 new incorporations must be submitted through the MBR portal BAROS, after registering as an authorised user. The registration fee depends on authorised capital: EUR 100 up to EUR 1,500; EUR 210 plus EUR 12 per EUR 500 (or part) above EUR 1,500 up to EUR 5,000; EUR 294 plus EUR 17 per EUR 1,000 (or part) above EUR 5,000 up to EUR 10,000; EUR 1,900 flat over EUR 2,500,000 (fee page read October 2026).",
+          "source_ids": [
+            "MT1",
+            "MT2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "9. Certificate: on registration the Registrar issues a certificate of registration, which is conclusive evidence that the company exists and may start business from the date on it. Registration is without prejudice to any other licence the activity needs.",
+          "source_ids": [
+            "MT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "10. After registration: keep proper accounting records (Article 163 of the Companies Act) and appoint an auditor at each general meeting at which the annual accounts are laid (Article 151). A working director is registered with Jobsplus as an employee of the company, and the company registers for VAT (see the taxes section).",
+          "source_ids": [
+            "MT3",
+            "MT18",
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "11. Annual MBR fees and the tax registration steps of the new company with the tax authority were not available from pages that could be opened; they are held.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The company route is mostly paperwork that a licensed company service provider can do for you, and MBR itself points founders to one. Because a bank deposit slip is needed at filing, open a company-in-formation account first. Fees quoted by advisers often include their own service charges on top of the MBR fee, so ask for the MBR part separately.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Reserve the company name through BAROS.",
+          "source_ids": [
+            "MT1"
+          ]
+        },
+        {
+          "text": "Deposit at least 20% of the subscribed capital and keep the slip.",
+          "source_ids": [
+            "MT1",
+            "MT3"
+          ]
+        },
+        {
+          "text": "Collect certified ID copies, Form K(1) and, for non-EU individuals, the character reference.",
+          "source_ids": [
+            "MT1"
+          ]
+        },
+        {
+          "text": "Arrange a registered office and email address in Malta.",
+          "source_ids": [
+            "MT1"
+          ]
+        },
+        {
+          "text": "File on BAROS and pay the fee for your authorised capital.",
+          "source_ids": [
+            "MT1",
+            "MT2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "The standard VAT rate is 18% of the taxable value of a supply (Article 19 of the VAT Act). Supplies listed in the Eighth Schedule carry rates between 5% and 18%.",
+          "source_ids": [
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Small-enterprise scheme (Article 11): the Domestic threshold is EUR 35,000. A taxable person established in Malta qualifies at the time of application where domestic annual turnover in the preceding calendar year is not more than EUR 35,000. A registered small enterprise stops qualifying on the date the threshold is exceeded within a calendar year and must apply to cancel the registration within 15 days.",
+          "source_ids": [
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A person registered under Article 10 cannot qualify as a small enterprise during the first twelve whole calendar months from that registration, except where the Commissioner accepts a conversion request and no input tax credits were claimed. For a person other than an individual, the turnover of related persons owned or controlled more than 10% is counted.",
+          "source_ids": [
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A person registered under Article 11 submits a declaration electronically for a period of twelve months starting 1 January, by the fifteenth day of the second month after the period ends.",
+          "source_ids": [
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The EU cross-border small-enterprise scheme (Article 11A) requires Union annual turnover below the Union threshold of EUR 100,000.",
+          "source_ids": [
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A tax invoice must be issued by the fifteenth day of the month following the chargeable event or the date payment is received, whichever is earlier. Use of an electronic invoice is subject to acceptance by the recipient.",
+          "source_ids": [
+            "MT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Malta's plans for mandatory e-invoicing and digital reporting could not be confirmed from an official page that could be opened, so no timetable is stated.",
+          "source_ids": [],
+          "confidence": "hold"
+        },
+        {
+          "text": "Companies: tax is charged at 35 cents on every euro of the chargeable income of a company (Article 56(6) of the Income Tax Act).",
+          "source_ids": [
+            "MT5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Shareholder tax refund: a person who receives a dividend paid from profits allocated to the Maltese taxed account or the foreign income account may claim a refund of six-sevenths of the Advance Company Income Tax pertaining to those profits, if registered for the purpose in the prescribed manner. The refund is five-sevenths where profits consist of passive interest or royalties or of certain dividends from a participating holding, no refund is available under this sub-article where the company claimed double-taxation relief on foreign-income-account profits, and a refund can never exceed tax actually paid by the company (Article 48(4A) of the Income Tax Management Act).",
+          "source_ids": [
+            "MT6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A separate two-thirds refund of the Malta tax paid applies to certain dividends from the foreign income account paid to non-resident shareholders and to companies wholly owned by non-residents, subject to conditions (Article 48(4)).",
+          "source_ids": [
+            "MT6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Individuals, including a self-employed person, pay tax on chargeable income on progressive bands. In the consolidated text, for a resident single individual without qualifying children, applicable from the year of assessment 2027 (income earned in 2026): 0% up to EUR 12,000; 15% between EUR 12,000 and EUR 16,000; 25% between EUR 16,000 and EUR 60,000; 35% above EUR 60,000. Other bands apply for parents and married couples.",
+          "source_ids": [
+            "MT5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Bands for the year of assessment 2026, provisional tax payments, filing deadlines for companies and sole traders, and the Commissioner's own explanation of the refund procedure and timing could not be confirmed from an official page that could be opened.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The effective corporate tax rate quoted by advisers (about 5% for trading profits) is arithmetic, not a statement from the tax authority: 35% company tax, less a refund of six-sevenths of that tax when profits are distributed, leaves one-seventh of 35%, which is 5%. The refund is paid after the company has paid its tax and a shareholder has claimed it, so cash-flow timing matters. Whether the refund is available to you depends on your residence, the type of income and anti-abuse rules, so ask a Maltese tax adviser before relying on it.",
+          "source_ids": [],
+          "confidence": "editorial"
+        },
+        {
+          "text": "The VAT small-enterprise exemption (Article 11) is designed for a founder with low early revenue, but it removes the right to reclaim VAT on costs, and it only covers persons established in Malta. Compare it with normal VAT registration with an accountant.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Register for VAT within 30 days of your first taxable supply in Malta, or ask about the Article 11 exemption.",
+          "source_ids": [
+            "MT4"
+          ]
+        },
+        {
+          "text": "Issue tax invoices by the 15th of the month after the supply or payment.",
+          "source_ids": [
+            "MT4"
+          ]
+        },
+        {
+          "text": "Ask a Maltese tax adviser whether you can claim the shareholder refund and how to register for it.",
+          "source_ids": [
+            "MT6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "A self-employed person under the Social Security Act is someone who has not passed 65, is ordinarily resident in Malta and is not an employed person or a self-occupied person. A self-occupied person is a self-employed person with earnings exceeding EUR 910 per annum.",
+          "source_ids": [
+            "MT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Every self-employed or self-occupied person pays Class Two contributions, with a further contribution payable out of the Consolidated Fund equal to 50% of the contribution paid. Contributions are paid in arrears at intervals of four months ending on the last day of April, August and December, at the Malta Tax and Customs Administration.",
+          "source_ids": [
+            "MT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Class Two weekly rates for self-occupied persons, based on net earnings of the preceding calendar year, as printed in the Act consolidated to Act III of 2026: EUR 34.70 where annual net earnings are less than EUR 12,028.92; 15% of annual net earnings (weekly equivalent) between EUR 12,028.93 and EUR 27,678.08 for persons born on or after 1 January 1962; EUR 79.84 where they exceed EUR 27,679.09. Lower figures apply to persons born on or before 31 December 1961.",
+          "source_ids": [
+            "MT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A self-employed person who is not self-occupied and whose yearly means do not exceed EUR 1,005 can obtain a certificate of low income valid for twelve months and be exempt from Class Two contributions.",
+          "source_ids": [
+            "MT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Employed persons pay Class One contributions at 10% of basic weekly wage, with the employer paying a matching 10%, subject to weekly maximums (Tenth Schedule, Part I). The weekly maximum figures are held because the table layout was ambiguous in the extracted text.",
+          "source_ids": [
+            "MT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Whether a director-shareholder working in their own company is insured as an employee (Class One) or as self-occupied (Class Two), and the exact registration and payment steps with the Department of Social Security, could not be confirmed from an official page that could be opened.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "If the company employs you as a director, expect to be treated as an employee for social security and for Jobsplus, with the company paying the employer share. If you work as a self-employed person, you pay Class Two yourself. Because the Act's figures change with annual adjustments, check the current weekly rates with the Department of Social Security each January.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Work out whether you will be insured as an employee or as a self-employed person.",
+          "source_ids": [
+            "MT7",
+            "MT18"
+          ]
+        },
+        {
+          "text": "If self-employed, diary the Class Two payment dates (April, August, December).",
+          "source_ids": [
+            "MT7"
+          ]
+        },
+        {
+          "text": "Check current weekly rates each January.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "MT8",
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. The self-employment criteria rest on an Identita FAQ and a Jobsplus guide dated January 2021 that may be out of date. Malta also changed its labour migration rules in 2025 (a policy document of June 2025 is linked from the Identita FAQ but was not read in full). The Malta Enterprise and tax-authority pages were blocked from this environment.",
+      "open_questions_for_reviewer": [
+        "Is the January 2021 Jobsplus guide still current for the self-employment criteria (EUR 500,000 investment, three local hires within 18 months, Malta Enterprise project, branch of an overseas company), and for the Jobsplus fees of EUR 150 and EUR 80?",
+        "How does a non-EU founder-director of a newly formed company satisfy the Single Permit labour market test and vacancy advertising rules, or is there an exemption when the company is the founder's own?",
+        "The KEI and SEI salary thresholds differ between the Identita FAQ (EUR 45,000 and EUR 30,000) and the Jobsplus page (EUR 35,000 and EUR 25,000). Which is current?",
+        "What is the current processing time of the Start-up Residence Programme, and does the 2024 eligibility document (version 4) remain the current one?",
+        "Does an Indian passport holder need a Type-D visa after the Approval in Principle letter, and how does the 60-day rule for visa-exempt nationals interact?",
+        "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"
+      ],
+      "official_information": [
+        {
+          "text": "EU, EEA and Swiss nationals do not need a work authorisation in Malta. A Jobsplus guide dated January 2021 says that, apart from EEA and Swiss citizens and their family members, all foreign nationals require authorisation to work in Malta.",
+          "source_ids": [
+            "MT16"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Identita says non-EU nationals require a residence permit to be employed in Malta. The most common employment-related permits are the Single Permit, Self-Employment, Employment of less than six months, the Blue Card and the Intra-Corporate Transferee permit. A third-country national may only apply if still residing in a third country or legally residing in Malta or another EU state.",
+          "source_ids": [
+            "MT8"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Single Permit: regulated by Subsidiary Legislation 217.17, it authorises a third-country national to reside and work in Malta for a defined period over 6 months, renewable. The single application procedure combines the employment licence and the residence permit. The employer, not the worker, applies through the Single Permit Online Portal, and the employer must be registered with Jobsplus.",
+          "source_ids": [
+            "MT10",
+            "MT13",
+            "MT11"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Single Permit fees: EUR 600 for a first-time application and EUR 150 per year for renewal (Identita fee list). The permit is generally renewed annually. Applicants need health insurance with minimum cover of EUR 100,000, and from 1 March 2026 a pre-departure course certificate is required where applicable.",
+          "source_ids": [
+            "MT11",
+            "MT14",
+            "MT15"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Single Permit processing: Subsidiary Legislation 217.17 allows four months, and Identita says the average is closer to two months from submission with all documents. Jobsplus says up to four months. Employers must advertise the role on the Jobsplus portal and EURES for 3 weeks (2 weeks for KEI, SEI, EU Blue Card and Skilled Occupation List roles) before filing new applications from 1 October 2025, with listed exceptions.",
+          "source_ids": [
+            "MT12",
+            "MT17",
+            "MT15"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Key Employee Initiative (KEI) and Specialist Employee Initiative (SEI) are fast-track Single Permits with minimum annual gross salaries of EUR 45,000 and EUR 30,000 respectively (Identita FAQ); the Jobsplus page quotes EUR 35,000 and EUR 25,000. The two official pages disagree on the salary thresholds.",
+          "source_ids": [
+            "MT15",
+            "MT17"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Self-employment route: an employment (self-employment) licence from Jobsplus comes first, applied for while the person is still legally in Malta, and a self-employed residence permit from Identita follows. Only individuals can apply. The licence criteria are one of: investing at least EUR 500,000 in fixed business assets in Malta within 6 months of the licence (no rentals); being a highly skilled innovator with a viable business plan who commits to recruit at least three Maltese, EU, EEA or Swiss nationals within 18 months; being the approved leader of a project endorsed by Malta Enterprise; or being the sole representative of an overseas company opening a branch.",
+          "source_ids": [
+            "MT15",
+            "MT9",
+            "MT16"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Self-employment permit fees at Identita: EUR 100 for a first-time application and EUR 100 per year for renewal, up to three years. A Jobsplus guide dated January 2021 lists employment licence fees of EUR 150 on application and EUR 80 on issue; this older guide may be superseded. Jobsplus says stakeholder feedback generally takes four to six weeks.",
+          "source_ids": [
+            "MT9",
+            "MT15",
+            "MT16"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Start-up Residence Programme (Residency Malta Agency with Malta Enterprise): open to founders, co-founders, core employees and their family members who are third-country nationals aged 18 or over. The start-up must be registered for no longer than seven years, have a business plan approved by Malta Enterprise, meet at least two innovation criteria, and place a tangible investment or paid-up share capital of at least EUR 25,000 (an additional EUR 10,000 per co-founder above four; maximum six co-founders).",
+          "source_ids": [
+            "MT19",
+            "MT20"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Start-up Residence Programme: founders' permits are issued for three years and, after successful completion, extended for a further five. Fees: EUR 750 per adult applicant, EUR 82.50 card issuance, and a Jobsplus employment licence fee of EUR 690 for the first three years; renewals EUR 137.50 for the card and EUR 1,150 for the Jobsplus licence for five years. Founders must live and pay taxes in Malta, and before collecting residence cards the start-up must be incorporated and the founders registered as its employees. Nationals of Afghanistan, North Korea, Iran, Democratic Republic of Congo, Somalia, South Sudan, Sudan, Syria, Yemen and Venezuela are ineligible (eligibility document version 4, dated 22 August 2024). No processing time is stated.",
+          "source_ids": [
+            "MT19"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "If a visa is required to enter the Schengen area, the applicant obtains a National (Type-D) visa after the Approval in Principle letter. Visa-exempt nationals who are already in Malta must apply within the first 60 days of entry.",
+          "source_ids": [
+            "MT15",
+            "MT13"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
