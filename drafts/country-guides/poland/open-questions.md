@@ -43,3 +43,15 @@ Agent review, not legal advice. Nothing here has been reviewed by a lawyer, acco
 ## Top questions for Nijil
 
 See the PR description; summary: (1) keep the visa section held until a Polish immigration lawyer reviews it; (2) accept an `official` tag for regional voivodeship pages; (3) decide whether to include accounting and dividend-tax detail; (4) confirm the 15 Jan 2027 re-check; (5) decide how prominently to present the JDG-versus-company rule for non-EU founders.
+
+## Added by the independent checker (2026-10-13)
+
+- VAT limit: the act text (Dz.U. 2025 poz. 896) and the Ministry's rates page support PLN 240,000 from 1 Jan 2026, but two podatki.gov.pl start-up pages (and the body of the rates page itself) still show PLN 200,000. A held CONFLICT claim is in the taxes section. An accountant should confirm; nobody has asked the Ministry to fix the pages.
+- The podatki.gov.pl pages block ordinary downloads (bot wall). Figures from them (PIT, CIT, VAT, Estonian CIT) were read through a page-summarising fetch tool with verbatim quotes requested, so a human spot check of PL7, PL8, PL9, PL18 and PL19 in a browser is worthwhile.
+- CRBR deadline is still 14 days (S24 page) vs 7 days (KRS page and tax page); the guide states no deadline.
+- PCC base: the S24 page deducts both KRS and MSiG fees, the KRS page only the KRS fee; the guide now says so. An accountant should confirm the exact base.
+- PL17 (.../00166-1) serves the same page as PL4; consider dropping PL17 as a duplicate source.
+- Visa: the "3 years" validity sentence on the Lubuskie page appears in employer-based wording and may not describe the business permit; MOS and UdSC /wymogi pages were still unreachable on 13 Oct 2026.
+- KSeF: the sources read do not say whether VAT-exempt (art. 113) small taxpayers must issue invoices in KSeF; the guide claims nothing either way. Worth asking an adviser, since many target readers will be under the exemption limit.
+- The health-contribution year runs 1 Feb to 31 Jan (minimum wage on 1 Feb 2026 is the base), so "re-check each January" suits the wage figures, but the health figure changes in February.
+- Business Harbour: the Biznes.gov.pl page was updated 23 July 2026 and still says suspended; fine to keep rendered, but no second source was found.

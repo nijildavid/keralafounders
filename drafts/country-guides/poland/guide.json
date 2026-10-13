@@ -3,7 +3,7 @@
   "title": "How to start a company in Poland",
   "summary": "Poland gives a founder two main routes: a sole proprietorship (jednoosobowa działalność gospodarcza, JDG) registered free of charge in CEIDG, or a limited liability company (spółka z ograniczoną odpowiedzialnością, sp. z o.o.) entered in the KRS court register, which can be set up online through the S24 system. A key trap for founders from outside the EU: a sole proprietorship is only open to those whose residence status allows it, while a sp. z o.o. is open to every foreigner.",
   "last_checked": "2026-10-12",
-  "checked_by": "Claude agent draft, unreviewed",
+  "checked_by": "Claude agent draft, facts re-checked by a second agent, not legal review, unreviewed",
   "next_check_due": "2027-01-15",
   "quick_facts": {
     "structure": {
@@ -30,7 +30,7 @@
       ]
     },
     "gotcha": {
-      "text": "Social-security contributions are not income-based: in 2026 the lowest standard monthly social contributions are PLN 1,926.76, though new businesses can use the 6-month ulga na start and then 24 months of preferential contributions (from PLN 456.18 per month), and health contributions are always due.",
+      "text": "Social-security (ZUS) contributions are mostly not income-based: in 2026 the lowest standard monthly social contributions are PLN 1,926.76, though new businesses can use the 6-month ulga na start and then 24 months of preferential contributions (from PLN 456.18 per month), and health contributions are always due.",
       "source_ids": [
         "PL13",
         "PL14",
@@ -87,7 +87,7 @@
       "official_information": [],
       "expert_interpretation": [
         {
-          "text": "Poland has a state-run front door for each route. A sole proprietorship is registered at no cost through CEIDG, the central business register, and the entry also notifies the tax office, the statistics office and ZUS (the social-security institution). A company is entered in the KRS court register, and the S24 online system lets you do this with a standard agreement and no notary. Both routes are largely digital, so a founder who can sign electronically can do most of it remotely. The decisive question for a founder from outside the EU is usually residence status, not the company formalities: it determines whether a sole proprietorship is even available, and whether you can live and work in Poland while running the business. Social-security contributions in Poland are a fixed minimum rather than a share of income, so budget for them from the first month, using the start-up reliefs described below.",
+          "text": "Poland has a state-run front door for each route. A sole proprietorship is registered at no cost through CEIDG, the central business register, and the entry also notifies the tax office, the statistics office and ZUS (the social-security institution). A company is entered in the KRS court register, and the S24 online system lets you do this with a standard agreement and no notary. Both routes are largely digital, so a founder who can sign electronically can do most of it remotely. The decisive question for a founder from outside the EU is usually residence status, not the company formalities: it determines whether a sole proprietorship is even available, and whether you can live and work in Poland while running the business. Social-security (ZUS) contributions in Poland are mostly a fixed minimum rather than a share of income (the health contribution is the exception), so budget for them from the first month, using the start-up reliefs described below.",
           "source_ids": [],
           "confidence": "editorial"
         }
@@ -403,7 +403,7 @@
           "confidence": "official"
         },
         {
-          "text": "7. Pay PCC tax of 0.5% of the share capital (less the KRS entry and announcement fees) within 14 days of signing the agreement.",
+          "text": "7. Pay PCC tax of 0.5% of the share capital (less court-fee costs: the S24 page counts the KRS entry and announcement fees, the KRS page only the KRS entry fee) within 14 days of signing the agreement.",
           "source_ids": [
             "PL2",
             "PL3"
@@ -489,7 +489,7 @@
           "confidence": "official"
         },
         {
-          "text": "Corporate income tax (CIT) for a sp. z o.o. is 19%, or 9% for a small taxpayer or a business just starting out whose revenue did not exceed EUR 2 million in the tax year. For 2026 the PLN limit for the 9% rate is PLN 8,431,000 (page updated 24 June 2026).",
+          "text": "Corporate income tax (CIT) for a sp. z o.o. is 19%, or 9% for a small taxpayer or a business just starting out whose revenue did not exceed EUR 2 million in the tax year. For 2026 the current-year revenue limit for the 9% rate is PLN 8,431,000 (EUR 2 million at EUR/PLN 4.2156 of 2 January 2026); the same page gives PLN 8,517,000 as the prior-year revenue limit for small-taxpayer status (page updated 24 June 2026).",
           "source_ids": [
             "PL18"
           ],
@@ -503,19 +503,28 @@
           "confidence": "official"
         },
         {
-          "text": "VAT rates are 23% (standard), 8% and 5% (reduced) and 0%. (The page also contains a stray reference to 22% in its opening text.)",
+          "text": "VAT rates are 23% (standard), 8% and 5% (reduced) and 0%. (The page's opening text still mentions the old 22% rate, with a note that the rate has been 23% since 1 January 2011.)",
           "source_ids": [
             "PL7"
           ],
           "confidence": "official"
         },
         {
-          "text": "The VAT small-taxpayer exemption limit is PLN 240,000 of sales (excluding VAT) from 1 January 2026, up from PLN 200,000 in 2025. For a business starting mid-year the limit is prorated. The exemption ends from the transaction that crosses the limit. The legal text of the amendment (Dz.U. 2025 poz. 896) replaces PLN 200,000 with PLN 240,000 in art. 113(1) of the VAT Act, in force 1 January 2026.",
+          "text": "The VAT small-taxpayer exemption limit is PLN 240,000 of sales (excluding VAT) from 1 January 2026, up from PLN 200,000 in 2025. For a business starting mid-year the limit is prorated. The legal text of the amendment (Dz.U. 2025 poz. 896) replaces PLN 200,000 with PLN 240,000 in art. 113(1) of the VAT Act, in force 1 January 2026.",
           "source_ids": [
             "PL7",
             "PL10"
           ],
           "confidence": "official"
+        },
+        {
+          "text": "CONFLICT for the reviewer: two podatki.gov.pl pages (the start-up pages on tax form and on VAT payer status, updated 26 May 2026) still state the exemption limit as PLN 200,000. The Sejm text of the amending act (Dz.U. 2025 poz. 896, art. 3: in force 1 January 2026) and the Ministry's 'Stawki i limity' page (updated 15 December 2025) say PLN 240,000 from 1 January 2026. The guide follows the act text.",
+          "source_ids": [
+            "PL8",
+            "PL9",
+            "PL10"
+          ],
+          "confidence": "hold"
         },
         {
           "text": "To become a VAT payer, file VAT-R before the first taxable transaction; registration is free, though a VAT-5 confirmation costs PLN 170 stamp duty. Businesses making intra-EU supplies or acquisitions also register as VAT-UE (EU VAT number) using VAT-R and file a monthly VAT-UE summary by the 25th of the following month. An exempt payer must register for VAT-UE if acquisitions of goods from the EU exceed PLN 50,000 in the tax year.",
