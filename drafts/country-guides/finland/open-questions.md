@@ -35,3 +35,12 @@
 3. Do you want the Business Finland Startup Permit covered prominently, given most Kerala-origin founders run service or consultancy businesses it excludes?
 4. Is the 15 January 2027 re-check date acceptable, given YEL and fees reset in January?
 5. Who should do the independent re-verification (QA step 4) for the Vero tax split and PRH permit wording?
+
+## Added by the independent checker (2026-10-13)
+- CONFLICT for a local professional: Suomi.fi (FI25) says a Finnish personal identity code is needed to establish a company in the business information system; PRH (FI1, FI3) lets persons without one be listed with date of birth, address and passport copy (full start-up notification, EUR 400, not the guided package). The draft follows PRH and holds the conflict.
+- Private-trader income tax for a resident (earned/capital split, state tax scale) is now a held claim: the Vero guidance read is for non-residents, and the resident capital-income page (FI33) states no tax year. Needs a resident-specific 2026 source.
+- Corporate tax cut to 18% for tax year 2027 is confirmed as a Government proposal (Vero news, 17 Sep 2026); check parliamentary status at the January 2027 re-check.
+- The unemployment-insurance earnings limit of EUR 15,481 (2026) is now confirmed on Tyoelake.fi; it is not in the guide.
+- Judgment call 2 above (notary) is now reworded in the rendered text to "no notary mentioned in the PRH steps read".
+- FI14 (VAT invoice requirements) is an unofficial English translation of 2023 guidance that Vero says is being updated; the Finnish original (VH/3634/00.01.00/2023) was not read. Re-check for the updated version.
+- Migri fees and processing times remain unverified (visa section stays on hold).
