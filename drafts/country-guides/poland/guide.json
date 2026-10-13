@@ -1,0 +1,767 @@
+{
+  "slug": "poland",
+  "title": "How to start a company in Poland",
+  "summary": "Poland gives a founder two main routes: a sole proprietorship (jednoosobowa działalność gospodarcza, JDG) registered free of charge in CEIDG, or a limited liability company (spółka z ograniczoną odpowiedzialnością, sp. z o.o.) entered in the KRS court register, which can be set up online through the S24 system. A key trap for founders from outside the EU: a sole proprietorship is only open to those whose residence status allows it, while a sp. z o.o. is open to every foreigner.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-15",
+  "quick_facts": {
+    "structure": {
+      "text": "A sole proprietorship (JDG) is registered in CEIDG; a sp. z o.o. needs at least PLN 5,000 share capital and an entry in the KRS. Founders from outside the EU/EEA/US/Switzerland can use a JDG only with a qualifying residence status; a sp. z o.o. is open to all foreigners.",
+      "source_ids": [
+        "PL1",
+        "PL4",
+        "PL5"
+      ]
+    },
+    "cost": {
+      "text": "CEIDG registration is free. A sp. z o.o. set up on the S24 template pays a court fee of PLN 250 plus PLN 100 for the Monitor Sądowy i Gospodarczy announcement, plus 0.5% PCC tax on the share capital (court fee is PLN 500 if the agreement is a notarial deed).",
+      "source_ids": [
+        "PL1",
+        "PL2",
+        "PL3"
+      ]
+    },
+    "time": {
+      "text": "A CEIDG entry appears no later than the next working day after filing. For a S24 company the court is meant to review a paid application within 1 day of receipt; a standard KRS application is meant to be reviewed within 7 days.",
+      "source_ids": [
+        "PL1",
+        "PL3"
+      ]
+    },
+    "gotcha": {
+      "text": "Social-security contributions are not income-based: in 2026 the lowest standard monthly social contributions are PLN 1,926.76, though new businesses can use the 6-month ulga na start and then 24 months of preferential contributions (from PLN 456.18 per month), and health contributions are always due.",
+      "source_ids": [
+        "PL13",
+        "PL14",
+        "PL15"
+      ]
+    }
+  },
+  "founder_checklist": [
+    {
+      "text": "Check your residence status first: it decides whether you may register a sole proprietorship (JDG) or only a company.",
+      "section_id": "foreigner-rule"
+    },
+    {
+      "text": "Decide between a JDG (unlimited personal liability) and a sp. z o.o. (limited liability, PLN 5,000 minimum capital).",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "For a JDG: file CEIDG-1 (free) and register with ZUS within 7 days.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "For a sp. z o.o.: prepare a qualified, trusted-profile or personal e-signature for every signer, then register via S24.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Pick a tax form (skala 12%/32%, liniowy 19% or ryczałt) and notify the tax office by the 20th of the month after your first revenue if you choose liniowy or ryczałt.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Check the VAT exemption limit (PLN 240,000 in 2026) and register for VAT with form VAT-R before your first taxable sale if you need to.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Note the KSeF e-invoicing dates: mandatory since 1 April 2026 for most businesses, 1 January 2027 for the smallest.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Work out ZUS: ulga na start, then preferential contributions, and the health contribution for your tax form.",
+      "section_id": "social"
+    },
+    {
+      "text": "If you come from outside the EU, plan the residence-permit route early (this section is on hold pending legal review).",
+      "section_id": "visa"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        {
+          "text": "Poland has a state-run front door for each route. A sole proprietorship is registered at no cost through CEIDG, the central business register, and the entry also notifies the tax office, the statistics office and ZUS (the social-security institution). A company is entered in the KRS court register, and the S24 online system lets you do this with a standard agreement and no notary. Both routes are largely digital, so a founder who can sign electronically can do most of it remotely. The decisive question for a founder from outside the EU is usually residence status, not the company formalities: it determines whether a sole proprietorship is even available, and whether you can live and work in Poland while running the business. Social-security contributions in Poland are a fixed minimum rather than a share of income, so budget for them from the first month, using the start-up reliefs described below.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "foreigner-rule",
+      "title": "Worth knowing: who may register a sole proprietorship",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Citizens of EU/EEA member states may run a business in Poland, as a sole proprietorship or any commercial company, on the same terms as Polish citizens. Under the treaties the page cites, US and Swiss citizens also have the same terms.",
+          "source_ids": [
+            "PL5",
+            "PL6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Citizens of other countries may run a sole proprietorship or any commercial company only if they hold a residence title that allows it. The page lists, among others, permanent residence, EU long-term resident status, the EU Blue Card, and Ukrainian citizens with a PESEL number bearing status UKR.",
+          "source_ids": [
+            "PL5",
+            "PL6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "All other foreigners may run a business in Poland only in the form of a limited partnership (spółka komandytowa), limited joint-stock partnership (spółka komandytowo-akcyjna), limited liability company (spółka z o.o.), simple joint-stock company (prosta spółka akcyjna) or joint-stock company (spółka akcyjna). They may also join such companies and acquire shares in them.",
+          "source_ids": [
+            "PL5",
+            "PL6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Non-EU foreigners without a qualifying residence title cannot found a sole proprietorship, a professional partnership (spółka partnerska) or a general partnership (spółka jawna).",
+          "source_ids": [
+            "PL5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The Poland. Business Harbour programme (a visa category for foreign entrepreneurs, mainly in IT) is listed as suspended: no new visas or recommendations are issued, and visas already issued remain valid for their period.",
+          "source_ids": [
+            "PL5"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "In plain terms: if you do not yet hold a qualifying Polish residence status, plan on a sp. z o.o. rather than a JDG. The cheap, free sole-proprietorship route is mainly for EU citizens and for people who already hold a qualifying residence status. Check your own status against the official list before choosing, since the list is long and country-specific rules (for example for US and Swiss citizens, and for family members) differ.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check your nationality and residence status against the foreigners' page on Biznes.gov.pl before choosing a legal form.",
+          "source_ids": [
+            "PL5"
+          ]
+        },
+        {
+          "text": "If you do not qualify for a JDG, plan the sp. z o.o. route.",
+          "source_ids": [
+            "PL5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Jednoosobowa działalność gospodarcza (JDG, sole proprietorship)",
+            "none",
+            "personal, unlimited",
+            "no",
+            "entry in CEIDG no later than the next working day after filing",
+            "depends on the tax form chosen (PIT-36, PIT-36L or PIT-28); accounting rules not verified in this draft",
+            "official [PL1]"
+          ],
+          [
+            "Spółka z o.o. via S24 template",
+            "PLN 5,000 (nominal value of a share at least PLN 50)",
+            "limited to the contribution (board members can be liable if enforcement fails)",
+            "no (agreement on the S24 template, signed electronically)",
+            "court target 1 day from receipt of a paid application",
+            "company is a CIT payer; accounting rules not verified in this draft",
+            "official [PL2, PL3, PL4]"
+          ],
+          [
+            "Spółka z o.o. via notarial deed",
+            "PLN 5,000 (nominal value of a share at least PLN 50)",
+            "limited to the contribution (board members can be liable if enforcement fails)",
+            "yes (notarial deed; notary fee not verified)",
+            "court target 7 days from receipt, up to a month if hearings are needed",
+            "company is a CIT payer; accounting rules not verified in this draft",
+            "official [PL3, PL4]"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "A sole proprietorship (JDG) is registered in CEIDG at no cost, and can be started on the day the application is submitted. The CEIDG application cannot be filed through a representative when submitted online.",
+          "source_ids": [
+            "PL1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A sp. z o.o. needs share capital of at least PLN 5,000, with each share having a nominal value of at least PLN 50. Shareholders bear only limited liability, up to the value of their contributions. Board members are jointly liable for the company's debts if enforcement against the company fails, unless they can show specific circumstances such as timely bankruptcy filing or lack of fault.",
+          "source_ids": [
+            "PL4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The company agreement can be made as a notarial deed or on the standard S24 template. S24 allows registering a sp. z o.o., a general partnership, a limited partnership and a simple joint-stock company, but the template agreement cannot be changed.",
+          "source_ids": [
+            "PL2",
+            "PL4"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "A JDG is the cheapest and fastest way to start invoicing, but you are personally liable without limit and it is only open to some non-EU founders (see the section above). A sp. z o.o. caps your personal liability, is open to every foreigner, and is the form investors and larger clients usually expect, at the cost of the share capital, court fees and heavier admin. Many founders start with whichever route is open to them and move into a company once revenue or outside investment justifies it.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide whether unlimited personal liability (JDG) is acceptable for now.",
+          "source_ids": [
+            "PL1"
+          ]
+        },
+        {
+          "text": "If forming a sp. z o.o., decide between the S24 template and a notarial deed.",
+          "source_ids": [
+            "PL2",
+            "PL4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, JDG via CEIDG",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Check that your residence status lets you register a JDG (see above). EU/EEA citizens can; others need a qualifying residence title.",
+          "source_ids": [
+            "PL1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Choose your business name, which must include your first and last name, and your PKD activity codes, and check whether the activity needs a licence or permit.",
+          "source_ids": [
+            "PL1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. File the CEIDG-1 application, which is free. Online: through Biznes.gov.pl with Login.gov.pl, signed with a trusted profile (profil zaufany), a qualified signature or a personal e-ID signature; a representative cannot be used online. The mObywatel app (Firma service) is another online option. In person: at any city or municipal office with ID, where a clerk enters the data by the next day. By post: the signature must be notarised.",
+          "source_ids": [
+            "PL1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Provide ID details: a PESEL if you have one (tick the box if you have none), all citizenships, and an ID document (ID card, passport or mDowód).",
+          "source_ids": [
+            "PL1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Wait for the entry: CEIDG shows it no later than the next working day after filing. If an office or postal application has errors, you have 7 working days to correct them. The tax office then assigns your NIP, and CEIDG notifies the statistics office and ZUS.",
+          "source_ids": [
+            "PL1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Register with ZUS within 7 days of the start date, and register for VAT with VAT-R before your first taxable sale if you will be a VAT payer.",
+          "source_ids": [
+            "PL1"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "If you do not have a PESEL or a Polish electronic signature, filing in person at a city or municipal office is usually the simplest route for a first-time founder, because the clerk checks your ID and enters the data. Note that you can start the business on the day you submit the application, but ZUS and VAT steps run on their own deadlines.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check your residence status allows a JDG.",
+          "source_ids": [
+            "PL5"
+          ]
+        },
+        {
+          "text": "File CEIDG-1 online, in person or by notarised post.",
+          "source_ids": [
+            "PL1"
+          ]
+        },
+        {
+          "text": "Register with ZUS within 7 days of starting.",
+          "source_ids": [
+            "PL1"
+          ]
+        },
+        {
+          "text": "Register for VAT (VAT-R) before your first taxable sale, if applicable.",
+          "source_ids": [
+            "PL1",
+            "PL9"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, sp. z o.o. via S24",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Open an S24 account (activated by a link sent to your email), then choose the legal form, the company name and its registered seat.",
+          "source_ids": [
+            "PL2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Fill in the standard agreement template; its provisions cannot be changed. Contributions to the share capital can only be made in cash.",
+          "source_ids": [
+            "PL2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Attach the documents the template does not cover as PDFs, including a statement on whether the company is a \"foreigner\" under the 1920 act on acquisition of real estate by foreigners, board members' consent to their appointment with an address for delivery, and the list of persons authorised to represent the company.",
+          "source_ids": [
+            "PL2",
+            "PL4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Sign the agreement and documents. All shareholders sign, in person or through an S24 attorney. Accepted signatures are a qualified e-signature, a trusted profile (Profil Zaufany) or a personal e-ID signature, and each person signing the application needs an S24 account.",
+          "source_ids": [
+            "PL2",
+            "PL20"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Pay the court fee of PLN 250 and the PLN 100 announcement fee online, then submit the KRS application through S24. The time from signing the agreement to submitting the application must not exceed 7 days.",
+          "source_ids": [
+            "PL2",
+            "PL4",
+            "PL20"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Cash capital covered only by cash contributions may be paid in within 7 days of the KRS entry; if the board's capital-payment statement was not attached, it is filed within 7 days of the entry for a PLN 40 fee.",
+          "source_ids": [
+            "PL2",
+            "PL4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. Pay PCC tax of 0.5% of the share capital (less the KRS entry and announcement fees) within 14 days of signing the agreement.",
+          "source_ids": [
+            "PL2",
+            "PL3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. After the entry: NIP and REGON are assigned automatically. File NIP-8 within 21 days of the KRS entry (7 days if the company will pay social contributions), and report the beneficial owners to the CRBR register.",
+          "source_ids": [
+            "PL2",
+            "PL3",
+            "PL8"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The S24 route skips the notary and is quick on paper, but every signer needs a working electronic signature, which a person without a Polish PESEL may find slow to arrange. If you want custom governance terms (rather than the fixed template), or you plan to contribute non-cash assets, a notarial deed is the alternative and costs a higher court fee. The official pages we read disagree on the beneficial-owner (CRBR) deadline, 14 days on the S24 page and 7 days on two other pages, so treat it as 7 days to be safe and confirm with an accountant.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Arrange an electronic signature for each signer.",
+          "source_ids": [
+            "PL2",
+            "PL20"
+          ]
+        },
+        {
+          "text": "Pay court fee and announcement fee, submit via S24.",
+          "source_ids": [
+            "PL2"
+          ]
+        },
+        {
+          "text": "Pay PCC tax within 14 days of signing.",
+          "source_ids": [
+            "PL2",
+            "PL3"
+          ]
+        },
+        {
+          "text": "File NIP-8 and the CRBR beneficial-owner report.",
+          "source_ids": [
+            "PL2",
+            "PL3",
+            "PL8"
+          ]
+        },
+        {
+          "text": "Register staff or working directors with ZUS if contributions will be paid.",
+          "source_ids": [
+            "PL3",
+            "PL17"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "A sole proprietor chooses between three personal income tax forms: the tax scale (PIT-36) at 12% on a tax base up to PLN 120,000 and 32% on the excess; a 19% flat tax (liniowy, PIT-36L); and a flat-rate tax on revenue (ryczałt, PIT-28) at 17%, 15%, 14%, 12.5%, 12%, 10%, 8.5%, 5.5% or 3% depending on the type of activity. Annual returns are filed between 15 February and 30 April of the following year (page updated 26 May 2026).",
+          "source_ids": [
+            "PL8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "To choose the flat tax or ryczałt, notify the tax office by the 20th of the month after the first revenue of the year; no notice is needed for the tax scale.",
+          "source_ids": [
+            "PL8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Corporate income tax (CIT) for a sp. z o.o. is 19%, or 9% for a small taxpayer or a business just starting out whose revenue did not exceed EUR 2 million in the tax year. For 2026 the PLN limit for the 9% rate is PLN 8,431,000 (page updated 24 June 2026).",
+          "source_ids": [
+            "PL18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Estonian CIT (ryczałt od dochodów spółek) is an option for a company whose shareholders are only natural persons, that holds no shares in other companies, has fewer than 50% passive income and meets employment rules (at least 3 people on employment contracts, with softer rules for new and small companies). Tax is paid on distribution of profit, at 10% for small or starting companies and 20% otherwise. It is chosen for 4 tax years by filing ZAW-RD by the end of the first month (page updated 6 October 2026).",
+          "source_ids": [
+            "PL19"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "VAT rates are 23% (standard), 8% and 5% (reduced) and 0%. (The page also contains a stray reference to 22% in its opening text.)",
+          "source_ids": [
+            "PL7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The VAT small-taxpayer exemption limit is PLN 240,000 of sales (excluding VAT) from 1 January 2026, up from PLN 200,000 in 2025. For a business starting mid-year the limit is prorated. The exemption ends from the transaction that crosses the limit. The legal text of the amendment (Dz.U. 2025 poz. 896) replaces PLN 200,000 with PLN 240,000 in art. 113(1) of the VAT Act, in force 1 January 2026.",
+          "source_ids": [
+            "PL7",
+            "PL10"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "To become a VAT payer, file VAT-R before the first taxable transaction; registration is free, though a VAT-5 confirmation costs PLN 170 stamp duty. Businesses making intra-EU supplies or acquisitions also register as VAT-UE (EU VAT number) using VAT-R and file a monthly VAT-UE summary by the 25th of the following month. An exempt payer must register for VAT-UE if acquisitions of goods from the EU exceed PLN 50,000 in the tax year.",
+          "source_ids": [
+            "PL9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "KSeF (the national e-invoicing system) became mandatory for issuing invoices on 1 February 2026 for businesses with 2024 sales above PLN 200 million (incl. VAT) and on 1 April 2026 for all other businesses. Taxpayers whose monthly invoiced sales do not exceed PLN 10,000 gross are excluded from the April 2026 obligation and begin issuing invoices in KSeF on 1 January 2027. Receiving invoices in KSeF has been mandatory for all since 1 February 2026.",
+          "source_ids": [
+            "PL11",
+            "PL12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The Ministry of Finance states that no penalties will be imposed for errors made while using KSeF in 2026.",
+          "source_ids": [
+            "PL12"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For most new founders the practical order is: choose how you will be taxed (the choice interacts with your health contribution, see the social-security section); confirm whether you will stay under the VAT exemption limit and whether you want to register anyway, for example because your clients are VAT-registered businesses; and set up invoicing software that works with KSeF, since the 1 April 2026 date already applies to most businesses. Two official tax pages still show the older PLN 200,000 VAT limit; the 2025 amending act and the Ministry's rates page confirm PLN 240,000 from 2026.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Pick PIT form (skala, liniowy, ryczałt) and notify the tax office if needed.",
+          "source_ids": [
+            "PL8"
+          ]
+        },
+        {
+          "text": "Check the PLN 240,000 VAT exemption limit for 2026 and decide on voluntary VAT registration.",
+          "source_ids": [
+            "PL7",
+            "PL10"
+          ]
+        },
+        {
+          "text": "Set up KSeF-compatible invoicing (mandatory from 1 April 2026, 1 January 2027 for the smallest).",
+          "source_ids": [
+            "PL11",
+            "PL12"
+          ]
+        },
+        {
+          "text": "If you form a sp. z o.o., check whether the 9% CIT rate or Estonian CIT fits.",
+          "source_ids": [
+            "PL18",
+            "PL19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security for the self-employed and directors",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "In 2026 the minimum monthly social-security contributions on the standard terms are calculated from a base of PLN 5,652 (60% of the forecast average wage of PLN 9,420) and total PLN 1,926.76 including the optional sickness contribution and the Labour and Solidarity Funds.",
+          "source_ids": [
+            "PL13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Ulga na start (start-up relief): for the first 6 calendar months of a new business you do not pay pension, disability, sickness and accident contributions, or the Labour and Solidarity Funds. You still pay the health contribution. It is open to people starting a sole proprietorship for the first time, or restarting after at least 60 months since the last suspension or closure, who are not doing the same work for a former employer from the current or previous calendar year.",
+          "source_ids": [
+            "PL13",
+            "PL14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Preferential contributions: for the next 24 calendar months the base can be as low as 30% of the minimum wage. In 2026 the minimum wage is PLN 4,806, so the base is PLN 1,441.80 and the social contributions are PLN 456.18 per month (including the optional sickness contribution; no Labour or Solidarity Fund contribution is due on this base).",
+          "source_ids": [
+            "PL13",
+            "PL15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Mały ZUS plus: in 2026, a business whose revenue in the previous year did not exceed PLN 120,000 can pay contributions calculated on half its previous-year income, within a range of PLN 456.18 to PLN 1,788.29 per month, for 36 of the last 60 months.",
+          "source_ids": [
+            "PL13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The health contribution is always due, including during all reliefs. In 2026 for a tax-scale (9%) or flat-tax (4.9%) taxpayer the lowest monthly contribution is PLN 432.54 (9% of the PLN 4,806 minimum wage). For a ryczałt taxpayer it is a fixed PLN 498.35, PLN 830.58 or PLN 1,495.04 per month depending on whether revenue is up to PLN 60,000, up to PLN 300,000 or above PLN 300,000.",
+          "source_ids": [
+            "PL13",
+            "PL14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Register with ZUS within 7 days of the start of the business (health insurance form ZZA for the ulga na start; form ZUA for the preferential rate).",
+          "source_ids": [
+            "PL1",
+            "PL14",
+            "PL15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Shareholders of a sp. z o.o. have no ZUS obligation from the shareholding alone, and the same applies to board members unless they work under an employment or civil-law contract. A sole shareholder of a sp. z o.o. is insured like a self-employed person and must register as a contribution payer within 7 days of registration, at least for health insurance.",
+          "source_ids": [
+            "PL16",
+            "PL17"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Poland charges contributions on a declared base, not on actual income, so a small business pays roughly the same whether it earns a little or a lot. Starting with the ulga na start, then the 24 months of preferential contributions, then possibly mały ZUS plus, a new business can keep social contributions low for several years, but lower contributions mean lower future pension and sickness benefits. Contribution figures change every year (the minimum wage and forecast average wage reset on 1 January), so treat the numbers here as the 2026 snapshot and re-check each January. Whether a non-EU founder is insured in Poland, or stays covered by a social-security system elsewhere, depends on their situation and should be confirmed with ZUS or an adviser.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Use the ulga na start if you qualify, then switch to preferential contributions.",
+          "source_ids": [
+            "PL14",
+            "PL15"
+          ]
+        },
+        {
+          "text": "Budget the health contribution for your tax form from month one.",
+          "source_ids": [
+            "PL13"
+          ]
+        },
+        {
+          "text": "If you are a sole shareholder of a sp. z o.o., register with ZUS within 7 days.",
+          "source_ids": [
+            "PL17"
+          ]
+        },
+        {
+          "text": "Re-check all contribution figures in January when the new minimum wage applies.",
+          "source_ids": [
+            "PL13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "PL5",
+      "official_information": [
+        {
+          "text": "EU/EEA citizens may run a business in Poland on the same terms as Polish citizens. Citizens of other countries need a lawful basis of stay, and can run a sole proprietorship only with a residence title that allows it (see the foreigner rule above); a company route is open to every foreigner.",
+          "source_ids": [
+            "PL5",
+            "PL6"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The temporary residence permit for running a business (pobyt czasowy w celu prowadzenia działalności gospodarczej) is for a foreigner who wants to stay more than 3 months and run a business, or serve on the management board of a sp. z o.o. or joint-stock company. One voivodeship page requires a PESEL number, a trusted profile and an account in MOS (the foreigners' online application system) and that the application be filed no later than the last day of legal stay.",
+          "source_ids": [
+            "PL21",
+            "PL22"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Conditions listed by the voivodeship offices: the business had income in the year before the application of at least 12 times the average monthly wage in the voivodeship, or, alternatively, employed at least 2 people on indefinite full-time contracts for at least one year before the application. One page also accepts documents showing the conditions will be met in future. Applicants also need a place to live, health insurance, a stable source of income, and ZUS and tax-office certificates showing no arrears. The company's agreement or a notarial deed, and income proof (for example CIT-8 or a tax-office certificate) are among the documents.",
+          "source_ids": [
+            "PL21",
+            "PL22"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Fees: PLN 340 stamp duty for the permit (not refundable even if refused or discontinued), plus PLN 100 for the residence card; PLN 17 stamp duty for a power of attorney if one is used.",
+          "source_ids": [
+            "PL21",
+            "PL22"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The permit is granted for a period of not more than 3 years.",
+          "source_ids": [
+            "PL21"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The UdSC page on MOS states that applications for the permits it lists, which include the business-activity permit, can be filed only electronically in MOS from 27 April 2026. After submission the applicant is later summoned in person to the voivode's office to give fingerprints and a signature sample.",
+          "source_ids": [
+            "PL23"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "An alternative for a founder who will be employed in a highly qualified role is the EU Blue Card: a contract of at least 6 months, higher qualifications, health insurance and an annual gross salary of at least 150% of the average wage; fees of PLN 440 plus PLN 100 for the card; the decision comes no earlier than one month after filing, and the page notes waits in some voivodeships can reach more than a dozen months.",
+          "source_ids": [
+            "PL24"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The voivodeship pages read do not state a statutory or typical processing time for the business-activity permit.",
+          "source_ids": [
+            "PL21",
+            "PL23"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [],
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. The business-permit conditions come from two regional voivodeship pages (Lubuskie, Lublin) because the central MOS and UdSC pages returned errors (HTTP 503) on 12 Oct 2026; they should be re-checked against the MOS/UdSC pages and the Act on Foreigners (12 Dec 2013). No processing time was verified. The Blue Card figures come from a Biznes.gov.pl page.",
+      "open_questions_for_reviewer": [
+        "Which residence status does a non-EU founder who is newly arriving (on a visa) hold when they want to register a sp. z o.o. and become its board member, and which permit lets them live in Poland while doing so? The pages read assume legal stay already exists and require filing by the last day of legal stay.",
+        "Does a non-EU board member of a sp. z o.o. also need a separate work permit or other work authorisation? The Lubuskie page mentions a work permit for board members and a shareholder resolution on remuneration or an employment contract; this was not reconciled with the Act of 20 March 2025 on the conditions for entrusting work to foreigners.",
+        "Is the 12 times average monthly wage test measured on the company's income or the foreigner's income, for which year, and which wage figure applies in 2026? The sources differ slightly in wording.",
+        "What is the current official processing time for the business-activity permit (art. 112a of the Act on Foreigners is cited by third parties as 60 days but was not verified)?",
+        "Is the Poland. Business Harbour visa still suspended, and does any new startup route exist? Only one Biznes.gov.pl page (published 2021) says it is suspended.",
+        "What are the current stamp-duty amounts (PLN 340 permit, PLN 100 card, PLN 440 Blue Card), and are the Blue Card salary and contract conditions correct for a founder employed by their own company?"
+      ]
+    }
+  ]
+}
