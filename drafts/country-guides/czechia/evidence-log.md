@@ -1,6 +1,6 @@
 # Evidence log: Czechia (agent draft, unreviewed)
 
-Draft author: Claude agent. Checker: not yet assigned (QA 4 independent re-verification still to do). All pages opened 2026-10-12 through the research tools; "how verified" says what was actually read. Fetch summaries came from a page-reading model, so each figure still needs the independent re-check. businessinfo.cz returned HTTP 403 to every fetch and is not used as a source.
+Draft author: Claude agent. Checker: independent checker agent, 2026-10-13 (see the last section; QA 4 done, results below). All pages opened 2026-10-12 through the research tools; "how verified" says what was actually read. Fetch summaries came from a page-reading model, so each figure still needs the independent re-check. businessinfo.cz returned HTTP 403 to every fetch and is not used as a source.
 
 | # | Value | Year | Source | URL | Quote / paraphrase | How verified | Confidence |
 |---|---|---|---|---|---|---|---|
@@ -64,3 +64,85 @@ Draft author: Claude agent. Checker: not yet assigned (QA 4 independent re-verif
 | 58 | Seeking employment/starting business permit: 9 months, CZK 2,500, 60 days | read 2026 | CZ25 | https://ipc.gov.cz/en/visa-and-residence-permit-types/third-country-nationals/long-term-residence-permits/long-term-residence-permit-for-the-purpose-of-seeking-employment-or-starting-a-business/ | as listed | page opened | hold |
 | 59 | Trade office requires visa/permit for third-country applicants | read 2026 | CZ15 | MPO page above | as quoted | page opened | official (reused in hold claim) |
 | 60 | Business visa requires registry extract | read 2026 | CZ23, CZ24 | https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/entrepreneurship.html | proof of purpose of stay: trade licence or company register extract | both opened | hold |
+
+## Independent check (2026-10-13, checker agent, not the author)
+
+Method: all 28 sources (CZ1 to CZ28) were re-opened with `curl` (HTTP 200 for all), converted to text and read in the original Czech where the page exists in Czech. English-only pages: CZ10, CZ11, CZ13, CZ18 to CZ23, CZ25, CZ26 (a Czech version of CZ11 was not opened, so the lump-sum expense caps rest on the English portal page). Extra corroboration, not added as a source because it is a commercial legal database (secondary): zakonyprolidi.cz consolidated text of Act 90/2012 Coll. s. 142(1), "Minimální výše vkladu je 1 Kč, ledaže společenská smlouva určí, že výše vkladu je vyšší". Agent review, not legal advice.
+
+| Row / figure | Verdict | What I saw | URL |
+|---|---|---|---|
+| 1-3 Trade fee CZK 1,000 / 500 / +50 Czech POINT | CONFIRMED | CZ15 s.2.2.1: 1.000 Kč entry, 500 Kč further notification, 50 Kč Czech POINT. Page has no year. | CZ15 |
+| 4 Criminal-record extracts max 3 months | CONFIRMED | CZ15 s.2.2.3, both EU and third-country; third-country also needs the Czech register extract | CZ15 |
+| 5 s.r.o. minimum contribution CZK 1 | CONFIRMED (page dated 2016) | CZ16 (22.11.2016) s.142(1) min. 1 Kč; consistent with consolidated Act text (secondary) | CZ16 |
+| 5b "old CZK 200,000 minimum no longer applies" | UNSUPPORTED, deleted | Not on CZ16 or any opened official page | CZ16 |
+| 6 Court fee first registration CZK 6,000; bank transfer above 5,000 | CORRECTED (wording) | CZ12 confirms 6.000 Kč and bank transfer for fees above 5,000. "not by stamps" was not on the page, removed | CZ12 |
+| 7 Notary-route CZK 2,700 vs exemption | CORRECTED (text); stays hold | CZ12 gives 2,700 for a notary-made first entry and exempts a notary-made entry based on a standard-content s.r.o. deed with cash contributions only. The page does reconcile them; the guide said "not reconciled" | CZ12 |
+| 8 Application within 15 days | CONFIRMED | "bez zbytečného odkladu ... do 15 dnů" | CZ12 |
+| 9 Corporations: 6 months from founding unless otherwise agreed | CONFIRMED | CZ12, CZ13 | CZ12 |
+| 10 Court 5 working days; deemed registration; 2 days | CONFIRMED | CZ13 | CZ13 |
+| 11 Owner's declaration max 3 months old, certified signatures | CONFIRMED | CZ13 | CZ13 |
+| 12 Notary "within hours" in the ideal case | CONFIRMED | CZ14 "v ideálním případě doslova v řádu hodin" | CZ14 |
+| 13 Notarial tariff Decree 196/2001 | CONFIRMED | CZ14, CZ15 | CZ14 |
+| 14 Corporate tax 21% since 2024 | CONFIRMED | CZ28 "od zdaňovacího období 2024 ... 21 %" | CZ28 |
+| 15 Corporate return 3 / 4 / 6 months | CORRECTED | CZ27: 4 months only if not filed within 3 months and then filed electronically; 6 months if audit is required by law, or not filed within 3 months and then filed by an adviser | CZ27 |
+| 16 Audit only medium and large from 2026 | CONFIRMED | CZ3 | CZ3 |
+| 17 VAT 21% / 12% | CORRECTED (date removed) | CZ10 and CZ28 give 21% and 12%; neither says "since 1 Jan 2024". The date was removed from guide and FAQ | CZ10, CZ28 |
+| 18-19 VAT thresholds CZK 2,000,000 and 2,536,500 | CONFIRMED | CZ9 and CZ28 | CZ9 |
+| 20 10 working days to apply | CONFIRMED | CZ9 | CZ9 |
+| 21 Identified person CZK 326,000; 15 days | CONFIRMED | CZ9 | CZ9 |
+| 22 PIT 15% / 23% at 36x average wage | CONFIRMED | CZ28, CZ11 | CZ28 |
+| 23 Average wage 2026 CZK 48,967 | CONFIRMED | CZ7 | CZ7 |
+| 24 CZK 1,762,812 = 36 x 48,967 | CONFIRMED | arithmetic checked | derived |
+| 25 Max social base CZK 2,350,416 | CONFIRMED | CZ7 | CZ7 |
+| 26 Lump-sum expenses 80/60/40/30% and caps | CONFIRMED | CZ11 (English page, no year) | CZ11 |
+| 27-28 Flat-rate bands 2026 | CONFIRMED | CZ1 table | CZ1 |
+| 29 Band I CZK 8,716 in 2025 | CONFIRMED | CZ11 | CZ11 |
+| 30 Flat rate: not VAT payer, income up to CZK 2m | CONFIRMED | CZ1, CZ11 | CZ1 |
+| 31 Mid-year start: other income max CZK 50,000 | CONFIRMED | CZ1 | CZ1 |
+| 32 Due date 20th | CONFIRMED | CZ1 | CZ1 |
+| 33 Notice deadline 12 Jan 2026 | CONFIRMED | CZ1, CZ3 | CZ1 |
+| 34 Start after 10 Jan: notify by start day | CONFIRMED | CZ2 | CZ2 |
+| 34b Non-residents may use the flat-rate regime | CONFIRMED | CZ2 | CZ2 |
+| 35 Band revenue limits | COULD NOT OPEN / not stated (hold kept) | Not on any opened official page | CZ2 |
+| 36 Band I CZK 9,162 from 1 Jul 2026 | UNSUPPORTED (hold kept) | Not on CZ1, CZ3, CZ4 or the tax-office flat-rate pages | CZ4 |
+| 37 Pension advance rate 29.2% | CONFIRMED | CZ6 | CZ6 |
+| 38 Main activity base 19,587, advance 5,720 (Jan-Jun) | CONFIRMED | CZ7, CZ4, CZ5 | CZ7 |
+| 39 From 1 Jul 2026 base 17,139 (35%), advance 5,005 | CONFIRMED | CZ4, CZ5, CZ6 | CZ4 |
+| 40 Refund by end 2026; 2 months; or credited at settlement | CONFIRMED (hold kept) | CZ4 states both | CZ4 |
+| 41 Secondary: base 5,387, advance 1,574, threshold 117,521 | CONFIRMED | CZ6, CZ7 | CZ7 |
+| 42 Starter base 12,242, advance 3,575 | CORRECTED | CZ5, CZ6: for a main-activity OSVC with no such activity in the previous 20 calendar years; start year plus two following years. Guide's "starting (or restarting after more than 20 years)" reworded | CZ5, CZ6 |
+| 43 Start-year advance exemption (5 years) | CORRECTED | CZ5: start year and next year, any OSVC (not limited to main activity), settlement still due after the overview, not for flat-rate taxpayers | CZ5 |
+| 44 CSSZ start notice within 15 days | CONFIRMED | CZ5 | CZ5 |
+| 45 Sickness insurance voluntary, 2.7%, base 9,000, CZK 243 | CONFIRMED | CZ5, CZ7 | CZ5 |
+| 46 Health minimum advance CZK 3,306 | CONFIRMED | CZ8 | CZ8 |
+| 47 Health advances due to the 8th of next month | CONFIRMED | CZ8 | CZ8 |
+| 48 E-invoicing receive duties 2018 / 2019 / 2020 | CONFIRMED | CZ17; page dated 2 Oct 2018, note added | CZ17 |
+| 49 No B2B e-invoicing mandate | COULD NOT OPEN / not stated (hold kept) | Page silent | CZ17 |
+| 50 Basic allowance CZK 30,840 | UNSUPPORTED (hold kept) | Not on an opened official page | - |
+| 51 Business visa: CZK 5,000; 90 (120) days; 1 year; extension CZK 1,000 / 14 days; Foreign Police 3 business days | CONFIRMED (hold section) | CZ19, CZ23, CZ24 | CZ19 |
+| 52 Funds 50 x 3,130 = 156,500 (2023) | CONFIRMED as printed; likely stale (hold) | CZ20 prints it; same page mixes 2023 and 1 Oct 2026 figures | CZ20 |
+| 53 Business permit | CONFIRMED (hold section) | CZ18: max 2 years, CZK 2,500, 60 days, extension from 120 days before expiry | CZ18 |
+| 54 Living minimum CZK 5,000, housing CZK 15,680 (1 Oct 2026) | CONFIRMED as printed (hold) | CZ20 | CZ20 |
+| 55 Archived CZK 4,860 / 18,129 (2023) | CONFIRMED (hold) | CZ26 (7 June 2023); a year difference, not an error | CZ26 |
+| 56 Employee Card | CONFIRMED (hold section) | CZ21 | CZ21 |
+| 57 Blue Card | CONFIRMED (hold section) | CZ22, incl. the 1 year vs 6 months inconsistency | CZ22 |
+| 58 Seeking employment / starting business permit | CONFIRMED (hold section) | CZ25 | CZ25 |
+| 59 Trade office requires visa/permit for third-country applicants | CORRECTED | CZ15 s.2.2.3 also says the right to trade arises when the visa/permit is shown, within 3 working days of registering residence and within 6 months of the trade office's extract. The "order problem" framing left this out; gotcha, time quick fact, steps, FAQ, visa note, reviewer question updated | CZ15 |
+| 60 Business visa requires registry extract | CONFIRMED | CZ23, CZ24, CZ19 | CZ23 |
+
+### Other checks
+- Visa section: hold true, review_status pending, "agent review, not legal advice" in internal notes. OK.
+- quick_facts: exactly structure, cost, time, gotcha. OK.
+- Annual figures carry a year; undated pages (CZ11, CZ15) are labelled as such.
+- Source type tags appropriate (CZ8 VZP is a statutory insurer, tagged official). No rendered claim rests only on a secondary source.
+- Speed language: "within hours" is quoted with "in the ideal case". "Cheapest and fastest" in expert text softened.
+- next_check_due 2027-01-15 is sensible (January resets) and within 6 months of last_checked.
+- Removed the unsourced overview statement that Czechia has no separate freelancer visa and no digital-nomad shortcut.
+
+### Counts
+Rows checked: 62 (60 plus 5b, 34b). CONFIRMED 49 (12 of them in the held visa section). CORRECTED 7 (rows 6, 7, 15, 17, 42, 43, 59). UNSUPPORTED 3 (5b deleted; 36 and 50 held). CONFLICT 0 new. COULD NOT OPEN / not stated 2 (rows 35, 49, held); all 28 URLs opened.
+
+### Changes made to guide.json / faq.json
+guide.json: checked_by note; quick_facts.time (non-EU exception); quick_facts.gotcha (CZ15 mechanism); overview (removed unsourced sentence, qualified "can invoice"); legal-forms OSVC cell; deleted the 200,000 sentence; court-fee wording; notary 2,700 text; "cheapest and fastest" softened; sole-steps step 1; company-steps step 5 and taxes tax-return deadlines; VAT rates bullet (date removed); social starter relief and 5-year exemption; e-invoicing page-date note; visa hold bullet and reviewer question 1.
+faq.json: cz-vat-rates (date removed), cz-srl-capital (200,000 sentence removed, Act cited), cz-remote-start (right to trade arises on showing the visa/permit; dropped "cannot simply register remotely").
+sources.json: unchanged.

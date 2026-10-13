@@ -19,7 +19,7 @@
     "country": "czechia",
     "topic": "tax",
     "question": "What are the VAT rates?",
-    "answer": "The standard rate is 21% and the single reduced rate is 12%, in force since 1 Jan 2024.",
+    "answer": "The standard rate is 21% and the single reduced rate is 12% (gov.cz portal and tax office, read Oct 2026).",
     "source_ids": [
       "CZ10",
       "CZ28"
@@ -50,7 +50,7 @@
     "country": "czechia",
     "topic": "company",
     "question": "What is the minimum capital for an s.r.o.?",
-    "answer": "The legal minimum contribution is CZK 1 per member; the old CZK 200,000 minimum no longer applies. The source page is dated 2016, so confirm it with a notary.",
+    "answer": "The legal minimum contribution is CZK 1 per member (section 142(1) of Act 90/2012 Coll.). The source page is dated 2016, so confirm it with a notary.",
     "source_ids": [
       "CZ16"
     ],
@@ -127,7 +127,7 @@
     "country": "czechia",
     "topic": "company",
     "question": "Can I register a business in Czechia without living there?",
-    "answer": "EU/EEA citizens can notify a trade with home-state criminal-record extracts. Third-country citizens need a long-stay visa or residence permit shown to the trade office, so non-EU founders cannot simply register remotely.",
+    "answer": "EU/EEA citizens can notify a trade with home-state criminal-record extracts. Third-country citizens must also show a long-stay visa or residence permit to the trade office, and their right to trade arises only once they do.",
     "source_ids": [
       "CZ15"
     ],

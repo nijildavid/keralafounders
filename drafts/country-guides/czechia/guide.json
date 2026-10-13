@@ -3,7 +3,7 @@
   "title": "How to start a company in Czechia",
   "summary": "Czechia gives a founder two main routes: work as an OSVC (osoba samostatne vydelecne cinna, a self-employed person) under a trade licence (zivnostensky list), a low-cost start with unlimited personal liability, or form a spolecnost s rucenim omezenym (s.r.o., a limited liability company) with a notary and an entry in the commercial register. A trade licence is notified at a trade licensing office (zivnostensky urad), which also serves as the front door to the tax, social-security and health-insurance notifications. Founders from outside the EU face a trap: the trade office asks for a visa or residence permit, and the business visa asks for proof of trade registration.",
   "last_checked": "2026-10-12",
-  "checked_by": "Claude agent draft, unreviewed",
+  "checked_by": "Claude agent draft, unreviewed; independently fact-checked by a second agent on 2026-10-13 (not a legal review)",
   "next_check_due": "2027-01-15",
   "quick_facts": {
     "structure": {
@@ -22,7 +22,7 @@
       ]
     },
     "time": {
-      "text": "A free trade arises on the day of a complete notification. An s.r.o. exists only once entered in the register; the court generally has five working days, and a notary can in the ideal case found the company within hours.",
+      "text": "A free trade arises on the day of a complete notification (for a non-EU citizen, only once the long-stay visa or residence permit is shown to the trade office). An s.r.o. exists only once entered in the register; the court generally has five working days, and a notary can in the ideal case found the company within hours.",
       "source_ids": [
         "CZ15",
         "CZ13",
@@ -30,7 +30,7 @@
       ]
     },
     "gotcha": {
-      "text": "Non-EU founders: the trade office wants proof of a long-stay visa or residence permit, while the business visa and permit want proof of trade registration. Plan the order of steps with an adviser before you travel.",
+      "text": "Non-EU founders: you can notify the trade first, but the right to trade starts only when you show the trade office your long-stay visa or residence permit (within 3 working days of registering your residence, and within 6 months of the office's extract), while the business visa itself asks for proof of trade registration. Plan the order of steps with an adviser before you travel.",
       "source_ids": [
         "CZ15",
         "CZ19",
@@ -83,7 +83,7 @@
       "official_information": [],
       "expert_interpretation": [
         {
-          "text": "Czech business life runs on the trade licence (zivnost). Most solo founders start as an OSVC: you notify a trade at a trade licensing office, and from that day you can invoice. You are personally liable for the business debts. If you want limited liability, or want clients and investors to contract with a company, you form an s.r.o. through a notary and the commercial register. Czechia has no separate freelancer visa and no digital-nomad shortcut in this guide's scope; for founders from outside the EU the residence route, not the company registration, is usually the slow and decisive step. The country-specific points to understand early are the four trade types (what you may do on a plain notification), the flat-rate tax regime (pausalni dan) and its trade-offs, and the 2026 changes to the minimum social-security advances.",
+          "text": "Czech business life runs on the trade licence (zivnost). Most solo founders start as an OSVC: you notify a trade at a trade licensing office, and from the day the notification is complete (for EU citizens) you may trade. You are personally liable for the business debts. If you want limited liability, or want clients and investors to contract with a company, you form an s.r.o. through a notary and the commercial register. For founders from outside the EU the residence route, not the company registration, is usually the slow and decisive step. The country-specific points to understand early are the four trade types (what you may do on a plain notification), the flat-rate tax regime (pausalni dan) and its trade-offs, and the 2026 changes to the minimum social-security advances.",
           "source_ids": [],
           "confidence": "editorial"
         }
@@ -114,7 +114,7 @@
             "none",
             "personal, unlimited",
             "no",
-            "a free trade arises on the notification date if the filing is complete",
+            "a free trade arises on the notification date if the filing is complete (non-EU citizens: when the visa or permit is shown)",
             "tax records; no company accounts",
             "official [CZ15]"
           ],
@@ -146,14 +146,14 @@
           "confidence": "official"
         },
         {
-          "text": "The Act on Business Corporations (no. 90/2012 Coll., section 142(1)) sets the minimum contribution of an s.r.o. member at CZK 1. The old CZK 200,000 minimum capital no longer applies. The MPO page that says this is dated 22 Nov 2016, so a local professional should confirm that the rule is unchanged in 2026.",
+          "text": "The Act on Business Corporations (no. 90/2012 Coll., section 142(1)) sets the minimum contribution of an s.r.o. member at CZK 1. The MPO page that says this is dated 22 Nov 2016, so a local professional should confirm that the rule is unchanged in 2026.",
           "source_ids": [
             "CZ16"
           ],
           "confidence": "official"
         },
         {
-          "text": "Court fee for the first registration of an s.r.o.: CZK 6,000, payable by bank transfer only (not by stamps). The application must be filed without undue delay and within 15 days of the triggering event, and within six months of founding for commercial corporations, unless the founding act sets another period.",
+          "text": "Court fee for the first registration of an s.r.o.: CZK 6,000, fees above CZK 5,000 must be paid by bank transfer to the court's account. The application must be filed without undue delay and within 15 days of the triggering event, and within six months of founding for commercial corporations, unless the founding act sets another period.",
           "source_ids": [
             "CZ12",
             "CZ13"
@@ -161,7 +161,7 @@
           "confidence": "official"
         },
         {
-          "text": "The same page also lists a lower fee of CZK 2,700 when a notary files the entry and states that registrations made by a notary are exempt from fees. The two statements are not reconciled on the page, so the notary-route cost is held until a notary confirms it.",
+          "text": "The same page lists a fee of CZK 2,700 for a first entry made by a notary and also exempts from fees an entry made by a notary on the basis of a founding deed of an s.r.o. that contains only the mandatory elements and cash contributions. So the notary-route fee depends on the content of the deed; the cost is held until a notary confirms it for your case.",
           "source_ids": [
             "CZ12"
           ],
@@ -175,7 +175,7 @@
       ],
       "expert_interpretation": [
         {
-          "text": "For most first-time founders working alone, start as an OSVC: it is the cheapest and fastest way to invoice legally, and you can form an s.r.o. later when you need limited liability, a co-founder structure or a counterpart that wants a company. An s.r.o. adds notary and register steps, annual accounts and more admin, so it usually pays off once there is real revenue or risk.",
+          "text": "For most first-time founders working alone, start as an OSVC: it is usually the lowest-cost and simplest way to start trading, and you can form an s.r.o. later when you need limited liability, a co-founder structure or a counterpart that wants a company. An s.r.o. adds notary and register steps, annual accounts and more admin, so it usually pays off once there is real revenue or risk.",
           "source_ids": [],
           "confidence": "editorial"
         }
@@ -256,7 +256,7 @@
       "reviewed_on": null,
       "official_information": [
         {
-          "text": "1. Non-EU/EEA/Swiss founders: a long-stay visa or residence permit must be shown to the trade office. See the residence-permit section for the order problem.",
+          "text": "1. Non-EU/EEA/Swiss founders: a long-stay visa or residence permit must be shown to the trade office; the right to trade then arises on the day it is shown, if shown within 3 working days of registering your residence in Czechia and within 6 months of the trade office's extract issued for the residence proceedings. See the residence-permit section.",
           "source_ids": [
             "CZ15"
           ],
@@ -372,7 +372,7 @@
           "confidence": "official"
         },
         {
-          "text": "5. Corporate income tax return: due within 3 months after the end of the tax period; the deadline becomes 4 months if later filed electronically and 6 months if the accounts must be audited or the return is filed by an adviser. From 2026 only medium and large entities need a statutory audit.",
+          "text": "5. Corporate income tax return: due within 3 months after the end of the tax period; the deadline becomes 4 months if the return was not filed within 3 months and is then filed electronically, and 6 months if the accounts must by law be audited, or if the return was not filed within 3 months and is then filed by an adviser. From 2026 only medium and large entities need a statutory audit.",
           "source_ids": [
             "CZ27",
             "CZ3"
@@ -486,7 +486,7 @@
       "reviewed_on": null,
       "official_information": [
         {
-          "text": "VAT rates (since 1 Jan 2024): standard 21%, single reduced rate 12%.",
+          "text": "VAT rates (as stated on the gov.cz portal and the tax office system description, read Oct 2026): standard 21%, single reduced rate 12%.",
           "source_ids": [
             "CZ10",
             "CZ28"
@@ -517,7 +517,7 @@
           "confidence": "official"
         },
         {
-          "text": "Corporate income tax: 21% since the 2024 tax period. Tax-return deadlines: 3 months after the tax period, 4 months if later filed electronically, 6 months if audited or filed by an adviser.",
+          "text": "Corporate income tax: 21% since the 2024 tax period. Tax-return deadlines: 3 months after the tax period; 4 months if not filed within 3 months and then filed electronically; 6 months if an audit is required by law, or if not filed within 3 months and then filed by an adviser.",
           "source_ids": [
             "CZ27",
             "CZ28"
@@ -525,7 +525,7 @@
           "confidence": "official"
         },
         {
-          "text": "E-invoicing: central state bodies have had to accept e-invoices since 31 Dec 2018, contracting authorities of the Czech Republic and the Czech National Bank since 1 Apr 2019 and other contracting authorities since 1 Apr 2020, in EN 16931-1:2017 compliant formats (UBL 2.1, UN/CEFACT CII, ISDOC/ISDOCX 5.2+). This is an obligation on public bodies to receive.",
+          "text": "E-invoicing: central state bodies have had to accept e-invoices since 31 Dec 2018, contracting authorities of the Czech Republic and the Czech National Bank since 1 Apr 2019 and other contracting authorities since 1 Apr 2020, in EN 16931-1:2017 compliant formats (UBL 2.1, UN/CEFACT CII, ISDOC/ISDOCX 5.2+). This is an obligation on public bodies to receive. The MF page is dated 2 Oct 2018, so newer rules would not show on it.",
           "source_ids": [
             "CZ17"
           ],
@@ -600,7 +600,7 @@
           "confidence": "official"
         },
         {
-          "text": "Starter relief: for a main-activity OSVC starting (or restarting after more than 20 years), minimum monthly base CZK 12,242 and advance CZK 3,575. A separate exemption from advances covers the start year and the next year for a main-activity OSVC who did not run a business in the previous 5 calendar years.",
+          "text": "Starter relief: for a main-activity OSVC who starts an activity that was not carried on in the previous 20 calendar years, the minimum monthly base is CZK 12,242 and the advance CZK 3,575 in 2026; it applies in the start year and the two following years. A separate exemption from advances covers the start year and the next year for an OSVC who did not carry on the activity in the previous 5 calendar years (insurance is still settled after the annual overview is filed; the exemption does not apply to flat-rate taxpayers).",
           "source_ids": [
             "CZ5",
             "CZ6",
@@ -677,7 +677,7 @@
       "hold_note_source_id": "CZ18",
       "internal_notes": "Agent draft, agent review, not legal advice. Figures come from the Ministry of the Interior's information portal (ipc.gov.cz), the Ministry of Foreign Affairs and an archived Ministry page. Not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the Standard's publishing gates).",
       "open_questions_for_reviewer": [
-        "How does a non-EU founder get past the order problem: trade notification needs a visa or permit, while the business visa needs proof of trade registration? Is registration through a representative or power of attorney allowed? Not found on an opened official page.",
+        "The MPO page (CZ15, section 2.2.3) describes the mechanism: notify the trade, obtain the trade office's extract for the residence proceedings, then show the visa or permit within 3 working days of registering residence and within 6 months of the extract. Please confirm this works in practice for a founder who has never been in Czechia, and whether registration through a representative or power of attorney is allowed (not found on an opened official page).",
         "Is the CZK 156,500 funds figure (50 x CZK 3,130, 2023) still current in 2026, and which living-minimum figures does the Ministry apply now?",
         "The Lusaka Ministry page and some secondary sites state a CZK 5,000 consular fee for the business route while others state CZK 2,500; the ipc.gov.cz page says CZK 5,000 for the visa and CZK 2,500 for the permit. Confirm per mission.",
         "Is the Employee Card or Blue Card more realistic for the likely audience (IT professionals) than the business route, and should the section cover switching from an employee permit to self-employment?",
@@ -686,7 +686,7 @@
       ],
       "official_information": [
         {
-          "text": "Third-country (non-EU/EEA/Swiss) founders must show a long-stay visa or residence permit to the trade licensing office; EU/EEA and Swiss citizens are assessed under different documents. Business visa applications in turn require proof of registration (a trade licence extract or commercial register extract).",
+          "text": "Third-country (non-EU/EEA/Swiss) founders must show a long-stay visa or residence permit to the trade licensing office; EU/EEA and Swiss citizens are assessed under different documents. Business visa applications in turn require proof of registration (a trade licence extract or commercial register extract). The MPO page describes how the order works for a third-country founder: the right to trade arises when the visa or permit is shown to the trade office, within 3 working days of registering residence and within 6 months of the trade office's extract issued for the residence proceedings.",
           "source_ids": [
             "CZ15",
             "CZ19",
