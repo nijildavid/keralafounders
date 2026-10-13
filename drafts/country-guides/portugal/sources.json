@@ -73,7 +73,7 @@
   },
   {
     "id": "PT9",
-    "title": "Inicio de atividade - Rendimentos empresariais e profissionais - IRS e IVA (leaflet)",
+    "title": "Inicio de atividade - Rendimentos empresariais e profissionais - IRS e IVA (leaflet, dated March 2026)",
     "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
     "type": "official",
     "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/Inicio_atividade.pdf",
@@ -214,5 +214,32 @@
     "url": "https://www.gov.pt/servicos/constituir-sociedade-comercial-contrato-de-sociedade",
     "language": "pt",
     "accessed": "2026-10-12"
+  },
+  {
+    "id": "PT25",
+    "title": "Artigo 41.o do CIVA (prazos de entrega da declaracao periodica)",
+    "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+    "type": "official",
+    "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx",
+    "language": "pt",
+    "accessed": "2026-10-13"
+  },
+  {
+    "id": "PT26",
+    "title": "Calendario fiscal 2026 - Obrigacoes declarativas (ultima atualizacao setembro 2026)",
+    "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+    "type": "official",
+    "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/calendario_fiscal/Documents/Obrigacoes_declarativas.pdf",
+    "language": "pt",
+    "accessed": "2026-10-13"
+  },
+  {
+    "id": "PT27",
+    "title": "Decreto-Lei n.o 2/2018, de 9 de janeiro (altera o Codigo dos Regimes Contributivos, art. 168: 21,4% e 25,2%)",
+    "publisher": "Diario da Republica",
+    "type": "official",
+    "url": "https://files.dre.pt/1s/2018/01/00600/0023800242.pdf",
+    "language": "pt",
+    "accessed": "2026-10-13"
   }
 ]

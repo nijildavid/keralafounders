@@ -39,3 +39,10 @@
 3. Should the second-agent re-verification prioritise the held conflicts (VAT days, contribution rate)?
 4. Is "no company-level minimum, EUR 1 per quota" the wording you want in quick facts?
 5. Do you want derrama and IRS bracket tables added (needs more research)?
+
+## Added by independent check (2026-10-13)
+- VAT return days and the 21.4% vs 29.6% rate are resolved in favour of the law and the Institute (20th; 21.4%). Still ask a human to confirm no 2026 change to art. 168, since no consolidated 2026 text opened.
+- The gov.pt self-employed guide disagrees with the law on two points (VAT days, contribution rate); treat gov.pt guides as secondary for figures.
+- Art. 53(2) EX route for EU-based businesses vs the AT FAQ line that excludes non-domiciled businesses: the two pages read differently; accountant to confirm.
+- PT6 is still a consolidated copy; check art. 219 on DRE.
+- IFICI FAQ lists company managers as eligible; relevant to the held visa section only.

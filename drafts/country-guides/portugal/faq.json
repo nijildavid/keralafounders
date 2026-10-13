@@ -83,7 +83,7 @@
     "country": "portugal",
     "topic": "tax",
     "question": "What is the small-business VAT exemption limit?",
-    "answer": "EUR 15,000 of annual turnover in Portugal (2026 limit), for businesses with a registered office or domicile in Portugal. Businesses without one cannot use it.",
+    "answer": "EUR 15,000 of annual turnover in Portugal (stated as the 2026 limit by gov.pt) for businesses with a registered office or domicile in Portugal. A business without one cannot normally use it; businesses based in another EU country have a separate route with an EX number.",
     "source_ids": [
       "PT10",
       "PT11",

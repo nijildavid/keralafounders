@@ -15,7 +15,7 @@
       ]
     },
     "cost": {
-      "text": "Empresa na Hora costs EUR 360; Empresa Online costs EUR 220 with a pre-approved articles template or EUR 360 with your own articles (IRN pages, accessed 2026). Each quota must be worth at least EUR 1 (Companies Code, art. 219), so there is no large minimum capital. Registering as a sole trader with the tax office is not charged on the pages we read.",
+      "text": "Empresa na Hora costs EUR 360; Empresa Online costs EUR 220 with a pre-approved articles template or EUR 360 with your own articles (IRN pages, accessed 2026). Each quota must be worth at least EUR 1 (Companies Code, art. 219), so there is no large minimum capital. The tax-authority leaflet we read (March 2026) mentions no fee for the sole-trader start-of-activity declaration.",
       "source_ids": [
         "PT1",
         "PT4",
@@ -23,14 +23,14 @@
       ]
     },
     "time": {
-      "text": "Empresa Online: the registry step takes 5 days with pre-approved articles and 10 days with custom articles, per gov.pt. The Empresa na Hora pages we read give no processing time, so we do not quote one. Sole trader: the start-of-activity declaration is filed online with Financas before you start work.",
+      "text": "Empresa Online: once the registry finds no problems with the file, registration takes 5 days with pre-approved articles and 10 days with custom articles, per gov.pt (September 2026). The Empresa na Hora pages we read give no processing time, so we do not quote one. Sole trader: the start-of-activity declaration is filed online with Financas before you start work.",
       "source_ids": [
         "PT3",
         "PT9"
       ]
     },
     "gotcha": {
-      "text": "The small-business VAT exemption (EUR 15,000 turnover in 2026) is only for businesses with a registered office or domicile in Portugal. A self-employed person living outside the EU/EEA must name a VAT-registered fiscal representative in Portugal before starting.",
+      "text": "The small-business VAT exemption (EUR 15,000 turnover in 2026) is for businesses with a registered office or domicile in Portugal (a business based in another EU country has a separate route with an EX number). A self-employed person living outside the EU/EEA must name a VAT-registered fiscal representative in Portugal before starting.",
       "source_ids": [
         "PT8",
         "PT10",
@@ -117,26 +117,26 @@
           [
             "Trabalhador independente / empresario em nome individual (sole trader)",
             "none",
-            "personal",
+            "personal (general rule)",
             "no",
             "start-of-activity declaration filed online with Financas before you start work",
-            "simplified regime up to EUR 200,000 gross income per year; organised accounting above that or by choice",
+            "simplified regime up to EUR 200,000 (2026) gross income per year; organised accounting above that or by choice",
             "official [PT9]"
           ],
           [
             "Sociedade por quotas (Lda.), two or more partners",
             "each quota at least EUR 1; total capital set by the partners",
             "limited to the company (general rule)",
-            "not required on the Empresa na Hora / Empresa Online routes",
+            "not mentioned on the Empresa na Hora / Empresa Online pages read (pact made at the counter or signed digitally)",
             "Empresa Online: 5 days (pre-approved articles) or 10 days (custom articles); Empresa na Hora: no time stated on the pages read",
-            "company accounts; a certified accountant files the start-of-activity declaration",
+            "company accounts; start-of-activity declaration filed by a certified accountant, or at Financas if signed by one",
             "official [PT1, PT3, PT6]"
           ],
           [
             "Sociedade unipessoal por quotas (single-member Lda.)",
             "same as Lda.: quota at least EUR 1",
             "limited to the company (general rule)",
-            "not required on the Empresa Online route",
+            "not mentioned on the Empresa Online page read (pact signed digitally)",
             "Empresa Online: 5 or 10 days as above",
             "company accounts",
             "official [PT3, PT4, PT6]"
@@ -167,14 +167,14 @@
           "confidence": "official"
         },
         {
-          "text": "A sole trader with annual category B income up to EUR 200,000 is placed in the simplified IRS regime unless they opt for organised accounting. Organised accounting is mandatory above EUR 200,000.",
+          "text": "A sole trader with annual category B income up to EUR 200,000 (tax authority leaflet, March 2026) is placed in the simplified IRS regime unless they opt for organised accounting. Organised accounting is mandatory above EUR 200,000.",
           "source_ids": [
             "PT9"
           ],
           "confidence": "official"
         },
         {
-          "text": "The simplified regime stops applying automatically if income exceeds EUR 200,000 in two consecutive years, or exceeds EUR 250,000 (25% above the limit) in a single year; organised accounting then applies from the following year.",
+          "text": "The simplified regime stops applying automatically if income exceeds EUR 200,000 in two consecutive years, or exceeds EUR 250,000 (25% above the limit) in a single year (March 2026 leaflet); organised accounting then applies from the following year.",
           "source_ids": [
             "PT9"
           ],
@@ -264,14 +264,14 @@
           "confidence": "official"
         },
         {
-          "text": "Not appointing a required representative can be fined between EUR 75 and EUR 7,500. The representative can be jointly liable for the VAT.",
+          "text": "Not appointing a required representative can be fined between EUR 75 and EUR 7,500 (tax authority FAQ, 2026). The representative can be jointly liable for the VAT.",
           "source_ids": [
             "PT7"
           ],
           "confidence": "official"
         },
         {
-          "text": "The special VAT exemption for small businesses (art. 53 CIVA) does not apply to taxable persons without a registered office or domicile in Portugal, even if they have a permanent establishment or VAT registration there.",
+          "text": "The special VAT exemption for small businesses (art. 53 CIVA) is for taxable persons with a registered office or domicile in Portugal. The tax authority FAQ says it does not apply to taxable persons without one, even if they have a permanent establishment or VAT registration in Portugal. Businesses based in another EU Member State have the separate route in the next point.",
           "source_ids": [
             "PT11",
             "PT9"
@@ -279,7 +279,7 @@
           "confidence": "official"
         },
         {
-          "text": "Taxable persons established in another EU Member State can use the art. 53 exemption in Portugal if their annual EU turnover does not exceed EUR 100,000, after notifying their home state and holding an identification number with the suffix EX.",
+          "text": "Taxable persons established in another EU Member State can use the art. 53 exemption in Portugal if their annual EU turnover does not exceed EUR 100,000 (art. 53 CIVA as amended in March 2025), after notifying their home state and holding an identification number with the suffix EX.",
           "source_ids": [
             "PT10"
           ],
@@ -361,7 +361,7 @@
           "confidence": "official"
         },
         {
-          "text": "6. Issue invoices through the free invoicing system on the Portal das Financas (or the ATGO app) or a certified invoicing program. Using the AT system removes the duty to report invoice data by the 5th of the following month. Pre-printed invoices from authorised printers are allowed only if the previous year's turnover was below EUR 50,000.",
+          "text": "6. Issue invoices through the free invoicing system on the Portal das Financas (or the ATGO app) or a certified invoicing program. Using the AT system removes the duty to report invoice data by the 5th of the following month. Pre-printed invoices from authorised printers are allowed only if the previous year's turnover was below EUR 50,000 (tax authority leaflet, March 2026).",
           "source_ids": [
             "PT9"
           ],
@@ -434,7 +434,7 @@
           "confidence": "official"
         },
         {
-          "text": "2. Empresa na Hora: all future partners must be present at the counter (or legally represented) with an ID document, which can be a passport or a residence permit. The standard request costs EUR 360. If capital is paid in assets other than cash, the registration cost for each asset transfer is added.",
+          "text": "2. Empresa na Hora: all future partners must be present at the counter (or legally represented) with an ID document, which can be a passport or a residence permit. The standard request costs EUR 360 (IRN and Justica pages, 2026). If capital is paid in assets other than cash, the registration cost for each asset transfer is added.",
           "source_ids": [
             "PT1",
             "PT2",
@@ -443,7 +443,7 @@
           "confidence": "official"
         },
         {
-          "text": "3. Empresa Online: authenticate with Cartao de Cidadao, Chave Movel Digital, a legal professional's certificate, or eIDAS. Price: EUR 220 with a pre-approved articles template, EUR 360 with articles drafted by the founders; urgent requests EUR 440 and EUR 720; correcting non-conformities costs EUR 30 extra.",
+          "text": "3. Empresa Online: authenticate with Cartao de Cidadao, Chave Movel Digital, a legal professional's certificate, or eIDAS. Price (IRN page, 2026): EUR 220 with a pre-approved articles template, EUR 360 with articles drafted by the founders; urgent requests EUR 440 and EUR 720; correcting non-conformities costs EUR 30 extra.",
           "source_ids": [
             "PT3",
             "PT4"
@@ -547,7 +547,7 @@
           "confidence": "official"
         },
         {
-          "text": "Small-business VAT exemption (art. 53 CIVA): the 2026 limit is EUR 15,000 of annual turnover in Portugal. It applies to businesses with a registered office or domicile in Portugal that do not export. For a new business, the declaration of start of activity states an estimate for the current year, without annualising it.",
+          "text": "Small-business VAT exemption (art. 53 CIVA): the limit is EUR 15,000 of annual turnover in Portugal (stated as the 2026 limit by gov.pt; the article text, in force since 1 July 2025, gives EUR 15,000 for a business whose turnover in the previous year did not exceed it). It applies to businesses with a registered office or domicile in Portugal that do not export. For a new business, the declaration of start of activity states an estimate for the current year, without annualising it.",
           "source_ids": [
             "PT10",
             "PT11",
@@ -556,14 +556,24 @@
           "confidence": "official"
         },
         {
-          "text": "An exempt business that exceeds EUR 15,000 but stays below EUR 18,750 moves to normal VAT from 1 January of the following year. If the EUR 18,750 limit (25% over) is exceeded within the year, VAT applies from the invoice that crosses it. Exempt invoices must carry the mention 'IVA - regime de isencao'.",
+          "text": "An exempt business that exceeds EUR 15,000 but stays below EUR 18,750 moves to normal VAT from 1 January of the following year. If the EUR 18,750 limit (25% over) is exceeded within the year, VAT applies from the invoice that crosses it. (Tax authority leaflet, March 2026.) Exempt invoices must carry the mention 'IVA - regime de isencao'.",
           "source_ids": [
             "PT9"
           ],
           "confidence": "official"
         },
         {
-          "text": "Under the normal VAT regime, returns are quarterly if annual turnover is below EUR 650,000 and monthly from EUR 650,000. According to the tax authority leaflet, the return is due by the 20th of the 2nd month after the period and the tax paid by the 25th of the 2nd month. A return is required even with no activity.",
+          "text": "Under the normal VAT regime, returns are quarterly if the previous year's turnover was below EUR 650,000 and monthly from EUR 650,000. CIVA art. 41 (version in force since 1 July 2025) and the tax authority's 2026 calendar set the return deadline at the 20th of the 2nd month after the period; the tax authority leaflet (March 2026) says the tax is paid by the 25th of the 2nd month. A return is required even with no activity.",
+          "source_ids": [
+            "PT9",
+            "PT12",
+            "PT25",
+            "PT26"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Services to businesses in other EU Member States use reverse charge with the invoice mention 'IVA - autoliquidacao. Artigo 6.o, n.o 6 do CIVA', and a recapitulative statement is required, due by the 20th of the following month (monthly filers) or the 20th of the month after the quarter (quarterly filers, tax authority leaflet March 2026).",
           "source_ids": [
             "PT9",
             "PT12"
@@ -571,37 +581,30 @@
           "confidence": "official"
         },
         {
-          "text": "Services to businesses in other EU Member States use reverse charge with the invoice mention 'IVA - autoliquidacao', and a recapitulative statement is required, due by the 20th of the following month (monthly filers).",
+          "text": "Resolved by the checker: the gov.pt guide (page marked updated 04/09/2026) still shows the 10th (monthly) and 15th (quarterly), but CIVA art. 41 and the 2026 tax calendar both say the 20th. This draft uses the 20th; the gov.pt page looks out of date.",
           "source_ids": [
-            "PT9",
-            "PT12"
-          ],
-          "confidence": "official"
-        },
-        {
-          "text": "Conflict for the reviewer: the gov.pt guide gives VAT return deadlines of the 15th (quarterly) and the 10th (monthly) of the 2nd month, while the tax authority's own start-of-activity leaflet gives the 20th, with payment by the 25th. This draft uses the tax authority leaflet.",
-          "source_ids": [
-            "PT9",
-            "PT12"
+            "PT12",
+            "PT25",
+            "PT26"
           ],
           "confidence": "hold"
         },
         {
-          "text": "Simplified IRS regime for sole traders (art. 31 CIRS): income is taxed after applying a coefficient: 0.75 to professional activities listed in the art. 151 CIRS table, 0.35 to other services, 0.15 to sales of goods and most restaurant and hotel services, 0.10 to other category B income. In the start-up period and the following one the coefficients for services are reduced by 50% and 25%. Taxable income is raised if documented expenses are below 15% of gross service income.",
+          "text": "Simplified IRS regime for sole traders (art. 31 CIRS): income is taxed after applying a coefficient: 0.75 to professional activities listed in the art. 151 CIRS table, 0.35 to other services, 0.15 to sales of goods and most restaurant and hotel services, 0.10 to other category B income not listed elsewhere. In the start-up year and the following year the 0.75, 0.35 and 0.10 coefficients are reduced by 50% and 25%, but only if you have no category A (employment) or H (pension) income in those years and have not ceased an activity in the previous five years. Taxable income is raised if documented expenses and social security contributions are below 15% of gross service income.",
           "source_ids": [
             "PT17"
           ],
           "confidence": "official"
         },
         {
-          "text": "Withholding tax on invoices to clients with organised accounting applies if your income the year before was above EUR 15,000: 23% for professional activities in the art. 151 CIRS table and 11.5% for other services.",
+          "text": "Withholding tax on invoices to clients with organised accounting applies if your income the year before was above EUR 15,000 (or from the moment it passes that amount in the current year): 23% for professional activities in the art. 151 CIRS table and 11.5% for other services (tax authority leaflet, March 2026).",
           "source_ids": [
             "PT9"
           ],
           "confidence": "official"
         },
         {
-          "text": "Corporate income tax (IRC): the general rate for tax periods starting in 2026 is 19%, 18% for periods starting in 2027, and 17% from 1 January 2028. The first EUR 50,000 of taxable profit of small and medium enterprises is taxed at 15% from 2026, and at 12.5% for qualifying start-ups.",
+          "text": "Corporate income tax (IRC): the general rate for tax periods starting in 2026 is 19%, 18% for periods starting in 2027, and 17% from 1 January 2028. The first EUR 50,000 of taxable profit of small and medium enterprises (and small mid-caps) is taxed at 15% from 2026, subject to EU de minimis rules, and at 12.5% for qualifying start-ups. (Art. 87 CIRC as amended by Lei 64/2025.)",
           "source_ids": [
             "PT16"
           ],
@@ -667,9 +670,10 @@
       "reviewed_on": null,
       "official_information": [
         {
-          "text": "Trabalhadores independentes and their spouses contribute at 21.4% of the monthly contribution base. Empresarios em nome individual and holders of an establishment of limited liability (EIRL) contribute at 25.2% (ISS practical guide v1.14, 16 May 2025).",
+          "text": "Trabalhadores independentes and their spouses contribute at 21.4% of the monthly contribution base. Empresarios em nome individual and holders of an establishment of limited liability (EIRL) contribute at 25.2% (ISS practical guide v1.14, 16 May 2025; the same two rates are set in art. 168 of the contributions code as published in Decreto-Lei 2/2018, January 2018).",
           "source_ids": [
-            "PT13"
+            "PT13",
+            "PT27"
           ],
           "confidence": "official"
         },
@@ -703,17 +707,18 @@
           "confidence": "official"
         },
         {
-          "text": "2026 IAS: EUR 537.13. Someone who also has an employment contract with another employer can be exempt if independent income is below 4 times the IAS (EUR 2,148.52), per the gov.pt guide for 2026.",
+          "text": "2026 IAS: EUR 537.13 (gov.pt guide, 2026). Someone who also has an employment contract with an unconnected employer can ask for exemption from contributions if the independent income is below EUR 2,090 per quarter (2026 value) and the job pays at least one IAS (EUR 537.13) a month. The quarterly declaration can be skipped if monthly independent income is below 4 times the IAS (EUR 2,148.52).",
           "source_ids": [
             "PT12"
           ],
           "confidence": "official"
         },
         {
-          "text": "Conflict for the reviewer: the gov.pt guide (page updated 04/09/2026) states a self-employed contribution rate of 29.6% on 70% of quarterly income, while the Social Security Institute's own guide (v1.14, May 2025) states 21.4% (25.2% for sole traders). This draft uses the Institute's figure and holds the 29.6%.",
+          "text": "Checker note: the gov.pt guide (page updated 04/09/2026) states a self-employed contribution rate of 29.6% on 70% of quarterly income. This is not supported: the Social Security Institute guide (v1.14, May 2025) and Decreto-Lei 2/2018 in the Diario da Republica both give 21.4% (25.2% for sole traders), and 29.6% appears in neither. We could not open a consolidated 2026 text of art. 168, so a human should confirm that no 2026 change exists. This draft uses 21.4% and holds the 29.6%.",
           "source_ids": [
             "PT12",
-            "PT13"
+            "PT13",
+            "PT27"
           ],
           "confidence": "hold"
         },
@@ -839,7 +844,7 @@
           "confidence": "hold"
         },
         {
-          "text": "IFICI tax regime (successor to the non-habitual resident regime): 20% special rate on Portuguese-source category A and B income from eligible activities, for 10 consecutive years, for people who were not Portuguese tax residents in the previous 5 years and never used the NHR regime. Apply by 15 January of the year after becoming resident. Startup employees are assessed by Startup Portugal. A deferred IFICI request after 23 December 2024 ends pending NHR applications.",
+          "text": "IFICI tax regime (successor to the non-habitual resident regime): 20% special rate on Portuguese-source category A and B income from eligible activities, for 10 consecutive years, for people who were not Portuguese tax residents in the previous 5 years and never used the NHR regime. Apply by 15 January of the year after becoming resident. Startup employees are assessed by Startup Portugal. Approval of an IFICI registration after 23 December 2024 ends pending NHR registration procedures.",
           "source_ids": [
             "PT22"
           ],
