@@ -1,710 +1,710 @@
 {
- "slug": "sweden",
- "title": "How to start a company in Sweden",
- "summary": "Sweden gives a founder two main routes: register as a sole trader (enskild näringsverksamhet) with the tax authority Skatteverket for a quick, low-cost start with unlimited personal liability, or form an aktiebolag (AB, private limited company) with SEK 25,000 share capital, registered with Bolagsverket. Both run largely through the government one-stop portal verksamt.se. Non-EU founders need a residence permit first, and the AB has an EEA board-residency rule.",
- "last_checked": "2026-10-12",
- "checked_by": "Claude agent draft, unreviewed",
- "next_check_due": "2027-01-15",
- "quick_facts": {
-  "structure": {
-   "text": "Register as a sole trader (enskild näringsverksamhet) with Skatteverket, or form an aktiebolag (AB) with Bolagsverket for limited liability.",
-   "source_ids": [
-    "SE1",
-    "SE2",
-    "SE3"
-   ]
+  "slug": "sweden",
+  "title": "How to start a company in Sweden",
+  "summary": "Sweden gives a founder two main routes: register as a sole trader (enskild näringsverksamhet) with the tax authority Skatteverket for a quick, low-cost start with unlimited personal liability, or form an aktiebolag (AB, private limited company) with SEK 25,000 share capital, registered with Bolagsverket. Both run largely through the government one-stop portal verksamt.se. Non-EU founders need a residence permit first, and the AB has an EEA board-residency rule.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-15",
+  "quick_facts": {
+    "structure": {
+      "text": "Register as a sole trader (enskild näringsverksamhet) with Skatteverket, or form an aktiebolag (AB) with Bolagsverket for limited liability.",
+      "source_ids": [
+        "SE1",
+        "SE2",
+        "SE3"
+      ]
+    },
+    "cost": {
+      "text": "Sole trader registration with Skatteverket is free. An AB needs SEK 25,000 share capital plus a Bolagsverket fee from SEK 2,400 and SEK 250 for the beneficial owner (as shown October 2026).",
+      "source_ids": [
+        "SE1",
+        "SE2",
+        "SE5",
+        "SE7"
+      ]
+    },
+    "time": {
+      "text": "No official processing time could be confirmed in this draft; verksamt.se points to Bolagsverket's current processing-times page.",
+      "source_ids": [
+        "SE2",
+        "SE3"
+      ]
+    },
+    "gotcha": {
+      "text": "At least half the AB board and the managing director must live in the EEA unless Bolagsverket grants an exemption, and F-skatt approval may require tax-debt certificates from countries you lived in during the last two years.",
+      "source_ids": [
+        "SE8",
+        "SE12"
+      ]
+    }
   },
-  "cost": {
-   "text": "Sole trader registration with Skatteverket is free. An AB needs SEK 25,000 share capital plus a Bolagsverket fee from SEK 2,400 and SEK 250 for the beneficial owner (as shown October 2026).",
-   "source_ids": [
-    "SE1",
-    "SE2",
-    "SE5",
-    "SE7"
-   ]
-  },
-  "time": {
-   "text": "No official processing time could be confirmed in this draft; verksamt.se points to Bolagsverket's current processing-times page.",
-   "source_ids": [
-    "SE2",
-    "SE3"
-   ]
-  },
-  "gotcha": {
-   "text": "At least half the AB board and the managing director must live in the EEA unless Bolagsverket grants an exemption, and F-skatt approval may require tax-debt certificates from countries you lived in during the last two years.",
-   "source_ids": [
-    "SE8",
-    "SE12"
-   ]
-  }
- },
- "founder_checklist": [
-  {
-   "text": "Confirm you may run a business in Sweden; non-EU founders need a residence permit first.",
-   "section_id": "visa"
-  },
-  {
-   "text": "Decide between sole trader (unlimited liability) and AB (SEK 25,000 capital).",
-   "section_id": "legal-forms"
-  },
-  {
-   "text": "Sort out your identity number (personnummer or samordningsnummer) for online registration.",
-   "section_id": "f-skatt-and-ids"
-  },
-  {
-   "text": "Register as a sole trader with Skatteverket and apply for F-skatt.",
-   "section_id": "sole-steps"
-  },
-  {
-   "text": "For an AB, check board residency, pay in capital and register with Bolagsverket.",
-   "section_id": "company-steps"
-  },
-  {
-   "text": "Decide whether to register for VAT or use the SEK 120,000 exemption.",
-   "section_id": "taxes"
-  },
-  {
-   "text": "Set up bookkeeping and invoicing that follow the content rules.",
-   "section_id": "taxes"
-  },
-  {
-   "text": "Check your social-insurance position and waiting period with Försäkringskassan.",
-   "section_id": "social"
-  }
- ],
- "sections": [
-  {
-   "id": "overview",
-   "title": "Overview",
-   "hold": false,
-   "review_status": "not_required",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "official_information": [
+  "founder_checklist": [
     {
-     "text": "Sweden gives a founder two main routes. The simplest is enskild näringsverksamhet (often called enskild firma, a sole trader business): you register with the tax authority, Skatteverket, and you are personally liable for the business. The other is the aktiebolag (AB, private limited company), registered with the company registry, Bolagsverket, which limits your personal risk but needs share capital and a few more formal steps. Most of the registration runs through one online front door, verksamt.se.",
-     "source_ids": [],
-     "confidence": "editorial"
+      "text": "Confirm you may run a business in Sweden; non-EU founders need a residence permit first.",
+      "section_id": "visa"
+    },
+    {
+      "text": "Decide between sole trader (unlimited liability) and AB (SEK 25,000 capital).",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "Sort out your identity number (personnummer or samordningsnummer) for online registration.",
+      "section_id": "f-skatt-and-ids"
+    },
+    {
+      "text": "Register as a sole trader with Skatteverket and apply for F-skatt.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "For an AB, check board residency, pay in capital and register with Bolagsverket.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Decide whether to register for VAT or use the SEK 120,000 exemption.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Set up bookkeeping and invoicing that follow the content rules.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Check your social-insurance position and waiting period with Försäkringskassan.",
+      "section_id": "social"
     }
-   ],
-   "expert_interpretation": [
+  ],
+  "sections": [
     {
-     "text": "For a first-time founder working alone, the sole trader route is usually the quickest way to start invoicing, and an AB can follow once revenue, a co-founder or a client makes limited liability worth the extra formality. Two points matter more for a founder from outside the EU than the choice of company form: a non-EU citizen needs a residence permit before running a business in Sweden, and the tax authority's F-skatt approval (the status that lets you invoice as a business) has its own checks on tax debts abroad. Both are covered below.",
-     "source_ids": [],
-     "confidence": "editorial"
+      "id": "overview",
+      "title": "Overview",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Sweden gives a founder two main routes. The simplest is enskild näringsverksamhet (often called enskild firma, a sole trader business): you register with the tax authority, Skatteverket, and you are personally liable for the business. The other is the aktiebolag (AB, private limited company), registered with the company registry, Bolagsverket, which limits your personal risk but needs share capital and a few more formal steps. Most of the registration runs through one online front door, verksamt.se.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For a first-time founder working alone, the sole trader route is usually the quickest way to start invoicing, and an AB can follow once revenue, a co-founder or a client makes limited liability worth the extra formality. Two points matter more for a founder from outside the EU than the choice of company form: a non-EU citizen needs a residence permit before running a business in Sweden, and the tax authority's F-skatt approval (the status that lets you invoice as a business) has its own checks on tax debts abroad. Both are covered below.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Read the whole guide once before choosing a form, then follow the matching step-by-step section.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Enskild näringsverksamhet (enskild firma, sole trader)",
+            "none",
+            "personal, unlimited",
+            "no",
+            "registration with Skatteverket via verksamt.se; no time stated by the source",
+            "required; simplified closing and cash method possible if turnover normally under SEK 3 million",
+            "official [SE3, SE16]"
+          ],
+          [
+            "Handelsbolag (general partnership, two or more partners)",
+            "not stated on the pages read",
+            "not stated on the pages read; confirm before choosing",
+            "no notary step described",
+            "not stated; see Bolagsverket current processing times",
+            "required (partnerships are always bookkeeping-obliged)",
+            "official [SE1, SE16]"
+          ],
+          [
+            "Aktiebolag (AB, private limited company)",
+            "SEK 25,000 share capital",
+            "normally limited to the company's assets; board members can be personally liable in some cases such as unpaid taxes",
+            "no notary step described (founding deed, articles of association, bank certificate)",
+            "not stated by verksamt; see Bolagsverket current processing times",
+            "required; annual report must be filed with Bolagsverket every year",
+            "official [SE2, SE8, SE16]"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "Verksamt.se describes the three forms most founders compare. With enskild näringsverksamhet you are the sole owner, run the business as a private individual and carry unlimited personal financial liability: if the business cannot pay its debts you must pay them with private money. A handelsbolag is started together with one or more other partners. In an aktiebolag the owners are normally not personally liable for the company's debts.",
+          "source_ids": [
+            "SE1",
+            "SE3",
+            "SE7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "An aktiebolag needs at least SEK 25,000 in share capital (aktiekapital). This is also the statutory minimum in the Companies Act (1 kap. 5 §, text current to SFS 2026:783). Capital can be cash, or property useful to the business, which an approved or authorised auditor must value.",
+          "source_ids": [
+            "SE2",
+            "SE8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Registration with Bolagsverket costs from SEK 2,400 for an aktiebolag and SEK 250 to register the beneficial owner (verklig huvudman), as shown on verksamt.se in October 2026. Registering a sole trader with Bolagsverket is optional and only protects the business name (from SEK 1,800); the Skatteverket registration is free.",
+          "source_ids": [
+            "SE1",
+            "SE2",
+            "SE3",
+            "SE5",
+            "SE6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Name protection differs: a sole trader's or handelsbolag's name is protected in the county where it is registered, an aktiebolag's name throughout Sweden. Sole traders, handelsbolag and branches normally need no auditor, and most newly started aktiebolag can choose not to have one.",
+          "source_ids": [
+            "SE1",
+            "SE2",
+            "SE7"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Pick the sole trader form if you want the fastest and cheapest start and accept personal liability. Pick an aktiebolag if you want your private assets separated from the business, expect larger contracts or investors, or want to pay yourself through the company. If you will work with a partner, a handelsbolag is the third option; its liability rules were not confirmed on the pages read (see open questions).",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide whether unlimited personal liability is acceptable for now.",
+          "source_ids": []
+        },
+        {
+          "text": "If you want limited liability, check you can pay in SEK 25,000 share capital.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "f-skatt-and-ids",
+      "title": "Country-specific trap: F-skatt, ID numbers and tax-debt certificates",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "F-skatt approval means you are responsible for paying your own taxes and fees, and your clients do not withhold tax or pay employer contributions on your invoices. Sole traders should as a rule be approved for F-skatt; if you also have employment income you get FA-skatt (F-skatt with conditions). A company holds the approval itself.",
+          "source_ids": [
+            "SE12",
+            "SE3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "F-skatt requires that you run, or intend to run, a business activity in Sweden that is independent, profit-oriented and lasting. Skatteverket decides each case, and a single or a few clients may be enough in some cases while in others the work may be treated as employment.",
+          "source_ids": [
+            "SE12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "If you have lived in Sweden for less than two years, you must submit documents showing you have no tax debts in the countries where you lived during the last two years. They come from the tax authority abroad and may be at most three months old when you apply. For a company, every manager and controlling person who has lived in Sweden for less than two years must do the same.",
+          "source_ids": [
+            "SE12",
+            "SE4",
+            "SE13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Approval can be refused if you have failed to report or pay taxes and fees to more than a trivial extent, are under a business ban or bankrupt, have misused an earlier F-skatt approval, or have an unpaid repayment claim for ROT, RUT or green-technology deductions.",
+          "source_ids": [
+            "SE12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A samordningsnummer (coordination number) is an identity number for people who are not and have not been registered in Sweden. You can apply yourself if you plan to stay less than one year and can show a connection to Sweden and a need for the number, then book an identity check at a service centre in person. It stays active for five years. If you move to Sweden for one year or more you should register your move instead, and a samordningsnummer is later replaced by a personnummer.",
+          "source_ids": [
+            "SE14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "To use verksamt.se with a samordningsnummer you can log in with Freja+, and the number must first be identity-verified. Skatteverket's separate e-service for registering foreign businesses does not require Swedish e-legitimation.",
+          "source_ids": [
+            "SE4",
+            "SE13"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The practical traps for a founder coming from abroad are paperwork delays: ordering tax-clearance certificates from the home country's tax authority (valid only three months), and getting an identity number that lets you log in. Start these early, and check with Skatteverket which number applies to you.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Order tax-debt certificates from the home country only when you are ready to apply (they expire after three months).",
+          "source_ids": []
+        },
+        {
+          "text": "Check whether you need a samordningsnummer or a personnummer before you start the online registration.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, enskild näringsverksamhet via Skatteverket",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Non-EU/EEA founders: have your residence permit in place first. Verksamt.se states that the permit must be approved before you travel to Sweden to run a business. EU/EEA citizens need no residence permit to live and work in Sweden.",
+          "source_ids": [
+            "SE4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Get an identity number that works for online registration (personnummer if you have moved to Sweden, samordningsnummer otherwise) and log in to verksamt.se, for example with Freja+ for a confirmed samordningsnummer.",
+          "source_ids": [
+            "SE4",
+            "SE14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Register the business with Skatteverket through its company-registration e-service on verksamt.se (paper form SKV 4620 as an alternative). The same service lets you apply for F-skatt or FA-skatt, register for moms (VAT), register as an employer and add your SNI (industry) codes. Registration with Skatteverket is free.",
+          "source_ids": [
+            "SE3",
+            "SE6",
+            "SE7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Apply for F-skatt if the business is your only income, or FA-skatt if you also have employment income. Applicants who have lived in Sweden under two years may need tax-debt certificates (see the previous section).",
+          "source_ids": [
+            "SE3",
+            "SE12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Optionally register the business name with Bolagsverket (from SEK 1,800); this is usually not required, though it can be needed for public procurement or licensed activities.",
+          "source_ids": [
+            "SE3",
+            "SE6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Check whether your activity needs a licence or other permit, and whether you must keep a personnel register (personalliggare) or use a certified cash register for cash or card sales.",
+          "source_ids": [
+            "SE3",
+            "SE6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. Keep bookkeeping from day one and archive records for at least seven years. The fiscal year is the calendar year except in the start-up year.",
+          "source_ids": [
+            "SE16"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Sole trader registration has no minimum capital and no notary, so the practical work is identity numbers, F-skatt and bookkeeping rather than the registration form itself.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Confirm your right to run a business in Sweden before you start.",
+          "source_ids": []
+        },
+        {
+          "text": "Register with Skatteverket and apply for F-skatt.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, aktiebolag via Bolagsverket",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Non-EU/EEA founders: have a residence permit that allows you to run the business (see the residence-permit section).",
+          "source_ids": [
+            "SE4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Open a business bank account and pay in at least SEK 25,000 share capital; the bank issues an electronic bank certificate (elektroniskt bankintyg) as proof of payment.",
+          "source_ids": [
+            "SE2",
+            "SE5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Prepare the founding deed (stiftelseurkund), the articles of association (bolagsordning) and the share register (aktiebok), which is kept by the company and not registered by Bolagsverket.",
+          "source_ids": [
+            "SE2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Appoint a board. Verksamt.se states at least one board member and one deputy; the Companies Act (8 kap. 1 and 3 §§) requires one or more members and at least one deputy if the board has fewer than three members. If there are two or more members, one is chair. A managing director (vd) is optional.",
+          "source_ids": [
+            "SE2",
+            "SE5",
+            "SE8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Check where the board lives. At least half of the board members must be resident in the EEA, the managing director must be resident in the EEA, and at least one special signatory must be resident in the EEA. Bolagsverket may grant an exemption in an individual case if there are special reasons. If no authorised representative lives in Sweden, the board must appoint a person resident in Sweden to receive legal documents (särskild delgivningsmottagare).",
+          "source_ids": [
+            "SE8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Register the company and its beneficial owner through verksamt.se or on a Bolagsverket form. The fee is from SEK 2,400 for the company and SEK 250 for the beneficial owner (October 2026). Bolagsverket then sends a registration certificate.",
+          "source_ids": [
+            "SE2",
+            "SE5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. After registration, apply to Skatteverket for F-skatt, VAT (moms) and employer registration; registration with Skatteverket is free. Owners are treated as employees and the company pays their salary.",
+          "source_ids": [
+            "SE2",
+            "SE5",
+            "SE7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. Every aktiebolag must file an annual report (årsredovisning) with Bolagsverket, whether or not it is active; late filing triggers a late fee. If more than half of the registered share capital is used up, special rules apply, including a risk of personal liability and liquidation.",
+          "source_ids": [
+            "SE2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Bolagsverket processing time: a search result suggested about 7 working days for a new aktiebolag on a snapshot dated 5 October 2026, but Bolagsverket's own page was blocked by a bot check and could not be opened. Do not publish a figure until confirmed.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Because the residency rule is about board members, a non-EEA founder who wants an AB usually needs at least one EEA-resident co-director or an exemption from Bolagsverket. Plan this before paying in the capital.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check board residency (EEA rule) before you register.",
+          "source_ids": []
+        },
+        {
+          "text": "Pay in SEK 25,000 and get the bank certificate.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes, VAT and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "VAT (moms) rates in 2026: the general rate is 25%, with 12% and 6% for certain goods and services; VAT on food is 6% from 1 April 2026.",
+          "source_ids": [
+            "SE10"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Small-business VAT exemption: you do not have to register for VAT if your turnover in Sweden is at most SEK 120,000 in the current calendar year (limit as shown by Skatteverket in October 2026) and has not exceeded that in either of the two previous years. The limit applies to the amount excluding VAT. If the conditions are met the exemption is automatic. Invoices must state that the sale is VAT-exempt, and input VAT can generally not be deducted.",
+          "source_ids": [
+            "SE9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A company whose seat is in another EU country can use the Swedish exemption only if its Swedish turnover is at most SEK 120,000 and its EU-wide turnover at most EUR 100,000 (EU small-business scheme), after notifying its home tax authority. If the seat is outside the EU, the small-business exemption does not apply.",
+          "source_ids": [
+            "SE9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Corporate income tax on an aktiebolag's profit is 20.6% (2026).",
+          "source_ids": [
+            "SE10"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A sole trader is taxed on the business's taxable surplus, not on what is withdrawn. You pay preliminary tax in equal monthly amounts yourself and report income in the NE appendix with your income tax return. Egenavgifter (self-employment contributions) are 28.97% for a person born 1959 or later in 2025 and 2026, with a standard deduction (schablonavdrag) of 25%.",
+          "source_ids": [
+            "SE17",
+            "SE11",
+            "SE10"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Invoices must show the issue date, a unique serial number, the seller's VAT number, names and addresses, the goods or services, and the VAT rate and amount; a simplified invoice is allowed up to SEK 4,000 including VAT. The same content rules apply to paper and electronic invoices.",
+          "source_ids": [
+            "SE15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "E-invoicing: suppliers to the public sector must send e-invoices (European standard EN 16931, UBL or CII) when the invoice follows a public procurement started on or after 1 April 2019, regardless of the supplier's country. A PDF does not count as an e-invoice. The page read does not describe a mandatory e-invoice rule between private businesses.",
+          "source_ids": [
+            "SE18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Bookkeeping: sole traders and companies must keep books and archive records for at least seven years. A sole trader whose turnover is normally under SEK 3 million (as shown October 2026) may prepare a simplified annual closing and use the cash method.",
+          "source_ids": [
+            "SE16"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Non-EU businesses that register for VAT in Sweden must appoint a VAT representative based in Sweden (form SKV 5703, or another document stating the agent will handle the VAT reporting); VAT reporting frequency depends on expected turnover.",
+          "source_ids": [
+            "SE13"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For a freelancer who invoices Swedish clients, the VAT exemption is automatic below SEK 120,000 but you then cannot reclaim input VAT. Ask an accountant to model both options before your first invoice.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check whether your expected turnover is under the VAT threshold and decide whether to register for VAT.",
+          "source_ids": []
+        },
+        {
+          "text": "Set up invoicing that meets the content rules.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security and pension",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "A self-employed person has the same right to social insurance benefits (sickness benefit, parental benefit, VAB) as an employee. Benefits rest on your SGI (sjukpenninggrundande inkomst), calculated from the company's profit before tax; different SGI rules apply for the first 36 months of the business. You need to be insured in Sweden, and working abroad can affect that.",
+          "source_ids": [
+            "SE20",
+            "SE19"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Sickness benefit for a sole trader: the default waiting period (karens) is 7 calendar days; you can choose 1, 14, 30, 60 or 90 days. You can receive benefit at 25%, 50%, 75% or 100%. You must report sick to Försäkringskassan on the first day or within 7 days.",
+          "source_ids": [
+            "SE19"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A sole trader pays egenavgifter (28.97% in 2026 for those born 1959 or later) instead of employer contributions. In an aktiebolag the owner is treated as an employee and the company pays the salary; the employer-contribution rate (arbetsgivaravgift) is 31.42% in 2026.",
+          "source_ids": [
+            "SE11",
+            "SE10",
+            "SE2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The price base amount (prisbasbelopp) for 2026 is SEK 59,200 and the income base amount (inkomstbasbelopp) SEK 83,400.",
+          "source_ids": [
+            "SE10"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Whether you are insured in Sweden depends on your residence and work situation, so confirm your status with Försäkringskassan before relying on any benefit.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check your insurance status with Försäkringskassan.",
+          "source_ids": []
+        },
+        {
+          "text": "Decide your waiting period for sickness benefit.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: not published here yet. Please use the official page.",
+      "hold_note_source_id": "SE21",
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the Country Guide Standard publishing gates).",
+      "open_questions_for_reviewer": [
+        "Is the egen-företagare permit realistic for the likely audience (often Indian IT contractors), or do most arrive on an employer work permit and later switch? Switching routes were not researched.",
+        "Migrationsverket requires a credible business plan, customer contacts and own funds of SEK 200,000 before the permit: confirm how this works for someone who has not yet started trading, and whether the company must be registered before applying (the document list asks for a registration certificate).",
+        "Tightened conduct (vandel) requirements: the Migrationsverket news box on the egen-foretagare page (SE21) says stricter requirements apply from 13 July (2026 item), but the details were not read. Confirm what they mean for a self-employed permit.",
+        "Are the processing-time figures (11 months, 19 months, incomplete cases only) fair to show, or should the guide only say 'check the Migrationsverket waiting-time page'?",
+        "Does any EU Blue Card, researcher or other permit let a founder in Sweden own a company while employed elsewhere? Not researched.",
+        "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"
+      ],
+      "official_information": [
+        {
+          "text": "Citizens of EU/EEA countries can live and work in Sweden without a residence permit. Citizens of non-EU/EEA countries who want to live in Sweden to run a business need a Swedish residence permit, and it must be approved before they travel to Sweden.",
+          "source_ids": [
+            "SE4"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The route is the permit for egen företagare (self-employed persons) from Migrationsverket. Requirements include a valid passport, good experience of the industry and of running a business, relevant knowledge of Swedish or English (very good Swedish if there is a lot of contact with Swedish customers or suppliers), that you run the company and own at least 51% of it, a credible budget basis, customer contacts or a network, the ability to support yourself, and enough funds to run the business. Migrationsverket makes a business-economic assessment of the plans.",
+          "source_ids": [
+            "SE21"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Funds: at least SEK 200,000 in a bank account in your own name (may be abroad if it can be transferred to Sweden), with bank statements for the last three months and proof of the amount for two years; business funds must be your own money and loans are normally not accepted. Family: SEK 100,000 for a spouse and SEK 50,000 per child on top.",
+          "source_ids": [
+            "SE21"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Application fee (October 2026): SEK 2,000 for the self-employed applicant, SEK 1,500 for an adult family member, SEK 750 for a child; not refunded if refused.",
+          "source_ids": [
+            "SE21",
+            "SE22"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "First-time applicants must generally apply from outside Sweden, at a Swedish embassy or consulate in the country of residence (not all embassies handle these cases), by e-service or form 124011. Most applicants are asked to do a digital passport check in an app. The permit is granted for at most two years and never longer than the passport is valid; it can be extended.",
+          "source_ids": [
+            "SE21",
+            "SE23"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Processing time: for complete applications Migrationsverket reports too few decided cases to give a waiting time; for incomplete applications 75% of recently decided cases were decided within 11 months (based on the last 12 months, October 2026).",
+          "source_ids": [
+            "SE21"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Extension: apply up to two months before the permit expires; you may keep working while waiting if you apply in time. Migrationsverket checks that you run the business and keep decisive influence, tax and fees are paid, and the business is profitable and lasting. For extensions, 75% of recently decided incomplete cases took up to 19 months (October 2026).",
+          "source_ids": [
+            "SE22"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Permanent residence: after at least two years with a self-employed permit you can apply for permanent residence together with the extension, if you have run the business in Sweden for two years and can support yourself from it. After tax, income must cover housing costs and leave a set living amount, SEK 6,243 per month for a single adult in 2026.",
+          "source_ids": [
+            "SE22"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "No separate start-up founder visa appeared on the Migrationsverket pages read; the egen-företagare permit above is the route found. Private firms advertise a 'startup visa', which is commercial wording and not an official category.",
+          "source_ids": [
+            "SE21"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Agent draft: the self-employed permit has a high bar (SEK 200,000 in own funds, a business with customer contacts, a credible budget), so many non-EU founders look at an employed work permit first. This needs a specialist's view before it is shown.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
     }
-   ],
-   "founder_experience": [],
-   "checklist": [
-    {
-     "text": "Read the whole guide once before choosing a form, then follow the matching step-by-step section.",
-     "source_ids": []
-    }
-   ]
-  },
-  {
-   "id": "legal-forms",
-   "title": "Choosing a legal form",
-   "hold": false,
-   "review_status": "not_required",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "comparison_table": {
-    "headers": [
-     "Form",
-     "Minimum capital",
-     "Liability",
-     "Notary",
-     "Typical setup time",
-     "Bookkeeping",
-     "Status"
-    ],
-    "rows": [
-     [
-      "Enskild näringsverksamhet (enskild firma, sole trader)",
-      "none",
-      "personal, unlimited",
-      "no",
-      "registration with Skatteverket via verksamt.se; no time stated by the source",
-      "required; simplified closing and cash method possible if turnover normally under SEK 3 million",
-      "official [SE3, SE16]"
-     ],
-     [
-      "Handelsbolag (general partnership, two or more partners)",
-      "not stated on the pages read",
-      "not stated on the pages read; confirm before choosing",
-      "no notary step described",
-      "not stated; see Bolagsverket current processing times",
-      "required (partnerships are always bookkeeping-obliged)",
-      "official [SE1, SE16]"
-     ],
-     [
-      "Aktiebolag (AB, private limited company)",
-      "SEK 25,000 share capital",
-      "normally limited to the company's assets; board members can be personally liable in some cases such as unpaid taxes",
-      "no notary step described (founding deed, articles of association, bank certificate)",
-      "not stated by verksamt; see Bolagsverket current processing times",
-      "required; annual report must be filed with Bolagsverket every year",
-      "official [SE2, SE8, SE16]"
-     ]
-    ]
-   },
-   "official_information": [
-    {
-     "text": "Verksamt.se describes the three forms most founders compare. With enskild näringsverksamhet you are the sole owner, run the business as a private individual and carry unlimited personal financial liability: if the business cannot pay its debts you must pay them with private money. A handelsbolag is started together with one or more other partners. In an aktiebolag the owners are normally not personally liable for the company's debts.",
-     "source_ids": [
-      "SE1",
-      "SE3",
-      "SE7"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "An aktiebolag needs at least SEK 25,000 in share capital (aktiekapital). This is also the statutory minimum in the Companies Act (1 kap. 5 §, text current to SFS 2026:783). Capital can be cash, or property useful to the business, which an approved or authorised auditor must value.",
-     "source_ids": [
-      "SE2",
-      "SE8"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Registration with Bolagsverket costs from SEK 2,400 for an aktiebolag and SEK 250 to register the beneficial owner (verklig huvudman), as shown on verksamt.se in October 2026. Registering a sole trader with Bolagsverket is optional and only protects the business name (from SEK 1,800); the Skatteverket registration is free.",
-     "source_ids": [
-      "SE1",
-      "SE2",
-      "SE3",
-      "SE5",
-      "SE6"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Name protection differs: a sole trader's or handelsbolag's name is protected in the county where it is registered, an aktiebolag's name throughout Sweden. Sole traders, handelsbolag and branches normally need no auditor, and most newly started aktiebolag can choose not to have one.",
-     "source_ids": [
-      "SE1",
-      "SE2",
-      "SE7"
-     ],
-     "confidence": "official"
-    }
-   ],
-   "expert_interpretation": [
-    {
-     "text": "Pick the sole trader form if you want the fastest and cheapest start and accept personal liability. Pick an aktiebolag if you want your private assets separated from the business, expect larger contracts or investors, or want to pay yourself through the company. If you will work with a partner, a handelsbolag is the third option; its liability rules were not confirmed on the pages read (see open questions).",
-     "source_ids": [],
-     "confidence": "editorial"
-    }
-   ],
-   "founder_experience": [],
-   "checklist": [
-    {
-     "text": "Decide whether unlimited personal liability is acceptable for now.",
-     "source_ids": []
-    },
-    {
-     "text": "If you want limited liability, check you can pay in SEK 25,000 share capital.",
-     "source_ids": []
-    }
-   ]
-  },
-  {
-   "id": "f-skatt-and-ids",
-   "title": "Country-specific trap: F-skatt, ID numbers and tax-debt certificates",
-   "hold": false,
-   "review_status": "not_required",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "official_information": [
-    {
-     "text": "F-skatt approval means you are responsible for paying your own taxes and fees, and your clients do not withhold tax or pay employer contributions on your invoices. Sole traders should as a rule be approved for F-skatt; if you also have employment income you get FA-skatt (F-skatt with conditions). A company holds the approval itself.",
-     "source_ids": [
-      "SE12",
-      "SE3"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "F-skatt requires that you run, or intend to run, a business activity in Sweden that is independent, profit-oriented and lasting. Skatteverket decides each case, and a single or a few clients may be enough in some cases while in others the work may be treated as employment.",
-     "source_ids": [
-      "SE12"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "If you have lived in Sweden for less than two years, you must submit documents showing you have no tax debts in the countries where you lived during the last two years. They come from the tax authority abroad and may be at most three months old when you apply. For a company, every manager and controlling person who has lived in Sweden for less than two years must do the same.",
-     "source_ids": [
-      "SE12",
-      "SE4",
-      "SE13"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Approval can be refused if you have failed to report or pay taxes and fees to more than a trivial extent, are under a business ban or bankrupt, have misused an earlier F-skatt approval, or have an unpaid repayment claim for ROT, RUT or green-technology deductions.",
-     "source_ids": [
-      "SE12"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "A samordningsnummer (coordination number) is an identity number for people who are not and have not been registered in Sweden. You can apply yourself if you plan to stay less than one year and can show a connection to Sweden and a need for the number, then book an identity check at a service centre in person. It stays active for five years. If you move to Sweden for one year or more you should register your move instead, and a samordningsnummer is later replaced by a personnummer.",
-     "source_ids": [
-      "SE14"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "To use verksamt.se with a samordningsnummer you can log in with Freja+, and the number must first be identity-verified. Skatteverket's separate e-service for registering foreign businesses does not require Swedish e-legitimation.",
-     "source_ids": [
-      "SE4",
-      "SE13"
-     ],
-     "confidence": "official"
-    }
-   ],
-   "expert_interpretation": [
-    {
-     "text": "The practical traps for a founder coming from abroad are paperwork delays: ordering tax-clearance certificates from the home country's tax authority (valid only three months), and getting an identity number that lets you log in. Start these early, and check with Skatteverket which number applies to you.",
-     "source_ids": [],
-     "confidence": "editorial"
-    }
-   ],
-   "founder_experience": [],
-   "checklist": [
-    {
-     "text": "Order tax-debt certificates from the home country only when you are ready to apply (they expire after three months).",
-     "source_ids": []
-    },
-    {
-     "text": "Check whether you need a samordningsnummer or a personnummer before you start the online registration.",
-     "source_ids": []
-    }
-   ]
-  },
-  {
-   "id": "sole-steps",
-   "title": "Step by step, enskild näringsverksamhet via Skatteverket",
-   "hold": false,
-   "review_status": "not_required",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "official_information": [
-    {
-     "text": "1. Non-EU/EEA founders: have your residence permit in place first. Verksamt.se states that the permit must be approved before you travel to Sweden to run a business. EU/EEA citizens need no residence permit to live and work in Sweden.",
-     "source_ids": [
-      "SE4"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "2. Get an identity number that works for online registration (personnummer if you have moved to Sweden, samordningsnummer otherwise) and log in to verksamt.se, for example with Freja+ for a confirmed samordningsnummer.",
-     "source_ids": [
-      "SE4",
-      "SE14"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "3. Register the business with Skatteverket through its company-registration e-service on verksamt.se (paper form SKV 4620 as an alternative). The same service lets you apply for F-skatt or FA-skatt, register for moms (VAT), register as an employer and add your SNI (industry) codes. Registration with Skatteverket is free.",
-     "source_ids": [
-      "SE3",
-      "SE6",
-      "SE7"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "4. Apply for F-skatt if the business is your only income, or FA-skatt if you also have employment income. Applicants who have lived in Sweden under two years may need tax-debt certificates (see the previous section).",
-     "source_ids": [
-      "SE3",
-      "SE12"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "5. Optionally register the business name with Bolagsverket (from SEK 1,800); this is usually not required, though it can be needed for public procurement or licensed activities.",
-     "source_ids": [
-      "SE3",
-      "SE6"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "6. Check whether your activity needs a licence or other permit, and whether you must keep a personnel register (personalliggare) or use a certified cash register for cash or card sales.",
-     "source_ids": [
-      "SE3",
-      "SE6"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "7. Keep bookkeeping from day one and archive records for at least seven years. The fiscal year is the calendar year except in the start-up year.",
-     "source_ids": [
-      "SE16"
-     ],
-     "confidence": "official"
-    }
-   ],
-   "expert_interpretation": [
-    {
-     "text": "Sole trader registration has no minimum capital and no notary, so the practical work is identity numbers, F-skatt and bookkeeping rather than the registration form itself.",
-     "source_ids": [],
-     "confidence": "editorial"
-    }
-   ],
-   "founder_experience": [],
-   "checklist": [
-    {
-     "text": "Confirm your right to run a business in Sweden before you start.",
-     "source_ids": []
-    },
-    {
-     "text": "Register with Skatteverket and apply for F-skatt.",
-     "source_ids": []
-    }
-   ]
-  },
-  {
-   "id": "company-steps",
-   "title": "Step by step, aktiebolag via Bolagsverket",
-   "hold": false,
-   "review_status": "not_required",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "official_information": [
-    {
-     "text": "1. Non-EU/EEA founders: have a residence permit that allows you to run the business (see the residence-permit section).",
-     "source_ids": [
-      "SE4"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "2. Open a business bank account and pay in at least SEK 25,000 share capital; the bank issues an electronic bank certificate (elektroniskt bankintyg) as proof of payment.",
-     "source_ids": [
-      "SE2",
-      "SE5"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "3. Prepare the founding deed (stiftelseurkund), the articles of association (bolagsordning) and the share register (aktiebok), which is kept by the company and not registered by Bolagsverket.",
-     "source_ids": [
-      "SE2"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "4. Appoint a board. Verksamt.se states at least one board member and one deputy; the Companies Act (8 kap. 1 and 3 §§) requires one or more members and at least one deputy if the board has fewer than three members. If there are two or more members, one is chair. A managing director (vd) is optional.",
-     "source_ids": [
-      "SE2",
-      "SE5",
-      "SE8"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "5. Check where the board lives. At least half of the board members must be resident in the EEA, the managing director must be resident in the EEA, and at least one special signatory must be resident in the EEA. Bolagsverket may grant an exemption in an individual case if there are special reasons. If no authorised representative lives in Sweden, the board must appoint a person resident in Sweden to receive legal documents (särskild delgivningsmottagare).",
-     "source_ids": [
-      "SE8"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "6. Register the company and its beneficial owner through verksamt.se or on a Bolagsverket form. The fee is from SEK 2,400 for the company and SEK 250 for the beneficial owner (October 2026). Bolagsverket then sends a registration certificate.",
-     "source_ids": [
-      "SE2",
-      "SE5"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "7. After registration, apply to Skatteverket for F-skatt, VAT (moms) and employer registration; registration with Skatteverket is free. Owners are treated as employees and the company pays their salary.",
-     "source_ids": [
-      "SE2",
-      "SE5",
-      "SE7"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "8. Every aktiebolag must file an annual report (årsredovisning) with Bolagsverket, whether or not it is active; late filing triggers a late fee. If more than half of the registered share capital is used up, special rules apply, including a risk of personal liability and liquidation.",
-     "source_ids": [
-      "SE2"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Bolagsverket processing time: a search result suggested about 7 working days for a new aktiebolag on a snapshot dated 5 October 2026, but Bolagsverket's own page was blocked by a bot check and could not be opened. Do not publish a figure until confirmed.",
-     "source_ids": [],
-     "confidence": "hold"
-    }
-   ],
-   "expert_interpretation": [
-    {
-     "text": "Because the residency rule is about board members, a non-EEA founder who wants an AB usually needs at least one EEA-resident co-director or an exemption from Bolagsverket. Plan this before paying in the capital.",
-     "source_ids": [],
-     "confidence": "editorial"
-    }
-   ],
-   "founder_experience": [],
-   "checklist": [
-    {
-     "text": "Check board residency (EEA rule) before you register.",
-     "source_ids": []
-    },
-    {
-     "text": "Pay in SEK 25,000 and get the bank certificate.",
-     "source_ids": []
-    }
-   ]
-  },
-  {
-   "id": "taxes",
-   "title": "Taxes, VAT and invoicing",
-   "hold": false,
-   "review_status": "not_required",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "official_information": [
-    {
-     "text": "VAT (moms) rates in 2026: the general rate is 25%, with 12% and 6% for certain goods and services; VAT on food is 6% from 1 April 2026.",
-     "source_ids": [
-      "SE10"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Small-business VAT exemption: you do not have to register for VAT if your turnover in Sweden is at most SEK 120,000 in the current calendar year (limit as shown by Skatteverket in October 2026) and has not exceeded that in either of the two previous years. The limit applies to the amount excluding VAT. If the conditions are met the exemption is automatic. Invoices must state that the sale is VAT-exempt, and input VAT can generally not be deducted.",
-     "source_ids": [
-      "SE9"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "A company whose seat is in another EU country can use the Swedish exemption only if its Swedish turnover is at most SEK 120,000 and its EU-wide turnover at most EUR 100,000 (EU small-business scheme), after notifying its home tax authority. If the seat is outside the EU, the small-business exemption does not apply.",
-     "source_ids": [
-      "SE9"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Corporate income tax on an aktiebolag's profit is 20.6% (2026).",
-     "source_ids": [
-      "SE10"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "A sole trader is taxed on the business's taxable surplus, not on what is withdrawn. You pay preliminary tax in equal monthly amounts yourself and report income in the NE appendix with your income tax return. Egenavgifter (self-employment contributions) are 28.97% for a person born 1959 or later in 2025 and 2026, with a standard deduction (schablonavdrag) of 25%.",
-     "source_ids": [
-      "SE17",
-      "SE11",
-      "SE10"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Invoices must show the issue date, a unique serial number, the seller's VAT number, names and addresses, the goods or services, and the VAT rate and amount; a simplified invoice is allowed up to SEK 4,000 including VAT. The same content rules apply to paper and electronic invoices.",
-     "source_ids": [
-      "SE15"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "E-invoicing: suppliers to the public sector must send e-invoices (European standard EN 16931, UBL or CII) when the invoice follows a public procurement started on or after 1 April 2019, regardless of the supplier's country. A PDF does not count as an e-invoice. The page read does not describe a mandatory e-invoice rule between private businesses.",
-     "source_ids": [
-      "SE18"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Bookkeeping: sole traders and companies must keep books and archive records for at least seven years. A sole trader whose turnover is normally under SEK 3 million (as shown October 2026) may prepare a simplified annual closing and use the cash method.",
-     "source_ids": [
-      "SE16"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Non-EU businesses that register for VAT in Sweden must appoint a VAT representative based in Sweden (form SKV 5703, or another document stating the agent will handle the VAT reporting); VAT reporting frequency depends on expected turnover.",
-     "source_ids": [
-      "SE13"
-     ],
-     "confidence": "official"
-    }
-   ],
-   "expert_interpretation": [
-    {
-     "text": "For a freelancer who invoices Swedish clients, the VAT exemption is automatic below SEK 120,000 but you then cannot reclaim input VAT. Ask an accountant to model both options before your first invoice.",
-     "source_ids": [],
-     "confidence": "editorial"
-    }
-   ],
-   "founder_experience": [],
-   "checklist": [
-    {
-     "text": "Check whether your expected turnover is under the VAT threshold and decide whether to register for VAT.",
-     "source_ids": []
-    },
-    {
-     "text": "Set up invoicing that meets the content rules.",
-     "source_ids": []
-    }
-   ]
-  },
-  {
-   "id": "social",
-   "title": "Social security and pension",
-   "hold": false,
-   "review_status": "not_required",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "official_information": [
-    {
-     "text": "A self-employed person has the same right to social insurance benefits (sickness benefit, parental benefit, VAB) as an employee. Benefits rest on your SGI (sjukpenninggrundande inkomst), calculated from the company's profit before tax; different SGI rules apply for the first 36 months of the business. You need to be insured in Sweden, and working abroad can affect that.",
-     "source_ids": [
-      "SE20",
-      "SE19"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "Sickness benefit for a sole trader: the default waiting period (karens) is 7 calendar days; you can choose 1, 14, 30, 60 or 90 days. You can receive benefit at 25%, 50%, 75% or 100%. You must report sick to Försäkringskassan on the first day or within 7 days.",
-     "source_ids": [
-      "SE19"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "A sole trader pays egenavgifter (28.97% in 2026 for those born 1959 or later) instead of employer contributions. In an aktiebolag the owner is treated as an employee and the company pays the salary; the employer-contribution rate (arbetsgivaravgift) is 31.42% in 2026.",
-     "source_ids": [
-      "SE11",
-      "SE10",
-      "SE2"
-     ],
-     "confidence": "official"
-    },
-    {
-     "text": "The price base amount (prisbasbelopp) for 2026 is SEK 59,200 and the income base amount (inkomstbasbelopp) SEK 83,400.",
-     "source_ids": [
-      "SE10"
-     ],
-     "confidence": "official"
-    }
-   ],
-   "expert_interpretation": [
-    {
-     "text": "Whether you are insured in Sweden depends on your residence and work situation, so confirm your status with Försäkringskassan before relying on any benefit.",
-     "source_ids": [],
-     "confidence": "editorial"
-    }
-   ],
-   "founder_experience": [],
-   "checklist": [
-    {
-     "text": "Check your insurance status with Försäkringskassan.",
-     "source_ids": []
-    },
-    {
-     "text": "Decide your waiting period for sickness benefit.",
-     "source_ids": []
-    }
-   ]
-  },
-  {
-   "id": "visa",
-   "title": "Residence permit for non-EU founders",
-   "hold": true,
-   "review_status": "pending",
-   "reviewed_by": null,
-   "reviewed_on": null,
-   "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
-   "hold_note_source_id": "SE21",
-   "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the Country Guide Standard publishing gates).",
-   "open_questions_for_reviewer": [
-    "Is the egen-företagare permit realistic for the likely audience (often Indian IT contractors), or do most arrive on an employer work permit and later switch? Switching routes were not researched.",
-    "Migrationsverket requires a credible business plan, customer contacts and own funds of SEK 200,000 before the permit: confirm how this works for someone who has not yet started trading, and whether the company must be registered before applying (the document list asks for a registration certificate).",
-    "Tightened conduct (vandel) requirements: the Migrationsverket news box on the egen-foretagare page (SE21) says stricter requirements apply from 13 July (2026 item), but the details were not read. Confirm what they mean for a self-employed permit.",
-    "Are the processing-time figures (11 months, 19 months, incomplete cases only) fair to show, or should the guide only say 'check the Migrationsverket waiting-time page'?",
-    "Does any EU Blue Card, researcher or other permit let a founder in Sweden own a company while employed elsewhere? Not researched.",
-    "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"
-   ],
-   "official_information": [
-    {
-     "text": "Citizens of EU/EEA countries can live and work in Sweden without a residence permit. Citizens of non-EU/EEA countries who want to live in Sweden to run a business need a Swedish residence permit, and it must be approved before they travel to Sweden.",
-     "source_ids": [
-      "SE4"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "The route is the permit for egen företagare (self-employed persons) from Migrationsverket. Requirements include a valid passport, good experience of the industry and of running a business, relevant knowledge of Swedish or English (very good Swedish if there is a lot of contact with Swedish customers or suppliers), that you run the company and own at least 51% of it, a credible budget basis, customer contacts or a network, the ability to support yourself, and enough funds to run the business. Migrationsverket makes a business-economic assessment of the plans.",
-     "source_ids": [
-      "SE21"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "Funds: at least SEK 200,000 in a bank account in your own name (may be abroad if it can be transferred to Sweden), with bank statements for the last three months and proof of the amount for two years; business funds must be your own money and loans are normally not accepted. Family: SEK 100,000 for a spouse and SEK 50,000 per child on top.",
-     "source_ids": [
-      "SE21"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "Application fee (October 2026): SEK 2,000 for the self-employed applicant, SEK 1,500 for an adult family member, SEK 750 for a child; not refunded if refused.",
-     "source_ids": [
-      "SE21",
-      "SE22"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "First-time applicants must generally apply from outside Sweden, at a Swedish embassy or consulate in the country of residence (not all embassies handle these cases), by e-service or form 124011. Most applicants are asked to do a digital passport check in an app. The permit is granted for at most two years and never longer than the passport is valid; it can be extended.",
-     "source_ids": [
-      "SE21",
-      "SE23"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "Processing time: for complete applications Migrationsverket reports too few decided cases to give a waiting time; for incomplete applications 75% of recently decided cases were decided within 11 months (based on the last 12 months, October 2026).",
-     "source_ids": [
-      "SE21"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "Extension: apply up to two months before the permit expires; you may keep working while waiting if you apply in time. Migrationsverket checks that you run the business and keep decisive influence, tax and fees are paid, and the business is profitable and lasting. For extensions, 75% of recently decided incomplete cases took up to 19 months (October 2026).",
-     "source_ids": [
-      "SE22"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "Permanent residence: after at least two years with a self-employed permit you can apply for permanent residence together with the extension, if you have run the business in Sweden for two years and can support yourself from it. After tax, income must cover housing costs and leave a set living amount, SEK 6,243 per month for a single adult in 2026.",
-     "source_ids": [
-      "SE22"
-     ],
-     "confidence": "hold"
-    },
-    {
-     "text": "No separate start-up founder visa appeared on the Migrationsverket pages read; the egen-företagare permit above is the route found. Private firms advertise a 'startup visa', which is commercial wording and not an official category.",
-     "source_ids": [
-      "SE21"
-     ],
-     "confidence": "hold"
-    }
-   ],
-   "expert_interpretation": [
-    {
-     "text": "Agent draft: the self-employed permit has a high bar (SEK 200,000 in own funds, a business with customer contacts, a credible budget), so many non-EU founders look at an employed work permit first. This needs a specialist's view before it is shown.",
-     "source_ids": [],
-     "confidence": "editorial"
-    }
-   ],
-   "founder_experience": [],
-   "checklist": []
-  }
- ]
+  ]
 }

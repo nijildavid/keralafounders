@@ -773,7 +773,7 @@
       "review_status": "pending",
       "reviewed_by": null,
       "reviewed_on": null,
-      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note": "Residence permits for founders from outside the EU: not published here yet. Please use the official page.",
       "hold_note_source_id": "PT19",
       "internal_notes": "Agent draft, agent review, not legal advice. The immigration authority AIMA's own pages (aima.gov.pt) returned HTTP 503 / certificate errors in this session and were NOT opened, so permit validity, AIMA steps and fees come from nothing opened and are left out. Visa documents come from the MNE visa portal; the 60-day figure from a gov.pt service page; Startup Visa from a May 2022 IAPMEI guide (old). An immigration lawyer must verify everything and Nijil must lift the flag before it can go live.",
       "open_questions_for_reviewer": [

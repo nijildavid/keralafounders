@@ -673,7 +673,7 @@
       "review_status": "pending",
       "reviewed_by": null,
       "reviewed_on": null,
-      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note": "Residence permits for founders from outside the EU: not published here yet. Please use the official page.",
       "hold_note_source_id": "MT8",
       "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. The self-employment criteria rest on an Identita FAQ and a Jobsplus guide dated January 2021 that may be out of date. Malta also changed its labour migration rules in 2025 (a policy document of June 2025 is linked from the Identita FAQ but was not read in full). The Malta Enterprise and tax-authority pages were blocked from this environment.",
       "open_questions_for_reviewer": [

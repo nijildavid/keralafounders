@@ -673,7 +673,7 @@
       "review_status": "pending",
       "reviewed_by": null,
       "reviewed_on": null,
-      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note": "Residence permits for founders from outside the EU: not published here yet. Please use the official page.",
       "hold_note_source_id": "CZ18",
       "internal_notes": "Agent draft, agent review, not legal advice. Figures come from the Ministry of the Interior's information portal (ipc.gov.cz), the Ministry of Foreign Affairs and an archived Ministry page. Not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the Standard's publishing gates).",
       "open_questions_for_reviewer": [

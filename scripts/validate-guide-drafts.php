@@ -80,6 +80,49 @@ foreach ($slugs as $slug) {
     }
     if (!is_file("$d/evidence-log.md")) $own[] = 'evidence-log.md missing';
 
+    // ---- Standard evals added 14 Oct 2026 (approved wording, CG-06) ----
+    $srcById = [];
+    foreach (array_merge(jload($tmp . '/guidance/sources.json'), $sources) as $x) { $srcById[$x['id']] = $x; }
+    $log = is_file("$d/evidence-log.md") ? file_get_contents("$d/evidence-log.md") : '';
+    if (stripos($log, 'Independent check') === false) $own[] = 'QA4: evidence-log.md has no "Independent check" section (second-agent re-verification missing)';
+    $forbidden = '/\b(reviewed by|lawyer[- ]reviewed|legally reviewed|legal review|we guarantee|guaranteed (?:approval|result|speed|to))\b/i';
+    $needsYear = [];
+    foreach ($guide['sections'] ?? [] as $sec) {
+        $isVisa = ($sec['id'] ?? '') === 'visa';
+        if ($isVisa) {
+            $note = (string)($sec['hold_note'] ?? '');
+            $sid = $sec['hold_note_source_id'] ?? '';
+            if ($note === '') $own[] = 'visa: hold_note missing';
+            if (preg_match($forbidden, $note)) $own[] = 'visa: hold_note uses a forbidden review/guarantee phrase';
+            if ($sid === '' || !isset($srcById[$sid])) {
+                $own[] = 'visa: hold_note_source_id missing or not a known source (readers need an official link)';
+            } elseif (!in_array($srcById[$sid]['type'], ['official', 'government_portal'], true) || strpos($srcById[$sid]['url'], 'https://') !== 0) {
+                $own[] = 'visa: hold_note_source_id must be an official https page';
+            }
+        }
+        if (!empty($sec['hold'])) continue;
+        foreach (['official_information', 'expert_interpretation', 'founder_experience'] as $k) {
+            foreach ($sec[$k] ?? [] as $i => $c) {
+                $conf = $c['confidence'] ?? 'official';
+                $text = (string)($c['text'] ?? '');
+                if (preg_match($forbidden, $text)) $own[] = "section {$sec['id']} $k #$i uses a forbidden review/guarantee phrase";
+                if ($conf === 'official') {
+                    $types = array_map(fn($id) => $srcById[$id]['type'] ?? '?', $c['source_ids'] ?? []);
+                    if ($types && !array_diff($types, ['secondary'])) $own[] = "section {$sec['id']} $k #$i is shown as official but cites only secondary sources";
+                    if (preg_match('/(€|EUR|PLN|CZK|SEK|CHF|\d\s?%)/', $text) && !preg_match('/\b20(2\d|3\d)\b/', $text)) $needsYear[] = "{$sec['id']} $k #$i";
+                }
+            }
+        }
+    }
+    foreach ($mine as $f) {
+        if (($f['status'] ?? '') === 'hold') continue;
+        if (preg_match($forbidden, ($f['answer'] ?? '') . ' ' . ($f['question'] ?? ''))) $own[] = 'FAQ ' . ($f['id'] ?? '?') . ' uses a forbidden review/guarantee phrase';
+    }
+    if ($needsYear) {
+        // Standard section 4: every annual figure carries its year. Heuristic, so reported as a warning with a count, not a failure.
+        fwrite(STDERR, "[WARN] $slug: " . count($needsYear) . " rendered claims show a figure without a 20xx year (first: " . implode(', ', array_slice($needsYear, 0, 4)) . ")\n");
+    }
+
     // Merge into the temp copy
     $all = array_merge(jload($tmp . '/guidance/sources.json'), $sources);
     file_put_contents($tmp . '/guidance/sources.json', json_encode($all, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));

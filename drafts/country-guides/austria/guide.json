@@ -779,7 +779,7 @@
       "review_status": "pending",
       "reviewed_by": null,
       "reviewed_on": null,
-      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note": "Residence permits for founders from outside the EU: not published here yet. Please use the official page.",
       "hold_note_source_id": "AT29",
       "internal_notes": "Agent draft, agent review, not legal advice. Prepared content is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. Figures come from migration.gv.at and oesterreich.gv.at (BMI); none were checked against the statute (NAG, AuslBG) or the fee regulation.",
       "open_questions_for_reviewer": [

@@ -1,9 +1,18 @@
 # Country Guide Standard — DRAFT v0.1 (CG-01)
 
-Status: **draft for Nijil's approval.** Written 12 Oct 2026 from the six live
-guides (Germany, Netherlands, Spain, Belgium, Greece, Slovenia) and
-`scripts/validate-guidance-content.php`. Nothing here changes the live site.
-Until Nijil approves, every guide written to it is a draft in `drafts/`.
+Status: **approved by Nijil on 14 Oct 2026**, delegated after the eval run below
+(Nijil said he could not read it all and asked for the evals to be checked
+first). Written 12 Oct 2026 from the six live guides (Germany, Netherlands, Spain,
+Belgium, Greece, Slovenia) and `scripts/validate-guidance-content.php`.
+Every guide written to it starts as a draft in `drafts/`; moving one live needs
+Nijil's approval of that specific publish (section 8).
+
+Eval run on approval (14 Oct 2026): all ten drafts (Austria, Cyprus, Czechia,
+Finland, Ireland, Malta, Poland, Portugal, Slovakia, Sweden) pass
+`php scripts/validate-guide-drafts.php`, each has a second-agent "Independent
+check" in its evidence log, and `php scripts/validate-guidance-content.php`
+passes on the live content. Open: a human spot-check in a browser (see each
+country's `open-questions.md`).
 
 ## 1. Purpose
 A Guidance guide helps a Kerala-origin founder understand how to start and run a
@@ -42,8 +51,9 @@ source. It is **general information, not legal or tax advice.**
 ## 5. Non-EU residence-permit section (`visa`)
 - Always present, in every guide, even when held.
 - Content: who needs a permit, which routes exist for founders and self-employed, the official link, the steps, the costs and the processing time, each dated and sourced to the immigration authority.
-- `hold: true`, `review_status: "pending"` and `hold_note` in the standard wording until Nijil lifts it. The `internal_notes` and `open_questions_for_reviewer` fields list what the reviewer must confirm.
-- The text agent-drafted for this section is labelled **"agent review, not legal advice"** in `internal_notes`. It may not be described as "reviewed by a lawyer" (CG-06 decides what "reviewed" may mean).
+- `hold: true`, `review_status: "pending"` until Nijil lifts it. The section shows readers only the `hold_note` and a link to the official immigration page (`hold_note_source_id`, an official https source). Approved wording: "Residence permits for founders from outside the EU: not published here yet. Please use the official page." The `internal_notes` and `open_questions_for_reviewer` fields list what a reviewer must confirm.
+- The text agent-drafted for this section is labelled **"agent review, not legal advice"** in `internal_notes`.
+- **What "checked" may mean (CG-06, approved 14 Oct 2026):** the site may say "Checked against official sources on [date]. General information, not legal or tax advice." It may not say "reviewed", "lawyer-reviewed" or imply legal review until a licensed human has read that guide. The validator fails these phrases.
 
 ## 6. FAQ rules
 At least 5 entries. Questions are the ones a Kerala-origin founder actually asks (can I start remotely, how much does it cost, VAT, social security, do I need a bank account first, permit). Each answer is 1 to 3 sentences, has `source_ids`, `last_checked`, `origin: "research"`, and `status: "render"` (or `"hold"` for visa answers).
@@ -58,7 +68,10 @@ At least 5 entries. Questions are the ones a Kerala-origin founder actually asks
 ## 8. Publishing gates
 Draft → agent re-verification (QA 4) → legal pass labelled per CG-06 → design/mobile check → **Nijil approves the publish** (CG-13). Only then a country's hub status changes from `planned` and its files move from `drafts/` into `public/content/guidance/`.
 
-## 9. Open points for Nijil
-- Is a 4-fact `quick_facts` strip and a held `visa` section in every guide what you want? (Matches the six live guides.)
-- Should a draft be allowed to cite an English-only official page when no national-language page exists? (Standard says yes, flagged.)
-- CG-06 must still define what "reviewed" may mean.
+## 9. Decisions recorded (Nijil, 14 Oct 2026)
+- Four-fact summary strip and a held permit section in every guide: yes.
+- Permit sections stay hidden; show only an official link.
+- Country-specific warning sections stay (for example Ireland's EEA-resident director rule).
+- Re-check dates 8 to 15 January 2027.
+- "Checked against official sources, not legal advice" wording; never "reviewed".
+- Stand-in sources (law-text copies, government service portals, chamber estimates, reader proxies) are not yet decided: Nijil may open a browser to scan the links listed in each `open-questions.md`. Until then they are tagged by type and a claim resting only on a secondary source is held.
