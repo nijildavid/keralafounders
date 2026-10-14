@@ -1,0 +1,778 @@
+{
+  "slug": "slovakia",
+  "title": "How to start a company in Slovakia",
+  "summary": "Slovakia gives a founder two main routes: register a živnosť (trade licence, sole trader) at a trade office, or form an s.r.o. (limited liability company) with EUR 5,000 minimum capital through the commercial register. A foreign person may run a trade on the same conditions as a Slovak one. Non-EU founders need a separate residence permit, covered in a held section.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-08",
+  "quick_facts": {
+    "structure": {
+      "text": "Register a živnosť (sole trader) at a trade office, or form an s.r.o. (limited liability company). A non-resident can do either; the Commercial Code sets no residence or nationality condition for a managing director (konateľ).",
+      "source_ids": [
+        "SK2",
+        "SK1"
+      ]
+    },
+    "cost": {
+      "text": "A trade licence costs EUR 7 per free trade (2026 fee table). An s.r.o. needs minimum capital of EUR 5,000 (2026 text) and a EUR 220 court registration fee (schedule in force from 17 August 2026); notary or lawyer fees for the founding deed are not covered here.",
+      "source_ids": [
+        "SK3",
+        "SK1",
+        "SK4"
+      ]
+    },
+    "time": {
+      "text": "The trade office must issue the licence within 3 working days of receiving a complete notification. Under the register law in force since 17 August 2026, the register court or registrar must register an s.r.o. within 2 working days of receiving a complete proposal. These are legal deadlines, not guarantees.",
+      "source_ids": [
+        "SK2",
+        "SK4"
+      ]
+    },
+    "gotcha": {
+      "text": "A new sole trader's compulsory sickness and pension insurance starts only from the first day of the sixth calendar month after the licence. Health insurance is a separate system, so check its start with a health insurer. After the holiday a starter pays the micro-contribution (2026: EUR 131.34 a month on a EUR 396.24 base); once income passes the thresholds the levy rises (2026: minimum base EUR 914.40, about EUR 303.11 a month, from 1 July 2026). Plan cash for the end of the holiday.",
+      "source_ids": [
+        "SK7",
+        "SK9"
+      ]
+    }
+  },
+  "founder_checklist": [
+    {
+      "text": "Decide between a živnosť (fast, low capital, unlimited personal liability) and an s.r.o. (EUR 5,000 minimum capital, capped liability).",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "Check which kind of trade your activity is (free, craft or regulated) and whether it needs proof of qualification.",
+      "section_id": "trade-licence-types"
+    },
+    {
+      "text": "For a živnosť: file the notification at a trade office or online and pay the fee; for a non-Slovak citizen attach a criminal-record extract no older than 3 months with an official translation.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "For an s.r.o.: pay in the capital, have the founding deed made as a notarial record or lawyer-authorised document, and file the registration proposal.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Check your expected turnover against the EUR 50,000 VAT registration threshold (2026) and decide whether the 60% flat-rate expense option suits you.",
+      "section_id": "flat-rate-expenses"
+    },
+    {
+      "text": "Register with Sociálna poisťovňa and a health insurer, and budget for the end of the six-month social-insurance holiday.",
+      "section_id": "social"
+    },
+    {
+      "text": "Pick a certified Peppol delivery provider before 1 January 2027 so you can receive (and, if VAT-registered, issue) e-invoices.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "If you are from outside the EU, read the held residence-permit section and ask an immigration lawyer before registering anything.",
+      "section_id": "visa"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        {
+          "text": "Slovakia gives a founder two practical routes. The živnosť (trade licence) is the sole-trader route: the person is personally liable and there is no minimum capital. The s.r.o. (spoločnosť s ručením obmedzeným) is the usual limited company: it needs minimum capital and a founding deed, and shields the founders' private assets. Slovak law lets a person or company based outside Slovakia run a trade on the same conditions as a Slovak one, unless another law says otherwise. For a founder from outside the EU, the company or licence is only the first half: the right to live and run it in Slovakia is a separate permit, covered in the held section below. Several rules change on 1 January 2027 (mandatory e-invoicing between VAT payers), so check the date of this draft before acting.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Živnosť (sole trader with trade licence)",
+            "none",
+            "personal, with all own assets",
+            "no",
+            "Trade office must issue the licence within 3 working days of a complete notification [SK2]",
+            "see the taxes section; the 60% flat-rate option exists for non-VAT payers [SK6]",
+            "official [SK2]"
+          ],
+          [
+            "Spoločnosť s ručením obmedzeným (s.r.o.)",
+            "EUR 5,000 (2026 text); each partner's contribution at least EUR 750",
+            "company liable with all its assets; a partner is liable up to their unpaid contribution",
+            "founding deed as a notarial record or lawyer-authorised document (the simplified e-form route is the exception)",
+            "Register court or registrar must register within 2 working days of a complete proposal (law in force from 17 Aug 2026) [SK4]",
+            "company accounting and annual accounts; confirm scope with an accountant",
+            "official [SK1]"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "A person or company with residence or registered office outside Slovakia (a foreign person) may run a trade in Slovakia on the same conditions and to the same extent as a Slovak person, unless the trade act or another law says otherwise (Živnostenský zákon § 5(3), version in force 17 August 2026).",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The basic capital of an s.r.o. must be at least EUR 5,000 (Obchodný zákonník § 108(1), version in force 17 August 2026), each partner's contribution at least EUR 750 (§ 109(1)), and an s.r.o. can have at most 50 partners (§ 105(3)). One person can found it (§ 105(2)).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "An s.r.o. is liable for its obligations with all its assets; a partner guarantees the company's debts up to their unpaid contribution as entered in the commercial register (§ 106).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The founding contract (or, for a sole founder, the founder's deed) must be made as a notarial record or as a document authorised by a lawyer, and be signed by all founders (§ 57(1) and (3)).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Before the registration proposal is filed, at least 30% of each cash contribution must be paid in, and the total paid-in contributions must be at least 50% of the legal minimum capital (that is EUR 2,500). A company with a single founder can be registered only when its capital is paid in in full (§ 111(1) and (2)).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A simplified founding by an official electronic form is possible only if the company has at most five partners, is founded to do business, its business purpose consists only of up to 15 activities from the list of free trades, its name carries \"s. r. o.\", contributions are cash only, the managing director administers the contributions and there is no supervisory board (§ 110a).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "An s.r.o. cannot be founded by a person on the tax-debtor list or with social-insurance arrears unless the tax administrator consents, but this restriction does not apply if the founder is a foreign person (§ 105b).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A managing director (konateľ) must be a natural person who is not listed as a debtor in the execution-authorisation register at the time of entry; the Commercial Code sets no nationality or residence condition for the role (§ 133(2)).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "A živnosť is the cheaper and quicker way to test a first client. An s.r.o. is worth considering once personal liability, an investor or a co-founder matters. Moving from one to the other later is possible, but it means a new registration and new contracts.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide how much personal liability you can accept.",
+          "source_ids": []
+        },
+        {
+          "text": "Check whether an s.r.o. needs a Slovak registered office address (see open questions).",
+          "source_ids": []
+        },
+        {
+          "text": "Confirm with a Slovak notary or lawyer which founding route fits your case.",
+          "source_ids": []
+        }
+      ]
+    },
+    {
+      "id": "trade-licence-types",
+      "title": "Trap: kinds of trade and what a foreigner must show",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "A trade licence is issued by the trade office on notification (ohlásenie). A natural person must be at least 18, have legal capacity and be of good repute (bezúhonnosť) (Živnostenský zákon § 6(1)).",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A person who is not a Slovak citizen and to whom the good-repute condition applies must attach a criminal-record extract (§ 46(1)(f)). For a foreign person this is the extract issued by the state whose national the person is, or in which they lived at least six months continuously in the last five years; it must not be older than three months and must come with an officially certified translation into Slovak (§ 46(5)).",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A natural person must show the right to use the premises given as the place of business if it differs from their home address (§ 46(1)(b)). The act distinguishes free, craft and regulated trades; for craft and regulated trades the person must also prove professional competence or appoint a responsible representative (§ 46(1)(a)).",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The trade office issues the certificate of trade authorisation no later than three working days after it receives the notification and the criminal-record extracts, if the notification is complete and the conditions are met (§ 47(1)).",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The hidden trap for non-EU founders is the order of steps. The immigration authority wants proof that you are authorised to do business, and for nationals of countries outside the OECD it asks for the trade certificate together with an entry in the commercial register as a foreign person's enterprise (see the held residence-permit section). Ask a Slovak adviser how to sequence the licence, the register entry and the permit application before you pay for anything.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Identify your trade as free, craft or regulated before you file.",
+          "source_ids": [
+            "SK2"
+          ]
+        },
+        {
+          "text": "Order the criminal-record extract and its certified translation early; it expires after 3 months.",
+          "source_ids": [
+            "SK2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flat-rate-expenses",
+      "title": "Flat-rate expenses (paušálne výdavky)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "A taxpayer who is not a VAT payer (or is a VAT payer for only part of the tax period) and does not claim documented expenses may deduct expenses of 60% of the income from business and other self-employed activity, at most EUR 20,000 (Zákon o dani z príjmov § 6(10), version in force 1 January 2026). The flat rate covers all tax expenses except insurance contributions actually paid, which can be added in the proven amount. The taxpayer must still keep the records the act requires.",
+          "source_ids": [
+            "SK6"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The 60% cap means the flat rate stops helping at about EUR 33,333 of income (EUR 20,000 divided by 0.6). If you expect to pass the VAT threshold or to have real costs above 60%, documented expenses may be better. Ask an accountant to compare both on your numbers.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Compare the flat rate with documented expenses on your own expected income.",
+          "source_ids": [
+            "SK6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step: živnosť",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Identify the trade (free, craft or regulated) and check for any extra sector licence.",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. File the notification (ohlásenie živnosti) with the trade office, in person or electronically. Attach proof of right to use the premises if the business address is not your home, and, if you are not a Slovak citizen, a criminal-record extract (no older than 3 months, with a certified translation).",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Pay the administrative fee: EUR 7 for each free trade and EUR 22 for each craft or regulated trade (fee schedule item 148, version in force 1 September 2026).",
+          "source_ids": [
+            "SK3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. The trade office issues the certificate within three working days of receiving the complete notification and extracts.",
+          "source_ids": [
+            "SK2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Register for social insurance with Sociálna poisťovňa and with a health insurer (see the social section). Compulsory sickness and pension insurance of a self-employed person starts on the first day of the sixth calendar month after the month from which the person is entitled to carry on the activity.",
+          "source_ids": [
+            "SK7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Register for VAT if turnover passes the thresholds (see the taxes section).",
+          "source_ids": [
+            "SK5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Sources conflict on the electronic-filing discount for the trade-licence fee: the fee table lists EUR 7 and EUR 22 and exempts several other items from the fee when filed electronically with an e-signature, but not item 148(a); a general rule halves fees for electronic submissions unless the item says otherwise. Not resolved from the text.",
+          "source_ids": [
+            "SK3"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Whether the 50% reduction for electronic filing in the general fee rules (Act 145/1995 § 4(2)) applies to the trade-licence fee is not clear from the text I read, so budget the full EUR 7 and treat any discount as a bonus.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "File the notification and pay the fee.",
+          "source_ids": [
+            "SK2",
+            "SK3"
+          ]
+        },
+        {
+          "text": "Register for social and health insurance.",
+          "source_ids": [
+            "SK7",
+            "SK8"
+          ]
+        },
+        {
+          "text": "Check the VAT thresholds.",
+          "source_ids": [
+            "SK5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step: s.r.o.",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Optionally reserve the company name in the register of reserved names: the fee is EUR 50 (schedule in force from 17 August 2026) and the reservation lasts up to 60 days (Zákon č. 29/2026 § 111(3) and court-fee schedule item 17a).",
+          "source_ids": [
+            "SK4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Prepare the founding contract or founder's deed as a notarial record or lawyer-authorised document, signed by all founders. It must name the first managing directors and their residence (for a foreign natural person, the date of birth where no Slovak personal number exists) (Obchodný zákonník § 57 and § 110(1)(e)).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Pay in the contributions (30% of each cash contribution and at least EUR 2,500 in total; a sole founder pays in the whole capital) before the proposal is filed (§ 111).",
+          "source_ids": [
+            "SK1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. File the registration proposal with the register court or a notary acting as registrar. The proposer must have an activated electronic mailbox for delivery, and the court fee for a first entry of an s.r.o. made by the register court is EUR 220 (schedule in force from 17 August 2026), including publication in the Commercial Bulletin (Zákon č. 29/2026; schedule item 17). The fee for registration through a notary acting as registrar was not checked.",
+          "source_ids": [
+            "SK4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. If the conditions are met, the register court or the registrar registers within two working days of the proposal being delivered (§ 58(1)).",
+          "source_ids": [
+            "SK4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Notify the trade office of the trades the company will carry on and pay the trade fee; the certificate follows within three working days of a complete notification.",
+          "source_ids": [
+            "SK2",
+            "SK3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. Register for VAT if required and register the director or employees for social and health insurance.",
+          "source_ids": [
+            "SK5",
+            "SK7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Notary or lawyer fees for the founding deed, and any bank-account opening requirements for a non-resident director, could not be verified from an official page.",
+          "source_ids": [],
+          "confidence": "hold"
+        },
+        {
+          "text": "Whether an s.r.o. needs a Slovak registered-office address with proof of the right to use the premises is covered by the new register law (29/2026) and the trade act; only the trade act's exemption for companies entered in the commercial register was read. A local professional must confirm.",
+          "source_ids": [
+            "SK2",
+            "SK4"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The statutory two-day registration deadline applies where the review finds the conditions met, and delivery of a court proposal counts only once the court has the information that the court fee was paid (Zákon č. 29/2026 § 44(3)). If registration is refused (§ 59), the proposer must fix the problem, so a first attempt that is rejected can take much longer than the headline figure. Ask your notary or lawyer for a realistic estimate.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Reserve the name (optional) and prepare the founding deed.",
+          "source_ids": [
+            "SK1",
+            "SK4"
+          ]
+        },
+        {
+          "text": "Pay in the capital and file the proposal.",
+          "source_ids": [
+            "SK1",
+            "SK4"
+          ]
+        },
+        {
+          "text": "Notify the trade office and register for taxes and insurance.",
+          "source_ids": [
+            "SK2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "VAT (DPH): the standard rate is 23% (2026), with reduced rates of 19% and 5% for listed goods and services (Zákon o DPH § 27, version in force 1 January 2026).",
+          "source_ids": [
+            "SK5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A taxable person established in Slovakia becomes a VAT payer from 1 January of the following year if turnover in a calendar year exceeds EUR 50,000, or from the supply that takes in-year turnover above EUR 62,500 (§ 4(1)(a) and (b), 2026 text). The registration application is due within five working days of passing the threshold (§ 4(2)). The tax office decides within ten days for a mandatory registration and within 21 days for a voluntary one (§ 4(4) and (7)).",
+          "source_ids": [
+            "SK5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A person under the threshold may register voluntarily (§ 4(6) and (7)).",
+          "source_ids": [
+            "SK5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Personal income tax of a sole trader (2026): 15% of the tax base from business if taxable income did not exceed EUR 100,000; above that, progressive rates of 19%, 25%, 30% and 35% on bands expressed as multiples of the subsistence minimum (154.8, 212.4 and 264 times) (Zákon o dani z príjmov § 15).",
+          "source_ids": [
+            "SK6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Corporate income tax (2026): 10% for a company whose taxable income did not exceed EUR 100,000, 21% for others and 24% for income above EUR 5,000,000 (§ 15(b)).",
+          "source_ids": [
+            "SK6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "From 1 January 2027 VAT payers must issue invoices for domestic supplies as electronic invoices in the prescribed structured format (XML, Peppol BIS); every business, VAT-registered or not, must be able to receive them, normally via a certified delivery provider on the Peppol network. A non-VAT payer is not required to issue e-invoices. 1 January 2026 to 1 January 2027 is a transition period in which the system can be tried voluntarily (Finančná správa FAQ 9/DPH/2025/IM, version of 15 September 2026). The VAT act text in force from 1 January 2027 also contains the issue-and-receive duty (Zákon o DPH, version from 1 January 2027).",
+          "source_ids": [
+            "SK10",
+            "SK15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Sales recording (eKasa): Act 384/2025 on the recording of sales has applied since 1 January 2026. A seller must record a sale in the eKasa system through an eKasa cash register without undue delay after receiving the payment, with listed exceptions such as cash on delivery and vending machines; \"sale\" means a payment received at the point of sale in cash or by instruments replacing cash (Financial Directorate note 1/ZoET/2025/I).",
+          "source_ids": [
+            "SK11"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Annual tax-return deadlines and any 2027 changes to the thresholds or rates were not read in the statute text and are left out.",
+          "source_ids": [
+            "SK6"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Most founders selling services to businesses by bank transfer will not take payments at a point of sale, but a trader who takes cash or card payments in person should ask an accountant about eKasa before the first sale. For invoicing, choose accounting software that already supports Peppol delivery, because the 2027 rule will apply to any VAT-registered trader.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Track turnover against EUR 50,000 and EUR 62,500 (2026).",
+          "source_ids": [
+            "SK5"
+          ]
+        },
+        {
+          "text": "Choose a certified Peppol delivery provider for 2027.",
+          "source_ids": [
+            "SK10"
+          ]
+        },
+        {
+          "text": "Ask whether eKasa applies to your sales.",
+          "source_ids": [
+            "SK11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security and health insurance",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Rates for a compulsory-insured self-employed person (Zákon o sociálnom poistení §§ 130 to 137, version in force 1 September 2026): sickness 4.4%, old-age 18%, disability 6% and solidarity reserve fund 4.75% of the assessment base.",
+          "source_ids": [
+            "SK7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The minimum monthly assessment base is 60% of one twelfth of the general assessment base from two years earlier (§ 138(8)); for 1 July to 31 December 2026 the Sociálna poisťovňa gives it as EUR 914.40, on which a self-employed person pays EUR 303.11 a month. This applies where income for 2025 exceeded EUR 9,144 (50% of the general base); the assessment base is then one twelfth of the tax base, adjusted and multiplied by 1.486, subject to that minimum.",
+          "source_ids": [
+            "SK7",
+            "SK9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A self-employed person whose income is not above 10.5 times the subsistence minimum valid on 1 January of the income year is not obliged to pay (EUR 2,876.90 for income of 2025, tested in 2026; EUR 2,983.37 for income of 2026, tested in 2027); between that amount and EUR 9,144 (2025 income) they pay a micro-contribution of EUR 131.34 a month (2026) on a special base of EUR 396.24, which is 26% of one twelfth of the general base from two years earlier (§ 138(2)(b); Sociálna poisťovňa page, 2026). The income test is applied on 1 July, or 1 October if the tax-return deadline is extended.",
+          "source_ids": [
+            "SK7",
+            "SK9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A new self-employed person (or one whose last self-employment ended more than 60 months ago) becomes compulsorily sickness and pension insured only from the first day of the sixth calendar month after the month from which they are entitled to carry on the activity (§ 21(1); the Sociálna poisťovňa page gives examples, e.g. a licence on 15 March 2026 leads to insurance from 1 September 2026).",
+          "source_ids": [
+            "SK7",
+            "SK9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Health insurance (Zákon o zdravotnom poistení): the rate for a self-employed person is 15%, and 16% from 1 January 2026 to 31 December 2027 under a transitional rule (§ 12 and § 38ezk). The assessment base is the tax base multiplied by 1.486, with a minimum base of 50% of the average monthly wage from two years earlier (§ 13(2) and (10)).",
+          "source_ids": [
+            "SK8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A person with no permanent residence in Slovakia who is not health-insured in another EU or EEA state and who works as a managing director of an s.r.o. (or in a similar governing role, or as a partner) is not publicly health-insured in Slovakia because of that role and has no entitlement to health care paid by the Slovak system (§ 3(9)). A self-employed foreigner who holds a Slovak residence permit is publicly insured (§ 3(3)(b)).",
+          "source_ids": [
+            "SK8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Derived figures, not stated on an official page: the minimum health levy is probably 16% of EUR 762 (50% of a 2024 average wage of EUR 1,524) = EUR 121.92 a month in 2026, and the sum of the four social rates is 33.15%. The EUR 1,524 wage is inferred from EUR 396.24 divided by 26%.",
+          "source_ids": [
+            "SK7",
+            "SK8",
+            "SK9"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The two limits on the Sociálna poisťovňa page are not a conflict: the statute ties the limit to the subsistence minimum valid on 1 January of the income year (§ 21(4) and (5)), so EUR 2,876.90 applies to income of 2025 (tested 1 July 2026) and EUR 2,983.37 to income of 2026 (tested in 2027).",
+          "source_ids": [
+            "SK7",
+            "SK9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "How a managing director of an s.r.o. is insured for social security (as an employee, as self-employed, or not at all) was not verified.",
+          "source_ids": [
+            "SK7"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The six-month holiday on social contributions is easy to misread as a general contribution holiday. It covers sickness and pension insurance only, and a founder who is also a company director with no Slovak residence should check separately how they will be insured for health care. Budget at least the minimum levy from month six.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Register with Sociálna poisťovňa and choose a health insurer.",
+          "source_ids": [
+            "SK7",
+            "SK8"
+          ]
+        },
+        {
+          "text": "Diarise the first day of the sixth month after your licence.",
+          "source_ids": [
+            "SK7"
+          ]
+        },
+        {
+          "text": "A non-resident director should confirm health cover with a Slovak adviser.",
+          "source_ids": [
+            "SK8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "SK12",
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. Statute figures come from the consolidated texts opened on 2026-10-12; the document list and 90-day decision period come from a July 2024 FAQ of the Foreign Police and could have changed.",
+      "open_questions_for_reviewer": [
+        "Is the July 2024 Foreign Police FAQ (SK13) still current on the 90-day decision period, the in-person filing at a Slovak embassy, the OECD / non-OECD distinction for the trade-certificate and register entry, and the document list?",
+        "The statute says the business-account proof is a multiple of the subsistence minimum (20, 40 or 100 times). Which subsistence-minimum amount applies, the one valid when the application is filed or when it is decided? (EUR 295.22 from 1 July 2026 is used for the arithmetic.)",
+        "On renewal the applicant must show taxable income from the business above an amount set by a special regulation (§ 34 of Act 404/2011); the amount was not found.",
+        "How should a non-OECD national sequence the trade licence, the foreign-person register entry and the permit application, and does the licence require a Slovak address?",
+        "Is there a Slovakia-specific startup or innovative-founder track beyond the innovative-project business plan mentioned in § 32(5) and § 32(7)(c)?",
+        "Does an Indian passport holder need a national visa for any step before filing, and how long do consulates actually take in practice?"
+      ],
+      "official_information": [
+        {
+          "text": "Slovakia grants a temporary residence permit for the purpose of business to a third-country national who does business as a natural person in Slovakia, or who acts on behalf of a company or cooperative without being in an employment relationship (Zákon o pobyte cudzincov § 21(1)(a) and § 22(1)). The permit is granted for three years (§ 22(2)).",
+          "source_ids": [
+            "SK12"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The application is submitted in person at a Slovak embassy abroad on the official form. Documents must be no older than 90 days and cover purpose of stay (a business plan in the template of the Ministry of Economy with proof the activity is feasible and sustainable, or an innovative-project plan), good repute, financial security of the stay, financial security of the business, and accommodation (§ 32(1), (2), (5)). The Foreign Police FAQ (July 2024) adds that the Foreign Police department decides within 90 days of receiving a complete application.",
+          "source_ids": [
+            "SK12",
+            "SK13"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Financial security of the business must be shown by a bank statement of a separate business account (not the account that shows funds for the stay): 20 times the subsistence minimum for a person doing business as a natural person, 100 times for a person acting for a company, and 40 times for a company representative with an innovative-project plan (§ 32(7)). With the subsistence minimum of EUR 295.22 valid from 1 July 2026 (measure 155/2026) this is EUR 5,904.40, EUR 29,522 and EUR 11,808.80 (arithmetic, not stated by an official page).",
+          "source_ids": [
+            "SK12",
+            "SK14",
+            "SK13"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Accommodation must be secured for at least six months (§ 32(8)). Within 30 days of receiving the residence document, the holder must hand over proof of health insurance (§ 32(9)) and, according to the Foreign Police FAQ, a medical certificate from an infectious-disease specialist no older than 30 days.",
+          "source_ids": [
+            "SK12",
+            "SK13"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Proof of authorisation to do business: for nationals of OECD member states, the trade certificate (živnostenský list); for nationals of non-OECD states, the trade certificate together with an entry in the commercial register as an enterprise of a foreign person; for a director of a company, a founding contract signed by all founders with officially certified signatures naming them as managing director, or a commercial register extract naming them (FAQ item 13, July 2024).",
+          "source_ids": [
+            "SK13"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Fees (schedule item 24, version in force 1 September 2026): EUR 330 for an application for temporary residence for business, EUR 200 for a renewal.",
+          "source_ids": [
+            "SK3"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "On renewal the holder must show, for the previous tax period, taxable business income above an amount set by a special regulation (natural person) or tax paid at least at a set amount (company representative) (§ 34(5) and (6)). The amounts were not found.",
+          "source_ids": [
+            "SK12"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
