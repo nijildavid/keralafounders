@@ -1,0 +1,159 @@
+[
+ {
+  "id": "se-vat-limit",
+  "country": "sweden",
+  "topic": "tax",
+  "question": "What is the small-business VAT limit in Sweden?",
+  "answer": "SEK 120,000 of turnover in Sweden (excluding VAT) in the current year and in neither of the two previous years, as shown by Skatteverket in October 2026. A company with its seat outside the EU cannot use the exemption.",
+  "source_ids": [
+   "SE9"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-ab-capital",
+  "country": "sweden",
+  "topic": "legal",
+  "question": "How much share capital does an aktiebolag need?",
+  "answer": "At least SEK 25,000 (Companies Act 1 kap. 5 §, text current to SFS 2026:783). It can be cash or property useful to the business, which an approved or authorised auditor must value.",
+  "source_ids": [
+   "SE2",
+   "SE8"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-ab-fee",
+  "country": "sweden",
+  "topic": "fees",
+  "question": "How much does it cost to register an aktiebolag?",
+  "answer": "Verksamt.se shows from SEK 2,400 for the company and SEK 250 for the beneficial owner (October 2026). The bank and any adviser charge extra.",
+  "source_ids": [
+   "SE2",
+   "SE5"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-sole-cost",
+  "country": "sweden",
+  "topic": "fees",
+  "question": "What does it cost to register as a sole trader?",
+  "answer": "Registering with Skatteverket is free. Registering the business name with Bolagsverket is optional and costs from SEK 1,800 (October 2026).",
+  "source_ids": [
+   "SE1",
+   "SE3",
+   "SE6"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-eea-board",
+  "country": "sweden",
+  "topic": "legal",
+  "question": "Can a non-EU resident be a director of a Swedish AB?",
+  "answer": "At least half of the board and the managing director must live in the EEA, but Bolagsverket may grant an exemption in an individual case for special reasons (Companies Act 8 kap. 9 and 30 §§).",
+  "source_ids": [
+   "SE8"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-f-skatt",
+  "country": "sweden",
+  "topic": "tax",
+  "question": "What is F-skatt and do I need it?",
+  "answer": "F-skatt approval means you pay your own taxes and fees and clients do not withhold tax from your invoices. Sole traders should as a rule have it. If you lived in Sweden less than two years you must show you have no tax debts abroad, with certificates at most three months old.",
+  "source_ids": [
+   "SE12"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-egenavgifter",
+  "country": "sweden",
+  "topic": "social",
+  "question": "How much are self-employment contributions in 2026?",
+  "answer": "Egenavgifter are 28.97% for someone born in 1959 or later (2026), with a 25% standard deduction.",
+  "source_ids": [
+   "SE11",
+   "SE10"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-id-number",
+  "country": "sweden",
+  "topic": "admin",
+  "question": "Do I need a personnummer to register?",
+  "answer": "Not necessarily. People who are not registered in Sweden can get a samordningsnummer, active for five years, but those moving to Sweden for a year or more should register their move instead.",
+  "source_ids": [
+   "SE14",
+   "SE4"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-sickness",
+  "country": "sweden",
+  "topic": "social",
+  "question": "What waiting period applies to sickness benefit for a sole trader?",
+  "answer": "The default is 7 calendar days; you can choose 1, 14, 30, 60 or 90 days (Försäkringskassan, October 2026).",
+  "source_ids": [
+   "SE19"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "render",
+  "hold": false
+ },
+ {
+  "id": "se-permit",
+  "country": "sweden",
+  "topic": "visa",
+  "question": "Do I need a residence permit to start a business in Sweden as a non-EU citizen?",
+  "answer": "Yes: non-EU/EEA citizens who want to live in Sweden to run a business need a residence permit approved before travelling. Details are under legal review.",
+  "source_ids": [
+   "SE4",
+   "SE21"
+  ],
+  "last_checked": "2026-10-12",
+  "origin": "research",
+  "origin_ref": null,
+  "status": "hold",
+  "hold": true
+ }
+]

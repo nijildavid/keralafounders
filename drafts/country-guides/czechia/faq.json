@@ -1,0 +1,156 @@
+[
+  {
+    "id": "cz-vat-limit",
+    "country": "czechia",
+    "topic": "tax",
+    "question": "When do I have to register for VAT in Czechia?",
+    "answer": "If domestic turnover exceeds CZK 2,000,000 in a calendar year you become a payer from 1 January of the next year. Above CZK 2,536,500 you become a payer the day after and must apply within 10 working days (gov.cz portal, read Oct 2026).",
+    "source_ids": [
+      "CZ9"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-vat-rates",
+    "country": "czechia",
+    "topic": "tax",
+    "question": "What are the VAT rates?",
+    "answer": "The standard rate is 21% and the single reduced rate is 12% (gov.cz portal and tax office, read Oct 2026).",
+    "source_ids": [
+      "CZ10",
+      "CZ28"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-trade-cost",
+    "country": "czechia",
+    "topic": "fees",
+    "question": "What does it cost to register a trade?",
+    "answer": "A notification of a trade costs CZK 1,000 (CZK 500 for each further one, CZK 50 more via Czech POINT), according to the MPO page read in October 2026.",
+    "source_ids": [
+      "CZ15"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-srl-capital",
+    "country": "czechia",
+    "topic": "company",
+    "question": "What is the minimum capital for an s.r.o.?",
+    "answer": "The legal minimum contribution is CZK 1 per member (section 142(1) of Act 90/2012 Coll.). The source page is dated 2016, so confirm it with a notary.",
+    "source_ids": [
+      "CZ16"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-srl-court-fee",
+    "country": "czechia",
+    "topic": "fees",
+    "question": "What does the court fee for registering an s.r.o. cost?",
+    "answer": "CZK 6,000 for the first registration, payable by bank transfer. The notary's fee for the deed is separate and follows the notarial tariff.",
+    "source_ids": [
+      "CZ12",
+      "CZ14"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-social-min-2026",
+    "country": "czechia",
+    "topic": "social",
+    "question": "How much social insurance does a self-employed person pay at minimum in 2026?",
+    "answer": "For main activity the minimum monthly pension advance is CZK 5,720 for January to June 2026 and CZK 5,005 from July 2026. There are lower amounts for a start-up and for side business.",
+    "source_ids": [
+      "CZ4",
+      "CZ6"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-health-min-2026",
+    "country": "czechia",
+    "topic": "social",
+    "question": "What is the minimum health-insurance advance for self-employed people in 2026?",
+    "answer": "CZK 3,306 per month from 1 Jan 2026, due by the 8th day of the following month.",
+    "source_ids": [
+      "CZ8"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-flat-rate",
+    "country": "czechia",
+    "topic": "tax",
+    "question": "What is the pausalni dan?",
+    "answer": "A flat monthly payment that covers income tax and the insurance advances. In 2026 it is CZK 9,984, 16,745 or 27,139 per month depending on the band, for non-VAT payers with income up to CZK 2 million.",
+    "source_ids": [
+      "CZ1"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-remote-start",
+    "country": "czechia",
+    "topic": "company",
+    "question": "Can I register a business in Czechia without living there?",
+    "answer": "EU/EEA citizens can notify a trade with home-state criminal-record extracts. Third-country citizens must also show a long-stay visa or residence permit to the trade office, and their right to trade arises only once they do.",
+    "source_ids": [
+      "CZ15"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "cz-permit-business",
+    "country": "czechia",
+    "topic": "visa",
+    "question": "Which permit lets a non-EU founder do business in Czechia?",
+    "answer": "The long-term visa for business (max 1 year) and then the long-term residence permit for business (max 2 years each time). Details are under legal review and are not yet published.",
+    "source_ids": [
+      "CZ18",
+      "CZ19"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "hold",
+    "hold": true
+  }
+]

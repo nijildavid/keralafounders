@@ -1,0 +1,841 @@
+{
+  "slug": "ireland",
+  "title": "How to start a company in Ireland",
+  "summary": "Ireland gives a founder two main routes: register as a sole trader with Revenue, with unlimited personal liability, or form a private company limited by shares (LTD) with the Companies Registration Office (CRO) for limited liability. The route that catches non-EEA founders is the rule that a company needs an EEA-resident director, a EUR 25,000 bond or a Registrar certificate. Both routes finish with registration for tax on the Revenue Online Service.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-15",
+  "quick_facts": {
+    "structure": {
+      "text": "Register as a sole trader with Revenue (and with the CRO if you trade under a name other than your own), or form a private company limited by shares (LTD) with the CRO. A company needs at least one director, and at least one director must live in the EEA unless the company holds a EUR 25,000 bond or a Registrar certificate.",
+      "source_ids": [
+        "IE1",
+        "IE5",
+        "IE2",
+        "IE4"
+      ]
+    },
+    "cost": {
+      "text": "The CRO fee to register a company is EUR 50, electronic only (2025 fee regulations). A business name is EUR 20 online and a name reservation is EUR 25. Each founder must take at least one share; no minimum capital amount was found in the Act.",
+      "source_ids": [
+        "IE11",
+        "IE12",
+        "IE8"
+      ]
+    },
+    "time": {
+      "text": "The CRO's own processing time could not be confirmed from an official page (the CRO site blocked automated access), so no timing is promised here. Permit timelines for non-EEA founders are covered separately in the residence section, which is on hold.",
+      "source_ids": [
+        "IE9"
+      ]
+    },
+    "gotcha": {
+      "text": "If no director lives in the EEA, the company breaks the law unless it holds a EUR 25,000 bond or a Registrar certificate showing a real and continuous link to Ireland. Founders in India usually need an EEA-resident co-director, the bond, or the certificate before the company can operate.",
+      "source_ids": [
+        "IE2",
+        "IE3",
+        "IE4"
+      ]
+    }
+  },
+  "founder_checklist": [
+    {
+      "text": "Confirm your right to work: non-EEA founders need immigration permission or an employment permit first.",
+      "section_id": "visa"
+    },
+    {
+      "text": "Pick your form: sole trader (Revenue only) or private company limited by shares (CRO).",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "For a company, solve the EEA-resident director rule before you file.",
+      "section_id": "eea-director"
+    },
+    {
+      "text": "Get a PPSN, then register for tax with Revenue (TR1 for a sole trader, TR2 for a company).",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "Register the company with the CRO and pay the EUR 50 electronic fee.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Register a business name with the CRO if you trade under any name other than your own.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "Check whether you must register for VAT (EUR 42,500 for services, EUR 85,000 for goods).",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Work out your PRSI Class S position as a self-employed person or director.",
+      "section_id": "social"
+    },
+    {
+      "text": "Diarise 31 October (income tax return and preliminary tax) and re-check budget changes in January 2027.",
+      "section_id": "taxes"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        {
+          "text": "Ireland gives a founder two main routes. A sole trader registers directly with Revenue, trades under their own name or a registered business name, and is personally liable for the business. A private company limited by shares (called an LTD) is registered with the Companies Registration Office (CRO), is a separate legal entity, and files annual returns and accounts. The rule that catches most non-EU founders is that a company needs a director who lives in the EEA, or a bond, or a Registrar certificate, so it is not possible to simply form a company from abroad with only non-EEA directors. For founders from outside the EEA, the right to live and work in Ireland is a separate step from registering the business, with its own application and processing time. Ireland also has upcoming changes: Budget 2027 was announced on 6 October 2026 and is not yet law, so check rates again in January 2027.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Sole trader",
+            "none",
+            "personal, unlimited: your personal assets could be used to pay business debts",
+            "no",
+            "register for tax with Revenue; a business name is registered separately with the CRO (timing not confirmed)",
+            "self-assessment income tax return (Form 11) each year",
+            "official [IE1, IE13]"
+          ],
+          [
+            "Partnership",
+            "none",
+            "each partner jointly responsible for the debts",
+            "no",
+            "not confirmed",
+            "each partner pays income tax, PRSI and USC on their share of profit",
+            "official [IE1]"
+          ],
+          [
+            "Private company limited by shares (LTD)",
+            "no minimum amount found in the Act; each subscriber takes at least one share",
+            "limited: you are generally not personally responsible for company debts",
+            "no notary is required by the sections read; the constitution is signed before a witness or authenticated under section 888",
+            "not confirmed from an official page",
+            "annual returns and accounts to the CRO; corporation tax return via ROS",
+            "official [IE1, IE8, IE11]"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "You can set up a business as a sole trader, a partnership or a limited company. A sole trader is self-employed, works for themselves, must register as self-employed with Revenue, and is personally responsible for the business; if it fails, personal assets could be used to pay debts. If you want to use a business name instead of your own name you must register it with the CRO.",
+          "source_ids": [
+            "IE1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A limited company and its owners are separate legal entities, so owners are generally not personally responsible for company debts. To set one up you register with the CRO, and the company must then return reports and accounts to the CRO each year.",
+          "source_ids": [
+            "IE1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The constitution of a private company limited by shares must state its name, that it is a private company limited by shares, that members' liability is limited, its share capital, and the number of shares taken by each subscriber, which must be at least one. It is signed by each subscriber in front of at least one witness, or authenticated in the way section 888 describes.",
+          "source_ids": [
+            "IE8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A company must have at least one director. It must have a secretary, who may be one of the directors, but where there is only one director that person cannot also be the secretary. A company cannot appoint another company as its director. It must always have a registered office in the State.",
+          "source_ids": [
+            "IE5",
+            "IE6",
+            "IE7",
+            "IE10"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For a first-time founder testing an idea alone, the sole trader route avoids company filings and the director-residency rule. A company usually makes sense once you want limited liability, outside investors, or a vehicle that can hold a permit sponsorship. Ask an Irish accountant before choosing, because the sole trader versus company tax result depends on your profit.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide whether personal, unlimited liability is acceptable at the start.",
+          "source_ids": [
+            "IE1"
+          ]
+        },
+        {
+          "text": "If you choose a company, plan who the EEA-resident director will be.",
+          "source_ids": [
+            "IE2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eea-director",
+      "title": "Country-specific trap: the EEA-resident director rule (section 137)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Section 137 of the Companies Act 2014 requires at least one director of a company to be a person resident in an EEA state. A company can avoid this requirement by holding a bond, in the prescribed form, to the value of EUR 25,000; the bond pays out towards certain company fines and penalties. An alternate director does not count as the resident director for this rule.",
+          "source_ids": [
+            "IE2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "If the rule is not met, the company and any officer in default commit a category 4 offence. If no director is EEA-resident when the company is incorporated, a copy of the bond must be attached to the statement delivered to the Registrar at incorporation, and also to the annual return in a year when no director is EEA-resident.",
+          "source_ids": [
+            "IE2",
+            "IE3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A third route is a certificate from the Registrar under section 140, which shows the company has a real and continuous link with economic activity carried on in the State. A written statement from Revenue given within the 2 months before the application is treated as proof. The link exists if, for example, the company's affairs are managed from a place of business in the State by authorised persons, or the company carries on a trade in the State, or it is a subsidiary or holding company of such a company. The Registrar must revoke the certificate if the link ceases. The application fee in the 2025 regulations is EUR 40 and is listed for paper form only.",
+          "source_ids": [
+            "IE4",
+            "IE11"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The cost of buying a EUR 25,000 bond from a provider, and the minimum period the bond must remain valid (which the Act leaves to regulations), were not confirmed from an official page.",
+          "source_ids": [
+            "IE3"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "In practice a founder living outside the EEA has three choices: add a trusted EEA-resident co-director, buy the bond, or build a real business presence in Ireland and apply for the section 140 certificate. The test in the Act is residence, not nationality, so an Indian citizen who genuinely lives in Ireland counts as resident, while an EU citizen living outside the EEA does not. This is a legal question: ask an Irish company-secretarial firm or solicitor before relying on any of the three.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Name your EEA-resident director before filing, or arrange the bond or section 140 certificate.",
+          "source_ids": [
+            "IE2",
+            "IE4"
+          ]
+        },
+        {
+          "text": "Keep the bond copy for the annual return if no director lives in the EEA.",
+          "source_ids": [
+            "IE3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, sole trader",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Non-EEA founders: confirm you have immigration permission that allows self-employment. EEA and Swiss nationals and UK citizens do not need permission to set up a business in Ireland. See the residence permit section.",
+          "source_ids": [
+            "IE1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Get a Personal Public Service Number (PPSN). Revenue says you must have one before you register for tax, and your Tax Reference Number is the same number. The Department of Social Protection issues PPSNs, and its Client Identity Services provide a service for non-resident applicants who need a PPSN and cannot attend a PPS Registration Centre.",
+          "source_ids": [
+            "IE13",
+            "IE27"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Register for Income Tax through the Revenue Online Service (ROS), or through myAccount if you are a PAYE employee. You confirm your NACE code, the date the business started and your expected turnover. If you are non-resident and cannot register online, Form TR1 (FT) can be used instead.",
+          "source_ids": [
+            "IE13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. If you will trade under any name other than your own, register the business name with the CRO. The place of business must be in Ireland. Online registration costs EUR 20, and the process currently requires you to print, sign and return a document to the CRO.",
+          "source_ids": [
+            "IE12",
+            "IE1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Register for VAT if your turnover passes the threshold (see Taxes). Registration through ROS is for a business established in the State; businesses not established in the State submit paper forms TR1 (FT) or TR2 (FT) to the Business Taxes Registrations Office in Wexford.",
+          "source_ids": [
+            "IE16",
+            "IE15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Self-employed PRSI (Class S) is returned through Revenue's self-assessment system; see the social section.",
+          "source_ids": [
+            "IE30"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. If you hire staff, register as an employer for PAYE and PRSI with Revenue.",
+          "source_ids": [
+            "IE1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. File your income tax return (Form 11) and pay your balance and preliminary tax by 31 October of the year after the tax year.",
+          "source_ids": [
+            "IE25"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "9. Open a separate business bank account. It is not a legal requirement, but it keeps records clean for Revenue.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Confirm your right to work and self-employ (non-EEA founders).",
+          "source_ids": [
+            "IE1"
+          ]
+        },
+        {
+          "text": "Obtain your PPSN.",
+          "source_ids": [
+            "IE27"
+          ]
+        },
+        {
+          "text": "Register for Income Tax on ROS (Form TR1 route).",
+          "source_ids": [
+            "IE13"
+          ]
+        },
+        {
+          "text": "Register a business name with the CRO if needed (EUR 20 online).",
+          "source_ids": [
+            "IE12"
+          ]
+        },
+        {
+          "text": "Check VAT registration and PAYE if hiring.",
+          "source_ids": [
+            "IE15",
+            "IE1"
+          ]
+        },
+        {
+          "text": "Diarise 31 October for the return and preliminary tax.",
+          "source_ids": [
+            "IE25"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, private company limited by shares (LTD)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Decide your directors. You need at least one, and at least one must be EEA-resident unless you hold the EUR 25,000 bond or a section 140 certificate (see the previous section). Appoint a secretary; a sole director cannot also be the secretary.",
+          "source_ids": [
+            "IE5",
+            "IE6",
+            "IE2",
+            "IE4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Choose and, if you wish, reserve the company name. Reserving a name costs EUR 25 (electronic).",
+          "source_ids": [
+            "IE11"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Prepare the constitution (name, limited liability, share capital, and at least one share per subscriber) and arrange a registered office in the State. A registered office can be care of an agent company approved by the Registrar.",
+          "source_ids": [
+            "IE8",
+            "IE10"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Deliver the constitution to the Registrar with the statement and consent of each officer and the declaration the Act requires, plus the bond if no director is EEA-resident.",
+          "source_ids": [
+            "IE9",
+            "IE3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Pay the registration fee: EUR 50 for any company under the 2014 Act, electronic only (the paper fee column reads 'not applicable').",
+          "source_ids": [
+            "IE11"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. When the company has its CRO number, register it for tax. A tax agent can submit this on ROS; otherwise the company submits Form TR2 (resident) or TR2 (FT) (foreign company), which can cover Corporation Tax, PAYE, VAT and RCT.",
+          "source_ids": [
+            "IE14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. Each year deliver the annual return to the CRO (EUR 20 electronic when filed in time) and return reports and accounts. Corporation Tax returns and payments are made online on ROS.",
+          "source_ids": [
+            "IE11",
+            "IE1",
+            "IE14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The CRO's usual processing time for a complete application, the beneficial-ownership register filing and its deadline, and the exact content of the director declaration were not confirmed from an official page.",
+          "source_ids": [
+            "IE9"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Appoint directors and a secretary.",
+          "source_ids": [
+            "IE5",
+            "IE6"
+          ]
+        },
+        {
+          "text": "Sort the EEA-resident director rule.",
+          "source_ids": [
+            "IE2"
+          ]
+        },
+        {
+          "text": "Reserve the name and prepare the constitution.",
+          "source_ids": [
+            "IE11",
+            "IE8"
+          ]
+        },
+        {
+          "text": "File with the CRO and pay EUR 50.",
+          "source_ids": [
+            "IE11"
+          ]
+        },
+        {
+          "text": "Register the company for tax with Revenue (TR2).",
+          "source_ids": [
+            "IE14"
+          ]
+        },
+        {
+          "text": "Calendar the annual return and accounts.",
+          "source_ids": [
+            "IE11",
+            "IE1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "VAT rates: the latest row of Revenue's rate history, effective from 1 January 2025, shows a standard rate of 23%, a reduced rate of 13.5%, a second reduced rate of 9% and a livestock rate of 4.8%.",
+          "source_ids": [
+            "IE17"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "VAT registration is obligatory when annual turnover passes the threshold: EUR 42,500 for persons supplying services only, and EUR 85,000 for persons supplying goods, including mixed supplies where 90% or more of turnover is goods; turnover is counted per calendar year, excluding VAT (Revenue page published 6 May 2026). Below the threshold you may elect to register. A person not established in the State who supplies taxable goods or services to taxable customers in the State must register regardless of turnover, unless they use the VAT SME scheme.",
+          "source_ids": [
+            "IE15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "VAT registration generally takes effect from the date on the form, and changes to your details must be notified to Revenue within 30 days. After registering you must file returns and pay electronically.",
+          "source_ids": [
+            "IE16"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Income tax 2026 for a single person without qualifying children: 20% on the first EUR 44,000 and 40% on the balance. The Earned Income Tax Credit for the self-employed is a maximum of EUR 2,000 in 2026.",
+          "source_ids": [
+            "IE18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Universal Social Charge (USC) 2026 standard rates: 0.5% on the first EUR 12,012, 2% on the next EUR 16,688, 3% on the next EUR 41,344, and 8% on the balance. If total income is over EUR 13,000 USC is paid on the full income.",
+          "source_ids": [
+            "IE19",
+            "IE20"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Corporation Tax (Revenue page published 25 September 2025): 12.5% on trading income and 25% on non-trading income such as rental and investment income and income from an excepted trade. An Irish-incorporated company formed on or after 1 January 2015 is treated as tax resident in Ireland unless a tax treaty makes it resident elsewhere.",
+          "source_ids": [
+            "IE21",
+            "IE22"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "New start-up companies can claim relief from Corporation Tax for the first five years of trading if total Corporation Tax due is EUR 40,000 or less in a year (partial relief between EUR 40,000 and EUR 60,000). The relief is capped by employer PRSI paid, at most EUR 5,000 per employee or director, and from 2025 by Class S PRSI remitted for a director, at most EUR 1,000 per individual (page published 2 April 2025).",
+          "source_ids": [
+            "IE23"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Start-Up Relief for Entrepreneurs (SURE) refunds income tax you paid in earlier years. You must set up a new company with a new qualifying trade, have mainly PAYE income in the previous four years, take up full-time work in the company, invest cash in new shares and keep them for at least four years. Citizens Information describes the refund as up to 41% of the capital invested, for PAYE income tax of the investment year and the 6 years before it.",
+          "source_ids": [
+            "IE24",
+            "IE1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Under self-assessment the income tax return for a year is due by 31 October of the following year, together with the balance of tax and preliminary tax for the current year.",
+          "source_ids": [
+            "IE25"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "E-invoicing: there is no business-to-business or business-to-consumer e-invoicing mandate in Ireland. Since 12 June 2019 (S.I. 258/2019) public bodies must be able to receive structured e-invoices that comply with EN 16931, and Ireland uses the Peppol network for this. Suppliers are encouraged but not required to issue them. Under the EU VAT in the Digital Age package, e-invoicing and digital reporting for intra-EU business-to-business transactions are scheduled for July 2030.",
+          "source_ids": [
+            "IE29",
+            "IE26"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Budget 2027 was presented on 6 October 2026 and changes still need legislation; the figures above for tax year 2026 may change from 1 January 2027.",
+          "source_ids": [
+            "IE28",
+            "IE18"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Invoice content rules and record retention periods were not opened on an official page for this draft.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "A sole trader and a company are taxed differently: a sole trader pays income tax, USC and PRSI on profit, while a company pays Corporation Tax and then the director pays tax on salary or dividends. Get an Irish accountant to model both once you know your likely profit. Many early-stage founders stay below the VAT threshold in year one, but registering voluntarily can let you reclaim VAT on purchases.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check turnover against the EUR 42,500 (services) and EUR 85,000 (goods) VAT thresholds.",
+          "source_ids": [
+            "IE15"
+          ]
+        },
+        {
+          "text": "Diarise 31 October for the return.",
+          "source_ids": [
+            "IE25"
+          ]
+        },
+        {
+          "text": "Check Budget 2027 changes in January 2027.",
+          "source_ids": [
+            "IE28"
+          ]
+        },
+        {
+          "text": "If selling to public bodies, ask whether they want an EN 16931 e-invoice.",
+          "source_ids": [
+            "IE29"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social insurance (PRSI), directors and start-up support",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Self-employed people pay PRSI Class S. The rate is 4.20% up to 30 September 2026 and 4.35% from 1 October 2026; for self-assessed 2026 income Revenue returns a blended 4.2375% rate. The minimum annual Class S contribution is EUR 650 (page updated 20 January 2026).",
+          "source_ids": [
+            "IE30"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Class S applies to self-employed people, including certain company directors, with income of EUR 5,000 or more a year from all sources.",
+          "source_ids": [
+            "IE32",
+            "IE31"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Since 1 July 2013 proprietary directors who own or control 50% or more of the shares, directly or indirectly, are classified as self-employed and pay Class S. The class of a director holding less than 50% is decided case by case under the Code of Practice on Determining Employment Status; you can ask the Department of Social Protection for a formal decision.",
+          "source_ids": [
+            "IE31"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Class S benefits listed by the Department include Jobseeker's Benefit Self-Employed, Maternity, Paternity, Parent's, Adoptive and Carer's Benefit, Invalidity Pension, Partial Capacity Benefit, Treatment Benefit and the contributory State Pension.",
+          "source_ids": [
+            "IE31",
+            "IE30"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Microfinance Ireland offers Small Business Cashflow Loans from EUR 2,000 to EUR 50,000 to businesses that cannot get bank loans (Citizens Information page edited 26 March 2026). There are 31 Local Enterprise Offices that advise start-ups, and Enterprise Ireland supports high potential start-ups (HPSU Feasibility Study Grant up to EUR 30,000, Pre-Seed Start Fund investment up to EUR 100,000, Innovative HPSU Fund equity up to EUR 800,000; Enterprise Ireland page undated, read 12 October 2026).",
+          "source_ids": [
+            "IE1",
+            "IE44"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Enterprise Ireland defines a high potential start-up as one that is internationally focused, in manufacturing or internationally traded services, capable of creating 10 jobs in Ireland and EUR 1 million in annual sales within three years, led by an experienced management team residing in Ireland, headquartered and controlled in Ireland, and less than five years old.",
+          "source_ids": [
+            "IE44"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The employer PRSI rate for a director who is an employee (Class A), and the exact PRSI position of a non-EEA director on a Stamp 1 or STEP permission, were not confirmed from an official page.",
+          "source_ids": [
+            "IE32"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Class S gives fewer benefits than the employee class: the Department's Class S list does not name Illness Benefit. Founders who are also directors should ask an accountant whether to pay themselves a salary (Class A as an employee) or take profit another way, and should request a formal PRSI decision from the Department of Social Protection if their shareholding is under 50%.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Work out your PRSI class: Class S if you own or control 50% or more of the shares.",
+          "source_ids": [
+            "IE31"
+          ]
+        },
+        {
+          "text": "Check Local Enterprise Office and Enterprise Ireland supports before paying consultants.",
+          "source_ids": [
+            "IE1",
+            "IE44"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: not published here yet. Please use the official page.",
+      "hold_note_source_id": "IE33",
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. Official sources: Immigration Service Delivery (ISD), Department of Enterprise, Tourism and Employment (DETE). The CRO site was not reachable by automated tools in this session.",
+      "open_questions_for_reviewer": [
+        "Is the Start-up Entrepreneur Programme (STEP) realistic for a typical Kerala-origin founder? The 2023 guidelines exclude retail, personal services and catering, and expect an innovative, export-oriented high potential start-up with EUR 50,000 funding.",
+        "ISD's 'more than 90 days' page still describes the Immigrant Investor Programme as open (EUR 1m or EUR 500,000 endowment), while ISD's FAQ says it closed to new applications on 15 February 2023. Confirm it is closed and remove it from the guide.",
+        "Can a non-EEA founder hold a Critical Skills Employment Permit for a job in their own company, and does DETE restrict permits where the applicant owns the employer? No official page read says either way.",
+        "What is ISD's current processing time for STEP, and which visa category (Business or Employment) does a STEP decision use? No official figure was found.",
+        "Is India on the visa-required list? The ISD nationality-list page was opened but its table did not render, so this was not confirmed.",
+        "Which immigration Stamp does a STEP holder receive? The guidelines say residence and work permission but name no Stamp.",
+        "The STEP page says guidelines and form are dated 2019 while the linked files are dated September 2023 and March 2023; confirm which is current.",
+        "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"
+      ],
+      "official_information": [
+        {
+          "text": "EEA and Swiss nationals and UK citizens do not need permission to set up a business in Ireland. Citizens Information says non-EU/EEA/Swiss/UK nationals who want to open a business or invest in Ireland can apply under the Start-up Entrepreneur Programme.",
+          "source_ids": [
+            "IE1"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "ISD says a non-EEA, non-Swiss, non-UK national who wants to work in Ireland needs a valid Employment Permit or Atypical Permission first, and, depending on nationality, a visa. DETE says all non-EEA nationals need an employment permit or relevant immigration permission from the Minister for Justice, unless exempt.",
+          "source_ids": [
+            "IE36",
+            "IE42"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "STEP (introduced in 2012) lets innovative entrepreneurs apply for permission to establish a business and live in Ireland full time. You may apply if you are of good character, have no criminal convictions in any jurisdiction, have EUR 50,000 funding available and have an innovative business proposal. Proposals are considered quarterly by an evaluation committee that advises the Minister for Justice. Applications are by email with the application form, evidence of funding and its source, evidence of good character and the business proposal.",
+          "source_ids": [
+            "IE33"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The STEP application fee is EUR 350, paid by electronic funds transfer and non-refundable (ISD page last updated 14 October 2025); the 2023 guidelines say the fee covers the principal applicant and nominated family members. A rejection is final and cannot be reviewed or appealed, although a new application may be made later.",
+          "source_ids": [
+            "IE33",
+            "IE34"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The September 2023 STEP guidelines say the scheme is for high potential start-ups in the innovation economy and not for retail, personal services, catering or similar businesses. A high potential start-up is described as one introducing a new or innovative product or service to international markets, in manufacturing or internationally traded services, capable of creating 10 jobs and EUR 1 million in sales within 3 years, led by an experienced management team, headquartered and controlled in Ireland, and less than five years old. A second or later principal must show access to EUR 30,000 each.",
+          "source_ids": [
+            "IE34"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Under the 2023 guidelines, once the funds are transferred to a business bank account in Ireland and a good-character affidavit is submitted, permission is granted for 2 years, renewable for 3 further years and then in 5-year instalments; holders must have private medical insurance and no recourse to public funds. Spouses/partners and children under 18 can accompany the principal. STEP does not give preferential access to citizenship. If the venture fails, the immigration status is reviewed.",
+          "source_ids": [
+            "IE34"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Conditions on the permission: establish the business as proposed, work on it full time, hold no other employment, and not become a financial burden on the State.",
+          "source_ids": [
+            "IE33"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Employment-permit route: a Critical Skills Employment Permit requires a job offer of at least 2 years from a bona fide employer registered with Revenue, with minimum annual remuneration of EUR 40,904 for listed occupations (EUR 36,848 for recent graduates) or over EUR 68,911 for other eligible occupations. The processing fee is EUR 1,000, of which 90% is refunded if the application is refused. Applications must be received at least 12 weeks before the start date. The rule that at least 50% of employees must be EEA nationals can be waived for start-ups within 2 years of establishment supported by Enterprise Ireland or IDA Ireland.",
+          "source_ids": [
+            "IE41"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "After a Critical Skills permit, holders can apply directly to the Department of Justice for Stamp 4 permission to live and work without a permit; it is granted for 2 years, and long-term residence can be applied for after 60 months of residency permission. DETE separately says holders of employment permits for five years may be eligible for Stamp 4.",
+          "source_ids": [
+            "IE41",
+            "IE42"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "DETE's current processing dates, as of 12 October 2026, show Critical Skills applications received on 6 October 2026 being processed, and new General Employment Permit applications received on 4 September 2026.",
+          "source_ids": [
+            "IE43"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Immigrant Investor Programme: ISD's FAQ states it closed to further applications from 15 February 2023, although another ISD page still describes it as open (minimum EUR 1m, or EUR 500,000 with an endowment). Do not present it as an available route.",
+          "source_ids": [
+            "IE37",
+            "IE35"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "If a visa is required, apply for a long-stay D visa after permission is granted; for an employment visa ISD says to apply up to 3 months before travel, from your home country or country of legal residence, using the AVATS online system, and send documents within 30 days. The ISD visa-decisions page (updated 6 October 2026) lists current Dublin visa office processing dates by visa type; the dates table could not be read in this check, so no date is given here.",
+          "source_ids": [
+            "IE35",
+            "IE40",
+            "IE39"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "After arrival, non-EEA residents staying longer than 90 days register with ISD within 90 days at the Burgh Quay Registration Office. A registration fee may apply and could amount to EUR 300 depending on the permission. The Irish Residence Permit card is posted, normally within 10 working days.",
+          "source_ids": [
+            "IE38"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For many Kerala-origin founders, STEP is narrow: it needs an innovative, export-oriented start-up and EUR 50,000 in funding. The more common route is employment in Ireland on a Critical Skills Employment Permit, then Stamp 4, and only afterwards starting a business. Which route fits a specific founder is a legal question for an Irish immigration lawyer.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "id": "at-gmbh-capital",
+    "country": "austria",
+    "topic": "company",
+    "question": "How much capital does an Austrian GmbH need?",
+    "answer": "EUR 10,000 minimum share capital, of which at least EUR 5,000 must be paid in cash (GmbHG, consolidated version of 13 Oct 2026).",
+    "source_ids": [
+      "AT1"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "at-trade-cost",
+    "country": "austria",
+    "topic": "fees",
+    "question": "What does the trade registration cost?",
+    "answer": "The Gewerbeanmeldung is free of federal charges according to the economy ministry; the WKO also lists it as free, with an exception for trades under special laws.",
+    "source_ids": [
+      "AT10",
+      "AT12"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "at-vat-limit",
+    "country": "austria",
+    "topic": "tax",
+    "question": "What is the small-business VAT limit in 2026?",
+    "answer": "EUR 55,000 gross turnover per year since 1 Jan 2025, with a 10% tolerance in the year it is exceeded. Below it there is no VAT but also no input-VAT deduction.",
+    "source_ids": [
+      "AT5",
+      "AT15"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "at-resident-needed",
+    "country": "austria",
+    "topic": "registration",
+    "question": "Do I need to live in Austria to be a GmbH managing director?",
+    "answer": "The GmbHG text read sets no residence rule for managing directors. But if the GmbH needs a trade licence, the trade-law managing director must generally live in Austria, with exceptions for some EEA and Swiss nationals.",
+    "source_ids": [
+      "AT1",
+      "AT4"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "at-svs-minimum",
+    "country": "austria",
+    "topic": "social_security",
+    "question": "What is the minimum social-insurance contribution for a trader in 2026?",
+    "answer": "Contributions are charged on a minimum base of EUR 551.10 per month (2026): pension 18.5%, health 6.8% and provision 1.53%, plus a flat accident insurance contribution of EUR 12.96 per month (SVS; the WKO page shows EUR 12.95), so the minimum is about EUR 161 per month in total. Very low earners may apply for an exemption.",
+    "source_ids": [
+      "AT20",
+      "AT21",
+      "AT22"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "at-einvoice",
+    "country": "austria",
+    "topic": "tax",
+    "question": "Is e-invoicing mandatory in Austria?",
+    "answer": "Not between domestic businesses; it needs the recipient's consent. It is mandatory for invoices to federal government bodies since 1 Jan 2014.",
+    "source_ids": [
+      "AT18",
+      "AT19"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "at-neufog",
+    "country": "austria",
+    "topic": "fees",
+    "question": "Can I avoid Firmenbuch fees as a new founder?",
+    "answer": "Genuine new founders can have Firmenbuch court fees waived under the NeuFoeG, using form NeuFoe2 and a chamber consultation. You must not have run a comparable business in the last five years.",
+    "source_ids": [
+      "AT26",
+      "AT27"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "at-visa-startup",
+    "country": "austria",
+    "topic": "visa",
+    "question": "Is there an Austrian start-up route for non-EU founders?",
+    "answer": "Not yet answered here, under legal review.",
+    "source_ids": [],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "hold",
+    "hold": true
+  },
+  {
+    "id": "at-visa-selfemployed",
+    "country": "austria",
+    "topic": "visa",
+    "question": "Can I get an Austrian residence permit as a self-employed founder?",
+    "answer": "Not yet answered here, under legal review.",
+    "source_ids": [],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "hold",
+    "hold": true
+  }
+]

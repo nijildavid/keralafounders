@@ -1,0 +1,158 @@
+[
+  {
+    "id": "mt-min-capital",
+    "country": "malta",
+    "topic": "company",
+    "question": "What is the minimum share capital for a Maltese private company?",
+    "answer": "The minimum authorised share capital is EUR 1,164.69, and at least 20% of the nominal value of each share taken up must be paid up when the memorandum is signed.",
+    "source_ids": [
+      "MT1",
+      "MT3"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-reg-cost",
+    "country": "malta",
+    "topic": "fees",
+    "question": "How much does it cost to register a company with the Malta Business Registry?",
+    "answer": "The online registration fee is EUR 100 for authorised capital up to EUR 1,500 and rises with authorised capital (fee page read October 2026). Reserving a name costs EUR 10 for three months.",
+    "source_ids": [
+      "MT1",
+      "MT2"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-reg-time",
+    "country": "malta",
+    "topic": "company",
+    "question": "How long does company registration take?",
+    "answer": "The MBR says that once it has all the documents and information, the process may take from as little as 24 hours. New incorporations must be filed online through BAROS since 1 March 2025.",
+    "source_ids": [
+      "MT1"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-remote",
+    "country": "malta",
+    "topic": "company",
+    "question": "Does the company secretary have to live in Malta, and what else is needed for a non-EU founder?",
+    "answer": "The MBR guide says the company secretary does not have to be resident in Malta and may be a licensed company service provider. A registered office in Malta is required, and a non-EU individual needs a character reference from a lawyer, auditor, accountant or notary.",
+    "source_ids": [
+      "MT1"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-vat-rate",
+    "country": "malta",
+    "topic": "tax",
+    "question": "What is the VAT rate and the small-business threshold?",
+    "answer": "The standard VAT rate is 18%. A small enterprise established in Malta can register under Article 11 if domestic turnover in the previous calendar year was not more than EUR 35,000.",
+    "source_ids": [
+      "MT4"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-corp-tax",
+    "country": "malta",
+    "topic": "tax",
+    "question": "How much tax does a Maltese company pay and what is the shareholder refund?",
+    "answer": "Company tax is 35% of chargeable income. When profits are paid out, a shareholder can claim a refund of six-sevenths of the tax on those profits, or five-sevenths for certain passive income, subject to conditions; confirm with a Maltese tax adviser.",
+    "source_ids": [
+      "MT5",
+      "MT6"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-class2",
+    "country": "malta",
+    "topic": "social",
+    "question": "How much social security does a self-employed person pay?",
+    "answer": "Self-employed and self-occupied people pay Class Two contributions every four months in arrears, at the Malta Tax and Customs Administration. The weekly amount depends on the previous year's net earnings, with a lowest band, a middle band of 15% of net earnings and a top band. The weekly amounts are not stated here because the Act's printed table could not be matched to the Department of Social Security's current 2026 table; check the current rates with the Department of Social Security.",
+    "source_ids": [
+      "MT7"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-director-employee",
+    "country": "malta",
+    "topic": "company",
+    "question": "If I own and run my own Maltese company, am I self-employed?",
+    "answer": "No. Identita and Jobsplus treat directors, shareholders and owners who do executive work in a registered company as its employees, registered with Jobsplus through an engagement form.",
+    "source_ids": [
+      "MT9",
+      "MT18"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "mt-permit-need",
+    "country": "malta",
+    "topic": "visa",
+    "question": "Do I need a permit if I am from outside the EU?",
+    "answer": "Non-EU nationals need a residence permit to work in Malta. Founders usually go through a Single Permit, a self-employment licence and permit, or the Start-up Residence Programme.",
+    "source_ids": [
+      "MT8",
+      "MT19"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "hold",
+    "hold": true
+  },
+  {
+    "id": "mt-startup-route",
+    "country": "malta",
+    "topic": "visa",
+    "question": "What is the Start-up Residence Programme?",
+    "answer": "It is a route for non-EU founders, co-founders and core employees of an innovative start-up whose business plan Malta Enterprise approves, with paid-up capital or investment of at least EUR 25,000. Founder permits are for three years, then five more.",
+    "source_ids": [
+      "MT19",
+      "MT20"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "hold",
+    "hold": true
+  }
+]
