@@ -1,0 +1,755 @@
+{
+  "slug": "czechia",
+  "title": "How to start a company in Czechia",
+  "summary": "Czechia gives a founder two main routes: work as an OSVC (osoba samostatne vydelecne cinna, a self-employed person) under a trade licence (zivnostensky list), a low-cost start with unlimited personal liability, or form a spolecnost s rucenim omezenym (s.r.o., a limited liability company) with a notary and an entry in the commercial register. A trade licence is notified at a trade licensing office (zivnostensky urad), which also serves as the front door to the tax, social-security and health-insurance notifications. Founders from outside the EU face a trap: the trade office asks for a visa or residence permit, and the business visa asks for proof of trade registration.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed; independently fact-checked by a second agent on 2026-10-13 (not a legal review)",
+  "next_check_due": "2027-01-15",
+  "quick_facts": {
+    "structure": {
+      "text": "Start as an OSVC with a trade licence (zivnost) - no notary and no minimum capital. Form an s.r.o. later for limited liability; the legal minimum contribution is CZK 1 (MPO page dated 2016).",
+      "source_ids": [
+        "CZ15",
+        "CZ16"
+      ]
+    },
+    "cost": {
+      "text": "Notifying a trade costs CZK 1,000 (MPO page, read 2026). A court entry for an s.r.o. costs CZK 6,000; the notary deed is charged separately under the notarial tariff.",
+      "source_ids": [
+        "CZ15",
+        "CZ12",
+        "CZ14"
+      ]
+    },
+    "time": {
+      "text": "A free trade arises on the day of a complete notification (for a non-EU citizen, only once the long-stay visa or residence permit is shown to the trade office). An s.r.o. exists only once entered in the register; the court generally has five working days, and a notary can in the ideal case found the company within hours.",
+      "source_ids": [
+        "CZ15",
+        "CZ13",
+        "CZ14"
+      ]
+    },
+    "gotcha": {
+      "text": "Non-EU founders: you can notify the trade first, but the right to trade starts only when you show the trade office your long-stay visa or residence permit (within 3 working days of registering your residence, and within 6 months of the office's extract), while the business visa itself asks for proof of trade registration. Plan the order of steps with an adviser before you travel.",
+      "source_ids": [
+        "CZ15",
+        "CZ19",
+        "CZ23"
+      ]
+    }
+  },
+  "founder_checklist": [
+    {
+      "text": "Decide between an OSVC (trade licence, unlimited liability) and an s.r.o. (notary, limited liability).",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "Work out which type of trade your activity is: free, craft, bound or licensed.",
+      "section_id": "trade-types"
+    },
+    {
+      "text": "Non-EU founders: sort out the visa or residence permit and the trade-registration order first.",
+      "section_id": "visa"
+    },
+    {
+      "text": "Notify the trade (or form the s.r.o. at a notary) and pay the registration fee.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "Register with the social security administration (CSSZ) within 15 days of starting and arrange health insurance.",
+      "section_id": "social"
+    },
+    {
+      "text": "Check the VAT registration thresholds and decide whether the flat-rate tax regime (pausalni dan) suits you.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Understand the 2026 minimum monthly insurance advances before you set prices.",
+      "section_id": "social"
+    },
+    {
+      "text": "Form an s.r.o. only when you need limited liability or a company counterpart: notary deed, seat, court entry.",
+      "section_id": "company-steps"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        {
+          "text": "Czech business life runs on the trade licence (zivnost). Most solo founders start as an OSVC: you notify a trade at a trade licensing office, and from the day the notification is complete (for EU citizens) you may trade. You are personally liable for the business debts. If you want limited liability, or want clients and investors to contract with a company, you form an s.r.o. through a notary and the commercial register. For founders from outside the EU the residence route, not the company registration, is usually the slow and decisive step. The country-specific points to understand early are the four trade types (what you may do on a plain notification), the flat-rate tax regime (pausalni dan) and its trade-offs, and the 2026 changes to the minimum social-security advances.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "OSVC (sole trader under a trade licence)",
+            "none",
+            "personal, unlimited",
+            "no",
+            "a free trade arises on the notification date if the filing is complete (non-EU citizens: when the visa or permit is shown)",
+            "tax records; no company accounts",
+            "official [CZ15]"
+          ],
+          [
+            "Spolecnost s rucenim omezenym (s.r.o.)",
+            "CZK 1 minimum contribution per member (MPO page of 2016; confirm current)",
+            "limited to the company's assets, subject to statutory exceptions",
+            "yes, the founding documents are a notarial deed",
+            "court generally has 5 working days; a notary can in the ideal case found it within hours",
+            "annual accounts; audit only for medium and large entities from 2026",
+            "official [CZ13, CZ14, CZ16, CZ3]"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "An OSVC runs a business under a trade licence. A free trade (zivnost volna) is started by notifying a trade licensing office; the right to trade arises on the notification date if the filing is complete. The fee for entering trade is CZK 1,000, plus CZK 500 for each further notification, plus CZK 50 more if filed through Czech POINT (MPO page, read 12 Oct 2026; the page itself carries no year).",
+          "source_ids": [
+            "CZ15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "An s.r.o. exists only once it is entered in the commercial register. The documents are prepared as a notarial deed, and the notary can on request also file the register entry. The company's seat needs a legal basis: if the premises are not yours, an owner's declaration (signatures certified, not older than three months) is accepted.",
+          "source_ids": [
+            "CZ13",
+            "CZ14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The Act on Business Corporations (no. 90/2012 Coll., section 142(1)) sets the minimum contribution of an s.r.o. member at CZK 1. The MPO page that says this is dated 22 Nov 2016, so a local professional should confirm that the rule is unchanged in 2026.",
+          "source_ids": [
+            "CZ16"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Court fee for the first registration of an s.r.o.: CZK 6,000, fees above CZK 5,000 must be paid by bank transfer to the court's account. The application must be filed without undue delay and within 15 days of the triggering event, and within six months of founding for commercial corporations, unless the founding act sets another period.",
+          "source_ids": [
+            "CZ12",
+            "CZ13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The same page lists a fee of CZK 2,700 for a first entry made by a notary and also exempts from fees an entry made by a notary on the basis of a founding deed of an s.r.o. that contains only the mandatory elements and cash contributions. So the notary-route fee depends on the content of the deed; the cost is held until a notary confirms it for your case.",
+          "source_ids": [
+            "CZ12"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Whether a non-EU or non-resident person may be the sole director (jednatel) of an s.r.o., and whether the director needs a Czech address, was not found on an opened official page.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For most first-time founders working alone, start as an OSVC: it is usually the lowest-cost and simplest way to start trading, and you can form an s.r.o. later when you need limited liability, a co-founder structure or a counterpart that wants a company. An s.r.o. adds notary and register steps, annual accounts and more admin, so it usually pays off once there is real revenue or risk.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide whether unlimited personal liability as an OSVC is acceptable for now.",
+          "source_ids": []
+        },
+        {
+          "text": "If you choose an s.r.o., budget the CZK 6,000 court fee and the notary's tariff fee.",
+          "source_ids": [
+            "CZ12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trade-types",
+      "title": "Country-specific: trade licence types and who can hold one",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "The Trades Act distinguishes free trades (notified), craft trades (professional qualification under sections 21 and 22), bound and licensed trades (qualification under sections 24 or 27 and annexes 2 and 3; some also need another authority's consent). A licensed trade (koncese) starts only when the concession decision becomes final.",
+          "source_ids": [
+            "CZ15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "If you lack the required qualification, you may appoint a responsible representative who meets it, with the representative's signed consent.",
+          "source_ids": [
+            "CZ15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Good character for foreigners: EU/EEA and Swiss citizens prove it with a criminal-record extract from their home state or last state of residence, not older than 3 months. Third-country citizens without permanent residence in Czechia need the home-state extract and a Czech Criminal Register extract, both not older than 3 months, plus a long-stay visa or residence permit.",
+          "source_ids": [
+            "CZ15"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Most software, consulting, design and content work falls under a free trade, but the notification must name the fields of activity, and some regulated activities need a qualification. If your idea is regulated (for example anything near finance, health or crafts), ask the trade licensing office which type applies before you pay.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check which trade type your activity falls under.",
+          "source_ids": [
+            "CZ15"
+          ]
+        },
+        {
+          "text": "Gather criminal-record extracts that are not older than 3 months.",
+          "source_ids": [
+            "CZ15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, OSVC via the trade licensing office",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Non-EU/EEA/Swiss founders: a long-stay visa or residence permit must be shown to the trade office; the right to trade then arises on the day it is shown, if shown within 3 working days of registering your residence in Czechia and within 6 months of the trade office's extract issued for the residence proceedings. See the residence-permit section.",
+          "source_ids": [
+            "CZ15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Prepare the notification and the good-character documents (see trade types). EU/EEA citizens use home-state criminal-record extracts not older than 3 months.",
+          "source_ids": [
+            "CZ15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. File the notification for a free trade at a trade licensing office and pay CZK 1,000 (CZK 500 for each further notification; CZK 50 extra via Czech POINT). The right to trade arises on the notification date if the filing is complete; if documents are missing the office sets a deadline to supply them.",
+          "source_ids": [
+            "CZ15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Notify the social security administration (CSSZ) of the start of self-employment on the prescribed form no later than the 15th day after starting.",
+          "source_ids": [
+            "CZ5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Health insurance: pay your monthly advance to your insurer by the 8th day of the following month; the 2026 minimum applies from the first year of business.",
+          "source_ids": [
+            "CZ8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Decide on VAT and on the flat-rate regime (pausalni dan). If you start after 10 January, the flat-rate notification to the tax office is due by the day activity starts.",
+          "source_ids": [
+            "CZ2",
+            "CZ9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Registration with a health insurer within a fixed number of days after start, and any separate tax-office registration deadline outside the flat-rate regime, were not found on an opened official page.",
+          "source_ids": [],
+          "confidence": "hold"
+        },
+        {
+          "text": "7. Open a business bank account (not a legal requirement, but very useful) and keep invoices and records from day one.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Gather documents and notify the trade; pay the CZK 1,000 fee.",
+          "source_ids": [
+            "CZ15"
+          ]
+        },
+        {
+          "text": "Notify CSSZ within 15 days of starting.",
+          "source_ids": [
+            "CZ5"
+          ]
+        },
+        {
+          "text": "Arrange health-insurance advances (minimum CZK 3,306 per month in 2026).",
+          "source_ids": [
+            "CZ8"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, s.r.o. (limited liability company)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Choose the company name, seat and members/director. Prepare ID documents; for a seat in someone else's property, get the owner's signed declaration (certified signatures, not older than three months).",
+          "source_ids": [
+            "CZ13",
+            "CZ14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Engage a notary. The founding documents are made as a notarial deed. You can authenticate online with Identita obcana or bankID and choose a notary through the Notary Chamber portal; the notary's fee follows the notarial tariff (Decree no. 196/2001 Coll.).",
+          "source_ids": [
+            "CZ14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Fund the contribution: the legal minimum contribution is CZK 1 per member (MPO page of 2016; confirm current).",
+          "source_ids": [
+            "CZ16"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. The register entry: either file with the registry court (court fee CZK 6,000 by bank transfer, filing within 15 days of the triggering event and within six months of founding) or ask the notary to enter the company directly. The court generally has five working days; if it does not act, registration is deemed to have occurred, with the data entered within two days.",
+          "source_ids": [
+            "CZ12",
+            "CZ13",
+            "CZ14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Corporate income tax return: due within 3 months after the end of the tax period; the deadline becomes 4 months if the return was not filed within 3 months and is then filed electronically, and 6 months if the accounts must by law be audited, or if the return was not filed within 3 months and is then filed by an adviser. From 2026 only medium and large entities need a statutory audit.",
+          "source_ids": [
+            "CZ27",
+            "CZ3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Whether an s.r.o. that performs a trade-licensed activity needs its own trade licence, and the practical timeline from notary appointment to the first bank account, were not confirmed on opened official pages.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Choose the name and seat, and get the owner's declaration for the seat.",
+          "source_ids": [
+            "CZ13"
+          ]
+        },
+        {
+          "text": "Engage a notary and sign the deed (online authentication is possible).",
+          "source_ids": [
+            "CZ14"
+          ]
+        },
+        {
+          "text": "Confirm the register entry and the CZK 6,000 court fee if the court route is used.",
+          "source_ids": [
+            "CZ12"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flat-rate",
+      "title": "Country-specific: the flat-rate tax regime (pausalni dan)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "The flat-rate regime (pausalni rezim) replaces income tax, pension and health advances with one monthly payment. 2026 monthly amounts: band I CZK 9,984 (tax CZK 100, pension CZK 6,578, health CZK 3,306); band II CZK 16,745; band III CZK 27,139. The band I amount rose from CZK 8,716 in 2025; bands II and III are unchanged.",
+          "source_ids": [
+            "CZ1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Entry conditions listed by the tax authority (2026): not a VAT payer, annual income up to CZK 2 million, no employment-income activity (except income taxed at source), not in insolvency, not a partner in a general partnership or general partner in a limited partnership, and income in the preceding year within the chosen band; for a business started during the year, prior employment and certain other income may not exceed CZK 50,000 in total.",
+          "source_ids": [
+            "CZ1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The monthly advance is due by the 20th of the month. For 2026 the notice of entry, exit or band change was due by Monday 12 January 2026; if you start after 10 January you notify the tax office by the day the activity starts. Non-residents earning Czech self-employment income may use the regime if all conditions are met.",
+          "source_ids": [
+            "CZ1",
+            "CZ2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The start-year exemption from pension advances does not apply to flat-rate taxpayers.",
+          "source_ids": [
+            "CZ5"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The revenue limit of each individual band for 2026 was not stated on an opened official page. A secondary article says the band I advance falls to CZK 9,162 from 1 July 2026; the tax authority page read does not say this, and the CSSZ page only tells band I taxpayers to contact their tax office. Do not publish the band I figure after June 2026 until the tax office confirms it.",
+          "source_ids": [
+            "CZ1",
+            "CZ4"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The flat rate is predictable, but it is not automatically cheaper. It includes the insurance advances, you cannot be a VAT payer, and a very low-income first year can cost more than the ordinary system. Compare it with the ordinary system using 2026 minimums with an accountant before you opt in or out.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check whether you meet every entry condition and which band applies.",
+          "source_ids": [
+            "CZ1"
+          ]
+        },
+        {
+          "text": "Diarise the January notification deadline for the next year.",
+          "source_ids": [
+            "CZ1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "VAT rates (as stated on the gov.cz portal and the tax office system description, read Oct 2026): standard 21%, single reduced rate 12%.",
+          "source_ids": [
+            "CZ10",
+            "CZ28"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "VAT registration (rules on the gov.cz portal, read 12 Oct 2026): domestic turnover above CZK 2,000,000 in a calendar year makes you a payer from 1 January of the next year; above CZK 2,536,500 you become a payer from the day after the limit is exceeded, with the application due within 10 working days. An identified person status arises when acquisitions of goods from other EU states exceed CZK 326,000 in a calendar year, application within 15 days.",
+          "source_ids": [
+            "CZ9"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Personal income tax: 15% up to 36 times the average wage and 23% above it. With the 2026 average wage of CZK 48,967 the limit is CZK 1,762,812 (own calculation: 36 x 48,967).",
+          "source_ids": [
+            "CZ28",
+            "CZ7",
+            "CZ11"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Self-employed can use lump-sum expenses instead of actual costs: 80% of income (up to CZK 1,600,000), 60% (up to CZK 1,200,000), 40% (up to CZK 800,000), 30% (up to CZK 600,000), depending on the type of activity. Figures as shown on the gov.cz portal page, read 12 Oct 2026; the page carries no year.",
+          "source_ids": [
+            "CZ11"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Corporate income tax: 21% since the 2024 tax period. Tax-return deadlines: 3 months after the tax period; 4 months if not filed within 3 months and then filed electronically; 6 months if an audit is required by law, or if not filed within 3 months and then filed by an adviser.",
+          "source_ids": [
+            "CZ27",
+            "CZ28"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "E-invoicing: central state bodies have had to accept e-invoices since 31 Dec 2018, contracting authorities of the Czech Republic and the Czech National Bank since 1 Apr 2019 and other contracting authorities since 1 Apr 2020, in EN 16931-1:2017 compliant formats (UBL 2.1, UN/CEFACT CII, ISDOC/ISDOCX 5.2+). This is an obligation on public bodies to receive. The MF page is dated 2 Oct 2018, so newer rules would not show on it.",
+          "source_ids": [
+            "CZ17"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Whether Czechia has a general business-to-business e-invoicing mandate in force or scheduled was not stated on any opened official page; a secondary article (not used as a source) says none exists yet.",
+          "source_ids": [
+            "CZ17"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "The basic taxpayer allowance for 2026 (reported as CZK 30,840) and the mandatory content of a Czech invoice were not confirmed on an opened official page.",
+          "source_ids": [],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Early revenue usually stays far below the VAT limit, but charging VAT to business clients in other EU states can make the identified-person rules relevant sooner. Choose the tax regime (flat rate or ordinary) before your first invoice and keep a simple calendar of the January and spring deadlines.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Monitor domestic turnover against CZK 2,000,000 per calendar year.",
+          "source_ids": [
+            "CZ9"
+          ]
+        },
+        {
+          "text": "Choose between the flat-rate regime and ordinary tax with an accountant.",
+          "source_ids": [
+            "CZ1"
+          ]
+        },
+        {
+          "text": "If forming an s.r.o., diarise the corporate tax-return deadline.",
+          "source_ids": [
+            "CZ27"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security and health insurance",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Pension insurance advance for OSVC: 29.2% of the monthly assessment base. Minimum for main activity in 2026: base CZK 19,587 and advance CZK 5,720 per month for January to June; from July 2026 the minimum base fell from 40% to 35% of the average wage (CZK 17,139) and the minimum advance to CZK 5,005. Advances recalculated from your annual overview can be higher.",
+          "source_ids": [
+            "CZ4",
+            "CZ6",
+            "CZ7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Secondary activity (side business): minimum monthly base CZK 5,387 and advance CZK 1,574 where mandatory participation applies; the 2026 income threshold is CZK 117,521. In the start year there is no duty to pay advances.",
+          "source_ids": [
+            "CZ5",
+            "CZ6",
+            "CZ7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Starter relief: for a main-activity OSVC who starts an activity that was not carried on in the previous 20 calendar years, the minimum monthly base is CZK 12,242 and the advance CZK 3,575 in 2026; it applies in the start year and the two following years. A separate exemption from advances covers the start year and the next year for an OSVC who did not carry on the activity in the previous 5 calendar years (insurance is still settled after the annual overview is filed; the exemption does not apply to flat-rate taxpayers).",
+          "source_ids": [
+            "CZ5",
+            "CZ6",
+            "CZ7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Notify the start of self-employment to CSSZ within 15 days. Sickness insurance is voluntary for OSVC: 2.7% rate, minimum monthly base CZK 9,000, minimum payment CZK 243. Maximum annual assessment base 2026: CZK 2,350,416 (48 x CZK 48,967 average wage).",
+          "source_ids": [
+            "CZ5",
+            "CZ7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Health insurance: from 1 Jan 2026 the minimum monthly advance for OSVC is CZK 3,306, including for those who start in 2026. Advances are due from the 1st day of the month they cover to the 8th of the next month. State-insured persons (such as pensioners and students) and side-business OSVC who meet the minimum elsewhere are exempt from the minimum advance.",
+          "source_ids": [
+            "CZ8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "How social and health insurance apply to the director (jednatel) of an s.r.o. who draws no salary or a salary, and whether a non-EU founder on a business permit has any special insurance duty, were not confirmed on opened official pages.",
+          "source_ids": [],
+          "confidence": "hold"
+        },
+        {
+          "text": "Whether the January to June overpayment is credited at settlement (as the CSSZ page says) or refunded on request by 31 Dec 2026 should be confirmed with CSSZ for each case.",
+          "source_ids": [
+            "CZ4"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The 2026 minimums are a fixed monthly cost even in a weak first month: roughly CZK 5,005 social plus CZK 3,306 health from July 2026 for a main-activity OSVC before the starter relief. The starter relief and the flat-rate regime change this a lot, so model both before pricing your services.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Notify CSSZ within 15 days of start.",
+          "source_ids": [
+            "CZ5"
+          ]
+        },
+        {
+          "text": "Budget the minimum monthly advances for 2026.",
+          "source_ids": [
+            "CZ4",
+            "CZ8"
+          ]
+        },
+        {
+          "text": "Decide whether to join voluntary sickness insurance.",
+          "source_ids": [
+            "CZ5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "CZ18",
+      "internal_notes": "Agent draft, agent review, not legal advice. Figures come from the Ministry of the Interior's information portal (ipc.gov.cz), the Ministry of Foreign Affairs and an archived Ministry page. Not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live (see the Standard's publishing gates).",
+      "open_questions_for_reviewer": [
+        "The MPO page (CZ15, section 2.2.3) describes the mechanism: notify the trade, obtain the trade office's extract for the residence proceedings, then show the visa or permit within 3 working days of registering residence and within 6 months of the extract. Please confirm this works in practice for a founder who has never been in Czechia, and whether registration through a representative or power of attorney is allowed (not found on an opened official page).",
+        "Is the CZK 156,500 funds figure (50 x CZK 3,130, 2023) still current in 2026, and which living-minimum figures does the Ministry apply now?",
+        "The Lusaka Ministry page and some secondary sites state a CZK 5,000 consular fee for the business route while others state CZK 2,500; the ipc.gov.cz page says CZK 5,000 for the visa and CZK 2,500 for the permit. Confirm per mission.",
+        "Is the Employee Card or Blue Card more realistic for the likely audience (IT professionals) than the business route, and should the section cover switching from an employee permit to self-employment?",
+        "Do the Digital Nomad and investor programmes matter for this audience? Not researched.",
+        "Is the disclaimer and the explain-the-rules framing adequate?"
+      ],
+      "official_information": [
+        {
+          "text": "Third-country (non-EU/EEA/Swiss) founders must show a long-stay visa or residence permit to the trade licensing office; EU/EEA and Swiss citizens are assessed under different documents. Business visa applications in turn require proof of registration (a trade licence extract or commercial register extract). The MPO page describes how the order works for a third-country founder: the right to trade arises when the visa or permit is shown to the trade office, within 3 working days of registering residence and within 6 months of the trade office's extract issued for the residence proceedings.",
+          "source_ids": [
+            "CZ15",
+            "CZ19",
+            "CZ23"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Long-term visa for the purpose of doing business: for those who will carry on a business, hold a licensed trade, be self-employed or be a statutory body member of a company. Apply in person at a Czech diplomatic mission (some missions have quotas); consular fee CZK 5,000; decision in 90 days, 120 in especially complicated cases; valid for a maximum of 1 year; extension fee CZK 1,000 and processed in 14 days; a stay beyond one year needs a long-term residence permit. Register with the Foreign Police within 3 business days of arrival. Medical insurance is required before the visa is placed in the passport.",
+          "source_ids": [
+            "CZ19",
+            "CZ23"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Funds for the business visa: 50 times the subsistence minimum, which the page gives as CZK 156,500 since 1 January 2023 (50 x CZK 3,130). The page has not been updated for 2026, so the current figure must be checked.",
+          "source_ids": [
+            "CZ20"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Long-term residence permit for the purpose of doing business: for holders of a business visa or of a long-term residence permit who have lived in Czechia for more than 5 years. Valid for a maximum of 2 years, renewable for up to 2 years each time. New applications only in person at a Ministry of the Interior office; fee CZK 2,500; decision in 60 days (the clock stops while proceedings are suspended); extensions may be filed no earlier than 120 days before expiry. Documents include proof of funds, registration in the trade or commercial register, proof of no debts and comprehensive medical insurance; the page states no fixed income amount, and monthly income must be shown regularly rather than as a one-time bank balance.",
+          "source_ids": [
+            "CZ18",
+            "CZ20"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Income test for the business permit: the applicant's monthly income, with that of persons assessed together, must reach the sum of living minimums plus housing costs. The page lists CZK 5,000 for the first person and normative housing costs from 1 Oct 2026 (CZK 15,680 for a one-person household). An archived Ministry page shows older 2023 figures (CZK 4,860, 18,129), so the current numbers conflict and need checking.",
+          "source_ids": [
+            "CZ20",
+            "CZ26"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Employee Card (employment route): for third-country citizens in all kinds of jobs; valid up to 2 years; administrative fee CZK 2,500 in Czechia, consular fee CZK 5,000 abroad; decision in 60 days (90 in especially complicated cases); a vacancy registered in the Central Database of Job Vacancies requires the vacancy number. Apply in person at a Ministry office or Czech mission.",
+          "source_ids": [
+            "CZ21"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "EU Blue Card: for a job requiring higher vocational or at least 3 years of university education at a pay of at least 1.5 times the average gross salary (the page gives no CZK figure); card valid 3 months beyond the contract, maximum 3 years; fee CZK 2,500 in Czechia, CZK 5,000 abroad; decision in 90 days, 60 days for an extension. The page is inconsistent on contract length (one year versus six months).",
+          "source_ids": [
+            "CZ22"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Permit for seeking employment or starting a business: for graduates of Czech university programmes and researchers; up to 9 months, not extendable; fee CZK 2,500; 60 days; free access to the labour market afterwards.",
+          "source_ids": [
+            "CZ25"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
