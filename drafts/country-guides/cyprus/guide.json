@@ -1,0 +1,246 @@
+{
+  "slug": "cyprus",
+  "title": "How to start a company in Cyprus",
+  "summary": "Cyprus gives a founder two main routes: work as a self-employed person (register with the Social Insurance Services and the Tax Department, with no Registrar of Companies entry unless you trade under a business name) for a light, low-cost start with unlimited personal liability, or form a private limited company (Ltd) through the Department of the Registrar of Companies and Intellectual Property (DRCIP) for limited liability. A company must be set up with a lawyer practising in Cyprus, and the memorandum and articles of association are filed in Greek. The Point of Single Contact (businessincyprus.gov.cy) is the government's entry portal for tax and VAT registration steps.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, independently fact-checked by a second agent 2026-10-13; not legal review",
+  "next_check_due": "2027-01-11",
+  "quick_facts": {
+    "structure": { "text": "Register as self-employed with the Social Insurance Services and the Tax Department (no Registrar entry unless you trade under a business name), or form a private limited company (Ltd), which must be set up by a lawyer practising in Cyprus.", "source_ids": ["CY12", "CY8", "CY6"] },
+    "cost": { "text": "Company: EUR 165 registration fee plus EUR 10 per proposed name, then a EUR 350 annual fee (current published figures, 2026), plus your lawyer's fee, which the Registrar does not publish. A business name costs EUR 80.", "source_ids": ["CY1", "CY2", "CY4", "CY8"] },
+    "time": { "text": "A social insurance number for a self-employed person is usually given within 1 to 2 weeks of applying. The Registrar's pages do not publish a processing range for a company; accelerated handling exists for an extra fee.", "source_ids": ["CY12", "CY1"] },
+    "gotcha": { "text": "A company cannot be filed by the founder alone: only a lawyer practising in Cyprus can draft the memorandum and articles, which are signed in Greek, and the filing needs Registrar e-filing access. Registering a company does not by itself give a non-EU founder the right to live or work in Cyprus.", "source_ids": ["CY6", "CY1", "CY7"] }
+  },
+  "founder_checklist": [
+    { "text": "Confirm whether you need a residence permit before you can work or run a business in Cyprus (EU citizens register on arrival; non-EU founders need a permit route first).", "section_id": "visa" },
+    { "text": "Choose self-employed (sole trader) or a private limited company (Ltd).", "section_id": "legal-forms" },
+    { "text": "If self-employed: register with the Social Insurance Services, then in the Tax Register (online via Tax For All).", "section_id": "sole-steps" },
+    { "text": "If forming an Ltd: instruct a lawyer practising in Cyprus, get Registrar e-filing access, and get the company name approved.", "section_id": "company-steps" },
+    { "text": "Decide who will be director and where the company will really be managed before incorporating.", "section_id": "company-from-abroad" },
+    { "text": "Within 60 days of incorporation, apply for company tax registration; register for VAT once you pass the EUR 15,600 threshold.", "section_id": "taxes" },
+    { "text": "Set up bookkeeping and invoicing; plan for audited financial statements for a company.", "section_id": "taxes" },
+    { "text": "Register with the Social Insurance Services (self-employed, or as an employer) and with the General Healthcare System (GeSY).", "section_id": "social" },
+    { "text": "Diarise the EUR 350 annual company fee (30 June) and the annual return.", "section_id": "company-steps" }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        { "text": "Cyprus gives a founder two main routes. The light route is to register as self-employed: you register with the Social Insurance Services and the Tax Department, and you only touch the Registrar of Companies if you want to trade under a business name. The company route is a private limited company (Ltd) registered with the Department of the Registrar of Companies and Intellectual Property (DRCIP). The company route has two features that surprise people from other countries: only a lawyer practising in Cyprus can draft the founding documents, and those documents are signed in Greek. There is no single one-stop counter that does everything; the Point of Single Contact (businessincyprus.gov.cy) is a government information portal that points you to the Registrar, the Tax Department and the Social Insurance Services. For founders from outside the EU, the right to live and work in Cyprus is a separate question from registering the business, and is usually the slower and more decisive step.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": ["Form", "Minimum capital", "Liability", "Notary", "Typical setup time", "Bookkeeping", "Status"],
+        "rows": [
+          ["Self-employed person (sole trader), optionally with a registered business name", "none stated", "personal, unlimited", "no", "Social insurance number usually within 1 to 2 weeks of the application", "keep accounts and records; audited financial statements if annual turnover exceeds EUR 70,000 (as stated by the Point of Single Contact)", "official [CY12]"],
+          ["Private limited company by shares (Ltd)", "none for a private company (Registrar of Companies)", "limited to the company's assets (members are not personally liable for its debts)", "no notary; a lawyer practising in Cyprus must draft the memorandum and articles and make a sworn statement (form HE1)", "no processing range published on the Registrar's pages; an accelerated procedure exists for an extra EUR 100", "accounts kept; audited financial statements prepared each tax year", "official [CY1, CY27]"]
+        ]
+      },
+      "official_information": [
+        { "text": "The Registrar of Companies lists five types of company: private limited liability company by shares, public limited liability company by shares, limited liability company by guarantee without share capital, limited liability company by guarantee with a share capital, and variable capital investment company. A private company can have up to 50 members; a public company an unlimited number.", "source_ids": ["CY20", "CY5"], "confidence": "official" },
+        { "text": "A company is a legal person under the Companies Law (Cap. 113). It is a separate legal entity, so its members are not personally liable for its debts and its creditors cannot bring an action against them for the company's obligations.", "source_ids": ["CY21", "CY5"], "confidence": "official" },
+        { "text": "A business name (the Registrar's vehicle for a sole trader trading under a name) has one owner with unlimited personal liability. A partnership has unlimited liability for its general partners. The Registrar's comparison table lists the registration costs as EUR 165 for a company with share capital (EUR 235 without share capital), EUR 120 for a partnership and EUR 80 for a business name (2026).", "source_ids": ["CY5"], "confidence": "official" },
+        { "text": "Only lawyers practising in the Republic of Cyprus can draft the memorandum and articles of association of a company. The lawyer entrusted with the incorporation makes a statement in form HE1.", "source_ids": ["CY6"], "confidence": "official" },
+        { "text": "The Point of Single Contact states that Cyprus has no specialised system for registering start-ups, so a start-up founder either registers as self-employed or incorporates a company with the Registrar. It also states that most companies are limited liability companies, and that self-employed registration is a simpler and quicker process than incorporating.", "source_ids": ["CY12"], "confidence": "official" },
+        { "text": "The Registrar states that for private companies there is no minimum share capital requirement (a public company offered for subscription needs EUR 25,629). A private company needs at least 1 and at most 50 members and at least 1 director aged 18 or over, plus a secretary aged 18 or over; one person can be both director and secretary only if the company has one member and one director.", "source_ids": ["CY27", "CY28"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "For a first-time founder invoicing clients in the EU, registering as self-employed is the cheapest and fastest way to start. Move to an Ltd when you want to cap personal liability, bring in a co-founder or investor, or a client wants to contract with a company. Remember that the Ltd adds a lawyer's fee, Greek-language founding documents, audited accounts and a fixed annual fee.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide whether unlimited personal liability (self-employed) is acceptable for now.", "source_ids": [] },
+        { "text": "If forming an Ltd, ask a Cyprus-practising lawyer for the full fee quote, as the Registrar does not publish lawyer fees.", "source_ids": ["CY6"] }
+      ]
+    },
+    {
+      "id": "company-from-abroad",
+      "title": "Worth knowing: directors, tax residence and running a company from abroad",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Before incorporating, the Registrar's checklist says you must decide the company's type, name, registered office address, directors and secretary, members and share capital, objects, and memorandum and articles.", "source_ids": ["CY7"], "confidence": "official" },
+        { "text": "The Point of Single Contact states that, regardless of the company type, a company must have a Cypriot resident as a director, and that if the owner is a foreign citizen who lives abroad more than 183 days a year, the company must appoint an additional person as director, which could be a regular director or a legal representative such as a lawyer. Conflict for reviewer: this statement does not appear on the Registrar's own incorporation pages that were opened, and it has not been checked against the Companies Law. The checker agent also opened the Registrar's directors page (CY28): it requires at least one director for a private company, aged 18 or over, and mentions no residence requirement, which conflicts with the portal. It is held, not rendered, until a Cyprus lawyer confirms whether any director-residence rule applies to a private company.", "source_ids": ["CY13", "CY7", "CY28"], "confidence": "hold" },
+        { "text": "A person is a tax resident of Cyprus if they live there more than 183 days in a tax year, or meet the requirements of the 60-day residence rule. A legal entity registered in Cyprus must register in the Tax Register.", "source_ids": ["CY11"], "confidence": "official" },
+        { "text": "A company must register with the Tax Department within 60 days of incorporation and obtain a tax number.", "source_ids": ["CY4"], "confidence": "official" },
+        { "text": "The digital nomad residence permit is a residence permit, not a work permit. The applicant declares that they will not provide work or services to an employer established in Cyprus, so it is not a route for running a Cyprus-based business (position as described in a government strategy document of February 2024).", "source_ids": ["CY15"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Two separate questions are easy to mix up: where the company is legally registered (Cyprus) and where it is managed and taxed. A company registered in Cyprus must be registered with the Tax Department. Where the directors live and where decisions are made can affect tax and banking, so speak to a Cyprus accountant before choosing directors. This guide does not give tax-residence or substance advice.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Decide who the directors and the secretary will be before instructing the lawyer.", "source_ids": ["CY7"] },
+        { "text": "Ask your lawyer in writing whether any residence requirement applies to the director of a private company.", "source_ids": [] }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, self-employed (sole trader)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Check whether your activity needs a special licence. Certain activities need special licences and face stricter regulatory controls; the Point of Single Contact lists the requirements by sector.", "source_ids": ["CY12"], "confidence": "official" },
+        { "text": "2. Optional: if you will trade under a name other than your own, register a business name with the Registrar within one month of starting business. The fee is EUR 80 (EUR 40 more to accelerate), paid by card, and online filing needs prior Registrar e-filing access.", "source_ids": ["CY8"], "confidence": "official" },
+        { "text": "3. Register with the Social Insurance Services using the self-employed application form (YKA 1-008), submitted by hand or post at your local District Social Insurance Office with a copy of your ID card, passport or alien registration certificate (ARC). The social insurance number is usually given within 1 to 2 weeks.", "source_ids": ["CY12", "CY9"], "confidence": "official" },
+        { "text": "4. Register in the Tax Register. This is done only online through the Tax For All (TFA) taxpayer portal, after creating an account. Under the rules for the 2026 tax year, a tax resident aged 25 to 70 at 31 December of the tax year must register and file regardless of income; a person with gross income above EUR 19,500 was required to register for the 2025 tax year.", "source_ids": ["CY11"], "confidence": "official" },
+        { "text": "5. VAT is optional when you first register as self-employed, but you must register if taxable supplies over the previous 12 months, or expected within the next 30 days, exceed EUR 15,600. VAT registration is a second step: you first obtain your tax identification number, then submit form T.D. 1101 with proof you carry out taxable activity (for example a contract or invoice).", "source_ids": ["CY12", "CY11"], "confidence": "official" },
+        { "text": "6. If you operate from business premises, you need a licence from the local municipal or community council. Residential property can be registered as a business address for self-employed people and companies, except for businesses such as food catering.", "source_ids": ["CY12"], "confidence": "official" },
+        { "text": "7. EU citizens who are self-employed register with the Migration Department for a Registration Certificate (form MEU1A), presenting identity and a certificate of registration with the Social Insurance Services as self-employed. The fee is EUR 20 per person.", "source_ids": ["CY13"], "confidence": "official" },
+        { "text": "8. Register in the General Healthcare System (GeSY). To be entered in the beneficiary registry you must be registered with the Civil Registry and Migration Department and/or the Social Insurance Services.", "source_ids": ["CY16"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "The order that usually works is: residence status (if needed), Social Insurance Services number, Tax Register and tax identification number, then VAT if you will pass the threshold. Because tax registration is online only and goes through a taxpayer portal account, set that up early.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Check for a licence requirement for your activity.", "source_ids": ["CY12"] },
+        { "text": "Register with the Social Insurance Services (form YKA 1-008).", "source_ids": ["CY12"] },
+        { "text": "Register in the Tax Register online via Tax For All.", "source_ids": ["CY11"] },
+        { "text": "Register for VAT when you pass EUR 15,600 (form T.D. 1101).", "source_ids": ["CY11"] },
+        { "text": "Register in GeSY.", "source_ids": ["CY16"] }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, private limited company (Ltd)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "1. Decide the company type, name, registered office address, directors and secretary, members and share capital, objects, and memorandum and articles. To incorporate online you must first register on the Registrar's e-filing system.", "source_ids": ["CY7"], "confidence": "official" },
+        { "text": "2. Instruct a lawyer practising in Cyprus. Under the Advocates Law only such lawyers can draft the memorandum and articles, and the lawyer makes a statement in form HE1.", "source_ids": ["CY6"], "confidence": "official" },
+        { "text": "3. Get the name approved. Search the Registrar's register first. The fee is EUR 10 per proposed name (EUR 20 more per name to accelerate). A private company's name must end in LIMITED, LTD or the Greek equivalent. Once approved, the name is reserved for six months, within which the incorporation application must be submitted.", "source_ids": ["CY2"], "confidence": "official" },
+        { "text": "4. Submit the incorporation application by e-filing (or by hand/post) with: form HE1 sworn before the court by the lawyer; the memorandum and articles of association signed in the Greek language (or, if adopting Table A of Schedule I of the Companies Law, a document naming it); the witness-of-signatures declaration; any required consent for restricted words or business nature; and the fee of EUR 165 (EUR 235 for a company without share capital), payable by card online. Accelerated processing costs EUR 100 more; a translations file costs EUR 160 more. A hand/post filing also needs forms HE2 (registered office) and HE3 (first directors and secretary).", "source_ids": ["CY1"], "confidence": "official" },
+        { "text": "5. When the Registrar is satisfied that the legal requirements are met, the registration is published in the Official Gazette and the certificate of incorporation is issued; the company's legal existence begins then. Optional certificates and certified copies cost EUR 120 (with a certified copy of the memorandum and articles) or EUR 130 (without), plus EUR 100 to accelerate.", "source_ids": ["CY3"], "confidence": "official" },
+        { "text": "6. Within 60 days of incorporation, apply to the Tax Department for taxpayer registration and a tax number. If the company has made, or will within 30 days make, taxable supplies over EUR 15,600, also submit the supplementary VAT registration form.", "source_ids": ["CY4"], "confidence": "official" },
+        { "text": "7. Employers register with the Social Insurance Services using the employer registration form, separately for each district or economic activity if there are several.", "source_ids": ["CY4"], "confidence": "official" },
+        { "text": "8. Ongoing: tell the Registrar of changes to the company's particulars; file an annual return each calendar year with a copy of the financial statements; prepare audited financial statements each tax year and file them with the tax return; and pay the annual fee of EUR 350 by 30 June each year.", "source_ids": ["CY4"], "confidence": "official" },
+        { "text": "9. Registrar announcements (September 2026): companies, SEs and partnerships must access the Beneficial Ownership Register system between 1 October and 31 December 2026 to confirm beneficial ownership, and companies that have not paid annual fees face striking-off proceedings starting in December.", "source_ids": ["CY10"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "The company route is a lawyer-led process. Ask the lawyer to quote the full cost up front, because the Registrar publishes only its own fees. Registrar fees alone (EUR 165 plus EUR 10 per name tried) are small, but the EUR 350 annual fee and audited accounts are fixed yearly costs even if the company earns nothing.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Register for Registrar e-filing access.", "source_ids": ["CY7"] },
+        { "text": "Instruct a lawyer practising in Cyprus.", "source_ids": ["CY6"] },
+        { "text": "Get the company name approved (EUR 10 per name).", "source_ids": ["CY2"] },
+        { "text": "File the incorporation application (EUR 165).", "source_ids": ["CY1"] },
+        { "text": "Apply for tax registration within 60 days of incorporation.", "source_ids": ["CY4"] },
+        { "text": "Register as an employer with the Social Insurance Services if you will hire.", "source_ids": ["CY4"] },
+        { "text": "Diarise the EUR 350 annual fee (30 June) and the annual return.", "source_ids": ["CY4"] }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "VAT rates in Cyprus: standard 19%, reduced 9% (for example catering services and taxi fares), reduced 5% (for example books, newspapers, water supply) and zero rate (for example food and medicines).", "source_ids": ["CY16", "CY12"], "confidence": "official" },
+        { "text": "VAT registration is required for a person registered in Cyprus whose taxable supplies over the 12 preceding months, or expected within the next 30 days, exceed EUR 15,600. A separate threshold of EUR 10,251.61 applies to acquisitions from other EU member states. Registration in the Tax Register comes first; VAT registration is by form T.D. 1101.", "source_ids": ["CY11", "CY4", "CY22"], "confidence": "official" },
+        { "text": "Since 1 January 2025 an EU special VAT scheme for small enterprises lets qualifying small businesses sell without charging VAT. For Cyprus, the European Commission's SME portal states that the national annual threshold is EUR 15,600, that Cyprus has no sectoral thresholds, and that Cyprus has no separate national SME scheme: a business that does not exceed the registration threshold is simply not obliged to register for VAT, and may register voluntarily. The Cyprus Tax Department's own VAT registration page still states the EUR 15,600 threshold. (The Commission page is dated 3 September 2024; the Tax Department page was read on 13 October 2026.)", "source_ids": ["CY22", "CY23", "CY14"], "confidence": "official" },
+        { "text": "VAT-registered businesses file a VAT return (form T.D. 1004) online, quarterly, and pay the tax due by the 10th day of the second month after the end of the return period.", "source_ids": ["CY11", "CY12"], "confidence": "official" },
+        { "text": "Personal income tax (2026 tax year) is charged at 0% up to EUR 22,000, 20% on EUR 22,001 to 32,000, 25% on EUR 32,001 to 42,000, 30% on EUR 42,001 to 72,000 and 35% above EUR 72,000. The tax-free amount rose from EUR 19,500 to EUR 22,000 from the 2026 tax year. Spouses are taxed separately.", "source_ids": ["CY11", "CY16"], "confidence": "official" },
+        { "text": "Self-employed individuals with annual turnover of EUR 70,000 or less must issue invoices and receipts, keep accounts and records, submit form T.D.1 and a temporary tax assessment (two equal instalments by 31 July and 31 December of the current year), and a self-assessment form I.R. 158A SE. Above EUR 70,000 they must also prepare audited financial statements. Deadlines in the source differ between the two groups (as listed by the Point of Single Contact); the page may predate the 2026 tax reform.", "source_ids": ["CY11", "CY12"], "confidence": "official" },
+        { "text": "Companies must issue invoices and receipts, keep accounts, prepare audited financial statements through an approved auditor, submit a company income tax return (form T.D.4) and a temporary tax assessment paid in two equal instalments on 31 July and 31 December, and a self-assessment (form I.R.158A).", "source_ids": ["CY11"], "confidence": "official" },
+        { "text": "Corporate income tax rate: 15% from 1 January 2026. The Cyprus Tax Department's 2026 tax reform presentation (March 2026) states that from 1/1/2026 companies are subject to corporate tax at 15%. The Registrar's comparison table and the Point of Single Contact running-a-business page still show the older 12.5% and have not been updated; where they disagree, use 15%.", "source_ids": ["CY24", "CY5", "CY13"], "confidence": "official" },
+        { "text": "Dividends. The Tax Department's March 2026 presentation on the amended Special Contribution for the Defence of the Republic (SDC) law, in force from 1 January 2026, states that SDC on dividends received by individuals is 5% (down from 17%); dividends from Cyprus-resident companies paid out of profits of tax years up to 2025 stay at 17% until 31 December 2031; and deemed dividend distribution applies only to profits of tax years up to 2025, so it ends for profits from 2026. Other conditions, including the non-dom regime and company or non-resident recipients, are not covered here; ask an accountant.", "source_ids": ["CY25"], "confidence": "official" },
+        { "text": "E-invoicing. The European Commission's 2025 country fact sheet (last updated 14 August 2025) states there is no general B2G mandate for suppliers, no B2B mandate and no B2C mandate in Cyprus, and gives no planned dates. Central public bodies must be able to receive compliant e-invoices.", "source_ids": ["CY17"], "confidence": "official" }
+      ],
+      "expert_interpretation": [
+        { "text": "Two items change a founder's numbers most: the tax-free personal allowance (EUR 22,000 from 2026) and the company tax rate. The company rate is 15% from 1 January 2026 according to the Tax Department, although the Registrar and the Point of Single Contact pages still show the old 12.5%. Check both with a Cyprus accountant before building a financial model.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Track taxable supplies against the EUR 15,600 VAT threshold.", "source_ids": ["CY11"] },
+        { "text": "If you are below the EUR 15,600 threshold, you are not obliged to register for VAT but may register voluntarily; ask an accountant which is better for you.", "source_ids": ["CY22", "CY23"] },
+        { "text": "Plan company tax at 15% from 1 January 2026 (not the older 12.5% still shown on some pages).", "source_ids": ["CY24"] },
+        { "text": "Keep accounts and issue invoices; plan audited statements for a company.", "source_ids": ["CY11"] }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security and health insurance",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        { "text": "Every self-employed person must register with the Social Insurance Services, using the self-employed application form (YKA 1-008) at the District Social Insurance Office with ID, passport or ARC. The social insurance number is usually given within 1 to 2 weeks.", "source_ids": ["CY9", "CY12"], "confidence": "official" },
+        { "text": "For 2025 the social insurance contribution for self-employed persons is 16.6% paid by the self-employed person plus 5.2% paid by the state. Contributions are based on income, profession and place of employment. For comparison, employees pay 8.8% and employers 8.8%, with 5.2% from the state.", "source_ids": ["CY16", "CY13"], "confidence": "official" },
+        { "text": "The Point of Single Contact states the self-employed contribution is calculated on estimated earnings set by the Tax Department, that you can ask to be assessed on actual earnings instead, and that contributions are paid every three months.", "source_ids": ["CY12"], "confidence": "official" },
+        { "text": "Employers also pay 1.2% to the Redundancy Fund, 0.5% to the Human Resources Development Fund and 2% to the Social Cohesion Fund on employee earnings.", "source_ids": ["CY13"], "confidence": "official" },
+        { "text": "General Healthcare System (GeSY) contributions: employees 2.65% of monthly salary, employers 2.90% of employment cost, the state 4.70%, self-employed persons 4.00%, and 2.65% for pensioners and for income earners (interest, rents, dividends). Contributions are collected by the Social Insurance Services, the Tax Department and the Treasury.", "source_ids": ["CY16"], "confidence": "official" },
+        { "text": "GeSY beneficiaries include EU nationals who work or have acquired permanent residence, and third-country nationals who have legally acquired permanent residence or the right to equal treatment. All non-Cypriots working in Cyprus must add their ARC number to their Social Insurance Services record.", "source_ids": ["CY16"], "confidence": "official" },
+        { "text": "2026 ceiling. The Social Insurance Services notice of December 2025 sets the maximum insurable earnings for employees at EUR 5,742 a month (EUR 1,325 a week) from 1 January 2026. KPMG Cyprus (secondary) quotes the same figures as EUR 68,904 a year and reports that the self-employed contribution stays at 16.6% in 2026. The official notice opened covers employees only; the 2026 self-employed rate and the self-employed ceiling were not confirmed on an official page.", "source_ids": ["CY26", "CY18"], "confidence": "hold" },
+        { "text": "How a company director who is also the owner is treated (employee or self-employed) for social insurance was not found on an official page. A Cyprus accountant must confirm.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [
+        { "text": "A self-employed founder in Cyprus pays two separate charges on income: social insurance (16.6%) and GeSY (4.00%), both worth budgeting from the first month. Contribution bases and ceilings change on 1 January, so treat every figure here as a snapshot.", "source_ids": [], "confidence": "editorial" }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        { "text": "Register with the Social Insurance Services.", "source_ids": ["CY12"] },
+        { "text": "Budget for social insurance (16.6%) and GeSY (4.00%) on top of income tax.", "source_ids": ["CY16"] },
+        { "text": "Register in GeSY once your Social Insurance Services record shows your ARC.", "source_ids": ["CY16"] }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: coming soon, currently under legal review.",
+      "hold_note_source_id": "CY15",
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content below is not rendered while hold is true. The Migration Department (CRMD) pages on gov.cy and the Cyprus Startup Visa pages are protected by an automated-access block (Azure WAF returned a challenge or HTTP 403), so none could be opened. Everything below comes from the Point of Single Contact and a February 2024 government strategy document, which are dated. The Category F, self-employment-permit and Startup Visa figures reported in search-result summaries are listed as open questions, not as claims. An immigration lawyer must verify every item against the Migration Department and the Deputy Ministry of Research, Innovation and Digital Policy before this is lifted.",
+      "open_questions_for_reviewer": [
+        "Which permit route actually fits a non-EU founder who will run their own Cyprus company or be self-employed? Search summaries of Migration Department pages mention a self-employed permit with large capital requirements (reported roughly EUR 260,000 to 430,000 depending on category), and a Category F permit for people with secured annual income who do not work in Cyprus (reported EUR 9,568.17 for the applicant and EUR 4,613.22 per dependant). None of this was opened; confirm figures, current category names and whether Category F allows any business activity.",
+        "Cyprus Startup Visa scheme: search summaries of gov.cy say it was renewed to December 2026, covers non-EU entrepreneurs alone or in a team of up to 5, needs the founders to hold at least 25% of an innovative unlisted company up to 5 years old, gives a decision within 5 weeks from the Deputy Ministry of Research, Innovation and Digital Policy, and grants residence for 3 years. An older 2019 Registrar booklet reportedly stated a EUR 20,000 capital figure and 2 years. Confirm current terms and fees, and what happens after December 2026.",
+        "Business Facilitation Unit route (companies with foreign interests): the February 2024 strategy document says an initial investment of at least EUR 200,000 is required (re-introduced November 2022), permits can be issued for up to 3 years, and highly skilled staff need EUR 2,500 gross a month. Is this still current in 2026, and can a founder-director use it for themselves?",
+        "Digital nomad permit: the February 2024 strategy document says up to one year, renewable for another two years, EUR 3,500 net a month, with a cap of 500 beneficiaries already exhausted; a December 2025 scheme document reportedly says a maximum of two years. Which applies in 2026, and is it open to a founder who owns a foreign (non-Cyprus) company?",
+        "What does 'Pink Slip' mean in the Cyprus context for a founder, and does it apply to a director or shareholder of an own company rather than an employee?",
+        "Official fees, documents and processing times for each route could not be verified from any opened page and are therefore not stated.",
+        "Are the disclaimer and the 'explain the rules, no advice' framing adequate?"
+      ],
+      "official_information": [
+        { "text": "EU citizens may enter Cyprus without an employment contract and search for work for four months before applying for a Registration Certificate (form MEU1A). To obtain it they present an identity card or passport and either confirmation of engagement by the employer or a certificate of registration with the Social Insurance Services as self-employed, and pay EUR 20 per person (and EUR 20 per EU family member).", "source_ids": ["CY13"], "confidence": "hold" },
+        { "text": "The Migration Department issues and renews residence permits to all non-Cypriots who are either self-employed or employed by legal persons in Cyprus. Residence and employment permits for non-EU nationals are mainly granted on a temporary basis and for a specific work position under the general employment procedures.", "source_ids": ["CY13"], "confidence": "hold" },
+        { "text": "Eligible companies with foreign interests can apply to the Business Support Center for registration in the Business Facilitation Unit and use a simplified procedure to employ highly skilled third-country nationals, including directors, secretaries, shareholders and ultimate beneficial owners, if they are highly skilled, earn at least EUR 2,500 gross a month, hold a university degree or equivalent or at least 2 years of relevant experience, and have a contract of 2 to 3 years.", "source_ids": ["CY13"], "confidence": "hold" },
+        { "text": "A February 2024 government strategy document states that, for companies registering with the Business Facilitation Unit, an initial investment in Cyprus of at least EUR 200,000 was reintroduced as a condition in November 2022, that residence and work permit applications with validity up to 3 years have been possible since 18 July 2022, and that third-country nationals may make up at most 70% of staff in the five years after joining, with support staff earning under EUR 2,500 gross a month limited to 30% of support staff.", "source_ids": ["CY15"], "confidence": "hold" },
+        { "text": "The same document describes a Digital Nomad residence permit (a residence permit, not a work permit) for third-country self-employed people, freelancers or employees working remotely for employers or clients outside Cyprus: right to stay up to one year, renewable for another two years; stable income of EUR 3,500 net a month; a declaration not to provide work or services to an employer established in Cyprus; family members may not work. The cap of 500 beneficiaries had already been exhausted as of that document.", "source_ids": ["CY15"], "confidence": "hold" },
+        { "text": "A Type C 'Business' visa allows a visit of up to 90 days to explore the business environment, hold meetings, negotiate or sign contracts, without the right to work (as described in the February 2024 strategy document).", "source_ids": ["CY15"], "confidence": "hold" },
+        { "text": "Naturalisation: since 19 December 2023 the required residence is 5 years (or 4 years with a certificate of very good knowledge of Greek) instead of 7, under the Aliens and Immigration (Amendment) Law 2023 (as described in the February 2024 strategy document).", "source_ids": ["CY15"], "confidence": "hold" },
+        { "text": "Fees and processing times for founder and self-employed permits: not found on any page that could be opened.", "source_ids": [], "confidence": "hold" }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
