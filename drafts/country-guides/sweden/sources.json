@@ -1,0 +1,209 @@
+[
+ {
+  "id": "SE1",
+  "title": "Välj företagsform",
+  "publisher": "Verksamt.se (Bolagsverket, Skatteverket, Tillväxtverket and partners)",
+  "type": "government_portal",
+  "url": "https://www.verksamt.se/starta/valj-foretagsform",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE2",
+  "title": "Aktiebolag (starta och registrera)",
+  "publisher": "Verksamt.se",
+  "type": "government_portal",
+  "url": "https://www.verksamt.se/starta/valj-foretagsform/aktiebolag",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE3",
+  "title": "Enskild näringsverksamhet (starta och registrera)",
+  "publisher": "Verksamt.se",
+  "type": "government_portal",
+  "url": "https://www.verksamt.se/starta/valj-foretagsform/enskild-naringsverksamhet",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE4",
+  "title": "Foreign citizen: setting up a business in Sweden",
+  "publisher": "Verksamt.se",
+  "type": "government_portal",
+  "url": "https://verksamt.se/en/setting-up/foreign-citizen",
+  "language": "en",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE5",
+  "title": "Starta och registrera aktiebolag (English version)",
+  "publisher": "Verksamt.se",
+  "type": "government_portal",
+  "url": "https://verksamt.se/en/setting-up/choose-business-type/limited-company",
+  "language": "en",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE6",
+  "title": "Starta och registrera enskild näringsverksamhet (English version)",
+  "publisher": "Verksamt.se",
+  "type": "government_portal",
+  "url": "https://verksamt.se/en/setting-up/choose-business-type/sole-trader",
+  "language": "en",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE7",
+  "title": "Choose business type and register (English version)",
+  "publisher": "Verksamt.se",
+  "type": "government_portal",
+  "url": "https://verksamt.se/en/setting-up/choose-business-type",
+  "language": "en",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE8",
+  "title": "Aktiebolagslag (2005:551), consolidated text up to SFS 2026:783",
+  "publisher": "Sveriges riksdag (data.riksdagen.se)",
+  "type": "official",
+  "url": "https://data.riksdagen.se/dokument/sfs-2005-551.text",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE9",
+  "title": "I vissa fall behöver du inte registrera ditt företag för moms (momsbefrielse)",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://skatteverket.se/momsbefrielse",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE10",
+  "title": "Belopp och procent, inkomstår 2026",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE11",
+  "title": "Egenavgifter",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/egenavgifter.4.70ac421612e2a997f85800022812.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE12",
+  "title": "F-skatt och FA-skatt",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://www.skatteverket.se/foretag/drivaforetag/startaochregistrera/fochfaskatt.4.58d555751259e4d661680006355.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE13",
+  "title": "Registrera verksamhet (utländska företag i Sverige)",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://www.skatteverket.se/foretag/internationellt/utlandskaforetagisverige/registreraverksamhet.4.569165a01749e7ae7893042.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE14",
+  "title": "Coordination numbers",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://skatteverket.se/servicelankar/otherlanguages/inenglishengelska/individualsandemployees/coordinationnumbers.4.1657ce2817f5a993c3a7d2a.html",
+  "language": "en",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE15",
+  "title": "Momslagens regler om fakturering",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momslagensregleromfakturering.4.58d555751259e4d66168000403.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE16",
+  "title": "Bokföring: vad kräver lagen",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://www.skatteverket.se/foretag/drivaforetag/bokforingochbokslut/bokforingvadkraverlagen.4.18e1b10334ebe8bc80005195.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE17",
+  "title": "Enskild näringsverksamhet (beskattning)",
+  "publisher": "Skatteverket",
+  "type": "official",
+  "url": "https://www.skatteverket.se/foretagochorganisationer/foretagare/enskildnaringsverksamhet.4.5c13cb6b1198121ee8580002518.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE18",
+  "title": "Regler för e-handel och e-faktura",
+  "publisher": "Upphandlingsmyndigheten (Swedish National Agency for Public Procurement)",
+  "type": "official",
+  "url": "https://www.upphandlingsmyndigheten.se/digitalisering-och-e-handel/e-handel/regler-for-e-handel-och-e-faktura/",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE19",
+  "title": "Sjukpenning för dig med enskild firma",
+  "publisher": "Försäkringskassan",
+  "type": "official",
+  "url": "https://www.forsakringskassan.se/privatperson/sjuk-eller-skadad/ersattning-nar-du-ar-sjuk-eller-skadad-sjukpenning/sjukpenning-har-eget-foretag/sjukpenning-for-dig-med-enskild-firma",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE20",
+  "title": "Enskild firma, handelsbolag eller kommanditbolag (socialförsäkring)",
+  "publisher": "Försäkringskassan",
+  "type": "official",
+  "url": "https://www.forsakringskassan.se/privatperson/foretagare/enskild-firma-handelsbolag-eller-kommanditbolag",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE21",
+  "title": "Egen företagare: du vill ansöka",
+  "publisher": "Migrationsverket (Swedish Migration Agency)",
+  "type": "official",
+  "url": "https://www.migrationsverket.se/du-vill-ansoka/arbeta/anstalld-eller-egen-foretagare/egen-foretagare.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE22",
+  "title": "Egen företagare: du vill förlänga",
+  "publisher": "Migrationsverket",
+  "type": "official",
+  "url": "https://www.migrationsverket.se/du-vill-forlanga/arbeta/anstalld-eller-egen-foretagare/egen-foretagare.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ },
+ {
+  "id": "SE23",
+  "title": "Egen företagare: du vill ansöka (processkarta)",
+  "publisher": "Migrationsverket",
+  "type": "official",
+  "url": "https://www.migrationsverket.se/lankade-moduler/processkartor/at/egen-foretagare---du-vill-ansoka.html",
+  "language": "sv",
+  "accessed": "2026-10-12"
+ }
+]
