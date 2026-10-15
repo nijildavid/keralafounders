@@ -1915,5 +1915,401 @@
         "url": "https://files.dre.pt/1s/2018/01/00600/0023800242.pdf",
         "language": "pt",
         "accessed": "2026-10-13"
+    },
+    {
+        "id": "IE1",
+        "title": "Starting a business",
+        "publisher": "Citizens Information (Citizens Information Board)",
+        "type": "government_portal",
+        "url": "https://www.citizensinformation.ie/en/employment/types-of-employment/self-employment/starting-a-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE2",
+        "title": "Companies Act 2014, section 137 (company to have director resident in an EEA state)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/137/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE3",
+        "title": "Companies Act 2014, section 138 (the section 137 bond)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/138/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE4",
+        "title": "Companies Act 2014, section 140 (real and continuous link certificate)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/140/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE5",
+        "title": "Companies Act 2014, section 128 (at least one director)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/128/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE6",
+        "title": "Companies Act 2014, section 129 (secretary)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/129/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE7",
+        "title": "Companies Act 2014, section 130 (a director cannot be a body corporate)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/130/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE8",
+        "title": "Companies Act 2014, section 19 (constitution of a private company limited by shares)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/19/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE9",
+        "title": "Companies Act 2014, section 21 (delivery of the constitution for registration)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/21/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE10",
+        "title": "Companies Act 2014, section 50 (registered office in the State)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/50/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE11",
+        "title": "S.I. No. 329/2025 Companies Act 2014 (Fees) Regulations 2025",
+        "publisher": "Irish Statute Book (Office of the Attorney General)",
+        "type": "official",
+        "url": "https://www.irishstatutebook.ie/eli/2025/si/329/made/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE12",
+        "title": "Registering a Business Name",
+        "publisher": "gov.ie (Department of Enterprise, Tourism and Employment)",
+        "type": "government_portal",
+        "url": "https://www.gov.ie/en/service/b90c1-registering-a-business-name",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE13",
+        "title": "How to register for tax as a sole trader",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/starting-a-business/registering-for-tax/how-to-register-for-tax-as-a-sole-trader.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE14",
+        "title": "How to register for tax as a new company",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/starting-a-business/registering-for-tax/how-to-register-for-tax-as-a-new-company.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE15",
+        "title": "What are the VAT thresholds?",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE16",
+        "title": "How do you register for VAT?",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vat-registration/how-do-you-register-for-vat/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE17",
+        "title": "Historical VAT rates",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vat-rates/historical-vat-rates/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE18",
+        "title": "Tax rates, bands and reliefs",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE19",
+        "title": "Standard rates and thresholds of USC",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE20",
+        "title": "Universal Social Charge (USC)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE21",
+        "title": "Corporation Tax (CT): Basis of charge",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE22",
+        "title": "Corporation Tax (CT): Company residency rules",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/company-residency-rules.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE23",
+        "title": "Tax relief for new start-up companies",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/starting-a-business/initiatives-startup-businesses-smes/tax-relief-for-new-startup-companies/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE24",
+        "title": "Start-Up Relief for Entrepreneurs (SURE)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/investment/relief-corporate/start-up-relief-for-entrepreneurs.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE25",
+        "title": "A guide to self-assessment",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE26",
+        "title": "ViDA implementation timeline",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vida-vat-modernisation/vida-implementation-timeline.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE27",
+        "title": "Personal Public Service Number (PPSN)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/personal-public-service-number/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE28",
+        "title": "Budget information (Budget 2027)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/corporate/press-office/budget-information/current-year/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE29",
+        "title": "eInvoicing in Ireland",
+        "publisher": "European Commission (Digital Building Blocks)",
+        "type": "official",
+        "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108889/eInvoicing+in+Ireland",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE30",
+        "title": "PRSI Class S Rates",
+        "publisher": "Department of Social Protection (gov.ie)",
+        "type": "official",
+        "url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE31",
+        "title": "PRSI and Family Employment",
+        "publisher": "Department of Social Protection (gov.ie)",
+        "type": "official",
+        "url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE32",
+        "title": "The different classes of Pay-Related Social Insurance (PRSI)",
+        "publisher": "Department of Social Protection (gov.ie)",
+        "type": "official",
+        "url": "https://www.gov.ie/en/department-of-social-protection/publications/the-different-classes-of-pay-related-social-insurance-prsi/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE33",
+        "title": "Start-up Entrepreneur Programme (STEP)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/what-are-my-options-for-working-in-ireland/coming-to-work-for-more-than-90-days/start-up-entrepreneur-programme-step/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE34",
+        "title": "Start-up Entrepreneur Programme Guidelines (September 2023)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/wp-content/uploads/2023/09/STEP-Guidelines-Sep-2023.pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE35",
+        "title": "Coming to work for more than 90 days",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/what-are-my-options-for-working-in-ireland/coming-to-work-for-more-than-90-days/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE36",
+        "title": "Coming to work in Ireland",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE37",
+        "title": "FAQs: Closure of the Immigrant Investor Programme (IIP)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/faqs-closure-of-the-immigrant-investor-programme-iip/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE38",
+        "title": "Information on registering your immigration permission for the first time",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/how-to-register-your-immigration-permission-for-the-first-time/information-on-registering-your-immigration-permission-for-the-first-time/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE39",
+        "title": "Visa Decisions (processing times, Dublin visa office)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/visa-decisions/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE40",
+        "title": "Employment visa",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/what-are-my-work-visa-options/applying-for-a-long-stay-employment-visa/employment-visa/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE41",
+        "title": "Critical Skills Employment Permit",
+        "publisher": "Department of Enterprise, Tourism and Employment",
+        "type": "official",
+        "url": "https://enterprise.gov.ie/en/What-We-Do/Workplace-and-Skills/Employment-Permits/Permit-Types/Critical-Skills-Employment-Permit/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE42",
+        "title": "Who needs an employment permit?",
+        "publisher": "Department of Enterprise, Tourism and Employment",
+        "type": "official",
+        "url": "https://enterprise.gov.ie/en/What-We-Do/Workplace-and-Skills/Employment-Permits/Employment-Permit-Eligibility/Who-needs-an-Employment-Permit-/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE43",
+        "title": "Current processing dates for employment permits",
+        "publisher": "Department of Enterprise, Tourism and Employment",
+        "type": "official",
+        "url": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/current-application-processing-dates/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE44",
+        "title": "Business Startup Grants (High Potential Startups)",
+        "publisher": "Enterprise Ireland",
+        "type": "official",
+        "url": "https://www.enterprise-ireland.com/en/supports/start-ups",
+        "language": "en",
+        "accessed": "2026-10-12"
     }
 ]
