@@ -25,22 +25,22 @@
         "slug": "austria",
         "name": "Austria",
         "flag_or_icon": "at",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Austria",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-11",
         "order": 3
     },
     {
         "slug": "cyprus",
         "name": "Cyprus",
         "flag_or_icon": "cy",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Cyprus",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-11",
         "order": 4
     },
     {
@@ -58,11 +58,11 @@
         "slug": "czechia",
         "name": "Czechia",
         "flag_or_icon": "cz",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Czechia",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-15",
         "order": 6
     },
     {
@@ -80,11 +80,11 @@
         "slug": "finland",
         "name": "Finland",
         "flag_or_icon": "fi",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Finland",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-15",
         "order": 8
     },
     {
@@ -102,11 +102,11 @@
         "slug": "malta",
         "name": "Malta",
         "flag_or_icon": "mt",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Malta",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-11",
         "order": 10
     },
     {
@@ -124,11 +124,11 @@
         "slug": "sweden",
         "name": "Sweden",
         "flag_or_icon": "se",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Sweden",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-15",
         "order": 12
     },
     {
