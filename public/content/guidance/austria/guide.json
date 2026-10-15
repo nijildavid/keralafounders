@@ -1,0 +1,873 @@
+{
+  "slug": "austria",
+  "title": "How to start a company in Austria",
+  "summary": "Austria gives a founder two main routes: register a sole trader business (Einzelunternehmen) through a free trade registration (Gewerbeanmeldung), or form a GmbH, the private limited company, with EUR 10,000 minimum share capital. Both usually run through the trade registration and the Unternehmensserviceportal (USP), with the Firmenbuch (commercial register) for companies, the tax office, the SVS social insurance and the WKO chamber to follow.",
+  "last_checked": "2026-10-12",
+  "checked_by": "Claude agent draft, unreviewed",
+  "next_check_due": "2027-01-11",
+  "quick_facts": {
+    "structure": {
+      "text": "Register as a sole trader through a free trade registration (no notary), or form a GmbH (EUR 10,000 minimum share capital, at least EUR 5,000 of it in cash, 2026).",
+      "source_ids": [
+        "AT10",
+        "AT1"
+      ]
+    },
+    "cost": {
+      "text": "The trade registration is free. A GmbH needs EUR 10,000 capital plus notary fees (WKO: about EUR 100 to 150 for a simple one-person GmbH, at least EUR 2,000 with two or more shareholders) and about EUR 450 Firmenbuch fee unless the start-up relief (NeuFoeG) waives it.",
+      "source_ids": [
+        "AT10",
+        "AT1",
+        "AT12"
+      ]
+    },
+    "time": {
+      "text": "A trade can usually start on the day of registration if all requirements are met (not for trades with a reliability check, chimney sweeping, or those that need a GISA entry first). No official range was found for a GmbH to reach the Firmenbuch; the WKO only says to file within a few days of the bank confirmation.",
+      "source_ids": [
+        "AT6",
+        "AT10",
+        "AT13"
+      ]
+    },
+    "gotcha": {
+      "text": "A founder from outside the EU who is not yet lawfully living in Austria needs a residence permit that allows self-employment before the trade may lawfully be run, and a GmbH with a trade licence needs a trade-law managing director who, as a rule, lives in Austria.",
+      "source_ids": [
+        "AT3",
+        "AT4"
+      ]
+    }
+  },
+  "founder_checklist": [
+    {
+      "text": "Confirm whether you are allowed to be self-employed here: non-EU founders who are not yet lawfully living in Austria need a residence permit first.",
+      "section_id": "visa"
+    },
+    {
+      "text": "Decide between sole trader and GmbH; the GmbH needs EUR 10,000 capital.",
+      "section_id": "legal-forms"
+    },
+    {
+      "text": "Ask the WKO whether your activity is a free trade, regulated trade or freelance profession.",
+      "section_id": "trade-or-freelance"
+    },
+    {
+      "text": "Register the trade (free) and collect the GISA extract.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "Within one month: notify the tax office and the SVS.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "If forming a GmbH: choose notary or simplified route, pay in at least EUR 5,000 cash and appoint a trade-law managing director if needed.",
+      "section_id": "company-steps"
+    },
+    {
+      "text": "Get the NeuFoeG form and the chamber consultation before filing, to save Firmenbuch fees.",
+      "section_id": "sole-steps"
+    },
+    {
+      "text": "Decide on the small-business VAT exemption (EUR 55,000 gross from 2025) or opt in to VAT.",
+      "section_id": "taxes"
+    },
+    {
+      "text": "Plan for SVS contributions and chamber levies.",
+      "section_id": "social"
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "title": "The big picture",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [],
+      "expert_interpretation": [
+        {
+          "text": "Austria gives a founder two main routes: register as a sole trader (Einzelunternehmen) with a free trade registration, or form a GmbH, the private limited company. Almost all ordinary business activity needs a trade licence (Gewerbeberechtigung), and the trade registration is the front door for both routes. For a founder from outside the EU the order matters: Austrian trade law expects a first-time applicant from outside the EU to hold a residence permit that allows self-employment before the trade may lawfully be run, so for a founder who is not yet lawfully in Austria the permit is usually the decisive step, not the company paperwork. A GmbH is easier to set up from abroad on paper, but if it needs a trade licence it also needs a trade-law managing director who, as a rule, lives in Austria. Taxes, social insurance and the chamber (WKO) all hang off the trade registration, so read the 'Worth knowing' section before choosing a route.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": []
+    },
+    {
+      "id": "legal-forms",
+      "title": "Choosing a legal form",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "comparison_table": {
+        "headers": [
+          "Form",
+          "Minimum capital",
+          "Liability",
+          "Notary",
+          "Typical setup time",
+          "Bookkeeping",
+          "Status"
+        ],
+        "rows": [
+          [
+            "Einzelunternehmen (sole trader)",
+            "none stated",
+            "personal, unlimited",
+            "no",
+            "trade may start on the day of registration for most trades [AT10]",
+            "cash-basis accounting until EUR 700,000 turnover (two years in a row); double-entry above [AT17]",
+            "chamber [AT36]"
+          ],
+          [
+            "GmbH (private limited company)",
+            "EUR 10,000 (EUR 5,000 must be paid in cash), 2026",
+            "limited to company assets, in general",
+            "yes for the standard route; no for the simplified one-person route (section 9a)",
+            "no official range found; see open questions",
+            "double-entry, always [AT17]",
+            "official [AT1]"
+          ],
+          [
+            "FlexKapG / FlexCo",
+            "see GmbH rules; total figure not confirmed",
+            "limited to company assets, in general",
+            "eGruendung online for single-shareholder companies [AT8]",
+            "no official range found",
+            "double-entry, always [AT17]",
+            "official [AT2] (capital: hold)"
+          ]
+        ]
+      },
+      "official_information": [
+        {
+          "text": "An Einzelunternehmen comes into being, in principle, with the trade registration (Gewerbeanmeldung). The owner is personally liable without limit, including with private assets. The WKO page names no minimum capital. Entry in the commercial register (Firmenbuch) comes with the accounting duty, which starts after turnover above EUR 700,000 in two consecutive years (or above EUR 1,000,000 once) (WKO page of 16 Apr 2026; USP, 1 Jan 2026), and is optional below it.",
+          "source_ids": [
+            "AT36"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A GmbH needs a minimum share capital of EUR 10,000, with each share at least EUR 70; at least a quarter of each cash contribution, and at least EUR 5,000 in total across cash contributions, must be paid in (GmbHG as consolidated on 13 Oct 2026, sections 6 and 10).",
+          "source_ids": [
+            "AT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The GmbH is, as a rule, formed by articles of association in notarial-deed form (a 'declaration of formation' if there is a single shareholder), and it comes into existence only when it is entered in the Firmenbuch. In general the shareholders are not personally liable beyond their capital contribution.",
+          "source_ids": [
+            "AT14",
+            "AT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A simplified formation (vereinfachte Gruendung, section 9a GmbHG) exists for a GmbH whose sole shareholder is one natural person who is also its only managing director: share capital EUR 10,000 of which EUR 5,000 in cash; no notarial deed; formation declaration and Firmenbuch application filed electronically; a bank verifies the founder's identity in person from an official photo ID and sends the bank confirmation, ID copy and specimen signature to the Firmenbuch.",
+          "source_ids": [
+            "AT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Online formation through the USP (eGruendung) is currently offered for sole traders, single-shareholder GmbHs (section 9a) and single-shareholder FlexKapGs, and needs an ID Austria. Some single-shareholder GmbHs are excluded where special proof is needed for the Firmenbuch (example given: Ziviltechniker-GmbH). Other company forms are planned for later.",
+          "source_ids": [
+            "AT8"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The FlexKapG (also called FlexCo, in force since 1 Jan 2024) is a company form for one or more persons for any lawful purpose; GmbH rules apply unless the FlexKapG Act says otherwise. Each shareholder's contribution must be at least EUR 1, and 'Unternehmenswert-Anteile' (employee-participation shares) may be issued for less than 25% of the share capital.",
+          "source_ids": [
+            "AT2"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Accounting: a sole trader may use cash-basis accounting (Einnahmen-Ausgaben-Rechnung) until turnover exceeds EUR 700,000 in two consecutive years, or EUR 1,000,000 once; capital companies (GmbH/FlexKapG) must always keep double-entry books (USP page, last updated 1 Jan 2026).",
+          "source_ids": [
+            "AT17"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Conflict for reviewer: the ABA English page says the minimum capital is EUR 10,000 with EUR 5,000 in cash for a GmbH, which matches the statute. An older WKO brochure and some advisor PDFs still show EUR 35,000; those are outdated and not used here.",
+          "source_ids": [
+            "AT33",
+            "AT1"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Whether the FlexKapG has the same total minimum share capital as the GmbH: the FlexKapGG text read gives no separate total figure and refers to GmbH rules, and secondary commentary says EUR 10,000. Not confirmed from a primary page, so no figure is stated for it in the table.",
+          "source_ids": [
+            "AT2"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "For most first-time founders, a sole trader registration is the cheapest and fastest way to start invoicing: the trade registration is free and needs no articles of association. Move to a GmbH when you want to cap personal liability, take on a co-founder or investor, or when clients prefer a company. If you are a non-EU founder, remember that the choice of form does not remove the need for a residence permit that allows self-employment; see the visa section.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide whether unlimited personal liability (sole trader) is acceptable for now.",
+          "source_ids": []
+        },
+        {
+          "text": "If a GmbH: check whether you qualify for the simplified one-person route or need a notary.",
+          "source_ids": [
+            "AT1"
+          ]
+        },
+        {
+          "text": "Check whether your activity needs a regulated-trade qualification before choosing a form.",
+          "source_ids": [
+            "AT6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trade-or-freelance",
+      "title": "Worth knowing: trade licence, freelance and chamber membership",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "A trade licence (Gewerbeberechtigung) is obtained by registering the trade (Gewerbeanmeldung) with the trade authority, in person, in writing or electronically via GISA. Some activities need no trade licence, among them agriculture and forestry, mining, private tuition and freelance professions (freiberufliche Taetigkeiten).",
+          "source_ids": [
+            "AT6"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Regulated trades (examples given: bakery, foot care, business consulting) need proof of qualification (Befaehigungsnachweis); the Bundesinnung in the WKO says what proof is needed. If you cannot provide it, you can ask the trade authority to determine your individual competence, which costs nothing (USP page last updated 20 Mar 2026), or appoint a trade-law managing director who has the qualification.",
+          "source_ids": [
+            "AT6",
+            "AT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Someone who is insured under the social insurance scheme for the self-employed (SVS) without holding a trade licence is a 'Neuer Selbstaendiger'; such a person is compulsorily insured only if annual income exceeds EUR 6,613.20 (2026).",
+          "source_ids": [
+            "AT23"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Chamber membership: trade holders are members of the Wirtschaftskammer. Every member owes the Grundumlage per Fachgruppe; new businesses are exempt from it for the calendar year after they start (rule in force since 1 Jan 2019). A further levy, Kammerumlage 1, is not owed if domestic net turnover in the calendar year does not exceed EUR 150,000 (WKO page as of 1 Apr 2025). A levy on payroll, Kammerumlage 2, applies to members with employees.",
+          "source_ids": [
+            "AT28"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "A foreign company with neither a seat nor a branch in Austria may not run a trade, unless a treaty provides otherwise (section 14(4) Gewerbeordnung).",
+          "source_ids": [
+            "AT3"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Whether a particular IT, design or consulting activity is a (free or regulated) trade or a freelance profession is decided case by case; the classification is not settled on the pages read. A local adviser or the Bundesinnung must confirm it before the founder relies on 'freelance'.",
+          "source_ids": [
+            "AT6"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The trap: founders often say 'I am a freelancer' and expect to skip the trade licence. In Austria, most commercial services, including a lot of IT and consulting, count as a trade, which brings a trade registration, WKO membership and the SVS insurance. Ask the WKO Gruenderservice (free consultation, also needed for the start-up tax relief) which category your activity falls into before you register.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Ask the WKO Gruenderservice whether your activity is a free trade, a regulated trade or a freelance profession.",
+          "source_ids": [
+            "AT6"
+          ]
+        },
+        {
+          "text": "Budget for chamber levies: the Grundumlage is owed in the founding year (half if membership lasts no more than half the year, none if 31 days or less), waived in the following calendar year for genuine new founders, and due from the year after that.",
+          "source_ids": [
+            "AT28"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sole-steps",
+      "title": "Step by step, sole trader (Einzelunternehmen)",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Work out whether your activity is a trade and whether it is regulated (see 'Worth knowing'). For a regulated trade, get the Befaehigungsnachweis recognised or ask for a determination of individual competence.",
+          "source_ids": [
+            "AT6",
+            "AT7"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Register the trade with the trade authority responsible for the business location: in person, in writing, or electronically through GISA. Sole traders can also register the trade as part of the eGruendung on the USP. Registration is free of federal charges (BMWET: 'Die Gewerbeanmeldung ist daher kostenlos'); the WKO also lists it as free, with an exception for trades under special laws.",
+          "source_ids": [
+            "AT6",
+            "AT10",
+            "AT12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Documents: passport (and residence permit if one is needed), proof of academic degrees and qualifications, and a declaration that no grounds for exclusion from the trade (section 13 Gewerbeordnung) apply. A person who has lived in Austria less than five years, or not at all, must supply a criminal-record certificate from the home or previous country of residence; a sworn statement can replace it (WKO page, 14 Oct 2025).",
+          "source_ids": [
+            "AT11"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. For most trades you may start on the day of registration if all requirements are met. Exceptions: 'section 95' trades (for example electrical engineering, travel agencies) and chimney sweeping may start only after a final decision (Bescheid); some trades (for example insurance, securities and credit brokering) may start only after the GISA entry. After registration the trade is entered in GISA and you receive a GISA extract within three months as proof.",
+          "source_ids": [
+            "AT6",
+            "AT10"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. Within one month of opening, notify the tax office (form Verf 24 for sole traders, or via FinanzOnline). Note that you count as an entrepreneur for the tax office from the first preparatory steps.",
+          "source_ids": [
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. Social insurance: trade holders must report to the SVS within one month, unless the trade authority reports automatically. Insurance starts on the day the trade licence is obtained.",
+          "source_ids": [
+            "AT25"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. Start-up relief: to claim the NeuFoeG exemptions, hand in the official form NeuFoe2 with the application; the chamber confirms that you received a consultation. It applies only if you have not been active in a comparable business in Austria or abroad in the last five years.",
+          "source_ids": [
+            "AT26",
+            "AT27"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. A cash register (Registrierkasse) is mandatory when annual turnover per business exceeds EUR 15,000 and cash turnover exceeds EUR 7,500 (figures net of VAT; WKO brochure January 2026).",
+          "source_ids": [
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "9. Commercial register entry is optional for a sole trader who has not passed the accounting-duty thresholds (EUR 700,000 in two consecutive years, EUR 1,000,000 once); the WKO gives the cost as about EUR 100 (page of 6 Feb 2025).",
+          "source_ids": [
+            "AT36",
+            "AT12"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "The practical order for a non-EU founder is: residence permit first (or at least the trade authority's certificate that only the permit is missing), then the trade registration, then tax office and SVS within one month. Do not invoice before the trade is lawfully registered.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check regulated-trade status.",
+          "source_ids": [
+            "AT6"
+          ]
+        },
+        {
+          "text": "Register the trade (free).",
+          "source_ids": [
+            "AT10"
+          ]
+        },
+        {
+          "text": "Within one month: tax office notification and SVS report.",
+          "source_ids": [
+            "AT15",
+            "AT25"
+          ]
+        },
+        {
+          "text": "Get the NeuFoe2 form and chamber consultation before filing.",
+          "source_ids": [
+            "AT26"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-steps",
+      "title": "Step by step, GmbH",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "1. Check with the Firmenbuch that your intended company name is possible; the name must include 'GmbH'. Clarify zoning and permits for the premises with the municipality.",
+          "source_ids": [
+            "AT13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2. Choose the route. Standard route: articles of association (or declaration of formation for one shareholder) in notarial-deed form; the managing directors then sign the Firmenbuch application with notarised or court-certified signatures. Simplified route (single natural-person shareholder who is also sole managing director): open the capital account at a bank that offers the service (not every bank does), identify yourself in person with official photo ID, then file online via the USP.",
+          "source_ids": [
+            "AT14",
+            "AT1",
+            "AT13"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "3. Notary costs, per the WKO: roughly EUR 100 to 150 for a one-person GmbH with the statutory minimum content, roughly EUR 500 to 1,000 with additional provisions, at least EUR 2,000 for two or more shareholders (page of 6 Feb 2025).",
+          "source_ids": [
+            "AT12"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "4. Pay in at least EUR 5,000 in cash in total (and at least a quarter of each cash contribution). The share capital is EUR 10,000.",
+          "source_ids": [
+            "AT1"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "5. The managing director must be a natural person with legal capacity. The GmbHG text read sets no residence or nationality condition for managing directors, and ABA states that a GmbH can be owned 100% by international individuals or companies. This concerns company law only; trade law has its own condition (step 7).",
+          "source_ids": [
+            "AT1",
+            "AT33"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "6. The GmbH exists only on entry in the Firmenbuch. The WKO gives the Firmenbuch entry cost as about EUR 450; the fees are waived for a genuine new founding if the NeuFoeG form (NeuFoe2) is handed in, which can be done up to 14 days after the court application if the exemption is announced in it. A fee already paid generally cannot be refunded later.",
+          "source_ids": [
+            "AT14",
+            "AT12",
+            "AT26",
+            "AT27"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "7. If the company's activity is a trade, register it (free) and name a trade-law managing director (gewerberechtlicher Geschaeftsfuehrer). Under section 39 Gewerbeordnung that person must generally live in Austria, with exceptions for certain EEA and Swiss nationals living in the EEA or Switzerland and some third-country nationals with specified long-term permits. Where a qualification proof is required, the person must be an employee working at least half the normal weekly working time in the business and be fully compulsorily insured as an employee.",
+          "source_ids": [
+            "AT11",
+            "AT4"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "8. Within one month, notify the tax office using form Verf 15 (capital companies). Report employees to the health insurer before they start, and to the municipality for municipal tax.",
+          "source_ids": [
+            "AT13",
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "9. Keep double-entry books from day one, whatever the turnover. Minimum corporate income tax is EUR 500 per year (WKO page of 10 Aug 2026), even without profit.",
+          "source_ids": [
+            "AT17",
+            "AT14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Total time from notary visit or bank confirmation to Firmenbuch entry: no official range was found on the pages read. The WKO Vorarlberg page says the USP filing should follow within a few days of the bank confirmation, because the confirmation has limited validity. A private advisor PDF cites 2 to 4 weeks, which is secondary and not used.",
+          "source_ids": [
+            "AT13"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Whether a non-resident can obtain the ID Austria needed for the online route (and whether a bank will do the in-person ID check for someone abroad) was not confirmed from an official page.",
+          "source_ids": [
+            "AT8"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "If you are not living in Austria, the simplified route may be hard to use (it needs an ID Austria and an in-person bank ID check), so budget for the notary route and ask the notary whether remote signing is possible. A GmbH that needs a trade licence also needs a trade-law managing director, which is the step most often underestimated.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Check the company name with the Firmenbuch.",
+          "source_ids": [
+            "AT13"
+          ]
+        },
+        {
+          "text": "Choose notary route or simplified route.",
+          "source_ids": [
+            "AT1"
+          ]
+        },
+        {
+          "text": "Pay in at least EUR 5,000 cash.",
+          "source_ids": [
+            "AT1"
+          ]
+        },
+        {
+          "text": "Appoint a trade-law managing director if a trade licence is needed.",
+          "source_ids": [
+            "AT4"
+          ]
+        },
+        {
+          "text": "Notify the tax office with Verf 15 within one month.",
+          "source_ids": [
+            "AT15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxes",
+      "title": "Taxes and invoicing",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "VAT (Umsatzsteuer): standard rate 20%; reduced rates 10% and 13%, plus 4.9% for selected basic foods listed in Annex 3 to the VAT Act since 1 July 2026 (WKO brochure, January 2026; USP news, 10 Jul 2026). The 10% rate applies in general to food, books, newspapers, medicines, accommodation and passenger transport.",
+          "source_ids": [
+            "AT15",
+            "AT37"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Small-business exemption (Kleinunternehmerregelung) since 1 Jan 2025: turnover up to EUR 55,000 gross per year, in both the current and the previous calendar year. VAT cannot be backed out any more. If the limit is exceeded by no more than 10% the exemption continues to year end; above 10% VAT is due from that point, with no retroactive VAT for the whole year. Domestic businesses qualify automatically; a business based in another EU country must apply. A small business has no input-VAT deduction. It can opt into normal taxation (form U12), which binds for at least five calendar years.",
+          "source_ids": [
+            "AT5",
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Small-business invoices need only date, name and address of the supplier, quantity and description of the service, date of supply and the amount stated in one sum with the tax rate (this simplified content applies to all small-business invoices since 1 Jan 2025, and to all invoices up to EUR 400 including VAT). A small business need not show a VAT ID.",
+          "source_ids": [
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "VAT returns: due by the 15th of the second month after the reporting period, in general via FinanzOnline; exemption from filing the advance return only if prior-year turnover was at most EUR 55,000 and any VAT is paid on time.",
+          "source_ids": [
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Income tax (sole traders), 2026 marginal rates: 0% up to EUR 13,539; 20% to EUR 21,992; 30% to EUR 36,458; 40% to EUR 70,365; 48% to EUR 104,859; 50% to EUR 1,000,000; 55% above (temporary until 2029, then 50%).",
+          "source_ids": [
+            "AT16"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Income tax is paid in quarterly prepayments on 15 Feb, 15 May, 15 Aug and 15 Nov; the annual return is due on 30 April of the following year, or 30 June if filed electronically (electronic filing is compulsory when prior-year turnover exceeded EUR 55,000). A basic profit allowance (Grundfreibetrag) of 15% of profit up to EUR 33,000, maximum EUR 4,950, applies for financial years starting after 31 Dec 2023.",
+          "source_ids": [
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Optional flat-rate profit calculation for small businesses with turnover up to EUR 60,500 gross: operating expenses of 45% of net income, maximum EUR 24,750 (20% and maximum EUR 11,000 for service businesses) from 2025.",
+          "source_ids": [
+            "AT15"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Corporate income tax (GmbH): 23% since 2024; distributions to shareholders bear a further 27.5% capital-gains withholding tax; minimum corporate income tax EUR 500 per year.",
+          "source_ids": [
+            "AT15",
+            "AT14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Cash-basis accounting (Einnahmen-Ausgaben-Rechnung) is allowed for sole traders; double-entry becomes compulsory after EUR 700,000 turnover in two consecutive years or EUR 1,000,000 once (USP, 1 Jan 2026).",
+          "source_ids": [
+            "AT17"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "E-invoicing: no general obligation exists for domestic business-to-business invoices; sending an electronic invoice needs the recipient's consent. Suppliers to federal government bodies have had to invoice exclusively in structured electronic form since 1 Jan 2014 and must register on the USP. For Laender and municipalities there is currently no obligation on suppliers (both USP pages last updated 1 Jan 2026).",
+          "source_ids": [
+            "AT18",
+            "AT19"
+          ],
+          "confidence": "official"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Two things catch new founders: the small-business limit is measured on gross turnover (including any VAT you cannot show), and opting out of it can pay off if most of your customers are VAT-registered businesses, because you then reclaim VAT on your costs. Quarterly income-tax prepayments are set from your own estimate in the first year, so a low estimate can mean a large catch-up payment later.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Decide with an adviser whether to use the small-business exemption or opt in to VAT.",
+          "source_ids": [
+            "AT5"
+          ]
+        },
+        {
+          "text": "Put the quarterly prepayment dates in your calendar.",
+          "source_ids": [
+            "AT15"
+          ]
+        },
+        {
+          "text": "If you will invoice a federal body, register on the USP for e-invoicing.",
+          "source_ids": [
+            "AT19"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "title": "Social security and chamber membership",
+      "hold": false,
+      "review_status": "not_required",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "official_information": [
+        {
+          "text": "Trade holders are insured with the SVS under the GSVG. This includes holders of a trade licence, partners of an OG or general partners of a KG that is a WKO member, and people who are both managing director and shareholder of a GmbH or FlexKapG that is a WKO member, unless they are already insured as employees.",
+          "source_ids": [
+            "AT24",
+            "AT25"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "2026 contributions (SVS and WKO, as of 1 Jan 2026): pension 18.5%, health 6.8%, self-employed provision 1.53%, plus a flat accident insurance contribution of EUR 12.96 per month (SVS; the WKO page shows EUR 12.95). Minimum monthly contribution base EUR 551.10; the minimum total is about EUR 161 per month (WKO shows EUR 160.81 using the EUR 12.95 figure).",
+          "source_ids": [
+            "AT20",
+            "AT21"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "In the first three years provisional contributions are calculated automatically from the minimum base (EUR 551.10 per month in 2026). In the founding year and the following year health insurance uses fixed minimum contributions, with no back-payment if income turns out higher (WKO).",
+          "source_ids": [
+            "AT21",
+            "AT25"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Small-business exemption from compulsory insurance (2026): annual income from self-employment not above EUR 6,613.20, turnover from all business activities not above EUR 55,000, and not more than twelve months compulsorily insured under GSVG/FSVG in the 60 calendar months before. It starts at the earliest on 1 January of the year in which the application reaches the SVS. Neue Selbstaendige are insured only if income exceeds EUR 6,613.20.",
+          "source_ids": [
+            "AT22",
+            "AT23"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Shareholder-managing directors of a GmbH: up to 25% ownership generally means compulsory insurance as an employee under the ASVG; over 25% and under 50% the ASVG applies only if there are signs of dependent employment (a blocking minority can count as controlling influence); at 50% or more ASVG insurance is excluded.",
+          "source_ids": [
+            "AT14"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Register with the SVS within one month unless the trade authority reports automatically.",
+          "source_ids": [
+            "AT25"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "Start-up payroll relief (NeuFoeG): certain payroll levies (family-fund employer contribution, Kammerumlage 2, housing-subsidy contribution, accident insurance contribution) are waived for up to 12 months, usable within the founding month plus 35 months; from the second year only for the first three employees.",
+          "source_ids": [
+            "AT26"
+          ],
+          "confidence": "official"
+        },
+        {
+          "text": "The WKO 'voraussichtliche Werte 2026' page (dated 31 Aug 2026) labels the same 2026 values as provisional and non-binding, while the WKO contributions page presents them as final. Re-check against SVS in January 2027. Also unconfirmed from an official page: the 2026 maximum contribution base (EUR 8,085.00 per month on the WKO pages) and the maximum monthly total (EUR 2,182.17 on WKO), so neither is stated in the guide. The SVS page gives EUR 12.96 per month for accident insurance in 2026, the WKO pages EUR 12.95.",
+          "source_ids": [
+            "AT35",
+            "AT20"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [
+        {
+          "text": "Contribution figures reset every 1 January, so treat every EUR amount here as a snapshot for 2026. The minimum is low in the first years, but the real bill comes in the third year, when the SVS recalculates from your actual profit and can ask for back-payment; ask your tax adviser to set aside a reserve.",
+          "source_ids": [],
+          "confidence": "editorial"
+        }
+      ],
+      "founder_experience": [],
+      "checklist": [
+        {
+          "text": "Report to the SVS within one month of registering.",
+          "source_ids": [
+            "AT25"
+          ]
+        },
+        {
+          "text": "Check whether the small-business exemption applies to you.",
+          "source_ids": [
+            "AT22"
+          ]
+        },
+        {
+          "text": "Plan for chamber levies and for the year-three recalculation.",
+          "source_ids": [
+            "AT28",
+            "AT21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "visa",
+      "title": "Residence permit for non-EU founders",
+      "hold": true,
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_on": null,
+      "hold_note": "Residence permits for founders from outside the EU: not published here yet. Please use the official page.",
+      "hold_note_source_id": "AT29",
+      "internal_notes": "Agent draft, agent review, not legal advice. Prepared content is not rendered while hold is true. An immigration lawyer must review it and Nijil must lift the flag before it can go live. Figures come from migration.gv.at and oesterreich.gv.at (BMI); none were checked against the statute (NAG, AuslBG) or the fee regulation.",
+      "open_questions_for_reviewer": [
+        "Is the EUR 218 application fee the whole federal fee, or is a further fee due when the card is issued? The pages read list only the application fee.",
+        "Does the NeuFoeG waiver of federal charges 'directly caused by the founding' (WKO lists residence permits as an example) really cover the permit fee for a start-up founder?",
+        "How does the start-up card interact with Gewerbeordnung section 14: can the trade be registered with the authority's 'only the permit is missing' certificate before the card is issued, and is a company needed first (the start-up route requires a newly established company)?",
+        "The migration.gv.at pages carry no date. Are the EUR 30,000 / EUR 50,000 / EUR 100,000 thresholds and the points table current for 2026?",
+        "Sources differ in wording on the card term (up to 24 months vs exactly 24 months; 'up to two years' on oesterreich.gv.at). Which is right, and how long is the typical real-world wait for a consular appointment?",
+        "Are there other routes relevant to Kerala-origin founders (Blue Card, family reunification, Rot-Weiss-Rot Card plus, student-graduate extension for 12 months to start a business) that should be described?",
+        "Is a non-EU founder who is not resident in Austria able to register a GmbH and hold shares/office before the permit is granted, and what can the company lawfully do in the meantime?"
+      ],
+      "official_information": [
+        {
+          "text": "Citizens of states outside the EEA are third-country nationals; the EEA is the EU plus Norway, Iceland and Liechtenstein, and Swiss citizens are not treated as third-country nationals. Third-country nationals need a residence title that allows the planned work.",
+          "source_ids": [
+            "AT32"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Under section 14 Gewerbeordnung, a third-country national who is not yet lawfully resident and wants to run a business in Austria needs a residence permit that allows self-employment before the trade can lawfully be carried on. If everything else is in order, the trade authority issues a certificate saying only the permit is missing.",
+          "source_ids": [
+            "AT3"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Start-up route (Rot-Weiss-Rot Card for start-up founders): founders of a newly established company developing and launching innovative products, services, processes or technologies. Requirements: a coherent business plan; real personal influence on management; capital of at least EUR 30,000 for the company, at least half of it equity; at least 50 points out of a maximum 85; general residence-title requirements apart from accommodation and means of support.",
+          "source_ids": [
+            "AT29",
+            "AT31",
+            "AT34"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Points (maximum 85, minimum 50): qualifications up to 30 (vocational training or tertiary programme of at least three years 20; Austrian degree or training 30); work experience 1 point per half-year up to 10; language up to 15 (German A2 5, German B1-B2 10, English B2 10, German C1-C2 15); bonus up to 30 (additional capital of at least EUR 50,000: 10; incubator admission or Austrian start-up funding: 10; age up to 35: 10).",
+          "source_ids": [
+            "AT34"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Self-employed key worker (Rot-Weiss-Rot Card): the activity must give an overall economic benefit beyond the firm's own benefit; examples given are a sustained transfer of at least EUR 100,000 of investment capital to Austria, new or secured jobs, and regional importance. No points system applies. The residence authority passes the application to the AMS, which gives its opinion within three weeks.",
+          "source_ids": [
+            "AT30",
+            "AT32"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Validity: the start-up card is issued for up to 24 months, then a Rot-Weiss-Rot Card plus may follow if requirements are met; the self-employed key-worker card is issued for 24 months. A renewal application must be filed in person before expiry and earliest three months before; a late filing counts as a first application without continuous right of residence.",
+          "source_ids": [
+            "AT29",
+            "AT30",
+            "AT31"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Where to apply: in person at the Austrian representation abroad, or, after lawful entry and during lawful stay, at the competent residence authority in Austria (MA 35 in Vienna). The permit is collected in person by appointment, and work may start only afterwards.",
+          "source_ids": [
+            "AT29",
+            "AT31"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Cost: application fee EUR 218 (the oesterreich.gv.at page lists no separate issuing fee). Processing: the authority must decide within eight weeks; the ministry FAQ says about eight weeks depending on complete documents; the page advises applying at least eight weeks before the planned start. Whether the NeuFoeG start-up relief also waives the permit fee (WKO lists residence permits among fees directly caused by a new founding) was not confirmed.",
+          "source_ids": [
+            "AT31",
+            "AT32",
+            "AT30",
+            "AT26"
+          ],
+          "confidence": "hold"
+        },
+        {
+          "text": "Documents (extract): valid travel document; photo 45 x 35 mm not older than six months; proof of education, experience and language skills (German or English); proof of investment capital; business plan and proof of innovation; articles of association except for one-person companies; certified translations by sworn interpreters for most non-English documents.",
+          "source_ids": [
+            "AT31"
+          ],
+          "confidence": "hold"
+        }
+      ],
+      "expert_interpretation": [],
+      "founder_experience": [],
+      "checklist": []
+    }
+  ]
+}
