@@ -1785,5 +1785,162 @@
         "origin_ref": null,
         "status": "hold",
         "hold": true
+    },
+    {
+        "id": "ie-company-fee",
+        "country": "ireland",
+        "topic": "fees",
+        "question": "How much does it cost to register a company in Ireland?",
+        "answer": "The CRO fee to register a company under the Companies Act 2014 is EUR 50, filed electronically (2025 regulations). Name reservation is EUR 25 and the annual return is EUR 20 when filed in time.",
+        "source_ids": [
+            "IE11"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-eea-director",
+        "country": "ireland",
+        "topic": "legal-forms",
+        "question": "Can I form an Irish company if I live outside the EEA?",
+        "answer": "At least one director must be resident in an EEA state, unless the company holds a EUR 25,000 bond or a Registrar certificate showing a real and continuous link with Ireland. A company also needs a registered office in the State.",
+        "source_ids": [
+            "IE2",
+            "IE4",
+            "IE10"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-vat-threshold",
+        "country": "ireland",
+        "topic": "tax",
+        "question": "When must I register for VAT in Ireland?",
+        "answer": "Registration is obligatory above EUR 42,500 annual turnover for services and EUR 85,000 for goods, including mixed supplies where 90% or more of turnover is goods (Revenue, page published 6 May 2026). Below that you may choose to register.",
+        "source_ids": [
+            "IE15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-prsi-class-s",
+        "country": "ireland",
+        "topic": "social-security",
+        "question": "What social insurance does a self-employed founder pay?",
+        "answer": "Self-employed people pay PRSI Class S: 4.20% up to 30 September 2026 and 4.35% from 1 October 2026, with a EUR 650 minimum annual contribution (Department of Social Protection page updated 20 January 2026). Directors owning or controlling 50% or more of the shares are also Class S.",
+        "source_ids": [
+            "IE30",
+            "IE31"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-corp-tax",
+        "country": "ireland",
+        "topic": "tax",
+        "question": "What is the corporation tax rate in Ireland?",
+        "answer": "Revenue states 12.5% on trading income and 25% on non-trading income such as rental and investment income. Budget 2027 was announced on 6 October 2026, so check for changes from January 2027.",
+        "source_ids": [
+            "IE21",
+            "IE28"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-sure",
+        "country": "ireland",
+        "topic": "funding",
+        "question": "Is there a tax refund for starting a company in Ireland?",
+        "answer": "The Start-Up Relief for Entrepreneurs (SURE) refunds income tax paid in earlier years, but you need mainly PAYE income in the previous four years and must invest cash in new shares and hold them for four years. Citizens Information describes it as up to 41% of the capital invested.",
+        "source_ids": [
+            "IE24",
+            "IE1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-e-invoicing",
+        "country": "ireland",
+        "topic": "tax",
+        "question": "Do I have to send e-invoices in Ireland?",
+        "answer": "No business-to-business or business-to-consumer e-invoicing mandate exists. Public bodies must be able to receive EN 16931 e-invoices, and EU-wide intra-EU B2B e-invoicing is scheduled for July 2030.",
+        "source_ids": [
+            "IE29",
+            "IE26"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-start-remote",
+        "country": "ireland",
+        "topic": "legal-forms",
+        "question": "Can I register as a sole trader from abroad?",
+        "answer": "Revenue allows a non-resident to register for Income Tax with Form TR1 (FT) if they cannot use online services. Non-EEA nationals also need immigration permission that allows self-employment first.",
+        "source_ids": [
+            "IE13",
+            "IE1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-step-permit",
+        "country": "ireland",
+        "topic": "visa",
+        "question": "Is there a start-up permit for non-EU founders?",
+        "answer": "The Start-up Entrepreneur Programme (STEP) exists for innovative businesses with EUR 50,000 funding, with a EUR 350 non-refundable fee. This answer is held pending legal review.",
+        "source_ids": [
+            "IE33"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "ie-employment-permit",
+        "country": "ireland",
+        "topic": "visa",
+        "question": "Can I come to Ireland on an employment permit instead?",
+        "answer": "A Critical Skills Employment Permit needs a 2-year job offer and minimum pay of EUR 40,904 or EUR 68,911 depending on the occupation. This answer is held pending legal review.",
+        "source_ids": [
+            "IE41"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
     }
 ]
