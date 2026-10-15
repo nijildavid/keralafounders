@@ -1672,5 +1672,248 @@
         "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/222/ZZ_2004_222_20270101.pdf",
         "language": "sk",
         "accessed": "2026-10-13"
+    },
+    {
+        "id": "PT1",
+        "title": "Criar Empresa na Hora",
+        "publisher": "Instituto dos Registos e do Notariado (IRN), Justica",
+        "type": "official",
+        "url": "https://registo.justica.gov.pt/Empresas/Empresa-na-Hora",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT2",
+        "title": "Empresa na Hora - Como funciona",
+        "publisher": "Ministerio da Justica",
+        "type": "official",
+        "url": "https://justica.gov.pt/Servicos/Empresa-na-Hora/Como-funciona",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT3",
+        "title": "Criar uma empresa online",
+        "publisher": "gov.pt (service run by IRN)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/criar-uma-empresa-online",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT4",
+        "title": "Criar Empresa (Empresa Online)",
+        "publisher": "Instituto dos Registos e do Notariado (IRN), Justica",
+        "type": "official",
+        "url": "https://registo.justica.gov.pt/empresa",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT5",
+        "title": "Sociedade por quotas - constituicao",
+        "publisher": "gov.pt (IRN)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/sociedade-por-quotas-constituicao",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT6",
+        "title": "Codigo das Sociedades Comerciais (DL 262/86), artigo 219 (Unidade e montante da quota), consolidated copy",
+        "publisher": "Procuradoria-Geral Distrital de Lisboa (legal portal)",
+        "type": "government_portal",
+        "url": "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&tabela=leis&artigo_id=524A0219",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT7",
+        "title": "Registo Contribuinte > Identific > Representacao Fiscal (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-00307.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT8",
+        "title": "Numero de Identificacao Fiscal para cidadaos estrangeiros - nao residentes (leaflet)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/Atribuicao_de_NIF_a_cidadaos_estrangeiros_nao_residentes.pdf",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT9",
+        "title": "Inicio de atividade - Rendimentos empresariais e profissionais - IRS e IVA (leaflet, dated March 2026)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/Inicio_atividade.pdf",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT10",
+        "title": "Artigo 53.o do CIVA (regime especial de isencao)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT11",
+        "title": "IVA > Enquadramento Legal > Reg. Especial Isencao Art 53 (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/Pages/faqs-01001.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT12",
+        "title": "Trabalhar por conta propria: obrigacoes fiscais e pagamentos (impostos e contribuicoes)",
+        "publisher": "gov.pt guide",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/guias/trabalhar-por-conta-propria-guia-para-trabalhadores-independentes/obrigacoes-fiscais-e-pagamentos-impostos-e-contribuicoes",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT13",
+        "title": "Guia Pratico - Novo Regime dos Trabalhadores Independentes (v1.14, 16 May 2025)",
+        "publisher": "Instituto da Seguranca Social, I.P.",
+        "type": "official",
+        "url": "https://sisscontent.seg-social.pt/documents/10152/14965/1009+Trabalhador+independente+-+novo+regime/87b6e00c-523d-4718-8a88-942ea804c18a",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT14",
+        "title": "Contribuicoes para a Seguranca Social - pagar como trabalhador por conta de outrem",
+        "publisher": "gov.pt (Instituto da Seguranca Social)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/obter-informacoes-sobre-as-contribuicoes-para-a-seguranca-social-pagamento-de-entidade-empregadora-por-trabalhador-por-conta-de-outrem",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT15",
+        "title": "Contribuicoes para a Seguranca Social - pagar como trabalhador independente",
+        "publisher": "gov.pt (Instituto da Seguranca Social)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/obter-informacoes-sobre-as-contribuicoes-para-a-seguranca-social-pagamento-de-trabalhador-independente",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT16",
+        "title": "Artigo 87.o do Codigo do IRC (taxas)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT17",
+        "title": "Artigo 31.o do CIRS (regime simplificado)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT18",
+        "title": "Outras Obrigacoes > Series/ATCUD > Ambito de Aplicacao (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/Pages/faqs-00883.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT19",
+        "title": "Residencia - Documentacao instrutoria - Vistos Nacionais",
+        "publisher": "Ministerio dos Negocios Estrangeiros (Portal Diplomatico, Vistos)",
+        "type": "official",
+        "url": "https://vistos.mne.gov.pt/pt/vistos-nacionais/documentacao-instrutoria/residencia",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT20",
+        "title": "Tipo de visto - Informacao Geral - Vistos Nacionais",
+        "publisher": "Ministerio dos Negocios Estrangeiros (Portal Diplomatico, Vistos)",
+        "type": "official",
+        "url": "https://vistos.mne.gov.pt/pt/vistos-nacionais/informacao-geral/tipo-de-visto",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT21",
+        "title": "Pedir visto de residencia para o exercicio de atividade profissional independente ou para imigrantes empreendedores",
+        "publisher": "gov.pt (Direcao-Geral dos Assuntos Consulares e das Comunidades Portuguesas)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/pedir-visto-de-residencia-para-o-exercicio-de-atividade-profissional-independente-ou-para-imigrantes-empreendedores",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT22",
+        "title": "IRS > Incentivo Fiscal-IFICI > IFICI (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-01018.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT23",
+        "title": "StartUP Visa - Guia de Candidatura (2nd version, May 2022)",
+        "publisher": "IAPMEI - Agencia para a Competitividade e Inovacao",
+        "type": "official",
+        "url": "https://www.iapmei.pt/getattachment/Paginas/StartUP-Visa-pt/Guia-de-Candidatura_StartUp-Visa_VF_PT_Publicacao_revisao_02maio2022.pdf.aspx?lang=pt-PT",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT24",
+        "title": "Constituir sociedade comercial - contrato de sociedade",
+        "publisher": "gov.pt (IRN)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/constituir-sociedade-comercial-contrato-de-sociedade",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT25",
+        "title": "Artigo 41.o do CIVA (prazos de entrega da declaracao periodica)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx",
+        "language": "pt",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PT26",
+        "title": "Calendario fiscal 2026 - Obrigacoes declarativas (ultima atualizacao setembro 2026)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/calendario_fiscal/Documents/Obrigacoes_declarativas.pdf",
+        "language": "pt",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PT27",
+        "title": "Decreto-Lei n.o 2/2018, de 9 de janeiro (altera o Codigo dos Regimes Contributivos, art. 168: 21,4% e 25,2%)",
+        "publisher": "Diario da Republica",
+        "type": "official",
+        "url": "https://files.dre.pt/1s/2018/01/00600/0023800242.pdf",
+        "language": "pt",
+        "accessed": "2026-10-13"
     }
 ]
