@@ -1458,5 +1458,145 @@
         "origin_ref": null,
         "status": "hold",
         "hold": true
+    },
+    {
+        "id": "sk-sro-capital",
+        "country": "slovakia",
+        "topic": "company",
+        "question": "What is the minimum capital of an s.r.o. in Slovakia?",
+        "answer": "EUR 5,000 in the Commercial Code text in force from 17 August 2026, with at least EUR 750 per partner. A sole founder pays it in full before registration; with several founders at least 30% of each cash contribution and EUR 2,500 in total.",
+        "source_ids": [
+            "SK1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-trade-fee",
+        "country": "slovakia",
+        "topic": "cost",
+        "question": "How much does a trade licence cost?",
+        "answer": "The fee is EUR 7 for each free trade and EUR 22 for each craft or regulated trade (fee schedule in force 1 September 2026). The trade office must issue the certificate within three working days of a complete notification.",
+        "source_ids": [
+            "SK3",
+            "SK2"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-foreign-director",
+        "country": "slovakia",
+        "topic": "company",
+        "question": "Can a non-resident be managing director of an s.r.o.?",
+        "answer": "The Commercial Code (text from 17 August 2026) requires only a natural person not listed in the execution-authorisation register; it sets no residence or nationality condition. A director with no Slovak permanent residence who is not health-insured in another EU/EEA state or Switzerland is not publicly health-insured for that role.",
+        "source_ids": [
+            "SK1",
+            "SK8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-vat-threshold",
+        "country": "slovakia",
+        "topic": "tax",
+        "question": "What is the VAT registration threshold in 2026?",
+        "answer": "EUR 50,000 turnover in a calendar year (VAT payer from 1 January of the next year), or EUR 62,500 within the year (VAT payer from the supply that crosses it). Registration is due within five working days of passing the threshold. Standard rate is 23%.",
+        "source_ids": [
+            "SK5"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-social-holiday",
+        "country": "slovakia",
+        "topic": "social",
+        "question": "Do new sole traders pay social contributions from day one?",
+        "answer": "No for sickness and pension insurance: it starts on the first day of the sixth calendar month after the licence, per Sociálna poisťovňa (2026). After that a starter pays the micro-contribution, EUR 131.34 a month on a EUR 396.24 base in 2026; the EUR 914.40 minimum base (about EUR 303.11 a month, from 1 July 2026) applies once prior-year income exceeds EUR 9,144. Health insurance is separate.",
+        "source_ids": [
+            "SK7",
+            "SK9"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-einvoice",
+        "country": "slovakia",
+        "topic": "tax",
+        "question": "When does e-invoicing become mandatory?",
+        "answer": "From 1 January 2027 VAT payers must issue domestic invoices as structured e-invoices (XML, Peppol BIS), and all businesses must be able to receive them via a certified delivery provider. Non-VAT payers need not issue them.",
+        "source_ids": [
+            "SK10",
+            "SK15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-flat-rate",
+        "country": "slovakia",
+        "topic": "tax",
+        "question": "Can I use flat-rate expenses?",
+        "answer": "A non-VAT payer who claims no documented expenses can deduct 60% of business income, up to EUR 20,000 (2026 income tax act). Insurance contributions paid can be added.",
+        "source_ids": [
+            "SK6"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-permit-route",
+        "country": "slovakia",
+        "topic": "visa",
+        "question": "Which residence permit does a non-EU founder need?",
+        "answer": "The statute provides a temporary residence permit for the purpose of business, granted for three years, filed in person at a Slovak embassy abroad. Details and costs are under legal review.",
+        "source_ids": [
+            "SK12",
+            "SK13"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "sk-permit-fee",
+        "country": "slovakia",
+        "topic": "visa",
+        "question": "How much does the business residence permit cost?",
+        "answer": "The state fee is EUR 330 for the first application and EUR 200 for renewal (fee schedule in force 1 September 2026). Under legal review.",
+        "source_ids": [
+            "SK3"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
     }
 ]

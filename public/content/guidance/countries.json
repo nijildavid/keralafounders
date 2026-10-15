@@ -113,11 +113,11 @@
         "slug": "slovakia",
         "name": "Slovakia",
         "flag_or_icon": "sk",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Slovakia",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-08",
         "order": 11
     },
     {
