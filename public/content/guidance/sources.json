@@ -1537,5 +1537,140 @@
         "url": "https://www.biznes.gov.pl/pl/portal/ou1613",
         "language": "pl",
         "accessed": "2026-10-13"
+    },
+    {
+        "id": "SK1",
+        "title": "Obchodný zákonník (zákon č. 513/1991 Zb.), časová verzia účinná od 17. 8. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/1991/513/ZZ_1991_513_20260817.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK2",
+        "title": "Živnostenský zákon (zákon č. 455/1991 Zb.), časová verzia účinná od 17. 8. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/1991/455/ZZ_1991_455_20260817.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK3",
+        "title": "Zákon o správnych poplatkoch (zákon č. 145/1995 Z. z.), časová verzia účinná od 1. 9. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/1995/145/ZZ_1995_145_20260901.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK4",
+        "title": "Zákon o obchodnom registri (zákon č. 29/2026 Z. z.), časová verzia účinná od 17. 8. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2026/29/ZZ_2026_29_20260817.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK5",
+        "title": "Zákon o dani z pridanej hodnoty (zákon č. 222/2004 Z. z.), časová verzia účinná od 1. 1. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/222/ZZ_2004_222_20260101.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK6",
+        "title": "Zákon o dani z príjmov (zákon č. 595/2003 Z. z.), časová verzia účinná od 1. 1. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2003/595/ZZ_2003_595_20260101.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK7",
+        "title": "Zákon o sociálnom poistení (zákon č. 461/2003 Z. z.), časová verzia účinná od 1. 9. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2003/461/ZZ_2003_461_20260901.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK8",
+        "title": "Zákon o zdravotnom poistení (zákon č. 580/2004 Z. z.), časová verzia účinná od 1. 7. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/580/ZZ_2004_580_20260701.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK9",
+        "title": "Poistné SZČO od 1. júla 2026 a mikroodvod",
+        "publisher": "Sociálna poisťovňa",
+        "type": "official",
+        "url": "https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/poistne-szco-od-1-jula-2026-mikroodvod",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK10",
+        "title": "Najčastejšie otázky a odpovede k eFaktúre (9/DPH/2025/IM, verzia z 15. 9. 2026)",
+        "publisher": "Finančné riaditeľstvo Slovenskej republiky",
+        "type": "official",
+        "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2026/2026.09.15_eFak_FaQ.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK11",
+        "title": "Informácia k novému zákonu č. 384/2025 Z. z. o evidencii tržieb (1/ZoET/2025/I)",
+        "publisher": "Finančné riaditeľstvo Slovenskej republiky",
+        "type": "official",
+        "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Ostatne/2025/2025.12.22_001_ZoET_2025_I.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK12",
+        "title": "Zákon o pobyte cudzincov (zákon č. 404/2011 Z. z.), časová verzia účinná od 1. 10. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2011/404/ZZ_2011_404_20261001.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK13",
+        "title": "Doklady potrebné k prijatiu žiadosti o udelenie prechodného pobytu na účel podnikania podľa § 22 (FAQ, júl 2024)",
+        "publisher": "Ministerstvo vnútra SR, Cudzinecká polícia",
+        "type": "official",
+        "url": "https://www.minv.sk/swift_data/source/policia/hranicna_a_cudzinecka_policia/ocp/faq/jul_2024/13_otazka.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK14",
+        "title": "Výška životného minima od 1. júla 2026 (opatrenie č. 155/2026 Z. z.)",
+        "publisher": "Ministerstvo práce, sociálnych vecí a rodiny SR",
+        "type": "official",
+        "url": "https://www.employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2026/",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK15",
+        "title": "Zákon o dani z pridanej hodnoty (zákon č. 222/2004 Z. z.), časová verzia účinná od 1. 1. 2027",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/222/ZZ_2004_222_20270101.pdf",
+        "language": "sk",
+        "accessed": "2026-10-13"
     }
 ]
