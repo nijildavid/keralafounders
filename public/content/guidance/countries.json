@@ -47,11 +47,11 @@
         "slug": "poland",
         "name": "Poland",
         "flag_or_icon": "pl",
-        "status": "planned",
+        "status": "live",
         "target_month": null,
         "directory_country_name": "Poland",
-        "last_checked": null,
-        "next_check_due": null,
+        "last_checked": "2026-10-12",
+        "next_check_due": "2027-01-15",
         "order": 5
     },
     {

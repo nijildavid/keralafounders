@@ -76,7 +76,9 @@ foreach ($slugs as $slug) {
     }
     $existing = array_column(jload($tmp . '/guidance/sources.json'), 'id');
     foreach ($sources as $s) {
-        if (in_array($s['id'] ?? '', $existing, true)) $own[] = "source id {$s['id']} already exists in live sources.json";
+        $liveSame = false;
+        foreach (jload($tmp . '/guidance/sources.json') as $ls) { if (($ls['id'] ?? '') === ($s['id'] ?? '') && ($ls['url'] ?? '') === ($s['url'] ?? '')) $liveSame = true; }
+        if (in_array($s['id'] ?? '', $existing, true) && !$liveSame) $own[] = "source id {$s['id']} already exists in live sources.json with different content";
     }
     if (!is_file("$d/evidence-log.md")) $own[] = 'evidence-log.md missing';
 
@@ -114,6 +116,9 @@ foreach ($slugs as $slug) {
             }
         }
     }
+    foreach (array_merge(array_column($guide['founder_checklist'] ?? [], 'text'), array_column($guide['quick_facts'] ?? [], 'text'), [(string)($guide['summary'] ?? '')]) as $i => $txt) {
+        if (preg_match($forbidden, (string)$txt)) $own[] = 'summary, quick facts or checklist uses a forbidden review/guarantee phrase: ' . substr((string)$txt, 0, 60);
+    }
     foreach ($mine as $f) {
         if (($f['status'] ?? '') === 'hold') continue;
         if (preg_match($forbidden, ($f['answer'] ?? '') . ' ' . ($f['question'] ?? ''))) $own[] = 'FAQ ' . ($f['id'] ?? '?') . ' uses a forbidden review/guarantee phrase';
@@ -124,9 +129,11 @@ foreach ($slugs as $slug) {
     }
 
     // Merge into the temp copy
-    $all = array_merge(jload($tmp . '/guidance/sources.json'), $sources);
+    $newIds = array_column($sources, 'id');
+    $all = array_merge(array_values(array_filter(jload($tmp . '/guidance/sources.json'), fn($x) => !in_array($x['id'], $newIds, true))), $sources);
     file_put_contents($tmp . '/guidance/sources.json', json_encode($all, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
-    $allFaq = array_merge(jload($tmp . '/guidance/faq.json'), $faq);
+    $newFaq = array_column($faq, 'id');
+    $allFaq = array_merge(array_values(array_filter(jload($tmp . '/guidance/faq.json'), fn($x) => !in_array($x['id'], $newFaq, true))), $faq);
     file_put_contents($tmp . '/guidance/faq.json', json_encode($allFaq, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
     @mkdir($tmp . '/guidance/' . $slug);
     copy("$d/guide.json", $tmp . '/guidance/' . $slug . '/guide.json');
