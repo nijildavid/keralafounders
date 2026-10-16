@@ -6,7 +6,19 @@ on:
   workflow_dispatch: {}
 
 jobs:
+  # Stops a deploy if any Guidance citation points at a source that does not
+  # exist (validate-guidance-content.php exits 1 on that, and on bad dates/JSON).
+  guidance-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PHP
+        run: sudo apt-get install -y --no-install-recommends php-cli
+      - name: Validate Guidance content
+        run: php scripts/validate-guidance-content.php
+
   deploy:
+    needs: guidance-check
     runs-on: ubuntu-latest
     env:
       CPANEL_HOST: ${{ secrets.CPANEL_HOST }}
