@@ -155,7 +155,7 @@ $breadcrumbJsonLd = $company ? breadcrumb_json_ld([
         <div><dt class="eyebrow">Founder</dt><dd><?= h($f['name']) ?><?php if (!empty($f['show_email']) && !empty($f['email'])): ?><br><a class="arrow" style="margin:0" href="mailto:<?= h($f['email']) ?>"><?= h($f['email']) ?></a><?php endif; ?></dd></div>
         <?php endforeach; ?>
         <?php if ($guidanceGuideSlug): ?>
-        <div><dt class="eyebrow">Starting up here?</dt><dd><a class="arrow" style="margin:0" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">Guide: <?= h($company['country']) ?> →</a></dd></div>
+        <div><dt class="eyebrow">Starting up here?</dt><dd><a class="arrow" style="margin:0" data-kf-event="guide_click" data-kf-label="company-page" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">Guide: <?= h($company['country']) ?> →</a></dd></div>
         <?php endif; ?>
       </dl>
       <?php endif; ?>

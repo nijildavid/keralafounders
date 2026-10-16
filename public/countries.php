@@ -97,7 +97,7 @@ $breadcrumbJsonLd = breadcrumb_json_ld($breadcrumbTrail);
 <a class="arrow" href="countries.php">← All countries</a>
 <div class="page-cta"><a class="pill" href="add-company.php">Add your company</a></div>
 <?php if ($guidanceGuideSlug): ?>
-<p class="muted" style="margin-top:12px"><a class="arrow" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($selected) ?> →</a></p>
+<p class="muted" style="margin-top:12px"><a class="arrow" data-kf-event="guide_click" data-kf-label="directory-country" href="guidance-country.php?country=<?= rawurlencode($guidanceGuideSlug) ?>">How to start a company in <?= h($selected) ?> →</a></p>
 <?php endif; ?>
 <div class="cards" style="margin-top:20px">
 <?php if ($pageRows): foreach ($pageRows as $c): echo company_card_html($c); endforeach; else: ?>
