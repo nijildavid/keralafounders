@@ -189,5 +189,7 @@ Added `public/assets/analytics.js` (loaded from `head-common.php`). Events are
 sent only after the visitor accepts analytics cookies (it reads the cookie
 banner's consent signal). Events: `claim_listing_click`, `claim_start`,
 `claim_submit`, `add_company_step` (param `step` 1-5), `add_company_submit`,
-`follow_instagram_click`. Share events: put `data-kf-event="share_click"` on a
+`follow_instagram_click`, `guide_click` (label `home`, `company-page` or
+`directory-country`: where the visitor clicked through to a country guide;
+added Oct 2026 for the guide reach test). Share events: put `data-kf-event="share_click"` on a
 button/link once share buttons exist (tickets A3/A4); no share button exists yet.

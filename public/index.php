@@ -8,6 +8,17 @@ $db = get_db();
 // identically for JS-enabled clients, unchanged from before.
 $recentCompanies = fetch_recent_approved_companies($db, 6);
 
+// Homepage entry point to the country guides (reach test, Oct 2026). Only shown
+// when the guidance area is live; the count is the number of live guides.
+$liveGuideCount = 0;
+require_once __DIR__ . '/../config/reference.php';
+if (!empty($KF_GUIDANCE_NAV_LIVE)) {
+    require_once __DIR__ . '/assets/guidance-helpers.php';
+    foreach (guidance_load_countries() as $gc) {
+        if (($gc['status'] ?? '') === 'live') $liveGuideCount++;
+    }
+}
+
 $categoryIcons = [
     'Technology' => 'technology-laptop',
     'Food & Hospitality' => 'food-utensils',
@@ -55,6 +66,11 @@ $canonicalUrl = 'https://keralafounders.eu/';
 <div class="hero-actions"><a class="pill" href="founders.php">Explore the directory →</a><a class="pill light" href="add-company.php">Add your company</a></div>
 <div class="hero-stats"><div class="hero-stat"><strong id="statCompanies"><?= (int)$heroStats['companies'] ?></strong><span>Companies</span></div><div class="hero-stat"><strong id="statFounders"><?= (int)$heroStats['founders'] ?></strong><span>Founders</span></div><div class="hero-stat"><strong id="statCountries"><?= (int)$heroStats['countries'] ?></strong><span>Countries</span></div><div class="hero-stat"><strong id="statCities"><?= (int)$heroStats['cities'] ?></strong><span>Cities</span></div></div>
 </div></div></section>
+<?php if ($liveGuideCount > 0): ?>
+<section class="section" style="padding-bottom:0"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">Guidance</div><h2>Starting a company in Europe?</h2><p class="muted section-intro">Plain-language guides to registering a business in <?= (int)$liveGuideCount ?> countries, checked against official sources. General information, not legal advice.</p></div><a class="arrow" data-kf-event="guide_click" data-kf-label="home" href="guidance.php">All guides →</a></div>
+</div></section>
+<?php endif; ?>
 <section class="section" style="padding-bottom:0"><div class="wrap">
 <div class="section-head"><div class="eyebrow">Explore by category</div><a class="arrow" href="industries.php">View all categories →</a></div>
 <div class="category-grid">
