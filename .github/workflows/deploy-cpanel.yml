@@ -12,9 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
+      - name: Install PHP
+        run: sudo apt-get install -y --no-install-recommends php-cli
       - name: Validate Guidance content
         run: php scripts/validate-guidance-content.php
 
