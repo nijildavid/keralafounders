@@ -32,6 +32,11 @@ $canonicalUrl = 'https://keralafounders.eu/guidance-method.php';
 </div>
 
 <div class="panel" style="margin-top:20px">
+<h2>What "checked" means</h2>
+<p class="muted" style="margin:0">"Checked" means each figure was compared with its official source on the date shown on the guide. It is general information, not legal or tax advice. For now that comparison is done by automated reviewers, not by a lawyer or tax adviser, so a guide is never described as "reviewed". Residence-permit sections for founders from outside the EU are not published yet: they link to the official page instead.</p>
+</div>
+
+<div class="panel" style="margin-top:20px">
 <h2>The 6-month re-check</h2>
 <p class="muted" style="margin:0">Rules, fees and thresholds change, and we don't catch every change the moment it happens. Every guide shows when it was last checked and when it's next due for a re-check. If a guide is overdue, you'll see a banner at the top telling you so. The content stays up, but treat it with extra caution and check the sources yourself.</p>
 </div>

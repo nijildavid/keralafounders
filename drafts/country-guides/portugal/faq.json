@@ -1,0 +1,189 @@
+[
+  {
+    "id": "pt-min-capital",
+    "country": "portugal",
+    "topic": "legal",
+    "question": "What is the minimum share capital for a Lda. in Portugal?",
+    "answer": "There is no large minimum. Each quota must be worth at least EUR 1 under the Companies Code (art. 219). The partners set the total capital.",
+    "source_ids": [
+      "PT6"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-company-cost",
+    "country": "portugal",
+    "topic": "fees",
+    "question": "How much does it cost to set up a company?",
+    "answer": "Empresa na Hora costs EUR 360. Empresa Online costs EUR 220 with a pre-approved articles template and EUR 360 with your own articles (IRN pages, accessed October 2026).",
+    "source_ids": [
+      "PT1",
+      "PT4"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-remote-start",
+    "country": "portugal",
+    "topic": "process",
+    "question": "Can I set up a company in Portugal without living there?",
+    "answer": "Empresa Online lets foreign citizens authenticate with a Chave Movel Digital linked to their passport or with eIDAS, but every partner needs a Portuguese NIF. Empresa na Hora needs all partners present or legally represented at the counter.",
+    "source_ids": [
+      "PT1",
+      "PT4",
+      "PT5"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-nif-nonresident",
+    "country": "portugal",
+    "topic": "tax",
+    "question": "How does a non-resident get a Portuguese tax number (NIF)?",
+    "answer": "Through the Portal das Financas e-balcao via a legal representative with a power of attorney, or in person at a Servico de Financas or Loja do Cidadao after booking. You need a valid passport and proof of your foreign address.",
+    "source_ids": [
+      "PT8"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-fiscal-rep",
+    "country": "portugal",
+    "topic": "tax",
+    "question": "Do I need a fiscal representative in Portugal?",
+    "answer": "Not when you first get the NIF. If you live outside the EU/EEA and work self-employed in Portugal with VAT, you must name a VAT-registered representative resident in Portugal before you start. Residents of the EU, Norway, Iceland and Liechtenstein can choose.",
+    "source_ids": [
+      "PT7",
+      "PT8"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-vat-threshold",
+    "country": "portugal",
+    "topic": "tax",
+    "question": "What is the small-business VAT exemption limit?",
+    "answer": "EUR 15,000 of annual turnover in Portugal (stated as the 2026 limit by gov.pt) for businesses with a registered office or domicile in Portugal. A business without one cannot normally use it; businesses based in another EU country have a separate route with an EX number.",
+    "source_ids": [
+      "PT10",
+      "PT11",
+      "PT12"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-vat-rate",
+    "country": "portugal",
+    "topic": "tax",
+    "question": "What is the VAT rate on the Portuguese mainland?",
+    "answer": "The standard rate on the mainland is 23%, with 13% and 6% reduced rates (gov.pt guide, page marked updated 04/09/2026).",
+    "source_ids": [
+      "PT12"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-social-first-year",
+    "country": "portugal",
+    "topic": "social",
+    "question": "Do I pay social security in my first year as self-employed?",
+    "answer": "The first inclusion in the self-employed regime takes effect from the first day of the 12th month after you start, so contributions begin only then, unless you ask to start earlier.",
+    "source_ids": [
+      "PT13"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-corporate-tax",
+    "country": "portugal",
+    "topic": "tax",
+    "question": "What is the corporate tax rate in 2026?",
+    "answer": "The general IRC rate is 19% for tax periods starting in 2026, falling to 18% in 2027 and 17% from 2028. The first EUR 50,000 of profit of small and medium enterprises is taxed at 15%.",
+    "source_ids": [
+      "PT16"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-atcud",
+    "country": "portugal",
+    "topic": "invoicing",
+    "question": "Do I need the ATCUD on invoices?",
+    "answer": "Yes. Invoices and other tax documents must carry the ATCUD, whatever the issuer's turnover or VAT regime, and invoice series are reported to the tax authority before use.",
+    "source_ids": [
+      "PT18"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "render",
+    "hold": false
+  },
+  {
+    "id": "pt-visa-routes",
+    "country": "portugal",
+    "topic": "visa",
+    "question": "Which residence visa routes exist for non-EU founders?",
+    "answer": "The MNE visa portal lists a residence visa for independent professional activity or immigrant entrepreneurs (including the Startup Visa) and a separate visa for remote work. This is under legal review and not shown.",
+    "source_ids": [
+      "PT20",
+      "PT21"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "hold",
+    "hold": true
+  },
+  {
+    "id": "pt-ifici",
+    "country": "portugal",
+    "topic": "visa",
+    "question": "Is there a tax regime to replace the non-habitual resident scheme?",
+    "answer": "The IFICI regime offers a 20% rate on eligible Portuguese-source income for 10 years, with conditions. Whether a founder qualifies is under legal review and not shown.",
+    "source_ids": [
+      "PT22"
+    ],
+    "last_checked": "2026-10-12",
+    "origin": "research",
+    "origin_ref": null,
+    "status": "hold",
+    "hold": true
+  }
+]

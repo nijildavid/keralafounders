@@ -331,21 +331,24 @@ function guidance_sources_box_html(array $usedSourceIds, array $sourcesById): st
         'secondary' => 'Secondary (advisor or company blog)',
     ];
     $ids = array_keys($usedSourceIds);
+    // Sort by the number inside the ID. IDs have a letter prefix of any length
+    // (S8, NL10, SI27), so strip every non-digit rather than just the first char.
     usort($ids, function ($a, $b) {
-        return (int)substr($a, 1) <=> (int)substr($b, 1);
+        return (int)preg_replace('/\D+/', '', $a) <=> (int)preg_replace('/\D+/', '', $b);
     });
     if (!$ids) {
         return '';
     }
     $items = '';
-    $n = 0;
     foreach ($ids as $id) {
         if (!isset($sourcesById[$id])) {
             continue;
         }
         $s = $sourcesById[$id];
-        $n++;
-        $items .= '<li id="source-' . h($id) . '">' . $n . '. <a href="' . h($s['url']) . '" target="_blank" rel="noopener">' . h($s['title']) . '</a>'
+        // Label each entry with its own ID so it matches the inline [S8] marker
+        // exactly. (A running 1, 2, 3 count drifts away from the inline IDs
+        // whenever an earlier source is unused.)
+        $items .= '<li id="source-' . h($id) . '"><strong>' . h($id) . '.</strong> <a href="' . h($s['url']) . '" target="_blank" rel="noopener">' . h($s['title']) . '</a>'
             . ' — ' . h($s['publisher'])
             . ' <span class="chip">' . h($typeLabels[$s['type']] ?? $s['type']) . '</span>'
             . ' <span class="muted" style="font-size:12px">(' . h(strtoupper($s['language'])) . ', accessed ' . h(guidance_format_date_long($s['accessed'])) . ')</span></li>';
@@ -367,7 +370,7 @@ function guidance_faq_entry_html(array $entry, array $sourcesById): string
     $sourcesHtml = '';
     foreach ($entry['source_ids'] ?? [] as $id) {
         if (isset($sourcesById[$id])) {
-            $sourcesHtml .= '<li><a href="' . h($sourcesById[$id]['url']) . '" target="_blank" rel="noopener">' . h($sourcesById[$id]['title']) . '</a></li>';
+            $sourcesHtml .= '<li><strong>' . h($id) . '.</strong> <a href="' . h($sourcesById[$id]['url']) . '" target="_blank" rel="noopener">' . h($sourcesById[$id]['title']) . '</a></li>';
         }
     }
     return '<details class="guidance-faq-entry" id="faq-' . h($entry['id']) . '">'

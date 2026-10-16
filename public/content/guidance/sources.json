@@ -1321,5 +1321,2525 @@
         "url": "https://business.gov.nl/regulations/e-invoicing-government-organisations/",
         "language": "en",
         "accessed": "2026-09-26"
+    },
+    {
+        "id": "PL1",
+        "title": "Zarejestruj działalność gospodarczą w CEIDG",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/ou736",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL2",
+        "title": "Jak założyć spółkę przez internet, w systemie S24",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/00167",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL3",
+        "title": "Wpis spółki z o.o. do KRS",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/ou1503",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL4",
+        "title": "Spółka z ograniczoną odpowiedzialnością",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/00166",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL5",
+        "title": "Jaką działalność gospodarczą może w Polsce prowadzić cudzoziemiec",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/00806",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL6",
+        "title": "Podejmowanie działalności gospodarczej przez cudzoziemców",
+        "publisher": "Powroty.gov.pl (portal rządowy)",
+        "type": "government_portal",
+        "url": "https://powroty.gov.pl/podejmowanie-dzialalnosci-gospodarczej-przez-cudzoziemcow-5305/",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL7",
+        "title": "Stawki i limity (VAT)",
+        "publisher": "Ministerstwo Finansów, podatki.gov.pl",
+        "type": "official",
+        "url": "https://www.podatki.gov.pl/podatki-firmowe/vat/stawki-i-limity",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL8",
+        "title": "Rozpoczęcie działalności gospodarczej: forma opodatkowania",
+        "publisher": "Ministerstwo Finansów, podatki.gov.pl",
+        "type": "official",
+        "url": "http://www.podatki.gov.pl/dzialalnosc-gospodarcza/forma-opodatkowania",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL9",
+        "title": "Rozpoczęcie działalności gospodarczej: podatnik VAT",
+        "publisher": "Ministerstwo Finansów, podatki.gov.pl",
+        "type": "official",
+        "url": "http://www.podatki.gov.pl/dzialalnosc-gospodarcza/podatnik-vat",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL10",
+        "title": "Ustawa z dnia 24 czerwca 2025 r. o zmianie ustawy o podatku od towarów i usług (Dz.U. 2025 poz. 896), tekst",
+        "publisher": "Sejm RP, API ELI",
+        "type": "official",
+        "url": "https://api.sejm.gov.pl/eli/acts/DU/2025/896/text.pdf",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL11",
+        "title": "Podstawy prawne oraz kluczowe terminy (KSeF)",
+        "publisher": "Ministerstwo Finansów, ksef.podatki.gov.pl",
+        "type": "official",
+        "url": "https://ksef.podatki.gov.pl/informacje-ogolne-ksef-20/podstawy-prawne-oraz-kluczowe-terminy/",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL12",
+        "title": "Drugi etap wdrożenia Krajowego Systemu e-Faktur",
+        "publisher": "Ministerstwo Finansów, gov.pl",
+        "type": "official",
+        "url": "https://www.gov.pl/web/finanse/drugi-etap-wdrozenia-krajowego-systemu-e-faktur",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL13",
+        "title": "Składki przedsiębiorców w 2026 roku (analiza Wydziału Planowania Funduszy, luty 2026)",
+        "publisher": "Zakład Ubezpieczeń Społecznych (ZUS)",
+        "type": "official",
+        "url": "https://www.zus.pl/documents/10182/13364587/Sk%C5%82adki+przedsi%C4%99biorc%C3%B3w+w+2026+roku_DFF.pdf/c8d4e1dc-c80b-91d6-7453-02309976f713?t=1772712579703",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL14",
+        "title": "Ulga na start",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/00285",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL15",
+        "title": "Obniżone składki ZUS przez 24 miesiące",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/00286",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL16",
+        "title": "Zbieg tytułów do ubezpieczeń ZUS",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/00288",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL17",
+        "title": "Spółka z ograniczoną odpowiedzialnością: podstawowe informacje",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/00166-1",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL18",
+        "title": "CIT klasyczny: stawki i limity",
+        "publisher": "Ministerstwo Finansów, podatki.gov.pl",
+        "type": "official",
+        "url": "https://www.podatki.gov.pl/podatki-firmowe/cit/cit-klasyczny/stawki-i-limity",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL19",
+        "title": "Informacje podstawowe CIT estoński",
+        "publisher": "Ministerstwo Finansów, podatki.gov.pl",
+        "type": "official",
+        "url": "https://www.podatki.gov.pl/podatki-firmowe/cit/cit-estonski/informacje-podstawowe-cit-estonski",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL20",
+        "title": "FAQ: najczęściej zadawane pytania, Portal S24",
+        "publisher": "Ministerstwo Sprawiedliwości, ekrs.ms.gov.pl",
+        "type": "official",
+        "url": "https://ekrs.ms.gov.pl/s24/faq",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL21",
+        "title": "Zezwolenie na pobyt czasowy: działalność gospodarcza",
+        "publisher": "Lubuski Urząd Wojewódzki (BIP)",
+        "type": "official",
+        "url": "https://bip.lubuskie.uw.gov.pl/sprawy_obywatelskie/Zezwolenie_na_pobyt_czasowy_-_dzialalnosc_gospodarcza",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL22",
+        "title": "Zezwolenie na pobyt czasowy w celu prowadzenia działalności gospodarczej",
+        "publisher": "Lubelski Urząd Wojewódzki, Wydział Spraw Obywatelskich i Cudzoziemców",
+        "type": "official",
+        "url": "https://cudzoziemcy.lublin.uw.gov.pl/pl/zezwolenie-na-pobyt-czasowy/zezwolenie-na-pobyt-czasowy-w-celu-prowadzenia-dzia%C5%82alnosci-gospodarczej",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL23",
+        "title": "MOS: pytania i odpowiedzi",
+        "publisher": "Urząd do Spraw Cudzoziemców, gov.pl",
+        "type": "official",
+        "url": "https://www.gov.pl/web/udsc/mos-qa",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PL24",
+        "title": "Zezwolenie na pobyt czasowy w celu pracy w zawodzie wymagającym wysokich kwalifikacji (Niebieska Karta UE)",
+        "publisher": "Biznes.gov.pl (Ministerstwo Rozwoju i Technologii)",
+        "type": "government_portal",
+        "url": "https://www.biznes.gov.pl/pl/portal/ou1613",
+        "language": "pl",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "SK1",
+        "title": "Obchodný zákonník (zákon č. 513/1991 Zb.), časová verzia účinná od 17. 8. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/1991/513/ZZ_1991_513_20260817.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK2",
+        "title": "Živnostenský zákon (zákon č. 455/1991 Zb.), časová verzia účinná od 17. 8. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/1991/455/ZZ_1991_455_20260817.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK3",
+        "title": "Zákon o správnych poplatkoch (zákon č. 145/1995 Z. z.), časová verzia účinná od 1. 9. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/1995/145/ZZ_1995_145_20260901.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK4",
+        "title": "Zákon o obchodnom registri (zákon č. 29/2026 Z. z.), časová verzia účinná od 17. 8. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2026/29/ZZ_2026_29_20260817.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK5",
+        "title": "Zákon o dani z pridanej hodnoty (zákon č. 222/2004 Z. z.), časová verzia účinná od 1. 1. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/222/ZZ_2004_222_20260101.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK6",
+        "title": "Zákon o dani z príjmov (zákon č. 595/2003 Z. z.), časová verzia účinná od 1. 1. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2003/595/ZZ_2003_595_20260101.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK7",
+        "title": "Zákon o sociálnom poistení (zákon č. 461/2003 Z. z.), časová verzia účinná od 1. 9. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2003/461/ZZ_2003_461_20260901.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK8",
+        "title": "Zákon o zdravotnom poistení (zákon č. 580/2004 Z. z.), časová verzia účinná od 1. 7. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/580/ZZ_2004_580_20260701.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK9",
+        "title": "Poistné SZČO od 1. júla 2026 a mikroodvod",
+        "publisher": "Sociálna poisťovňa",
+        "type": "official",
+        "url": "https://www.socpoist.sk/socialne-poistenie/platenie-poistneho/poistne-szco-od-1-jula-2026-mikroodvod",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK10",
+        "title": "Najčastejšie otázky a odpovede k eFaktúre (9/DPH/2025/IM, verzia z 15. 9. 2026)",
+        "publisher": "Finančné riaditeľstvo Slovenskej republiky",
+        "type": "official",
+        "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Aktualne/DPH/2026/2026.09.15_eFak_FaQ.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK11",
+        "title": "Informácia k novému zákonu č. 384/2025 Z. z. o evidencii tržieb (1/ZoET/2025/I)",
+        "publisher": "Finančné riaditeľstvo Slovenskej republiky",
+        "type": "official",
+        "url": "https://www.financnasprava.sk/_img/pfsedit/Dokumenty_PFS/Zverejnovanie_dok/Dane/Novinky_leg/Ostatne/2025/2025.12.22_001_ZoET_2025_I.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK12",
+        "title": "Zákon o pobyte cudzincov (zákon č. 404/2011 Z. z.), časová verzia účinná od 1. 10. 2026",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2011/404/ZZ_2011_404_20261001.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK13",
+        "title": "Doklady potrebné k prijatiu žiadosti o udelenie prechodného pobytu na účel podnikania podľa § 22 (FAQ, júl 2024)",
+        "publisher": "Ministerstvo vnútra SR, Cudzinecká polícia",
+        "type": "official",
+        "url": "https://www.minv.sk/swift_data/source/policia/hranicna_a_cudzinecka_policia/ocp/faq/jul_2024/13_otazka.pdf",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK14",
+        "title": "Výška životného minima od 1. júla 2026 (opatrenie č. 155/2026 Z. z.)",
+        "publisher": "Ministerstvo práce, sociálnych vecí a rodiny SR",
+        "type": "official",
+        "url": "https://www.employment.gov.sk/sk/rodina-socialna-pomoc/hmotna-nudza/zivotne-minimum/vyska-zivotneho-minima-od-1-jula-2026/",
+        "language": "sk",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SK15",
+        "title": "Zákon o dani z pridanej hodnoty (zákon č. 222/2004 Z. z.), časová verzia účinná od 1. 1. 2027",
+        "publisher": "Slov-Lex / Zbierka zákonov SR",
+        "type": "official",
+        "url": "https://static.slov-lex.sk/pdf/SK/ZZ/2004/222/ZZ_2004_222_20270101.pdf",
+        "language": "sk",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PT1",
+        "title": "Criar Empresa na Hora",
+        "publisher": "Instituto dos Registos e do Notariado (IRN), Justica",
+        "type": "official",
+        "url": "https://registo.justica.gov.pt/Empresas/Empresa-na-Hora",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT2",
+        "title": "Empresa na Hora - Como funciona",
+        "publisher": "Ministerio da Justica",
+        "type": "official",
+        "url": "https://justica.gov.pt/Servicos/Empresa-na-Hora/Como-funciona",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT3",
+        "title": "Criar uma empresa online",
+        "publisher": "gov.pt (service run by IRN)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/criar-uma-empresa-online",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT4",
+        "title": "Criar Empresa (Empresa Online)",
+        "publisher": "Instituto dos Registos e do Notariado (IRN), Justica",
+        "type": "official",
+        "url": "https://registo.justica.gov.pt/empresa",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT5",
+        "title": "Sociedade por quotas - constituicao",
+        "publisher": "gov.pt (IRN)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/sociedade-por-quotas-constituicao",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT6",
+        "title": "Codigo das Sociedades Comerciais (DL 262/86), artigo 219 (Unidade e montante da quota), consolidated copy",
+        "publisher": "Procuradoria-Geral Distrital de Lisboa (legal portal)",
+        "type": "government_portal",
+        "url": "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=524&tabela=leis&artigo_id=524A0219",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT7",
+        "title": "Registo Contribuinte > Identific > Representacao Fiscal (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-00307.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT8",
+        "title": "Numero de Identificacao Fiscal para cidadaos estrangeiros - nao residentes (leaflet)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/Atribuicao_de_NIF_a_cidadaos_estrangeiros_nao_residentes.pdf",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT9",
+        "title": "Inicio de atividade - Rendimentos empresariais e profissionais - IRS e IVA (leaflet, dated March 2026)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/Inicio_atividade.pdf",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT10",
+        "title": "Artigo 53.o do CIVA (regime especial de isencao)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/artigo-53-o-do-civa.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT11",
+        "title": "IVA > Enquadramento Legal > Reg. Especial Isencao Art 53 (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/Pages/faqs-01001.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT12",
+        "title": "Trabalhar por conta propria: obrigacoes fiscais e pagamentos (impostos e contribuicoes)",
+        "publisher": "gov.pt guide",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/guias/trabalhar-por-conta-propria-guia-para-trabalhadores-independentes/obrigacoes-fiscais-e-pagamentos-impostos-e-contribuicoes",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT13",
+        "title": "Guia Pratico - Novo Regime dos Trabalhadores Independentes (v1.14, 16 May 2025)",
+        "publisher": "Instituto da Seguranca Social, I.P.",
+        "type": "official",
+        "url": "https://sisscontent.seg-social.pt/documents/10152/14965/1009+Trabalhador+independente+-+novo+regime/87b6e00c-523d-4718-8a88-942ea804c18a",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT14",
+        "title": "Contribuicoes para a Seguranca Social - pagar como trabalhador por conta de outrem",
+        "publisher": "gov.pt (Instituto da Seguranca Social)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/obter-informacoes-sobre-as-contribuicoes-para-a-seguranca-social-pagamento-de-entidade-empregadora-por-trabalhador-por-conta-de-outrem",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT15",
+        "title": "Contribuicoes para a Seguranca Social - pagar como trabalhador independente",
+        "publisher": "gov.pt (Instituto da Seguranca Social)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/obter-informacoes-sobre-as-contribuicoes-para-a-seguranca-social-pagamento-de-trabalhador-independente",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT16",
+        "title": "Artigo 87.o do Codigo do IRC (taxas)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc87.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT17",
+        "title": "Artigo 31.o do CIRS (regime simplificado)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/cirs_rep/Pages/irs31.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT18",
+        "title": "Outras Obrigacoes > Series/ATCUD > Ambito de Aplicacao (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/Pages/faqs-00883.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT19",
+        "title": "Residencia - Documentacao instrutoria - Vistos Nacionais",
+        "publisher": "Ministerio dos Negocios Estrangeiros (Portal Diplomatico, Vistos)",
+        "type": "official",
+        "url": "https://vistos.mne.gov.pt/pt/vistos-nacionais/documentacao-instrutoria/residencia",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT20",
+        "title": "Tipo de visto - Informacao Geral - Vistos Nacionais",
+        "publisher": "Ministerio dos Negocios Estrangeiros (Portal Diplomatico, Vistos)",
+        "type": "official",
+        "url": "https://vistos.mne.gov.pt/pt/vistos-nacionais/informacao-geral/tipo-de-visto",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT21",
+        "title": "Pedir visto de residencia para o exercicio de atividade profissional independente ou para imigrantes empreendedores",
+        "publisher": "gov.pt (Direcao-Geral dos Assuntos Consulares e das Comunidades Portuguesas)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/pedir-visto-de-residencia-para-o-exercicio-de-atividade-profissional-independente-ou-para-imigrantes-empreendedores",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT22",
+        "title": "IRS > Incentivo Fiscal-IFICI > IFICI (FAQ)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/questoes_frequentes/pages/faqs-01018.aspx",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT23",
+        "title": "StartUP Visa - Guia de Candidatura (2nd version, May 2022)",
+        "publisher": "IAPMEI - Agencia para a Competitividade e Inovacao",
+        "type": "official",
+        "url": "https://www.iapmei.pt/getattachment/Paginas/StartUP-Visa-pt/Guia-de-Candidatura_StartUp-Visa_VF_PT_Publicacao_revisao_02maio2022.pdf.aspx?lang=pt-PT",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT24",
+        "title": "Constituir sociedade comercial - contrato de sociedade",
+        "publisher": "gov.pt (IRN)",
+        "type": "government_portal",
+        "url": "https://www.gov.pt/servicos/constituir-sociedade-comercial-contrato-de-sociedade",
+        "language": "pt",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "PT25",
+        "title": "Artigo 41.o do CIVA (prazos de entrega da declaracao periodica)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva41.aspx",
+        "language": "pt",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PT26",
+        "title": "Calendario fiscal 2026 - Obrigacoes declarativas (ultima atualizacao setembro 2026)",
+        "publisher": "Autoridade Tributaria e Aduaneira (Portal das Financas)",
+        "type": "official",
+        "url": "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/calendario_fiscal/Documents/Obrigacoes_declarativas.pdf",
+        "language": "pt",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "PT27",
+        "title": "Decreto-Lei n.o 2/2018, de 9 de janeiro (altera o Codigo dos Regimes Contributivos, art. 168: 21,4% e 25,2%)",
+        "publisher": "Diario da Republica",
+        "type": "official",
+        "url": "https://files.dre.pt/1s/2018/01/00600/0023800242.pdf",
+        "language": "pt",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "IE1",
+        "title": "Starting a business",
+        "publisher": "Citizens Information (Citizens Information Board)",
+        "type": "government_portal",
+        "url": "https://www.citizensinformation.ie/en/employment/types-of-employment/self-employment/starting-a-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE2",
+        "title": "Companies Act 2014, section 137 (company to have director resident in an EEA state)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/137/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE3",
+        "title": "Companies Act 2014, section 138 (the section 137 bond)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/138/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE4",
+        "title": "Companies Act 2014, section 140 (real and continuous link certificate)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/140/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE5",
+        "title": "Companies Act 2014, section 128 (at least one director)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/128/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE6",
+        "title": "Companies Act 2014, section 129 (secretary)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/129/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE7",
+        "title": "Companies Act 2014, section 130 (a director cannot be a body corporate)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/130/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE8",
+        "title": "Companies Act 2014, section 19 (constitution of a private company limited by shares)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/19/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE9",
+        "title": "Companies Act 2014, section 21 (delivery of the constitution for registration)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/21/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE10",
+        "title": "Companies Act 2014, section 50 (registered office in the State)",
+        "publisher": "Law Reform Commission, Revised Acts",
+        "type": "official",
+        "url": "https://revisedacts.lawreform.ie/eli/2014/act/38/section/50/revised/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE11",
+        "title": "S.I. No. 329/2025 Companies Act 2014 (Fees) Regulations 2025",
+        "publisher": "Irish Statute Book (Office of the Attorney General)",
+        "type": "official",
+        "url": "https://www.irishstatutebook.ie/eli/2025/si/329/made/en/html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE12",
+        "title": "Registering a Business Name",
+        "publisher": "gov.ie (Department of Enterprise, Tourism and Employment)",
+        "type": "government_portal",
+        "url": "https://www.gov.ie/en/service/b90c1-registering-a-business-name",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE13",
+        "title": "How to register for tax as a sole trader",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/starting-a-business/registering-for-tax/how-to-register-for-tax-as-a-sole-trader.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE14",
+        "title": "How to register for tax as a new company",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/starting-a-business/registering-for-tax/how-to-register-for-tax-as-a-new-company.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE15",
+        "title": "What are the VAT thresholds?",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vat-registration/who-should-register-for-vat/vat-thresholds.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE16",
+        "title": "How do you register for VAT?",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vat-registration/how-do-you-register-for-vat/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE17",
+        "title": "Historical VAT rates",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vat-rates/historical-vat-rates/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE18",
+        "title": "Tax rates, bands and reliefs",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE19",
+        "title": "Standard rates and thresholds of USC",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE20",
+        "title": "Universal Social Charge (USC)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/usc/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE21",
+        "title": "Corporation Tax (CT): Basis of charge",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/basis-of-charge.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE22",
+        "title": "Corporation Tax (CT): Company residency rules",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax/company-residency-rules.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE23",
+        "title": "Tax relief for new start-up companies",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/starting-a-business/initiatives-startup-businesses-smes/tax-relief-for-new-startup-companies/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE24",
+        "title": "Start-Up Relief for Entrepreneurs (SURE)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/investment/relief-corporate/start-up-relief-for-entrepreneurs.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE25",
+        "title": "A guide to self-assessment",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/self-assessment-and-self-employment/guide-to-self-assessment/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE26",
+        "title": "ViDA implementation timeline",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/vat/vida-vat-modernisation/vida-implementation-timeline.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE27",
+        "title": "Personal Public Service Number (PPSN)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/personal-public-service-number/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE28",
+        "title": "Budget information (Budget 2027)",
+        "publisher": "Revenue Commissioners",
+        "type": "official",
+        "url": "https://www.revenue.ie/en/corporate/press-office/budget-information/current-year/index.aspx",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE29",
+        "title": "eInvoicing in Ireland",
+        "publisher": "European Commission (Digital Building Blocks)",
+        "type": "official",
+        "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108889/eInvoicing+in+Ireland",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE30",
+        "title": "PRSI Class S Rates",
+        "publisher": "Department of Social Protection (gov.ie)",
+        "type": "official",
+        "url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-class-s-rates/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE31",
+        "title": "PRSI and Family Employment",
+        "publisher": "Department of Social Protection (gov.ie)",
+        "type": "official",
+        "url": "https://www.gov.ie/en/department-of-social-protection/publications/prsi-and-family-employment/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE32",
+        "title": "The different classes of Pay-Related Social Insurance (PRSI)",
+        "publisher": "Department of Social Protection (gov.ie)",
+        "type": "official",
+        "url": "https://www.gov.ie/en/department-of-social-protection/publications/the-different-classes-of-pay-related-social-insurance-prsi/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE33",
+        "title": "Start-up Entrepreneur Programme (STEP)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/what-are-my-options-for-working-in-ireland/coming-to-work-for-more-than-90-days/start-up-entrepreneur-programme-step/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE34",
+        "title": "Start-up Entrepreneur Programme Guidelines (September 2023)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/wp-content/uploads/2023/09/STEP-Guidelines-Sep-2023.pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE35",
+        "title": "Coming to work for more than 90 days",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/what-are-my-options-for-working-in-ireland/coming-to-work-for-more-than-90-days/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE36",
+        "title": "Coming to work in Ireland",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE37",
+        "title": "FAQs: Closure of the Immigrant Investor Programme (IIP)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/faqs-closure-of-the-immigrant-investor-programme-iip/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE38",
+        "title": "Information on registering your immigration permission for the first time",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/registering-your-immigration-permission/how-to-register-your-immigration-permission-for-the-first-time/information-on-registering-your-immigration-permission-for-the-first-time/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE39",
+        "title": "Visa Decisions (processing times, Dublin visa office)",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/visa-decisions/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE40",
+        "title": "Employment visa",
+        "publisher": "Immigration Service Delivery (Department of Justice, Home Affairs and Migration)",
+        "type": "official",
+        "url": "https://www.irishimmigration.ie/coming-to-work-in-ireland/what-are-my-work-visa-options/applying-for-a-long-stay-employment-visa/employment-visa/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE41",
+        "title": "Critical Skills Employment Permit",
+        "publisher": "Department of Enterprise, Tourism and Employment",
+        "type": "official",
+        "url": "https://enterprise.gov.ie/en/What-We-Do/Workplace-and-Skills/Employment-Permits/Permit-Types/Critical-Skills-Employment-Permit/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE42",
+        "title": "Who needs an employment permit?",
+        "publisher": "Department of Enterprise, Tourism and Employment",
+        "type": "official",
+        "url": "https://enterprise.gov.ie/en/What-We-Do/Workplace-and-Skills/Employment-Permits/Employment-Permit-Eligibility/Who-needs-an-Employment-Permit-/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE43",
+        "title": "Current processing dates for employment permits",
+        "publisher": "Department of Enterprise, Tourism and Employment",
+        "type": "official",
+        "url": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/current-application-processing-dates/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "IE44",
+        "title": "Business Startup Grants (High Potential Startups)",
+        "publisher": "Enterprise Ireland",
+        "type": "official",
+        "url": "https://www.enterprise-ireland.com/en/supports/start-ups",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY1",
+        "title": "Applying to incorporate a Company",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/15-guidance/incorporating-a-company/applying-to-incorporate-a-company",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY2",
+        "title": "Choosing a Company name",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/15-guidance/incorporating-a-company/choosing-a-company-name",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY3",
+        "title": "Certificate of Incorporation",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/15-guidance/incorporating-a-company/certificate-of-incocorporation",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY4",
+        "title": "After Incorporation (company)",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/15-guidance/incorporating-a-company/after-incorporation",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY5",
+        "title": "Choosing the right type of Business Entity",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/5-understanding/6-choosing-the-business-entity-type",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY6",
+        "title": "Seeking Professional Advice",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/5-understanding/seeking-professional-advice",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY7",
+        "title": "Before the incorporation of a Company",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/15-guidance/incorporating-a-company/before-the-incorporation-of-a-company",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY8",
+        "title": "Applying to incorporate a business name",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/business-name/2-lifecycle/1-starting-a-business-name/2-guidance/incorporating-a-business-name/applying-to-incorporate-a-business-name",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY9",
+        "title": "After incorporation (business name)",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/business-name/2-lifecycle/1-starting-a-business-name/2-guidance/incorporating-a-business-name/1-after-incorporation",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY10",
+        "title": "Companies Section home page and latest announcements",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY11",
+        "title": "Registering for income tax and value added tax (VAT)",
+        "publisher": "Point of Single Contact Cyprus (Ministry of Energy, Commerce and Industry)",
+        "type": "government_portal",
+        "url": "https://www.businessincyprus.gov.cy/doing-business-in-cyprus/start-your-business/registering-for-income-tax-and-value-added-tax/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY12",
+        "title": "Start your Business",
+        "publisher": "Point of Single Contact Cyprus (Ministry of Energy, Commerce and Industry)",
+        "type": "government_portal",
+        "url": "https://www.businessincyprus.gov.cy/doing-business-in-cyprus/start-your-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY13",
+        "title": "Running and growing your business",
+        "publisher": "Point of Single Contact Cyprus (Ministry of Energy, Commerce and Industry)",
+        "type": "government_portal",
+        "url": "https://www.businessincyprus.gov.cy/doing-business-in-cyprus/running-and-growing-your-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY14",
+        "title": "New VAT rules for small enterprises (news item, 20 Nov 2025)",
+        "publisher": "Point of Single Contact Cyprus (Ministry of Energy, Commerce and Industry)",
+        "type": "government_portal",
+        "url": "https://www.businessincyprus.gov.cy/news/new-vat-rules-for-small-enterprises/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY15",
+        "title": "Strategy for attracting companies to operate and/or expand their activities in Cyprus (updated February 2024)",
+        "publisher": "Point of Single Contact Cyprus (Ministry of Energy, Commerce and Industry)",
+        "type": "government_portal",
+        "url": "https://www.businessincyprus.gov.cy/wp-content/uploads/2024/03/Updated-Strategy_Febr-2024.pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY16",
+        "title": "Living and working conditions: Cyprus",
+        "publisher": "EURES, European Commission",
+        "type": "government_portal",
+        "url": "https://eures.europa.eu/living-and-working/living-and-working-conditions-europe/living-and-working-conditions-cyprus_en",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY17",
+        "title": "2025 Cyprus eInvoicing Country Sheet",
+        "publisher": "European Commission, Digital Building Blocks",
+        "type": "official",
+        "url": "https://ec.europa.eu/digital-building-blocks/sites/pages/viewpage.action?pageId=881983569",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY18",
+        "title": "Amendment to the maximum amount of insurable earnings for 2026",
+        "publisher": "KPMG Cyprus",
+        "type": "secondary",
+        "url": "https://kpmg.com/cy/en/insights/tax-alerts/amendment-to-the-maximum-amount-of-insurable-earnings-for-2026.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY19",
+        "title": "House approves tax reform bills (22 Dec 2025)",
+        "publisher": "Cyprus Mail",
+        "type": "secondary",
+        "url": "https://cyprus-mail.com/2025/12/22/house-approves-tax-reform-bills",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY20",
+        "title": "Types of Companies",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/5-understanding/1-types-of-companies",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY21",
+        "title": "What is a Company?",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/5-lifecycle/1-starting-a-company/5-understanding/1-what-is-a-company",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CY22",
+        "title": "Obligation/right to register in the VAT Register (Greek)",
+        "publisher": "Cyprus Tax Department (Ministry of Finance)",
+        "type": "official",
+        "url": "https://www.gov.cy/mof-tax/documents/eggrafi-akyrosi-f-p-a/eggrafes-mitrooy-f-p-a/ypochreosi-dikaioma-eggrafis-sto-mitroo-f-p-a/",
+        "language": "el",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "CY23",
+        "title": "Cyprus SME rules (page dated 3 September 2024)",
+        "publisher": "European Commission, VAT rules for small enterprises",
+        "type": "official",
+        "url": "https://sme-vat-rules.ec.europa.eu/national-vat-rules/cyprus-sme-rules_en",
+        "language": "en",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "CY24",
+        "title": "Tax reform 2026: income tax presentation (Greek PDF, March 2026)",
+        "publisher": "Cyprus Tax Department (Ministry of Finance)",
+        "type": "official",
+        "url": "https://www.gov.cy/media/sites/167/2026/03/2026-ΦορΜεταρρύθμιση-Φόρος-Εισοδήματος.pdf",
+        "language": "el",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "CY25",
+        "title": "Tax reform 2026: Special Defence Contribution and capital gains presentation (Greek PDF, 6 March 2026)",
+        "publisher": "Cyprus Tax Department (Ministry of Finance)",
+        "type": "official",
+        "url": "https://www.gov.cy/media/sites/167/2026/03/EEA-ΦΚΚ-ΜΕΤΑΡΡΥΘΜΙΣΗ-06032026.pdf",
+        "language": "el",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "CY26",
+        "title": "Notice on the maximum insurable earnings 2026 (Greek and English)",
+        "publisher": "Social Insurance Services (Ministry of Labour and Social Insurance), contributions support site",
+        "type": "official",
+        "url": "https://sisweb.mlsi.gov.cy/anotato2025/",
+        "language": "el",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "CY27",
+        "title": "Members and Share Capital",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/10-understanding/initial-and-relevant-obligations/members-and-share-capital",
+        "language": "en",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "CY28",
+        "title": "Directors and Secretary",
+        "publisher": "Department of Registrar of Companies and Intellectual Property (DRCIP)",
+        "type": "official",
+        "url": "https://www.companies.gov.cy/en/business-entities/2-company/10-understanding/initial-and-relevant-obligations/directors-and-secretary",
+        "language": "en",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "FI1",
+        "title": "Limited liability company: start-up (Oy)",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/osakeyhtio.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI2",
+        "title": "Trade Register handling fees: start-up (price list, latest update 1 Jan 2026)",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/en/price-lists/hinnasto_1/kasittelymaksut/startup.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI3",
+        "title": "Perustamisilmoitus YTJ-palvelussa (osakeyhtio)",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/fi/yrityksetjayhteisot/yrityksenperustaminen/osakeyhtion-perustaminen-ja-perustamisilmoitus_1/perustamisilmoitus.html",
+        "language": "fi",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI4",
+        "title": "Luvat ETAn ulkopuolella pysyvasti asuville",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/fi/yrityksetjayhteisot/yrityksenperustaminen/osakeyhtion-perustaminen-ja-perustamisilmoitus_1/ulkomaalaisluvat.html",
+        "language": "fi",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI5",
+        "title": "Start-up notification for a private trader",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/privatetrader.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI6",
+        "title": "Permit to persons living permanently outside the EEA (private trader)",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen/privatetrader/permit_to_persons_living_permanently_outside_the_eea.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI7",
+        "title": "Kaupparekisteri: kasittelyajat (processing status)",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/fi/kaupparekisteri/kasittelyajat.html",
+        "language": "fi",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI8",
+        "title": "Kaupparekisteri-ilmoitusten kasittelyajat pidentyneet (notice, 10 Mar 2026)",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/fi/tietoa_prhsta/uutislistaus/tiedotteet/2026/kaupparekisteri-kasittelytilanne-10.3.2026.html",
+        "language": "fi",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI9",
+        "title": "Start a business and file a start-up notification",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/en/companiesandorganisations/yrityksen_perustaminen.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI10",
+        "title": "Starting a limited liability company: responsibilities (news, 31 Aug 2026)",
+        "publisher": "Finnish Patent and Registration Office (PRH)",
+        "type": "official",
+        "url": "https://www.prh.fi/en/presentation_and_duties/uutislistaus/news/2026/llc-responsibilities-31.8.2026.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI11",
+        "title": "VAT for small business",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/vat-for-small-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI12",
+        "title": "Pienen yrityksen alv (alaraja 20 000 euroa)",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/yritykset-ja-yhteisot/tietoa-yritysverotuksesta/arvonlisaverotus/vahainen_liiketoiminta_on_arvonlisavero/",
+        "language": "fi",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI13",
+        "title": "Rates of VAT",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/rates-of-vat/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI14",
+        "title": "VAT invoice requirements",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/detailed-guidance/guidance/48090/vat-invoice-requirements/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI15",
+        "title": "Your tax handbook in Finland",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/businesses-and-corporations/business-operations/foreign-business-in-finland/your-tax-handbook-in-finland/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI16",
+        "title": "Changes in taxation (newsroom)",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/About-us/newsroom/changes-in-taxation/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI17",
+        "title": "Income taxation of foreign self-employed individuals (guidance issued 28 Mar 2024)",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/detailed-guidance/guidance/48373/income-taxation-of-foreign-self-employed-individuals3/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI18",
+        "title": "Pension amount and contributions (self-employed, YEL)",
+        "publisher": "Tyoelake.fi (Finnish pension providers)",
+        "type": "official",
+        "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/pension-amount-and-contributions/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI19",
+        "title": "What is YEL income?",
+        "publisher": "Tyoelake.fi (Finnish pension providers)",
+        "type": "official",
+        "url": "https://www.tyoelake.fi/en/pensions-for-the-self-employed/what-is-yel-income/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI20",
+        "title": "Self-employed: pension coverage and insurance",
+        "publisher": "Finnish Centre for Pensions (ETK)",
+        "type": "official",
+        "url": "https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/self-employed/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI21",
+        "title": "FAQs on YEL insurance",
+        "publisher": "Finnish Centre for Pensions (ETK)",
+        "type": "official",
+        "url": "https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI22",
+        "title": "Self-employed persons: income and contributions to health insurance",
+        "publisher": "Kela (Social Insurance Institution)",
+        "type": "official",
+        "url": "https://www.kela.fi/self-employment-income-and-contributions",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI23",
+        "title": "Social security and the self-employed",
+        "publisher": "Kela (Social Insurance Institution)",
+        "type": "official",
+        "url": "https://www.kela.fi/self-employed-persons-social-security",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI24",
+        "title": "E-invoicing: fast and safe",
+        "publisher": "State Treasury (Valtiokonttori)",
+        "type": "official",
+        "url": "https://www.valtiokonttori.fi/en/e-invoicing-fast-and-safe/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI25",
+        "title": "Permits and notifications for non-EU citizens (foreign entrepreneurs)",
+        "publisher": "Suomi.fi (Digital and Population Data Services Agency)",
+        "type": "government_portal",
+        "url": "https://www.suomi.fi/company/starting-a-business/foreign-entrepreneurs/guide/licenses-and-notifications-required-of-foreign-entrepreneurs/permits-and-notifications-for-non-eu-citizens",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI26",
+        "title": "EU citizens' permits and notifications (foreign entrepreneurs)",
+        "publisher": "Suomi.fi (Digital and Population Data Services Agency)",
+        "type": "government_portal",
+        "url": "https://www.suomi.fi/company/starting-a-business/foreign-entrepreneurs/guide/licenses-and-notifications-required-of-foreign-entrepreneurs/eu-citizens-permits-and-notifications",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI27",
+        "title": "Permits of the Finnish Patent and Registration Office for people living abroad",
+        "publisher": "Suomi.fi (Digital and Population Data Services Agency)",
+        "type": "government_portal",
+        "url": "https://www.suomi.fi/company/starting-a-business/foreign-entrepreneurs/guide/licenses-and-notifications-required-of-foreign-entrepreneurs/permits-of-the-finnish-patent-and-registration-office-for-people-living-abroad",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI28",
+        "title": "Immigration of entrepreneurs (entrepreneur residence permit assessment)",
+        "publisher": "Uusimaa ELY Centre business services (Elinvoimakeskus)",
+        "type": "official",
+        "url": "https://elinvoimakeskus.fi/en/web/uudenmaan-yrityspalvelut/yrittajien-maahanmuutto",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI29",
+        "title": "Residence permit for an entrepreneur (Enter Finland)",
+        "publisher": "Finnish Immigration Service (Migri)",
+        "type": "official",
+        "url": "https://enterfinland.fi/eservices/info/selfemployment",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI30",
+        "title": "Residence permit for a startup entrepreneur (Enter Finland)",
+        "publisher": "Finnish Immigration Service (Migri)",
+        "type": "official",
+        "url": "https://enterfinland.fi/eServices/info/startupentrepreneur",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI31",
+        "title": "Startup Permit: applying (eligibility criteria and process)",
+        "publisher": "Business Finland (Startup in Finland)",
+        "type": "official",
+        "url": "https://www.startupinfinland.com/applying",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI32",
+        "title": "Residence permit application for an entrepreneur (service description)",
+        "publisher": "Suomi.fi (Finnish Immigration Service service listing)",
+        "type": "government_portal",
+        "url": "https://www.suomi.fi/services/residence-permit-application-for-an-entrepreneur-finnish-immigration-service/7a44e2f2-eb69-47f6-80c0-5aaa661f56d8",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "FI33",
+        "title": "Capital income (individuals; tax rates on capital income)",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/individuals/tax-cards-and-tax-returns/income/capital-income/",
+        "language": "en",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "FI34",
+        "title": "The Government proposes to lower the corporate income tax rate to 18% and to extend the deduction period for business losses (news, 17 Sep 2026)",
+        "publisher": "Finnish Tax Administration (Vero Skatt)",
+        "type": "official",
+        "url": "https://www.vero.fi/en/About-us/newsroom/news/uutiset/2026/the-government-proposes-to-lower-the-corporate-income-tax-rate-to-18-and-to-extend-the-deduction-period-for-business-losses",
+        "language": "en",
+        "accessed": "2026-10-13"
+    },
+    {
+        "id": "CZ1",
+        "title": "Pausalni dan 2026: novinky, terminy",
+        "publisher": "Financni sprava (GFR)",
+        "type": "official",
+        "url": "https://financnisprava.gov.cz/cs/financni-sprava/media-a-verejnost/tiskove-zpravy-gfr/tiskove-zpravy-2025/pausalni-dan-2026-novinky-terminy",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ2",
+        "title": "Dotazy a odpovedi k pausalni dani",
+        "publisher": "Financni sprava",
+        "type": "official",
+        "url": "https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pausalni-dan/dotazy-a-odpovedi/dotazy-a-odpovedi-k-pausalni-dani",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ3",
+        "title": "Danove novinky pro rok 2026",
+        "publisher": "Financni sprava (GFR)",
+        "type": "official",
+        "url": "https://financnisprava.gov.cz/cs/financni-sprava/media-a-verejnost/tiskove-zpravy-gfr/tiskove-zpravy-2026/danove-novinky-pro-rok-2026",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ4",
+        "title": "Informace pro OSVC o zmene pojistneho na duchodove pojisteni od 1. 7. 2026",
+        "publisher": "Ceska sprava socialniho zabezpeceni (CSSZ)",
+        "type": "official",
+        "url": "https://www.cssz.gov.cz/-/informace-pro-osvc-o-zmene-pojistneho-na-duchodove-pojisteni-od-1-7-2026",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ5",
+        "title": "OSVC v kostce",
+        "publisher": "Ceska sprava socialniho zabezpeceni (CSSZ)",
+        "type": "official",
+        "url": "https://www.cssz.gov.cz/osvc-v-kostce",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ6",
+        "title": "Zalohy na pojistne na duchodove pojisteni",
+        "publisher": "Ceska sprava socialniho zabezpeceni (CSSZ)",
+        "type": "official",
+        "url": "https://www.cssz.gov.cz/zalohy-na-pojistne-na-duchodove-pojisteni",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ7",
+        "title": "Prehled nejdulezitejsich udaju pro socialni zabezpeceni v roce 2026",
+        "publisher": "Ceska sprava socialniho zabezpeceni (CSSZ)",
+        "type": "official",
+        "url": "https://www.cssz.gov.cz/-/prehled-nejdulezitejsich-udaju-pro-socialni-zabezpeceni-v-roce-2026",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ8",
+        "title": "Platby zdravotniho pojisteni v roce 2026",
+        "publisher": "Vseobecna zdravotni pojistovna (VZP)",
+        "type": "official",
+        "url": "https://www.vzp.cz/o-nas/tiskove-centrum/otazky-tydne/platby-zdravotniho-pojisteni-v-roce-2026",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ9",
+        "title": "Registrace k DPH",
+        "publisher": "Portal verejne spravy (gov.cz)",
+        "type": "government_portal",
+        "url": "https://portal.gov.cz/informace/registrace-k-dph-INF-204",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ10",
+        "title": "General rules and VAT rates",
+        "publisher": "Portal verejne spravy (gov.cz)",
+        "type": "government_portal",
+        "url": "https://portal.gov.cz/en/informace/general-rules-and-vat-rates-INF-205",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ11",
+        "title": "Personal income taxes",
+        "publisher": "Portal verejne spravy (gov.cz)",
+        "type": "government_portal",
+        "url": "https://portal.gov.cz/en/informace/personal-income-taxes-INF-293",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ12",
+        "title": "Zapis do obchodniho rejstriku",
+        "publisher": "Portal verejne spravy (gov.cz)",
+        "type": "government_portal",
+        "url": "https://portal.gov.cz/sluzby-vs/zapis-do-obchodniho-rejstriku-S15721",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ13",
+        "title": "Incorporation and formation of a business corporation",
+        "publisher": "Portal verejne spravy (gov.cz)",
+        "type": "government_portal",
+        "url": "https://portal.gov.cz/en/informace/incorporation-and-formation-of-a-business-corporation-INF-222",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ14",
+        "title": "Zalozeni obchodni spolecnosti",
+        "publisher": "Portal verejne spravy (gov.cz)",
+        "type": "government_portal",
+        "url": "https://portal.gov.cz/sluzby-vs/zalozeni-obchodni-spolecnosti-S32230",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ15",
+        "title": "PRO INFORMACI - Radce (nejen pro zacinajici) podnikatele",
+        "publisher": "Ministerstvo prumyslu a obchodu (MPO)",
+        "type": "official",
+        "url": "https://mpo.gov.cz/cz/podnikani/zivnostenske-podnikani/aktualni-informace/pro-informaci---radce-nejen-pro-zacinajici-podnikatele--225510/",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ16",
+        "title": "Vyse zakladniho jmeni pro spolecnosti s rucenim omezenym (2016)",
+        "publisher": "Ministerstvo prumyslu a obchodu (MPO)",
+        "type": "official",
+        "url": "https://mpo.gov.cz/cz/zahranicni-obchod/licencni-sprava/zahranicni-obchod-s-vojenskym-materialem/vyse-zakladniho-jmeni-pro-spolecnosti-s-rucenim-omezenym--222495/",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ17",
+        "title": "Elektronicka fakturace: zakladni informace",
+        "publisher": "Ministerstvo financi (MF)",
+        "type": "official",
+        "url": "https://mf.gov.cz/cs/dane-a-ucetnictvi/elektronicka-fakturace/zakladni-informace",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ18",
+        "title": "Long-term Residence Permit for the Purpose of Doing Business",
+        "publisher": "Ministry of the Interior (ipc.gov.cz)",
+        "type": "official",
+        "url": "https://ipc.gov.cz/en/visa-and-residence-permit-types/third-country-nationals/long-term-residence-permits/long-term-residence-permit-for-the-purpose-of-doing-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ19",
+        "title": "Long-term Visa for the Purpose of Doing Business",
+        "publisher": "Ministry of the Interior (ipc.gov.cz)",
+        "type": "official",
+        "url": "https://ipc.gov.cz/en/visa-and-residence-permit-types/third-country-nationals/long-term-visa/long-term-visa-for-the-purpose-of-doing-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ20",
+        "title": "Proof of Funds for the Stay (Finances)",
+        "publisher": "Ministry of the Interior (ipc.gov.cz)",
+        "type": "official",
+        "url": "https://ipc.gov.cz/en/forms-and-documents/documents/proof-of-funds-for-the-residence-finances/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ21",
+        "title": "Employee Card",
+        "publisher": "Ministry of the Interior (ipc.gov.cz)",
+        "type": "official",
+        "url": "https://ipc.gov.cz/en/visa-and-residence-permit-types/third-country-nationals/long-term-residence-permits/employee-card/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ22",
+        "title": "Blue Card",
+        "publisher": "Ministry of the Interior (ipc.gov.cz)",
+        "type": "official",
+        "url": "https://ipc.gov.cz/en/visa-and-residence-permit-types/third-country-nationals/long-term-residence-permits/blue-card/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ23",
+        "title": "Long-stay visa: entrepreneurship",
+        "publisher": "Ministry of Foreign Affairs (mzv.gov.cz)",
+        "type": "official",
+        "url": "https://mzv.gov.cz/jnp/en/information_for_aliens/long_stay_visa/entrepreneurship.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ24",
+        "title": "Podnikani (dlouhodobe vizum a pobyt)",
+        "publisher": "Ministry of Foreign Affairs (mzv.gov.cz)",
+        "type": "official",
+        "url": "https://mzv.gov.cz/jnp/cz/informace_pro_cizince/pobytova_opravneni_k_pobytu_nad_90_dnu/podnikani.html",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ25",
+        "title": "Long-term Residence Permit for the Purpose of Seeking Employment or Starting a Business",
+        "publisher": "Ministry of the Interior (ipc.gov.cz)",
+        "type": "official",
+        "url": "https://ipc.gov.cz/en/visa-and-residence-permit-types/third-country-nationals/long-term-residence-permits/long-term-residence-permit-for-the-purpose-of-seeking-employment-or-starting-a-business/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ26",
+        "title": "Means of subsistence for long-term residence (archived page, 2023 figures)",
+        "publisher": "Ministry of the Interior (archiv.mv.gov.cz)",
+        "type": "official",
+        "url": "https://archiv.mv.gov.cz/mvcren/docDetail.aspx?docid=21769832&doctype=ART",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ27",
+        "title": "Dan z prijmu pravnickych osob: obecne informace",
+        "publisher": "Financni sprava",
+        "type": "official",
+        "url": "https://financnisprava.gov.cz/cs/dane/dane/dan-z-prijmu/pravnicke-osoby/obecne-informace",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "CZ28",
+        "title": "Popis systemu (danovy system CR)",
+        "publisher": "Financni sprava",
+        "type": "official",
+        "url": "https://financnisprava.gov.cz/cs/dane/danovy-system-cr/popis-systemu",
+        "language": "cs",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE1",
+        "title": "Välj företagsform",
+        "publisher": "Verksamt.se (Bolagsverket, Skatteverket, Tillväxtverket and partners)",
+        "type": "government_portal",
+        "url": "https://www.verksamt.se/starta/valj-foretagsform",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE2",
+        "title": "Aktiebolag (starta och registrera)",
+        "publisher": "Verksamt.se",
+        "type": "government_portal",
+        "url": "https://www.verksamt.se/starta/valj-foretagsform/aktiebolag",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE3",
+        "title": "Enskild näringsverksamhet (starta och registrera)",
+        "publisher": "Verksamt.se",
+        "type": "government_portal",
+        "url": "https://www.verksamt.se/starta/valj-foretagsform/enskild-naringsverksamhet",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE4",
+        "title": "Foreign citizen: setting up a business in Sweden",
+        "publisher": "Verksamt.se",
+        "type": "government_portal",
+        "url": "https://verksamt.se/en/setting-up/foreign-citizen",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE5",
+        "title": "Starta och registrera aktiebolag (English version)",
+        "publisher": "Verksamt.se",
+        "type": "government_portal",
+        "url": "https://verksamt.se/en/setting-up/choose-business-type/limited-company",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE6",
+        "title": "Starta och registrera enskild näringsverksamhet (English version)",
+        "publisher": "Verksamt.se",
+        "type": "government_portal",
+        "url": "https://verksamt.se/en/setting-up/choose-business-type/sole-trader",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE7",
+        "title": "Choose business type and register (English version)",
+        "publisher": "Verksamt.se",
+        "type": "government_portal",
+        "url": "https://verksamt.se/en/setting-up/choose-business-type",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE8",
+        "title": "Aktiebolagslag (2005:551), consolidated text up to SFS 2026:783",
+        "publisher": "Sveriges riksdag (data.riksdagen.se)",
+        "type": "official",
+        "url": "https://data.riksdagen.se/dokument/sfs-2005-551.text",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE9",
+        "title": "I vissa fall behöver du inte registrera ditt företag för moms (momsbefrielse)",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://skatteverket.se/momsbefrielse",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE10",
+        "title": "Belopp och procent, inkomstår 2026",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE11",
+        "title": "Egenavgifter",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://www.skatteverket.se/privat/skatter/arbeteochinkomst/inkomster/egenavgifter.4.70ac421612e2a997f85800022812.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE12",
+        "title": "F-skatt och FA-skatt",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://www.skatteverket.se/foretag/drivaforetag/startaochregistrera/fochfaskatt.4.58d555751259e4d661680006355.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE13",
+        "title": "Registrera verksamhet (utländska företag i Sverige)",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://www.skatteverket.se/foretag/internationellt/utlandskaforetagisverige/registreraverksamhet.4.569165a01749e7ae7893042.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE14",
+        "title": "Coordination numbers",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://skatteverket.se/servicelankar/otherlanguages/inenglishengelska/individualsandemployees/coordinationnumbers.4.1657ce2817f5a993c3a7d2a.html",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE15",
+        "title": "Momslagens regler om fakturering",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://www.skatteverket.se/foretag/moms/saljavarorochtjanster/momslagensregleromfakturering.4.58d555751259e4d66168000403.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE16",
+        "title": "Bokföring: vad kräver lagen",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://www.skatteverket.se/foretag/drivaforetag/bokforingochbokslut/bokforingvadkraverlagen.4.18e1b10334ebe8bc80005195.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE17",
+        "title": "Enskild näringsverksamhet (beskattning)",
+        "publisher": "Skatteverket",
+        "type": "official",
+        "url": "https://www.skatteverket.se/foretagochorganisationer/foretagare/enskildnaringsverksamhet.4.5c13cb6b1198121ee8580002518.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE18",
+        "title": "Regler för e-handel och e-faktura",
+        "publisher": "Upphandlingsmyndigheten (Swedish National Agency for Public Procurement)",
+        "type": "official",
+        "url": "https://www.upphandlingsmyndigheten.se/digitalisering-och-e-handel/e-handel/regler-for-e-handel-och-e-faktura/",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE19",
+        "title": "Sjukpenning för dig med enskild firma",
+        "publisher": "Försäkringskassan",
+        "type": "official",
+        "url": "https://www.forsakringskassan.se/privatperson/sjuk-eller-skadad/ersattning-nar-du-ar-sjuk-eller-skadad-sjukpenning/sjukpenning-har-eget-foretag/sjukpenning-for-dig-med-enskild-firma",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE20",
+        "title": "Enskild firma, handelsbolag eller kommanditbolag (socialförsäkring)",
+        "publisher": "Försäkringskassan",
+        "type": "official",
+        "url": "https://www.forsakringskassan.se/privatperson/foretagare/enskild-firma-handelsbolag-eller-kommanditbolag",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE21",
+        "title": "Egen företagare: du vill ansöka",
+        "publisher": "Migrationsverket (Swedish Migration Agency)",
+        "type": "official",
+        "url": "https://www.migrationsverket.se/du-vill-ansoka/arbeta/anstalld-eller-egen-foretagare/egen-foretagare.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE22",
+        "title": "Egen företagare: du vill förlänga",
+        "publisher": "Migrationsverket",
+        "type": "official",
+        "url": "https://www.migrationsverket.se/du-vill-forlanga/arbeta/anstalld-eller-egen-foretagare/egen-foretagare.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "SE23",
+        "title": "Egen företagare: du vill ansöka (processkarta)",
+        "publisher": "Migrationsverket",
+        "type": "official",
+        "url": "https://www.migrationsverket.se/lankade-moduler/processkartor/at/egen-foretagare---du-vill-ansoka.html",
+        "language": "sv",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT1",
+        "title": "Formation and Registration of Commercial Partnerships guide (PDF linked from mbr.mt/formation-and-registration-of-companies/)",
+        "publisher": "Malta Business Registry",
+        "type": "official",
+        "url": "https://f17ef982-b6ea-49d2-89f7-3359c3321206.usrfiles.com/ugd/f17ef9_0076c8f8dc4f4990a714b4b6cea5d023.pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT2",
+        "title": "Fee Structure: registration fee for commercial partnerships (BAROS)",
+        "publisher": "Malta Business Registry",
+        "type": "official",
+        "url": "https://www.mbr.mt/website-pages/fee-structure",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT3",
+        "title": "Companies Act, Cap. 386 (consolidated)",
+        "publisher": "Government of Malta, legislation.mt",
+        "type": "official",
+        "url": "https://legislation.mt/eli/cap/386/eng/pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT4",
+        "title": "Value Added Tax Act, Cap. 406 (consolidated)",
+        "publisher": "Government of Malta, legislation.mt",
+        "type": "official",
+        "url": "https://legislation.mt/eli/cap/406/eng/pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT5",
+        "title": "Income Tax Act, Cap. 123 (consolidated)",
+        "publisher": "Government of Malta, legislation.mt",
+        "type": "official",
+        "url": "https://legislation.mt/eli/cap/123/eng/pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT6",
+        "title": "Income Tax Management Act, Cap. 372 (consolidated)",
+        "publisher": "Government of Malta, legislation.mt",
+        "type": "official",
+        "url": "https://legislation.mt/eli/cap/372/eng/pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT7",
+        "title": "Social Security Act, Cap. 318 (consolidated)",
+        "publisher": "Government of Malta, legislation.mt",
+        "type": "official",
+        "url": "https://legislation.mt/eli/cap/318/eng/pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT8",
+        "title": "Non-EU Nationals: Employment in Malta",
+        "publisher": "Identita (Expatriates Unit)",
+        "type": "official",
+        "url": "https://identita.gov.mt/expatriates-unit-main-page/noneu-nationals/employment-related-permits/employment-in-malta/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT9",
+        "title": "Employment Related Permits: Employment/Self Employment",
+        "publisher": "Identita (Expatriates Unit)",
+        "type": "official",
+        "url": "https://identita.gov.mt/expatriates-unit-main-page/noneu-nationals/employment-related-permits/employment-self-employment/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT10",
+        "title": "Single Permit",
+        "publisher": "Identita (Expatriates Unit)",
+        "type": "official",
+        "url": "https://identita.gov.mt/expatriates-unit-main-page/noneu-nationals/employment-related-permits/single-permit/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT11",
+        "title": "Single Permit: applying for a Single Permit (fees)",
+        "publisher": "Identita (Expatriates Unit)",
+        "type": "official",
+        "url": "https://identita.gov.mt/expatriates-unit-main-page/noneu-nationals/employment-related-permits/single-permit/single-permit-application/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT12",
+        "title": "Single Permit: application processing period",
+        "publisher": "Identita (Expatriates Unit)",
+        "type": "official",
+        "url": "https://identita.gov.mt/expatriates-unit-main-page/noneu-nationals/employment-related-permits/single-permit/application-processing-period/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT13",
+        "title": "Single Permit: who is eligible",
+        "publisher": "Identita (Expatriates Unit)",
+        "type": "official",
+        "url": "https://identita.gov.mt/expatriates-unit-main-page/noneu-nationals/employment-related-permits/single-permit/who-is-eligible/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT14",
+        "title": "Single Permit: renewal",
+        "publisher": "Identita (Expatriates Unit)",
+        "type": "official",
+        "url": "https://identita.gov.mt/expatriates-unit-main-page/noneu-nationals/employment-related-permits/single-permit/renewal-of-single-permit/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT15",
+        "title": "Frequently asked questions: Expatriates, Non-EU Employment",
+        "publisher": "Identita",
+        "type": "official",
+        "url": "https://identita.gov.mt/frequently-asked-questions/expatriates/non-eu-employment/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT16",
+        "title": "Employment Licences Unit: Guidelines for Clients (version in force from 19 January 2021)",
+        "publisher": "Jobsplus",
+        "type": "official",
+        "url": "https://jobsplus.gov.mt/media/pvhaduix/guide.pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT17",
+        "title": "Employing Non-EU Nationals in Malta",
+        "publisher": "Jobsplus",
+        "type": "official",
+        "url": "https://jobsplus.gov.mt/find-candidates/non-eu-nationals-tcns",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT18",
+        "title": "Self-Employed Persons and Partnerships (employer knowledge base)",
+        "publisher": "Jobsplus",
+        "type": "official",
+        "url": "https://jobsplus.gov.mt/knowledge-base-employer/self-employed-persons-and-partnerships",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT19",
+        "title": "Malta Startup Residence Programme: Eligibility and Requirements, version 4, 22 August 2024 (PDF)",
+        "publisher": "Residency Malta Agency / Malta Enterprise",
+        "type": "official",
+        "url": "https://startup.residencymalta.gov.mt/wp-content/uploads/2024/08/Malta-Startup-Residence-Programme-Eligbility-and-Requirements-V4-August-24.pdf",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "MT20",
+        "title": "Startup Residence Programme",
+        "publisher": "Residency Malta Agency",
+        "type": "official",
+        "url": "https://startup.residencymalta.gov.mt/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT1",
+        "title": "Gesellschaft mit beschraenkter Haftung-Gesetz (GmbHG), consolidated",
+        "publisher": "RIS, Bundeskanzleramt",
+        "type": "official",
+        "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001720",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT2",
+        "title": "Flexible-Kapitalgesellschafts-Gesetz (FlexKapGG), consolidated",
+        "publisher": "RIS, Bundeskanzleramt",
+        "type": "official",
+        "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=20012473",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT3",
+        "title": "Gewerbeordnung 1994, section 14 (Gleichstellung, Fremde)",
+        "publisher": "RIS, Bundeskanzleramt",
+        "type": "official",
+        "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10007517&Paragraf=14",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT4",
+        "title": "Gewerbeordnung 1994, section 39 (Gewerberechtlicher Geschaeftsfuehrer)",
+        "publisher": "RIS, Bundeskanzleramt",
+        "type": "official",
+        "url": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10007517&Paragraf=39",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT5",
+        "title": "Kleinunternehmen (Regelung seit 1. Jaenner 2025)",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/weitere-steuertatbestaende-und-befreiungen/kleinunternehmen.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT6",
+        "title": "Von der Idee zum eigenen Unternehmen: Teil 5, Gewerbeberechtigung",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/aktuelles/newsreihen/von-der-idee-zum-eigenen-unternehmen/von-der-idee-zum-eigenen-unternehmen-teil-5-gewerbeberechtigung.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT7",
+        "title": "Feststellung der individuellen Befaehigung",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/gruendung/EAP/feststellung-individuelle-befaehigung.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT8",
+        "title": "Hilfe zur eGruendung",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/hilfe-und-support/egruendung.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT9",
+        "title": "Von der Idee zum eigenen Unternehmen: Teil 2",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/aktuelles/newsreihen/von-der-idee-zum-eigenen-unternehmen/von-der-idee-zum-eigenen-unternehmen-teil-2.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT10",
+        "title": "Gewerbeanmeldung",
+        "publisher": "Bundesministerium fuer Wirtschaft (BMWET)",
+        "type": "official",
+        "url": "https://www.bmwet.gv.at/Themen/Unternehmen/Gewerbe/Gewerbeanmeldung.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT11",
+        "title": "Gewerbeanmeldung",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/gruendung/gewerbeanmeldung",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT12",
+        "title": "Gruendungskosten",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/gruendung/gruendungskosten",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT13",
+        "title": "Ein-Personen-GmbH (vereinfachte Gruendung)",
+        "publisher": "WKO Vorarlberg",
+        "type": "chamber",
+        "url": "https://www.wko.at/vlbg/gruendung/ein-personen-gmbh",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT14",
+        "title": "Gesellschaft mit beschraenkter Haftung (GmbH)",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/wirtschaftsrecht/gesellschaft-mit-beschraenkter-haftung-gmbh",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT15",
+        "title": "Steuerinformation fuer Betriebsgruender, Jaenner 2026",
+        "publisher": "Wirtschaftskammern Oesterreichs",
+        "type": "chamber",
+        "url": "https://www.wko.at/oe/steuern/steuerinformation-betriebsgruender-broschuere.pdf",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT16",
+        "title": "Tarifstufen (Einkommensteuer 2026)",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/themen/steuern-finanzen/einkommensteuer-ueberblick/weitere-informationen-est/tarifstufen.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT17",
+        "title": "Buchfuehrungspflicht und Buchfuehrung",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/themen/steuern-finanzen/steuerliche-gewinnermittlung/weitere-informationen-zur-steuerlichen-gewinnermittlung/betriebliches-rechnungswesen/buchfuehrungspflicht-und-buchfuehrung.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT18",
+        "title": "e-Rechnung",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/vorsteuerabzug-und-rechnung/e-rechnung.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT19",
+        "title": "e-Rechnung an die oeffentliche Verwaltung",
+        "publisher": "Unternehmensserviceportal (USP)",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/themen/steuern-finanzen/umsatzsteuer-ueberblick/weitere-informationen-zur-umsatzsteuer/vorsteuerabzug-und-rechnung/e-rechnung-an-die-oeffentliche-verwaltung.html",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT20",
+        "title": "Gewerbliche Sozialversicherungsbeitraege, Ausmass",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/sozialversicherung/gewerbliche-sozialversicherungsbeitraege-ausmass",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT21",
+        "title": "Vorlaeufige Berechnung in den ersten drei Jahren",
+        "publisher": "SVS (Sozialversicherungsanstalt der Selbstaendigen)",
+        "type": "official",
+        "url": "https://www.svs.at/cdscontent/?contentid=10007.816638&portal=svsportal",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT22",
+        "title": "Kleinunternehmer (Ausnahme von der Pflichtversicherung)",
+        "publisher": "SVS (Sozialversicherungsanstalt der Selbstaendigen)",
+        "type": "official",
+        "url": "https://www.svs.at/cdscontent/?contentid=10007.846813&portal=svsportal",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT23",
+        "title": "Online-Versicherungsanmeldung",
+        "publisher": "SVS (Sozialversicherungsanstalt der Selbstaendigen)",
+        "type": "official",
+        "url": "https://www.svs.at/cdscontent/?contentid=10007.854303&portal=svsportal",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT24",
+        "title": "Versicherte und Voraussetzungen fuer Gewerbetreibende",
+        "publisher": "SVS (Sozialversicherungsanstalt der Selbstaendigen)",
+        "type": "official",
+        "url": "https://www.svs.at/cdscontent/?contentid=10007.816339",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT25",
+        "title": "Sozialversicherung der Gewerbetreibenden",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/sozialversicherung/sozialversicherung-gewerbetreibenden",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT26",
+        "title": "Neugruendungs-Foerderungsgesetz (NeuFoeG) fuer Neugruender",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/steuern/neugruendungs-foerderungsgesetz-neugruender",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT27",
+        "title": "Gebuehrenbefreiung (NeuFoeG)",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/gruendung/gebuehrenbefreiung",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT28",
+        "title": "Kammerumlagen: Alle Infos",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/steuern/kammerumlagen-faq",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT29",
+        "title": "Start-up-GruenderInnen (Rot-Weiss-Rot - Karte)",
+        "publisher": "Bundesministerium fuer Inneres, migration.gv.at",
+        "type": "official",
+        "url": "https://www.migration.gv.at/de/formen-der-zuwanderung/dauerhafte-zuwanderung/start-up-gruenderinnen/",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT30",
+        "title": "Selbstaendige Schluesselkraefte (Rot-Weiss-Rot - Karte)",
+        "publisher": "Bundesministerium fuer Inneres, migration.gv.at",
+        "type": "official",
+        "url": "https://www.migration.gv.at/de/formen-der-zuwanderung/dauerhafte-zuwanderung/selbstaendige-schluesselkraefte/",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT31",
+        "title": "Rot-Weiss-Rot-Karte fuer Start-up-Gruender",
+        "publisher": "oesterreich.gv.at (Bundesministerium fuer Inneres)",
+        "type": "government_portal",
+        "url": "https://www.oesterreich.gv.at/de/themen/menschen_aus_anderen_staaten/aufenthalt/3/2/2/Seite.120233",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT32",
+        "title": "Fragen und Antworten",
+        "publisher": "Bundesministerium fuer Inneres, migration.gv.at",
+        "type": "official",
+        "url": "https://www.migration.gv.at/de/fragen-antworten/",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT33",
+        "title": "Starting a Business in Austria",
+        "publisher": "Austrian Business Agency (ABA), INVEST in AUSTRIA",
+        "type": "government_portal",
+        "url": "https://investinaustria.at/en/doing-business/starting-a-business-in-austria/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT34",
+        "title": "Start-up Founders (Red-White-Red Card)",
+        "publisher": "Bundesministerium fuer Inneres, migration.gv.at",
+        "type": "official",
+        "url": "https://www.migration.gv.at/en/types-of-immigration/permanent-immigration/start-up-founders/",
+        "language": "en",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT35",
+        "title": "Voraussichtliche Werte in der Sozialversicherung 2026",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/sozialversicherung/voraussichtliche-werte-in-der-sozialversicherung-2026",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT36",
+        "title": "Einzelunternehmen",
+        "publisher": "Wirtschaftskammer Oesterreich (WKO)",
+        "type": "chamber",
+        "url": "https://www.wko.at/gruendung/einzelunternehmen-eu",
+        "language": "de",
+        "accessed": "2026-10-12"
+    },
+    {
+        "id": "AT37",
+        "title": "Neuer Umsatzsteuersatz von 4,9 Prozent",
+        "publisher": "Unternehmensserviceportal (USP), Bundesministerium fuer Finanzen",
+        "type": "government_portal",
+        "url": "https://www.usp.gv.at/aktuelles/newsliste/neuer_ustsatz.html",
+        "language": "de",
+        "accessed": "2026-10-13"
     }
 ]

@@ -1311,5 +1311,1560 @@
         "origin_ref": null,
         "status": "hold",
         "hold": true
+    },
+    {
+        "id": "pl-remote-start",
+        "country": "poland",
+        "topic": "start",
+        "question": "Can I start a company in Poland remotely?",
+        "answer": "Yes for a company: a sp. z o.o. can be registered fully online through the S24 system, but every signer needs a qualified, trusted-profile or personal e-signature and an S24 account. A sole proprietorship can also be filed online, but only if your residence status allows one.",
+        "source_ids": [
+            "PL1",
+            "PL2",
+            "PL5"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-jdg-foreigner",
+        "country": "poland",
+        "topic": "legal-form",
+        "question": "I am not an EU citizen. Can I register as a sole trader (JDG)?",
+        "answer": "Only if you hold a residence title that allows it, for example permanent residence, EU long-term resident status or an EU Blue Card. Other non-EU foreigners can run a business in Poland only through a company such as a sp. z o.o.",
+        "source_ids": [
+            "PL5",
+            "PL6"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-cost",
+        "country": "poland",
+        "topic": "cost",
+        "question": "How much does it cost to register a business in Poland?",
+        "answer": "Registering a sole proprietorship in CEIDG is free. A sp. z o.o. on the S24 template pays a PLN 250 court fee and PLN 100 for the announcement, plus 0.5% PCC tax on the share capital; the minimum share capital is PLN 5,000.",
+        "source_ids": [
+            "PL1",
+            "PL2",
+            "PL3",
+            "PL4"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-vat",
+        "country": "poland",
+        "topic": "vat",
+        "question": "Do I have to charge VAT from my first invoice in Poland?",
+        "answer": "Not necessarily: from 1 January 2026 the VAT exemption applies while sales (excluding VAT) stay within PLN 240,000, prorated in the first year. The standard VAT rate is 23%, and you register with form VAT-R before your first taxable sale if you need to be a VAT payer.",
+        "source_ids": [
+            "PL7",
+            "PL9",
+            "PL10"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-social",
+        "country": "poland",
+        "topic": "social-security",
+        "question": "How much social security does a new self-employed person pay in Poland?",
+        "answer": "In 2026 a new business can skip social contributions for 6 months (ulga na start), then pay preferential contributions of about PLN 456.18 per month for 24 months. The health contribution is always due, at least PLN 432.54 a month for tax-scale and flat-tax taxpayers. After the reliefs the lowest standard contributions are PLN 1,926.76 per month.",
+        "source_ids": [
+            "PL13",
+            "PL14",
+            "PL15"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-tax-options",
+        "country": "poland",
+        "topic": "tax",
+        "question": "Which income tax option can a sole trader choose in Poland?",
+        "answer": "The tax scale (12% up to PLN 120,000 of tax base, 32% above), a 19% flat tax, or ryczałt, a flat-rate tax on revenue between 3% and 17% depending on the activity. To choose the flat tax or ryczałt, notify the tax office by the 20th of the month after your first revenue.",
+        "source_ids": [
+            "PL8"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-ksef",
+        "country": "poland",
+        "topic": "e-invoicing",
+        "question": "Do I have to issue e-invoices through KSeF?",
+        "answer": "Issuing invoices in KSeF became mandatory on 1 April 2026 for most businesses. If your monthly invoiced sales do not exceed PLN 10,000 gross, the obligation starts on 1 January 2027.",
+        "source_ids": [
+            "PL11",
+            "PL12"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-estonian-cit",
+        "country": "poland",
+        "topic": "tax",
+        "question": "What is Estonian CIT and does it suit a new Polish company?",
+        "answer": "Estonian CIT taxes company profit only when it is distributed, at 10% for small or starting companies and 20% otherwise. It requires, among other things, that all shareholders are natural persons and that the company meets employment rules (generally at least 3 employees, with softer rules for new and small companies).",
+        "source_ids": [
+            "PL19"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pl-visa-permit",
+        "country": "poland",
+        "topic": "visa",
+        "question": "Which residence permit can a non-EU founder get in Poland?",
+        "answer": "Not yet answered here, under legal review.",
+        "source_ids": [
+            "PL21",
+            "PL22"
+        ],
+        "last_checked": "2026-10-13",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "sk-sro-capital",
+        "country": "slovakia",
+        "topic": "company",
+        "question": "What is the minimum capital of an s.r.o. in Slovakia?",
+        "answer": "EUR 5,000 in the Commercial Code text in force from 17 August 2026, with at least EUR 750 per partner. A sole founder pays it in full before registration; with several founders at least 30% of each cash contribution and EUR 2,500 in total.",
+        "source_ids": [
+            "SK1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-trade-fee",
+        "country": "slovakia",
+        "topic": "cost",
+        "question": "How much does a trade licence cost?",
+        "answer": "The fee is EUR 7 for each free trade and EUR 22 for each craft or regulated trade (fee schedule in force 1 September 2026). The trade office must issue the certificate within three working days of a complete notification.",
+        "source_ids": [
+            "SK3",
+            "SK2"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-foreign-director",
+        "country": "slovakia",
+        "topic": "company",
+        "question": "Can a non-resident be managing director of an s.r.o.?",
+        "answer": "The Commercial Code (text from 17 August 2026) requires only a natural person not listed in the execution-authorisation register; it sets no residence or nationality condition. A director with no Slovak permanent residence who is not health-insured in another EU/EEA state or Switzerland is not publicly health-insured for that role.",
+        "source_ids": [
+            "SK1",
+            "SK8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-vat-threshold",
+        "country": "slovakia",
+        "topic": "tax",
+        "question": "What is the VAT registration threshold in 2026?",
+        "answer": "EUR 50,000 turnover in a calendar year (VAT payer from 1 January of the next year), or EUR 62,500 within the year (VAT payer from the supply that crosses it). Registration is due within five working days of passing the threshold. Standard rate is 23%.",
+        "source_ids": [
+            "SK5"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-social-holiday",
+        "country": "slovakia",
+        "topic": "social",
+        "question": "Do new sole traders pay social contributions from day one?",
+        "answer": "No for sickness and pension insurance: it starts on the first day of the sixth calendar month after the licence, per Sociálna poisťovňa (2026). After that a starter pays the micro-contribution, EUR 131.34 a month on a EUR 396.24 base in 2026; the EUR 914.40 minimum base (about EUR 303.11 a month, from 1 July 2026) applies once prior-year income exceeds EUR 9,144. Health insurance is separate.",
+        "source_ids": [
+            "SK7",
+            "SK9"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-einvoice",
+        "country": "slovakia",
+        "topic": "tax",
+        "question": "When does e-invoicing become mandatory?",
+        "answer": "From 1 January 2027 VAT payers must issue domestic invoices as structured e-invoices (XML, Peppol BIS), and all businesses must be able to receive them via a certified delivery provider. Non-VAT payers need not issue them.",
+        "source_ids": [
+            "SK10",
+            "SK15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-flat-rate",
+        "country": "slovakia",
+        "topic": "tax",
+        "question": "Can I use flat-rate expenses?",
+        "answer": "A non-VAT payer who claims no documented expenses can deduct 60% of business income, up to EUR 20,000 (2026 income tax act). Insurance contributions paid can be added.",
+        "source_ids": [
+            "SK6"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "sk-permit-route",
+        "country": "slovakia",
+        "topic": "visa",
+        "question": "Which residence permit does a non-EU founder need?",
+        "answer": "The statute provides a temporary residence permit for the purpose of business, granted for three years, filed in person at a Slovak embassy abroad. Details and costs are under legal review.",
+        "source_ids": [
+            "SK12",
+            "SK13"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "sk-permit-fee",
+        "country": "slovakia",
+        "topic": "visa",
+        "question": "How much does the business residence permit cost?",
+        "answer": "The state fee is EUR 330 for the first application and EUR 200 for renewal (fee schedule in force 1 September 2026). Under legal review.",
+        "source_ids": [
+            "SK3"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "pt-min-capital",
+        "country": "portugal",
+        "topic": "legal",
+        "question": "What is the minimum share capital for a Lda. in Portugal?",
+        "answer": "There is no large minimum. Each quota must be worth at least EUR 1 under the Companies Code (art. 219). The partners set the total capital.",
+        "source_ids": [
+            "PT6"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-company-cost",
+        "country": "portugal",
+        "topic": "fees",
+        "question": "How much does it cost to set up a company?",
+        "answer": "Empresa na Hora costs EUR 360. Empresa Online costs EUR 220 with a pre-approved articles template and EUR 360 with your own articles (IRN pages, accessed October 2026).",
+        "source_ids": [
+            "PT1",
+            "PT4"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-remote-start",
+        "country": "portugal",
+        "topic": "process",
+        "question": "Can I set up a company in Portugal without living there?",
+        "answer": "Empresa Online lets foreign citizens authenticate with a Chave Movel Digital linked to their passport or with eIDAS, but every partner needs a Portuguese NIF. Empresa na Hora needs all partners present or legally represented at the counter.",
+        "source_ids": [
+            "PT1",
+            "PT4",
+            "PT5"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-nif-nonresident",
+        "country": "portugal",
+        "topic": "tax",
+        "question": "How does a non-resident get a Portuguese tax number (NIF)?",
+        "answer": "Through the Portal das Financas e-balcao via a legal representative with a power of attorney, or in person at a Servico de Financas or Loja do Cidadao after booking. You need a valid passport and proof of your foreign address.",
+        "source_ids": [
+            "PT8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-fiscal-rep",
+        "country": "portugal",
+        "topic": "tax",
+        "question": "Do I need a fiscal representative in Portugal?",
+        "answer": "Not when you first get the NIF. If you live outside the EU/EEA and work self-employed in Portugal with VAT, you must name a VAT-registered representative resident in Portugal before you start. Residents of the EU, Norway, Iceland and Liechtenstein can choose.",
+        "source_ids": [
+            "PT7",
+            "PT8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-vat-threshold",
+        "country": "portugal",
+        "topic": "tax",
+        "question": "What is the small-business VAT exemption limit?",
+        "answer": "EUR 15,000 of annual turnover in Portugal (stated as the 2026 limit by gov.pt) for businesses with a registered office or domicile in Portugal. A business without one cannot normally use it; businesses based in another EU country have a separate route with an EX number.",
+        "source_ids": [
+            "PT10",
+            "PT11",
+            "PT12"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-vat-rate",
+        "country": "portugal",
+        "topic": "tax",
+        "question": "What is the VAT rate on the Portuguese mainland?",
+        "answer": "The standard rate on the mainland is 23%, with 13% and 6% reduced rates (gov.pt guide, page marked updated 04/09/2026).",
+        "source_ids": [
+            "PT12"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-social-first-year",
+        "country": "portugal",
+        "topic": "social",
+        "question": "Do I pay social security in my first year as self-employed?",
+        "answer": "The first inclusion in the self-employed regime takes effect from the first day of the 12th month after you start, so contributions begin only then, unless you ask to start earlier.",
+        "source_ids": [
+            "PT13"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-corporate-tax",
+        "country": "portugal",
+        "topic": "tax",
+        "question": "What is the corporate tax rate in 2026?",
+        "answer": "The general IRC rate is 19% for tax periods starting in 2026, falling to 18% in 2027 and 17% from 2028. The first EUR 50,000 of profit of small and medium enterprises is taxed at 15%.",
+        "source_ids": [
+            "PT16"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-atcud",
+        "country": "portugal",
+        "topic": "invoicing",
+        "question": "Do I need the ATCUD on invoices?",
+        "answer": "Yes. Invoices and other tax documents must carry the ATCUD, whatever the issuer's turnover or VAT regime, and invoice series are reported to the tax authority before use.",
+        "source_ids": [
+            "PT18"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "pt-visa-routes",
+        "country": "portugal",
+        "topic": "visa",
+        "question": "Which residence visa routes exist for non-EU founders?",
+        "answer": "The MNE visa portal lists a residence visa for independent professional activity or immigrant entrepreneurs (including the Startup Visa) and a separate visa for remote work. This is under legal review and not shown.",
+        "source_ids": [
+            "PT20",
+            "PT21"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "pt-ifici",
+        "country": "portugal",
+        "topic": "visa",
+        "question": "Is there a tax regime to replace the non-habitual resident scheme?",
+        "answer": "The IFICI regime offers a 20% rate on eligible Portuguese-source income for 10 years, with conditions. Whether a founder qualifies is under legal review and not shown.",
+        "source_ids": [
+            "PT22"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "ie-company-fee",
+        "country": "ireland",
+        "topic": "fees",
+        "question": "How much does it cost to register a company in Ireland?",
+        "answer": "The CRO fee to register a company under the Companies Act 2014 is EUR 50, filed electronically (2025 regulations). Name reservation is EUR 25 and the annual return is EUR 20 when filed in time.",
+        "source_ids": [
+            "IE11"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-eea-director",
+        "country": "ireland",
+        "topic": "legal-forms",
+        "question": "Can I form an Irish company if I live outside the EEA?",
+        "answer": "At least one director must be resident in an EEA state, unless the company holds a EUR 25,000 bond or a Registrar certificate showing a real and continuous link with Ireland. A company also needs a registered office in the State.",
+        "source_ids": [
+            "IE2",
+            "IE4",
+            "IE10"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-vat-threshold",
+        "country": "ireland",
+        "topic": "tax",
+        "question": "When must I register for VAT in Ireland?",
+        "answer": "Registration is obligatory above EUR 42,500 annual turnover for services and EUR 85,000 for goods, including mixed supplies where 90% or more of turnover is goods (Revenue, page published 6 May 2026). Below that you may choose to register.",
+        "source_ids": [
+            "IE15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-prsi-class-s",
+        "country": "ireland",
+        "topic": "social-security",
+        "question": "What social insurance does a self-employed founder pay?",
+        "answer": "Self-employed people pay PRSI Class S: 4.20% up to 30 September 2026 and 4.35% from 1 October 2026, with a EUR 650 minimum annual contribution (Department of Social Protection page updated 20 January 2026). Directors owning or controlling 50% or more of the shares are also Class S.",
+        "source_ids": [
+            "IE30",
+            "IE31"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-corp-tax",
+        "country": "ireland",
+        "topic": "tax",
+        "question": "What is the corporation tax rate in Ireland?",
+        "answer": "Revenue states 12.5% on trading income and 25% on non-trading income such as rental and investment income. Budget 2027 was announced on 6 October 2026, so check for changes from January 2027.",
+        "source_ids": [
+            "IE21",
+            "IE28"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-sure",
+        "country": "ireland",
+        "topic": "funding",
+        "question": "Is there a tax refund for starting a company in Ireland?",
+        "answer": "The Start-Up Relief for Entrepreneurs (SURE) refunds income tax paid in earlier years, but you need mainly PAYE income in the previous four years and must invest cash in new shares and hold them for four years. Citizens Information describes it as up to 41% of the capital invested.",
+        "source_ids": [
+            "IE24",
+            "IE1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-e-invoicing",
+        "country": "ireland",
+        "topic": "tax",
+        "question": "Do I have to send e-invoices in Ireland?",
+        "answer": "No business-to-business or business-to-consumer e-invoicing mandate exists. Public bodies must be able to receive EN 16931 e-invoices, and EU-wide intra-EU B2B e-invoicing is scheduled for July 2030.",
+        "source_ids": [
+            "IE29",
+            "IE26"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-start-remote",
+        "country": "ireland",
+        "topic": "legal-forms",
+        "question": "Can I register as a sole trader from abroad?",
+        "answer": "Revenue allows a non-resident to register for Income Tax with Form TR1 (FT) if they cannot use online services. Non-EEA nationals also need immigration permission that allows self-employment first.",
+        "source_ids": [
+            "IE13",
+            "IE1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "ie-step-permit",
+        "country": "ireland",
+        "topic": "visa",
+        "question": "Is there a start-up permit for non-EU founders?",
+        "answer": "The Start-up Entrepreneur Programme (STEP) exists for innovative businesses with EUR 50,000 funding, with a EUR 350 non-refundable fee. This answer is held pending legal review.",
+        "source_ids": [
+            "IE33"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "ie-employment-permit",
+        "country": "ireland",
+        "topic": "visa",
+        "question": "Can I come to Ireland on an employment permit instead?",
+        "answer": "A Critical Skills Employment Permit needs a 2-year job offer and minimum pay of EUR 40,904 or EUR 68,911 depending on the occupation. This answer is held pending legal review.",
+        "source_ids": [
+            "IE41"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "cy-company-lawyer",
+        "country": "cyprus",
+        "topic": "company",
+        "question": "Can I register a Cyprus company myself, without a lawyer?",
+        "answer": "No. The Registrar says only lawyers practising in Cyprus can draft the memorandum and articles, and the lawyer swears the form HE1 statement. The documents are signed in Greek.",
+        "source_ids": [
+            "CY6",
+            "CY1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-company-fee",
+        "country": "cyprus",
+        "topic": "fees",
+        "question": "What does the Registrar charge to register a company?",
+        "answer": "EUR 165 for a company with share capital (EUR 235 without), plus EUR 10 per proposed name, as published in 2026. Accelerated handling costs EUR 100 more for incorporation and EUR 20 more per name. Lawyer fees are not published.",
+        "source_ids": [
+            "CY1",
+            "CY2"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-annual-fee",
+        "country": "cyprus",
+        "topic": "fees",
+        "question": "What do I pay every year to keep a Cyprus company?",
+        "answer": "A fixed annual fee of EUR 350 by 30 June each year, plus an annual return and audited financial statements. The Registrar announced in September 2026 that companies that have not paid face striking-off proceedings from December.",
+        "source_ids": [
+            "CY4",
+            "CY10"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-vat-threshold",
+        "country": "cyprus",
+        "topic": "tax",
+        "question": "When do I have to register for VAT in Cyprus?",
+        "answer": "When taxable supplies over the last 12 months, or expected in the next 30 days, exceed EUR 15,600 (Cyprus Tax Department; the European Commission's SME portal lists the same national threshold). Below it you are not obliged to register but may do so voluntarily.",
+        "source_ids": [
+            "CY22",
+            "CY23",
+            "CY11"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-vat-rates",
+        "country": "cyprus",
+        "topic": "tax",
+        "question": "What are the VAT rates in Cyprus?",
+        "answer": "The standard rate is 19%. Reduced rates are 9% (for example catering and taxi fares) and 5% (for example books and water supply), and some goods such as food and medicines are zero-rated.",
+        "source_ids": [
+            "CY16"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-income-tax-2026",
+        "country": "cyprus",
+        "topic": "tax",
+        "question": "How much income is tax-free in Cyprus in 2026?",
+        "answer": "EUR 22,000 from the 2026 tax year (it was EUR 19,500). Above that, 20% to EUR 32,000, 25% to EUR 42,000, 30% to EUR 72,000 and 35% above.",
+        "source_ids": [
+            "CY11",
+            "CY16"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-einvoicing",
+        "country": "cyprus",
+        "topic": "tax",
+        "question": "Is e-invoicing mandatory in Cyprus?",
+        "answer": "According to the European Commission's 2025 country sheet (updated August 2025), there is no B2B, B2C or general B2G mandate and no planned dates. Check again, as this can change.",
+        "source_ids": [
+            "CY17"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-self-employed-register",
+        "country": "cyprus",
+        "topic": "registration",
+        "question": "How do I register as self-employed in Cyprus?",
+        "answer": "Submit the self-employed form (YKA 1-008) at your District Social Insurance Office with ID, passport or ARC, then register in the Tax Register online via Tax For All. The social insurance number usually comes within 1 to 2 weeks.",
+        "source_ids": [
+            "CY12",
+            "CY11"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-self-employed-contributions",
+        "country": "cyprus",
+        "topic": "social",
+        "question": "What social security does a self-employed person pay in Cyprus?",
+        "answer": "Social insurance of 16.6% (plus 5.2% from the state) as stated for 2025, and General Healthcare System (GeSY) contributions of 4.00%. Figures change each year, so confirm the current rates.",
+        "source_ids": [
+            "CY16",
+            "CY13"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cy-visa-route",
+        "country": "cyprus",
+        "topic": "visa",
+        "question": "Which permit does a non-EU founder need to run a business in Cyprus?",
+        "answer": "Not answered yet. Official Migration Department pages could not be opened for this draft.",
+        "source_ids": [],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "cy-visa-digital-nomad",
+        "country": "cyprus",
+        "topic": "visa",
+        "question": "Can I run my Cyprus company on a digital nomad permit?",
+        "answer": "A government strategy document of February 2024 describes it as a residence permit, not a work permit, with a declaration not to work for a Cyprus-based employer. Terms need checking.",
+        "source_ids": [
+            "CY15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "fi-company-forms",
+        "country": "finland",
+        "topic": "company",
+        "question": "Should I start as a toiminimi (private trader) or an Oy (limited company) in Finland?",
+        "answer": "A toiminimi is the simplest start (PRH fee EUR 75 in 2026). An Oy is a separate company that can be started with EUR 0 share capital (PRH fee EUR 400, or EUR 300 via the guided online package). Which is better depends on liability, partners and clients; ask an accountant.",
+        "source_ids": [
+            "FI1",
+            "FI2",
+            "FI5"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-share-capital",
+        "country": "finland",
+        "topic": "company",
+        "question": "How much share capital do I need for an Oy?",
+        "answer": "PRH says an Oy can be started with or without share capital; with none, the register records share capital of 0 euros. The guided set-up package is only available when share capital is 0 euros and all listed persons have Finnish personal identity codes.",
+        "source_ids": [
+            "FI1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-fees",
+        "country": "finland",
+        "topic": "fees",
+        "question": "What does PRH charge to register a business in Finland?",
+        "answer": "PRH's 2026 price list (latest update 1 January 2026) shows EUR 75 for a private trader, EUR 400 for an Oy (EUR 300 through the guided online package), and EUR 300 for a general or limited partnership. Each auxiliary company name costs EUR 75.",
+        "source_ids": [
+            "FI2"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-remote-director",
+        "country": "finland",
+        "topic": "registration",
+        "question": "Can I be a director of a Finnish Oy if I live outside the EEA?",
+        "answer": "PRH requires a permit (EUR 150 per person, plus a EUR 6.50 invoicing charge) unless at least one ordinary board member lives in the EEA, and a managing director and any deputy must live in the EEA or also need a permit. Citizenship does not decide this; permanent residence does. PRH says it has granted such permits to people living permanently in Switzerland and to US citizens living permanently in the USA; other cases are conditional.",
+        "source_ids": [
+            "FI4"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-start-time",
+        "country": "finland",
+        "topic": "registration",
+        "question": "How long does it take PRH to register an Oy?",
+        "answer": "PRH said in March 2026 that start-up notifications filed in the YTJ service were handled in about a week, and its weekly status table shows which arrival dates it is currently processing. File within three months of signing the memorandum of association or the company is not formed.",
+        "source_ids": [
+            "FI3",
+            "FI7",
+            "FI8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-vat-threshold",
+        "country": "finland",
+        "topic": "tax",
+        "question": "When do I have to register for VAT in Finland, and at what rate?",
+        "answer": "You must register for VAT when turnover exceeds EUR 20,000 in a calendar year (Vero, 2026); below that you can register voluntarily. The standard rate is 25.5%, with a 13.5% reduced rate on items such as groceries and restaurant services since 1 January 2026.",
+        "source_ids": [
+            "FI11",
+            "FI12",
+            "FI13"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-yel",
+        "country": "finland",
+        "topic": "social",
+        "question": "Do I have to pay pension insurance as a self-employed person in Finland?",
+        "answer": "Yes. YEL insurance is mandatory for most self-employed people, regardless of citizenship, and must be taken out within six months of starting. In 2026 the contribution is 24.40% of confirmed income, with a 22% discount for the first 48 months, and annual earnings must be at least EUR 9,423.09.",
+        "source_ids": [
+            "FI18",
+            "FI19",
+            "FI20",
+            "FI21"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-einvoice",
+        "country": "finland",
+        "topic": "tax",
+        "question": "Do I have to send e-invoices in Finland?",
+        "answer": "Sending an electronic invoice requires the recipient's consent, and public buyers must be able to accept e-invoices that meet the European standard. A general e-invoicing mandate for ordinary private sales was not confirmed on an official page read.",
+        "source_ids": [
+            "FI14",
+            "FI24"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "fi-visa-routes",
+        "country": "finland",
+        "topic": "visa",
+        "question": "Which residence permit does a non-EU founder need to start a business in Finland?",
+        "answer": "Non-EU citizens always need a residence permit to move to Finland as an entrepreneur: an entrepreneur permit (ELY Centre assesses first, then Migri decides) or, for a growth start-up, a start-up permit that needs a positive Business Finland Eligibility Statement first. Fees and processing times are not yet verified.",
+        "source_ids": [
+            "FI25",
+            "FI28",
+            "FI30",
+            "FI31"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "cz-vat-limit",
+        "country": "czechia",
+        "topic": "tax",
+        "question": "When do I have to register for VAT in Czechia?",
+        "answer": "If domestic turnover exceeds CZK 2,000,000 in a calendar year you become a payer from 1 January of the next year. Above CZK 2,536,500 you become a payer the day after and must apply within 10 working days (gov.cz portal, read Oct 2026).",
+        "source_ids": [
+            "CZ9"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-vat-rates",
+        "country": "czechia",
+        "topic": "tax",
+        "question": "What are the VAT rates?",
+        "answer": "The standard rate is 21% and the single reduced rate is 12% (gov.cz portal and tax office, read Oct 2026).",
+        "source_ids": [
+            "CZ10",
+            "CZ28"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-trade-cost",
+        "country": "czechia",
+        "topic": "fees",
+        "question": "What does it cost to register a trade?",
+        "answer": "A notification of a trade costs CZK 1,000 (CZK 500 for each further one, CZK 50 more via Czech POINT), according to the MPO page read in October 2026.",
+        "source_ids": [
+            "CZ15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-srl-capital",
+        "country": "czechia",
+        "topic": "company",
+        "question": "What is the minimum capital for an s.r.o.?",
+        "answer": "The legal minimum contribution is CZK 1 per member (section 142(1) of Act 90/2012 Coll.). The source page is dated 2016, so confirm it with a notary.",
+        "source_ids": [
+            "CZ16"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-srl-court-fee",
+        "country": "czechia",
+        "topic": "fees",
+        "question": "What does the court fee for registering an s.r.o. cost?",
+        "answer": "CZK 6,000 for the first registration, payable by bank transfer. The notary's fee for the deed is separate and follows the notarial tariff.",
+        "source_ids": [
+            "CZ12",
+            "CZ14"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-social-min-2026",
+        "country": "czechia",
+        "topic": "social",
+        "question": "How much social insurance does a self-employed person pay at minimum in 2026?",
+        "answer": "For main activity the minimum monthly pension advance is CZK 5,720 for January to June 2026 and CZK 5,005 from July 2026. There are lower amounts for a start-up and for side business.",
+        "source_ids": [
+            "CZ4",
+            "CZ6"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-health-min-2026",
+        "country": "czechia",
+        "topic": "social",
+        "question": "What is the minimum health-insurance advance for self-employed people in 2026?",
+        "answer": "CZK 3,306 per month from 1 Jan 2026, due by the 8th day of the following month.",
+        "source_ids": [
+            "CZ8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-flat-rate",
+        "country": "czechia",
+        "topic": "tax",
+        "question": "What is the pausalni dan?",
+        "answer": "A flat monthly payment that covers income tax and the insurance advances. In 2026 it is CZK 9,984, 16,745 or 27,139 per month depending on the band, for non-VAT payers with income up to CZK 2 million.",
+        "source_ids": [
+            "CZ1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-remote-start",
+        "country": "czechia",
+        "topic": "company",
+        "question": "Can I register a business in Czechia without living there?",
+        "answer": "EU/EEA citizens can notify a trade with home-state criminal-record extracts. Third-country citizens must also show a long-stay visa or residence permit to the trade office, and their right to trade arises only once they do.",
+        "source_ids": [
+            "CZ15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "cz-permit-business",
+        "country": "czechia",
+        "topic": "visa",
+        "question": "Which permit lets a non-EU founder do business in Czechia?",
+        "answer": "The long-term visa for business (max 1 year) and then the long-term residence permit for business (max 2 years each time). Details are under legal review and are not yet published.",
+        "source_ids": [
+            "CZ18",
+            "CZ19"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "se-vat-limit",
+        "country": "sweden",
+        "topic": "tax",
+        "question": "What is the small-business VAT limit in Sweden?",
+        "answer": "SEK 120,000 of turnover in Sweden (excluding VAT) in the current year and in neither of the two previous years, as shown by Skatteverket in October 2026. A company with its seat outside the EU cannot use the exemption.",
+        "source_ids": [
+            "SE9"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-ab-capital",
+        "country": "sweden",
+        "topic": "legal",
+        "question": "How much share capital does an aktiebolag need?",
+        "answer": "At least SEK 25,000 (Companies Act 1 kap. 5 §, text current to SFS 2026:783). It can be cash or property useful to the business, which an approved or authorised auditor must value.",
+        "source_ids": [
+            "SE2",
+            "SE8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-ab-fee",
+        "country": "sweden",
+        "topic": "fees",
+        "question": "How much does it cost to register an aktiebolag?",
+        "answer": "Verksamt.se shows from SEK 2,400 for the company and SEK 250 for the beneficial owner (October 2026). The bank and any adviser charge extra.",
+        "source_ids": [
+            "SE2",
+            "SE5"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-sole-cost",
+        "country": "sweden",
+        "topic": "fees",
+        "question": "What does it cost to register as a sole trader?",
+        "answer": "Registering with Skatteverket is free. Registering the business name with Bolagsverket is optional and costs from SEK 1,800 (October 2026).",
+        "source_ids": [
+            "SE1",
+            "SE3",
+            "SE6"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-eea-board",
+        "country": "sweden",
+        "topic": "legal",
+        "question": "Can a non-EU resident be a director of a Swedish AB?",
+        "answer": "At least half of the board and the managing director must live in the EEA, but Bolagsverket may grant an exemption in an individual case for special reasons (Companies Act 8 kap. 9 and 30 §§).",
+        "source_ids": [
+            "SE8"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-f-skatt",
+        "country": "sweden",
+        "topic": "tax",
+        "question": "What is F-skatt and do I need it?",
+        "answer": "F-skatt approval means you pay your own taxes and fees and clients do not withhold tax from your invoices. Sole traders should as a rule have it. If you lived in Sweden less than two years you must show you have no tax debts abroad, with certificates at most three months old.",
+        "source_ids": [
+            "SE12"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-egenavgifter",
+        "country": "sweden",
+        "topic": "social",
+        "question": "How much are self-employment contributions in 2026?",
+        "answer": "Egenavgifter are 28.97% for someone born in 1959 or later (2026), with a 25% standard deduction.",
+        "source_ids": [
+            "SE11",
+            "SE10"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-id-number",
+        "country": "sweden",
+        "topic": "admin",
+        "question": "Do I need a personnummer to register?",
+        "answer": "Not necessarily. People who are not registered in Sweden can get a samordningsnummer, active for five years, but those moving to Sweden for a year or more should register their move instead.",
+        "source_ids": [
+            "SE14",
+            "SE4"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-sickness",
+        "country": "sweden",
+        "topic": "social",
+        "question": "What waiting period applies to sickness benefit for a sole trader?",
+        "answer": "The default is 7 calendar days; you can choose 1, 14, 30, 60 or 90 days (Försäkringskassan, October 2026).",
+        "source_ids": [
+            "SE19"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "se-permit",
+        "country": "sweden",
+        "topic": "visa",
+        "question": "Do I need a residence permit to start a business in Sweden as a non-EU citizen?",
+        "answer": "Yes: non-EU/EEA citizens who want to live in Sweden to run a business need a residence permit approved before travelling. Details are under legal review.",
+        "source_ids": [
+            "SE4",
+            "SE21"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "mt-min-capital",
+        "country": "malta",
+        "topic": "company",
+        "question": "What is the minimum share capital for a Maltese private company?",
+        "answer": "The minimum authorised share capital is EUR 1,164.69, and at least 20% of the nominal value of each share taken up must be paid up when the memorandum is signed.",
+        "source_ids": [
+            "MT1",
+            "MT3"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-reg-cost",
+        "country": "malta",
+        "topic": "fees",
+        "question": "How much does it cost to register a company with the Malta Business Registry?",
+        "answer": "The online registration fee is EUR 100 for authorised capital up to EUR 1,500 and rises with authorised capital (fee page read October 2026). Reserving a name costs EUR 10 for three months.",
+        "source_ids": [
+            "MT1",
+            "MT2"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-reg-time",
+        "country": "malta",
+        "topic": "company",
+        "question": "How long does company registration take?",
+        "answer": "The MBR says that once it has all the documents and information, the process may take from as little as 24 hours. New incorporations must be filed online through BAROS since 1 March 2025.",
+        "source_ids": [
+            "MT1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-remote",
+        "country": "malta",
+        "topic": "company",
+        "question": "Does the company secretary have to live in Malta, and what else is needed for a non-EU founder?",
+        "answer": "The MBR guide says the company secretary does not have to be resident in Malta and may be a licensed company service provider. A registered office in Malta is required, and a non-EU individual needs a character reference from a lawyer, auditor, accountant or notary.",
+        "source_ids": [
+            "MT1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-vat-rate",
+        "country": "malta",
+        "topic": "tax",
+        "question": "What is the VAT rate and the small-business threshold?",
+        "answer": "The standard VAT rate is 18%. A small enterprise established in Malta can register under Article 11 if domestic turnover in the previous calendar year was not more than EUR 35,000.",
+        "source_ids": [
+            "MT4"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-corp-tax",
+        "country": "malta",
+        "topic": "tax",
+        "question": "How much tax does a Maltese company pay and what is the shareholder refund?",
+        "answer": "Company tax is 35% of chargeable income. When profits are paid out, a shareholder can claim a refund of six-sevenths of the tax on those profits, or five-sevenths for certain passive income, subject to conditions; confirm with a Maltese tax adviser.",
+        "source_ids": [
+            "MT5",
+            "MT6"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-class2",
+        "country": "malta",
+        "topic": "social",
+        "question": "How much social security does a self-employed person pay?",
+        "answer": "Self-employed and self-occupied people pay Class Two contributions every four months in arrears, at the Malta Tax and Customs Administration. The weekly amount depends on the previous year's net earnings, with a lowest band, a middle band of 15% of net earnings and a top band. The weekly amounts are not stated here because the Act's printed table could not be matched to the Department of Social Security's current 2026 table; check the current rates with the Department of Social Security.",
+        "source_ids": [
+            "MT7"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-director-employee",
+        "country": "malta",
+        "topic": "company",
+        "question": "If I own and run my own Maltese company, am I self-employed?",
+        "answer": "No. Identita and Jobsplus treat directors, shareholders and owners who do executive work in a registered company as its employees, registered with Jobsplus through an engagement form.",
+        "source_ids": [
+            "MT9",
+            "MT18"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "mt-permit-need",
+        "country": "malta",
+        "topic": "visa",
+        "question": "Do I need a permit if I am from outside the EU?",
+        "answer": "Non-EU nationals need a residence permit to work in Malta. Founders usually go through a Single Permit, a self-employment licence and permit, or the Start-up Residence Programme.",
+        "source_ids": [
+            "MT8",
+            "MT19"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "mt-startup-route",
+        "country": "malta",
+        "topic": "visa",
+        "question": "What is the Start-up Residence Programme?",
+        "answer": "It is a route for non-EU founders, co-founders and core employees of an innovative start-up whose business plan Malta Enterprise approves, with paid-up capital or investment of at least EUR 25,000. Founder permits are for three years, then five more.",
+        "source_ids": [
+            "MT19",
+            "MT20"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "at-gmbh-capital",
+        "country": "austria",
+        "topic": "company",
+        "question": "How much capital does an Austrian GmbH need?",
+        "answer": "EUR 10,000 minimum share capital, of which at least EUR 5,000 must be paid in cash (GmbHG, consolidated version of 13 Oct 2026).",
+        "source_ids": [
+            "AT1"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "at-trade-cost",
+        "country": "austria",
+        "topic": "fees",
+        "question": "What does the trade registration cost?",
+        "answer": "The Gewerbeanmeldung is free of federal charges according to the economy ministry; the WKO also lists it as free, with an exception for trades under special laws.",
+        "source_ids": [
+            "AT10",
+            "AT12"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "at-vat-limit",
+        "country": "austria",
+        "topic": "tax",
+        "question": "What is the small-business VAT limit in 2026?",
+        "answer": "EUR 55,000 gross turnover per year since 1 Jan 2025, with a 10% tolerance in the year it is exceeded. Below it there is no VAT but also no input-VAT deduction.",
+        "source_ids": [
+            "AT5",
+            "AT15"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "at-resident-needed",
+        "country": "austria",
+        "topic": "registration",
+        "question": "Do I need to live in Austria to be a GmbH managing director?",
+        "answer": "The GmbHG text read sets no residence rule for managing directors. But if the GmbH needs a trade licence, the trade-law managing director must generally live in Austria, with exceptions for some EEA and Swiss nationals.",
+        "source_ids": [
+            "AT1",
+            "AT4"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "at-svs-minimum",
+        "country": "austria",
+        "topic": "social_security",
+        "question": "What is the minimum social-insurance contribution for a trader in 2026?",
+        "answer": "Contributions are charged on a minimum base of EUR 551.10 per month (2026): pension 18.5%, health 6.8% and provision 1.53%, plus a flat accident insurance contribution of EUR 12.96 per month (SVS; the WKO page shows EUR 12.95), so the minimum is about EUR 161 per month in total. Very low earners may apply for an exemption.",
+        "source_ids": [
+            "AT20",
+            "AT21",
+            "AT22"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "at-einvoice",
+        "country": "austria",
+        "topic": "tax",
+        "question": "Is e-invoicing mandatory in Austria?",
+        "answer": "Not between domestic businesses; it needs the recipient's consent. It is mandatory for invoices to federal government bodies since 1 Jan 2014.",
+        "source_ids": [
+            "AT18",
+            "AT19"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "at-neufog",
+        "country": "austria",
+        "topic": "fees",
+        "question": "Can I avoid Firmenbuch fees as a new founder?",
+        "answer": "Genuine new founders can have Firmenbuch court fees waived under the NeuFoeG, using form NeuFoe2 and a chamber consultation. You must not have run a comparable business in the last five years.",
+        "source_ids": [
+            "AT26",
+            "AT27"
+        ],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "render",
+        "hold": false
+    },
+    {
+        "id": "at-visa-startup",
+        "country": "austria",
+        "topic": "visa",
+        "question": "Is there an Austrian start-up route for non-EU founders?",
+        "answer": "Not yet answered here, under legal review.",
+        "source_ids": [],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
+    },
+    {
+        "id": "at-visa-selfemployed",
+        "country": "austria",
+        "topic": "visa",
+        "question": "Can I get an Austrian residence permit as a self-employed founder?",
+        "answer": "Not yet answered here, under legal review.",
+        "source_ids": [],
+        "last_checked": "2026-10-12",
+        "origin": "research",
+        "origin_ref": null,
+        "status": "hold",
+        "hold": true
     }
 ]

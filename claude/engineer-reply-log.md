@@ -38,3 +38,20 @@ The real queue file (claude/engineer-tickets-queue.md) is not in this repo, so r
 **Not verified:** how Google currently treats these pages (needs Search Console), whether any live page is empty, and the live server. Tested on a local test database only; sitemap only lists names that have companies, so it is unaffected. Not done: Berlin pages beyond the existing one (nothing missing found).
 
 **The one thing Nijil needs to do:** after deploy, open `cities.php?city=Nowhere` and view page source to confirm "noindex" is there, and check that Berlin is not marked.
+
+### 13 Oct 2026 · CG-02: Fix citation numbering on the live guides
+
+**State:** Fix built, two draft pull requests open: #116 (the fix) and #117 (the deploy check, kept separate because it changes deploy settings). Nothing merged or deployed. Card is partly met until both merge.
+
+**What I checked in the repo (main at 724a421):**
+- Opened all 6 live guides on the local site and compared the inline markers with the Sources list. All 6 drifted: the markers show the source ID (for example [S8]) while the list showed a running 1, 2, 3 count, so Germany's S8 sat at position 5.
+- IDs with a two-letter prefix (NL10, SI27) were sorted as if their number were 0, so the list order was wrong (Netherlands NL10 before NL9, Slovenia SI3, SI4, SI2).
+- The validator already fails on a citation with no matching source. No workflow ran it, so a deploy never checked.
+
+**What changed:** each Sources entry now carries its own ID and is sorted by the number inside it (#116, `guidance-helpers.php` only). A `guidance-check` job runs the validator before every deploy (#117, tested by breaking a ref on a scratch copy: it fails with exit 1).
+
+**Unverified:** not opened in a real browser or on a phone; live site not checked; the ref links inside FAQ answers point to anchors that do not exist on the FAQ page (they never did) and still do not jump anywhere; #117 has not run on GitHub yet and may conflict with #89 (both add a deploy job).
+
+**The one thing Nijil needs to do:** merge #116 first, then #117. After the deploy, open Germany, click [S8] in the text and confirm the page jumps to the entry labelled S8.
+
+**Other cards looked at, no work started:** CG-01 already has PR #105, CG-09 has the Poland draft #109. CG-04 and CG-13 wait for CG-01 approval and other cards. The Growth A-D cards and the PR #71 card still say "open" on the board, but #74 to #78 are not in the open list and #81 to #87 are merged. The stand-up should refresh those cards.
